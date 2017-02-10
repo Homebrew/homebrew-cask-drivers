@@ -1,9 +1,9 @@
 cask 'rtunic' do
-  version '1.0.16'
+  version '1.0.16,484.0008'
   sha256 '51e1c1790789fcb35ca80c2cc5aa08826d2f24252e20a832124dafb38d85cf4e'
 
-  # Verified manufacturer download page: http://www.realtek.com.tw/Downloads/downloadsView.aspx?Langid=1&PNid=13&PFid=56&Level=5&Conn=4&DownTypeID=3&GetDown=false
-  url "http://12244.wpc.azureedge.net/8012244/drivers/rtdrivers/cn/nic/0010-RTUNICv#{version}.zip"
+  # d2c6jjk3vnoatm.cloudfront.net was verified as official when first introduced to the cask
+  url "https://d2c6jjk3vnoatm.cloudfront.net/spree/products/accessoies/#{version.after_comma.dots_to_slashes}-RTUNICv#{version.before_comma}.zip"
   name 'rtunic'
   homepage 'https://www.anker.com/products/taxons/114/Connectivity'
 
