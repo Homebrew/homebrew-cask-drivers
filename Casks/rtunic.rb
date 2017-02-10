@@ -1,5 +1,5 @@
 cask 'rtunic' do
-  version '1.0.16,484.0008'
+  version '1.0.16,515.0010'
   sha256 '51e1c1790789fcb35ca80c2cc5aa08826d2f24252e20a832124dafb38d85cf4e'
 
   # d2c6jjk3vnoatm.cloudfront.net was verified as official when first introduced to the cask
@@ -7,7 +7,7 @@ cask 'rtunic' do
   name 'rtunic'
   homepage 'https://www.anker.com/products/taxons/114/Connectivity'
 
-  pkg "RTUNICv#{version}/RTUNICv#{version}.pkg"
+  pkg "RTUNICv#{version.before_comma}/RTUNICv#{version.before_comma}.pkg"
 
   uninstall pkgutil: [
                        'com.realtek.usbeth109',
