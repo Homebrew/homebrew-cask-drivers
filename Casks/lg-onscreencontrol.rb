@@ -1,4 +1,4 @@
-cask 'lg-onscreen-control' do
+cask 'lg-onscreencontrol' do
   version '1.37'
   sha256 '7263b8cb714cf25db16cee7310ba03a79cc28754cb18f55c30642cc745d64740'
 
