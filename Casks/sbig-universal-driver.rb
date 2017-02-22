@@ -7,7 +7,8 @@ cask 'sbig-universal-driver' do
   name 'SBIG Universal Driver'
   homepage 'http://diffractionlimited.com/'
 
-  pkg 'SBIG Universal Driver Installer 4r84.pkg', allow_untrusted: true
+  pkg 'SBIG Universal Driver Installer 4r84.pkg',
+      allow_untrusted: true
 
   uninstall pkgutil: 'com.sbig'
 end
