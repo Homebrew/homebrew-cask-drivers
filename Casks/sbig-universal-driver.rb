@@ -11,3 +11,4 @@ cask 'sbig-universal-driver' do
 
   uninstall pkgutil: 'com.sbig'
 end
+
