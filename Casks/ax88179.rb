@@ -34,8 +34,7 @@ cask 'ax88179' do
   end
 
   uninstall early_script: {
-                            executable: "#{staged_path}/AX88179_178A_Uninstall_v140",
-                            sudo:       false,
+                            executable: "#{staged_path}/AX88179_178A_Uninstall_v140"
                           },
             kext:         'com.asix.driver.ax88179-178a',
             pkgutil:      'com.asix.pkg.ax88179-178a*'
