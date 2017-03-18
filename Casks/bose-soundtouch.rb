@@ -17,5 +17,13 @@ cask 'bose-soundtouch' do
                       executable: '/Applications/SoundTouch/uninstall.app/Contents/MacOS/installbuilder.sh',
                       args:       %w[--mode unattended],
                       sudo:       true,
-                    }
+                    },
+            quit:   'com.Bose.SoundTouch'
+
+  zap delete: [
+                '~/Library/Application Support/SoundTouch',
+                '~/Library/Caches/SoundTouch',
+                '~/Library/Saved Application State/com.Bose.SoundTouch application.savedState',
+                '~/Library/Saved Application State/com.Bose.SoundTouch.savedState',
+              ]
 end
