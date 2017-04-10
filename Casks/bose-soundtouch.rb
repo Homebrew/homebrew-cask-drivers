@@ -9,9 +9,11 @@ cask 'bose-soundtouch' do
 
   depends_on macos: '>= :mavericks'
 
-  installer script: 'SoundTouch-osx-installer.app/Contents/MacOS/installbuilder.sh',
-            args:   %w[--mode unattended],
-            sudo:   true
+  installer script: {
+                      executable: 'SoundTouch-osx-installer.app/Contents/MacOS/installbuilder.sh',
+                      args:       %w[--mode unattended],
+                      sudo:       true,
+                    }
 
   uninstall script: {
                       executable: '/Applications/SoundTouch/uninstall.app/Contents/MacOS/installbuilder.sh',
