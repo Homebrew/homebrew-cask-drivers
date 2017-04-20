@@ -1,10 +1,10 @@
 cask 'silicon-labs-vcp-driver' do
-  version '4.10.15'
-  sha256 'b5532118d3ea97080ff57d04e4941295e2542df7d6180cebe3d5684aed13072b'
+  version '4.10.17'
+  sha256 'd491af748e90ba0b0ffb487863cb814b15501fc2ab49f65d95246a0494af50f3'
 
   url 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip'
   appcast 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver_Release_Notes.txt',
-          checkpoint: '080631469bed4a8749d2ac007a2571102b2494cefa4a4530013edbb08d4be940'
+          checkpoint: 'd0d1ca8b4a0d3668c0f7a0b6c463d9c413b4721bace191f159fa6bd0fe6dec46'
   name 'Silicon Labs VCP Driver'
   name 'CP210x USB to UART Bridge VCP Driver'
   homepage 'https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers'
