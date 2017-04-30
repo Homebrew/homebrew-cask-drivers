@@ -5,7 +5,7 @@ cask 'eyetv' do
   # d2ax8v8radog32.cloudfront.net was verified as official when first introduced to the cask
   url "https://d2ax8v8radog32.cloudfront.net/eyetv3/Geniatech_eyetv_#{version}.dmg"
   appcast 'https://www.geniatech.eu/eyetv/support/eyetv-3-en/',
-          checkpoint: 'ef1c78c583f29d38cf45d6a6de8f829c7f39339bbdca97c22c7e4cecbada06bf'
+          checkpoint: '61117cf7e47fb1d7c1be173fb9c573a17f6ec66289236f026a0db8fa14ef22c6'
   name 'EyeTV'
   homepage 'https://www.geniatech.eu/eyetv/'
 
