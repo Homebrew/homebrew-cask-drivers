@@ -4,7 +4,7 @@ cask 'yubiswitch' do
 
   url "https://github.com/pallotron/yubiswitch/releases/download/v#{version}/yubiswitch_#{version}.dmg"
   appcast 'https://github.com/pallotron/yubiswitch/releases.atom',
-          checkpoint: '3c81594845490b31f3154b86af8971af304dfd6ee464909110452f745503d558'
+          checkpoint: '8bfb9fd967ee7372c6df67f4e8666e9da5f38c42aa5fdb82abb54d1c49b1752e'
   name 'yubiswitch'
   homepage 'https://github.com/pallotron/yubiswitch'
 
