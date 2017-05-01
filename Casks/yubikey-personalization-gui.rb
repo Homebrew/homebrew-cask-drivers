@@ -4,7 +4,7 @@ cask 'yubikey-personalization-gui' do
 
   url "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubikey-personalization-gui-#{version}.pkg"
   appcast 'https://developers.yubico.com/yubikey-personalization-gui/Releases/',
-          checkpoint: '48dc5dee670b03acbca40eed667f2d92dee0ae467a9788cba43e6a16d00905eb'
+          checkpoint: 'e3c7b3e7c187cfa3b16464f2fc9f6df6ae49ae3c882ad62fe119010effd473b5'
   name 'YubiKey Personalization GUI'
   homepage 'https://www.yubico.com/products/services-software/personalization-tools/use/'
 

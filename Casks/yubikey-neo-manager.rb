@@ -4,7 +4,7 @@ cask 'yubikey-neo-manager' do
 
   url "https://developers.yubico.com/yubikey-neo-manager/Releases/yubikey-neo-manager-#{version}-mac.pkg"
   appcast 'https://developers.yubico.com/yubikey-neo-manager/Release_Notes.html',
-          checkpoint: '361b96775a4aa38325b8555bdb0ca0de3ea282831c5b9068b9a9f673fff29e37'
+          checkpoint: '06eeedfc78e0345ecf6486cbb42808f88ffc6fb31196c7f9946f38962ea8edc1'
   name 'YubiKey NEO Manager'
   homepage 'https://developers.yubico.com/yubikey-neo-manager/'
 
