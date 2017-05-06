@@ -6,7 +6,7 @@ cask 'synology-cloud-station-drive' do
   name 'Synology Cloud Station Drive'
   homepage 'https://www.synology.com/'
 
-  pkg 'Install Cloud Station Drive.pkg', allow_untrusted: true
+  pkg 'Install Cloud Station Drive.pkg'
 
   uninstall pkgutil:   'com.synology.CloudStation',
             launchctl: 'com.synology.Synology Cloud Station'
