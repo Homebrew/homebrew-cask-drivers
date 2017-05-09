@@ -1,6 +1,6 @@
 cask 'wacom-intuos-tablet' do
-  version '6.3.20-8'
-  sha256 'c0ede699f001ffde7fe4ca27df7c62720bdad29a9b04fd8be646ed81f2211ba5'
+  version '6.3.21-8'
+  sha256 '9089dc2c0fb7defbb7e6824bd4c803e37ea20915585ed19197830fc85874095e'
 
   url "http://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   name 'Wacom Intuos 4/5/Pro Tablet'
@@ -26,7 +26,10 @@ cask 'wacom-intuos-tablet' do
             delete:    '/Applications/Wacom Tablet.localized'
 
   zap delete: [
-                '~/Library//Preferences/com.wacom.wacomtablet.prefs',
-                '~/Library//Preferences/com.wacom.wacomtouch.prefs',
+                '~/Library/Preferences/com.wacom.wacomtablet.plist',
+                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
+                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
+                '~/Library/Preferences/com.wacom.RemoveWacomTablet.plist',
+                '~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist',
               ]
 end
