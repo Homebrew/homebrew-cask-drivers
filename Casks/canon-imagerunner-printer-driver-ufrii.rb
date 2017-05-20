@@ -8,7 +8,7 @@ cask 'canon-imagerunner-printer-driver-ufrii' do
   name 'Canon imageRUNNER UFRII Printer Driver'
   homepage 'https://www.usa.canon.com/internet/portal/us/home/support/details/copiers-mfps-fax-machines/support-multifunction/imagerunner-2018'
 
-  pkg 'Office/UFRII_LT_LIPS_LX_Installer.pkg'
+  pkg 'UFRII_LT_LIPS_LX_Installer.pkg'
 
   uninstall pkgutil: 'jp.co.canon.CUPSPrinter.*'
 end
