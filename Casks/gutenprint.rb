@@ -4,7 +4,7 @@ cask 'gutenprint' do
 
   url "https://downloads.sourceforge.net/gimp-print/gutenprint-#{version.major_minor}/#{version}/gutenprint-#{version}.dmg"
   appcast 'https://sourceforge.net/projects/gimp-print/rss',
-          checkpoint: '11d0d980f531826dd2197be15ece5e8f6664118dc7fb9082255bcaa4d908e109'
+          checkpoint: '998bd2c5a584ecbb188d06d563decbe80b67de078eb6b99a0f0714fa5222a9f5'
   name 'Gutenprint'
   homepage 'http://gimp-print.sourceforge.net/'
 
