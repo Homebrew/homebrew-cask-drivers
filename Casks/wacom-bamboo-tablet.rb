@@ -1,6 +1,6 @@
 cask 'wacom-bamboo-tablet' do
-  version '5.3.6-6'
-  sha256 '3eb78dda089da8f4019782502fe59529a5e00afae8c89005d9f5cc9e04e2283e'
+  version '5.3.7-6'
+  sha256 '9de34abf8a8697e9d04a54503d5d73174e8b0ca6096d9b5011f5f7f1dd152c10'
 
   url "http://cdn.wacom.com/u/productsupport/drivers/mac/consumer/pentablet_#{version}.dmg"
   name 'Wacom Bamboo Tablet'
