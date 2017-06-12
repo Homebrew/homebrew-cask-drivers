@@ -2,7 +2,7 @@ cask 'jabra-suite' do
   version '2.10.0'
   sha256 '588cab855456224a0473462e7836f5eb7a2dea46d4a00c136ed25a7edddfe04a'
 
-  url 'https://www.jabra.com/macsuite/2.10.0/Jabra%20Suite%20for%20Mac_2.10.dmg'
+  url "https://www.jabra.com/macsuite/#{version}/Jabra%20Suite%20for%20Mac_#{version.major_minor}.dmg"
   appcast 'https://www.jabra.com/macsuite/JMSVersionUpdate.xml',
           checkpoint: '3eea6cf2986518414c236f7c8915fd595e3e9d2a6da05a44113bf628675bad5f'
   name 'Jabra Suite for Mac'
