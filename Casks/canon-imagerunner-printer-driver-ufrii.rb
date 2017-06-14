@@ -4,7 +4,7 @@ cask 'canon-imagerunner-printer-driver-ufrii' do
 
   url "https://downloads.canon.com/bisg2017/drivers/mac/UFRII_v#{version}_Mac.zip"
   appcast 'https://www.usa.canon.com/internet/PA_NWSupport/driversDownloads?model=15802&os=MACOS_V10_12&type=DS&lang=English',
-          checkpoint: 'b8ee245c4de332ff2174813790a276ab22e8432c8c2b0a8110358fe9c106bf07'
+          checkpoint: 'a9020c52b6f7f2f6cbef801c4594f31a09b9e8ab003f4e17a6fa60160e0d974d'
   name 'Canon imageRUNNER UFRII Printer Driver'
   homepage 'https://www.usa.canon.com/internet/portal/us/home/support/details/copiers-mfps-fax-machines/support-multifunction/imagerunner-2018'
 
