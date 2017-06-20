@@ -4,8 +4,8 @@ cask 'ftdi-vcp-driver' do
     sha256 '248f582527175ab07334f6a1255c8be2da4dfc36da49e26d39a2f61f5b7ba2e7'
     pkg 'FTDIUSBSerialDriver_10_4_10_5_10_6_10_7.mpkg'
   else
-    version '2.3'
-    sha256 '08e7fab56d20832ea609bfb2758130279ba49722084298a952796a009b82442d'
+    version '2.4.2'
+    sha256 'b57377e10de1c8ae9ddaffa147e4cc529c3571b512bba4798b2b6054d4fabd92'
     pkg 'FTDIUSBSerial.pkg'
   end
 
