@@ -6,7 +6,7 @@ cask 'wd-my-cloud' do
   name 'WD My Cloud'
   homepage 'https://www.wdc.com/'
 
-  pkg 'Install WD My Cloud.pkg'
+  pkg 'Install WD My Cloud.pkg', allow_untrusted: true
 
   uninstall  pkgutil: 'com.wdc.wdMyCloud.*',
              delete:  '~/Desktop/WD My Cloud.app'
