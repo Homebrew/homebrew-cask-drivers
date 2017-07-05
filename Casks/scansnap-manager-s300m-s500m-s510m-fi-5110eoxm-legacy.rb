@@ -6,7 +6,10 @@ cask 'scansnap-manager-s300m-s500m-s510m-fi-5110eoxm-legacy' do
   name 'ScanSnap Manager for Fujitsu ScanSnap fi-5110EOXM, S300M, S500M, s501M'
   homepage 'https://www.fujitsu.com/global/support/products/computing/peripheral/scanners/scansnap/software/'
 
-  depends_on macos: [:tiger, :leopard]
+  depends_on macos: %i{
+                      tiger
+                      leopard
+                    }
 
   pkg 'ScanSnap_V22L11.pkg'
 
