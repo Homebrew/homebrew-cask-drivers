@@ -8,5 +8,7 @@ cask 'moveslink' do
 
   pkg 'Moveslink_setup.pkg'
 
-  uninstall pkgutil: 'com.suunto.moveslink.moveslink.pkg'
+  uninstall login_item: 'Moveslink',
+            pkgutil:    'com.suunto.moveslink.moveslink.pkg',
+            quit:       'com.yourcompany.Moveslink'
 end
