@@ -1,5 +1,5 @@
 cask 'lg-onscreencontrol' do
-  version '2.46,'
+  version '2.46'
   sha256 '943cfd2d59d56b47ae244d175eaa4344cb49e5e39a4efd812ba78939970e69e8'
   
   # http://www.lg.com/us/support-product/lg-27UD69P-W#manuals retrieved 2017-07-08
