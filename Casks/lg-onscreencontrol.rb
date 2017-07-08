@@ -1,6 +1,6 @@
 cask 'lg-onscreencontrol' do
   version '2.46'
-  sha256 '7263b8cb714cf25db16cee7310ba03a79cc28754cb18f55c30642cc745d64740'
+  sha256 '943cfd2d59d56b47ae244d175eaa4344cb49e5e39a4efd812ba78939970e69e8'
   
   lgosc_doc_id = '20150320442554'
   lgosc_file_id = 'q0YuHZx6oufr6zJ6znVLmg'
