@@ -8,6 +8,10 @@ cask 'lg-onscreencontrol' do
 
   pkg "OnScreenControl_V#{version}.pkg"
 
-  uninstall quit:    'com.LGSI.-.OnScreen-Control',
-            pkgutil: 'com.lge.onscreenControl.*'
+  uninstall login_item: 'OnScreen Control',
+            pkgutil:    [
+                          'com.lge.onscreenControl.*',
+                          'com.lge.OnscreenControl.*',
+                        ],
+            quit:       'com.LGSI.OnScreen-Control'
 end
