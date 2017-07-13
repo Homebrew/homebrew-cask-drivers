@@ -4,7 +4,7 @@ cask 'bragi-updater' do
 
   url "http://update.bragi.com/bin/Bragi%20Updater-#{version}.dmg"
   appcast 'http://update.bragi.com/',
-          checkpoint: '21eaf7775f39fcfe8ea03a60fd9032805829cb15b13a3bb9de96ae44da156e73'
+          checkpoint: '400f9e0c852450239d75eaf45445486a1e69cc4444cc8057d59167d5a5115648'
   name 'Bragi Updater'
   homepage 'http://update.bragi.com/'
 
