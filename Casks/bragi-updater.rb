@@ -1,10 +1,10 @@
 cask 'bragi-updater' do
-  version '1.1.0'
-  sha256 '305fd036fae31b765455c8dab9176f12b8f98a526d45ead0bb9edc41a2940c86'
+  version '1.1.2'
+  sha256 '7430e20897da336aba59849ce23e4815dfe24b05772106c47254e2269e7022a0'
 
   url "http://update.bragi.com/bin/Bragi%20Updater-#{version}.dmg"
   appcast 'http://update.bragi.com/',
-          checkpoint: '21eaf7775f39fcfe8ea03a60fd9032805829cb15b13a3bb9de96ae44da156e73'
+          checkpoint: '400f9e0c852450239d75eaf45445486a1e69cc4444cc8057d59167d5a5115648'
   name 'Bragi Updater'
   homepage 'http://update.bragi.com/'
 
