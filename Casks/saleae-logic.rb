@@ -8,7 +8,6 @@ cask 'saleae-logic' do
 
   app 'Logic.app'
 
-  zap delete: [
-                '~/Library/Saved Application State/com.saleae.Logic.savedState',
-              ]
+  zap delete: '~/Library/Saved Application State/com.saleae.Logic.savedState',
+      trash:  '~/Library/Preferences/Saleae'
 end
