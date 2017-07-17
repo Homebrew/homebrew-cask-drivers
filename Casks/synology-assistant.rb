@@ -6,7 +6,7 @@ cask 'synology-assistant' do
   name 'Synology Assistant'
   homepage 'https://www.synology.com/'
 
-  app 'Synology Assistant.app'
+  app 'SynologyAssistant.app'
 
   zap delete: '~/Library/Preferences/com.synology.DSAssistant.plist'
 end
