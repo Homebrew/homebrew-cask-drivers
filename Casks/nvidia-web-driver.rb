@@ -1,6 +1,6 @@
 cask 'nvidia-web-driver' do
-  version '378.05.05.15f01'
-  sha256 '358688df3a9643c7aa4baac402716c6411eeed6092359dd0ac989044c9e601f0'
+  version '378.05.05.25f01'
+  sha256 '79b831457e0ba0b7f99ee69f49f1abcd106446713bfa2ffc09e4058b4dec501d'
 
   url "http://us.download.nvidia.com/Mac/Quadro_Certified/#{version}/WebDriver-#{version}.pkg"
   name 'NVIDIA Web Driver'
