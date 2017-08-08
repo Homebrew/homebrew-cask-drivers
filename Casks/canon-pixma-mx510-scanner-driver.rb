@@ -9,5 +9,5 @@ cask 'canon-pixma-mx510-scanner-driver' do
 
   pkg "ScanGear_MX510 series_#{version.major}#{format('%02d', version.minor)}00.pkg", allow_untrusted: true
 
-  uninstall pkgutil: "jp.co.canon.mpkg.scangear.mx510series.-#{version.no_dots}",
+  uninstall pkgutil: "jp.co.canon.mpkg.scangear.mx510series.-#{version.no_dots}"
 end
