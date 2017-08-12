@@ -1,6 +1,6 @@
 cask 'silicon-labs-vcp-driver' do
-  version '4.11.1'
-  sha256 '714e8721db167741de966a6672746ed3858a1cbcdf89d4177ce1ebc86f7fa1af'
+  version '5.0'
+  sha256 'cbfbae94798e4b451aa527050308dc37035645be5e9be8cb4f07cc4ff7c936c9'
 
   url 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip'
   appcast 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver_Release_Notes.txt',
