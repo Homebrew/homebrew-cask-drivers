@@ -1,6 +1,6 @@
 cask 'garmin-virb-edit' do
-  version '5.1.1'
-  sha256 '53b108528b50ad430d704ed987e9eb7aebdaf79a561a393efe6e634a2924d4b2'
+  version '5.1.2'
+  sha256 'f0c0fc9024fd96fab0596deb0ec3085d2a0e0d1e074eaf2835852181e41bb2c0'
 
   url "http://download.garmin.com/software/VIRBEditforMac_#{version.no_dots}.dmg"
   name 'Garmin VIRB Edit'
