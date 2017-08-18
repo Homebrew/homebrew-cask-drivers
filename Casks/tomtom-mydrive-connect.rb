@@ -9,7 +9,6 @@ cask 'tomtom-mydrive-connect' do
   pkg 'MyDriveConnect.mpkg'
 
   uninstall pkgutil:    [
-                          'com.tomtom.TomTomMyDriveConnectHelper',
                           'com.tomtom.mytomtomsa.temp.pkg',
                           'com.tomtom.mytomtomsa.pkg',
                         ],
