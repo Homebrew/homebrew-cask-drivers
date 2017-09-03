@@ -4,10 +4,14 @@ cask 'wch-ch34x-usb-serial-driver' do
 
   url 'http://www.wch.cn/downfile/178'
   name 'WCH USB serial driver for CH340/CH341'
-  homepage 'http://http://www.wch.cn/'
+  homepage 'http://www.wch.cn/download/CH341SER_MAC_ZIP.html'
 
   pkg "CH341SER_MAC/CH34x_Install_V#{version}.pkg"
 
-  uninstall pkgutil: 'com.wch.usbserial.pkg',
+  uninstall pkgutil: 'com.wch.ch34xinstall.mykextdir.pkg',
             kext:    'com.wch.usbserial'
+
+  caveats do
+    reboot
+  end
 end
