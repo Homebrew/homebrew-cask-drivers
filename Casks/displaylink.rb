@@ -1,10 +1,16 @@
 cask 'displaylink' do
-  if MacOS.version <= :lion
-    version '2.2,121'
-    sha256 '5c9a97a476b5ff27811491eebb653a03c96f899562b67566c24100d8593b1daa'
-  else
+  if MacOS.version >= :elcapitan
+    version '4.0.0-Beta,1020'
+    sha256 '63550f3357ec3696f847437aa4d34314674903657e2329e0520aa082ceaf5468'
+  elsif MacOS.version == :yosemite
     version '3.1,776'
     sha256 'ac7e64fc020650842b7f4c13bbfb44f513dfd7e5b934174b4339f1440e887e85'
+  elsif MacOS.version >= :mountainlion
+    version '2.6,707'
+    sha256 '5b1c7c5ba941a62a230316df13cdbe9be7559754e808d3480a6197c1a11a779a'
+  else
+    version '2.2,121'
+    sha256 '5c9a97a476b5ff27811491eebb653a03c96f899562b67566c24100d8593b1daa'
   end
 
   url "http://www.displaylink.com/downloads/file?id=#{version.after_comma}",
