@@ -9,6 +9,7 @@ cask 'bose-soundtouch' do
   name 'Bose Soundtouch Controller App'
   homepage 'https://www.soundtouch.com/'
 
+  auto_updates true
   depends_on macos: '>= :mavericks'
 
   installer script: {
