@@ -16,6 +16,6 @@ cask 'mazda-toolbox' do
               ],
       trash:  [
                 '~/Library/Application Support/Mazda Toolbox',
-                '~/Library/Preferences/com.mazda.toolbox.plist', 
+                '~/Library/Preferences/com.mazda.toolbox.plist',
               ]
 end
