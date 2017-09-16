@@ -7,7 +7,7 @@ cask 'logitech-options' do
   homepage 'https://support.logitech.com/en_us/software/options'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
+  depends_on macos: '>= :el_capitan'
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
