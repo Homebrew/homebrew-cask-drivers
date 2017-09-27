@@ -1,6 +1,6 @@
 cask 'displaylink' do
-  version '3.1,776'
-  sha256 'ac7e64fc020650842b7f4c13bbfb44f513dfd7e5b934174b4339f1440e887e85'
+  version '4.0,1033'
+  sha256 'd80a428b1aa62d8b1c31362dd848c588016c80cf53fd3b735c5a538ed5e89a73'
 
   url "http://www.displaylink.com/downloads/file?id=#{version.after_comma}",
       data:  {
