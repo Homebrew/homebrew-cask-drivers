@@ -1,8 +1,9 @@
 cask 'pl2303' do
-  version '1.6.1_20160309'
-  sha256 '14868e4a3c38904760d3445c37bbb5ca2f1024498547645147abbabfcb52eb87'
+  version '1.6.1_20170620'
+  sha256 '75ae5fa00c3862cfe7228a16dde06fb234a1e0b588bf7c4e29edde591a595a68'
 
-  url "http://prolificusa.com/files/PL2303_MacOSX_#{version}.zip"
+  # prolific.com.tw was verified as official when first introduced to the cask
+  url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.dots_to_underscores}.zip"
   name 'Prolific USB-Serial Cable driver'
   homepage 'http://prolificusa.com/'
 
