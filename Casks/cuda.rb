@@ -6,6 +6,8 @@ cask 'cuda' do
   name 'Nvidia CUDA'
   homepage 'https://developer.nvidia.com/cuda-zone'
 
+  depends_on macos: '>= :sierra'
+
   installer script: {
                       executable: 'CUDAMacOSXInstaller.app/Contents/MacOS/CUDAMacOSXInstaller',
                       args:       ['--accept-eula', '--silent'],
