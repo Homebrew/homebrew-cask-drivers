@@ -3,7 +3,7 @@ cask 'netgear-switch-discovery-tool' do
   sha256 'e2988b8ebb58e8953885a46c4f9e94ba6ebebfc34b93cc902fbc44540d798bf8'
 
   url "https://www.downloads.netgear.com/files/GDC/NetgearSDT-V#{version}.zip"
-  name 'netgear-switch-discovery-tool'
+  name 'NETGEAR Switch Discovery Tool'
   homepage 'https://www.netgear.com/support/download/'
 
   container nested: "NetgearSDT-V#{version}/NetgearSDT-V#{version}.dmg"
