@@ -10,5 +10,5 @@ cask 'yubico-authenticator' do
 
   pkg "yubioath-desktop-#{version}-mac.pkg"
 
-  uninstall pkgutil: 'com.yubico.pkg.YubicoAuthenticator'
+  uninstall pkgutil: 'com.yubico.yubioath'
 end
