@@ -1,30 +1,31 @@
 cask 'razer-synapse' do
-  version '1.78'
-  sha256 '10e8ade53bafb392c0a5848d8948d7643c9501877870f2b920b85ebf0eac4adf'
+  version '1.79'
+  sha256 '706be1158e398485de73ed61086518c27e74e5645dd85ef3ace6cc1bf5caec3e'
 
-  url "http://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version}.dmg"
+  url "https://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version}.dmg"
   name 'Razer Synapse'
   homepage 'https://www.razerzone.com/synapse/'
 
-  depends_on macos: '>= :lion'
+  depends_on macos: '>= :mavericks'
 
   pkg 'Razer Synapse.pkg'
 
-  uninstall script:    '/Applications/Utilities/Uninstall Razer Synapse.app/Contents/MacOS/Uninstall Razer Synapse',
+  uninstall delete:    '/Applications/Razer Synapse.app',
+            launchctl: [
+                         'com.razer.rzupdater',
+                         'com.razerzone.rzdeviceengine',
+                       ],
             pkgutil:   'com.razerzone.*',
             quit:      [
                          'com.razerzone.RzUpdater',
                          'com.razerzone.rzdeviceengine',
-                       ],
-            launchctl: [
-                         'com.razer.rzupdater',
-                         'com.razerzone.rzdeviceengine',
                        ]
 
-  zap delete: [
-                '~/Library/Preferenecs/com.razer.*',
-                '~/Library/Preferenecs/com.razerzone.*',
-              ]
+  zap trash: [
+               '/Library/Application Support/Razer',
+               '~/Library/Preferences/com.razer.*',
+               '~/Library/Preferences/com.razerzone.*',
+             ]
 
   caveats do
     reboot
