@@ -20,7 +20,11 @@ cask 'bassjump' do
 
   depends_on macos: '>= :mavericks'
 
-  pkg 'BassJumpInstaller.pkg'
+  if MacOS.version <= :el_capitan
+    pkg 'BassJumpInstaller.pkg'
+  else
+    pkg 'BassJump Installer.pkg'
+  end
 
   uninstall pkgutil:    [
                           'com.twelvesouth.bassjump.installer.halplugin',
