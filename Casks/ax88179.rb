@@ -1,10 +1,10 @@
 cask 'ax88179' do
-  version '2.9.0_20170426'
-  sha256 'c172aebb8d44c9d0edee3d06af74687a2da57042b9ddd4f2f604af5db4149882'
+  version '2.9.0_20171011'
+  sha256 '392d3db3c6e099c3a7dc349eaac88ffb1020e4514d2f860b24afcd3a5f32de03'
 
   module Utils
     def self.basename(version)
-      "AX88179_178A_Macintosh_10.6_to_10.12_Driver_Installer_v#{version}"
+      "AX88179_178A_Macintosh_Driver_Installer_v#{version}"
     end
   end
 
