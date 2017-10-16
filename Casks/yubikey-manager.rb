@@ -6,7 +6,7 @@ cask 'yubikey-manager' do
   appcast 'https://developers.yubico.com/yubikey-manager-qt/Release_Notes.html',
           checkpoint: '049557d1ee8dad39dbe2a2a50605219d261dedf0d54c96099c73c1643cea2a9f'
   name 'Yubikey Manager'
-  homepage 'https://developers.yubico.com/yubikey-manager/'
+  homepage 'https://developers.yubico.com/yubikey-manager-qt/'
 
   pkg "yubikey-manager-qt-#{version}-mac.pkg"
 
