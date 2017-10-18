@@ -20,7 +20,7 @@ cask 'ftdi-vcp-driver' do
   caveats do
     reboot
 
-    <<-EOS.undent
+    <<~EOS
       If you don't want to reboot, you can load the driver using the following
       command:
 
