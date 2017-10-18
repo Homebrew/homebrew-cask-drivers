@@ -8,7 +8,5 @@ cask 'samsungprinterdrivers' do
 
   pkg 'SamsungPrinterDrivers.pkg'
 
-  uninstall pkgutil: [
-                       'com.apple.pkg.SamsungPrinterDrivers',
-                     ]
+  uninstall pkgutil: 'com.apple.pkg.SamsungPrinterDrivers'
 end
