@@ -1,4 +1,4 @@
-cask 'shearwater-desktop' do
+cask 'shearwater' do
   version '3.1.4'
   sha256 'd0b3ced1782503f0776f6f78611ce81fc77cba61c92aafa3026cfc5239316a7a'
 
@@ -11,5 +11,5 @@ cask 'shearwater-desktop' do
 
   app 'Shearwater Research/Shearwater Desktop.app'
 
-  zap delete: '~/Library/Preferences/com.shearwaterresearch.divebook'
+  zap trash: '~/Library/Preferences/com.shearwaterresearch.divebook'
 end
