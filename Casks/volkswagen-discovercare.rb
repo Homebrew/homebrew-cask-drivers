@@ -1,4 +1,4 @@
-cask 'discovercare' do
+cask 'volkswagen-discovercare' do
   version '1.0.4'
 
   language 'en', default: true do
