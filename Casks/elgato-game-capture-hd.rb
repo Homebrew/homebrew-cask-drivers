@@ -1,4 +1,4 @@
-cask 'game-capture-hd' do
+cask 'elgato-game-capture-hd' do
   if MacOS.version <= '10.10'
     version '2.0.5_983'
     sha256 '4803bcac9069e1e63a89e9053fdf2285487acf9e608e84f7610555075489ad5a'
