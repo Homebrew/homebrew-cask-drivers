@@ -1,4 +1,4 @@
-cask 'nrf5x-command-line-tools' do
+cask 'nordic-nrf5x-command-line-tools' do
   version '53406.17.93573317'
   sha256 '19c918e8fa44964d570721b204bf460451eabbc90030ccdc5f1eeb6513a0ace1'
 
