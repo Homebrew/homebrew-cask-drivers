@@ -1,4 +1,4 @@
-cask 'scansnap-manager-ix100' do
+cask 'fujitsu-scansnap-manager-ix100' do
   version '6.3L50'
   sha256 '7d05a68eea763f8c25ee14db715a665a9bf2a8becd4c03b5541095a4bc218e9a'
 
