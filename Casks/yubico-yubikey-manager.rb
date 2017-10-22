@@ -1,4 +1,4 @@
-cask 'yubikey-manager' do
+cask 'yubico-yubikey-manager' do
   version '0.3.1'
   sha256 '55190b911e44a106b5b6f288a0ccdbd853d82e1c47ef0efd1029ef8dd24b5630'
 
