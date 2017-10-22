@@ -1,4 +1,4 @@
-cask 'unifi-controller' do
+cask 'ubiquiti-unifi-controller' do
   version '5.5.24'
   sha256 'dfa72d9ac7eac57be622b539dca3ba958c5c9a2e496aab5226725f00771f6faf'
 
