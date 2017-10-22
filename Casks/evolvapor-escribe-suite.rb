@@ -1,4 +1,4 @@
-cask 'escribe-suite' do
+cask 'evolvapor-escribe-suite' do
   version '2_SP7'
   sha256 '1092ae3da0927b560e9c543616bbfd1ca265d86b7b0f6d6c651b6e56de601de3'
 
