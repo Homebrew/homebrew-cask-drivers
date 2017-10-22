@@ -1,4 +1,4 @@
-cask 'ax88179' do
+cask 'asix-ax88179' do
   version '2.9.0_20171011'
   sha256 '392d3db3c6e099c3a7dc349eaac88ffb1020e4514d2f860b24afcd3a5f32de03'
 
