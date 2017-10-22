@@ -1,4 +1,4 @@
-cask 'dn-3023-driver' do
+cask 'digitus-dn-3023-driver' do
   version '2.8.0-20160912,20161024'
   sha256 '91dc9e76f4808d515c6c764be1d03dddf820b4050eba83a1e1d139541f5bf027'
 

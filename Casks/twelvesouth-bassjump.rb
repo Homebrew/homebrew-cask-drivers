@@ -1,4 +1,4 @@
-cask 'bassjump' do
+cask 'twelvesouth-bassjump' do
   if MacOS.version <= :mavericks
     version '2.5.1'
     sha256 '14408480cded51f6334753639e973ebbf2fc40f34ff64e1c35d2f32507d88afd'
