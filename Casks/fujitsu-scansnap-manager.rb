@@ -1,4 +1,4 @@
-cask 'scansnap-manager' do
+cask 'fujitsu-scansnap-manager' do
   version '6.3L50'
   sha256 'ea694ec0746cc0269790ec8cbe76f96e514fccc48f83501613f853c6352ecfee'
 

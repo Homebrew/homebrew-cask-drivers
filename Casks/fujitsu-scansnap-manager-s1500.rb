@@ -1,4 +1,4 @@
-cask 'scansnap-manager-s1500' do
+cask 'fujitsu-scansnap-manager-s1500' do
   version :latest
   sha256 :no_check
 

@@ -1,4 +1,4 @@
-cask 'scansnap-manager-ix500' do
+cask 'fujitsu-scansnap-manager-ix500' do
   version :latest
   sha256 :no_check
 
