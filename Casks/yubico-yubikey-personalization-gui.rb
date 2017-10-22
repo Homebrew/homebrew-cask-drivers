@@ -1,4 +1,4 @@
-cask 'yubikey-personalization-gui' do
+cask 'yubico-yubikey-personalization-gui' do
   version '3.1.24'
   sha256 'bb13aeb006ca40fc1b16360250daa9ee08f85248cce7d4f21335f2ce6a7a3248'
 
