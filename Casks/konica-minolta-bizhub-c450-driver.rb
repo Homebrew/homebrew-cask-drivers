@@ -6,7 +6,7 @@ cask 'konica-minolta-bizhub-c450-driver' do
   name 'Konica Minolta Bizhub C450 Driver'
   homepage 'https://www.biz.konicaminolta.com/download/'
 
-  pkg 'KONICAMINOLTA_C450_109.pkg'
+  pkg 'KONICAMINOLTA_C450_109.pkg', allow_untrusted: true
 
   uninstall pkgutil: 'jp.konicaminolta.print.package.C450'
 end
