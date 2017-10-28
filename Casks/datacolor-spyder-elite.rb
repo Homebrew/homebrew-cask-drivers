@@ -14,5 +14,5 @@ cask 'datacolor-spyder-elite' do
 
   uninstall delete: "/Applications/Datacolor/Spyder#{version.major}Elite",
             signal: ['TERM', "com.datacolor.spyder#{version.major}utility"],
-            rmdir:  '/Applications/Datacolor/'
+            rmdir:  '/Applications/Datacolor'
 end
