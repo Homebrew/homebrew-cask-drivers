@@ -10,8 +10,8 @@ cask 'xfer-op-1-drum-utility' do
   audio_unit_plugin 'Op1DrumUtil.component'
   vst_plugin 'Op1DrumUtil.vst'
 
-  vst = "#{staged_path}/OP1DrumUtilityOSX_#{version.no_dots}/OP-1 Drum Utility.app/Contents/Resources/Op1DrumUtil.vst"
   preflight do
+    vst = "#{staged_path}/OP1DrumUtilityOSX_#{version.no_dots}/OP-1 Drum Utility.app/Contents/Resources/Op1DrumUtil.vst"
     FileUtils.cp_r(vst, staged_path)
     FileUtils.cp_r(vst, "#{staged_path}/Op1DrumUtil.component")
   end
