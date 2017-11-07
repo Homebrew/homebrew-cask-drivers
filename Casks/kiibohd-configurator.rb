@@ -4,7 +4,9 @@ cask 'kiibohd-configurator' do
 
   # github.com/kiibohd/configurator was verified as official when first introduced to the cask
   url "https://github.com/kiibohd/configurator/releases/download/v#{version}/kiibohd-configurator-#{version}-mac.dmg"
-  name 'The Kiibohd Configurator'
+  appcast 'https://github.com/kiibohd/configurator/releases.atom',
+          checkpoint: 'e61c1c20e0447c983b548ae6939666608fb5c0ecade0ce2179186e580054f731'
+  name 'Kiibohd Configurator'
   homepage 'http://kiibohd.com/'
 
   depends_on formula: 'dfu-util'
