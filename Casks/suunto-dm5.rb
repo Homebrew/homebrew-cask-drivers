@@ -7,7 +7,6 @@ cask 'suunto-dm5' do
   homepage 'http://dm5.movescount.com/'
 
   depends_on cask: 'mono-mdk'
-  depends_on macos: '>= 10.7'
 
   app 'SuuntoDM5.app'
 end
