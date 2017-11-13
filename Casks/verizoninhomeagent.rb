@@ -21,13 +21,13 @@ cask 'verizoninhomeagent' do
                       '~/Desktop/VerizonInHomeAgent.app',
                     ]
 
-  zap delete: [
-                '~/Library/Caches/VDSI.VerizonUpdateCenter',
-                '~/Library/Caches/com.Verizon.IHA',
-                '~/Library/Caches/com.Verizon.VZIHAMacInstaller',
-                '~/Library/Caches/com.Verizon.Verizon-IHAUpdater',
-                '~/Library/Preferences/com.Verizon.IHA.plist',
-                '~/Library/Saved Application State/com.Verizon.IHA.savedState',
-                '~/Library/Saved Application State/com.Verizon.VZIHAMacInstaller.savedState',
-              ]
+  zap trash: [
+               '~/Library/Caches/VDSI.VerizonUpdateCenter',
+               '~/Library/Caches/com.Verizon.IHA',
+               '~/Library/Caches/com.Verizon.VZIHAMacInstaller',
+               '~/Library/Caches/com.Verizon.Verizon-IHAUpdater',
+               '~/Library/Preferences/com.Verizon.IHA.plist',
+               '~/Library/Saved Application State/com.Verizon.IHA.savedState',
+               '~/Library/Saved Application State/com.Verizon.VZIHAMacInstaller.savedState',
+             ]
 end

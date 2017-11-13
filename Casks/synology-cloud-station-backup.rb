@@ -11,5 +11,5 @@ cask 'synology-cloud-station-backup' do
   uninstall pkgutil:   'com.synology.CloudStationBackup',
             launchctl: 'com.synology.Synology Cloud Station Backup'
 
-  zap delete: '~/Library/Preferences/com.synology.CloudStationBackupUI.plist'
+  zap trash: '~/Library/Preferences/com.synology.CloudStationBackupUI.plist'
 end

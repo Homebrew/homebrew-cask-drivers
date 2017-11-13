@@ -8,5 +8,5 @@ cask 'synologyassistant' do
 
   app 'SynologyAssistant.app'
 
-  zap delete: '~/Library/Preferences/com.synology.DSAssistant.plist'
+  zap trash: '~/Library/Preferences/com.synology.DSAssistant.plist'
 end

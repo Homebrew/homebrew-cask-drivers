@@ -25,5 +25,5 @@ cask 'nvidia-cuda' do
             kext:      'com.nvidia.CUDA',
             delete:    '/Library/PreferencePanes/CUDA Preferences.prefPane'
 
-  zap delete: '/Library/Frameworks/CUDA.framework'
+  zap trash: '/Library/Frameworks/CUDA.framework'
 end

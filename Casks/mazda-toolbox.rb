@@ -8,14 +8,12 @@ cask 'mazda-toolbox' do
 
   app 'Mazda Toolbox.app'
 
-  zap delete: [
-                '~/Library/Caches/com.mazda.toolbox',
-                '~/Library/Caches/Mazda Toolbox',
-                '~/Library/Logs/Mazda Toolbox',
-                '~/Library/Saved Application State/com.mazda.toolbox.savedState',
-              ],
-      trash:  [
-                '~/Library/Application Support/Mazda Toolbox',
-                '~/Library/Preferences/com.mazda.toolbox.plist',
-              ]
+  zap trash: [
+               '~/Library/Caches/com.mazda.toolbox',
+               '~/Library/Caches/Mazda Toolbox',
+               '~/Library/Logs/Mazda Toolbox',
+               '~/Library/Saved Application State/com.mazda.toolbox.savedState',
+               '~/Library/Application Support/Mazda Toolbox',
+               '~/Library/Preferences/com.mazda.toolbox.plist',
+             ]
 end
