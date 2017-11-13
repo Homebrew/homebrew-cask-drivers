@@ -24,7 +24,7 @@ cask 'wacom-graphire2-tablet' do
             pkgutil:   'com.wacom.installwacomtablet'
 
   zap delete: [
-                '~/Library//Preferences/com.wacom.wacomtablet.prefs',
-                '~/Library//Preferences/com.wacom.wacomtouch.prefs',
+                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
+                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
               ]
 end
