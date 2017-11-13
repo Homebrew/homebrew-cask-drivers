@@ -26,7 +26,7 @@ cask 'wacom-intuos3-tablet' do
             delete:    '/Applications/Wacom Tablet.localized'
 
   zap delete: [
-                '~/Library//Preferences/com.wacom.wacomtablet.prefs',
-                '~/Library//Preferences/com.wacom.wacomtouch.prefs',
+                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
+                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
               ]
 end
