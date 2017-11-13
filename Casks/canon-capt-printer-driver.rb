@@ -1,11 +1,11 @@
 cask 'canon-capt-printer-driver' do
-  version '3.90'
-  sha256 '75341c120a4cee3635780d875ee209afe6d175153596f36a176980870d6ca57e'
+  version '3.93'
+  sha256 '6ab22eb02be80fd6182460dfcacc024cc2c02e2fc2696c3f0701309076d8979f'
 
   # gdlp01.c-wss.com was verified as official when first introduced to the cask
-  url "http://gdlp01.c-wss.com/gds/7/0100004207/14/Mac_CAPT_V#{version.no_dots}_uk_EN.dmg"
+  url "http://gdlp01.c-wss.com/gds/2/0100008662/02/Mac_CAPT_V#{version.no_dots}_uk_EN.dmg"
   name 'Canon CAPT Printer Driver'
-  homepage 'http://support-asia.canon-asia.com/contents/ASIA/EN/0100420720.html'
+  homepage 'http://support-asia.canon-asia.com/contents/ASIA/EN/0100866220.html'
 
   pkg 'MacOSX/Canon_CAPT_Installer.pkg'
 
