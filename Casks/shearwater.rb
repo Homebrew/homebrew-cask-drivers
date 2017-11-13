@@ -7,7 +7,6 @@ cask 'shearwater' do
   homepage 'https://www.shearwater.com/'
 
   depends_on cask: 'adobe-air'
-  depends_on macos: '>= 10.6'
 
   app 'Shearwater Research/Shearwater Desktop.app'
 
