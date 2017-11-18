@@ -25,11 +25,11 @@ cask 'wacom-intuos-tablet' do
             pkgutil:   'com.wacom.TabletInstaller',
             delete:    '/Applications/Wacom Tablet.localized'
 
-  zap delete: [
-                '~/Library/Preferences/com.wacom.wacomtablet.plist',
-                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
-                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
-                '~/Library/Preferences/com.wacom.RemoveWacomTablet.plist',
-                '~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist',
-              ]
+  zap trash: [
+               '~/Library/Preferences/com.wacom.wacomtablet.plist',
+               '~/Library/Preferences/com.wacom.wacomtablet.prefs',
+               '~/Library/Preferences/com.wacom.wacomtouch.prefs',
+               '~/Library/Preferences/com.wacom.RemoveWacomTablet.plist',
+               '~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist',
+             ]
 end

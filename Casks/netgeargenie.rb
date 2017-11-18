@@ -11,9 +11,9 @@ cask 'netgeargenie' do
   uninstall quit:    'com.yourcompany.NETGEARGenie',
             pkgutil: 'com.netgear.netgearGenie.NETGEARGenie.pkg'
 
-  zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.yourcompany.netgeargenie.sfl*',
-                '~/Library/Application Support/NETGEARGenie',
-                '~/Library/Saved Application State/com.yourcompany.NETGEARGenie.savedState',
-              ]
+  zap trash: [
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.yourcompany.netgeargenie.sfl*',
+               '~/Library/Application Support/NETGEARGenie',
+               '~/Library/Saved Application State/com.yourcompany.NETGEARGenie.savedState',
+             ]
 end

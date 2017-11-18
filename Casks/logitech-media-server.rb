@@ -11,5 +11,5 @@ cask 'logitech-media-server' do
 
   uninstall pkgutil: 'com.logitech.music.Squeezebox'
 
-  zap delete: '~/Library/Preferences/com.slimdevices.slim.plist'
+  zap trash: '~/Library/Preferences/com.slimdevices.slim.plist'
 end

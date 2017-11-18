@@ -9,9 +9,9 @@ cask 'navdy' do
 
   app 'Navdy.app'
 
-  zap delete: '~/Library/Saved Application State/com.navdy.application.desktop.savedState',
-      trash:  [
-                '~/Library/Application Support/Navdy',
-                '~/Library/Preferences/com.navdy.application.desktop.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Navdy',
+               '~/Library/Preferences/com.navdy.application.desktop.plist',
+               '~/Library/Saved Application State/com.navdy.application.desktop.savedState',
+             ]
 end

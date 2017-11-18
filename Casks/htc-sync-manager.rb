@@ -8,12 +8,12 @@ cask 'htc-sync-manager' do
 
   app 'HTC Sync Manager.app'
 
-  zap delete: [
-                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.htc.htc-sync-manager.sfl*',
-                '~/Library/Application Support/HTC Sync Manager',
-                '~/Library/Application Support/HTC_DeviceImage',
-                '~/Library/Application Support/HTC_FOTA',
-                '~/Library/Caches/com.htc.HTC-Sync-Manager',
-                '~/Library/Preferences/com.htc.HTC-Sync-Manager.plist',
-              ]
+  zap trash: [
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.htc.htc-sync-manager.sfl*',
+               '~/Library/Application Support/HTC Sync Manager',
+               '~/Library/Application Support/HTC_DeviceImage',
+               '~/Library/Application Support/HTC_FOTA',
+               '~/Library/Caches/com.htc.HTC-Sync-Manager',
+               '~/Library/Preferences/com.htc.HTC-Sync-Manager.plist',
+             ]
 end

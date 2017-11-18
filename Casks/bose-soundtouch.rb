@@ -25,10 +25,10 @@ cask 'bose-soundtouch' do
                     },
             quit:   'com.Bose.SoundTouch'
 
-  zap delete: [
-                '~/Library/Application Support/SoundTouch',
-                '~/Library/Caches/SoundTouch',
-                '~/Library/Saved Application State/com.Bose.SoundTouch application.savedState',
-                '~/Library/Saved Application State/com.Bose.SoundTouch.savedState',
-              ]
+  zap trash: [
+               '~/Library/Application Support/SoundTouch',
+               '~/Library/Caches/SoundTouch',
+               '~/Library/Saved Application State/com.Bose.SoundTouch application.savedState',
+               '~/Library/Saved Application State/com.Bose.SoundTouch.savedState',
+             ]
 end
