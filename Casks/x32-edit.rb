@@ -8,5 +8,4 @@ cask 'x32-edit' do
   homepage 'http://www.music-group.com/Categories/Behringer/Mixers/Digital-Mixers/X32/p/P0ASF'
 
   app 'X32-Edit.app'
-  
 end
