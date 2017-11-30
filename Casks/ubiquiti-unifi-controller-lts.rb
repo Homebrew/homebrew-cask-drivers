@@ -6,7 +6,7 @@ cask 'ubiquiti-unifi-controller-lts' do
   name 'UniFi Controller - LTS version'
   homepage 'https://www.ubnt.com/download/unifi/'
 
-  conflicts_with cask: 'unifi-controller'
+  conflicts_with cask: 'ubiquiti-unifi-controller'
 
   pkg 'UniFi.pkg'
 
