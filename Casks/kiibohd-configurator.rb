@@ -1,11 +1,11 @@
 cask 'kiibohd-configurator' do
-  version '0.3.1'
-  sha256 '2e529b465f99553cad8a79d8fa158cf2ba72fb3b0efea53e007a3d91e888bfe2'
+  version '0.4.0'
+  sha256 '7050368870895dd8afef53ad16ed721cf4cb8567475c7dede9cf3953a77ce595'
 
   # github.com/kiibohd/configurator was verified as official when first introduced to the cask
   url "https://github.com/kiibohd/configurator/releases/download/v#{version}/kiibohd-configurator-#{version}-mac.dmg"
   appcast 'https://github.com/kiibohd/configurator/releases.atom',
-          checkpoint: 'aff44721d184c9878c4007abd60bb2a4a00f5048bc27dbf923385bcf5051303e'
+          checkpoint: '1db3516d2ce2b3935d26ecf289cccf90ebf87b27dbe2a65bd4a8227999636049'
   name 'Kiibohd Configurator'
   homepage 'http://kiibohd.com/'
 
