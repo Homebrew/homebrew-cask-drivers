@@ -1,6 +1,6 @@
 cask 'ubiquiti-unifi-controller' do
-  version '5.6.22'
-  sha256 '0481ec530f9bc1b51ea940bd3c89e57e12b84d2ab3c7c6376141337118b08729'
+  version '5.6.26'
+  sha256 'fab2a2b6c53dd90bd2aeb7a73b72ca60ff08f4fd12c031bbcfd5da995c0bec6b'
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   name 'UniFi Controller'
