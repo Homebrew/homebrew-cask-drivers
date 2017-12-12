@@ -1,6 +1,6 @@
 cask 'asix-ax88179' do
-  version '2.9.0_20171011'
-  sha256 '392d3db3c6e099c3a7dc349eaac88ffb1020e4514d2f860b24afcd3a5f32de03'
+  version '2.9.0_20171130'
+  sha256 'f625948935cdb80f3bdc6fbe56a99a77525bd62178104b4c8508d27cb5b8b8ef'
 
   module Utils
     def self.basename(version)
