@@ -8,7 +8,10 @@ cask 'prolific-pl2303' do
 
   pkg "PL2303_MacOSX_#{version}.pkg"
 
-  uninstall pkgutil: "com.prolific.prolificUsbserialCableDriverV#{version.dots_to_underscores}.ProlificUsbSerial.pkg",
+  uninstall pkgutil: [
+                       'com.Susteen.driver.PL2303',
+                       'com.prolific.driver.PL2303',
+                     ],
             kext:    'com.prolific.driver.PL2303',
             delete:  [
                        '/Library/Extensions/ProlificUsbSerial.kext',
