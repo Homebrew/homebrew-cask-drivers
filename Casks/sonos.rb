@@ -4,7 +4,7 @@ cask 'sonos' do
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.no_dots}.dmg"
   name 'Sonos'
-  homepage 'http://www.sonos.com/'
+  homepage 'https://www.sonos.com/'
 
   auto_updates true
 
