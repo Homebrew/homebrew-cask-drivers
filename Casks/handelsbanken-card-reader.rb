@@ -8,5 +8,5 @@ cask 'handelsbanken-card-reader' do
 
   pkg 'shb_elcapitan.pkg'
 
-  uninstall pkgutil: 'com.gemalto.handelsbanken1007.shbecr.pkg'
+  uninstall pkgutil: "com.gemalto.handelsbanken#{version.no_dots}.shbecr.pkg"
 end
