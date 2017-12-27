@@ -1,10 +1,10 @@
 cask 'yubico-authenticator' do
-  version '4.2.0'
-  sha256 'de60bc4de3f3f4f602c242151a31cf0143ed63e6ac84b09568c080f690c4e57a'
+  version '4.3.2'
+  sha256 'eed093a95da0bdd798339bf77b7266b6185b7bd6837c87174a415336046b4144'
 
   url "https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-#{version}-mac.pkg"
   appcast 'https://developers.yubico.com/yubioath-desktop/Release_Notes.html',
-          checkpoint: '248605a9112294cb7d6b2a8e16916cd05c1bc59457fd12016968ca2236c08f3c'
+          checkpoint: '1cc4f3e82dd97f98cd2378b99b3f01ba88cf100ca2b267abddd8309594c5215b'
   name 'Yubico Authenticator'
   homepage 'https://developers.yubico.com/yubioath-desktop/'
 
