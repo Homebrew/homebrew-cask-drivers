@@ -4,7 +4,7 @@ cask 'keyspan-usa-19hs' do
 
   url "https://assets.tripplite.com/drivers/usa-19hs-driver-v#{version}-mac-os-x-10.9-10.11.zip"
   name 'Keyspan USA-19HS High-Speed USB-to-Serial Adapter Driver'
-  homepage 'http://www.tripplite.com/keyspan-high-speed-usb-to-serial-adapter~USA19HS/'
+  homepage 'https://www.tripplite.com/keyspan-high-speed-usb-to-serial-adapter~USA19HS/'
 
   depends_on macos: '>= :mavericks'
 
