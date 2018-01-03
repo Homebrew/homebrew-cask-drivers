@@ -6,5 +6,5 @@ cask 'wdfirmwareupdater' do
   name 'WDFirmwareUpdater'
   homepage 'https://www.wdc.com/'
 
-  app 'WDFirmwareUpdater.app'
+  app 'WD Firmware Updater.app'
 end
