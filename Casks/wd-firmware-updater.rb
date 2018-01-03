@@ -1,4 +1,4 @@
-cask 'wdfirmwareupdater' do
+cask 'wd-firmware-updater' do
   version :latest
   sha256 :no_check
 
@@ -6,5 +6,5 @@ cask 'wdfirmwareupdater' do
   name 'WDFirmwareUpdater'
   homepage 'https://www.wdc.com/'
 
-  app 'WDFirmwareUpdater.app'
+  app 'WD Firmware Updater.app'
 end
