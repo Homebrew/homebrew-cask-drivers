@@ -14,11 +14,10 @@ cask 'segger-jlink' do
 
   uninstall pkgutil: 'com.segger.pkg.JLink'
 
-  # The license text is only available when you HTTP GET the download URL
   caveats <<~EOS
     Installing this Cask means you have AGREED to the
     Segger Downloads License agreement available at
 
-    https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}.pkg
+      #{url}
   EOS
 end
