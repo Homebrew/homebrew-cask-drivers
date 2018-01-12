@@ -1,6 +1,6 @@
 cask 'drobo-dashboard' do
-  version '3.1.4_94689'
-  sha256 'b6e7df70372c6d3b63d7f92f5c97f4cd6d9b6219485a540ac0db53a0d30ea515'
+  version '3.1.5_96773'
+  sha256 'e128985988c12a163846a0d010f5c0e08f00c20d744576de25344a2426868a54'
 
   url "http://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.sub(%r{_.*}, '')}.dmg"
   name 'Drobo Dashboard'
