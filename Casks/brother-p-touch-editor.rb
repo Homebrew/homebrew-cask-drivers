@@ -8,6 +8,10 @@ cask 'brother-p-touch-editor' do
 
   pkg "BrotherPtEdit#{version.major}.pkg"
 
+  postflight do
+    File.unlink(File.expand_path('~/Desktop/P-touch Editor.app'))
+  end
+
   uninstall pkgutil: [
                        "com.brother.P-touchEditor#{version.major}.pkg",
                        'com.brother.brotherptdriver.BrotherFonts_Common.pkg',
