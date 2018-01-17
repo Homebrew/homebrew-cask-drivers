@@ -1,6 +1,6 @@
 cask 'steelseries-engine' do
-  version '3.11.10'
-  sha256 'ff10ccd02c2b02c144812461c8a118e6a160340ca2ef02e1f3aa83da9a490d34'
+  version '3.11.11'
+  sha256 'a77c3391cd2a6d2ebf275cb826934b5a7402d96ff2f3baa3dde32225215a7dac'
 
   # steelseriescdn.com was verified as official when first introduced to the cask
   url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg"
