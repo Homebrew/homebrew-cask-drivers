@@ -7,7 +7,7 @@ cask 'geniatech-eyetv' do
   appcast "https://www.geniatech.eu/support/eyetv-#{version.major}-en/",
           checkpoint: 'fabbe1829eeb737fea77832a0327b0fdb854ec768791db344610dee5a2298dda'
   name 'EyeTV'
-  homepage 'https://www.geniatech.eu/product/eyetv-#{version.major}/'
+  homepage "https://www.geniatech.eu/product/eyetv-#{version.major}/"
 
   app 'EyeTV.app'
 end
