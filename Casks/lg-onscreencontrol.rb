@@ -1,8 +1,8 @@
 cask 'lg-onscreencontrol' do
-  version '2.55'
-  sha256 '07706253f8279557f3f7d8a13392bf5f565b257445a6353936826bd246f1925d'
+  version '2.82'
+  sha256 '2cc18bea2b9380f508ea4032adbdff3848bd4c2759fe37c1dd15c9080d2ba63b'
 
-  url "https://www.lg.com/us/lgecs.downloadFile.ldwf?DOC_ID=20150320442554&what=MANUAL&fromSystem=LG.COM&fileId=x73htvfcBHcxPZb8AT82ug&ORIGINAL_NAME_b1_a1=Mac_OSC_#{version}.zip"
+  url "https://www.lg.com/us/lgecs.downloadFile.ldwf?DOC_ID=20150320442554&what=MANUAL&fromSystem=LG.COM&fileId=A3JIVu40gLdP5icqVH59Q&ORIGINAL_NAME_b1_a1=Mac_OSC_#{version}.zip"
   name 'LG OnScreen Control'
   homepage 'http://www.lg.com/'
 
