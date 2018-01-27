@@ -1,5 +1,5 @@
 cask 'bose-soundtouch' do
-  version '17.170.80-1819-25804d2,mr4_2017_73e7b563'
+  version '17.170.80-1819-25804d2,mr4_2017_92b19449'
   sha256 '6a02275b5373b0ec4c9af723f8b540e0174fbdb75b6ac28312bd32f70aa9b6d2'
 
   # bose.com was verified as official when first introduced to the cask
