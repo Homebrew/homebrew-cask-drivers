@@ -1,6 +1,6 @@
 cask 'netgeargenie' do
-  version '2.4.30(2017-12-1)'
-  sha256 '7a4fb95e65e3db22ddf947a754ad9eac27d2cac8f9e755d00689d34fd4486087'
+  version '2.4.32(2018-1-10)'
+  sha256 'd9855fb4e30291d1fbba52e294077202b828f08d757f281e67cb70e9067fb382'
 
   url 'http://updates1.netgear.com/netgeargenie/mac/update/NETGEARGenieInstaller.dmg'
   name 'NETGEARGenie'
