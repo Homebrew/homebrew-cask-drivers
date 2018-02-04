@@ -13,5 +13,5 @@ cask 'silicon-labs-vcp-driver' do
 
   pkg 'Silicon Labs VCP Driver.pkg'
 
-  uninstall pkgutil: 'com.silabs.siliconLabsVcpDriver.*'
+  uninstall pkgutil: 'com.silabs.driver.CP210xVCPDriver'
 end
