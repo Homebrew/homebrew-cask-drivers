@@ -2,8 +2,7 @@ cask 'wacom-graphire2-tablet' do
   version '6.2.0w4'
   sha256 'b9e7c758f56595b73eb77eeaca7599da1852d914b50a8bf7ba58b897e21dbe07'
 
-  # wacom.asia/sites/default/files/drivers was verified as official when first introduced to the cask
-  url "http://www.wacom.asia/sites/default/files/drivers/WacomTablet_#{version}.dmg"
+  url "http://cdn.wacom.com/U/drivers/mac/pro/WacomTablet_#{version}.dmg"
   name 'Graphire2 Wacom Tablet'
   homepage 'https://www.wacom.com/support/graphire-support'
 

@@ -1,10 +1,10 @@
 cask 'nvidia-web-driver' do
-  version '378.10.10.10.25.104'
-  sha256 '09eeff4db92c97668bea73b4e66a272f70e6cdf08d2b4937c0eef8d8e43c466a'
+  version '387.10.10.10.25.156'
+  sha256 'dd35f919e0dcf576ae27efb96439bd2558f3868018824c79a70b2c5283820aed'
 
   url "https://images.nvidia.com/mac/pkg/#{version.major}/WebDriver-#{version}.pkg"
   appcast 'https://gfe.nvidia.com/mac-update',
-          checkpoint: '71d97cd1ebb5c5c1ee9a5e2aa52a2e9ad002467d9034aa5293759c224c348327'
+          checkpoint: '75b39b4602e202db5a650264c5748daa2476068791f73a967f350cbbf97adab1'
   name 'NVIDIA Web Driver'
   homepage 'https://www.nvidia.com/Download/index.aspx'
 
