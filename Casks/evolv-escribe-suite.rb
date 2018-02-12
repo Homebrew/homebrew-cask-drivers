@@ -14,8 +14,6 @@ cask 'evolv-escribe-suite' do
                      ],
             script:  {
                        executable: '/Applications/EScribe Suite.app/Contents/MacOS/ECigStats.app/Contents/MacOS/RunProgram',
-                       args:       [
-                                     '--exit',
-                                   ],
+                       args:       ['--exit'],
                      }
 end
