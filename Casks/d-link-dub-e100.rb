@@ -17,6 +17,7 @@ cask 'd-link-dub-e100' do
             pkgutil: 'com.dlink.pkg.DUB-E100*'
 
   caveats do
+    kext
     reboot
   end
 end
