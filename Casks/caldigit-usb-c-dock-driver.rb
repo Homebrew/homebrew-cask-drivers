@@ -12,9 +12,6 @@ cask 'caldigit-usb-c-dock-driver' do
   uninstall script:  'USB-C-Dock-mac/UnInstaller/CalDigit-USBC-Dock-Ethernet-Uninstaller',
             kext:    'com.cypress.driver.CYUSB3610',
             pkgutil: [
-                       'com.CalDigit.caldigitUsbcDockEthernetHubSupportDrivers.CalDigitUSBHubSupport.pkg',
-                       'com.CalDigit.caldigitUsbcDockEthernetHubSupportDrivers.postflight.pkg',
-                       'com.CalDigit.caldigitUsbcDockEthernetHubSupportDrivers.preflight.pkg',
                        'com.CalDigit.caldigitUsbcDockHubSupportDriver.CalDigitUSBHubSupport.pkg',
                        'com.CalDigit.caldigitUsbcDockHubSupportDriver.postflight.pkg',
                        'com.CalDigit.caldigitUsbcDockHubSupportDriver.preflight.pkg',
