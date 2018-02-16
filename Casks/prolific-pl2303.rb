@@ -1,12 +1,18 @@
 cask 'prolific-pl2303' do
-  version '1.6.1_20160309'
-  sha256 '14868e4a3c38904760d3445c37bbb5ca2f1024498547645147abbabfcb52eb87'
+  if MacOS.version <= :mountain_lion
+    version '1.5.1_20160309'
+    sha256 'b61561766d1bc1edd520a671a6dbe06fe81016eca0db76d37eeda2f481f53798'
+    url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_v#{version.dots_to_underscores}.zip"
+    pkg "PL2303_MacOSX_v#{version}.pkg"
+  else
+    version '1.6.1_20170620'
+    sha256 '75ae5fa00c3862cfe7228a16dde06fb234a1e0b588bf7c4e29edde591a595a68'
+    url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.dots_to_underscores}.zip"
+    pkg 'PL2303_MacOSX_1.6.1_20160309.pkg' # For some reason the package version does not match the version in the URL
+  end
 
-  url "https://prolificusa.com/files/PL2303_MacOSX_#{version}.zip"
-  name 'Prolific USB-Serial Cable driver'
-  homepage 'https://prolificusa.com/'
-
-  pkg "PL2303_MacOSX_#{version}.pkg"
+  name 'Prolific USB to Serial Cable driver'
+  homepage 'http://www.prolific.com.tw/US/'
 
   uninstall pkgutil: [
                        'com.Susteen.driver.PL2303',
@@ -18,4 +24,8 @@ cask 'prolific-pl2303' do
                        '/var/db/receipts/*PL2303*.*',
                        '/var/db/receipts/*ProlificUSbSerial*.*',
                      ]
+
+  caveats do
+    kext
+  end
 end
