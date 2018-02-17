@@ -1,12 +1,12 @@
 cask 'd-link-dub-e100' do
-  version '2.4.1'
+  version '2.4.1,20161005'
   sha256 '7a630f4b811415d0f236e23ccaca03ddba06c5c712d37d0f8a5c9e66a0bd58f6'
 
-  url "ftp://ftp2.dlink.com/PRODUCTS/DUB-E100/REVD/DUB-E100_REVD_macOS_DRIVER_INSTALLER_v#{version}.zip"
+  url "ftp://ftp2.dlink.com/PRODUCTS/DUB-E100/REVD/DUB-E100_REVD_macOS_DRIVER_INSTALLER_v#{version.before_comma}.zip"
   name 'D-Link DUB-E100 Driver'
   homepage 'http://www.dlink.com/uk/en/products/dub-e100-high-speed-usb-2-fast-ethernet-adapter'
 
-  container nested: "DUB-E100_Macintosh_10.5_to_10.12_Driver_Installer_v#{version}_20161005/DUB-E100.dmg"
+  container nested: "DUB-E100_Macintosh_10.5_to_10.12_Driver_Installer_v#{version.before_comma}_#{version.after_comma}/DUB-E100.dmg"
 
   pkg "DUB-E100_v#{version}.pkg"
 
