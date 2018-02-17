@@ -8,7 +8,7 @@ cask 'd-link-dub-e100' do
 
   container nested: "DUB-E100_Macintosh_10.5_to_10.12_Driver_Installer_v#{version.before_comma}_#{version.after_comma}/DUB-E100.dmg"
 
-  pkg "DUB-E100_v#{version}.pkg"
+  pkg "DUB-E100_v#{version.before_comma}.pkg"
 
   uninstall script:  {
                        executable: 'DUB-E100_Uninstall_v130',
