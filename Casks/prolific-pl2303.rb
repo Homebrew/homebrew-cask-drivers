@@ -24,8 +24,4 @@ cask 'prolific-pl2303' do
                        '/var/db/receipts/*PL2303*.*',
                        '/var/db/receipts/*ProlificUSbSerial*.*',
                      ]
-
-  caveats do
-    kext
-  end
 end
