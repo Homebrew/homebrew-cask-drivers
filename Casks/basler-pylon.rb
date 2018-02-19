@@ -9,4 +9,11 @@ cask 'basler-pylon' do
   pkg "pylon-#{version}.pkg"
 
   uninstall pkgutil: 'com.baslerweb.pylon.*'
+
+  caveats <<~EOS
+    Installing this Cask means you have AGREED to the
+    PYLON END-USER LICENSE AGREEMENT available at:
+
+      https://www.baslerweb.com/en/service/pylon-eula/
+  EOS
 end
