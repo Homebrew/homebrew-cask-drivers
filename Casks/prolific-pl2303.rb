@@ -5,10 +5,10 @@ cask 'prolific-pl2303' do
     url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX__v#{version.dots_to_underscores}.zip"
     pkg "PL2303_MacOSX_v#{version}.pkg"
   else
-    version '1.6.1_20170620,1.6.1_20160309'
+    version '1.6.1_20160309'
     sha256 '75ae5fa00c3862cfe7228a16dde06fb234a1e0b588bf7c4e29edde591a595a68'
-    url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.before_comma.dots_to_underscores}.zip"
-    pkg "PL2303_MacOSX_#{version.after_comma}.pkg"
+    url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.dots_to_underscores}.zip"
+    pkg "PL2303_MacOSX_#{version}.pkg"
   end
 
   name 'Prolific USB to Serial Cable driver'
