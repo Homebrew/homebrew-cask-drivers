@@ -8,7 +8,5 @@ cask 'xperia-companion' do
 
   app 'Xperia Companion.app'
 
-  zap trash: [
-               '~/Library/Application Support/com.sonymobile.Xperia-Companion',
-             ]
+  zap trash: '~/Library/Application Support/com.sonymobile.Xperia-Companion'
 end
