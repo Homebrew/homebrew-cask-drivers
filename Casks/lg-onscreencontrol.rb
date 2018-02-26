@@ -12,7 +12,7 @@ cask 'lg-onscreencontrol' do
 
   postflight do
     set_permissions '/usr/local', '0755'
-    set_permissions '/usr/local', '0755'
+    set_permissions '/usr/local/lmm', '0755'
   end
 
   uninstall login_item: [
