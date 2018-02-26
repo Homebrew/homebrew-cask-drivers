@@ -11,7 +11,7 @@ cask 'lg-onscreencontrol' do
   pkg "OnScreenControl_V#{version}.pkg"
 
   postflight do
-    set_permissions '/usr/local', '0755'
+    set_permissions '/usr/local',     '0755'
     set_permissions '/usr/local/lmm', '0755'
   end
 
