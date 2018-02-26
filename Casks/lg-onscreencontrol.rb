@@ -11,9 +11,8 @@ cask 'lg-onscreencontrol' do
   pkg "OnScreenControl_V#{version}.pkg"
 
   postflight do
-    system_command '/bin/chmod',
-                   args: ['755', '/usr/local', '/usr/local/lmm'],
-                   sudo: true
+    set_permissions '/usr/local', '0755'
+    set_permissions '/usr/local', '0755'
   end
 
   uninstall login_item: [
