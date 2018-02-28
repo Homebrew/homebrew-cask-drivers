@@ -6,6 +6,8 @@ cask 'synology-drive' do
   name 'Synology Drive'
   homepage 'https://www.synology.com/'
 
+  auto_updates true
+
   pkg 'Install Synology Drive.pkg'
 
   uninstall pkgutil:   'com.synology.CloudStation',

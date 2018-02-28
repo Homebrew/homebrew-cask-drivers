@@ -6,6 +6,8 @@ cask 'synology-cloud-station-backup' do
   name 'Synology Cloud Station Backup'
   homepage 'https://www.synology.com/'
 
+  auto_updates true
+
   pkg 'Install Cloud Station Backup.pkg'
 
   uninstall pkgutil:   'com.synology.CloudStationBackup',
