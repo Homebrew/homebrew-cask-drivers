@@ -1,10 +1,10 @@
 cask 'yubico-yubikey-personalization-gui' do
-  version '3.1.24'
-  sha256 'bb13aeb006ca40fc1b16360250daa9ee08f85248cce7d4f21335f2ce6a7a3248'
+  version '3.1.25'
+  sha256 '45b270edd68c03e6470fe1bcb8dee79dad37c454b1e679838233041feb7ad23d'
 
   url "https://developers.yubico.com/yubikey-personalization-gui/Releases/yubikey-personalization-gui-#{version}.pkg"
   appcast 'https://developers.yubico.com/yubikey-personalization-gui/Releases/',
-          checkpoint: 'e3c7b3e7c187cfa3b16464f2fc9f6df6ae49ae3c882ad62fe119010effd473b5'
+          checkpoint: '44859fd6251b6d8b3db7eeacfcb5781d60b8fb12a17e3f4037fe3390d33dfb68'
   name 'YubiKey Personalization GUI'
   homepage 'https://www.yubico.com/products/services-software/personalization-tools/use/'
 
