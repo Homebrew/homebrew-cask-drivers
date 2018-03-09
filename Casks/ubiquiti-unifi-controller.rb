@@ -15,7 +15,6 @@ cask 'ubiquiti-unifi-controller' do
   end
 
   uninstall pkgutil: 'com.ubnt.UniFi',
-
             delete:  [
                        '/Applications/UniFi.app',
                        '/Applications/UniFi-Discover.app',
