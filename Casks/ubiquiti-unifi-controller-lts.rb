@@ -1,6 +1,6 @@
 cask 'ubiquiti-unifi-controller-lts' do
-  version '5.6.30'
-  sha256 '667908f1e60fe656e600751ae70331e9e860ff9454a44094280979cbbbddc5bb'
+  version '5.6.36'
+  sha256 '0266456cf00260d8a75f7b4c974b1a10d207ad8b79ddccb224f3bf2a529aec97'
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   name 'UniFi Controller - LTS version'
@@ -14,5 +14,9 @@ cask 'ubiquiti-unifi-controller-lts' do
     set_ownership '~/Library/Application Support/UniFi'
   end
 
-  uninstall pkgutil: 'com.ubnt.UniFi'
+  uninstall pkgutil: 'com.ubnt.UniFi',
+            delete:  [
+                       '/Applications/UniFi.app',
+                       '/Applications/UniFi-Discover.app',
+                     ]
 end
