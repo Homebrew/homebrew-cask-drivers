@@ -8,16 +8,29 @@ cask 'seagate-dashboard' do
 
   auto_updates true
 
-  installer script: 'Dashboard.app/Contents/MacOS/Dashboard'
+  pkg 'Dashboard.app/Contents/PlugIns/SeagateDashboard.pkg'
 
-  uninstall quit:   'com.seagate.dashboard',
-            delete: '/Applications/Seagate Dashboard.app'
+  uninstall kext:      [
+                         'com.seagate.driver.PowSecDriverCore',
+                         'com.seagate.driver.PowSecLeafDriver_10_5',
+                         'com.seagate.driver.SeagateDriveIcons',
+                       ],
+            launchctl: [
+                         'com.seagate.dashboard',
+                         'com.seagate.TBDecorator.plist',
+                       ],
+            pkgutil:   [
+                         'com.seagate.driver.PowSecDriverCore.pkg',
+                         'com.seagate.seagateDashboard.*',
+                       ],
+            quit:      'com.seagate.dashboard'
 
-  zap trash: ['~/Library/Application Support/Seagate Dashboard*',
-              '~/Library/Application Support/CrashReporter/Seagate Dashboard_*',
-              '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.seagate.dashboard.sfl',
-              '~/Library/Caches/com.seagate.dashboard',
-              '~/Library/LaunchAgents/com.seagate.dashboard.plist',
-              '~/Library/Preferences/com.seagate.dashboard.plist',
-              '/Library/Logs/DiagnosticReports/Seagate Dashboard_*']
+  zap trash: [
+               '~/Library/Application Support/Seagate Dashboard*',
+               '~/Library/Application Support/CrashReporter/Seagate Dashboard_*',
+               '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.seagate.dashboard.sfl*',
+               '~/Library/Caches/com.seagate.dashboard',
+               '~/Library/Preferences/com.seagate.dashboard.plist',
+               '/Library/Logs/DiagnosticReports/Seagate Dashboard_*',
+             ]
 end
