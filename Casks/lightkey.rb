@@ -16,7 +16,6 @@ cask 'lightkey' do
                        'de.monospc.lightkey.pkg.documentation',
                      ]
 
-  zap pkgutil: [
-                 'com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver.pkg',
-               ]
+  zap pkgutil: 'com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver.pkg',
+      kext:    'com.FTDI.driver.FTDIUSBSerialDriver'
 end
