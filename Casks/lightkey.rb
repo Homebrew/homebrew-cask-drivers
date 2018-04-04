@@ -1,6 +1,6 @@
 cask 'lightkey' do
-  version '1.6.3'
-  sha256 '0d34f58aca3f9459a12f6d1a43327d58d6b58c1120084d80a18851dbce226bb7'
+  version '2.4.1'
+  sha256 '84813cc280e3d65bab4158fe1133aa606a19d701f4a045c72a56b28945b209ae'
 
   url "http://lightkeyapp.com/content/06-download/Lightkey-#{version.dots_to_hyphens}/LightkeyInstaller.zip"
   name 'Lightkey'
@@ -16,7 +16,6 @@ cask 'lightkey' do
                        'de.monospc.lightkey.pkg.documentation',
                      ]
 
-  zap pkgutil: [
-                 'com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver.pkg',
-               ]
+  zap pkgutil: 'com.FTDI.ftdiusbserialdriverinstaller.FTDIUSBSerialDriver.pkg',
+      kext:    'com.FTDI.driver.FTDIUSBSerialDriver'
 end
