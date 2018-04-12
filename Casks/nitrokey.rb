@@ -5,7 +5,7 @@ cask 'nitrokey' do
   # github.com/Nitrokey/nitrokey-app was verified as official when first introduced to the cask
   url "https://github.com/Nitrokey/nitrokey-app/releases/download/v#{version}/Nitrokey.App.dmg"
   appcast 'https://github.com/Nitrokey/nitrokey-app/releases.atom',
-          checkpoint: '557a05e9b7a326526bfadda52d670aa59097d2fb2c8ad42bdc1a05f119d19a23'
+          checkpoint: '4ffd829b3bc2062a7d807bdc34a441f4b37f73b91cb3943e8ffdcfffad0fccc3'
   name 'Nitrokey App'
   homepage 'https://www.nitrokey.com/download/macos'
 
