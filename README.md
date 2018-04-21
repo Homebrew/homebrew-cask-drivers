@@ -12,7 +12,7 @@ $ brew tap caskroom/drivers
 You can now install the casks in this repo.
 
 ```sh
-$ brew cask install xbox360-controller-driver
+$ brew cask install xbox360-controller-driver-unofficial
 ```
 
 ## License
