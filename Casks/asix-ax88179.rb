@@ -21,4 +21,8 @@ cask 'asix-ax88179' do
                           },
             kext:         'com.asix.driver.ax88179-178a',
             pkgutil:      'com.asix.pkg.ax88179-178a*'
+
+  caveats do
+    reboot
+  end
 end
