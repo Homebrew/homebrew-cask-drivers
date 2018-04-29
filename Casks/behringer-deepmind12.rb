@@ -1,4 +1,5 @@
-cask 'behringer-deepmind' do
+cask 'behringer-deepmind12' do
+  # note: "12" is not a version number, but an intrinsic part of the product name
   version :latest
   sha256 :no_check
 
