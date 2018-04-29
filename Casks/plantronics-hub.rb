@@ -16,9 +16,7 @@ cask 'plantronics-hub' do
                          'com.plantronics.plantronicsSoftware.preflight.pkg',
                          'Plantronics-Inc..Plantronics-Hub',
                        ],
-            launchctl: [
-                         'com.PlantronicsUpdateService',
-                       ]
+            launchctl: 'com.PlantronicsUpdateService'
 
   zap trash: [
                '~/Library/Application Support/Plantronics',
