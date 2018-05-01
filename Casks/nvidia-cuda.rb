@@ -1,8 +1,8 @@
 cask 'nvidia-cuda' do
-  version '9.0.176'
-  sha256 '8fad950098337d2611d64617ca9f62c319d97c5e882b8368ed196e994bdaf225'
+  version '9.1.128'
+  sha256 'fe3003532376e229fbc1978a455088a6b3d7fe1b2b89b271d5904e40566914a2'
 
-  url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac-dmg"
+  url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac"
   name 'Nvidia CUDA'
   homepage 'https://developer.nvidia.com/cuda-zone'
 
