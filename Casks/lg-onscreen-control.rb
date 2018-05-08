@@ -1,14 +1,14 @@
 cask 'lg-onscreen-control' do
-  version '2.86,Xo0dELqtvVrShJQdcnY3Lw'
-  sha256 '6c51af51f08094ab9065eced026408fc169fdf563289fd278a579e9889f2fa28'
+  version '2.93_Patch1,20150116943155:66KiTUDNOklaNSrpHYo6QA'
+  sha256 'a261ec486635b00ee6ff4a0d4feb88143889d14957652fd5e94c50204d9c49a1'
 
-  url "https://www.lg.com/us/lgecs.downloadFile.ldwf?DOC_ID=20150320442554&what=MANUAL&fromSystem=LG.COM&fileId=#{version.after_comma}&ORIGINAL_NAME_b1_a1=Mac_OSC_#{version.before_comma}.zip"
+  url "https://www.lg.com/us/lgecs.downloadFile.ldwf?DOC_ID=#{version.after_comma.before_colon}&what=MANUAL&fromSystem=LG.COM&fileId=#{version.after_colon}&ORIGINAL_NAME_b1_a1=Mac_OSC_#{version.before_comma}.zip"
   name 'LG OnScreen Control'
   homepage 'https://www.lg.com/us/support/monitors'
 
   accessibility_access true
 
-  pkg "OSC_V#{version.before_comma}_Patch8.pkg"
+  pkg "OSC_V#{version.before_comma}.pkg"
 
   postflight do
     system_command '/bin/chmod',
