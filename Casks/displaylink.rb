@@ -37,9 +37,7 @@ cask 'displaylink' do
                        ]
 
   caveats <<~EOS
-    Installing this Cask means you have AGREED to the DisplayLink
-    Software License Agreement at
-
+    Installing #{token} means you have AGREED to the license at
       http://www.displaylink.com/downloads/file?id=#{version.after_comma}
   EOS
 end

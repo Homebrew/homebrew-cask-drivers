@@ -15,9 +15,7 @@ cask 'segger-jlink' do
   uninstall pkgutil: 'com.segger.pkg.JLink'
 
   caveats <<~EOS
-    Installing this Cask means you have AGREED to the
-    Segger Downloads License agreement available at
-
+    Installing #{token} means you have AGREED to the license at
       #{url}
   EOS
 end
