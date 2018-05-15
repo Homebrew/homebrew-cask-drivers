@@ -36,8 +36,7 @@ cask 'displaylink' do
                          '/Library/LaunchDaemons/com.displaylink.displaylinkmanager.plist',
                        ]
 
-  caveats <<~EOS
-    Installing #{token} means you have AGREED to the license at
-      http://www.displaylink.com/downloads/file?id=#{version.after_comma}
-  EOS
+  caveats do
+    license "#{@cask.url}"
+  end
 end
