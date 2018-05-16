@@ -37,6 +37,6 @@ cask 'displaylink' do
                        ]
 
   caveats do
-    license "#{@cask.url}"
+    license @cask.url.to_s
   end
 end

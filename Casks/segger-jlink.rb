@@ -15,6 +15,6 @@ cask 'segger-jlink' do
   uninstall pkgutil: 'com.segger.pkg.JLink'
 
   caveats do
-    license "#{@cask.url}"
+    license @cask.url.to_s
   end
 end
