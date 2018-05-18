@@ -16,4 +16,9 @@ cask 'logitech-control-center' do
                        'com.Logitech.Unifying Software.pkg',
                        'com.Logitech.Updater.pkg',
                      ]
+
+  caveats do
+    kext
+    reboot
+  end
 end
