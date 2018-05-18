@@ -1,6 +1,6 @@
 cask 'logitech-control-center' do
-  version '3.9.5.66'
-  sha256 '4eb24d61d50ca3bb83b62c2cc965affa7d03eb247c38a8810f149d20edfab0df'
+  version '3.9.6.241'
+  sha256 '599f2fdbd8051a4bfb61ba0430a2eb3204b8a29badb9a22b8ac0ad9f44fd3b5f'
 
   url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
   name 'Logitech Control Center'
@@ -16,4 +16,9 @@ cask 'logitech-control-center' do
                        'com.Logitech.Unifying Software.pkg',
                        'com.Logitech.Updater.pkg',
                      ]
+
+  caveats do
+    kext
+    reboot
+  end
 end
