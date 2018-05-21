@@ -36,10 +36,7 @@ cask 'displaylink' do
                          '/Library/LaunchDaemons/com.displaylink.displaylinkmanager.plist',
                        ]
 
-  caveats <<~EOS
-    Installing this Cask means you have AGREED to the DisplayLink
-    Software License Agreement at
-
-      http://www.displaylink.com/downloads/file?id=#{version.after_comma}
-  EOS
+  caveats do
+    license @cask.url.to_s
+  end
 end
