@@ -10,5 +10,7 @@ cask 'garmin-basecamp' do
 
   pkg 'Install BaseCamp.pkg'
 
-  uninstall pkgutil: 'com.garmin.BaseCamp'
+  uninstall pkgutil: 'com.Garmin.*.BaseCamp*'
+
+  zap pkgutil: 'com.Garmin.*'
 end
