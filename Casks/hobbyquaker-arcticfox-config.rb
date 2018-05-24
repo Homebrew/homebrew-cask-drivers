@@ -1,4 +1,4 @@
-cask 'arcticfox-config' do
+cask 'hobbyquaker-arcticfox-config' do
   version '1.11.9'
   sha256 'd70536342088b6e592a484d61425e94c3309f642b15acb3e1a03a79bc8b31f69'
 
