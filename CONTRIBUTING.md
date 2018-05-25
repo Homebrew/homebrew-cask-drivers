@@ -1,6 +1,6 @@
 # How to Contribute
 
-All of the [instructions for contributing from the main repository](https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md) apply, and won't be repeated here. You simply need to change references to `caskroom/homebrew-cask` (that repository) to `caskroom/homebrew-drivers` (this repository).
+All of the [instructions for contributing from the main repository](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md) apply, and won't be repeated here. You simply need to change references to `homebrew/homebrew-cask` (that repository) to `homebrew/homebrew-cask-drivers` (this repository).
 
 ## Naming Driver Casks
 

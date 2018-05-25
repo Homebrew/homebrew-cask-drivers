@@ -6,7 +6,7 @@ Casks of drivers
 After you install homebrew-cask, run the following command:
 
 ```sh
-$ brew tap caskroom/drivers
+$ brew tap homebrew/cask-drivers
 ```
 
 You can now install the casks in this repo.
