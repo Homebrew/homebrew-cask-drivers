@@ -1,8 +1,8 @@
 cask 'wd-security' do
-  version '2.0.5.15'
-  sha256 '38018708b953fd9b1dd21fd9e1e446a3fbb5b2a5376760127a5953eb5dc81da1'
+  version '2.1.1.55'
+  sha256 '28628a2011e92c59c3517aa2213134ee20443e1827a996275bae8ade595cd6b6'
 
-  url "http://download.wdc.com/wdapp/WD_Security_Installer_for_Mac_#{version.dots_to_underscores}.zip"
+  url "http://downloads.wdc.com/wdapp/WD_Security_Standalone_Installer_Mac_#{version.dots_to_underscores}.zip"
   name 'WD Security'
   homepage 'https://www.wdc.com/'
 
