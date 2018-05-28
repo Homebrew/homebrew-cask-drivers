@@ -1,6 +1,6 @@
 cask 'focusrite-control' do
-  version '2.1.5,31868'
-  sha256 '9faf8a1e2f51e9638c155238cb1ec85a74028cd065813d8717a53d7d72350b7e'
+  version '2.3.4,32453'
+  sha256 '03540de1770e8f6f04754e707b95d3535e477ab86f2175b3eb962e6687e27996'
 
   # d2zjg0qo565n2.cloudfront.net was verified as official when first introduced to the cask
   url "https://d2zjg0qo565n2.cloudfront.net/sites/default/files/focusrite/downloads/#{version.after_comma}/focusrite-control-#{version.before_comma}.dmg"
