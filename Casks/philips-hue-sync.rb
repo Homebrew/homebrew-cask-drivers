@@ -5,7 +5,7 @@ cask 'philips-hue-sync' do
   url do
     require 'open-uri'
     require 'net/http'
-    # No known stable URL; fetching disposable URL from landing site
+    # flex1548-esd.flexnetoperations.com/flexnet/operations was verified as official when first introduced to the cask
     uri = URI('https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac')
     res = Net::HTTP.get_response(uri)
     res['location']
