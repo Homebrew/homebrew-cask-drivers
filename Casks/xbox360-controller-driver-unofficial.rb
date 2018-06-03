@@ -8,7 +8,7 @@ cask 'xbox360-controller-driver-unofficial' do
   name 'TattieBogle Xbox 360 Controller Driver (with improvements)'
   homepage 'https://github.com/360Controller/360Controller'
 
-  pkg 'Install360Controller.pkg'
+  pkg "Install360Controller_#{version}.pkg"
 
   uninstall pkgutil:   'com.mice.pkg.Xbox360controller',
             launchctl: 'com.mice.360Daemon',
