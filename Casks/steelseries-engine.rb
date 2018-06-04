@@ -19,4 +19,13 @@ cask 'steelseries-engine' do
             kext:      'com.steelseries.ssenext.driver',
             launchctl: 'com.steelseries.SSENext',
             quit:      "com.steelseries.SteelSeries-Engine-#{version.major}"
+
+  zap trash: [
+               '/Library/Application Support/SteelSeries Engine 3',
+               '~/Library/Application Support/steelseries-engine-3-client',
+               '~/Library/Caches/com.steelseries.SteelSeries-Engine-3',
+               '~/Library/Preferences/com.steelseries.SteelSeries-Engine-3.plist',
+               '~/Library/Preferences/com.steelseries.ssenext.client.helper.plist',
+               '~/Library/Preferences/com.steelseries.ssenext.client.plist',
+             ]
 end
