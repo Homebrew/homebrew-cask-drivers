@@ -1,6 +1,6 @@
 cask 'logitech-options' do
-  version '6.80.384'
-  sha256 '8486e870480e58cc5dc8cf6b737a678bffc72b913a5e3f463e15cb7a1ce69eac'
+  version '6.90.109'
+  sha256 '5d343c175c5df64c2edfef64a1f448bcc4631315b93223a6fd0b0bee78dab25f'
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
   name 'Logitech Options'
