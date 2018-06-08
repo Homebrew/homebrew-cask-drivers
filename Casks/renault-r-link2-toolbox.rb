@@ -1,4 +1,5 @@
-cask 'r-link2-toolbox' do
+cask 'renault-r-link2-toolbox' do
+  # note: "2" is not a version number, but an intrinsic part of the product name
   version :latest
   sha256 :no_check
 
