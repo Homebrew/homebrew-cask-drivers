@@ -5,8 +5,7 @@ cask 'suunto-moveslink2' do
 
   # d1c229iib3zm7m.cloudfront.net was verified as official when first introduced to the cask
   url "https://d1c229iib3zm7m.cloudfront.net/mac/Moveslink2_#{version.dots_to_underscores}.dmg"
-  appcast 'https://d1c229iib3zm7m.cloudfront.net/mac/appcast.xml',
-          checkpoint: 'c1d5f1b9a7c848fde84a61e12ed6232eb517126ad92be680ba4e37c76f902e14'
+  appcast 'https://d1c229iib3zm7m.cloudfront.net/mac/appcast.xml'
   name 'Suunto Moveslink2'
   homepage 'http://www.movescount.com/connect?os=mac'
 

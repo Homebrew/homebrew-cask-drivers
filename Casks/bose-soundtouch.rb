@@ -4,8 +4,7 @@ cask 'bose-soundtouch' do
 
   # bose.com was verified as official when first introduced to the cask
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
-  appcast 'https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html',
-          checkpoint: '93458a17a19ac42e6f8cf9e925257a69618800daff8dfa9d698f6f6e7c6cae8e'
+  appcast 'https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html'
   name 'Bose Soundtouch Controller App'
   homepage 'https://www.soundtouch.com/'
 

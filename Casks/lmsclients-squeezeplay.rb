@@ -4,8 +4,7 @@ cask 'lmsclients-squeezeplay' do
 
   # downloads.sourceforge.net/lmsclients was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-x86_64-#{version}.dmg"
-  appcast 'https://sourceforge.net/projects/lmsclients/rss?path=/squeezeplay/osx',
-          checkpoint: '51229f27fee5e62d838bac07c4bb8a8028b27780fb7406f17ab356c2805d6171'
+  appcast 'https://sourceforge.net/projects/lmsclients/rss?path=/squeezeplay/osx'
   name 'Logitech LMS SqueezePlay Client'
   homepage 'http://forums.slimdevices.com/showthread.php?96328-ANNOUNCE-SqueezePlay-for-Mac-OSX'
 
