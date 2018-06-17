@@ -1,4 +1,4 @@
-# homebrew-drivers
+# homebrew-cask-drivers
 Casks of drivers
 
 # Usage
