@@ -3,8 +3,7 @@ cask 'sony-ericsson-bridge' do
   sha256 '6ec2f2ac9ce4f8f0d66f4a19ab180fc55b748b26e5f6d9d3e62abec07275e67e'
 
   url 'https://www-support-downloads.sonymobile.com/Software%20Downloads/Bridge%20for%20Mac/SonyBridgeForMac_web.dmg'
-  appcast 'https://dl-desktop-macapps.sonyericsson.com/production/Bridge/Databases_Prod/appcast.xml',
-          checkpoint: 'aef4e834f69cc4bab219380e58270ef093b05ef979e3410a7f3d7f832be84e36'
+  appcast 'https://dl-desktop-macapps.sonyericsson.com/production/Bridge/Databases_Prod/appcast.xml'
   name 'Sony Ericsson Bridge for Mac'
   homepage 'https://support.sonymobile.com/au/tools/bridge-for-mac/'
 

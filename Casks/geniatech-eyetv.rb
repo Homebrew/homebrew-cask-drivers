@@ -4,8 +4,7 @@ cask 'geniatech-eyetv' do
 
   # file.geniatech.com/eyetv3 was verified as official when first introduced to the cask
   url "http://file.geniatech.com/eyetv3/Geniatech_eyetv_#{version.before_comma}_#{version.after_comma}.dmg"
-  appcast "https://www.geniatech.eu/support/eyetv-#{version.major}-en/",
-          checkpoint: 'd4ce4989d6ef569554164229f39de04a35d1013951038dcab70014ff001b631e'
+  appcast "https://www.geniatech.eu/support/eyetv-#{version.major}-en/"
   name 'EyeTV'
   homepage "https://www.geniatech.eu/product/eyetv-#{version.major}/"
 
