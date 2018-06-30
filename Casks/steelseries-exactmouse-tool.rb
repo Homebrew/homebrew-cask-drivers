@@ -9,5 +9,8 @@ cask 'steelseries-exactmouse-tool' do
 
   app 'SteelSeries ExactMouse Tool.app'
 
-  zap trash: '~/Preferences/com.SteelSeries.SteelSeries-ExactMouse-Tool.plist'
+  zap trash: [
+               '~/Library/Preferences/com.SteelSeries.SteelSeries-ExactMouse-Tool.plist',
+               '~/Library/Caches/com.apple.helpd/Generated/com.SteelSeries.SteelSeries-ExactMouse-Tool.help',
+             ]
 end
