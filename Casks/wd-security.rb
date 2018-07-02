@@ -6,5 +6,10 @@ cask 'wd-security' do
   name 'WD Security'
   homepage 'https://www.wdc.com/'
 
-  app 'WD Security Installer.app'
+  installer manual: 'WD Security Installer.app'
+
+  uninstall script: {
+                      executable: '/Applications/WD Security Uninstaller.app/Contents/MacOS/WD Security Installer',
+                      sudo:       true,
+                    }
 end
