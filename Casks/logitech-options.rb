@@ -11,13 +11,14 @@ cask 'logitech-options' do
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
-  uninstall script:  {
-                       executable: '/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller',
-                     },
-            pkgutil: [
-                       'com.logitech.manager.pkg',
-                       'com.Logitech.signedKext.pkg',
-                     ]
+  uninstall script:    {
+                         executable: '/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller',
+                       },
+            pkgutil:   [
+                         'com.logitech.manager.pkg',
+                         'com.Logitech.signedKext.pkg',
+                       ],
+            launchctl: 'com.logitech.manager.daemon'
 
   caveats do
     reboot
