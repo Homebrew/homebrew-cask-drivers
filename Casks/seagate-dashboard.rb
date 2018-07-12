@@ -6,8 +6,6 @@ cask 'seagate-dashboard' do
   name 'Seagate Dashboard'
   homepage 'https://www.seagate.com/support/software/dashboard/'
 
-  auto_updates true
-
   pkg 'Dashboard.app/Contents/PlugIns/SeagateDashboard.pkg'
 
   uninstall kext:      [
