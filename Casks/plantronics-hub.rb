@@ -6,7 +6,6 @@ cask 'plantronics-hub' do
   name 'Plantronics Hub'
   homepage 'https://www.plantronics.com/au/product/plantronics-hub-desktop'
 
-  auto_updates true
   depends_on macos: '>= :yosemite'
 
   pkg 'Plantronics Software.pkg'
