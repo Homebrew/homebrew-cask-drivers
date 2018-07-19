@@ -1,6 +1,6 @@
 cask 'wootility' do
-  version '1.0.8'
-  sha256 '3a21259a36680e35e40944bf2f3c0b4572ff79257533f563cf91b63cb76c7c28'
+  version '2.4.0'
+  sha256 'a4d52d1a7162098fcdd25d28b6c1ae11c306782d9836c5c2a54b8cf8fa704c58'
 
   # s3.eu-west-2.amazonaws.com/wooting-update was verified as official when first introduced to the cask
   url "https://s3.eu-west-2.amazonaws.com/wooting-update/mac-latest/wootility-#{version}.dmg"
