@@ -5,8 +5,8 @@ cask 'prolific-pl2303' do
     url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX__v#{version.dots_to_underscores}.zip"
     pkg "PL2303_MacOSX_v#{version}.pkg"
   else
-    version '1.6.1_20170620,1.6.1_20160309'
-    sha256 '75ae5fa00c3862cfe7228a16dde06fb234a1e0b588bf7c4e29edde591a595a68'
+    version '1.6.1_20171018,1.6.1_20160309'
+    sha256 'c140b2f4d6f222b30986a618f670ad3257c2f6f01c0076f3f713fa786561c3ad'
     url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.before_comma.dots_to_underscores}.zip"
     pkg "PL2303_MacOSX_#{version.after_comma}.pkg"
   end
