@@ -2,7 +2,7 @@ cask 'lg-onscreen-control' do
   version '3.06_patch2_08-Jun'
   sha256 'f4b02aaadb1f96e0e0ed9eeb6a9eced79c9bb0e52a833fd56a4134417569ad25'
 
-  url "http://gscs-b2c.lge.com/downloadFile?fileId=HoRbycU5M4ZTd8pPNQ"
+  url 'http://gscs-b2c.lge.com/downloadFile?fileId=HoRbycU5M4ZTd8pPNQ'
   name 'LG OnScreen Control'
   homepage 'https://www.lg.com/us/support/monitors'
 
