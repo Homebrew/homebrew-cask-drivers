@@ -1,4 +1,4 @@
-cask 'reolink' do
+cask 'reolink-client' do
   version '3.4.2.49'
   sha256 '9a0f882ca429cf0fef4162aa51d6de751aac674670fedcb346a1a0b3a85ae30e'
 
