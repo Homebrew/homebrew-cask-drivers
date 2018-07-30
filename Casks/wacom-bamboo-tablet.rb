@@ -14,5 +14,10 @@ cask 'wacom-bamboo-tablet' do
                          'com.wacom.PenTabletDriver',
                          'com.wacom.ConsumerTouchDriver',
                        ],
-            pkgutil:   'com.wacom.installpentablet'
+            pkgutil:   'com.wacom.PenTabletInstaller'
+
+  zap trash: [
+               '~/Library/Preferences/com.wacom.pentablet.prefs',
+               '~/Library/Preferences/com.wacom.touch.prefs',
+             ]
 end
