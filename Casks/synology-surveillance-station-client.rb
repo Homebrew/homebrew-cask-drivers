@@ -17,6 +17,7 @@ cask 'synology-surveillance-station-client' do
                          'com.synology.svsclient-Recording',
                          'com.synology.svsclient-Timeline',
                          'svsclient',
+                         'SurveillanceStationClient',
                        ],
             quit:      [
                          'svsclient',
