@@ -10,7 +10,6 @@ cask 'synology-surveillance-station-client' do
 
   uninstall launchctl: [
                          'com.synology.ssc.launch.agent',
-                         'SurveillanceStationClient.*',
                        ],
             delete:    '/Applications/Surveillance Station Client.app',
             pkgutil:   [
@@ -18,7 +17,9 @@ cask 'synology-surveillance-station-client' do
                          'com.synology.svsclient-Recording',
                          'com.synology.svsclient-Timeline',
                          'svsclient',
-                         'SurveillanceStationClient',
                        ],
-            quit:      'svsclient'
+            quit:      [
+                         'svsclient',
+                         'SurveillanceStationClient',
+                       ]
 end
