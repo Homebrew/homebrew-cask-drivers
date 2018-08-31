@@ -1,6 +1,6 @@
 cask 'datacolor-spyder-elite' do
-  version '5.2'
-  sha256 '12290c3ab2e7585d97430da6d6ed1fe3d39f0032c8f3401fdaedb7d567c17197'
+  version '5.3'
+  sha256 'aac0c688f34380737af11da28b9c48164b15800606353cf80090ecd54d2d0ba3'
 
   # d3d9ci7ypuovlo.cloudfront.net/spyder was verified as official when first introduced to the cask
   url "http://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}_OSX_Installer.zip"
