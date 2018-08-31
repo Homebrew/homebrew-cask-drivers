@@ -11,6 +11,7 @@ cask 'synology-drive' do
 
   pkg 'Install Synology Drive.pkg'
 
-  uninstall pkgutil:   'com.synology.CloudStation',
+  uninstall quit: 'io.com.synology.CloudStationUI',
+            pkgutil:   'com.synology.CloudStation',
             launchctl: 'com.synology.Synology Cloud Station'
 end
