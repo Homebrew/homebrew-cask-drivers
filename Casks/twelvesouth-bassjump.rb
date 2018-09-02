@@ -19,6 +19,7 @@ cask 'twelvesouth-bassjump' do
   homepage 'https://www.twelvesouth.com/product/bassjump-2-for-macbook'
 
   depends_on macos: '>= :mavericks'
+  container nested: "BassJumpInstaller#{version}.dmg"
 
   if MacOS.version <= :el_capitan
     pkg 'BassJumpInstaller.pkg'
