@@ -1,6 +1,6 @@
 cask 'asix-ax88179' do
-  version '2.10.0'
-  sha256 '2b03b808c919112cb50b85e63b811531308c0d5d395a86f3f6617c783210f852'
+  version '2.11.0'
+  sha256 '5147d72d0d128c815ee1b6625568581b813c6460be7c8b8dba55ef2cde55b474'
 
   url "http://www.asix.com.tw/FrootAttach/driver/AX88179_178A_Macintosh_Driver_Installer_v#{version}.zip"
   name 'AX88179'
