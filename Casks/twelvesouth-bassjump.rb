@@ -19,6 +19,7 @@ cask 'twelvesouth-bassjump' do
   homepage 'https://www.twelvesouth.com/product/bassjump-2-for-macbook'
 
   depends_on macos: '>= :mavericks'
+  container nested: "BassJumpInstaller_#{version}.dmg"
 
   if MacOS.version <= :el_capitan
     pkg 'BassJumpInstaller.pkg'
@@ -30,6 +31,14 @@ cask 'twelvesouth-bassjump' do
                           'com.twelvesouth.bassjump.installer.halplugin',
                           'com.twelvesouth.bassjump.installer.overridekext',
                           'com.twelvesouth.bassjump.installer.prefpane',
+                          'com.twelvesouth.installer.bassjump.application',
+                          'com.twelvesouth.installer.bassjump.driver',
+                          'com.twelvesouth.installer.bassjump.observer',
+                          'com.twelvesouth.installer.bassjump.player',
+                        ],
+            launchctl:  [
+                          'com.twelvesouth.bassjump.observer',
+                          'com.twelvesouth.bassjump.player',
                         ],
             kext:       'com.twelvesouth.driver.BassJumpOverrideDriver',
             login_item: 'BassJumpMenuExtra',
