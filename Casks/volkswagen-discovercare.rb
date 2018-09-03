@@ -11,7 +11,7 @@ cask 'volkswagen-discovercare' do
     'de'
   end
 
-  url "http://en.volkswagen.com/content/medialib/vwd4/global/discovercare/files/discovercare_mac#{language}/_jcr_content/renditions/rendition.download_attachment.file/discovercare_mac_#{language}.zip"
+  url "https://www.volkswagen.com/content/medialib/vwd4/global/discovercare/files/discovercare_mac#{language}/_jcr_content/renditions/rendition.download_attachment.file/discovercare_mac_#{language}.zip"
   name 'Volkswagen DiscoverCare'
   homepage 'http://www.volkswagen.com/discovercare'
 
