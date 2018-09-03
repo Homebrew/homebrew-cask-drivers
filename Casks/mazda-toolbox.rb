@@ -1,6 +1,6 @@
 cask 'mazda-toolbox' do
-  version '2017_05_16__14_25_TB4'
-  sha256 'bbaa78c28c8622a9e44c955567aa941ff77a01948364e68c2ce8179ace6f2747'
+  version '2018_08_29__16_48_00'
+  sha256 '6ab0c4b951a3fc20b70666a55b56f92779f9143bc43b9f12305e427473f8a7c1'
 
   url "http://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version}/Mazda-Toolbox.dmg"
   name 'Mazda Toolbox'
