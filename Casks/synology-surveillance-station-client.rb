@@ -17,8 +17,10 @@ cask 'synology-surveillance-station-client' do
                          'com.synology.svsclient-Timeline',
                          'svsclient',
                          'SurveillanceStationClient',
+                         'com.synology.svsclient-SurveillanceStationClient',
                        ],
             quit:      [
+                         'com.synology.svsclient-SurveillanceStationClient',
                          'svsclient',
                          'SurveillanceStationClient',
                        ]
