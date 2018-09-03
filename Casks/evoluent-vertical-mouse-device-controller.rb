@@ -1,8 +1,8 @@
 cask 'evoluent-vertical-mouse-device-controller' do
-  version '1.2.0'
-  sha256 'bdb2e39608433d899c62ccbb34906944521f6619a918db29db308472585aed36'
+  version '1.3.0f1'
+  sha256 'aacc74268954edfea38bf9d4704cb7987c84cbedcaa963bbb82413b35497c1ae'
 
-  url "https://evoluent.com/download/EvoluentVerticalMouseDeviceController#{version}f2.dmg"
+  url "https://evoluent.com/download/EvoluentVerticalMouseDeviceController#{version}.dmg"
   name 'Evoluent Vertical Mouse Device Controller'
   homepage 'https://evoluent.com/'
 
