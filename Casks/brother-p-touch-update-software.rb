@@ -8,5 +8,8 @@ cask 'brother-p-touch-update-software' do
 
   pkg 'BrotherPtUpdateSoftware.pkg'
 
-  uninstall pkgutil: 'com.brother.brotherptdriver.BrotherPtUpdateSoftware'
+  uninstall pkgutil: [
+                       'com.brother.brotherptdriver.BrotherPtUpdateSoftware',
+                       'com.Brother.Brotherdriver.BrotherPtUpdateSoftware',
+                     ]
 end
