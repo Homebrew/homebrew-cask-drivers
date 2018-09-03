@@ -7,7 +7,7 @@ cask 'reolink-client' do
   name 'Reolink Client'
   homepage 'https://reolink.com/software-and-manual/'
 
-  container nested: "Mac-ReolinkClient/Mac-ReolinkClient-#{version}.dmg"
+  container nested: "Mac-ReolinkClient-#{version}.dmg"
 
   app 'Reolink Client.app'
 end
