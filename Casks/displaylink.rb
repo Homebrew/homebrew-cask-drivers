@@ -1,5 +1,5 @@
 cask 'displaylink' do
-  version '4.1,1085'
+  version '4.1.11,1085'
   sha256 '14b6186fc3a9b202d0fbafde742e8d357e60427b9a6f1f6ee52ebbd478e729d0'
 
   url "http://www.displaylink.com/downloads/file?id=#{version.after_comma}",
@@ -10,6 +10,8 @@ cask 'displaylink' do
       using: :post
   name 'DisplayLink USB Graphics Software'
   homepage 'http://www.displaylink.com/'
+
+  container nested: "DisplayLink Installer #{version.before_comma}.dmg"
 
   pkg 'DisplayLink Software Installer.pkg'
 
