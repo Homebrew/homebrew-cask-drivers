@@ -13,7 +13,7 @@ cask 'fujitsu-scansnap-manager-evernote' do
     com.fujitsu.pfu.ScanSnap.AOUMonitor
     com.fujitsu.pfu.ScanSnap.OnlineUpdate
     com.fujitsu.pfu.ScansnapEvernoteEdition
-    ]
+    ],
 
   uninstall pkgutil: [
     "com.fujitsu.pfu.ScansnapEvernoteEditionV#{version.no_dots}"
