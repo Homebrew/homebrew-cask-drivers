@@ -1,10 +1,11 @@
 cask 'swannview-link' do
-  version '2.1.4.14'
-  sha256 '6a695460bc886a36ca6e4e6a4446fb50078b998fe3a75b5077de347b49742aa3'
+  version '2.2.7.25'
+  sha256 '413f1cc4e2154de8c8453fb89f5d1cbec6819aa78587c4c5fa6fb663c007e568'
 
-  url 'http://support.swann.com/customer/portal/kb_article_attachments/101292/original.dmg?1481063317'
+  # dropbox.com/s/os2ye4i2nv49csq/ was verified as official when first introduced to the cask
+  url "https://www.dropbox.com/s/os2ye4i2nv49csq/SwannView%20Link%20Mac%20#{version}dmg?dl=1"
   name 'SwannView Link'
-  homepage 'http://support.swann.com/customer/en/portal/articles/2171357-swannview-link-for-mac'
+  homepage 'https://swann.desk.com/customer/en/portal/articles/2171357-swannview-link-for-mac'
 
   app 'SwannView Link.app'
 end
