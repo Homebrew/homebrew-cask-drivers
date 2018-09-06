@@ -1,6 +1,6 @@
 cask 'sonos' do
-  version '9.0'
-  sha256 'da033560d4a52444293a51d0f2010916745c629de2a06eb5e95c9b12e33577c3'
+  version '9.1'
+  sha256 'bacb03bf7dbd42325ea95e54bc94dbc3bb2414d2314c0f62adfb59a9a807e99b'
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.no_dots}.dmg"
   name 'Sonos'
