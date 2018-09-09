@@ -8,11 +8,12 @@ cask 'logitech-gaming-software' do
 
   pkg 'LogitechGamingInstaller.app/Contents/Resources/LogiGamingSetup.mpkg'
 
-  uninstall script:  '/Applications/Logitech/Uninstaller.app/Contents/Resources/UninstallScript.sh',
-            pkgutil: [
-                       'com.logitech.gaming',
-                       'com.logitech.lcdmanager',
-                     ]
+  uninstall script:    '/Applications/Logitech/Uninstaller.app/Contents/Resources/UninstallScript.sh',
+            launchctl: 'com.logitech.logiaudiod',
+            pkgutil:   [
+                         'com.logitech.gaming',
+                         'com.logitech.lcdmanager',
+                       ]
 
   caveats do
     reboot
