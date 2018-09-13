@@ -1,6 +1,6 @@
 cask 'nitrokey' do
-  version '1.3'
-  sha256 '6fe4540441f637c8ecc440f1564866295de8cb1cd5f9e2f5f7adaf13d2575b89'
+  version '1.3.2'
+  sha256 'd6276f6e632625f90a3081251b44636bc0ff4a17e245f080fbd3d661c0eadb85'
 
   # github.com/Nitrokey/nitrokey-app was verified as official when first introduced to the cask
   url "https://github.com/Nitrokey/nitrokey-app/releases/download/v#{version}/Nitrokey.App.dmg"
