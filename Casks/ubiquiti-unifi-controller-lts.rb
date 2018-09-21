@@ -19,4 +19,6 @@ cask 'ubiquiti-unifi-controller-lts' do
                        '/Applications/UniFi.app',
                        '/Applications/UniFi-Discover.app',
                      ]
+
+  zap delete: '~/Library/Application Support/UniFi'
 end
