@@ -15,11 +15,14 @@ cask 'canon-eos-utility' do
                       '/Applications/Canon Utilities/EOS Lens Registration Tool',
                       '/Applications/Canon Utilities/EOS Utility',
                       '/Applications/Canon Utilities/EOS Web Service Registration Tool',
-                      '~/Library/Caches/com.canon.EOS-Lens-Registration-Tool',
-                      '~/Library/Caches/com.canon.UpdateChecker',
-                      '~/Library/Preferences/jp.co.canon.ic.camerasurveyprogram.plist',
-                      '~/Library/Preferences/com.canon.EOS Utility 2.plist',
-                      '~/Library/Preferences/com.canon.EOS-Utility.plist',
-                      '~/Library/Preferences/com.canon.EOS-Utility-3.plist',
                     ]
+
+  zap trash: [
+              '~/Library/Caches/com.canon.EOS-Lens-Registration-Tool',
+              '~/Library/Caches/com.canon.UpdateChecker',
+              '~/Library/Preferences/jp.co.canon.ic.camerasurveyprogram.plist',
+              '~/Library/Preferences/com.canon.EOS Utility 2.plist',
+              '~/Library/Preferences/com.canon.EOS-Utility.plist',
+              '~/Library/Preferences/com.canon.EOS-Utility-3.plist',
+  ]
 end
