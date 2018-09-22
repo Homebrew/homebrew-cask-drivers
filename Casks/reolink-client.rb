@@ -1,6 +1,6 @@
 cask 'reolink-client' do
   version '3.5.0.50'
-  sha256 'fe688b9c97798c7668db45b35f353b972c075155293677c6dc06e6b98bbe26e3'
+  sha256 '70d114e02ec772d3cae83f4a31b826b26ad86354811abef929593b63bc7638a4'
 
   # s3.amazonaws.com/reolink-storage was verified as official when first introduced to the cask
   url 'https://s3.amazonaws.com/reolink-storage/website/client/Mac-ReolinkClient.zip'
