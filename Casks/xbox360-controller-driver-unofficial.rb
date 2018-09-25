@@ -1,6 +1,6 @@
 cask 'xbox360-controller-driver-unofficial' do
-  version '0.16.8'
-  sha256 '1bedc6533bf9fda206008f5f5538c7aba4aa032af95896eced0d8574ead5db58'
+  version '0.16.9'
+  sha256 '3ddd96f7c07452523cdf85ed37d73a684a56664e30bd1a79ee4947b097c187c8'
 
   url "https://github.com/360Controller/360Controller/releases/download/v#{version}/360ControllerInstall_#{version}.dmg"
   appcast 'https://github.com/360Controller/360Controller/releases.atom'
