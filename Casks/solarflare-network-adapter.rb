@@ -8,6 +8,12 @@ cask 'solarflare-network-adapter' do
 
   pkg 'Solarflare10GbE.pkg'
 
+  postflight do
+    system_command '/sbin/kextload',
+                   args: ['-b', 'com.solarflare.driver.sfxge'],
+                   sudo: true
+  end
+
   uninstall launchctl:  'com.solarflare.sfxge_sysctl',
             login_item: 'com.solarflare.sfxge_sysctl',
             kext:       'com.solarflare.driver.sfxge',
