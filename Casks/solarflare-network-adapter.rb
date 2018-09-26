@@ -8,9 +8,10 @@ cask 'solarflare-network-adapter' do
 
   pkg 'Solarflare10GbE.pkg'
 
-  uninstall pkgutil:    'com.solarflare.pkg.Solarflare10GbE',
-            kext:       'com.solarflare.driver.sfxge',
+  uninstall launchctl:  'com.solarflare.sfxge_sysctl',
             login_item: 'com.solarflare.sfxge_sysctl',
+            kext:       'com.solarflare.driver.sfxge',
+            pkgutil:    'com.solarflare.pkg.Solarflare10GbE',
             delete:     [
                           '/usr/local/bin/sfreport',
                           '/usr/local/bin/sfupdate',
