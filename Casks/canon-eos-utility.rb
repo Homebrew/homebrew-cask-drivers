@@ -15,7 +15,8 @@ cask 'canon-eos-utility' do
                       '/Applications/Canon Utilities/EOS Lens Registration Tool',
                       '/Applications/Canon Utilities/EOS Utility',
                       '/Applications/Canon Utilities/EOS Web Service Registration Tool',
-                    ]
+                    ],
+            rmdir:  '/Applications/Canon Utilities'
 
   zap trash: [
                '~/Library/Caches/com.canon.EOS-Lens-Registration-Tool',
