@@ -6,7 +6,7 @@ cask 'netgear-switch-discovery-tool' do
   name 'NETGEAR Switch Discovery Tool'
   homepage 'https://www.netgear.com/support/download/'
 
-  container nested: "NetgearSDT-V#{version}/NetgearSDT-V#{version}.dmg"
+  container nested: "NetgearSDT-V#{version}-Mac/NetgearSDT-V#{version}.dmg"
 
   app 'NETGEAR Switch Discovery Tool.app'
 end
