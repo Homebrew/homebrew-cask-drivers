@@ -14,6 +14,8 @@ cask 'wacom-intuos-tablet' do
                          'com.wacom.wacomtablet',
                          'com.wacom.UpdateHelper',
                          'com.wacom.displayhelper',
+                         'com.wacom.DataStoreMgr',
+                         'com.wacom.DisplayMgr',
                        ],
             quit:      [
                          'com.wacom.TabletDriver',
