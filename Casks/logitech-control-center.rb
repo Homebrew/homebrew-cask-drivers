@@ -1,6 +1,6 @@
 cask 'logitech-control-center' do
-  version '3.9.6.241'
-  sha256 '599f2fdbd8051a4bfb61ba0430a2eb3204b8a29badb9a22b8ac0ad9f44fd3b5f'
+  version '3.9.7.56'
+  sha256 '9be3127908a90653e851a7f07a25c00d6e76677c216537c979e7a4c804a4447c'
 
   url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
   name 'Logitech Control Center'
@@ -9,7 +9,7 @@ cask 'logitech-control-center' do
   pkg 'LCC Installer.app/Contents/Resources/Logitech Control Center.mpkg'
 
   uninstall script:  {
-                       executable: 'LCC Installer.app/Contents/Resources/LCC Uninstaller Tool',
+                       executable: '/Applications/Utilities/LCC Uninstaller.app/Contents/Resources/LCC Uninstaller Tool',
                      },
             pkgutil: [
                        'com.Logitech.Control Center.pkg',
