@@ -20,5 +20,5 @@ cask 'ubiquiti-unifi-controller' do
                        '/Applications/UniFi-Discover.app',
                      ]
 
-  zap delete: '~/Library/Application Support/UniFi'
+  zap trash: '~/Library/Application Support/UniFi'
 end

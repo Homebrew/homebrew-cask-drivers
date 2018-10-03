@@ -14,10 +14,14 @@ cask 'xerox-print-driver' do
     version '3.123.0_1865'
     sha256 'ac9c013705742538c0faa5df2194e3a7d4fb9980dd0570e41b213ff87172ee6c'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macosx1010/ar/XeroxPrintDriver_#{version}.dmg"
-  else
+  elsif MacOS.version <= :el_capitan
     version '4.17.1_1980'
     sha256 '36b1ddf1f598ceaf6f91d38b0d228be3f8f6188c251761424cbea7a869488883'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macosx1011/pt_BR/XeroxPrintDriver_#{version}.dmg"
+  else
+    version '4.19.3_2011'
+    sha256 'e09b1afa325346ff1ea5d4cfbdb4e0528eeec9eada57e1ad5809ad6dc29e82c7'
+    url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macos1012/pt_BR/XeroxPrintDriver_#{version}.dmg"
   end
 
   pkg "Xerox Print Driver #{version.major_minor_patch}.pkg"
