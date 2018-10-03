@@ -8,7 +8,7 @@ cask 'silicon-labs-vcp-driver' do
   name 'CP210x USB to UART Bridge VCP Driver'
   homepage 'https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers'
 
-  container nested: 'SiLabsUSBDriverDisk.dmg'
+  container nested: 'Mac_OSX_VCP_Driver/SiLabsUSBDriverDisk.dmg'
 
   pkg 'Silicon Labs VCP Driver.pkg'
 
