@@ -1,6 +1,6 @@
 cask 'logitech-gaming-software' do
-  version '8.98.306'
-  sha256 'b8fa2cf0caf3b429eb6f4eb5c073caad7ce4b2aa956a08f964e5472126d115d7'
+  version '9.00.20'
+  sha256 '395c6e7d4c0d6d2ce056b71cfdcc532778cd15e181d6b6f047ae838f31c776ce'
 
   url "https://download01.logitech.com/web/ftp/pub/techsupport/gaming/LogitechSetup_#{version}.zip"
   name 'Logitech Gaming Software'
@@ -8,11 +8,12 @@ cask 'logitech-gaming-software' do
 
   pkg 'LogitechGamingInstaller.app/Contents/Resources/LogiGamingSetup.mpkg'
 
-  uninstall script:  '/Applications/Logitech/Uninstaller.app/Contents/Resources/UninstallScript.sh',
-            pkgutil: [
-                       'com.logitech.gaming',
-                       'com.logitech.lcdmanager',
-                     ]
+  uninstall script:    '/Applications/Logitech/Uninstaller.app/Contents/Resources/UninstallScript.sh',
+            launchctl: 'com.logitech.logiaudiod',
+            pkgutil:   [
+                         'com.logitech.gaming',
+                         'com.logitech.lcdmanager',
+                       ]
 
   caveats do
     reboot
