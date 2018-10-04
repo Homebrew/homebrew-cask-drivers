@@ -7,6 +7,8 @@ cask 'lightkey' do
   name 'Lightkey'
   homepage 'http://lightkeyapp.com/'
 
+  depends_on macos: '>= :high_sierra'
+
   pkg 'LightkeyInstaller.pkg'
 
   uninstall pkgutil: [
