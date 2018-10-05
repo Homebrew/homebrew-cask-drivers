@@ -5,8 +5,8 @@ cask 'elgato-game-capture-hd' do
 
     url "http://files.elgato.com/gamecapture/gchdm_#{version.no_dots}.dmg"
   else
-    version '2.9.1,1325'
-    sha256 'bece6a7a510504b13df4fa8c977185e6f99cb27aa2cb7e8b94d4c0743b76affd'
+    version '2.9.2,1327'
+    sha256 '9bcf01399719755034c964549a6a3af38932e7eaf03febc8b3742306505ca8a9'
 
     url "https://edge.elgato.com/egc/macos/egcm/#{version.before_comma}/final/Game%20Capture%20HD%20#{version.before_comma}%20(#{version.after_comma}).dmg"
   end
