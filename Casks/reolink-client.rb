@@ -10,4 +10,8 @@ cask 'reolink-client' do
   container nested: "Mac-ReolinkClient-#{version}.dmg"
 
   app 'Reolink Client.app'
+    
+  preflight do
+    set_permissions "#{staged_path}/Mac-ReolinkClient-#{version}.dmg", '0755'
+  end
 end
