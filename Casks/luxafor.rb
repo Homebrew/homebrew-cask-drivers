@@ -1,6 +1,6 @@
 cask 'luxafor' do
-  version '1.2.19'
-  sha256 'f9c3dc5cd5589738ea3b6d275eb407e1943df1f22d89b53b15d7557931ab1a49'
+  version '1.2.28'
+  sha256 'a56c05f415b076e4eebca9f12769bc28dd2a15287fdb95409906e2ca3981e87b'
 
   url "https://luxafor.com/uploads/luxafor_mac_v#{version}.zip"
   name 'Luxafor'
