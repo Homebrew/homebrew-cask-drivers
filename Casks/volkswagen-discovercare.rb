@@ -13,7 +13,7 @@ cask 'volkswagen-discovercare' do
 
   url "https://www.volkswagen.com/content/medialib/vwd4/global/discovercare/files/discovercare_mac#{language}/_jcr_content/renditions/rendition.download_attachment.file/discovercare_mac_#{language}.zip"
   name 'Volkswagen DiscoverCare'
-  homepage 'http://www.volkswagen.com/discovercare'
+  homepage 'https://www.volkswagen.com/discovercare'
 
   container nested: "DiscoverCare_v.#{version}.dmg"
 

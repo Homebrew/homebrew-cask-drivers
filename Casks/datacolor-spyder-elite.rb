@@ -3,7 +3,7 @@ cask 'datacolor-spyder-elite' do
   sha256 'aac0c688f34380737af11da28b9c48164b15800606353cf80090ecd54d2d0ba3'
 
   # d3d9ci7ypuovlo.cloudfront.net/spyder was verified as official when first introduced to the cask
-  url "http://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}_OSX_Installer.zip"
+  url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}_OSX_Installer.zip"
   name 'Spyder Elite'
   homepage "http://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
 

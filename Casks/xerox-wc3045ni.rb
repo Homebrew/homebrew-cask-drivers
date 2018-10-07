@@ -4,7 +4,7 @@ cask 'xerox-wc3045ni' do
 
   url 'http://download.support.xerox.com/pub/drivers/WC3045/drivers/macos1012/pt_BR/xrwc3045ni1009m107ml.dmg'
   name 'Xerox WC3045NI'
-  homepage 'http://www.support.xerox.com/support/workcentre-3045/downloads/enus.html?operatingSystem=macosx'
+  homepage 'https://www.support.xerox.com/support/workcentre-3045/downloads/enus.html?operatingSystem=macosx'
 
   pkg 'Xerox WorkCentre 3045NI installer.pkg'
 

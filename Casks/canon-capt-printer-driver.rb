@@ -5,7 +5,7 @@ cask 'canon-capt-printer-driver' do
   # gdlp01.c-wss.com was verified as official when first introduced to the cask
   url "http://gdlp01.c-wss.com/gds/2/0100008662/02/Mac_CAPT_V#{version.no_dots}_uk_EN.dmg"
   name 'Canon CAPT Printer Driver'
-  homepage 'http://support-asia.canon-asia.com/contents/ASIA/EN/0100866220.html'
+  homepage 'https://support-asia.canon-asia.com/contents/ASIA/EN/0100866220.html'
 
   pkg 'MacOSX/Canon_CAPT_Installer.pkg'
 

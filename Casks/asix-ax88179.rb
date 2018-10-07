@@ -2,9 +2,9 @@ cask 'asix-ax88179' do
   version '2.10.0'
   sha256 'aa8e3f30dd2dd15bdc08155a70eb3ea33e017d0d9aa25b5ce9719ccce3dafc21'
 
-  url "http://www.asix.com.tw/FrootAttach/driver/AX88179_178A_Macintosh_Driver_Installer_v#{version}.zip"
+  url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_Macintosh_Driver_Installer_v#{version}.zip"
   name 'AX88179'
-  homepage 'http://www.asix.com.tw/download.php?sub=driverdetail&PItemID=131'
+  homepage 'https://www.asix.com.tw/download.php?sub=driverdetail&PItemID=131'
 
   container nested: "AX88179_178A_Macintosh_Driver_Installer_v#{version}/AX88179_178A.dmg"
 

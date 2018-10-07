@@ -5,7 +5,7 @@ cask 'logitech-media-server' do
   # slimdevices.com was verified as official when first introduced to the cask
   url "http://downloads.slimdevices.com/LogitechMediaServer_v#{version}/LogitechMediaServer-#{version}.pkg"
   name 'Logitech Media Server'
-  homepage 'http://www.mysqueezebox.com/'
+  homepage 'https://www.mysqueezebox.com/'
 
   pkg "LogitechMediaServer-#{version}.pkg"
 

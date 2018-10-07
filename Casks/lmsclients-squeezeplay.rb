@@ -6,7 +6,7 @@ cask 'lmsclients-squeezeplay' do
   url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-x86_64-#{version}.dmg"
   appcast 'https://sourceforge.net/projects/lmsclients/rss?path=/squeezeplay/osx'
   name 'Logitech LMS SqueezePlay Client'
-  homepage 'http://forums.slimdevices.com/showthread.php?96328-ANNOUNCE-SqueezePlay-for-Mac-OSX'
+  homepage 'https://forums.slimdevices.com/showthread.php?96328-ANNOUNCE-SqueezePlay-for-Mac-OSX'
 
   app 'SqueezePlay.app'
 end

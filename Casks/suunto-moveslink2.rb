@@ -7,7 +7,7 @@ cask 'suunto-moveslink2' do
   url "https://d1c229iib3zm7m.cloudfront.net/mac/Moveslink2_#{version.dots_to_underscores}.dmg"
   appcast 'https://d1c229iib3zm7m.cloudfront.net/mac/appcast.xml'
   name 'Suunto Moveslink2'
-  homepage 'http://www.movescount.com/connect?os=mac'
+  homepage 'https://www.movescount.com/connect?os=mac'
 
   auto_updates true
 

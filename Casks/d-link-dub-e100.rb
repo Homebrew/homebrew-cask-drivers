@@ -4,7 +4,7 @@ cask 'd-link-dub-e100' do
 
   url "ftp://ftp2.dlink.com/PRODUCTS/DUB-E100/REVD/DUB-E100_REVD_macOS_DRIVER_INSTALLER_v#{version.before_comma}.zip"
   name 'D-Link DUB-E100 Driver'
-  homepage 'http://www.dlink.com/uk/en/products/dub-e100-high-speed-usb-2-fast-ethernet-adapter'
+  homepage 'https://www.dlink.com/uk/en/products/dub-e100-high-speed-usb-2-fast-ethernet-adapter'
 
   container nested: "DUB-E100_Macintosh_10.5_to_10.12_Driver_Installer_v#{version.before_comma}_#{version.after_comma}/DUB-E100.dmg"
 
