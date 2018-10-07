@@ -2,10 +2,10 @@ cask 'lightkey' do
   version '2.6.1'
   sha256 'de5f3aa25909c285545eff325541d40001e7774799151a07ce2754b29ee6042a'
 
-  url "http://lightkeyapp.com/content/06-download/Lightkey-#{version.dots_to_hyphens}/LightkeyInstaller.zip"
-  appcast 'http://lightkeyapp.com/en/update'
+  url "https://lightkeyapp.com/content/06-download/Lightkey-#{version.dots_to_hyphens}/LightkeyInstaller.zip"
+  appcast 'https://lightkeyapp.com/en/update'
   name 'Lightkey'
-  homepage 'http://lightkeyapp.com/'
+  homepage 'https://lightkeyapp.com/'
 
   depends_on macos: '>= :high_sierra'
 

@@ -2,7 +2,7 @@ cask 'garmin-express' do
   version :latest
   sha256 :no_check
 
-  url 'http://download.garmin.com/omt/express/GarminExpress.dmg'
+  url 'https://download.garmin.com/omt/express/GarminExpress.dmg'
   name 'Garmin Express'
   homepage 'https://www.garmin.com/en-US/software/express'
 

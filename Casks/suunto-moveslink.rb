@@ -4,7 +4,7 @@ cask 'suunto-moveslink' do
 
   url "https://content.static.movescount.com/downloads/Moveslink_setup_#{version.dots_to_underscores}.dmg"
   name 'Suunto Moveslink'
-  homepage 'http://www.movescount.com/connect/moveslink?os=mac'
+  homepage 'https://www.movescount.com/connect/moveslink?os=mac'
 
   pkg 'Moveslink_setup.pkg'
 

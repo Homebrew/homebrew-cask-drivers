@@ -5,7 +5,7 @@ cask 'digitus-dn-3023-driver' do
   # assmann.com was verified as official when first introduced to the cask
   url "http://ftp.assmann.com/pub/DN-/DN-3023___4016032318385/DN-3023_driver_Driver%20MAC10.6-10.12_#{version.after_comma}.zip"
   name 'USB driver for Gigabit Ethernet Adapter D-3023'
-  homepage 'http://www.digitus.info/produkte/computer-zubehoer-und-komponenten/netzwerk/netzwerk-adapter/dn-3023/?PL=en'
+  homepage 'https://www.digitus.info/produkte/computer-zubehoer-und-komponenten/netzwerk/netzwerk-adapter/dn-3023/?PL=en'
 
   container nested: "AX88179_178A_Macintosh_10.6_to_10.12_Driver_Installer_v#{version.before_comma.hyphens_to_underscores}/AX88179_178A.dmg"
 

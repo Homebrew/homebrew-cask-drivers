@@ -4,7 +4,7 @@ cask 'brother-ql720nw-utility' do
 
   url "https://download.brother.com/welcome/dlfp100401/pst720m#{version.no_dots}x12all.dmg"
   name 'Brother QL-720NW Printer Setting Tool'
-  homepage 'http://support.brother.com/g/b/producttop.aspx?c=us_ot&lang=en&prod=lpql720nweus'
+  homepage 'https://support.brother.com/g/b/producttop.aspx?c=us_ot&lang=en&prod=lpql720nweus'
 
   pkg 'BrotherQL720NWUtility.pkg'
 

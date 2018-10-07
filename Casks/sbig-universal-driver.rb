@@ -5,7 +5,7 @@ cask 'sbig-universal-driver' do
   # ftp.sbig.com was verified as official when first introduced to the cask
   url 'ftp://ftp.sbig.com/pub/SBIGDriverInstallerUniv.dmg'
   name 'SBIG Universal Driver'
-  homepage 'http://diffractionlimited.com/'
+  homepage 'https://diffractionlimited.com/'
 
   pkg 'SBIG Universal Driver Installer 4r84.pkg'
 

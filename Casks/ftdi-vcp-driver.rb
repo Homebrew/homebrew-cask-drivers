@@ -9,9 +9,9 @@ cask 'ftdi-vcp-driver' do
     pkg 'FTDIUSBSerial.pkg'
   end
 
-  url "http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v#{version.dots_to_underscores}.dmg"
+  url "https://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v#{version.dots_to_underscores}.dmg"
   name 'FTDI VCP Driver'
-  homepage 'http://www.ftdichip.com/Drivers/VCP.htm'
+  homepage 'https://www.ftdichip.com/Drivers/VCP.htm'
 
   uninstall pkgutil: 'com.FTDI.ftdiusbserialdriverinstaller.*',
             kext:    'com.FTDI.driver.FTDIUSBSerialDriver',

@@ -6,7 +6,7 @@ cask 'qmk-toolbox' do
   url "https://github.com/qmk/qmk_toolbox/releases/download/#{version}/QMK.Toolbox.app.zip"
   appcast 'https://github.com/qmk/qmk_toolbox/releases.atom'
   name 'QMK Toolbox'
-  homepage 'http://qmk.fm/'
+  homepage 'https://qmk.fm/'
 
   app 'QMK Toolbox.app'
 end
