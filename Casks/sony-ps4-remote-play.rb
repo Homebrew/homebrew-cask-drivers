@@ -1,4 +1,4 @@
-cask 'sony-remoteplay' do
+cask 'sony-ps4-remote-play' do
   version :latest
   sha256 :no_check
 
