@@ -7,8 +7,6 @@ cask 'lg-onscreen-control' do
   name 'LG OnScreen Control'
   homepage 'https://www.lg.com/us/support/monitors'
 
-  accessibility_access true
-
   pkg "OSC_V#{version.before_comma}.pkg"
 
   postflight do

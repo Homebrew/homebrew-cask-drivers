@@ -7,7 +7,6 @@ cask 'philips-hue-sync' do
   name 'Philips Hue Sync'
   homepage 'https://www2.meethue.com/en-us/entertainment/hue-sync'
 
-  accessibility_access true
   container type: :naked
 
   pkg 'philips-hue-sync.pkg'
