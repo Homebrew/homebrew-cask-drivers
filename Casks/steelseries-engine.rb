@@ -9,13 +9,7 @@ cask 'steelseries-engine' do
 
   pkg "SteelSeriesEngine#{version}.pkg"
 
-  uninstall pkgutil:   [
-                         'com.steelseries.installer.driver',
-                         'com.steelseries.SSENext',
-                         'com.steelseries.ssenext.driver',
-                         'com.steelseries.ssenext.driver.signed',
-                         'com.steelseries.ssenext.uninstaller',
-                       ],
+  uninstall pkgutil:   'com.steelseries.*',
             kext:      'com.steelseries.ssenext.driver',
             launchctl: 'com.steelseries.SSENext',
             quit:      "com.steelseries.SteelSeries-Engine-#{version.major}"
