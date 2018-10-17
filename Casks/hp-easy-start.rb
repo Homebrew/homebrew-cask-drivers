@@ -7,4 +7,11 @@ cask 'hp-easy-start' do
   homepage 'https://support.hp.com/'
 
   app 'HP Easy Start.app'
+
+  zap trash: [
+               '~/Library/Caches/com.hp.hp-easy-start',
+               '~/Library/Cookies/com.hp.hp-easy-start.binarycookies',
+               '~/Library/Logs/HP Easy Start.log',
+               '~/Library/Preferences/com.hp.hp-easy-start.plist',
+             ]
 end
