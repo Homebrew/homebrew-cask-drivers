@@ -1,8 +1,9 @@
 cask 'synologyeiauthenticator' do
-  version '1.1-015'
-  sha256 'd2189b8a387239b477fc1516a82ea4bd1c08e43bfa07c70627f47a0253e8bdc8'
+  version '1.2.2-024'
+  sha256 'b753c149dc5329578d7fb47edc233e34d7c5de3295aa7e93866d0f9f9650a9cc'
 
   url "https://global.download.synology.com/download/Tools/EvidenceIntegrityAuthenticator/#{version}/Mac/SynologyEIAuthenticator-#{version}.dmg"
+  appcast 'https://archive.synology.com/download/Tools/EvidenceIntegrityAuthenticator/'
   name 'Synology Evidence Integrity Authenticator'
   homepage 'https://www.synology.com/'
 
