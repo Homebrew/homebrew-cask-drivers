@@ -12,6 +12,6 @@ cask 'logitech-unifying' do
                        'com.Logitech.Unifying Software.pkg',
                        'com.Logitech.Updater.pkg',
                      ],
-             delete: '/Applications/Utilities/Logitech Unifying Software.app',
-             quit:   'com.logitech.unifying.assistant'
+            delete:  '/Applications/Utilities/Logitech Unifying Software.app',
+            quit:    'com.logitech.unifying.assistant'
 end
