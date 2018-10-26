@@ -1,9 +1,9 @@
 cask 'steelseries-engine' do
-  version '3.12.12'
-  sha256 'ab80799396df0faf9dd57e3b72aae56f1777f473df03c13f09ed402b773fad77'
-
+  version :latest
+  sha256 :no_check
+  
   # steelseriescdn.com was verified as official when first introduced to the cask
-  url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg"
+  url "https://steelseries.com/engine/latest/darwin"
   name "SteelSeries Engine #{version.major}"
   homepage 'https://steelseries.com/engine'
 
