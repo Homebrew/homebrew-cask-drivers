@@ -1,6 +1,6 @@
 cask 'steelseries-engine' do
-  version '3.12.12'
-  sha256 'ab80799396df0faf9dd57e3b72aae56f1777f473df03c13f09ed402b773fad77'
+  version '3.12.13'
+  sha256 '340b30317343e8c4ebc5c04bcd0f780d4aca0ac4c3c5b28e7bdd7df75c3f6fe1'
 
   # steelseriescdn.com was verified as official when first introduced to the cask
   url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg"
@@ -9,13 +9,7 @@ cask 'steelseries-engine' do
 
   pkg "SteelSeriesEngine#{version}.pkg"
 
-  uninstall pkgutil:   [
-                         'com.steelseries.installer.driver',
-                         'com.steelseries.SSENext',
-                         'com.steelseries.ssenext.driver',
-                         'com.steelseries.ssenext.driver.signed',
-                         'com.steelseries.ssenext.uninstaller',
-                       ],
+  uninstall pkgutil:   'com.steelseries.*',
             kext:      'com.steelseries.ssenext.driver',
             launchctl: 'com.steelseries.SSENext',
             quit:      "com.steelseries.SteelSeries-Engine-#{version.major}"
