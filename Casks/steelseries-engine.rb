@@ -1,9 +1,9 @@
 cask 'steelseries-engine' do
   version :latest
   sha256 :no_check
-  
+
   # steelseriescdn.com was verified as official when first introduced to the cask
-  url "https://steelseries.com/engine/latest/darwin"
+  url 'https://steelseries.com/engine/latest/darwin'
   name "SteelSeries Engine #{version.major}"
   homepage 'https://steelseries.com/engine'
 
