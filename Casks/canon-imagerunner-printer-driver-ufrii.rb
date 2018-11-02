@@ -1,6 +1,6 @@
 cask 'canon-imagerunner-printer-driver-ufrii' do
-  version '10.16.00'
-  sha256 '1040965f7c583be2156ce3d76325b1e1435e50ea002a2ebf8072afad9145a74f'
+  version '10.17.0'
+  sha256 'cbd0a52ba8b1c0faf42225662933566ea0a4c3504686b60f7e0e7912789d93c7'
 
   url "https://downloads.canon.com/bisg2018/drivers/mac/UFRII_v#{version}_Mac.zip"
   appcast 'https://www.usa.canon.com/internet/PA_NWSupport/driversDownloads?model=15802&os=MACOS_V10_12&type=DS&lang=English'
@@ -9,7 +9,7 @@ cask 'canon-imagerunner-printer-driver-ufrii' do
 
   container nested: "UFRII_v#{version}_Mac.dmg"
 
-  pkg 'UFRII_LT_LIPS_LX_Installer.pkg'
+  pkg 'Office/UFRII_LT_LIPS_LX_Installer.pkg'
 
   uninstall pkgutil: 'jp.co.canon.CUPSPrinter.*'
 end
