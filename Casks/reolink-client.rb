@@ -8,8 +8,4 @@ cask 'reolink-client' do
   homepage 'https://reolink.com/software-and-manual/'
 
   app 'Reolink Client.app'
-    
-  preflight do
-    set_permissions "#{staged_path}/Mac-ReolinkClient-#{version}.dmg", '0755'
-  end
 end
