@@ -2,11 +2,10 @@ cask 'displaylink' do
   if MacOS.version <= :lion
     version '2.2,121'
     sha256 '5c9a97a476b5ff27811491eebb653a03c96f899562b67566c24100d8593b1daa'
-  # elsif MacOS.version <= :mavericks
-  #  version '2.6,707'
-  #  sha256 '5b1c7c5ba941a62a230316df13cdbe9be7559754e808d3480a6197c1a11a779a'
-  #  container type: :zip
-  #  container nested: 'DisplayLink Installer 75598.dmg'
+  elsif MacOS.version <= :mavericks
+    version '2.6,707'
+    sha256 '5b1c7c5ba941a62a230316df13cdbe9be7559754e808d3480a6197c1a11a779a'
+    container type: :zip
   elsif MacOS.version == :yosemite
     version '3.1.1,1252'
     sha256 'cc4e73357841463509f1430520eec04792cbfbf9a2a564ea17d5cc78774372d0'
