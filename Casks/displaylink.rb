@@ -7,10 +7,9 @@ cask 'displaylink' do
   #  sha256 '5b1c7c5ba941a62a230316df13cdbe9be7559754e808d3480a6197c1a11a779a'
   #  container type: :zip
   #  container nested: 'DisplayLink Installer 75598.dmg'
-  # elsif MacOS.version == :yosemite
-  #  version '3.1.1,1252'
-  #  sha256 'cc4e73357841463509f1430520eec04792cbfbf9a2a564ea17d5cc78774372d0'
-  #  container nested: "DisplayLink USB Graphics Software for Mac OS X #{version.before_comma}.dmg"
+  elsif MacOS.version == :yosemite
+    version '3.1.1,1252'
+    sha256 'cc4e73357841463509f1430520eec04792cbfbf9a2a564ea17d5cc78774372d0'
   elsif MacOS.version <= :high_sierra
     version '4.3.1,1251'
     sha256 'd5cd6787d6c4ca6a2425984bcbab607e618e9803335455e24196e14e35657b97'
