@@ -13,7 +13,10 @@ cask 'ftdi-vcp-driver' do
   name 'FTDI VCP Driver'
   homepage 'https://www.ftdichip.com/Drivers/VCP.htm'
 
-  uninstall pkgutil: 'com.FTDI.ftdiusbserialdriverinstaller.*',
+  uninstall pkgutil: [
+                       'com.FTDI.ftdiusbserialdriverinstaller.*',
+                       'com.FTDI.driver.FTDIUSBSerialDriver',
+                     ],
             kext:    'com.FTDI.driver.FTDIUSBSerialDriver',
             delete:  '/Library/Extensions/FTDIUSBSerialDriver.kext'
 
