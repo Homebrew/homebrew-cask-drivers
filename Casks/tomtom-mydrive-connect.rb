@@ -2,7 +2,7 @@ cask 'tomtom-mydrive-connect' do
   version :latest
   sha256 :no_check
 
-  url 'https://cdn.sa.services.tomtom.com/static/sa/Mac/MyDriveConnect.dmg'
+  url 'https://cdn.sa.services.tomtom.com/static/sa/Mac/TomTomMyDriveConnect.dmg'
   name 'TomTom MyDrive Connect'
   homepage 'https://www.tomtom.com/mydrive-connect/'
 
