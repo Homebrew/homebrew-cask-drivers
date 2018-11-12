@@ -1,4 +1,4 @@
-cask 'wacom-intuos-tablet' do
+cask 'wacom-tablet' do
   version '6.3.31-5'
   sha256 'c31c2c77eebb5971b171ff7fe1dd2df8675a14b6b42e2da3f2cbe86827c51c79'
 
