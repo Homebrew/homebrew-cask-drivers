@@ -3,6 +3,7 @@ cask 'ubiquiti-unifi-controller' do
   sha256 'e028f9103e44c62d401caa9b74dfd0b049ae7d8532a0580f43f39dc8e789faf9'
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
+  appcast 'https://www.ubnt.com/download/unifi/'
   name 'UniFi Controller'
   homepage 'https://www.ubnt.com/download/unifi/'
 
