@@ -9,6 +9,7 @@ cask 'elgato-game-capture-hd' do
     sha256 '9bcf01399719755034c964549a6a3af38932e7eaf03febc8b3742306505ca8a9'
 
     url "https://edge.elgato.com/egc/macos/egcm/#{version.before_comma}/final/Game%20Capture%20HD%20#{version.before_comma}%20(#{version.after_comma}).dmg"
+    appcast 'https://rink.hockeyapp.net/api/2/apps/94f44a87e1fe71d4dfcb119ecd582c91'
   end
 
   name 'Game Capture HD'
