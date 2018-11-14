@@ -22,6 +22,8 @@ cask 'displaylink' do
   name 'DisplayLink USB Graphics Software'
   homepage 'https://www.displaylink.com/'
 
+  depends_on macos: '>= :mountain_lion'
+
   pkg 'DisplayLink Software Installer.pkg'
 
   uninstall pkgutil:   [
@@ -35,6 +37,7 @@ cask 'displaylink' do
             #              'com.displaylink.dlusbncm'
             #            ],
             launchctl: [
+                         '73YQY62QM3.com.displaylink.DisplayLinkAPServer',
                          'com.displaylink.useragent-prelogin',
                          'com.displaylink.useragent',
                          'com.displaylink.displaylinkmanager',
