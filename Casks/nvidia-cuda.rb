@@ -1,12 +1,12 @@
 cask 'nvidia-cuda' do
-  version '9.2.64'
-  sha256 'af7bd0aa4c889974a31365ca40005e21651959387e8392d3a29c2f90dd187f40'
+  version '10.0.130'
+  sha256 '4f76261ed46d0d08a597117b8cacba58824b8bb1e1d852745658ac873aae5c8e'
 
   url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac"
   name 'Nvidia CUDA'
   homepage 'https://developer.nvidia.com/cuda-zone'
 
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :high_sierra'
 
   installer script: {
                       executable: 'CUDAMacOSXInstaller.app/Contents/MacOS/CUDAMacOSXInstaller',
