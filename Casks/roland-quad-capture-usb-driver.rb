@@ -1,14 +1,14 @@
 cask 'roland-quad-capture-usb-driver' do
   if MacOS.version <= :yosemite
-    version '1.5.2,10'
+    version '1.5.2,10:24c21855-3c40-469c-a40c-7647a52bf022'
     sha256 'da575f4b3874e0042fddffb4462f4521019ceaa3f44942f64bce099b426cf2d1'
     url "https://static.roland.com/assets/media/tgz/quad_mx#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
   elsif MacOS.version <= :sierra
-    version '1.5.3,12'
+    version '1.5.3,12:199aee04-dd6b-4a9c-9945-ba9ffb295113'
     sha256 '712b27a25275d748e35c174b242f21a2967f5caca013f6cb09330b9232288770'
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
   else
-    version '1.5.4,13'
+    version '1.5.4,13:53d8a307-a8ae-4f9b-9a59-a1adb8c67012'
     sha256 'd3524d7844d24805c3a1c25c09dce62ab87d4c8dd6941a0b1d3653c696563117'
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
   end
@@ -43,7 +43,7 @@ cask 'roland-quad-capture-usb-driver' do
                        ]
 
   caveats do
-    license 'https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/53d8a307-a8ae-4f9b-9a59-a1adb8c67012/'
+    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/#{version.after_colon}/"
     reboot
   end
 end
