@@ -29,7 +29,7 @@ cask 'roland-quad-capture-usb-driver' do
             launchctl: [
                          'jp.co.roland.RDUSB012FSetupd',
                        ],
-            quit:        'QUAD-CAPTURE Control Panel',
+            quit:      'QUAD-CAPTURE Control Panel',
             kext:      [
                          'jp.co.roland.RDUSB012FDev',
                        ],
@@ -38,8 +38,8 @@ cask 'roland-quad-capture-usb-driver' do
                          sudo:       true,
                        ],
             delete:    [
-                        '/Applications/QUAD-CAPTURE Control Panel.app',
-                        '/Applications/Roland/QUAD-CAPTURE Driver',
+                         '/Applications/QUAD-CAPTURE Control Panel.app',
+                         '/Applications/Roland/QUAD-CAPTURE Driver',
                        ]
 
   caveats do
