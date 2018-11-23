@@ -1,6 +1,6 @@
 cask 'bose-soundtouch' do
-  version '20.0.2-2477-d4eb3da,mr4_2018_f2169954'
-  sha256 '54a617db9680c70d543183e76da680ee33889d2785440f272a31e12ee8accda8'
+  version '20.0.3-2519-e12992f,mr4_2018_f2169954'
+  sha256 '431c97193705a65ec45cbb77610d2db7d7f4d952b332b9bbea2e5779a98a7ed6'
 
   # bose.com was verified as official when first introduced to the cask
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
