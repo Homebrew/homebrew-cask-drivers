@@ -20,19 +20,10 @@ cask 'roland-quad-capture-usb-driver' do
 
   pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma.before_colon}.pkg"
 
-  uninstall pkgutil:   [
-                         "jp.co.roland.QuadCapture.app.10#{version.after_comma.before_colon}.pkg",
-                         "jp.co.roland.QuadCapture.kext.10#{version.after_comma.before_colon}.pkg",
-                         "jp.co.roland.QuadCapture.midi.10#{version.after_comma.before_colon}.pkg",
-                         "jp.co.roland.QuadCapture.start.10#{version.after_comma.before_colon}.pkg",
-                       ],
-            launchctl: [
-                         'jp.co.roland.RDUSB012FSetupd',
-                       ],
+  uninstall pkgutil:   'jp.co.roland.QuadCapture.*',
+            launchctl: 'jp.co.roland.RDUSB012FSetupd',
             quit:      'QUAD-CAPTURE Control Panel',
-            kext:      [
-                         'jp.co.roland.RDUSB012FDev',
-                       ],
+            kext:      'jp.co.roland.RDUSB012FDev',
             script:    [
                          executable: "#{staged_path}/QuadCaptureUSBDriver/Uninstaller.app/Contents/MacOS/Uninstaller",
                          sudo:       true,
