@@ -12,7 +12,7 @@ cask 'nvidia-cuda' do
   homepage 'https://developer.nvidia.com/cuda-zone'
 
   # Unusual case: The software will stop working, or is dangerous to run, on the next macOS release.
-  depends_on macos: '<= :high_sierra'
+  depends_on macos: [:sierra, :high_sierra]
 
   installer script: {
                       executable: 'CUDAMacOSXInstaller.app/Contents/MacOS/CUDAMacOSXInstaller',
