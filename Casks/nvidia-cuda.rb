@@ -14,7 +14,7 @@ cask 'nvidia-cuda' do
   # Unusual case: The software will stop working, or is dangerous to run, on the next macOS release.
   depends_on macos: [
                       :sierra,
-                      :high_sierra
+                      :high_sierra,
                     ]
 
   installer script: {
