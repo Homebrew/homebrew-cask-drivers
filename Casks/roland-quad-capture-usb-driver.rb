@@ -21,16 +21,32 @@ cask 'roland-quad-capture-usb-driver' do
   pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma.before_colon}.pkg"
 
   uninstall pkgutil:   'jp.co.roland.QuadCapture.*',
-            launchctl: 'jp.co.roland.RDUSB012FSetupd',
+            launchctl: [
+                         'jp.co.roland.RDUSB0000Setupd',
+                         'jp.co.roland.RDUSB012FSetupd',
+                       ],
             quit:      'QUAD-CAPTURE Control Panel',
-            kext:      'jp.co.roland.RDUSB012FDev',
+            kext:      [
+                         'jp.co.roland.RDUSB0000Dev',
+                         'jp.co.roland.RDUSB012FDev',
+                       ],
             script:    [
-                         executable: "#{staged_path}/QuadCaptureUSBDriver/Uninstaller.app/Contents/MacOS/Uninstaller",
+                         executable: "#{staged_path}/QuadCaptureUSBDriver/Uninstaller.app/Contents/Resources/Script",
                          sudo:       true,
                        ],
             delete:    [
+                         '~/Library/Preferences/jp.co.roland.RDUSB012F.cpl.plist',
                          '/Applications/QUAD-CAPTURE Control Panel.app',
                          '/Applications/Roland/QUAD-CAPTURE Driver',
+                         '/Library/Audio/MIDI Drivers/RDUSB0000Midi.plugin',
+                         '/Library/Audio/MIDI Drivers/RDUSB012FMidi.plugin',
+                         '/Library/Application Support/RolandDrv',
+                         '/Library/Preferences/jp_co_roland_RDUSB0000Dev.pref.plist',
+                         '/Library/Preferences/jp_co_roland_RDUSB012FDev.pref.plist',
+                         '/Library/PreferencePanes/RDUSB012FPref.prefPane',
+                         '/Library/PreferencePanes/RDUSB0000Pref.prefPane',
+                         '/Library/StartupItems/RDUSB012FStartup',
+                         '/Library/StartupItems/RDUSB0000Startup',
                        ]
 
   caveats do
