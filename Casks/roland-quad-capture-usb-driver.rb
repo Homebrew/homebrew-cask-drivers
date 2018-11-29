@@ -43,10 +43,10 @@ cask 'roland-quad-capture-usb-driver' do
                          '/Library/Application Support/RolandDrv',
                          '/Library/Preferences/jp_co_roland_RDUSB0000Dev.pref.plist',
                          '/Library/Preferences/jp_co_roland_RDUSB012FDev.pref.plist',
-                         '/Library/PreferencePanes/RDUSB012FPref.prefPane',
                          '/Library/PreferencePanes/RDUSB0000Pref.prefPane',
-                         '/Library/StartupItems/RDUSB012FStartup',
+                         '/Library/PreferencePanes/RDUSB012FPref.prefPane',
                          '/Library/StartupItems/RDUSB0000Startup',
+                         '/Library/StartupItems/RDUSB012FStartup',
                        ]
 
   caveats do
