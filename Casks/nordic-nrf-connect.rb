@@ -1,6 +1,6 @@
 cask 'nordic-nrf-connect' do
-  version '56320.17.8035140.108238'
-  sha256 '689c828042799b40750e3a07728c463116babb477e7e07f814a8e410edca276c'
+  version '2.6.0'
+  sha256 '?'
 
   url "https://www.nordicsemi.com/eng/nordic/download_resource/#{version.dots_to_slashes}"
   appcast 'https://www.nordicsemi.com/eng/nordic/Products/nRF-Connect-for-Desktop/nRF-Connect-macOS/56320'
