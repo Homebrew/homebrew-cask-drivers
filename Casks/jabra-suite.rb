@@ -8,5 +8,7 @@ cask 'jabra-suite' do
   homepage 'https://www.jabra.com/software-and-services/jabra-direct'
 
   pkg 'JabraDirectSetup.pkg'
+  
+  uninstall pkgutil:   'com.jabra.directonline',
+            delete:    '/Applications/Jabra Direct.app'
 end
-
