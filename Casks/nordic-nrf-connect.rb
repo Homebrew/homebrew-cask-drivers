@@ -1,9 +1,10 @@
 cask 'nordic-nrf-connect' do
-  version '56320.17.8035140.108238'
-  sha256 '689c828042799b40750e3a07728c463116babb477e7e07f814a8e410edca276c'
+  version '2.6.1'
+  sha256 '77b9224b906c034bff61ceaf7943c6d7091ba41961cfc26ae50c1d3b04a31cd4'
 
-  url "https://www.nordicsemi.com/eng/nordic/download_resource/#{version.dots_to_slashes}"
-  appcast 'https://www.nordicsemi.com/eng/nordic/Products/nRF-Connect-for-Desktop/nRF-Connect-macOS/56320'
+  # github.com/NordicSemiconductor/pc-nrfconnect-core/ was verified as official when first introduced to the cask
+  url "https://github.com/NordicSemiconductor/pc-nrfconnect-core/releases/download/v#{version}/nrfconnect-#{version}.dmg"
+  appcast 'https://github.com/NordicSemiconductor/pc-nrfconnect-core/releases.atom'
   name 'nRF Connect'
   homepage 'https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF-Connect-for-desktop/'
 
