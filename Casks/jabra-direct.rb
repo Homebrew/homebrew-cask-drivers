@@ -1,4 +1,4 @@
-cask 'jabradirect' do
+cask 'jabra-direct' do
   version '4.0.3545'
   sha256 'eaa0150c8728be1c413b72bc201af69e2712a1ee8e2d5ac0f85e0bba7229dd40'
 
