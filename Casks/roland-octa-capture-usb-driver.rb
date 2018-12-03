@@ -2,15 +2,17 @@ cask 'roland-octa-capture-usb-driver' do
   if MacOS.version <= :yosemite
     version '1.5.2,10:e735f8cd-fbdb-4e30-9e9b-4aa86bb84ba8'
     sha256 '589c70e7aae284990d4b6d0ecd99f61bb69d5837d2fa1e20e6c7073df6f1bb9f'
+    url "https://static.roland.com/assets/media/tgz/octa_mx#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   elsif MacOS.version <= :sierra
     version '1.5.3,12:f83647c6-c214-430d-9efb-9ff7d13df4e5'
     sha256 '0aadd3297892a5a404c6ef6d522c2ff124bd4c06fabf49d56a7b92c47e219107'
+    url "https://static.roland.com/assets/media/tgz/octa_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   else
     version '1.5.4,13:d60c6bec-fe34-4343-af5d-1e72dd1b5f8a'
     sha256 'ad16ab8a0a51ae6f26bce5ad453147394706c9bb9aad4f426a2edf02079f11d5'
+    url "https://static.roland.com/assets/media/tgz/octa_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   end
 
-  url "https://static.roland.com/assets/media/tgz/octa_mx#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   name 'Roland Octa-Capture USB Driver'
   homepage 'https://www.roland.com/us/support/by_product/octa-capture/updates_drivers/'
 
