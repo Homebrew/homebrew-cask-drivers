@@ -25,7 +25,7 @@ cask 'anker-rtunic' do
                      ],
             delete:  [
                        '/Library/Extensions/AppleRTL815X*.kext',
-                       '/System/Library/Extensions/IONetworkingFamily.kext/Contents/PlugIns/AppleRTL815X*.kext'
+                       '/System/Library/Extensions/IONetworkingFamily.kext/Contents/PlugIns/AppleRTL815X*.kext',
                      ]
 
   caveats do
