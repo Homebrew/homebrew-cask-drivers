@@ -1,6 +1,6 @@
 cask 'shearwater' do
-  version '3.1.4'
-  sha256 'd0b3ced1782503f0776f6f78611ce81fc77cba61c92aafa3026cfc5239316a7a'
+  version '3.1.5'
+  sha256 '0ccb805ae6cece4ea5eb69b5d32afc49360569e93d2def1691da6f06236d655d'
 
   url "https://www.shearwater.com/wp-content/downloads/ShearwaterDesktopInstaller_#{version}.dmg"
   name 'Shearwater Desktop'
