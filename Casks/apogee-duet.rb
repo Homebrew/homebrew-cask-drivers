@@ -1,16 +1,24 @@
 cask 'apogee-duet' do
-  version 'June_2015'
-  sha256 '4269af249372df7a50006f91a7dc1d73dddce9a878a247f98bd0a46d5e2619ee'
+  version '2.5'
+  sha256 '2797ceaff7947fdc5cb82b5b8f774a104fccdb7136aee8642abcb8930fc46249'
 
-  url "https://www.apogeedigital.com/drivers/Duet_#{version}.dmg"
+  url "https://www.apogeedigital.com/drivers/duet_#{version}.dmg"
   name 'Apogee Duet'
-  homepage 'http://www.apogeedigital.com/support/software-downloads#tab-id-8'
+  homepage 'https://www.apogeedigital.com/products/duet'
 
   depends_on macos: '>= :mavericks'
 
   pkg 'Duet Software Installer.pkg'
 
-  uninstall pkgutil: 'com.apogee.pkg.*'
+  uninstall pkgutil:   'com.apogee.pkg.*',
+            launchctl: [
+                         'com.ApogeePopup.plist',
+                         'com.DuetUSBDaemon.plist',
+                       ],
+            script:    [
+                         executable: "#{staged_path}/Duet Uninstaller.app/Contents/Resources/DuetUSBUninstall.sh",
+                         sudo:       true,
+                       ]
 
   caveats do
     reboot
