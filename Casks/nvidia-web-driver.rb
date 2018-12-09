@@ -9,8 +9,8 @@ cask 'nvidia-web-driver' do
     version '378.05.05.25f11'
     sha256 '7230bf6ef1681b34d7acabeea54979139a2421f47fd28100f104923eaab9370e'
   else
-    version '387.10.10.10.40.108'
-    sha256 '090cd232ea8ed7bdd51450174dfceda81d4b4ad675f3a9122bc9c137af9ad49f'
+    version '387.10.10.10.40.113'
+    sha256 'a5c5a5db6c7d7561494378d978537c9b05bf8c13b686636d2621f15b5ada6971'
   end
 
   url "https://images.nvidia.com/mac/pkg/#{version.major}/WebDriver-#{version}.pkg"
