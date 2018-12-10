@@ -10,7 +10,13 @@ cask 'basler-pylon' do
 
   pkg "pylon-#{version}.pkg"
 
-  uninstall pkgutil: 'com.baslerweb.pylon.*'
+  uninstall pkgutil: 'com.baslerweb.pylon.*',
+            delete:  [
+                       '/Applications/Basler Product Documentation.app',
+                       '/Applications/pylon IP Configurator.app',
+                       '/Applications/pylon Programmer\'s Guide and API Reference.app',
+                       '/Applications/pylon Viewer.app',
+                     ]
 
   caveats do
     license 'https://www.baslerweb.com/en/service/pylon-eula/'
