@@ -1,9 +1,9 @@
 cask 'kensington-trackball-works' do
-  version '1.4.0'
-  sha256 'fc02ccf5926b7bb0195f786a2982796f61b6152284db7164890ead3ceb6e4b6c'
+  version '1.5.0'
+  sha256 'd9245b9bfec91d61cfedb1961a33297e0d1f68267983f56ef965e9c4a609c692'
 
   # accoblobstorageus.blob.core.windows.net was verified as official when first introduced to the cask
-  url 'https://accoblobstorageus.blob.core.windows.net/software/b0431d44-7e8d-4785-ba9c-648b7157042d.dmg'
+  url 'https://www.kensington.com/siteassets/software-support/trackballworks-1.5.0.dmg'
   name 'Kensington TrackballWorks'
   homepage 'https://www.kensington.com/'
 
