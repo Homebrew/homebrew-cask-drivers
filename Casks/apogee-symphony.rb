@@ -14,7 +14,6 @@ cask 'apogee-symphony' do
 
   depends_on macos: '>= :mavericks'
 
-  app 'Apogee Maestro 2.app'
   app 'SymphonyIO Firmware Updater.app'
   pkg 'Symphony Software Installer.pkg'
 
