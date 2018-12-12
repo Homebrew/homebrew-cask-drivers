@@ -8,6 +8,7 @@ cask 'apogee-duet' do
 
   depends_on macos: '>= :mavericks'
 
+  app 'Duet USB Firmware Updater.app'
   pkg 'Duet Software Installer.pkg'
 
   uninstall pkgutil:   'com.apogee.pkg.*',
