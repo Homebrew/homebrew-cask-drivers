@@ -7,7 +7,7 @@ cask 'apogee-symphony-mkii' do
     sha256 'b65fbadca751721b22517faf8fc1a72b1c8b7b0a102fd515efe1e265c9917aa7'
   end
 
-  url "http://www.apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
+  url "https://www.apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
   name 'Apogee Symphony I/O MkII'
   homepage 'http://www.apogeedigital.com/support/symphony-io-mk-ii'
 
