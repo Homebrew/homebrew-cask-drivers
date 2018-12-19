@@ -6,7 +6,7 @@ cask 'evoluent-vertical-mouse-device-controller' do
   name 'Evoluent Vertical Mouse Device Controller'
   homepage 'https://evoluent.com/'
 
-  pkg 'Evoluent VerticalMouse Device Controller.pkg'
+  pkg "Evoluent VerticalMouse Device Controller - #{version}.pkg"
 
   uninstall launchctl: 'com.evoluent.agent',
             pkgutil:   'com.evoluent.pkg.Installer'
