@@ -1,8 +1,8 @@
 cask 'mazda-toolbox' do
-  version '2018_08_29__16_48_00'
-  sha256 '6ab0c4b951a3fc20b70666a55b56f92779f9143bc43b9f12305e427473f8a7c1'
+  version '4.4.2002106238,2018_09_18__12_12_00'
+  sha256 '77b0fa587bf098de101f0903486c62f7b2c4a5f7e74f59075058b5fed24b8b81'
 
-  url "http://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version}/Mazda-Toolbox.dmg"
+  url "http://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
   name 'Mazda Toolbox'
   homepage 'https://mazda-na.naviextras.com/shop/portal/downloads'
 
