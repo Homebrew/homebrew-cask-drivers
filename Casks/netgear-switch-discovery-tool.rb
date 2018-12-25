@@ -1,6 +1,6 @@
 cask 'netgear-switch-discovery-tool' do
-  version '1.2.101'
-  sha256 'f0ed6cd9eb2f3ec3bf6e27bc4279777640c26143d9e6c635ec7b3d18dcd66042'
+  version '1.2.102'
+  sha256 '5d58479d3b32798fedefce7a4b6da220ced1bd20ed5d71ce1d3c04e097721da2'
 
   url "https://www.downloads.netgear.com/files/GDC/NSDT/NetgearSDT-V#{version}-Mac.zip"
   name 'NETGEAR Switch Discovery Tool'
