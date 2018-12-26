@@ -3,6 +3,7 @@ cask 'apogee-duet' do
   sha256 '2797ceaff7947fdc5cb82b5b8f774a104fccdb7136aee8642abcb8930fc46249'
 
   url "https://www.apogeedigital.com/drivers/duet_#{version}.dmg"
+  appcast 'http://www.apogeedigital.com/support/register/duet-ipad-mac'
   name 'Apogee Duet'
   homepage 'https://www.apogeedigital.com/products/duet'
 
