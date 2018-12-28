@@ -9,6 +9,7 @@ cask 'apogee-symphony' do
     url "https://www.apogeedigital.com/drivers/symphony-io-#{version}.dmg"
   end
 
+  appcast 'http://www.apogeedigital.com/support/register/symphony-io'
   name 'Apogee Symphony I/O'
   homepage 'https://www.apogeedigital.com/support/symphony-io'
 
