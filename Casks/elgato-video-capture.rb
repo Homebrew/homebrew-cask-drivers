@@ -10,4 +10,11 @@ cask 'elgato-video-capture' do
   depends_on macos: '>= :el_capitan'
 
   app 'Elgato Video Capture.app'
+
+  zap trash: [
+               '~/Library/Application Support/com.elgato.VideoCapture',
+               '~/Library/Application Support/Elgato Video Capture/',
+               '~/Library/Caches/com.elgato.VideoCapture',
+               '~/Library/Preferences/com.elgato.VideoCapture.plist',
+             ]
 end
