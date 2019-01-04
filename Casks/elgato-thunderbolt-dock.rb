@@ -8,7 +8,7 @@ cask 'elgato-thunderbolt-dock' do
   homepage 'https://www.elgato.com/en/dock/thunderbolt-3'
 
   depends_on macos: '>= :el_capitan'
-  container type: :pkg
+  # container type: :pkg
 
   pkg "Elgato_Thunderbolt_Dock_Software_#{version.before_comma}_#{version.after_comma}.pkg"
 
