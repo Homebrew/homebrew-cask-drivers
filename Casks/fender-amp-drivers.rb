@@ -7,8 +7,6 @@ cask 'fender-amp-drivers' do
   name 'Fender FUSE'
   homepage 'https://fuse.fender.com/'
 
-  depends_on macos: '>= :lion'
-
   pkg 'Fender FUSE Installer.app/Contents/Resources/FenderDrivers.pkg'
 
   uninstall pkgutil: 'com.Fender.pkg.FenderAmpDrivers'

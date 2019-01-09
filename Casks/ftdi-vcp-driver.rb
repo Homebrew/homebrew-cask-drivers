@@ -1,17 +1,12 @@
 cask 'ftdi-vcp-driver' do
-  if MacOS.version <= :mountain_lion
-    version '2.2.18'
-    sha256 '248f582527175ab07334f6a1255c8be2da4dfc36da49e26d39a2f61f5b7ba2e7'
-    pkg 'FTDIUSBSerialDriver_10_4_10_5_10_6_10_7.mpkg'
-  else
-    version '2.4.2'
-    sha256 'b57377e10de1c8ae9ddaffa147e4cc529c3571b512bba4798b2b6054d4fabd92'
-    pkg 'FTDIUSBSerial.pkg'
-  end
+  version '2.4.2'
+  sha256 'b57377e10de1c8ae9ddaffa147e4cc529c3571b512bba4798b2b6054d4fabd92'
 
   url "https://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v#{version.dots_to_underscores}.dmg"
   name 'FTDI VCP Driver'
   homepage 'https://www.ftdichip.com/Drivers/VCP.htm'
+
+  pkg 'FTDIUSBSerial.pkg'
 
   uninstall pkgutil: [
                        'com.FTDI.ftdiusbserialdriverinstaller.*',

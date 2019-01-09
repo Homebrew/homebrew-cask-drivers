@@ -8,7 +8,6 @@ cask 'datacolor-spyder-elite' do
   homepage "http://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
 
   auto_updates true
-  depends_on macos: '>= :lion'
 
   installer manual: "Spyder#{version.major}Elite_#{version}_OSX_Installer.app"
 
