@@ -6,8 +6,6 @@ cask 'fujitsu-scansnap-manager-s1100' do
   name 'ScanSnap Manager for Fujitsu ScanSnap s1100'
   homepage 'https://www.fujitsu.com/global/support/products/computing/peripheral/scanners/scansnap/software/s1100m-setup.html'
 
-  depends_on macos: '>= :lion'
-
   pkg 'ScanSnap Manager.pkg'
 
   uninstall pkgutil: 'jp.co.pfu.ScanSnap.*'

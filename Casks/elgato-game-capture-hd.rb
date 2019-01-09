@@ -15,7 +15,5 @@ cask 'elgato-game-capture-hd' do
   name 'Game Capture HD'
   homepage 'https://help.elgato.com/customer/en/portal/articles/2643654-elgato-game-capture-hd-software-release-notes-macos'
 
-  depends_on macos: '>= :mountain_lion'
-
   app 'Game Capture HD.app'
 end

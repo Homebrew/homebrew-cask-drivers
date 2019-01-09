@@ -22,8 +22,6 @@ cask 'displaylink' do
   name 'DisplayLink USB Graphics Software'
   homepage 'https://www.displaylink.com/'
 
-  depends_on macos: '>= :mountain_lion'
-
   pkg 'DisplayLink Software Installer.pkg'
 
   uninstall pkgutil:   [
