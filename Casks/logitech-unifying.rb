@@ -1,8 +1,5 @@
 cask 'logitech-unifying' do
-  if MacOS.version <= :mavericks
-    version '1.2.315'
-    sha256 '9106336cc0f640d17a8352a2376652f6e16fd02be584f9c33d41999dfc00d0a8'
-  elsif MacOS.version <= :yosemite
+  if MacOS.version <= :yosemite
     version '1.2.359'
     sha256 'e6fd9c1b536033f3346b32c391bd58587ea9f549cab7839cf8a1dbc62a739825'
   else
@@ -16,8 +13,6 @@ cask 'logitech-unifying' do
   homepage 'https://www.logitech.com/en-us/promotions/6072'
 
   depends_on macos: [
-                      :mountain_lion,
-                      :mavericks,
                       :yosemite,
                       :el_capitan,
                       :sierra,
