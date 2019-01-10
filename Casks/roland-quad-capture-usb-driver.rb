@@ -52,7 +52,7 @@ cask 'roland-quad-capture-usb-driver' do
                '/Library/Preferences/jp_co_roland_RDUSB0000Dev.pref.plist',
                '/Library/Preferences/jp_co_roland_RDUSB012FDev.pref.plist',
                '~/Library/Preferences/jp.co.roland.RDUSB012F.cpl.plist',
-               '~/Library/Saved Application State/jp.co.roland.RDUSB012F.Uninstaller.savedState'
+               '~/Library/Saved Application State/jp.co.roland.RDUSB012F.Uninstaller.savedState',
              ]
 
   caveats do
