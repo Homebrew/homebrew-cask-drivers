@@ -13,8 +13,9 @@ cask 'roland-quad-capture-usb-driver' do
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   end
 
+  appcast 'https://www.roland.com/us/support/by_product/quad-capture/updates_drivers'
   name 'Roland Quad-Capture USB Driver'
-  homepage 'https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/'
+  homepage 'https://www.roland.com/us/products/quad-capture/'
 
   depends_on macos: '>= :yosemite'
 
@@ -35,22 +36,27 @@ cask 'roland-quad-capture-usb-driver' do
                          sudo:       true,
                        ],
             delete:    [
-                         '~/Library/Preferences/jp.co.roland.RDUSB012F.cpl.plist',
                          '/Applications/QUAD-CAPTURE Control Panel.app',
                          '/Applications/Roland/QUAD-CAPTURE Driver',
                          '/Library/Audio/MIDI Drivers/RDUSB0000Midi.plugin',
                          '/Library/Audio/MIDI Drivers/RDUSB012FMidi.plugin',
                          '/Library/Application Support/RolandDrv',
-                         '/Library/Preferences/jp_co_roland_RDUSB0000Dev.pref.plist',
-                         '/Library/Preferences/jp_co_roland_RDUSB012FDev.pref.plist',
-                         '/Library/PreferencePanes/RDUSB0000Pref.prefPane',
-                         '/Library/PreferencePanes/RDUSB012FPref.prefPane',
                          '/Library/StartupItems/RDUSB0000Startup',
                          '/Library/StartupItems/RDUSB012FStartup',
-                       ]
+                       ],
+            rmdir:     '/Applications/Roland'
+
+  zap trash: [
+               '/Library/PreferencePanes/RDUSB0000Pref.prefPane',
+               '/Library/PreferencePanes/RDUSB012FPref.prefPane',
+               '/Library/Preferences/jp_co_roland_RDUSB0000Dev.pref.plist',
+               '/Library/Preferences/jp_co_roland_RDUSB012FDev.pref.plist',
+               '~/Library/Preferences/jp.co.roland.RDUSB012F.cpl.plist',
+               '~/Library/Saved Application State/jp.co.roland.RDUSB012F.Uninstaller.savedState'
+             ]
 
   caveats do
-    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/#{version.after_colon}/"
+    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/#{version.after_colon}"
     reboot
   end
 end
