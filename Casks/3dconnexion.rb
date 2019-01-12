@@ -20,11 +20,11 @@ cask '3dconnexion' do
                          sudo:       true,
                        ],
             delete:    [
-                         '/Applications/3Dconnexion',
+                         "#{appdir}/3Dconnexion",
                          '/Library/Extensions/3Dconnexion.kext',
                          '/Library/Frameworks/3DconnexionClient.framework',
                        ],
-            rmdir:     '/Applications/3Dconnexion'
+            rmdir:     "#{appdir}/3Dconnexion"
 
   zap trash: [
                '/Library/Application Support/3Dconnexion',
