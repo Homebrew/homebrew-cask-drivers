@@ -12,14 +12,7 @@ cask '3dconnexion' do
   uninstall pkgutil:   'com.3dconnexion.*',
             launchctl: 'com.3dconnexion.nlserverIPalias',
             quit:      'com.3dconnexion.*',
-            #signal: [
-                      #['TERM', 'com.3dconnexion.driver'],
-                      #['QUIT', 'com.3dconnexion.driver'],
-                      #['INT',  'com.3dconnexion.driver'],
-                      #['HUP',  'com.3dconnexion.driver'],
-                      #['KILL', 'com.3dconnexion.driver'],
-                    #],
-            kext:      'com.3dconnexion.driver', # TODO: (kernel) Can't unload kext com.3dconnexion.driver; classes have instances:
+            kext:      'com.3dconnexion.driver',
             script:    [
                          executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
                          sudo:       true,
