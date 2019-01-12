@@ -7,6 +7,8 @@ cask '3dconnexion' do
   name '3Dconnexion'
   homepage 'https://www.3dconnexion.com/'
 
+  depends_on macos: '>= :yosemite'
+
   pkg 'Install 3Dconnexion software.pkg'
 
   uninstall pkgutil:   'com.3dconnexion.*',
