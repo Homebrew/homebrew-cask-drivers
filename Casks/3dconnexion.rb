@@ -9,13 +9,9 @@ cask '3dconnexion' do
 
   pkg 'Install 3Dconnexion software.pkg'
 
-  uninstall script:    [
-                         executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
-                         sudo:       true,
-                       ]
-  #uninstall #pkgutil:   'com.3dconnexion.*',
-            #launchctl: 'com.3dconnexion.nlserverIPalias',
-            #quit:      'com.3dconnexion.*',
+  uninstall pkgutil:   'com.3dconnexion.*',
+            launchctl: 'com.3dconnexion.nlserverIPalias',
+            quit:      'com.3dconnexion.*',
             #signal: [
                       #['TERM', 'com.3dconnexion.driver'],
                       #['QUIT', 'com.3dconnexion.driver'],
@@ -24,18 +20,19 @@ cask '3dconnexion' do
                       #['KILL', 'com.3dconnexion.driver'],
                     #],
             #kext:      'com.3dconnexion.driver', # TODO: (kernel) Can't unload kext com.3dconnexion.driver; classes have instances:
-            # exists: /Applications/3Dconnexion/Uninstall\ 3Dconnexion\ Driver.app/Contents/Resources/rm3dcx
-            #executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
-            #,
-            #delete:    [
-            #             '/Applications/3Dconnexion',
-            #             '/Library/Extensions/3Dconnexion.kext',
-            #             '/Library/Frameworks/3DconnexionClient.framework',
-            #           ],
-            #rmdir:     '/Applications/3Dconnexion'
+            script:    [
+                         executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
+                         sudo:       true,
+                       ],
+            delete:    [
+                         '/Applications/3Dconnexion',
+                         '/Library/Extensions/3Dconnexion.kext',
+                         '/Library/Frameworks/3DconnexionClient.framework',
+                       ],
+            rmdir:     '/Applications/3Dconnexion'
 
   zap trash: [
-               '/Library/Application Support/3Dconnexion', # TODO: check if entire dir is removed.
+               '/Library/Application Support/3Dconnexion', #TODO: check if entire dir is removed.
                '/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist',
                '/Library/PreferencePanes/3Dconnexion.prefPane',
                '~/Library/Logs/3Dconnexion',
