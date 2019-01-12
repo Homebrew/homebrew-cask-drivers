@@ -19,7 +19,7 @@ cask '3dconnexion' do
                       #['HUP',  'com.3dconnexion.driver'],
                       #['KILL', 'com.3dconnexion.driver'],
                     #],
-            #kext:      'com.3dconnexion.driver', # TODO: (kernel) Can't unload kext com.3dconnexion.driver; classes have instances:
+            kext:      'com.3dconnexion.driver', # TODO: (kernel) Can't unload kext com.3dconnexion.driver; classes have instances:
             script:    [
                          executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
                          sudo:       true,
@@ -32,11 +32,12 @@ cask '3dconnexion' do
             rmdir:     '/Applications/3Dconnexion'
 
   zap trash: [
-               '/Library/Application Support/3Dconnexion', #TODO: check if entire dir is removed.
+               '/Library/Application Support/3Dconnexion',
                '/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist',
                '/Library/PreferencePanes/3Dconnexion.prefPane',
                '~/Library/Logs/3Dconnexion',
                '~/Library/Preferences/3Dconnexion',
+               '~/Library/Preferences/com.3dconnexion.*.plist',
                '~/Library/Saved Application State/com.3dconnexion.*.savedState',
              ]
 
