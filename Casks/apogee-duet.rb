@@ -14,15 +14,15 @@ cask 'apogee-duet' do
   uninstall pkgutil:   [
                          'com.apogee.pkg.ApogeePopup',
                          'com.apogee.pkg.ApogeeServices',
-                         'com.apogee.pkg.DuetUSB*',
-                         'com.apogee.pkg.Maestro2',
+                         'com.apogee.pkg.DuetUSB.*',
+                         'com.apogee.pkg.Maestro.*',
                        ],
             launchctl: [
                          'com.ApogeePopup.plist',
                          'com.DuetUSBDaemon.plist',
                        ],
             quit:      [
-                         'com.apogee.Apogee-Maestro-2',
+                         'com.apogee.Apogee-Maestro-.*',
                          'com.apogee.Duet-USB-Firmware-Updater',
                        ],
             kext:      'com.apogeedigital.kext.ApogeeUSBDuetAudio',
