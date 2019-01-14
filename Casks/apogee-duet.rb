@@ -9,18 +9,48 @@ cask 'apogee-duet' do
 
   depends_on macos: '>= :mavericks'
 
-  app 'Duet USB Firmware Updater.app'
   pkg 'Duet Software Installer.pkg'
 
-  uninstall pkgutil:   'com.apogee.pkg.*',
+  uninstall pkgutil:   [
+                         'com.apogee.pkg.ApogeePopup',
+                         'com.apogee.pkg.ApogeeServices',
+                         'com.apogee.pkg.DuetUSB.*',
+                         'com.apogee.pkg.Maestro.*',
+                       ],
             launchctl: [
                          'com.ApogeePopup.plist',
                          'com.DuetUSBDaemon.plist',
                        ],
+            quit:      [
+                         'com.apogee.Apogee-Maestro-.*',
+                         'com.apogee.Duet-USB-Firmware-Updater',
+                       ],
+            kext:      'com.apogeedigital.kext.ApogeeUSBDuetAudio',
             script:    [
                          executable: "#{staged_path}/Duet Uninstaller.app/Contents/Resources/DuetUSBUninstall.sh",
                          sudo:       true,
+                       ],
+            delete:    [
+                         '/Library/Application Support/Apogee/ApogeePopup.bundle',
+                         '/Library/Audio/Plug-Ins/HAL/Apogee/DuetUSB',
+                         '/Library/Extensions/DuetUSBOverideDriver.kext',
+                         '/Library/Frameworks/ApogeeServices.framework',
+                       ],
+            rmdir:     [
+                         '/Library/Application Support/Apogee',
+                         '/Library/Audio/Plug-Ins/HAL/Apogee',
                        ]
+
+  zap trash: [
+               '/Library/LaunchAgents/com.ApogeePopup.plist',
+               '/Library/LaunchDaemons/com.DuetUSBDaemon.plist',
+               '/Library/Preferences/com.apogee.productsInstalled.plist',
+               '~/Library/Caches/com.apogee.Apogee-Maestro-2',
+               '~/Library/Caches/com.apogee.ApogeePopup',
+               '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
+               '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
+               '~/Library/Saved Application State/com.apogee.Duet-USB-Firmware-Updater.savedState',
+             ]
 
   caveats do
     reboot
