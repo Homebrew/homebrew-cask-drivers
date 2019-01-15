@@ -11,15 +11,49 @@ cask 'apogee-one' do
 
   pkg 'One Software Installer.pkg'
 
-  uninstall pkgutil:   'com.apogee.pkg.*',
+  uninstall pkgutil:   [
+                         'com.apogee.pkg.ApogeePopup',
+                         'com.apogee.pkg.ApogeeServices',
+                         'com.apogee.pkg.Maestro.*',
+                         'com.apogee.pkg.ONE.*',
+                       ],
             launchctl: [
                          'com.ApogeePopup.plist',
                          'com.ONEDaemon.plist',
                        ],
+            quit:      [
+                         'com.apogee.Apogee-Maestro-.*',
+                         'com.apogee.ApogeePopup',
+                       ],
+            kext:      [
+                         'com.apogee.driver.ApogeeUSBONEAudio',
+                         'com.apogee.electronics.driver.one.plugin',
+                       ],
             script:    [
                          executable: "#{staged_path}/One Uninstaller.app/Contents/Resources/ONEUnInstall.sh",
                          sudo:       true,
+                       ],
+            delete:    [
+                         '/Library/Application Support/Apogee/ApogeePopup.bundle',
+                         '/Library/Audio/Plug-Ins/HAL/Apogee/ONE',
+                         '/Library/Extensions/ONEMeteringPlugIn.kext',
+                         '/Library/Extensions/ONEUSBOverideDriver.kext',
+                         '/Library/Frameworks/ApogeeServices.framework',
+                       ],
+            rmdir:     [
+                         '/Library/Application Support/Apogee',
+                         '/Library/Audio/Plug-Ins/HAL/Apogee',
                        ]
+
+  zap trash: [
+               '/Library/LaunchAgents/com.ApogeePopup.plist',
+               '/Library/LaunchDaemons/com.ONEDaemon.plist',
+               '/Library/Preferences/com.apogee.productsInstalled.plist',
+               '~/Library/Caches/com.apogee.Apogee-Maestro-2',
+               '~/Library/Caches/com.apogee.ApogeePopup',
+               '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
+               '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
+             ]
 
   caveats do
     reboot
