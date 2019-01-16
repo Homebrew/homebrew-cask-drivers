@@ -23,13 +23,30 @@ cask 'apogee-symphony-mkii' do
                          'com.apogeedigital.SymphonyControl',
                          'com.apogeedigital.SymphonyHelper',
                        ],
-            launchctl: [
-                         'com.SymphonyHelper.plist',
+            launchctl: 'com.SymphonyHelper.plist',
+            quit:      [
+                         'com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater',
+                         'com.apogeedigital.SymphonyControl',
+                         'com.apogeedigital.SymphonyHelper',
                        ],
+            kext:      'com.apogeedigital.kextSymphonyIO2T',
             script:    [
                          executable: "#{staged_path}/Symphony IO MkII Uninstaller.app/Contents/Resources/SymphonyIOMkIIUnInstall.sh",
                          sudo:       true,
-                       ]
+                       ],
+            delete:    [
+                         '/Library/Application Support/Apogee/Symphony Helper.app',
+                         '/Library/Audio/Plug-Ins/HAL/ApogeeSymphonyIO2T.driver',
+                         '/Library/Extensions/ApogeeSymphonyIO2T.kext',
+                       ],
+            rmdir:     '/Library/Application Support/Apogee'
+
+  zap trash: [
+               '/Library/LaunchAgents/com.SymphonyHelper.plist',
+               '~/Library/Preferences/com.apogeedigital.SymphonyControl.plist',
+               '~/Library/Saved Application State/com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater.savedState',
+               '~/Library/Saved Application State/com.apogeedigital.SymphonyControl.savedState',
+             ]
 
   caveats do
     reboot
