@@ -1,6 +1,6 @@
 cask 'jabra-direct' do
-  version '4.0.3545'
-  sha256 'eaa0150c8728be1c413b72bc201af69e2712a1ee8e2d5ac0f85e0bba7229dd40'
+  version '4.0.3913'
+  sha256 '3d5e9e5156248baa3e4ff5403e6c4abe845dd79210583045146a56b8d0787bc1'
 
   # jabraxpressonlineprdstor.blob.core.windows.net/jdo was verified as official when first introduced to the cask
   url 'https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg'
