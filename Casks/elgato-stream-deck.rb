@@ -7,6 +7,8 @@ cask 'elgato-stream-deck' do
   name 'Elgato Stream Deck'
   homepage 'https://www.elgato.com/en/gaming/stream-deck'
 
+  depends_on macos: '>= :sierra'
+
   pkg "Stream_Deck_#{version}.pkg"
 
   uninstall launchctl: 'com.elgato.StreamDeck',
