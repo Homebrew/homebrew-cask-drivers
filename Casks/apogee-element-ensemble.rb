@@ -1,4 +1,4 @@
-cask 'apogee-element' do
+cask 'apogee-element-ensemble' do
   version '2.0'
   sha256 '72dca58261a4ae663e5e971e3cfc4bad1fd491f0f51758beabdaa39667d0a4b1'
 
