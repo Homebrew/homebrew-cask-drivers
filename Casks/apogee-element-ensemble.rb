@@ -22,10 +22,10 @@ cask 'apogee-element-ensemble' do
                          'com.ElementHelper.plist',
                        ],
             quit:      [
-                         'com.apogeedigital.Apogee-Thunderbolt-Firmware-Updater',
                          'com.apogeedigital.ApogeeControl',
                          'com.apogeedigital.ElementHelper',
                        ],
+            signal:    ['TERM', 'com.apogeedigital.Apogee-Thunderbolt-Firmware-Updater'],
             kext:      'com.apogeedigital.kextElementEnsemble',
             script:    [
                          executable: "#{staged_path}/Element Ensemble Uninstaller.app/Contents/Resources/ElementEnsembleUnInstall.sh",
