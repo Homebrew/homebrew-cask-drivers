@@ -7,15 +7,15 @@ cask 'apogee-quartet' do
   name 'Apogee Quartet'
   homepage 'https://www.apogeedigital.com/products/quartet'
 
+  depends_on macos: '>= :mavericks'
+
   pkg 'Quartet Software Installer.pkg'
 
   uninstall pkgutil:   [
                          'com.apogee.pkg.ApogeePopup',
                          'com.apogee.pkg.ApogeeServices',
                          'com.apogee.pkg.Maestro.*',
-                         'com.apogee.pkg.QuartetFirmwareUpdater',
-                         'com.apogee.pkg.QuartetOverrideDriver',
-                         'com.apogee.pkg.QuartetPlugin',
+                         'com.apogee.pkg.Quartet.*',
                        ],
             launchctl: [
                          'com.ApogeePopup.plist',
