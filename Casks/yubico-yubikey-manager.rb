@@ -7,6 +7,8 @@ cask 'yubico-yubikey-manager' do
   name 'Yubikey Manager'
   homepage 'https://developers.yubico.com/yubikey-manager-qt/'
 
+  depends_on macos: '>= :sierra'
+
   pkg "yubikey-manager-qt-#{version}-mac.pkg"
 
   uninstall pkgutil: 'com.yubico.ykman'
