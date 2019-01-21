@@ -40,16 +40,16 @@ cask 'apogee-quartet' do
                        ]
 
   zap trash: [
-              '/Library/LaunchAgents/com.ApogeePopup.plist',
-              '/Library/LaunchDaemons/com.QuartetDaemon.plist',
-              '/Library/Preferences/com.apogee.productsInstalled.plist',
-              '~/Library/Caches/com.apogee.Apogee-Maestro-2',
-              '~/Library/Caches/com.apogee.ApogeePopup',
-              '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
-              '~/Library/Preferences/com.apogee.ApogeePopUp.plist',
-              '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
-              '~/Library/Saved Application State/com.apogee.Quartet-Firmware-Updater.savedState',
-            ]
+               '/Library/LaunchAgents/com.ApogeePopup.plist',
+               '/Library/LaunchDaemons/com.QuartetDaemon.plist',
+               '/Library/Preferences/com.apogee.productsInstalled.plist',
+               '~/Library/Caches/com.apogee.Apogee-Maestro-2',
+               '~/Library/Caches/com.apogee.ApogeePopup',
+               '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
+               '~/Library/Preferences/com.apogee.ApogeePopUp.plist',
+               '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
+               '~/Library/Saved Application State/com.apogee.Quartet-Firmware-Updater.savedState',
+             ]
 
   caveats do
     reboot
