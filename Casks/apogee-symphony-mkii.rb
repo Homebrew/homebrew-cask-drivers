@@ -25,10 +25,10 @@ cask 'apogee-symphony-mkii' do
                        ],
             launchctl: 'com.SymphonyHelper.plist',
             quit:      [
-                         'com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater',
                          'com.apogeedigital.SymphonyControl',
                          'com.apogeedigital.SymphonyHelper',
                        ],
+            signal:    ['TERM', 'com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater'],
             kext:      'com.apogeedigital.kextSymphonyIO2T',
             script:    [
                          executable: "#{staged_path}/Symphony IO MkII Uninstaller.app/Contents/Resources/SymphonyIOMkIIUnInstall.sh",
