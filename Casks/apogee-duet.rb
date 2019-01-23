@@ -21,10 +21,8 @@ cask 'apogee-duet' do
                          'com.ApogeePopup.plist',
                          'com.DuetUSBDaemon.plist',
                        ],
-            quit:      [
-                         'com.apogee.Apogee-Maestro-.*',
-                         'com.apogee.Duet-USB-Firmware-Updater',
-                       ],
+            quit:      'com.apogee.Apogee-Maestro-.*',
+            signal:    ['TERM', 'com.apogee.Duet-USB-Firmware-Updater'],
             kext:      'com.apogeedigital.kext.ApogeeUSBDuetAudio',
             script:    [
                          executable: "#{staged_path}/Duet Uninstaller.app/Contents/Resources/DuetUSBUninstall.sh",
@@ -48,6 +46,7 @@ cask 'apogee-duet' do
                '~/Library/Caches/com.apogee.Apogee-Maestro-2',
                '~/Library/Caches/com.apogee.ApogeePopup',
                '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
+               '~/Library/Preferences/com.apogee.ApogeePopUp.plist',
                '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
                '~/Library/Saved Application State/com.apogee.Duet-USB-Firmware-Updater.savedState',
              ]
