@@ -35,6 +35,7 @@ cask 'apogee-symphony' do
             signal:    [
                          ['TERM', 'com.apogee.SymphonyIO-Firmware-Updater'],
                          ['TERM', 'com.apogeedigital.ThunderBridge-Firmware-Updater'],
+                       ],
             kext:      [
                          'com.apogee.driver.ApogeeUSBSymphonyIOAudio',
                          'com.apogeedigital.driver.Symphony64',
