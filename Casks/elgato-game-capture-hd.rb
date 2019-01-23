@@ -6,12 +6,12 @@ cask 'elgato-game-capture-hd' do
     version '2.9.2,1327'
     sha256 '9bcf01399719755034c964549a6a3af38932e7eaf03febc8b3742306505ca8a9'
   else
-    version '2.10.1,1351'
-    sha256 '5b8da60571feed59eb99b0f8efb15c155fc410a65403bd1616c13c65a8075a52'
+    version '2.11.0,1405'
+    sha256 '1261fed5ff8ee9aa403f19001f96c09dbf56d75688f2c50b426834223f81545d'
   end
 
   url "https://gc-updates.elgato.com/mac/download.php?build=#{version.after_comma}"
-  appcast 'https://rink.hockeyapp.net/api/2/apps/94f44a87e1fe71d4dfcb119ecd582c91'
+  appcast 'https://gc-updates.elgato.com/mac/egcm-update-rss/?dbg=0&lang=English'
   name 'Game Capture HD'
   homepage 'https://help.elgato.com/customer/en/portal/articles/2643654-elgato-game-capture-hd-software-release-notes-macos'
 
