@@ -52,6 +52,7 @@ cask 'apogee-one' do
                '~/Library/Caches/com.apogee.Apogee-Maestro-2',
                '~/Library/Caches/com.apogee.ApogeePopup',
                '~/Library/Preferences/com.apogee.Apogee-Maestro-2.plist',
+               '~/Library/Preferences/com.apogee.ApogeePopUp.plist',
                '~/Library/Saved Application State/com.apogee.Apogee-Maestro-2.savedState',
              ]
 
