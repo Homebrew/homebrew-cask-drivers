@@ -31,11 +31,11 @@ cask 'apogee-symphony' do
                          'com.symphonyDaemon.plist',
                          'com.usbApogeeDaemon.plist',
                        ],
-            quit:      [
-                         'com.apogee.Apogee-Maestro-.*',
-                         'com.apogeedigital.ThunderBridge-Firmware-Updater',
+            quit:      'com.apogee.Apogee-Maestro-.*',
+            signal:    [
+                         ['TERM', 'com.apogee.SymphonyIO-Firmware-Updater'],
+                         ['TERM', 'com.apogeedigital.ThunderBridge-Firmware-Updater'],
                        ],
-            signal:    ['TERM', 'com.apogee.SymphonyIO-Firmware-Updater'],
             kext:      [
                          'com.apogee.driver.ApogeeUSBSymphonyIOAudio',
                          'com.apogeedigital.driver.Symphony64',
