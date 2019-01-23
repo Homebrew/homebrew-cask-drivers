@@ -10,7 +10,7 @@ cask 'apogee-symphony-mkii' do
   url "https://www.apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
   appcast 'http://www.apogeedigital.com/support/register/symphony-io-mk-ii'
   name 'Apogee Symphony I/O MkII'
-  homepage 'http://www.apogeedigital.com/support/symphony-io-mk-ii'
+  homepage 'http://www.apogeedigital.com/products/symphony-io'
 
   depends_on macos: '>= :mavericks'
 
@@ -25,10 +25,10 @@ cask 'apogee-symphony-mkii' do
                        ],
             launchctl: 'com.SymphonyHelper.plist',
             quit:      [
-                         'com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater',
                          'com.apogeedigital.SymphonyControl',
                          'com.apogeedigital.SymphonyHelper',
                        ],
+            signal:    ['TERM', 'com.apogeedigital.Symphony-IO-Mk-II-Thunderbolt-Firmware-Updater'],
             kext:      'com.apogeedigital.kextSymphonyIO2T',
             script:    [
                          executable: "#{staged_path}/Symphony IO MkII Uninstaller.app/Contents/Resources/SymphonyIOMkIIUnInstall.sh",
