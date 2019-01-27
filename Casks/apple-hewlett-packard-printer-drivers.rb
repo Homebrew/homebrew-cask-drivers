@@ -1,4 +1,4 @@
-cask 'apple-hewlettpackardprinterdrivers' do
+cask 'apple-hewlett-packard-printer-drivers' do
   version '5.1'
   sha256 '788e26e8afbfcf03d36f45e8563b1cd24183d6a8772b995914072189a714bd22'
 
