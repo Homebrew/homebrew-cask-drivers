@@ -31,7 +31,7 @@ cask 'apple-hewlett-packard-printer-drivers' do
                        'com.hp.scan*',
                        'com.hp.scanModule*',
                      ],
-  uninstall pkgutil: [
+            pkgutil: [
                        'com.apple.pkg.HewlettPackardPrinterDrivers',
                        'com.apple.pkg.HewlettPackardPrinterDriversPreInstall',
                      ]
