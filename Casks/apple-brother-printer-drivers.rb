@@ -7,8 +7,6 @@ cask 'apple-brother-printer-drivers' do
   name 'Brother Printer Drivers'
   homepage 'https://support.apple.com/kb/DL1927'
 
-  depends_on macos: '<= :mojave'
-
   pkg 'BrotherPrinterDrivers.pkg'
 
   uninstall quit:    [
