@@ -23,16 +23,24 @@ cask 'apple-hewlett-packard-printer-drivers' do
                        'com.hp.ScanService',
                        'com.hp.aio.faxarchive',
                        'com.hp.customer.uploader',
+                       'com.hp.devicemodel.hpdot4d',
+                       'com.hp.devicemonitor.*',
+                       'com.hp.dm.hpdot4d',
                        'com.hp.event.status.handler.generic',
                        'com.hp.events.*',
                        'com.hp.hpalerts.plugin.*',
-                       'com.hp.printerutility*',
-                       'com.hp.productresearch*',
-                       'com.hp.scan*',
-                       'com.hp.scanModule*',
+                       'com.hp.printerutility.*',
+                       'com.hp.productresearch.*',
+                       'com.hp.scan.*',
+                       'com.hp.scanModule.*',
                      ],
+            kext:    'com.hp.kext.io.enabler.compound',
             pkgutil: [
                        'com.apple.pkg.HewlettPackardPrinterDrivers',
                        'com.apple.pkg.HewlettPackardPrinterDriversPreInstall',
                      ]
+
+  caveats do
+    reboot
+  end
 end
