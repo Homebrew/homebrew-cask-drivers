@@ -8,5 +8,6 @@ cask 'apple-samsung-printer-drivers' do
 
   pkg 'SamsungPrinterDrivers.pkg'
 
-  uninstall pkgutil: 'com.apple.pkg.SamsungPrinterDrivers'
+  uninstall quit:    'com.samsung.imagecapture.scanner.app',
+            pkgutil: 'com.apple.pkg.SamsungPrinterDrivers'
 end
