@@ -21,7 +21,10 @@ cask 'apogee-duet' do
                          'com.ApogeePopup.plist',
                          'com.DuetUSBDaemon.plist',
                        ],
-            quit:      'com.apogee.Apogee-Maestro-.*',
+            quit:      [
+                         'com.apogee.Apogee-Maestro-.*',
+                         'com.apogee.ApogeePopup',
+                       ],
             signal:    ['TERM', 'com.apogee.Duet-USB-Firmware-Updater'],
             kext:      'com.apogeedigital.kext.ApogeeUSBDuetAudio',
             script:    [
