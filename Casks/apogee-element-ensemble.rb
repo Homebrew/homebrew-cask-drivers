@@ -22,8 +22,10 @@ cask 'apogee-element-ensemble' do
                          'com.ElementHelper.plist',
                        ],
             quit:      [
+                         'com.apogee.ElementEnsemble-Uninstaller',
                          'com.apogeedigital.ApogeeControl',
                          'com.apogeedigital.ElementHelper',
+                         'com.harlankellaway.Gloss',
                        ],
             signal:    ['TERM', 'com.apogeedigital.Apogee-Thunderbolt-Firmware-Updater'],
             kext:      'com.apogeedigital.kextElementEnsemble',
