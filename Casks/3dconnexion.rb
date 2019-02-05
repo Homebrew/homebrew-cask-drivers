@@ -13,7 +13,10 @@ cask '3dconnexion' do
 
   uninstall pkgutil:   'com.3dconnexion.*',
             launchctl: 'com.3dconnexion.nlserverIPalias',
-            quit:      'com.3dconnexion.*',
+            quit:      [
+                         'com.3Dconnexion.3DxUpdater',
+                         'com.3dconnexion.*',
+                       ],
             # kext:      'com.3dconnexion.driver', # Fails to unload kext (classes have instances) when executing `brew zap`.
             script:    [
                          executable: "#{appdir}/3Dconnexion/Uninstall 3Dconnexion Driver.app/Contents/Resources/rm3dcx",
@@ -23,8 +26,7 @@ cask '3dconnexion' do
                          '/Applications/3Dconnexion',
                          '/Library/Extensions/3Dconnexion.kext',
                          '/Library/Frameworks/3DconnexionClient.framework',
-                       ],
-            rmdir:     '/Applications/3Dconnexion'
+                       ]
 
   zap trash: [
                '/Library/Application Support/3Dconnexion',
