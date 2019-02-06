@@ -6,5 +6,5 @@ cask 'luxafor' do
   name 'Luxafor'
   homepage 'https://luxafor.com/'
 
-  app 'Luxafor.app'
+  app 'Luxafor 2.app'
 end
