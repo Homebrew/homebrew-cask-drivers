@@ -34,6 +34,7 @@ cask 'apple-hewlett-packard-printer-drivers' do
                        'com.hp.scan.*',
                        'com.hp.scanModule.*',
                      ],
+            signal:  ['TERM', 'com.hp.printerutility'],
             kext:    'com.hp.kext.io.enabler.compound',
             pkgutil: [
                        'com.apple.pkg.HewlettPackardPrinterDrivers',
@@ -43,11 +44,10 @@ cask 'apple-hewlett-packard-printer-drivers' do
                        '/Library/Extensions/hp_io_enabler_compound.kext',
                        '/Library/Printers/hp/hpio',
                      ],
-            rmdir:   [
-                       '/Library/Printers/hp',
-                     ]
+            rmdir:   '/Library/Printers/hp'
 
   zap trash: [
+               '~/Library/Application Support/HP/Product Improvement Study',
                '~/Library/Logs/hp/HP Product Research.log',
                '~/Library/Preferences/com.hp.HP-Scanner.plist',
                '~/Library/Preferences/com.hp.printerutility.plist',
