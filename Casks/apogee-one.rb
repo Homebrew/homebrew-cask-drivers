@@ -24,7 +24,9 @@ cask 'apogee-one' do
             quit:      [
                          'com.apogee.Apogee-Maestro-.*',
                          'com.apogee.ApogeePopup',
+                         'com.apogee.ONEv2Uninstaller',
                        ],
+            signal:    ['TERM', 'com.apogeedigital.One-Firmware-Updater'],
             kext:      [
                          'com.apogee.driver.ApogeeUSBONEAudio',
                          'com.apogee.electronics.driver.one.plugin',
