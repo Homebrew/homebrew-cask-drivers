@@ -21,7 +21,11 @@ cask 'apogee-quartet' do
                          'com.ApogeePopup.plist',
                          'com.QuartetDaemon.plist',
                        ],
-            quit:      'com.apogee.Apogee-Maestro-.*',
+            quit:      [
+                         'com.apogee.Apogee-Maestro-.*',
+                         'com.apogee.ApogeePopup',
+                         'com.apogee.QuartetUninstaller',
+                       ],
             signal:    ['TERM', 'com.apogee.Quartet-Firmware-Updater'],
             kext:      'com.apogee.driver.ApogeeUSBQuartetAudio',
             script:    [
