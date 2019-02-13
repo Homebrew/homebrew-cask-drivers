@@ -2,8 +2,8 @@ cask 'corsair-icue-beta' do
   version '3.12.118'
   sha256 '3cc37a8c0695196d7a4817ef078cf29396c6d90315f56b8a76e654ed56788d0f'
 
-  url "http://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
-  appcast 'http://forum.corsair.com/v3/showthread.php?p=982647#post982647'
+  url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
+  appcast 'https://forum.corsair.com/v3/showthread.php?p=982647#post982647'
   name 'Corsair iCUE'
   homepage 'https://www.corsair.com/us/en/icue'
 
