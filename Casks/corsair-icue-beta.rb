@@ -18,7 +18,7 @@ cask 'corsair-icue-beta' do
                        ],
             script:    [
                          executable: "#{appdir}/Corsair/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt",
-                         sudo:       true,
+                         sudo:       false,
                        ],
             pkgutil:   [
                          'com.corsair.CorsairAudio',
