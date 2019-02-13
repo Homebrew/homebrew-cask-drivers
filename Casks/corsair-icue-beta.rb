@@ -9,7 +9,7 @@ cask 'corsair-icue-beta' do
 
   depends_on macos: '>= :high_sierra'
 
-  pkg "iCUE.pkg"
+  pkg 'iCUE.pkg'
 
   uninstall launchctl: 'com.corsair.cue.3.launchHelper',
             quit:      [
@@ -17,7 +17,7 @@ cask 'corsair-icue-beta' do
                          'org.qt-project.*',
                        ],
             script:    [
-                         executable: "#{appdir}/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt",
+                         executable: "#{appdir}/Corsair/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt",
                          sudo:       true,
                        ],
             pkgutil:   [
@@ -25,7 +25,6 @@ cask 'corsair-icue-beta' do
                          'com.corsair.cue.3',
                        ],
             delete:    [
-                         '/Applications/Corsair/iCUEUninstaller.app',
                          '/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin',
                          '/Library/LaunchAgents/iCUELaunchAgent.plist',
                        ],
