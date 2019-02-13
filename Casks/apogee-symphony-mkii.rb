@@ -25,6 +25,7 @@ cask 'apogee-symphony-mkii' do
                        ],
             launchctl: 'com.SymphonyHelper.plist',
             quit:      [
+                         'com.apogee.SymphonyIOMkII-Uninstaller',
                          'com.apogeedigital.SymphonyControl',
                          'com.apogeedigital.SymphonyHelper',
                        ],
