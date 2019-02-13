@@ -3,7 +3,7 @@ cask 'corsair-icue-beta' do
   sha256 '3cc37a8c0695196d7a4817ef078cf29396c6d90315f56b8a76e654ed56788d0f'
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
-  appcast 'https://forum.corsair.com/v3/showthread.php?p=982647#post982647'
+  appcast 'http://forum.corsair.com/v3/showthread.php?p=982647#post982647'
   name 'Corsair iCUE'
   homepage 'https://www.corsair.com/us/en/icue'
 
@@ -25,6 +25,7 @@ cask 'corsair-icue-beta' do
                          'com.corsair.cue.3',
                        ],
             delete:    [
+                         '/Applications/Corsair/iCUEUninstaller.app',
                          '/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin',
                          '/Library/LaunchAgents/iCUELaunchAgent.plist',
                        ],
