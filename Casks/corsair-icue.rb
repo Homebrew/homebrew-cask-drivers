@@ -1,4 +1,4 @@
-cask 'corsair-icue-beta' do
+cask 'corsair-icue' do
   version '3.12.118'
   sha256 '3cc37a8c0695196d7a4817ef078cf29396c6d90315f56b8a76e654ed56788d0f'
 
