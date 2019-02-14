@@ -17,8 +17,9 @@ cask 'corsair-icue-beta' do
                          'org.qt-project.*',
                        ],
             script:    [
-                         executable: "osascript #{appdir}/Corsair/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt",
-                         sudo:       false,
+                         executable: '/usr/bin/osascript',
+                         args:       ["#{appdir}/Corsair/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
+                         sudo:       true,
                        ],
             pkgutil:   [
                          'com.corsair.CorsairAudio',
