@@ -12,10 +12,11 @@ cask 'elgato-video-capture' do
   app 'Elgato Video Capture.app'
 
   zap trash: [
-               '~/Library/Application Support/Elgato Video Capture/',
+               '~/Library/Application Support/Elgato Video Capture',
                '~/Library/Application Support/com.elgato.VideoCapture',
                '~/Library/Caches/com.elgato.VideoCapture',
                '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.elgato.VideoCapture',
+               '~/Library/Logs/elgato.log',
                '~/Library/Preferences/com.elgato.VideoCapture.plist',
              ]
 end
