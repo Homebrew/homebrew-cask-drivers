@@ -3,7 +3,7 @@ cask 'focusrite-saffire-mixcontrol' do
   sha256 'db3bef4df400dc31ac78c1ae68f18715d504cede481aff171812b01c59ba1f2e'
 
   url "https://customer.focusrite.com/sites/customer/files/focusrite/downloads/#{version.after_comma}/saffire-mixcontrol-#{version.before_comma}.dmg"
-  name 'Saffire MixControl'
+  name 'Focusrite Saffire MixControl'
   homepage 'https://focusrite.com/'
 
   pkg 'Saffire MixControl.pkg'
