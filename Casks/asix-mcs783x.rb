@@ -19,7 +19,7 @@ cask 'asix-mcs783x' do
 
   # The "uninstal" (one "l") isn't a typo, that's the exact filename
   uninstall script:  [
-                       executable: 'uninstal driver'
+                       executable: 'uninstal driver',
                      ],
             pkgutil: 'asix.com.moschipUsbEthernet.pkg'
 end
