@@ -8,12 +8,12 @@ cask 'focusrite-saffire-mixcontrol' do
 
   pkg 'Saffire MixControl.pkg'
 
-  uninstall quit:      'com.focusrite.SaffireMixControl2',
-            launchctl: 'tc.tctechnologies.daemon.Saffire',
+  uninstall launchctl: 'tc.tctechnologies.daemon.Saffire',
+            quit:      'com.focusrite.SaffireMixControl2',
             kext:      'tc.tctechnologies.driver.Saffire',
             pkgutil:   [
                          'com.focusrite.SaffireInstall.pkg',
-                         'tc.tctechnologies.pkg.Saffire.midi_driver',
                          'tc.tctechnologies.pkg.Saffire.audio_driver',
+                         'tc.tctechnologies.pkg.Saffire.midi_driver',
                        ]
 end
