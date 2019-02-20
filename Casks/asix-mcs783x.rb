@@ -17,9 +17,12 @@ cask 'asix-mcs783x' do
 
   pkg "MCS7830 v#{version.major_minor_patch}.pkg"
 
-  # The "uninstal" (one "l") isn't a typo, that's the exact filename
-  uninstall script:  [
-                       executable: 'uninstal driver',
-                     ],
+  postflight do
+    system_command '/sbin/kextload',
+                   args: ['-b', 'com.asix.driver.moschipUsbEthernet'],
+                   sudo: true
+  end
+
+  uninstall script:  'uninstal driver', # The "uninstal" (one "l") isn't a typo, that's the exact filename
             pkgutil: 'asix.com.moschipUsbEthernet.pkg'
 end
