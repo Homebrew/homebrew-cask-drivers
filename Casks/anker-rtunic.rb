@@ -7,11 +7,13 @@ cask 'anker-rtunic' do
   name 'Anker RTUNIC'
   homepage 'https://www.anker.com/store/aluminum-usb-3-0-to-ethernet-adapter/A7611011'
 
+  depends_on macos: '<= :sierra'
+
   pkg "RTUNICv#{version.before_comma}.pkg"
 
   uninstall pkgutil: [
-                       'com.realtek.usbeth109',
-                       'com.realtek.usbethcomposite109',
+                       'com.realtek.usbeth.*',
+                       'com.realtek.usbethcomposite.*',
                      ],
             kext:    [
                        'com.realtek.driver.AppleRTL815XComposite',
