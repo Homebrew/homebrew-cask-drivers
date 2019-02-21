@@ -10,7 +10,11 @@ cask 'basler-pylon' do
 
   pkg "pylon-#{version}.pkg"
 
-  uninstall pkgutil: 'com.baslerweb.pylon.*',
+  uninstall quit:    [
+                       'com.baslerweb.pylon.*',
+                       'org.qt-project.*',
+                     ],
+            pkgutil: 'com.baslerweb.pylon.*',
             delete:  [
                        '/Applications/Basler Product Documentation.app',
                        '/Applications/pylon IP Configurator.app',
