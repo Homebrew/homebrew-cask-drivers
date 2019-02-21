@@ -3,6 +3,7 @@ cask 'basler-pylon' do
   sha256 'f98e6c0b3410374155d7a572e55a99d82681c29328cd1f46e9224f245598dd33'
 
   url "https://www.baslerweb.com/media/downloads/software/pylon_software/pylon-#{version}.dmg"
+  appcast 'https://www.baslerweb.com/en/sales-support/downloads/software-downloads/#type=pylonsoftware;version=all;os=macos'
   name 'Basler Pylon Camera Software Suite'
   homepage 'https://www.baslerweb.com/en/products/software/basler-pylon-camera-software-suite/'
 
