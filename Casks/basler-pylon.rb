@@ -15,13 +15,24 @@ cask 'basler-pylon' do
                        'com.baslerweb.pylon.*',
                        'org.qt-project.*',
                      ],
+            signal:  [
+                       ['TERM', 'com.baslerweb.pylon.util.ipconf'],
+                       ['TERM', 'com.baslerweb.pylon.viewer'],
+                     ],
             pkgutil: 'com.baslerweb.pylon.*',
             delete:  [
                        '/Applications/Basler Product Documentation.app',
                        '/Applications/pylon IP Configurator.app',
                        '/Applications/pylon Programmer\'s Guide and API Reference.app',
                        '/Applications/pylon Viewer.app',
+                       '/Library/Frameworks/pylon.framework',
                      ]
+
+  zap trash: [
+               '~/Library/Preferences/com.baslerweb.pylon Viewer.plist',
+               '~/Library/Saved Application State/com.baslerweb.pylon.util.ipconf.savedState',
+               '~/Library/Saved Application State/com.baslerweb.pylon.viewer.savedState',
+             ]
 
   caveats do
     license 'https://www.baslerweb.com/en/service/pylon-eula/'
