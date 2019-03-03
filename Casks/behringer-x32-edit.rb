@@ -13,8 +13,8 @@ cask 'behringer-x32-edit' do
             delete: '/Library/Logs/DiagnosticReports/X32-Edit_*.wakeups_resource.diag'
 
   zap trash: [
-              '~/Library/Application Support/CrashReporter/X32-Edit_*.plist',
-              '~/Library/Saved Application State/com.music-group.X32-Edit.savedState',
+               '~/Library/Application Support/CrashReporter/X32-Edit_*.plist',
+               '~/Library/Saved Application State/com.music-group.X32-Edit.savedState',
              ]
 
   caveats do
