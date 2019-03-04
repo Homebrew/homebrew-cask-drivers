@@ -8,8 +8,18 @@ cask 'caldigit-thunderbolt-charging' do
 
   pkg 'CalDigit Thunderbolt Station Charging Support.pkg'
 
-  uninstall pkgutil: 'com.CalDigit.CalDigitThunderboltStationChargingSupport.caldigitThunderbolStationsChargingSupport.CalDigitThunderboltStationChargingSupport.pkg',
-            kext:    'com.CalDigit.ThunderboltStationChargingSupport'
+  uninstall kext:    [
+                       'com.CalDigit.ThunderboltStationChargingSupport',
+                       'com.CalDigit.driver.HDPro',
+                     ],
+            pkgutil: [
+                       'com.CalDigit.CalDigitThunderboltStationChargingSupport.pkg',
+                       'com.CalDigit.caldigitThunderboltStation.*.pkg',
+                     ],
+            delete:  [
+                       '/Library/Extensions/CalDigitHDProDrv.kext',
+                       '/Library/Extensions/CalDigitThunderboltStationChargingSupport.kext',
+                     ]
 
   caveats do
     reboot
