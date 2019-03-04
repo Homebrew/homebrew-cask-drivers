@@ -12,10 +12,7 @@ cask 'caldigit-thunderbolt-charging' do
                        'com.CalDigit.ThunderboltStationChargingSupport',
                        'com.CalDigit.driver.HDPro',
                      ],
-            pkgutil: [
-                       'com.CalDigit.CalDigitThunderboltStationChargingSupport.pkg',
-                       'com.CalDigit.caldigitThunderboltStation.*.pkg',
-                     ],
+            pkgutil: 'com.CalDigit.CalDigitThunderboltStationChargingSupport.caldigitThunderboltStationsChargingSupport.CalDigitThunderboltStationChargingSupport.pkg',
             delete:  [
                        '/Library/Extensions/CalDigitHDProDrv.kext',
                        '/Library/Extensions/CalDigitThunderboltStationChargingSupport.kext',
