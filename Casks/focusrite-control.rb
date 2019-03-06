@@ -1,9 +1,8 @@
 cask 'focusrite-control' do
-  version '2.3.4,32453'
-  sha256 '03540de1770e8f6f04754e707b95d3535e477ab86f2175b3eb962e6687e27996'
+  version '2.4.2'
+  sha256 '6947d13533d591db0a8902ddee0f42e49ba73bf6819982a066be775bbcd54e08'
 
-  # d2zjg0qo565n2.cloudfront.net was verified as official when first introduced to the cask
-  url "https://d2zjg0qo565n2.cloudfront.net/sites/default/files/focusrite/downloads/#{version.after_comma}/focusrite-control-#{version.before_comma}.dmg"
+  url "https://customer.focusrite.com/sites/customer/files/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   name 'Focusrite Control'
   homepage 'https://us.focusrite.com/downloads?product=Scarlett+18i8'
 
