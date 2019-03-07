@@ -22,4 +22,6 @@ cask 'fender-fuse' do
                        'com.ximian.mono',
                      ],
             delete:  '/Applications/Fender FUSE.app'
+
+  zap trash: '~/Library/Application\ Support/Microsoft/Silverlight/OutOfBrowser/*.localhost'
 end
