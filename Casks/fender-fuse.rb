@@ -23,5 +23,5 @@ cask 'fender-fuse' do
                      ],
             delete:  '/Applications/Fender FUSE.app'
 
-  zap trash: '~/Library/Application\ Support/Microsoft/Silverlight/OutOfBrowser/*.localhost'
+  zap trash: '~/Library/Application Support/Microsoft/Silverlight/OutOfBrowser/*.localhost'
 end
