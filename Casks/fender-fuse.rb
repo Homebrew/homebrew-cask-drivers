@@ -8,6 +8,20 @@ cask 'fender-fuse' do
   homepage 'https://fuse.fender.com/'
 
   pkg 'Fender FUSE Installer.app/Contents/Resources/Fender FUSE.pkg'
+  pkg 'Fender FUSE Installer.app/Contents/Resources/Fender Firmware Updater Installer.pkg'
 
-  uninstall pkgutil: 'com.Fender.pkg.FenderFUSE'
+  uninstall quit:    [
+                       'FenderFUSE',
+                       'Fender Firmware Updater',
+                     ],
+            pkgutil: [
+                       'com.Fender.pkg.FenderFUSE',
+                       'com.Fender.pkg.FenderAmpDrivers',
+                       'com.Fender.pkg.FenderFirmwareUpdater',
+                       'com.microsoft.SilverlightInstaller',
+                       'com.ximian.mono',
+                     ],
+            delete:  '/Applications/Fender FUSE.app'
+
+  zap trash: '~/Library/Application Support/Microsoft/Silverlight/OutOfBrowser/*.localhost'
 end
