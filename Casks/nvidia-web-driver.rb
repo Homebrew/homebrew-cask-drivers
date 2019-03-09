@@ -9,8 +9,8 @@ cask 'nvidia-web-driver' do
     version '378.05.05.25f13'
     sha256 'f5849297ee8a4a754f26d998db83878d4c02324db00ec28ab38da1d847d7e5c1'
   else
-    version '387.10.10.10.40.118'
-    sha256 '1a03defb969b0240d4ef4b35071520d884e5903e56843150f0b0433c58cc7bcc'
+    version '387.10.10.10.40.122'
+    sha256 '2f7701fa8b2edfcb51ed529ea76f6a5b42e3522f2ecdf278b127c2f9b4c296ed'
   end
 
   url "https://images.nvidia.com/mac/pkg/#{version.major}/WebDriver-#{version}.pkg"
@@ -27,7 +27,21 @@ cask 'nvidia-web-driver' do
 
   pkg "WebDriver-#{version}.pkg"
 
-  uninstall pkgutil: 'com.nvidia.web-driver'
+  uninstall launchctl: [
+                         'com.nvidia.nvagent',
+                         'com.nvidia.nvroothelper',
+                       ],
+            quit:      [
+                         'com.nvidia.NVIDIAWebDriverUninstaller',
+                         'com.nvidia.nvagent',
+                         'com.nvidia.nvmenu',
+                       ],
+            kext:      [
+                         'com.nvidia.NVDAStartupWeb',
+                         'com.nvidia.web.GeForce*Web',
+                         'com.nvidia.web.NVDA*Web',
+                       ],
+            pkgutil:   'com.nvidia.web-driver'
 
   caveats do
     reboot
