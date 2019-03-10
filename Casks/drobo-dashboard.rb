@@ -2,7 +2,7 @@ cask 'drobo-dashboard' do
   version '3.4.1,108281'
   sha256 'c2b77fe5db23b4705c756a0311a41e62d537048daaa7dd45287985ee1f9aeb4b'
 
-  url "http://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.before_comma}.dmg"
+  url "https://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.before_comma}.dmg"
   name 'Drobo Dashboard'
   homepage 'https://www.drobo.com/'
 
