@@ -27,7 +27,21 @@ cask 'nvidia-web-driver' do
 
   pkg "WebDriver-#{version}.pkg"
 
-  uninstall pkgutil: 'com.nvidia.web-driver'
+  uninstall launchctl: [
+                         'com.nvidia.nvagent',
+                         'com.nvidia.nvroothelper',
+                       ],
+            quit:      [
+                         'com.nvidia.NVIDIAWebDriverUninstaller',
+                         'com.nvidia.nvagent',
+                         'com.nvidia.nvmenu',
+                       ],
+            kext:      [
+                         'com.nvidia.NVDAStartupWeb',
+                         'com.nvidia.web.GeForce*Web',
+                         'com.nvidia.web.NVDA*Web',
+                       ],
+            pkgutil:   'com.nvidia.web-driver'
 
   caveats do
     reboot
