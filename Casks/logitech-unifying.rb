@@ -17,6 +17,7 @@ cask 'logitech-unifying' do
                       :el_capitan,
                       :sierra,
                       :high_sierra,
+                      :mojave,
                     ]
 
   pkg 'Unifying Installer.app/Contents/Resources/Logitech Unifying Signed.mpkg'
