@@ -3,7 +3,7 @@ cask 'elgato-thunderbolt-dock' do
   sha256 '00b378fc07d97237da361606ea088d5c19cf1d84c0c3829285abd2a7c8d5b866'
 
   url 'https://update.elgato.com/mac/thunderbolt-dock-update/download.php'
-  appcast 'https://www.elgato.com/en/dock/support'
+  appcast 'https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://update.elgato.com/mac/thunderbolt-dock-update/download.php'
   name 'Elgato Thunderbolt Dock'
   homepage 'https://www.elgato.com/en/dock/thunderbolt-3'
 
