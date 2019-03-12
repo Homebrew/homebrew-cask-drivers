@@ -41,7 +41,13 @@ cask 'nvidia-web-driver' do
                          'com.nvidia.web.GeForce*Web',
                          'com.nvidia.web.NVDA*Web',
                        ],
-            pkgutil:   'com.nvidia.web-driver'
+            pkgutil:   'com.nvidia.web-driver',
+            delete:    '/Library/PreferencePanes/NVIDIA Driver Manager.prefPane'
+
+  zap trash: [
+               '~/Library/Preferences/ByHost/com.nvidia.nvagent.*.plist',
+               '~/Library/Preferences/ByHost/com.nvidia.nvprefpane.*.plist',
+             ]
 
   caveats do
     reboot
