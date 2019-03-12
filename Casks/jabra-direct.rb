@@ -1,5 +1,5 @@
 cask 'jabra-direct' do
-  version '1.0.12'
+  version '4.0.4381'
   sha256 'bd923b5ce38887e1fc56fbb5418f9a548932f0f9ad18e88d832b17e7e164dc90'
 
   # jabraxpressonlineprdstor.blob.core.windows.net/jdo was verified as official when first introduced to the cask
