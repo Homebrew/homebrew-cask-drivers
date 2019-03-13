@@ -6,7 +6,7 @@ cask 'drobo-dashboard' do
   name 'Drobo Dashboard'
   homepage 'https://www.drobo.com/'
 
-  pkg "Install.app/Contents/Drobo_Dashboard_Installer_#{version.before_comma}_#{version.after_comma}.pkg"
+  pkg "Install.app/Contents/Resources/Drobo_Dashboard_Installer_#{version.before_comma}_#{version.after_comma}.pkg"
 
   uninstall script:  {
                        executable: "#{staged_path}/Uninstall.app/Contents/Resources/Scripts/Drobo_Dashboard_uninstall.sh",
