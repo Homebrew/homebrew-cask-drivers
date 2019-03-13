@@ -1,6 +1,6 @@
 cask 'openbci-gui' do
-  version '4.0.4'
-  sha256 '40b577c70bbec7b920f2d5bb2235d487dfe565dc35982654f4377728c204855b'
+  version '4.1.0'
+  sha256 '9142823e81fefb67f514468c5cad35e47fc38d815dc94d2b81e889a814f89763'
 
   # github.com/OpenBCI/OpenBCI_GUI was verified as official when first introduced to the cask
   url "https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v#{version}/application.macosx.zip"
