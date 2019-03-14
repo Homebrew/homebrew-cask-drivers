@@ -1,6 +1,6 @@
 cask 'ubiquiti-unifi-controller' do
-  version '5.10.17'
-  sha256 '2b16568fc3d3d87d8c24d3fb342849ff20983a75d6cc75001d54139089e5486d'
+  version '5.10.19'
+  sha256 '2dea4802ccc5203d29956f5c970fc676afae484ba94255e61f11807422c66547'
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   appcast 'https://www.ubnt.com/download/unifi/'
