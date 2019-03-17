@@ -2,10 +2,11 @@ cask 'ubiquiti-unifi-controller' do
   version '5.10.19'
   sha256 '2dea4802ccc5203d29956f5c970fc676afae484ba94255e61f11807422c66547'
 
+  # dl.ubnt.com was verified as official when first introduced to the cask
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   appcast 'https://www.ubnt.com/download/unifi'
   name 'Ubiquiti UniFi Network Controller'
-  homepage 'https://unifi-sdn.ui.com'
+  homepage 'https://unifi-sdn.ui.com/'
 
   conflicts_with cask: 'ubiquiti-unifi-controller-lts'
 
@@ -28,7 +29,7 @@ cask 'ubiquiti-unifi-controller' do
 
   zap trash: [
                '~/Library/Application Support/UniFi',
-               '~/Library/Saved Application State/com.ubnt.UniFi.savedState'
+               '~/Library/Saved Application State/com.ubnt.UniFi.savedState',
              ]
 
   caveats do
