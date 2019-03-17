@@ -11,5 +11,9 @@ cask 'yubico-yubikey-manager' do
 
   pkg "yubikey-manager-qt-#{version}-mac.pkg"
 
-  uninstall pkgutil: 'com.yubico.ykman'
+  uninstall quit:    [
+                       'com.yubico.ykman',
+                       'org.qt-project.Qt.*',
+                     ],
+            pkgutil: 'com.yubico.ykman'
 end
