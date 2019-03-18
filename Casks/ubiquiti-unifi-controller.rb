@@ -29,6 +29,7 @@ cask 'ubiquiti-unifi-controller' do
 
   zap trash: [
                '~/Library/Application Support/UniFi',
+               '~/Library/Saved Application State/com.ubnt.UniFi-Discover.savedState',
                '~/Library/Saved Application State/com.ubnt.UniFi.savedState',
              ]
 
