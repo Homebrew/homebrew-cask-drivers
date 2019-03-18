@@ -4,7 +4,7 @@ cask 'ubiquiti-unifi-controller' do
 
   # dl.ubnt.com was verified as official when first introduced to the cask
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
-  appcast 'https://www.ubnt.com/download/unifi'
+  appcast 'https://www.ui.com/download/unifi'
   name 'Ubiquiti UniFi Network Controller'
   homepage 'https://unifi-sdn.ui.com/'
 
