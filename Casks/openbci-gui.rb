@@ -10,14 +10,14 @@ cask 'openbci-gui' do
 
   app 'application.macosx/OpenBCI_GUI.app'
 
-  uninstall quit:   [
-                      'OpenBCI_GUI',
-                      'com.github.Squirrel',
-                      'com.github.electron.framework',
-                      'com.openbci.hub.*',
-                      'org.mantle.Mantle',
-                      'org.reactivecocoa.ReactiveCocoa',
-                    ]
+  uninstall quit: [
+                    'OpenBCI_GUI',
+                    'com.github.Squirrel',
+                    'com.github.electron.framework',
+                    'com.openbci.hub.*',
+                    'org.mantle.Mantle',
+                    'org.reactivecocoa.ReactiveCocoa',
+                  ]
 
   zap trash: [
                '~/Library/Application Support/OpenBCIHub',
@@ -26,5 +26,4 @@ cask 'openbci-gui' do
                '~/Library/Saved Application State/OpenBCI_GUI.savedState',
                '~/Library/Saved Application State/com.openbci.hub.savedState',
              ]
-
 end
