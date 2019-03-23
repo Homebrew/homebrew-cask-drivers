@@ -7,19 +7,36 @@ cask 'steelseries-engine' do
   name "SteelSeries Engine #{version.major}"
   homepage 'https://steelseries.com/engine'
 
+  auto_updates
+  depends_on macos: '>= :yosemite'
+
   pkg "SteelSeriesEngine#{version}.pkg"
 
-  uninstall pkgutil:   'com.steelseries.*',
+  uninstall launchctl: 'com.steelseries.SSENext',
+            quit:      [
+                         'com.github.Electron.framework',
+                         'com.github.Squirrel',
+                         "com.steelseries.SteelSeries-Engine-#{version.major}",
+                         'com.steelseries.ssenext.client.*',
+                         'com.steelseries.ssenext.uninstaller',
+                         'org.mantle.Mantle',
+                         'org.reactivecocoa.ReactiveCocoa',
+                       ],
             kext:      'com.steelseries.ssenext.driver',
-            launchctl: 'com.steelseries.SSENext',
-            quit:      "com.steelseries.SteelSeries-Engine-#{version.major}"
+            script:    [
+                         executable: "/Applications/SteelSeries Engine #{version.major}/SteelSeries Engine #{version.major} Uninstaller.app/Contents/Resources/Uninstall.sh",
+                         sudo:       true,
+                       ],
+            pkgutil:   'com.steelseries.*',
+            delete:    "/Library/Application Support/SteelSeries Engine #{version.major}"
 
   zap trash: [
-               '/Library/Application Support/SteelSeries Engine 3',
-               '~/Library/Application Support/steelseries-engine-3-client',
-               '~/Library/Caches/com.steelseries.SteelSeries-Engine-3',
-               '~/Library/Preferences/com.steelseries.SteelSeries-Engine-3.plist',
+               "~/Library/Application Support/steelseries-engine-#{version.major}-client",
+               "~/Library/Caches/com.steelseries.SteelSeries-Engine-#{version.major}",
+               "~/Library/Logs/SteelSeries Engine #{version.major} Client",
+               "~/Library/Preferences/com.steelseries.SteelSeries-Engine-#{version.major}.plist",
                '~/Library/Preferences/com.steelseries.ssenext.client.helper.plist',
                '~/Library/Preferences/com.steelseries.ssenext.client.plist',
+               '~/Library/Saved Application State/com.steelseries.ssenext.client.savedState',
              ]
 end
