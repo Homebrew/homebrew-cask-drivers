@@ -14,13 +14,9 @@ cask 'steelseries-engine' do
 
   uninstall launchctl: 'com.steelseries.SSENext',
             quit:      [
-                         'com.github.Electron.framework',
-                         'com.github.Squirrel',
                          "com.steelseries.SteelSeries-Engine-#{version.major}",
                          'com.steelseries.ssenext.client.*',
                          'com.steelseries.ssenext.uninstaller',
-                         'org.mantle.Mantle',
-                         'org.reactivecocoa.ReactiveCocoa',
                        ],
             kext:      'com.steelseries.ssenext.driver',
             script:    [
