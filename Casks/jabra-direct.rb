@@ -10,6 +10,26 @@ cask 'jabra-direct' do
 
   pkg 'JabraDirectSetup.pkg'
 
-  uninstall pkgutil: 'com.jabra.directonline',
-            delete:  '/Applications/Jabra Direct.app'
+  uninstall quit:       [
+                          'com.jabra.Avaya3Driver',
+                          'com.jabra.AvayaDriver',
+                          'com.jabra.BriaDriver',
+                          'com.jabra.directonline.*',
+                          'com.jabra.softphoneService',
+                          'nl.superalloy.oss.terminal-notifier',
+                        ],
+            login_item: 'Jabra Direct',
+            pkgutil:    'com.jabra.directonline',
+            delete:     '/Applications/Jabra Direct.app'
+
+  zap trash: [
+               '~/Library/Application Support/Jabra',
+               '~/Library/Application Support/Jabra Direct',
+               '~/Library/Application Support/JabraSDK',
+               '~/Library/Logs/Jabra Direct',
+               '~/Library/Preferences/com.jabra.directonline.helper.plist',
+               '~/Library/Preferences/com.jabra.directonline.plist',
+               '~/Library/Preferences/com.jabra.prefsettings.plist',
+               '~/Library/Saved Application State/com.jabra.directonline.savedState',
+             ]
 end
