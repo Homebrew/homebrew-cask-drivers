@@ -12,11 +12,7 @@ cask 'openbci-gui' do
 
   uninstall quit: [
                     'OpenBCI_GUI',
-                    'com.github.Squirrel',
-                    'com.github.electron.framework',
                     'com.openbci.hub.*',
-                    'org.mantle.Mantle',
-                    'org.reactivecocoa.ReactiveCocoa',
                   ]
 
   zap trash: [
