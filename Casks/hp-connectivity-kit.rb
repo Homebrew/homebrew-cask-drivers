@@ -4,7 +4,7 @@ cask 'hp-connectivity-kit' do
 
   url "ftp://ftp.hp.com/pub/calculators/Prime/HP_Prime_Connectivity_Kit_#{version}.dmg"
   name 'HP Connectivity Kit'
-  homepage 'ihttps://www8.hp.com/us/en/campaigns/prime-graphing-calculator/overview.html'
+  homepage 'https://www8.hp.com/us/en/campaigns/prime-graphing-calculator/overview.html'
 
   app 'HP Connectivity Kit.app'
 end
