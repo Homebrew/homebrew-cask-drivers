@@ -3,9 +3,9 @@ cask 'blackvue-viewer' do
   sha256 '4f74a31e058fd55c635424606c698dfa2c91e52575ced58085e17be5e61b094f'
 
   url "https://www.blackvue.com/download/blackvue-mac-viewer-cloud/?wpdmdl=#{version.after_comma}"
-  appcast 'https://www.blackvue.com/download/blackvue-mac-viewer-cloud/'
+  appcast 'https://www.macupdater.net/cgi-bin/check_urls/check_url_filename.cgi?url=https://www.blackvue.com/download/blackvue-mac-viewer-cloud/?wpdmdl=74331'
   name 'BlackVue Viewer'
-  homepage 'https://www.blackvue.com/'
+  homepage 'https://www.blackvue.com/download/blackvue-mac-viewer-cloud/'
 
   depends_on macos: '>= :yosemite'
 
