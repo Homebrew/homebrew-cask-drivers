@@ -3,6 +3,7 @@ cask 'hdhomerun' do
   sha256 'a7f4895b756e2876f8197c9b95a17a41d6d2e4997ff0c902e5fa0f72f9037569'
 
   url "https://download.silicondust.com/hdhomerun/hdhomerun_mac_#{version}.dmg"
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=http://download.silicondust.com/hdhomerun/hdhomerun_mac.dmg'
   name 'HDHomeRun'
   homepage 'https://www.silicondust.com/support/downloads/'
 
