@@ -3,6 +3,7 @@ cask 'drobo-dashboard' do
   sha256 '97024146ac4e25c8236762089c1a860d63b3152704a7f8e00893321dea207b34'
 
   url "https://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.before_comma}.dmg"
+  appcast 'https://www.drobo.com/docs/start-drobo/'
   name 'Drobo Dashboard'
   homepage 'https://www.drobo.com/'
 
