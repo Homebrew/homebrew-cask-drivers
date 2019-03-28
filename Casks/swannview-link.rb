@@ -4,6 +4,7 @@ cask 'swannview-link' do
 
   # dropbox.com/s/os2ye4i2nv49csq was verified as official when first introduced to the cask
   url "https://www.dropbox.com/s/os2ye4i2nv49csq/SwannView%20Link%20Mac%20#{version}dmg?dl=1"
+  appcast 'https://swann.desk.com/customer/en/portal/articles/2171357-swannview-link-for-mac'
   name 'SwannView Link'
   homepage 'https://swann.desk.com/customer/en/portal/articles/2171357-swannview-link-for-mac'
 
