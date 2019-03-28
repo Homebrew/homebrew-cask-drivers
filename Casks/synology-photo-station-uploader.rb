@@ -3,6 +3,7 @@ cask 'synology-photo-station-uploader' do
   sha256 'f25e009170387720291570d3acfef048d9ee05477c5a0b207df965ddf924d4cb'
 
   url "https://global.download.synology.com/download/Tools/PhotoStationUploader/#{version}/Mac/PhotoStationUploader-#{version.sub(%r{.*-}, '')}-Mac-Installer.dmg"
+  appcast 'https://archive.synology.com/download/Tools/PhotoStationUploader/'
   name 'Synology Photo Station Uploader'
   homepage 'https://www.synology.com/'
 
