@@ -10,7 +10,9 @@ cask 'synology-photo-station-uploader' do
   pkg "PhotoStationUploader-#{version.sub(%r{.*-}, '')}-Mac-Installer.pkg"
 
   uninstall pkgutil:   'com.synology.photostationuploader.installer',
+            quit:      'com.synology.PhotoStationUploader',
             launchctl: [
+                         'com.synology.PhotoUploaderFinderSync',
                          'com.synology.PhotoUploaderShellApp',
                          'com.synology.SynoSIMBL_RefreshFinder',
                        ]
