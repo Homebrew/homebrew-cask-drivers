@@ -4,6 +4,7 @@ cask 'reolink-client' do
 
   # s3.amazonaws.com/reolink-storage was verified as official when first introduced to the cask
   url 'https://s3.amazonaws.com/reolink-storage/website/client/Mac-ReolinkClient.zip'
+  appcast 'https://reolink.com/software-and-manual/'
   name 'Reolink Client'
   homepage 'https://reolink.com/software-and-manual/'
 
