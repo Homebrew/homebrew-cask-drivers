@@ -1,6 +1,6 @@
 cask 'evolv-escribe-suite' do
-  version '2_SP18'
-  sha256 '51d824ce95ea80a6c3d8c075b4b523b58cdbb2f1265d8dbfb3c5c72a22555cf6'
+  version '2_SP19'
+  sha256 '184a1e8d5ec462ad7b602347f182035826a0d5fecde51c54494d57ebfe80c3e0'
 
   url "https://downloads.evolvapor.com/SetupEScribe#{version}_INT.pkg"
   name 'EScribe Suite'
