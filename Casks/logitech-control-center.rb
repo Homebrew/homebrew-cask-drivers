@@ -1,6 +1,6 @@
 cask 'logitech-control-center' do
-  version '3.9.7.56'
-  sha256 '9be3127908a90653e851a7f07a25c00d6e76677c216537c979e7a4c804a4447c'
+  version '3.9.8'
+  sha256 'a35847e73949c0ff90a219ca81ecc8da46fa319b9a8e02e1f5dc974f85e44138'
 
   url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
   name 'Logitech Control Center'
