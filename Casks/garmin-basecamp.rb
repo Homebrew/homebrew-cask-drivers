@@ -7,7 +7,7 @@ cask 'garmin-basecamp' do
   name 'Garmin BaseCamp'
   homepage 'https://www.garmin.com/en-US/shop/downloads/basecamp'
 
-  depends_on macos: '>= :yosemite'
+  depends_on macos: '>= :high_sierra'
 
   pkg 'Install BaseCamp.pkg'
 
