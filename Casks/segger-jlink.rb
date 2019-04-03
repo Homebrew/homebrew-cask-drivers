@@ -6,7 +6,8 @@ cask 'segger-jlink' do
       using: :post,
       data:  {
                'accept_license_agreement' => 'accepted',
-               'non_emb_ctr'              => 'confirmed',
+               'non_eu_denied_list'       => 'confirmed',
+               'submit'                   => 'Download software',
              }
   name 'Segger J-Link Command Line Tools'
   homepage 'https://www.segger.com/downloads/jlink'
