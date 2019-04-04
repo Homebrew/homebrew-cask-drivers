@@ -7,8 +7,6 @@ cask 'apple-hewlett-packard-printer-drivers' do
   name 'HP Printer Drivers'
   homepage 'https://support.apple.com/kb/DL1888'
 
-  depends_on macos: '<= :high_sierra'
-
   pkg 'HewlettPackardPrinterDrivers.pkg'
 
   uninstall quit:    [
