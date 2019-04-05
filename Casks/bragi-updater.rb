@@ -8,4 +8,16 @@ cask 'bragi-updater' do
   homepage 'http://update.bragi.com/'
 
   app 'Bragi Updater.app'
+
+  uninstall quit: [
+                    'com.bragi.updater',
+                    'com.bragi.updater.helper.*',
+                  ]
+
+  zap trash: [
+               '~/Library/Application Support/Bragi-Updater',
+               '~/Library/Preferences/com.bragi.updater.helper.plist',
+               '~/Library/Preferences/com.bragi.updater.plist',
+               '~/Library/Saved Application State/com.bragi.updater.savedState',
+             ]
 end
