@@ -30,5 +30,16 @@ cask 'garmin-basecamp' do
                        'com.Garmin.pkg.MapManager',
                      ]
 
-  zap pkgutil: 'com.Garmin.*'
+  zap trash: [
+               '~/Library/Application Support/Garmin',
+               '~/Library/Caches/Garmin',
+               '~/Library/Caches/com.garmin.BaseCamp',
+               '~/Library/Caches/com.garmin.MapInstall',
+               '~/Library/Cookies/com.garmin.BaseCamp.binarycookies',
+               '~/Library/Cookies/com.garmin.MapInstall.binarycookies',
+               '~/Library/Logs/Garmin',
+               '~/Library/Preferences/com.garmin.BaseCamp.plist',
+               '~/Library/Preferences/com.garmin.MapInstall.plist',
+               '~/Library/Preferences/com.garmin.MapManager.plist',
+             ]
 end
