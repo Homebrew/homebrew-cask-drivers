@@ -11,7 +11,8 @@ cask 'synology-cloud-station-backup' do
 
   pkg 'Install Cloud Station Backup.pkg'
 
-  uninstall pkgutil:   [
+  uninstall quit:      'com.synology.CloudStationBackupUI',
+            pkgutil:   [
                          'com.synology.CloudStationBackup',
                          'com.synology.CloudStationBackupUI',
                        ],
