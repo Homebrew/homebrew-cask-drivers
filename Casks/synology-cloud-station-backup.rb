@@ -1,6 +1,6 @@
 cask 'synology-cloud-station-backup' do
-  version '4.3.0-4435'
-  sha256 'f0c83e70578fd209ad46aef2c14767b78b14fb0d62c23daf5f655802fa9c578a'
+  version '4.3.1-4437'
+  sha256 'e1faf8be16ab3e39cf0efe086f5e3b746285b4aec970c1d8c25502cf820ca6ca'
 
   url "https://global.download.synology.com/download/Tools/CloudStationBackup/#{version}/Mac/Installer/synology-cloud-station-backup-#{version.sub(%r{.*-}, '')}.dmg"
   appcast 'https://archive.synology.com/download/Tools/CloudStationBackup/'
@@ -11,7 +11,14 @@ cask 'synology-cloud-station-backup' do
 
   pkg 'Install Cloud Station Backup.pkg'
 
-  uninstall pkgutil:   'com.synology.CloudStationBackup',
+  uninstall quit:      [
+                         'com.synology.CloudStationBackup',
+                         'com.synology.CloudStationBackupUI',
+                       ],
+            pkgutil:   [
+                         'com.synology.CloudStationBackup',
+                         'com.synology.CloudStationBackupUI',
+                       ],
             launchctl: 'com.synology.Synology Cloud Station Backup'
 
   zap trash: '~/Library/Preferences/com.synology.CloudStationBackupUI.plist'
