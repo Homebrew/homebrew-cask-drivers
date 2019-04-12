@@ -11,9 +11,4 @@ cask 'qnap-external-raid-manager' do
   pkg 'QNAP External RAID Manager.pkg'
 
   uninstall pkgutil: 'com.qnap.raidmanager'
-
-  caveats do
-    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/#{version.after_colon}"
-    reboot
-  end
 end
