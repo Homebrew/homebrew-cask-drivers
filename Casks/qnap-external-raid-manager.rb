@@ -10,5 +10,6 @@ cask 'qnap-external-raid-manager' do
 
   pkg 'QNAP External RAID Manager.pkg'
 
-  uninstall pkgutil: 'com.qnap.raidmanager'
+  uninstall quit:    'com.qnap.raidmanager',
+            pkgutil: 'com.qnap.raidmanager'
 end
