@@ -11,5 +11,7 @@ cask 'qnap-external-raid-manager' do
   pkg 'QNAP External RAID Manager.pkg'
 
   uninstall quit:    'com.qnap.raidmanager',
-            pkgutil: 'com.qnap.raidmanager'
+            pkgutil: 'com.qnap.raidmanager',
+            delete:  '/Library/Application Support/QNAP/QNAP External RAID Manager',
+            rmdir:   '/Library/Application Support/QNAP'
 end
