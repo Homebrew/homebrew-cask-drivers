@@ -7,6 +7,8 @@ cask 'loupedeck' do
   name 'Loupdeck'
   homepage 'https://loupedeck.com/'
 
+  depends_on macos: '>= :sierra'
+
   pkg "Loupedeck Installer #{version}.pkg"
 
   uninstall signal:  [
