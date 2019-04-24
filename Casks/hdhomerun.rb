@@ -10,4 +10,10 @@ cask 'hdhomerun' do
   pkg 'HDHomeRun Installer.pkg'
 
   uninstall pkgutil: 'com.silicondust.*hdhomerun'
+
+  zap trash: [
+               '~/Library/Caches/com.silicondust.hdhomerun',
+               '~/Library/Saved Application State/com.silicondust.hdhomerun.savedState',
+               '~/Library/WebKit/com.silicondust.hdhomerun',
+             ]
 end
