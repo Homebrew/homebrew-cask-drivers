@@ -6,7 +6,7 @@ cask 'asix-ax88179' do
   name 'AX88179'
   homepage 'https://www.asix.com.tw/download.php?sub=driverdetail&PItemID=131'
 
-  container nested: "AX88179_178A_Macintosh_Driver_Installer_v#{version}/AX88179_178A.dmg"
+  container nested: "AX88179_178A_macintosh_Driver_Installer_v#{version}/AX88179_178A.dmg"
 
   pkg "AX88179_178A_v#{version}.pkg"
 
