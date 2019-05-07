@@ -8,4 +8,13 @@ cask 'reolink-client' do
   homepage 'https://reolink.com/software-and-manual/'
 
   app 'Reolink Client.app'
+
+  uninstall quit:   'com.reolink.client',
+            delete: '/Library/Logs/DiagnosticReports/Reolink Client_*.wakeups_resource.diag'
+
+  zap trash: [
+               '~/Library/Application Support/Reolink Client',
+               '~/Library/Preferences/com.reolink.client.plist',
+               '~/Library/Saved Application State/com.reolink.client.savedState',
+             ]
 end
