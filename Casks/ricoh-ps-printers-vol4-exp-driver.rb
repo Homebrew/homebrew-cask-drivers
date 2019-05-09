@@ -20,6 +20,6 @@ cask 'ricoh-ps-printers-vol4-exp-driver' do
                        'ricoh.copycontrol.pkg',
                        'ricoh.cupsfilter.pkg',
                        'ricoh.joblog.pkg',
-                       'ricoh.userAuthentication.pkg'
+                       'ricoh.userAuthentication.pkg',
                      ]
 end
