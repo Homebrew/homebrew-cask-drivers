@@ -1,14 +1,14 @@
 cask 'openbci-gui' do
-  version '4.1.0'
-  sha256 'ff9dd9fda3f6f05289ccba5c028dfa819c47c46317fa0288abf1543207f0334c'
+  version '4.1.2-beta.0'
+  sha256 '84c83667f955d6261fc88b0daa4489390ed048dd6fe922f76791f8d8a0104a02'
 
   # github.com/OpenBCI/OpenBCI_GUI was verified as official when first introduced to the cask
-  url "https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v#{version}/application.macosx.zip"
+  url "https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v#{version}/application.macosx.dmg"
   appcast 'https://github.com/OpenBCI/OpenBCI_GUI/releases.atom'
   name 'OpenBCI GUI'
   homepage 'https://openbci.com/'
 
-  app 'application.macosx/OpenBCI_GUI.app'
+  app 'OpenBCI_GUI.app'
 
   uninstall quit: [
                     'OpenBCI_GUI',
