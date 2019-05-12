@@ -1,4 +1,4 @@
-cask 'synologyassistant' do
+cask 'synology-assistant' do
   version '6.2-23733'
   sha256 '6b12b68e24c4db8e37e40807ec3eed94148c6047fa28c5cb53fa79c5da61d064'
 
