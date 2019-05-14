@@ -9,8 +9,8 @@ cask 'displaylink' do
     version '4.3.1,1251'
     sha256 'd5cd6787d6c4ca6a2425984bcbab607e618e9803335455e24196e14e35657b97'
   else
-    version '5.1,1302'
-    sha256 '3befe52b5c8c3cc0a081f831744d82106051fb665c1b9f11b2787296cc067879'
+    version '5.1.1,1334'
+    sha256 '1ac9093f8113af8c35d6f3ff5b1ae3f119a5aff0d5309d75c7a1742f159184b5'
   end
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
