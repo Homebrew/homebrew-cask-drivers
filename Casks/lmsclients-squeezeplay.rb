@@ -1,6 +1,6 @@
 cask 'lmsclients-squeezeplay' do
-  version '7.8.0r1101'
-  sha256 '85b7f4fdab8efd3200a96085e81acde60c98ac9e91369d85426ab3994c134891'
+  version '7.8.0r1149'
+  sha256 '0228243841db135a4b2ce2e2a4aed297c3d6639f2aa51d04e723827613b45dab'
 
   # downloads.sourceforge.net/lmsclients was verified as official when first introduced to the cask
   url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-x86_64-#{version}.dmg"
