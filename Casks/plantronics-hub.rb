@@ -10,6 +10,13 @@ cask 'plantronics-hub' do
 
   pkg 'Plantronics Software.pkg'
 
+  def caveats
+    <<~EOS
+      This package installs a locally generated selfsigned certificate to the system trust.
+      This is installed as 'Plantronics Hub' and has FULL TRUST by default.
+    EOS
+  end
+
   uninstall pkgutil:   [
                          'com.plantronics.plantronicsSoftware.PlantronicsHub.pkg',
                          'com.plantronics.plantronicsSoftware.preflight.pkg',
