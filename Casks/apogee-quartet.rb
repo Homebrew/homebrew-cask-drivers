@@ -3,7 +3,7 @@ cask 'apogee-quartet' do
   sha256 'c9db60f2cde152c12e1c619b01d5389221ce15e02fafc5fa3fb7f664c0c1e044'
 
   url "https://www.apogeedigital.com/drivers/quartet-#{version}.dmg"
-  appcast 'http://www.apogeedigital.com/support/register/quartet'
+  appcast 'https://www.apogeedigital.com/support/register/quartet'
   name 'Apogee Quartet'
   homepage 'https://www.apogeedigital.com/products/quartet'
 

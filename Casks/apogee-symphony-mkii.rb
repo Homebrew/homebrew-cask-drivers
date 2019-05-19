@@ -8,9 +8,9 @@ cask 'apogee-symphony-mkii' do
   end
 
   url "https://www.apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
-  appcast 'http://www.apogeedigital.com/support/register/symphony-io-mk-ii'
+  appcast 'https://www.apogeedigital.com/support/register/symphony-io-mk-ii'
   name 'Apogee Symphony I/O MkII'
-  homepage 'http://www.apogeedigital.com/products/symphony-io'
+  homepage 'https://www.apogeedigital.com/products/symphony-io'
 
   depends_on macos: '>= :mavericks'
 

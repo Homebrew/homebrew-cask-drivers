@@ -22,4 +22,4 @@ Drivers have strict requirements regarding which versions of an operating system
 If you believe the upstream requirements are incorrect, please contact *them* and get them to correct the information on their page, at which point the cask requirements can also be updated.
 
 ## License
-[The Unlicense](http://unlicense.org/)
+[The Unlicense](https://unlicense.org/)

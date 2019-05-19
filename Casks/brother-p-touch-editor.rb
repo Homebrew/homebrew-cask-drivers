@@ -4,7 +4,7 @@ cask 'brother-p-touch-editor' do
 
   url "https://download.brother.com/pub/com/ptouch-su/editor/pem#{version.no_dots}x14us.dmg"
   name 'Brother P-Touch Editor'
-  homepage 'http://www.brother.com/product/dev/label/editor/index.htm'
+  homepage 'https://www.brother.com/product/dev/label/editor/index.htm'
 
   pkg "BrotherPtEdit#{version.major}.pkg"
 
