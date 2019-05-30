@@ -9,4 +9,11 @@ cask 'qmk-toolbox' do
   homepage 'https://qmk.fm/'
 
   app 'QMK Toolbox.app'
+
+  uninstall quit: 'fm.qmk.toolbox'
+
+  zap trash: [
+               '~/Library/Caches/fm.qmk.toolbox',
+               '~/Library/Saved Application State/fm.qmk.toolbox.savedState',
+             ]
 end
