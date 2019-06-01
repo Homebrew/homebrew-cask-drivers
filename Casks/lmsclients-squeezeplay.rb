@@ -16,5 +16,4 @@ cask 'lmsclients-squeezeplay' do
                '~/Library/Preferences/SqueezePlay',
                '~/Library/Saved Application State/com.logitech.squeezeplay.savedState',
              ]
-
 end
