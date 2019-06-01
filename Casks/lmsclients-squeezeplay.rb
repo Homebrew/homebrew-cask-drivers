@@ -9,4 +9,12 @@ cask 'lmsclients-squeezeplay' do
   homepage 'https://forums.slimdevices.com/showthread.php?96328-ANNOUNCE-SqueezePlay-for-Mac-OSX'
 
   app 'SqueezePlay.app'
+
+  uninstall quit: 'com.logitech.squeezeplay'
+
+  zap trash: [
+               '~/Library/Preferences/SqueezePlay',
+               '~/Library/Saved Application State/com.logitech.squeezeplay.savedState',
+             ]
+
 end
