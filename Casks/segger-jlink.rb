@@ -15,13 +15,13 @@ cask 'segger-jlink' do
   pkg "JLink_MacOSX_V#{version.no_dots}.pkg"
 
   uninstall quit:   [
-                       'com.segger.JFlashLite.*',
-                       'com.segger.JLinkGDBServer.*',
-                       'com.segger.JLinkLicenseManager.*',
-                       'com.segger.JLinkRegistration.*',
-                       'com.segger.JLinkRemoteServer.*',
-                       'com.segger.JLinkRTTViewer.*',
-                     ],
+                      'com.segger.JFlashLite.*',
+                      'com.segger.JLinkGDBServer.*',
+                      'com.segger.JLinkLicenseManager.*',
+                      'com.segger.JLinkRegistration.*',
+                      'com.segger.JLinkRemoteServer.*',
+                      'com.segger.JLinkRTTViewer.*',
+                    ],
             pkgutil: 'com.segger.pkg.JLink'
 
   zap trash: [
