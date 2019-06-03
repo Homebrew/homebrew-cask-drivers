@@ -8,5 +8,17 @@ cask 'segger-ozone' do
 
   pkg "Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
 
-  uninstall pkgutil: 'com.segger.pkg.Ozone'
+  uninstall quit:    'com.yourcompany.Ozone',
+            pkgutil: 'com.segger.pkg.Ozone'
+
+  zap trash: [
+               '~/Library/Application Support/SEGGER',
+               '~/Library/Application Support/SEGGER\RTTViewer.ini',
+               '~/Library/Saved Application State/com.segger.JFlashLite.*savedState',
+               '~/Library/Saved Application State/com.segger.JLinkGDBServer.*savedState',
+               '~/Library/Saved Application State/com.segger.JLinkLicenseManager.*savedState',
+               '~/Library/Saved Application State/com.segger.JLinkRegistration.*savedState',
+               '~/Library/Saved Application State/com.segger.JLinkRemoteServer.*savedState',
+               '~/Library/Saved Application State/com.yourcompany.Ozone.savedState',
+             ]
 end
