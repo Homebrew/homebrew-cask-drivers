@@ -13,7 +13,7 @@ cask 'segger-ozone' do
 
   zap trash: [
                '~/Library/Application Support/SEGGER',
-               '~/Library/Application Support/SEGGER\RTTViewer.ini',
+               '~/Library/Application Support/SEGGER\\RTTViewer.ini',
                '~/Library/Saved Application State/com.segger.JFlashLite.*savedState',
                '~/Library/Saved Application State/com.segger.JLinkGDBServer.*savedState',
                '~/Library/Saved Application State/com.segger.JLinkLicenseManager.*savedState',
