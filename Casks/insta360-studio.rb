@@ -11,6 +11,7 @@ cask 'insta360-studio' do
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
                        'com.insta360.PremierePlugin',
+                       'com.insta360.ThumbnailPlugin',
                        'com.insta360.insta360Studio',
                      ]
 
