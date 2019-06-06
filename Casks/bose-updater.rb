@@ -1,6 +1,6 @@
 cask 'bose-updater' do
-  version '5.0.0.2500'
-  sha256 '789807495801b6cbb6f7d838c0b743bbac41ba57400031b354c916164146ef9c'
+  version '6.0.0.4384'
+  sha256 '69cdbe58a13b522b1419c35d4dd69056e311a61ecec5148f842bdd1fff280fd7'
 
   url "https://downloads.bose.com/ced/boseupdater/mac/BoseUpdater_#{version}.dmg"
   appcast 'https://btu.bose.com/data/MUV.xml'
