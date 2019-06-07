@@ -9,5 +9,8 @@ cask 'wd-firmware-updater' do
 
   app 'WD Firmware Updater.app'
 
-  zap trash: '~/Library/Caches/WD Firmware Updater'
+  zap trash: [
+    '~/Library/Application Support/WDufu',
+    '~/Library/Caches/WD Firmware Updater',
+  ]
 end
