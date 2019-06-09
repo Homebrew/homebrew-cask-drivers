@@ -1,6 +1,6 @@
 cask 'segger-ozone' do
-  version '2.62c'
-  sha256 '2f0410aeb5772dde260868b574ea61a5815634ce7c83be7495342d5e81328b5f'
+  version '2.62e'
+  sha256 '53c7f147ac9574a0a1b97f468e3bf6f81cbc41d29074068d9e7256ecead2dee7'
 
   url "https://www.segger.com/downloads/jlink/Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
   name 'Ozone'
