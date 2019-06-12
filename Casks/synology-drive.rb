@@ -9,7 +9,7 @@ cask 'synology-drive' do
 
   auto_updates true
 
-  pkg 'Install Synology Drive.pkg'
+  pkg 'Install Synology Drive Client.pkg'
 
   uninstall quit:      'io.com.synology.CloudStationUI',
             pkgutil:   'com.synology.CloudStation',
