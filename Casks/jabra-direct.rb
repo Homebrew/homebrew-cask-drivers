@@ -4,7 +4,7 @@ cask 'jabra-direct' do
 
   # jabraxpressonlineprdstor.blob.core.windows.net/jdo was verified as official when first introduced to the cask
   url 'https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg'
-  appcast 'https://www.jabra.com/Support/release-notes/release-note-jabra-direct'
+  appcast 'https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json'
   name 'Jabra Direct'
   homepage 'https://www.jabra.com/software-and-services/jabra-direct'
 
