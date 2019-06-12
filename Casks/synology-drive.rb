@@ -14,7 +14,7 @@ cask 'synology-drive' do
   uninstall quit:      [
                          'io.com.synology.CloudStationUI',
                          'com.synology.CloudStation',
-                       ], 
+                       ],
             pkgutil:   'com.synology.CloudStation',
             launchctl: 'com.synology.Synology Cloud Station'
 end
