@@ -7,7 +7,7 @@ cask 'synology-surveillance-station-client' do
   name 'Synology Surveillance Station Client'
   homepage 'https://www.synology.com/surveillance/'
 
-  pkg 'Install Surveillance Station Client.pkg'
+  pkg 'Install Synology Surveillance Station Client.pkg'
 
   uninstall launchctl: 'com.synology.svsclient-SurveillanceStationClient',
             delete:    '/Applications/Surveillance Station Client.app',
