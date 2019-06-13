@@ -11,9 +11,13 @@ cask 'yubico-yubikey-manager' do
 
   pkg "yubikey-manager-qt-#{version}-mac.pkg"
 
-  uninstall quit:    [
-                       'com.yubico.ykman',
-                       'org.qt-project.Qt.*',
-                     ],
+  uninstall quit:    'com.yubico.ykman',
             pkgutil: 'com.yubico.ykman'
+
+  zap trash: [
+               '~/Library/Caches/Yubico/YubiKey Manager',
+               '~/Library/Preferences/com.org-yubico.YubiKey Manager.plist',
+               '~/Library/Saved Application State/com.yubico.ykman.savedState',
+             ],
+      rmdir: '~/Library/Caches/Yubico'
 end
