@@ -9,5 +9,13 @@ cask 'yubico-authenticator' do
 
   pkg "yubioath-desktop-#{version}-mac.pkg"
 
-  uninstall pkgutil: 'com.yubico.yubioath'
+  uninstall signal:  ['TERM', 'com.yubico.yubioath'],
+            pkgutil: 'com.yubico.yubioath'
+
+  zap trash: [
+               '~/Library/Caches/Yubico/Yubico Authenticator',
+               '~/Library/Preferences/com.com-yubico.Yubico Authenticator.plist',
+               '~/Library/Saved Application State/com.yubico.yubioath.savedState',
+             ],
+      rmdir: '~/Library/Caches/Yubico'
 end
