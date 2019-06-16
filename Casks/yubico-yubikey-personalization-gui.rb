@@ -9,5 +9,11 @@ cask 'yubico-yubikey-personalization-gui' do
 
   pkg "yubikey-personalization-gui-#{version}.pkg"
 
-  uninstall pkgutil: 'com.yubico.YKPersonalization'
+  uninstall quit:    'com.yubico.YKPersonalization',
+            pkgutil: 'com.yubico.YKPersonalization'
+
+  zap trash: [
+               '~/Library/Application Scripts/com.yubico.YKPersonalization',
+               '~/Library/Containers/com.yubico.YKPersonalization',
+             ]
 end
