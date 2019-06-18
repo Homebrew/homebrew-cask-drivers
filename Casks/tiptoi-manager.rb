@@ -6,7 +6,6 @@ cask 'tiptoi-manager' do
   url 'http://tiptoidata.s3-de.object.vdc.interoute.com/installer_flat/tiptoi_Manager_Installer.pkg'
   name 'tiptoi® Manager'
   homepage 'https://www.ravensburger.org/nl/ontdek/tiptoi/index.html'
-
   pkg 'tiptoi_Manager_Installer.pkg'
 
   uninstall quit:     'com.ravensburger.tiptoimanager',
