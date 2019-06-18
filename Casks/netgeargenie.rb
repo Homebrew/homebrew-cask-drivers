@@ -8,12 +8,14 @@ cask 'netgeargenie' do
 
   pkg "NETGEAR_Genie_Installer_#{version}.pkg"
 
-  uninstall quit:    'com.yourcompany.NETGEARGenie',
-            pkgutil: 'com.netgear.netgearGenie.NETGEARGenie.pkg'
+  uninstall quit:       'com.*.NETGEARGenie',
+            login_item: 'NETGEARGenie',
+            pkgutil:    'com.netgear.netgearGenie.NETGEARGenie.pkg',
+            delete:     '/Library/Logs/DiagnosticReports/NETGEARGenie_*.wakeups_resource.diag'
 
   zap trash: [
                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.yourcompany.netgeargenie.sfl*',
                '~/Library/Application Support/NETGEARGenie',
-               '~/Library/Saved Application State/com.yourcompany.NETGEARGenie.savedState',
+               '~/Library/Saved Application State/com.*.NETGEARGenie.savedState',
              ]
 end
