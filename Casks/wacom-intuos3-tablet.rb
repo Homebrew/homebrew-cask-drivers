@@ -1,6 +1,6 @@
 cask 'wacom-intuos3-tablet' do
-  version '6.3.15-3'
-  sha256 'eda52482d9c59bf93661ed3e333475d2039480ed9ce51cef70302e5dc8e3da58'
+  version '6.3.34-2'
+  sha256 'e4b40734864b93a4a85ac3970ef70cc6bcbb7854ed73d3ff4580d17e9a9324ce'
 
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   name 'Wacom Intuos3 Tablet'
