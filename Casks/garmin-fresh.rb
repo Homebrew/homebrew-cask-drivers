@@ -1,4 +1,4 @@
-cask 'fresh' do
+cask 'garmin-fresh' do
   version :latest
   sha256 :no_check
 
@@ -8,9 +8,9 @@ cask 'fresh' do
 
   pkg 'GARMIN_Fresh_setup.pkg'
 
-  uninstall delete:   '/Applications/Fresh.app',
-            pkgutil:  [
-                        'com.garmin.fresh',
-                        'com.navigon.fresh',
-                      ]
+  uninstall delete:  '/Applications/Fresh.app',
+            pkgutil: [
+                       'com.garmin.fresh',
+                       'com.navigon.fresh',
+                     ]
 end
