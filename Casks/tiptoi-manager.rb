@@ -15,5 +15,4 @@ cask 'tiptoi-manager' do
                        'com.ravensburger.tiptoimanager',
                        'com.ravensburger.tiptoi.TipToiBindings',
                      ]
-
 end
