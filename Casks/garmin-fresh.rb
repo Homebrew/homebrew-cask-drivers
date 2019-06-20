@@ -16,6 +16,6 @@ cask 'garmin-fresh' do
 
   zap trash: [
                '~/Library/Fresh',
-               '~/Library/Saved Application State/com.garmin.fresh.savedState'
+               '~/Library/Saved Application State/com.garmin.fresh.savedState',
              ]
 end
