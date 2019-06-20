@@ -11,9 +11,9 @@ cask 'elgato-game-capture-hd' do
   end
 
   url "https://gc-updates.elgato.com/mac/download.php?build=#{version.after_comma}"
-  appcast 'https://gc-updates.elgato.com/mac/egcm-update-rss/?dbg=0&lang=English'
+  appcast 'https://help.elgato.com/customer/en/portal/articles/2643654-elgato-game-capture-hd-software-release-notes-macos'
   name 'Game Capture HD'
-  homepage 'https://help.elgato.com/customer/en/portal/articles/2643654-elgato-game-capture-hd-software-release-notes-macos'
+  homepage 'https://www.elgato.com/en/gaming/downloads/'
 
   app 'Game Capture HD.app'
 end
