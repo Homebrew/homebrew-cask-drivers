@@ -1,6 +1,6 @@
 cask 'garmin-fresh' do
-  version '3.6.0'
-  sha256 '2eb02831657e7e606f900d0d76cbb7063763670b73d62e512f389b1890c6dc5a'
+  version :latest
+  sha256 :no_check
 
   url 'https://navistatic.garmin.com/u/garmin_fresh/mac/GARMIN_Fresh_setup.pkg'
   name 'GARMIN Fresh'
