@@ -8,9 +8,14 @@ cask 'garmin-fresh' do
 
   pkg 'GARMIN_Fresh_setup.pkg'
 
-  uninstall delete:  '/Applications/Fresh.app',
+  uninstall quit:    'com.garmin.fresh',
             pkgutil: [
                        'com.garmin.fresh',
                        'com.navigon.fresh',
                      ]
+
+  zap trash: [
+               '~/Library/Fresh',
+               '~/Library/Saved Application State/com.garmin.fresh.savedState',
+             ]
 end
