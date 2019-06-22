@@ -1,6 +1,6 @@
 cask 'hdhomerun' do
-  version '20190417'
-  sha256 '65135fc468bc4d3547fe714517ee00ef6841726bfa9580c810978ed634dfa983'
+  version '20190621'
+  sha256 '51f19ba9ca8255f16a3854aee1f2990404f46973f4434b9b90e3a2e6cf3a0fc1'
 
   url "https://download.silicondust.com/hdhomerun/hdhomerun_mac_#{version}.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=http://download.silicondust.com/hdhomerun/hdhomerun_mac.dmg'
