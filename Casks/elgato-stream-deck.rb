@@ -12,5 +12,13 @@ cask 'elgato-stream-deck' do
   pkg "Stream_Deck_#{version}.pkg"
 
   uninstall launchctl: 'com.elgato.StreamDeck',
+            quit:      'com.elgato.StreamDeck',
             pkgutil:   'com.elgato.StreamDeck'
+
+  zap trash: [
+               '~/Library/Application Support/com.elgato.StreamDeck',
+               '~/Library/Caches/com.elgato.StreamDeck',
+               '~/Library/Caches/com.plausiblelabs.crashreporter.data/com.elgato.StreamDeck',
+               '~/Library/Preferences/com.elgato.StreamDeck.plist',
+             ]
 end
