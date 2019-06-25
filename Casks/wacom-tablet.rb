@@ -19,9 +19,12 @@ cask 'wacom-tablet' do
                          'com.wacom.DisplayMgr',
                        ],
             quit:      [
+                         'com.wacom.DisplayMgr',
+                         'com.wacom.RemoveWacomTablet',
                          'com.wacom.TabletDriver',
-                         'com.wacom.WacomTabletDriver',
+                         'com.wacom.Wacom-Desktop-Center',
                          'com.wacom.WacomTouchDriver',
+                         'com.wacom.wacomtablet',
                        ],
             kext:      [
                          'com.wacom.kext.ftdi',
@@ -33,6 +36,10 @@ cask 'wacom-tablet' do
             delete:    '/Applications/Wacom Tablet.localized'
 
   zap trash: [
+               '~/Library/Application Scripts/com.wacom.DataStoreMgr',
+               '~/Library/Caches/com.wacom.Wacom-Desktop-Center',
+               '~/Library/Containers/com.wacom.DataStoreMgr',
+               '~/Library/Group Containers/*.com.wacom.WacomTabletDriver',
                '~/Library/Preferences/com.wacom.wacomtablet.plist',
                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
