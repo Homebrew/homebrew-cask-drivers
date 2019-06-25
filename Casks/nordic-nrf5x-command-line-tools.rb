@@ -4,16 +4,7 @@ cask 'nordic-nrf5x-command-line-tools' do
 
   url "https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF5-command-line-tools/sw/Versions-10-x-x/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.tar"
   name 'nRF5x Command Line Tools'
-  homepage 'https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF5-Command-Line-Tools'
-
-  def install
-      # ENV.deparallelize
-      system "rm", "JLink_MacOSX_V644e.pkg"
-      system "rm", "nRF-Command-Line-Tools_10_1_1_OSX.dmg"
-      system "rm", "nRF-Command-Line-Tools_10_1_1_OSX.pkg"
-      system "rm", "nRF-Command-Line-Tools_10_1_1_OSX.tar"
-
-  end
+  homepage 'https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Command-Line-Tools'
 
   depends_on cask: 'segger-jlink'
 
