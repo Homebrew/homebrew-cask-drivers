@@ -2,11 +2,10 @@ cask 'bose-soundtouch' do
   version '21.0.3-2635-5a2f205,st1_2019_95571ec9'
   sha256 '967073b8d66effc2afdaf6fc157542812c07acc8e697534485bbefd6115858d3'
 
-  # bose.com was verified as official when first introduced to the cask
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
-  appcast 'https://worldwide.bose.com/updates/soundtouch'
+  appcast "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/index.xml"
   name 'Bose Soundtouch Controller App'
-  homepage 'https://www.soundtouch.com/'
+  homepage 'https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html'
 
   auto_updates true
   depends_on macos: '>= :mavericks'
