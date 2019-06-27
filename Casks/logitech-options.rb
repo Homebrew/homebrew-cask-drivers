@@ -3,7 +3,6 @@ cask 'logitech-options' do
   sha256 '46d82403ff962bef5ceaa531c6914c990d0f4e1cecbc307c43a766eb8d756a88'
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
-  appcast 'https://support.logitech.com/software/options'
   name 'Logitech Options'
   homepage 'https://support.logitech.com/software/options'
 
