@@ -4,17 +4,21 @@ cask 'wacom-intuos3-tablet' do
 
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   name 'Wacom Intuos3 Tablet'
-  homepage 'https://www.wacom.com/en-us/support/product-support/drivers'
+  homepage 'https://www.wacom.com/support/product-support/drivers'
 
-  conflicts_with cask: 'wacom-intuos-tablet'
+  depends_on macos: '<= :el_capitan'
 
   pkg 'Install Wacom Tablet.pkg'
 
   uninstall launchctl: 'com.wacom.wacomtablet',
             quit:      [
+                         'com.google.android.mtpagent',
+                         'com.google.android.mtpviewer',
+                         'com.wacom.RemoveWacomTablet',
                          'com.wacom.TabletDriver',
-                         'com.wacom.WacomTabletDriver',
+                         'com.wacom.Wacom-Desktop-Center',
                          'com.wacom.WacomTouchDriver',
+                         'com.wacom.wacomtablet',
                        ],
             kext:      [
                          'com.wacom.kext.ftdi',
@@ -23,9 +27,13 @@ cask 'wacom-intuos3-tablet' do
                          'com.silabs.driver.CP210xVCPDriver64',
                        ],
             pkgutil:   'com.wacom.TabletInstaller',
-            delete:    '/Applications/Wacom Tablet.localized'
+            delete:    [
+                         '/Applications/Wacom Tablet.localized',
+                         '/Library/Receipts/Wacom Tablet Docs.txt',
+                       ]
 
   zap trash: [
+               '~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist',
                '~/Library/Preferences/com.wacom.wacomtablet.prefs',
                '~/Library/Preferences/com.wacom.wacomtouch.prefs',
              ]
