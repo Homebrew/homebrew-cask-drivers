@@ -4,7 +4,8 @@ cask 'waylensstudio' do
 
   # d3dxhfn6er5hd4.cloudfront.net was verified as official when first introduced to the cask
   url "https://d3dxhfn6er5hd4.cloudfront.net/software/pc_app/WaylensStudio_for_osx_#{version.before_comma}_#{version.after_comma}.dmg"
-  appcast 'https://www.waylens.com/download/horizon'
+  appcast 'https://www.waylens.com/download/horizon',
+          configuration: version.before_comma
   name 'Waylens Studio'
   homepage 'https://www.waylens.com/horizon/'
 
