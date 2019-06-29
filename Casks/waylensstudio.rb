@@ -4,8 +4,21 @@ cask 'waylensstudio' do
 
   # d3dxhfn6er5hd4.cloudfront.net was verified as official when first introduced to the cask
   url "https://d3dxhfn6er5hd4.cloudfront.net/software/pc_app/WaylensStudio_for_osx_#{version.before_comma}_#{version.after_comma}.dmg"
+  appcast 'https://www.waylens.com/download/horizon'
   name 'Waylens Studio'
-  homepage 'https://www.waylens.com/download/'
+  homepage 'https://www.waylens.com/horizon/'
 
   app 'WaylensStudio.app'
+
+  uninstall quit: 'Vidit.WaylensStudio'
+
+  zap trash: [
+               '~/.config/Waylens',
+               '~/Library/Application Support/Waylens/WaylensStudio',
+               '~/Library/Preferences/Vidit.WaylensStudio.plist',
+               '~/Library/Preferences/com.waylens.WaylensUploader.plist',
+               '~/Library/Preferences/com.waylens.www.WaylensStudio.plist',
+               '~/Library/Saved Application State/Vidit.WaylensStudio.savedState',
+             ],
+      rmdir: '~/Library/Application Support/Waylens'
 end
