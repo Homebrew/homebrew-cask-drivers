@@ -9,4 +9,11 @@ cask 'nitrokey' do
   homepage 'https://www.nitrokey.com/download/macos'
 
   app "Nitrokey App v#{version}.app"
+
+  uninstall quit: 'com.nitrokey.nitrokey-app'
+
+  zap trash: [
+               '~/Library/Preferences/com.nitrokey.Nitrokey App.plist',
+               '~/Library/Saved Application State/com.nitrokey.nitrokey-app.savedState',
+             ]
 end
