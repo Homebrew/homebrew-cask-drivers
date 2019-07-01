@@ -12,7 +12,7 @@ cask 'xbox360-controller-driver-unofficial' do
   pkg 'Install360Controller.pkg'
 
   uninstall launchctl: 'com.mice.360Daemon',
-            quit:      'com.mice.-60Daemon', # This is not a typo.
+            quit:      'com.mice.-60Daemon', # '-60' is not a typo.
             kext:      [
                          'com.mice.Xbox360ControllerForceFeedback',
                          'com.mice.driver.Xbox360Controller',
