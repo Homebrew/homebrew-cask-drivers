@@ -1,6 +1,6 @@
 cask '3dconnexion' do
-  version '10-6-1_r2897,a8111ac7-d575-9772-1dc6-5c37a3a6c64c'
-  sha256 '3b037438bf220ea30d2d9b4bdaf9f512e3d3a2e2f205841f85ef9a1a81b54d91'
+  version '10-6-2_r2984,9ccef672-9e47-11e9-b8bf-5eefeba7454b'
+  sha256 '7bb0dede9ee7037481e1e5b3824ae01b1aa255220f8c32875225328db4621c1c'
 
   url "https://www.3dconnexion.com/index.php?eID=sdl&ext=tx_iccsoftware&oid=#{version.after_comma}&filename=3DxWareMac_v#{version}.dmg"
   appcast 'https://www.3dconnexion.com/service/drivers.html'
