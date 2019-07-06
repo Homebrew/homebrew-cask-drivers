@@ -1,7 +1,4 @@
 cask 'xerox-print-driver' do
-  name 'Xerox Print Driver'
-  homepage 'https://www.support.xerox.com/support/colorqube-8900/downloads/enus.html?operatingSystem=macosx'
-
   if MacOS.version <= :yosemite
     version '3.123.0_1865'
     sha256 'ac9c013705742538c0faa5df2194e3a7d4fb9980dd0570e41b213ff87172ee6c'
@@ -16,13 +13,23 @@ cask 'xerox-print-driver' do
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macos1012/pt_BR/XeroxPrintDriver_#{version}.dmg"
   end
 
+  name 'Xerox Print Driver'
+  homepage 'https://www.support.xerox.com/support/colorqube-8570/downloads/'
+
   pkg "Xerox Print Driver #{version.major_minor_patch}.pkg"
 
-  uninstall pkgutil: [
-                       'com.xerox.installer.addprintqueue',
-                       'com.xerox.installer.finishup',
-                       'com.xerox.print.xeroxPrinter.pkg',
-                     ]
+  uninstall launchctl: [
+                         'com.aviatainc.powerengage.XRTK',
+                         'com.aviatainc.powerengage.helper.XRTK',
+                       ],
+            quit:      'com.aviatainc.powerengage.EngageLauncher',
+            pkgutil:   [
+                         'com.xerox.installer.addprintqueue',
+                         'com.xerox.installer.finishup',
+                         'com.xerox.print.xeroxPrinter.pkg',
+                       ],
+            delete:    '/Library/Caches/Xerox',
+            rmdir:     '/Library/Application Support/Xerox'
 
-  zap rmdir: '/Library/Application Support/Xerox'
+  zap trash: '~/Library/Application Support/PowerENGAGE/XEROX'
 end
