@@ -9,4 +9,15 @@ cask 'uhk-agent' do
   homepage 'https://github.com/UltimateHackingKeyboard/agent'
 
   app 'UHK Agent.app'
+
+  uninstall quit: 'com.ultimategadgetlabs.agent'
+
+  zap trash: [
+               '~/Library/Application Support/uhk-agent',
+               '~/Library/Logs/UHK Agent',
+               '~/Library/Logs/uhk-agent',
+               '~/Library/Preferences/com.ultimategadgetlabs.agent.helper.plist',
+               '~/Library/Preferences/com.ultimategadgetlabs.agent.plist',
+               '~/Library/Saved Application State/com.ultimategadgetlabs.agent.savedState',
+             ]
 end
