@@ -18,7 +18,6 @@ cask 'twelvesouth-bassjump' do
   name 'BassJump'
   homepage 'https://www.twelvesouth.com/product/bassjump-2-for-macbook'
 
-  depends_on macos: '>= :mavericks'
   container nested: "BassJumpInstaller_#{version}.dmg"
 
   if MacOS.version <= :el_capitan
@@ -27,7 +26,17 @@ cask 'twelvesouth-bassjump' do
     pkg 'BassJump Installer.pkg'
   end
 
-  uninstall pkgutil:    [
+  uninstall launchctl:  [
+                          'com.twelvesouth.bassjump.observer',
+                          'com.twelvesouth.bassjump.player',
+                        ],
+            quit:       [
+                          'com.twelvesouth.BassJump',
+                          'com.twelvesouth.BassJumpMenuExtra',
+                        ],
+            login_item: 'BassJumpMenuExtra',
+            kext:       'com.twelvesouth.driver.BassJumpOverrideDriver',
+            pkgutil:    [
                           'com.twelvesouth.bassjump.installer.halplugin',
                           'com.twelvesouth.bassjump.installer.overridekext',
                           'com.twelvesouth.bassjump.installer.prefpane',
@@ -35,14 +44,15 @@ cask 'twelvesouth-bassjump' do
                           'com.twelvesouth.installer.bassjump.driver',
                           'com.twelvesouth.installer.bassjump.observer',
                           'com.twelvesouth.installer.bassjump.player',
-                        ],
-            launchctl:  [
-                          'com.twelvesouth.bassjump.observer',
-                          'com.twelvesouth.bassjump.player',
-                        ],
-            kext:       'com.twelvesouth.driver.BassJumpOverrideDriver',
-            login_item: 'BassJumpMenuExtra',
-            quit:       'com.twelvesouth.BassJumpMenuExtra'
+                        ]
+
+  zap trash: [
+               '~/Library/Caches/com.twelvesouth.BassJump',
+               '~/Library/Cookies/com.twelvesouth.BassJump.binarycookies',
+               '~/Library/Preferences/com.twelvesouth.BassJump.plist',
+               '~/Library/Preferences/com.twelvesouth.bassjump.observer.plist',
+               '~/Library/Preferences/com.twelvesouth.bassjump.preferences.plist',
+             ]
 
   caveats do
     reboot
