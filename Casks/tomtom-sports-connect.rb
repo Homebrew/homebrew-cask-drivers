@@ -9,9 +9,16 @@ cask 'tomtom-sports-connect' do
 
   pkg 'TomTomSportsConnectInstaller.pkg'
 
-  uninstall quit:    'com.tomtom.mysportsconnect',
-            pkgutil: [
-                       'com.tomtom.tomtomfa.pkg',
-                       'com.tomtom.tomtomfa.temp.pkg',
-                     ]
+  uninstall quit:       'com.tomtom.mysportsconnect',
+            login_item: 'TomTom Sports Connect Launcher',
+            pkgutil:    [
+                          'com.tomtom.tomtomfa.pkg',
+                          'com.tomtom.tomtomfa.temp.pkg',
+                        ]
+
+  zap trash: [
+               '~/Library/Application Support/TomTom',
+               '~/Library/Caches/TomTom',
+               '~/Library/Saved Application State/com.tomtom.mysportsconnect.savedState',
+             ]
 end
