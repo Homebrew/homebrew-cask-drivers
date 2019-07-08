@@ -7,6 +7,7 @@ cask 'nordic-nrf-command-line-tools' do
   homepage 'https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Command-Line-Tools'
 
   depends_on cask: 'segger-jlink'
+  container nested: 'nRF-Command-Line-Tools_10_2_1_OSX.tar'
 
   binary 'nrfjprog/nrfjprog'
   binary 'mergehex/mergehex'
