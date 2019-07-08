@@ -8,6 +8,6 @@ cask 'nordic-nrf-command-line-tools' do
 
   depends_on cask: 'segger-jlink'
 
-  #binary 'nrfjprog/nrfjprog'
-  #binary 'mergehex/mergehex'
+  binary 'nrfjprog/nrfjprog'
+  binary 'mergehex/mergehex'
 end
