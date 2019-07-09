@@ -8,9 +8,22 @@ cask 'tomtom-mydrive-connect' do
 
   pkg 'MyDriveConnect.mpkg'
 
-  uninstall pkgutil:    [
+  uninstall quit:       'com.tomtom.mytomtomsa',
+            login_item: 'TomTomMyDriveConnectHelper',
+            pkgutil:    [
                           'com.tomtom.mytomtomsa.temp.pkg',
                           'com.tomtom.mytomtomsa.pkg',
-                        ],
-            login_item: 'TomTomMyDriveConnectHelper'
+                        ]
+
+  zap trash: [
+               '~/Library/Application Support/CrashReporter/TomTom MyDrive Connect_*.plist',
+               '~/Library/Application Support/TomTom/HOME3',
+               '~/Library/Logs/DiagnosticReports/TomTom MyDrive Connect_*.crash',
+               '~/Library/Preferences/com.tomtom.mytomtomsa.plist',
+               '~/Library/Saved Application State/com.tomtom.mytomtomsa.savedState',
+             ],
+      rmdir: [
+               '~/Library/Application Support/TomTom',
+               '~/Library/Caches/TomTom',
+             ]
 end
