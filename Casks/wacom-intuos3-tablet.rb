@@ -10,7 +10,13 @@ cask 'wacom-intuos3-tablet' do
 
   pkg 'Install Wacom Tablet.pkg'
 
-  uninstall launchctl: 'com.wacom.wacomtablet',
+  uninstall launchctl: [
+                         'com.wacom.wacomtablet',
+                         'com.wacom.DataStoreMgr',
+                         'com.wacom.DisplayMgr',
+                         'com.wacom.UpdateHelper',
+                         'com.wacom.displayhelper',
+                       ],
             quit:      [
                          'com.wacom.TabletDriver',
                          'com.wacom.WacomTabletDriver',
