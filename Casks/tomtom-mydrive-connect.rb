@@ -24,6 +24,6 @@ cask 'tomtom-mydrive-connect' do
              ],
       rmdir: [
                '~/Library/Application Support/TomTom',
-               '~/Library/Caches/TomTom'
+               '~/Library/Caches/TomTom',
              ]
 end
