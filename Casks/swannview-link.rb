@@ -9,4 +9,12 @@ cask 'swannview-link' do
   homepage 'https://swann.desk.com/customer/en/portal/articles/2171357-swannview-link-for-mac'
 
   app 'SwannView Link.app'
+
+  uninstall quit: 'com.SwannView-Link'
+
+  zap trash: [
+               '~/Library/Application Support/SwannView Link',
+               '~/Library/Preferences/com.SwannView-Link.plist*',
+               '~/Library/Saved Application State/com.SwannView-Link.savedState',
+             ]
 end
