@@ -13,6 +13,14 @@ cask 'suunto-moveslink2' do
 
   app 'Moveslink2.app'
 
-  uninstall login_item: 'Moveslink2',
-            quit:       'Suunto.Moveslink2'
+  uninstall quit:       'Suunto.Moveslink2',
+            login_item: 'Moveslink2'
+
+  zap trash: [
+               '~/Library/Application Support/Suunto/Moveslink2',
+               '~/Library/Caches/Suunto.Moveslink2',
+               '~/Library/Caches/com.plausiblelabs.crashreporter.data/Suunto.Moveslink2',
+               '~/Library/Preferences/Suunto.Moveslink2.plist',
+             ],
+      rmdir: '~/Library/Application Support/Suunto'
 end
