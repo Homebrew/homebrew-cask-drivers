@@ -29,8 +29,6 @@ cask 'wacom-tablet' do
             kext:      [
                          'com.wacom.kext.ftdi',
                          'com.wacom.kext.wacomtablet',
-                         'com.silabs.driver.CP210xVCPDriver',
-                         'com.silabs.driver.CP210xVCPDriver64',
                        ],
             pkgutil:   'com.wacom.TabletInstaller',
             delete:    '/Applications/Wacom Tablet.localized'
