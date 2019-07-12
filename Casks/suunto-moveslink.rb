@@ -9,7 +9,13 @@ cask 'suunto-moveslink' do
 
   pkg 'Moveslink_setup.pkg'
 
-  uninstall login_item: 'Moveslink',
-            pkgutil:    'com.suunto.moveslink.moveslink.pkg',
-            quit:       'com.yourcompany.Moveslink'
+  uninstall quit:       'com.yourcompany.Moveslink',
+            login_item: 'Moveslink',
+            pkgutil:    'com.suunto.moveslink.moveslink.pkg'
+
+  zap trash: [
+               '~/Library/Application Support/Suunto/Moveslink',
+               '~/Library/Saved Application State/com.yourcompany.Moveslink.savedState',
+             ],
+      rmdir: '~/Library/Application Support/Suunto'
 end
