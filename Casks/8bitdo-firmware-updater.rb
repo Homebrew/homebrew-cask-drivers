@@ -7,5 +7,15 @@ cask '8bitdo-firmware-updater' do
   name '8BitDo Firmware Updater'
   homepage 'http://8bitdo.com/'
 
+  depends_on macos: '>= :yosemite'
+
   app '8BitDo Firmware Updater.app'
+
+  uninstall quit: 'com.Dev.Sihoo.-BitDoFirmwareUpdater'
+
+  zap trash: [
+               '~/Library/Caches/com.Dev.Sihoo.-BitDoFirmwareUpdater',
+               '~/Library/Preferences/com.Dev.Sihoo.-BitDoFirmwareUpdater.plist',
+               '~/Library/Saved Application State/com.Dev.Sihoo.-BitDoFirmwareUpdater.savedState',
+             ]
 end
