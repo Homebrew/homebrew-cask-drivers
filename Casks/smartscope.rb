@@ -3,7 +3,8 @@ cask 'smartscope' do
   sha256 '4eafdfd65eefdf22a07e6f9b50803ec035e266db234846052a5ab4c3767f3828'
 
   url 'https://www.lab-nation.com/package/smartscope/macos/latest/get'
-  appcast 'https://www.lab-nation.com/package/smartscope/macos/latest/get'
+  appcast 'https://www.lab-nation.com/package/smartscope/macos/latest/',
+          configuration: version.minor
   name 'SmartScope'
   homepage 'https://www.lab-nation.com/'
 
