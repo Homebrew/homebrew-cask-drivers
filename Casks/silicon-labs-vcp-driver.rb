@@ -1,11 +1,5 @@
 cask 'silicon-labs-vcp-driver' do
-  if MacOS.version <= :yosemite
-    version '4.11.3'
-    pkg 'Legacy MacVCP Driver/Silicon Labs VCP Driver.pkg'
-  else
-    version '5.2.0'
-  end
-
+  version '5.2.0'
   sha256 'a3feeef0088362710e66d1eaa48113bfb2286242fdbae584cb7dcdd19117a6a2'
 
   url 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip'
