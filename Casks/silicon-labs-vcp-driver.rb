@@ -16,10 +16,8 @@ cask 'silicon-labs-vcp-driver' do
                       sudo:       true,
                     }
 
-  uninstall kext:    'com.silabs.driver.CP210xVCPDriver',
-            script:  [
+  uninstall script:  {
                        executable: "#{staged_path}/uninstaller.sh",
-                       sudo:       true,
-                     ],
-            pkgutil: 'com.silabs.driver.CP210xVCPDriver'
+                       sudo: true,
+                     }
 end
