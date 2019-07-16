@@ -11,5 +11,11 @@ cask 'shearwater' do
 
   app 'Shearwater Research/Shearwater Desktop.app'
 
-  zap trash: '~/Library/Preferences/com.shearwaterresearch.divebook'
+  uninstall quit: 'com.shearwaterresearch.divebook'
+
+  zap trash: [
+               '~/Library/Caches/com.shearwaterresearch.divebook',
+               '~/Library/Preferences/com.shearwaterresearch.divebook',
+               '~/Library/Saved Application State/com.shearwaterresearch.divebook.savedState',
+             ]
 end
