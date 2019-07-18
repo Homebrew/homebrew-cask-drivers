@@ -16,8 +16,8 @@ cask 'silicon-labs-vcp-driver' do
                       sudo:       true,
                     }
 
-  uninstall script:  {
-                       executable: "#{staged_path}/uninstaller.sh",
-                       sudo: true,
-                     }
+  uninstall script: {
+                      executable: "#{staged_path}/uninstaller.sh",
+                      sudo:       true,
+                    }
 end
