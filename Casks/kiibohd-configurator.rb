@@ -15,9 +15,9 @@ cask 'kiibohd-configurator' do
   uninstall quit: 'club.input.KiibohdConfigurator'
 
   zap trash: [
-    '~/Library/Application Support/kiibohd-configurator',
-    '~/Library/Logs/Kiibohd Configurator',
-    '~/Library/Preferences/club.input.KiibohdConfigurator.plist',
-    '~/Library/Saved Application State/club.input.KiibohdConfigurator.savedState',
-  ]
+               '~/Library/Application Support/kiibohd-configurator',
+               '~/Library/Logs/Kiibohd Configurator',
+               '~/Library/Preferences/club.input.KiibohdConfigurator.plist',
+               '~/Library/Saved Application State/club.input.KiibohdConfigurator.savedState',
+             ]
 end
