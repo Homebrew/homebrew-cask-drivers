@@ -1,9 +1,9 @@
 cask 'luna-display' do
-  version '3.0.1'
-  sha256 'a1b68d69947c8417c8e287cce26daf56ab75cb44cc4bb48f42f51aab5b12ba5f'
+  version '3.2.1'
+  sha256 'c402da35935f9a126500f87f74c2a914338201278da70db3a7770340956d87ac'
 
   # s3.amazonaws.com/s3.lunadisplay was verified as official when first introduced to the cask
-  url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.zip"
+  url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.dmg"
   appcast 'https://s3.amazonaws.com/lunadisplay.com/downloads/sparkle.xml'
   name 'Luna Display'
   homepage 'https://lunadisplay.com/'
