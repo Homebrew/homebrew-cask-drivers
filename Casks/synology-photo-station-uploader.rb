@@ -7,7 +7,7 @@ cask 'synology-photo-station-uploader' do
   name 'Synology Photo Station Uploader'
   homepage 'https://www.synology.com/'
 
-  pkg "PhotoStationUploader-#{version.sub(%r{.*-}, '')}-Mac-Installer.pkg"
+  pkg "SynologyPhotoStationUploader-#{version.sub(%r{.*-}, '')}-Mac-Installer.pkg"
 
   uninstall pkgutil:   'com.synology.photostationuploader.installer',
             quit:      'com.synology.PhotoStationUploader',
