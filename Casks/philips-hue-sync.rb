@@ -17,5 +17,15 @@ cask 'philips-hue-sync' do
     system_command '/bin/mv', args: ['--', staged_path.join('WebContent'), staged_path.join('philips-hue-sync.pkg')]
   end
 
-  uninstall pkgutil: 'com.lighting.huesync'
+  uninstall quit:    [
+                       'com.lighting.huesync',
+                       'com.lighting.huesync.watchdog',
+                     ],
+            pkgutil: 'com.lighting.huesync'
+
+  zap trash: [
+               '~/Library/Application Support/com.lighting.huesync',
+               '~/Library/Caches/Hue Sync',
+               '~/Library/Preferences/com.lighting.huesync.Hue Sync.plist',
+             ]
 end
