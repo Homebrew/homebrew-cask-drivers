@@ -15,8 +15,8 @@ cask 'gutenprint' do
                      ],
             pkgutil: 'org.gutenprint.printer-driver',
             delete:  [
-                       '/usr/libexec/cups/backend/gutenprint*'
-                       '/usr/libexec/cups/driver/gutenprint*'
-                       '/usr/libexec/cups/filter/rastertogutenprint*'
+                       '/usr/libexec/cups/backend/gutenprint*',
+                       '/usr/libexec/cups/driver/gutenprint*',
+                       '/usr/libexec/cups/filter/rastertogutenprint*',
                      ]
 end
