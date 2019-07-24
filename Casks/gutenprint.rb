@@ -9,5 +9,14 @@ cask 'gutenprint' do
 
   pkg "gutenprint-#{version}.pkg"
 
-  uninstall pkgutil: 'org.gutenprint.printer-driver'
+  uninstall script:  [
+                       executable: "#{staged_path}/uninstall-gutenprint.command",
+                       sudo:       true,
+                     ],
+            pkgutil: 'org.gutenprint.printer-driver',
+            delete:  [
+                       '/usr/libexec/cups/backend/gutenprint*',
+                       '/usr/libexec/cups/driver/gutenprint*',
+                       '/usr/libexec/cups/filter/rastertogutenprint*',
+                     ]
 end
