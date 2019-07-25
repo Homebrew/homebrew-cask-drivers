@@ -4,7 +4,7 @@ cask 'silicon-labs-vcp-driver' do
     pkg 'Legacy MacVCP Driver/Silicon Labs VCP Driver.pkg'
   else
     version '5.2.0'
-    pkg '⁨Install CP210x VCP Driver.app⁩'
+    app '⁨Install CP210x VCP Driver.app⁩'
   end
 
   sha256 'a3feeef0088362710e66d1eaa48113bfb2286242fdbae584cb7dcdd19117a6a2'
