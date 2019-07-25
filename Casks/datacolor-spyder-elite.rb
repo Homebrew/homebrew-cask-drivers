@@ -11,7 +11,19 @@ cask 'datacolor-spyder-elite' do
 
   installer manual: "Spyder#{version.major}Elite_#{version}_OSX_Installer.app"
 
-  uninstall delete: "/Applications/Datacolor/Spyder#{version.major}Elite",
-            signal: ['TERM', "com.datacolor.spyder#{version.major}utility"],
+  uninstall signal: [
+                      ['TERM', "com.datacolor.spyder#{version.major}elite"],
+                      ['TERM', "com.datacolor.spyder#{version.major}utility"],
+                    ],
+            delete: "/Applications/Datacolor/Spyder#{version.major}Elite",
             rmdir:  '/Applications/Datacolor'
+
+  zap trash: [
+               '~/Library/Application Support/MindVision/Spyder5Elite_Installer.xtm',
+               '~/Library/Caches/com.datacolor.spyder5elite',
+               '~/Library/Preferences/Datacolor/Spyder5Elite',
+               '~/Library/Preferences/Datacolor/SpyderUtility',
+               '~/Library/Saved Application State/com.datacolor.spyder5elite.savedState',
+             ],
+      rmdir: '~/Library/Preferences/Datacolor'
 end
