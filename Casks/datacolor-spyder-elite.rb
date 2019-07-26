@@ -5,7 +5,7 @@ cask 'datacolor-spyder-elite' do
   # d3d9ci7ypuovlo.cloudfront.net/spyder was verified as official when first introduced to the cask
   url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}_OSX_Installer.zip"
   name 'Spyder Elite'
-  homepage "http://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
+  homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
 
   auto_updates true
 
