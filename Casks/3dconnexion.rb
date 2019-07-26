@@ -1,5 +1,5 @@
 cask '3dconnexion' do
-  version '10-6-3_r2986,0b34805c-ad82-11e9-be72-5eefeba7454b'
+  version '10-6-3_r298,0b34805c-ad82-11e9-be72-5eefeba7454b'
   sha256 'a012378b39911f2be6b611a3cb34de22895df7beab1af76082d47f8558e308f2'
 
   url "https://www.3dconnexion.com/index.php?eID=sdl&ext=tx_iccsoftware&oid=#{version.after_comma}&filename=3DxWareMac_v#{version}.dmg"
