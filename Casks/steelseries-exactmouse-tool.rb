@@ -9,8 +9,11 @@ cask 'steelseries-exactmouse-tool' do
 
   app 'SteelSeries ExactMouse Tool.app'
 
+  uninstall quit:       'com.SteelSeries.SteelSeries-ExactMouse-Tool',
+            login_item: 'SteelSeries ExactMouse Tool'
+
   zap trash: [
-               '~/Library/Preferences/com.SteelSeries.SteelSeries-ExactMouse-Tool.plist',
                '~/Library/Caches/com.apple.helpd/Generated/com.SteelSeries.SteelSeries-ExactMouse-Tool.help',
+               '~/Library/Preferences/com.SteelSeries.SteelSeries-ExactMouse-Tool.plist',
              ]
 end
