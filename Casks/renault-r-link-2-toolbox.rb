@@ -9,4 +9,12 @@ cask 'renault-r-link-2-toolbox' do
   homepage 'https://www.renault-multimedia.com/gbr_EN/estore'
 
   app 'R-Link 2 Toolbox.app'
+
+  uninstall quit: 'net.awl.appshop.renault.launcher'
+
+  zap trash: [
+               '~/Library/Application Support/R-Link 2 Toolbox',
+               '~/Library/LaunchAgents/com.renault.rlink2toolbox.plist',
+               '~/Library/Saved Application State/net.awl.appshop.renault.launcher.savedState',
+             ]
 end
