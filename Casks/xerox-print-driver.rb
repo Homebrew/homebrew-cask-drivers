@@ -8,8 +8,8 @@ cask 'xerox-print-driver' do
     sha256 '36b1ddf1f598ceaf6f91d38b0d228be3f8f6188c251761424cbea7a869488883'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macosx1011/pt_BR/XeroxPrintDriver_#{version}.dmg"
   else
-    version '4.22.2_2045'
-    sha256 'a431010f898fa6c050dd94c7f9be865708005659947f3a8627cc8b8ca640de6a'
+    version '4.25.0_2087'
+    sha256 '2318799e3987266b2d7ce1130ac2739ca3f769b611d4ea18c57bf016c7567725'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macos1012/pt_BR/XeroxPrintDriver_#{version}.dmg"
   end
 
