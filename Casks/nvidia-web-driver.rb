@@ -9,8 +9,8 @@ cask 'nvidia-web-driver' do
     version '378.05.05.25f13'
     sha256 'f5849297ee8a4a754f26d998db83878d4c02324db00ec28ab38da1d847d7e5c1'
   else
-    version '387.10.10.10.40.128'
-    sha256 'fbf92682e659b35a11b5900a87f82ed6f25d800922de9539c27676c29293c0b4'
+    version '387.10.10.10.40.129'
+    sha256 '01b2d03a6d4a5a4275b9bb6e6e62f8941fba33bc05cf23ef89c41189cfc03479'
   end
 
   module Utils
