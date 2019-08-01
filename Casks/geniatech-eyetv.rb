@@ -9,4 +9,14 @@ cask 'geniatech-eyetv' do
   homepage "https://www.geniatech.eu/product/eyetv-#{version.major}/"
 
   app 'EyeTV.app'
+
+  uninstall quit:   'com.elgato.eyetv',
+            delete: '/Library/Application Support/EyeTV'
+
+  zap trash: [
+               '~/Documents/EyeTV Archive',
+               '~/Library/Caches/com.apple.helpd/Generated/com.elgato.eyetv.help',
+               '~/Library/Preferences/com.elgato.eyetv.plist',
+               '~/Library/Saved Application State/com.elgato.eyetv.savedState',
+             ]
 end
