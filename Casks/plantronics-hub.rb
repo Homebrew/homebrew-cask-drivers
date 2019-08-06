@@ -4,7 +4,7 @@ cask 'plantronics-hub' do
 
   url 'https://www.plantronics.com/content/dam/plantronics/software/PlantronicsHubInstaller.dmg'
   name 'Plantronics Hub'
-  homepage 'https://www.plantronics.com/au/product/plantronics-hub-desktop'
+  homepage 'https://www.plantronics.com/us/en/support/downloads-apps/hub-desktop'
 
   depends_on macos: '>= :yosemite'
 
