@@ -2,10 +2,10 @@ cask 'apogee-quartet' do
   version '2.5'
   sha256 'c9db60f2cde152c12e1c619b01d5389221ce15e02fafc5fa3fb7f664c0c1e044'
 
-  url "https://www.apogeedigital.com/drivers/quartet-#{version}.dmg"
-  appcast 'http://www.apogeedigital.com/support/register/quartet'
+  url "https://apogeedigital.com/drivers/quartet-#{version}.dmg"
+  appcast 'https://apogeedigital.com/support/register/quartet'
   name 'Apogee Quartet'
-  homepage 'https://www.apogeedigital.com/products/quartet'
+  homepage 'https://apogeedigital.com/products/quartet'
 
   depends_on macos: '>= :mavericks'
 

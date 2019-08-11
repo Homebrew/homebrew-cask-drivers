@@ -18,6 +18,6 @@ cask 'bose-updater' do
   zap trash: '~/Library/Preferences/com.bose.Bose Updater.plist'
 
   caveats do
-    license 'http://btu.bose.com/#section=install'
+    license 'https://btu.bose.com/#section=install'
   end
 end

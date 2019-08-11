@@ -5,7 +5,7 @@ cask '8bitdo-firmware-updater' do
   url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/8BitDoFirmwareUpdaterV#{version}.zip"
   appcast 'http://tools.8bitdo.com/8BitdoFirmwareUpdater/appcast.xml'
   name '8BitDo Firmware Updater'
-  homepage 'http://8bitdo.com/'
+  homepage 'https://support.8bitdo.com/firmware-updater.html'
 
   depends_on macos: '>= :yosemite'
 
