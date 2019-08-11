@@ -7,10 +7,10 @@ cask 'apogee-symphony-mkii' do
     sha256 'b65fbadca751721b22517faf8fc1a72b1c8b7b0a102fd515efe1e265c9917aa7'
   end
 
-  url "https://www.apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
-  appcast 'http://www.apogeedigital.com/support/register/symphony-io-mk-ii'
+  url "https://apogeedigital.com/drivers/SymphonyIOMkII_Thunderbolt_Release.#{version}.dmg"
+  appcast 'https://apogeedigital.com/support/register/symphony-io-mk-ii'
   name 'Apogee Symphony I/O MkII'
-  homepage 'http://www.apogeedigital.com/products/symphony-io'
+  homepage 'https://apogeedigital.com/products/symphony-io'
 
   depends_on macos: '>= :mavericks'
 

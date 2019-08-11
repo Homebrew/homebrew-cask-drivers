@@ -2,10 +2,10 @@ cask 'apogee-one' do
   version '2.5'
   sha256 'f99c06cf3ae7f9009a57cb35bafe803236fa55e1518ff48e55e55f16f62df80f'
 
-  url "https://www.apogeedigital.com/drivers/one-#{version}.dmg"
-  appcast 'http://www.apogeedigital.com/support/register/one-ipad-mac'
+  url "https://apogeedigital.com/drivers/one-#{version}.dmg"
+  appcast 'https://apogeedigital.com/support/register/one-ipad-mac'
   name 'Apogee One'
-  homepage 'https://www.apogeedigital.com/products/one'
+  homepage 'https://apogeedigital.com/products/one'
 
   depends_on macos: '>= :mavericks'
 

@@ -5,7 +5,7 @@ cask 'canon-eos-utility' do
   # gdlp01.c-wss.com/gds/3/0200005443/01/eum3.8.20-installer.dmg.zip was verified as official when first introduced to the cask
   url 'http://gdlp01.c-wss.com/gds/3/0200005443/01/eum3.8.20-installer.dmg.zip'
   name 'Canon EOS Utility'
-  homepage 'https://www.usa.canon.com/internet/portal/us/home/support/self-help-center/eos-utility'
+  homepage 'https://asia.canon/en/support/0200584202/1'
 
   installer manual: "eum#{version}-installer.app"
 
