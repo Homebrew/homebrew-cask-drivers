@@ -13,8 +13,7 @@ cask 'suunto-moveslink2' do
 
   app 'Moveslink2.app'
 
-  uninstall quit:       'Suunto.Moveslink2',
-            login_item: 'Moveslink2'
+  uninstall quit: 'Suunto.Moveslink2'
 
   zap trash: [
                '~/Library/Application Support/Suunto/Moveslink2',

@@ -9,11 +9,10 @@ cask 'bose-updater' do
 
   app 'Bose Updater.app'
 
-  uninstall login_item: 'Bose Updater',
-            quit:       [
-                          'com.bose.BoseUpdater',
-                          'org.qt-project.Qt.*',
-                        ]
+  uninstall quit: [
+                    'com.bose.BoseUpdater',
+                    'org.qt-project.Qt.*',
+                  ]
 
   zap trash: '~/Library/Preferences/com.bose.Bose Updater.plist'
 
