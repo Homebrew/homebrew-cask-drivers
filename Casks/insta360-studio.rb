@@ -6,7 +6,7 @@ cask 'insta360-studio' do
   name 'Insta360 Studio'
   homepage 'https://www.insta360.com/'
 
-  pkg "Insta360 Studio 2019_Mac_#{version.after_comma}_signed.pkg"
+  pkg "Insta360 Studio 2019_#{version.after_comma}_signed.pkg"
 
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
