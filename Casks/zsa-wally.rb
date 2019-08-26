@@ -1,6 +1,6 @@
 cask 'zsa-wally' do
-  version '1.1.1'
-  sha256 'd06c1270e9f369b3176d66b94a30b4d7f31c2a4c1c261926c7448ce3f270cf77'
+  version '1.1.2'
+  sha256 'a34ac89556fba79661485844f3cf5e7f725bed501a6e3bc6d72d686be6cc9664'
 
   # github.com/zsa/wally was verified as official when first introduced to the cask
   url "https://github.com/zsa/wally/releases/download/#{version}-osx/wally-osx-#{version}.dmg"
