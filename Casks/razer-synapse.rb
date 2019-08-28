@@ -3,6 +3,8 @@ cask 'razer-synapse' do
   sha256 '15e4f2979a4cf341effa4e08e007efc05ed7f9b68675adcf5aba0bb21d298255'
 
   url "https://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version.major_minor}.dmg"
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=http://rzr.to/synapse-mac-download',
+          configuration: version.major_minor
   name 'Razer Synapse'
   homepage 'https://www.razerzone.com/synapse/'
 
