@@ -9,9 +9,10 @@ cask 'focusrite-control' do
 
   pkg 'Focusrite Control.pkg'
 
-  uninstall pkgutil: [
-                       'com.focusrite.FocusriteControl',
-                       'com.focusrite.pkg.FocusritePCIe.audio_driver',
-                       'com.focusrite.pkg.FocusritePCIe.midi_driver',
-                     ]
+  uninstall pkgutil:   [
+                         'com.focusrite.FocusriteControl',
+                         'com.focusrite.pkg.FocusritePCIe.audio_driver',
+                         'com.focusrite.pkg.FocusritePCIe.midi_driver',
+                       ],
+            launchctl: 'com.focusrite.ControlServer'
 end
