@@ -3,6 +3,7 @@ cask 'segger-ozone' do
   sha256 'aa9e53a6605e46881f6c8ca719e02b9e743206dee9a4b0962f6ef396a7ae523d'
 
   url "https://www.segger.com/downloads/jlink/Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
+  appcast 'https://www.segger.com/downloads/jlink/ReleaseNotes_Ozone.html'
   name 'Ozone'
   homepage 'https://www.segger.com/products/development-tools/ozone-j-link-debugger'
 
