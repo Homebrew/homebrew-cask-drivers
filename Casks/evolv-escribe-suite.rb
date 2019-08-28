@@ -3,6 +3,7 @@ cask 'evolv-escribe-suite' do
   sha256 'e2544857312c5ddbffce0c66c88e86aa424f5c779123064e0283ac634c101ed4'
 
   url "https://downloads.evolvapor.com/SetupEScribe#{version}_INT.pkg"
+  appcast 'https://www.evolvapor.com/escribe'
   name 'EScribe Suite'
   homepage 'https://www.evolvapor.com/'
 
