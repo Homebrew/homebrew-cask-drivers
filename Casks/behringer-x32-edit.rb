@@ -5,6 +5,7 @@ cask 'behringer-x32-edit' do
 
   # downloads.music-group.com was verified as official when first introduced to the cask
   url "https://downloads.music-group.com/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
+  appcast 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads'
   name 'Behringer X32-Edit'
   homepage 'https://www.musictribe.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF'
 
