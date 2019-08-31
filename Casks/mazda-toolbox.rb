@@ -3,6 +3,8 @@ cask 'mazda-toolbox' do
   sha256 '0574a88f196c31e80c05d79189fa6a5f0468a419cc7ad59c44a1d94b547d4664'
 
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://mazda.naviextras.com/shop/portal/download?type=x-toolbox-agent/osx32',
+          configuration: version.after_comma
   name 'Mazda Toolbox'
   homepage 'https://mazda-na.naviextras.com/shop/portal/downloads'
 
