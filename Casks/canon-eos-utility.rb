@@ -4,6 +4,7 @@ cask 'canon-eos-utility' do
 
   # gdlp01.c-wss.com/gds/7/0200005937/01 was verified as official when first introduced to the cask
   url "http://gdlp01.c-wss.com/gds/7/0200005937/01/EU-Installset-M#{version}.dmg.zip"
+  appcast 'https://asia.canon/en/support/0200593702/1'
   name 'Canon EOS Utility'
   homepage 'https://asia.canon/en/support/0200593702/1'
 
