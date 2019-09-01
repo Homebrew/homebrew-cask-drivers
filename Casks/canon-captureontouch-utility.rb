@@ -4,6 +4,7 @@ cask 'canon-captureontouch-utility' do
 
   # gdlp01.c-wss.com/gds/0/0200005510/03 was verified as official when first introduced to the cask
   url "http://gdlp01.c-wss.com/gds/0/0200005510/03/CaptureOnTouchV.#{version}forMac.dmg"
+  appcast 'https://www.canon.se/supportproduct/gettabcontent/?type=download&language=&productTcmUri=tcm:87-1204588&productNameSearch=imageFORMULA%20P-215II&supportProductInformation=imageFORMULA%20P-215II%5Enull%5Enull%5Enull%5Enull&referrer=https%3A%252F%252Fwww.canon.se%252Fsupport%252Fconsumer_products%252Fproducts%252Fscanners%252Fothers%252Fimageformula_p-215ii.html&languageSelectedIndex=-1'
   name 'Canon CaptureOnTouch Utility'
   homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=download'
 
