@@ -15,5 +15,15 @@ cask 'canon-captureontouch-utility' do
 
   pkg 'CaptureOnTouch Installer.pkg'
 
-  uninstall pkgutil: 'com.canonElectronics.Installer.CaptureOnTouch.pkg'
+  uninstall quit:    'jp.co.canon-elec.TouchV4',
+            pkgutil: [
+                       'com.canonElectronics.Installer.CaptureOnTouch.pkg',
+                       'com.canonElectronics.Installer.AppPlugin.pkg',
+                       'com.canonElectronics.Installer.DropboxPlugin.pkg',
+                       'com.canonElectronics.Installer.GoogleDrivePlugin.pkg',
+                       'com.canonElectronics.Installer.MailPlugin.pkg',
+                       'com.canonElectronics.Installer.OneDrivePlugin.pkg',
+                       'com.canonElectronics.Installer.PrinterPlugin.pkg',
+                       'com.canonElectronics.Installer.SugarSyncPlugin.pkg',
+                     ]
 end
