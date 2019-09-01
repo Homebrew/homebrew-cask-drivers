@@ -15,5 +15,8 @@ cask 'canon-imageformula-driver' do
 
   pkg 'P215II Installer.pkg'
 
-  uninstall pkgutil: 'com.canonElectronics.Installer.P215II Driver.pkg'
+  uninstall pkgutil: [
+                       'com.canonElectronics.Installer.P215II Driver.pkg',
+                       'com.canonElectronics.Installer.scanserver.pkg',
+                     ]
 end
