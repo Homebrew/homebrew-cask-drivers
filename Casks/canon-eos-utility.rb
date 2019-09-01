@@ -1,11 +1,11 @@
 cask 'canon-eos-utility' do
-  version '3.10.20'
-  sha256 'b5a5d5f51613bdf0a9be8762bf710545f5b0a095ac64116a40ec37ca6ddbe2f7'
+  version '3.10.30'
+  sha256 '684316e1e4333a9ed7311b0cf0d9f6344054db0039cea2e5c181637bfa99d095'
 
-  # gdlp01.c-wss.com/gds/2/0200005842/01/EU-Installset-M3.10.20.0.dmg.zip was verified as official when first introduced to the cask
-  url 'http://gdlp01.c-wss.com/gds/2/0200005842/01/EU-Installset-M3.10.20.0.dmg.zip'
+  # gdlp01.c-wss.com/gds/7/0200005937/01/EU-Installset-M3.10.30.0.dmg.zip was verified as official when first introduced to the cask
+  url 'http://gdlp01.c-wss.com/gds/7/0200005937/01/EU-Installset-M3.10.30.0.dmg.zip'
   name 'Canon EOS Utility'
-  homepage 'https://asia.canon/en/support/0200584202/1'
+  homepage 'https://asia.canon/en/support/0200593702/1'
 
   installer manual: "eum#{version}-installer.app"
 
