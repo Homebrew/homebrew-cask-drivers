@@ -7,7 +7,11 @@ cask 'canon-captureontouch-utility' do
   name 'Canon CaptureOnTouch Utility'
   homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=drivers&language=&os=macos%2010.14%20(mojave)'
 
-  depends_on macos: :mojave
+  depends_on macos: [
+                      :sierra,
+                      :high_sierra,
+                      :mojave,
+                    ]
 
   pkg 'CaptureOnTouch Installer.pkg'
 
