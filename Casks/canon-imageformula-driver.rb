@@ -4,8 +4,9 @@ cask 'canon-imageformula-driver' do
 
   # gdlp01.c-wss.com/gds/1/0100009941/02 was verified as official when first introduced to the cask
   url "http://gdlp01.c-wss.com/gds/1/0100009941/02/P-215IIDriverV.#{version}forMac.dmg"
+  appcast 'https://my.canon/en/support/0100992103/2'
   name 'Canon ImageFormula Twain Driver'
-  homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=drivers'
+  homepage 'https://my.canon/en/support/0100992103/2'
 
   depends_on macos: [
                       :sierra,
