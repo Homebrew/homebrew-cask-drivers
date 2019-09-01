@@ -5,7 +5,7 @@ cask 'canon-captureontouch-utility' do
   # gdlp01.c-wss.com/gds/0/0200005510/03/CaptureOnTouchV.4.4.19.0222forMac.dmg was verified as official when first introduced to the cask
   url 'http://gdlp01.c-wss.com/gds/0/0200005510/03/CaptureOnTouchV.4.4.19.0222forMac.dmg'
   name 'Canon CaptureOnTouch Utility'
-  homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=drivers&language=&os=macos%2010.14%20(mojave)'
+  homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=download'
 
   depends_on macos: [
                       :sierra,
