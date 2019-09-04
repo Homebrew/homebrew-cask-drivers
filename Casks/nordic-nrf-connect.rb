@@ -1,6 +1,6 @@
 cask 'nordic-nrf-connect' do
-  version '3.1.0'
-  sha256 '504cd3f4b0fb095ef779b8e626a026d3f11304e862794355f009512536158175'
+  version '3.2.0'
+  sha256 '02ce74b1ba987fd1d842fd70b977238e5750a62135153f6a0c75b84517fd22d8'
 
   # github.com/NordicSemiconductor/pc-nrfconnect-core/ was verified as official when first introduced to the cask
   url "https://github.com/NordicSemiconductor/pc-nrfconnect-core/releases/download/v#{version}/nrfconnect-#{version}.dmg"
