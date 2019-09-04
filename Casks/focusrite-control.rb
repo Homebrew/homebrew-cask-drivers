@@ -1,8 +1,8 @@
 cask 'focusrite-control' do
-  version '3.2.1_0'
-  sha256 '14c0ea0d2b27a34efd348509b704cc13d183f7ba7f427aea476eb372c05787bb'
+  version '3.4.0'
+  sha256 '4b9dc150e594c3fcd593b9a8da677f5aa72f89ae6d1eeb0fc32c4ce3e1f3b38a'
 
-  url "https://customer.focusrite.com/sites/customer/files/downloads/Focusrite%20Control-#{version}.dmg"
+  url "https://customer.focusrite.com/sites/customer/files/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   appcast 'https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=1360&download_type=software'
   name 'Focusrite Control'
   homepage 'https://us.focusrite.com/downloads?product=Scarlett+18i8'
