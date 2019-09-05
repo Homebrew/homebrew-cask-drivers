@@ -1,13 +1,20 @@
 cask 'logitech-options' do
-  version '8.00.559'
-  sha256 '017468c89a2a85b78e78a17f0970cf179094a97fd748c831b42be61b0412c77a'
+  if MacOS.version <= :el_capitan
+    version '6.94.38'
+    sha256 '19ea1508517c9bd6504511890559f50a6ba1e92e283d4578a15312be79b4c8a1'
+  elsif MacOS.version <= :sierra
+    version '7.14.77'
+    sha256 'e4df55642e04139fc93d955e949bf736196a404ed067d87f8de7eb9ac9117ece'
+  else
+    version '8.00.559'
+    sha256 '017468c89a2a85b78e78a17f0970cf179094a97fd748c831b42be61b0412c77a'
+  end
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
   name 'Logitech Options'
   homepage 'https://support.logitech.com/software/options'
 
   auto_updates true
-  depends_on macos: '>= :sierra'
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
