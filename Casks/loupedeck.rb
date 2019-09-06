@@ -1,6 +1,6 @@
 cask 'loupedeck' do
   version '2.7.2'
-  sha256 'e6f9909ef78ae6c9d24ebd2875d5cb3b46358bcc37043bb1267abf819af20305'
+  sha256 '91e87c9271dbf4a54d6cd533105b09e9de24839de5bfed17a6f6baa48699907e'
 
   # loupedeck-software-release.s3.amazonaws.com was verified as official when first introduced to the cask
   url "https://loupedeck-software-release.s3.amazonaws.com/Software_Release_Mac_#{version.dots_to_underscores}/Loupedeck_#{version.dots_to_underscores}.dmg"
