@@ -12,7 +12,7 @@ cask 'logitech-options' do
   homepage 'https://support.logitech.com/software/options'
 
   auto_updates true
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :high_sierra'
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
