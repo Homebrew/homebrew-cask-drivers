@@ -7,6 +7,8 @@ cask 'yubico-authenticator' do
   name 'Yubico Authenticator'
   homepage 'https://developers.yubico.com/yubioath-desktop/'
 
+  depends_on macos: '>= :sierra'
+
   pkg "yubioath-desktop-#{version}-mac.pkg"
 
   uninstall signal:  ['TERM', 'com.yubico.yubioath'],
