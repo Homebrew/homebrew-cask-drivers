@@ -7,6 +7,8 @@ cask 'brother-p-touch-editor' do
   name 'Brother P-Touch Editor'
   homepage 'https://www.brother.co.jp/eng/dev/print/other_editor/'
 
+  depends_on macos: '>= :sierra'
+
   pkg "BrotherPtEdit#{version.major}.pkg"
 
   uninstall pkgutil: "com.Brother.Brotherdriver.BrotherPtEdit#{version.major}"
