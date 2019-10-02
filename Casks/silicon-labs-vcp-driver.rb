@@ -1,6 +1,6 @@
 cask 'silicon-labs-vcp-driver' do
-  version '5.2.0'
-  sha256 'a3feeef0088362710e66d1eaa48113bfb2286242fdbae584cb7dcdd19117a6a2'
+  version '5.2.1'
+  sha256 '53f73af0866acd61a8b09d74db497694a3059458bd8be67c4546c2b0ea169681'
 
   url 'https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip'
   appcast 'https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt'
@@ -10,14 +10,10 @@ cask 'silicon-labs-vcp-driver' do
 
   container nested: 'Mac_OSX_VCP_Driver/SiLabsUSBDriverDisk.dmg'
 
-  installer script: {
-                      executable: "#{staged_path}/Install CP210x VCP Driver.app/Contents/MacOS/Install CP210x VCP Driver",
-                      args:       ['-install'],
-                      sudo:       true,
-                    }
+  installer manual: 'Install CP210x VCP Driver.app'
 
   uninstall script: {
-                      executable: "#{staged_path}/uninstaller.sh",
+                      executable: 'uninstaller.sh',
                       sudo:       true,
                     }
 end
