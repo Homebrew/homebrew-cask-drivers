@@ -15,7 +15,6 @@ cask 'synology-drive' do
                          'io.com.synology.CloudStationUI',
                          'com.synology.CloudStationUI',
                        ],
-
             pkgutil:   'com.synology.CloudStation',
             launchctl: 'com.synology.Synology Cloud Station'
 end
