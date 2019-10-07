@@ -7,7 +7,7 @@ cask 'canon-pixma-scanner-driver-ica' do
   name 'Canon PIXMA ICA Scanner Driver'
   homepage 'https://www.usa.canon.com/internet/portal/us/home/support/details/printers/support-inkjet-printer/mg-series/pixma-mg6220'
 
-  pkg "Canon IJScanner1_#{format('%02d' * 3, version.major, version.minor, version.patch)}.pkg"
+  pkg "Canon IJScanner1_#{format('%<02>d' * 3, version.major, version.minor, version.patch)}.pkg"
 
-  uninstall pkgutil: "jp.co.canon.pkg.canonijscanner1.#{format('%02d' * 3, version.major, version.minor, version.patch)}"
+  uninstall pkgutil: "jp.co.canon.pkg.canonijscanner1.#{format('%<02>d' * 3, version.major, version.minor, version.patch)}"
 end
