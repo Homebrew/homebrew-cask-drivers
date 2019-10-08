@@ -12,25 +12,25 @@ cask 'canon-ufrii-lt-printer-driver' do
 
   pkg 'UFRII_LT_CARPS2_Installer.pkg'
 
-  uninstall 	launchctl: [
-				'jp.co.canon.CUPSSFPPrinter.BackGrounder'
-			   ],
-		pkgutil:   [
-				'jp.co.canon.CUPSSFPPrinter.cnaccm.CommonDAT.pkg',
-				'jp.co.canon.CUPSSFPPrinter.profiles.CommonICC.pkg',
-				'jp.co.canon.CUPSSFPPrinter.icons.CommonICON.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP8100ZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP7100CZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP6230ZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP6030ZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP151ZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP113ZN.pkg',
-				'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP112ZN.pkg'
-		      	    ],
-		trash:     [
-				'/usr/libexec/cups/backend/canonoipnetzn',
-				'/usr/libexec/cups/backend/canonoipusbzn',
-				'/Library/LaunchAgents/jp.co.canon.CUPSSFP.BG.plist',
-				'Library/Printers/Canon/CUPS_SFP/'
-			    ]
+  uninstall launchctl: [
+                         'jp.co.canon.CUPSSFPPrinter.BackGrounder',
+                       ],
+            pkgutil:   [
+                         'jp.co.canon.CUPSSFPPrinter.cnaccm.CommonDAT.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.profiles.CommonICC.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.icons.CommonICON.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP8100ZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP7100CZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP6230ZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP6030ZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP151ZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP113ZN.pkg',
+                         'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP112ZN.pkg',
+                       ],
+            trash:     [
+                         '/usr/libexec/cups/backend/canonoipnetzn',
+                         '/usr/libexec/cups/backend/canonoipusbzn',
+                         '/Library/LaunchAgents/jp.co.canon.CUPSSFP.BG.plist',
+                         'Library/Printers/Canon/CUPS_SFP/',
+                       ]
 end
