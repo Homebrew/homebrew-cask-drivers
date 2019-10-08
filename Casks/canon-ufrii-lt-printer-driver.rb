@@ -12,7 +12,7 @@ cask 'canon-ufrii-lt-printer-driver' do
 
   pkg 'UFRII_LT_CARPS2_Installer.pkg'
 
-  uninstall launchctl: 'jp.co.canon.CUPSSFPPrinter.BackGrounder'
+  uninstall launchctl: 'jp.co.canon.CUPSSFPPrinter.BackGrounder',
             pkgutil:   [
                          'jp.co.canon.CUPSSFPPrinter.cnaccm.CommonDAT.pkg',
                          'jp.co.canon.CUPSSFPPrinter.profiles.CommonICC.pkg',
