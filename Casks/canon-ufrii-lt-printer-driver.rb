@@ -25,5 +25,5 @@ cask 'canon-ufrii-lt-printer-driver' do
                          'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP113ZN.pkg',
                          'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP112ZN.pkg',
                          'jp.co.canon.CUPSSFPPrinter.core.pkg',
-                       ],
+                       ]
 end
