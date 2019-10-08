@@ -26,11 +26,6 @@ cask 'canon-ufrii-lt-printer-driver' do
                          'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP151ZN.pkg',
                          'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP113ZN.pkg',
                          'jp.co.canon.CUPSSFPPrinter.device.CNPZNLBP112ZN.pkg',
+			 'jp.co.canon.CUPSSFPPrinter.core.pkg',
                        ],
-            delete:    [
-                         '/usr/libexec/cups/backend/canonoipnetzn',
-                         '/usr/libexec/cups/backend/canonoipusbzn',
-                         '/Library/LaunchAgents/jp.co.canon.CUPSSFP.BG.plist',
-                         '/Library/Printers/Canon/CUPS_SFP',
-                       ]
 end
