@@ -11,10 +11,10 @@ cask 'logitech-camera-settings' do
 
   pkg "LogiCameraSettings_#{version}.pkg"
 
-  uninstall launchctl: 'com.logitech.vc.LogiVCCoreService',
-            pkgutil:   [
-                         'com.logitech.vc.LogiVCCoreService.launchd.pkg',
-                         'com.logitech.vc.LogiVCCoreService.app.pkg',
-                         'com.logitech.vc.CameraSettings.pkg',
-                       ]
+  uninstall signal:  ['TERM', 'com.logitech.vc.LogiVCCoreService'],
+            pkgutil: [
+                       'com.logitech.vc.LogiVCCoreService.launchd.pkg',
+                       'com.logitech.vc.LogiVCCoreService.app.pkg',
+                       'com.logitech.vc.CameraSettings.pkg',
+                     ]
 end
