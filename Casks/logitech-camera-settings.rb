@@ -4,7 +4,6 @@ cask 'logitech-camera-settings' do
 
   # https://support.logi.com was verified as official when first introduced to the cask
   url "https://download01.logi.com/web/ftp/pub/techsupport/cameras/Webcams/LogiCameraSettings_#{version}.pkg"
-  appcast 'https://support.logi.com/hc/en-us/articles/360024692954--Downloads-HD-Webcam-C270'
   name 'Logitech Camera Settings'
   homepage 'https://support.logi.com/hc/en-us/articles/360024692954--Downloads-HD-Webcam-C270'
 
@@ -12,7 +11,8 @@ cask 'logitech-camera-settings' do
 
   pkg "LogiCameraSettings_#{version}.pkg"
 
-  uninstall pkgutil: [
+  uninstall quit:    'com.logitech.vc.LogiVCCoreService',
+            pkgutil: [
                        'com.logitech.vc.LogiVCCoreService.launchd.pkg',
                        'com.logitech.vc.LogiVCCoreService.app.pkg',
                        'com.logitech.vc.CameraSettings.pkg',
