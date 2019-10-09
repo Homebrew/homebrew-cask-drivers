@@ -8,12 +8,12 @@ cask 'displaylink' do
   elsif MacOS.version <= :high_sierra
     version '4.3.1,1251'
     sha256 'd5cd6787d6c4ca6a2425984bcbab607e618e9803335455e24196e14e35657b97'
-  elsif MacOS.version == :catalina
-    version '5.2.1-beta.2,1433'
-    sha256 '7ad66ef562f19777caa332f5c75853aa7dcf6682be3ca3a35a012104f1de1888'
-  else
+  elsif MacOS.version <= :mojave
     version '5.2,1367'
     sha256 'dd9e5a900778c558c27994953052a7378d34e70d5163d6acf5f441d5785978f5'
+  else
+    version '5.2.1-beta.2,1433'
+    sha256 '7ad66ef562f19777caa332f5c75853aa7dcf6682be3ca3a35a012104f1de1888'
   end
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
@@ -27,11 +27,7 @@ cask 'displaylink' do
 
   pkg 'DisplayLink Software Installer.pkg'
 
-  uninstall pkgutil:   [
-                         'com.displaylink.displaylinkdriver',
-                         'com.displaylink.displaylinkdriversigned',
-                         'com.displaylink.displaylinkdriverunsigned',
-                       ],
+  uninstall pkgutil:   'com.displaylink.*',
             # 'kextunload -b com.displaylink.driver.DisplayLinkDriver' causes kernel panic
             # kext:      [
             #              'com.displaylink.driver.DisplayLinkDriver',
