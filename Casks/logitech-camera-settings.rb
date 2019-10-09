@@ -12,10 +12,9 @@ cask 'logitech-camera-settings' do
 
   pkg "LogiCameraSettings_#{version}.pkg"
 
-  uninstall pkgutil:  [
-			'com.logitech.vc.LogiVCCoreService.launchd.pkg',
-                        'com.logitech.vc.LogiVCCoreService.app.pkg',
-                        'com.logitech.vc.CameraSettings.pkg'
-                      ]
-
+  uninstall pkgutil: [
+                       'com.logitech.vc.LogiVCCoreService.launchd.pkg',
+                       'com.logitech.vc.LogiVCCoreService.app.pkg',
+                       'com.logitech.vc.CameraSettings.pkg',
+                     ]
 end
