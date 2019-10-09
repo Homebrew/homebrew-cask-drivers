@@ -52,6 +52,7 @@ cask 'displaylink' do
                        ]
 
   caveats do
+    reboot
     license @cask.url.to_s
   end
 end
