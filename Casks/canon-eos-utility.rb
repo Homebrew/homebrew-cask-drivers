@@ -1,12 +1,12 @@
 cask 'canon-eos-utility' do
-  version '3.10.30.0'
-  sha256 '684316e1e4333a9ed7311b0cf0d9f6344054db0039cea2e5c181637bfa99d095'
+  version '3.11.0.0'
+  sha256 'b0042f3598fafde5b49649b4691f07bf38a7671483dcc9157b186616b2f10502'
 
-  # gdlp01.c-wss.com/gds/7/0200005937/01 was verified as official when first introduced to the cask
-  url "http://gdlp01.c-wss.com/gds/7/0200005937/01/EU-Installset-M#{version}.dmg.zip"
-  appcast 'https://asia.canon/en/support/0200593702/1'
+  # gdlp01.c-wss.com/gds was verified as official when first introduced to the cask
+  url "http://gdlp01.c-wss.com/gds/3/0200005963/01/EU-Installset-M#{version}.dmg.zip"
+  appcast 'https://asia.canon/en/support/0200596302/1'
   name 'Canon EOS Utility'
-  homepage 'https://asia.canon/en/support/0200593702/1'
+  homepage 'https://asia.canon/en/support/0200596302/1'
 
   installer manual: "eum#{version}-installer.app"
 
