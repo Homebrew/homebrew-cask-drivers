@@ -1,6 +1,6 @@
 cask 'brother-p-touch-update-software' do
   version '1.5.1,14:dlfp100785'
-  sha256 'bda125817c4713757568bb66d3bf741d1d82214fed4099bf9eec4f1f1a1c7226'
+  sha256 'bd5f4f45033d9a3fb68a072b1cb001ea918e2091c1508f53c6c80c3977ef0849'
 
   url "https://download.brother.com/welcome/#{version.after_colon}/pum#{version.before_comma.no_dots}ax#{version.after_comma.before_colon}all.dmg"
   name 'Brother P-touch Update Software'
