@@ -6,6 +6,8 @@ cask 'logitech-control-center' do
   name 'Logitech Control Center'
   homepage 'https://support.logitech.com/en_us/product/3129'
 
+  depends_on macos: '>= :high_sierra'
+
   pkg 'LCC Installer.app/Contents/Resources/Logitech Control Center.mpkg'
 
   uninstall script:  {
