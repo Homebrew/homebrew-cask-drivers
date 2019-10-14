@@ -7,7 +7,7 @@ cask 'canon-pixma-scanner-driver-ica' do
   name 'Canon PIXMA ICA Scanner Driver'
   homepage 'https://id.canon/en/support/0100764521/6/'
 
-  pkg "Canon IJScanner16f_#{format('%02d' * 3, version.major, version.minor, version.patch)}.pkg"
+  pkg "Canon IJScanner16f_#{format('%<major>02d%<minor>02d%<patch>02d', major: version.major, minor: version.minor, patch: version.patch)}.pkg"
 
-  uninstall pkgutil: "jp.co.canon.pkg.canonijscanner16f.#{format('%02d' * 3, version.major, version.minor, version.patch)}"
+  uninstall pkgutil: "jp.co.canon.pkg.canonijscanner16f.#{format('%<major>02d%<minor>02d%<patch>02d', major: version.major, minor: version.minor, patch: version.patch)}"
 end
