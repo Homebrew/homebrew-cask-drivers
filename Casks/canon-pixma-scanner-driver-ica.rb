@@ -5,7 +5,7 @@ cask 'canon-pixma-scanner-driver-ica' do
   # gdlp01.c-wss.com/gds was verified as official when first introduced to the cask
   url "http://gdlp01.c-wss.com/gds/5/0100007645/04/misd-mac-ijscanner16f-#{version.dots_to_underscores.delete('^0-9_')}-ea21_3.dmg"
   name 'Canon PIXMA ICA Scanner Driver'
-  homepage 'https://id.canon/en/support/0100764521/6/'
+  homepage 'https://www.usa.canon.com/internet/portal/us/home/support/details/printers/support-inkjet-printer/mg-series/pixma-mg6220'
 
   pkg "Canon IJScanner16f_#{format('%<major>02d%<minor>02d%<patch>02d', major: version.major, minor: version.minor, patch: version.patch)}.pkg"
 
