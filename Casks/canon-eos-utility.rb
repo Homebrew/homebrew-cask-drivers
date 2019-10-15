@@ -8,7 +8,7 @@ cask 'canon-eos-utility' do
   name 'Canon EOS Utility'
   homepage 'https://asia.canon/en/support/0200596302/1'
 
-  installer manual: "eum#{version}-installer.app"
+  installer manual: "eum#{version.major_minor_patch}-installer.app"
 
   uninstall delete: [
                       '/Applications/Canon Utilities/CameraSurveyProgram',
