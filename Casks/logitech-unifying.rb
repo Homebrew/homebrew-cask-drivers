@@ -8,7 +8,7 @@ cask 'logitech-unifying' do
   end
 
   url "https://www.logitech.com/pub/controldevices/unifying/unifying#{version}_mac.zip"
-  appcast 'https://support.logitech.com/en_us/software/unifying'
+  appcast 'https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da'
   name 'Logitech Unifying Software'
   homepage 'https://www.logitech.com/en-us/promotions/6072'
 
