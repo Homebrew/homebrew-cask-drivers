@@ -1,6 +1,6 @@
 cask 'mazda-toolbox' do
-  version '4.4.2002117045,2019_03_13__12_10_00'
-  sha256 '0574a88f196c31e80c05d79189fa6a5f0468a419cc7ad59c44a1d94b547d4664'
+  version '.2002137182,2019_10_11__09_44_00'
+  sha256 '3f681abb7dc274d99b8ad31b2ccc06dd13cc4caef112321ea1d3f5c4f5e0821b'
 
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://mazda.naviextras.com/shop/portal/download?type=x-toolbox-agent/osx32',
