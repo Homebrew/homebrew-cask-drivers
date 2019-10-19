@@ -1,6 +1,6 @@
 cask 'luna-display' do
-  version '3.3.0'
-  sha256 '516f7cabc4509e3bb3593d2af557b610589e41ef6005afc25276d86d100343d4'
+  version '4.0'
+  sha256 'c88e895f5bf5293c7f7d2260dd74141714b7fa35ecf721343c5a058882e282cd'
 
   # s3.amazonaws.com/s3.lunadisplay was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.dmg"
