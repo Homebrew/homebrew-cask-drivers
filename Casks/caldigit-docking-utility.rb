@@ -10,6 +10,6 @@ cask 'caldigit-docking-utility' do
 
   pkg "CalDigit Docking Station Utility v#{version}.pkg"
 
-  uninstall     signal:  ['TERM', 'CalDigit.CalDigit-Docking-Station-Utility'],
-                pkgutil: 'com.CalDigit.CDSU.pkg'
+  uninstall signal:  ['TERM', 'CalDigit.CalDigit-Docking-Station-Utility'],
+            pkgutil: 'com.CalDigit.CDSU.pkg'
 end
