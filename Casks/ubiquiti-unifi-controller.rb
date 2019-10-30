@@ -1,6 +1,6 @@
 cask 'ubiquiti-unifi-controller' do
-  version '5.11.50'
-  sha256 '4a231813694c2ae05c1d8f9c44b6a1887835176fb75d9d16c56695c8bf8eb63a'
+  version '5.12.22'
+  sha256 'a7873c0434178997b780c95738ae8ba9b1912360536c3c1be2652f374ae0cc6d'
 
   # dl.ubnt.com was verified as official when first introduced to the cask
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
