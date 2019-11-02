@@ -7,10 +7,14 @@ cask 'roland-quad-capture-usb-driver' do
     version '1.5.3,12:199aee04-dd6b-4a9c-9945-ba9ffb295113'
     sha256 '712b27a25275d748e35c174b242f21a2967f5caca013f6cb09330b9232288770'
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
-  else
+  elsif MacOS.version <= :mojave
     version '1.5.4,13:53d8a307-a8ae-4f9b-9a59-a1adb8c67012'
     sha256 'd3524d7844d24805c3a1c25c09dce62ab87d4c8dd6941a0b1d3653c696563117'
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
+  else
+    version '1.5.5,15'
+    sha256 'fce600fdbd50b50d69a676700ef42ee038db50d201874dadf3c0e1ac291df23f'
+    url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"    
   end
 
   appcast 'https://www.roland.com/us/support/by_product/quad-capture/updates_drivers'
