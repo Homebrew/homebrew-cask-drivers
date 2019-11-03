@@ -12,5 +12,14 @@ cask 'fujitsu-scansnap-home' do
 
   pkg 'ScanSnap Home.pkg'
 
-  uninstall pkgutil: "com.fujitsu.pfu.scansnap.Home.#{version}"
+  uninstall launchctl: [
+                         'com.fujitsu.pfu.SshRegister',
+                         'com.fujitsu.pfu.SshResident',
+                         'com.fujitsu.pfu.SshSCloudWatch',
+                       ],
+            quit:      [
+                         'com.fujitsu.pfu.SSMenuBar',
+                         'com.fujitsu.pfu.Ssh*',
+                       ],
+            pkgutil:   'com.fujitsu.pfu.scansnap.Home.*'
 end
