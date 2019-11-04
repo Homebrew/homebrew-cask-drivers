@@ -14,7 +14,7 @@ cask 'roland-quad-capture-usb-driver' do
   else
     version '1.5.5,15'
     sha256 'fce600fdbd50b50d69a676700ef42ee038db50d201874dadf3c0e1ac291df23f'
-    url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"    
+    url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
   end
 
   appcast 'https://www.roland.com/us/support/by_product/quad-capture/updates_drivers'
