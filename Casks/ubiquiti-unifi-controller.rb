@@ -35,6 +35,7 @@ cask 'ubiquiti-unifi-controller' do
              ]
 
   caveats do
+    depends_on_java '8'
     license 'https://www.ui.com/eula/'
   end
 end
