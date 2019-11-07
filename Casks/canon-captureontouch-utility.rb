@@ -27,5 +27,10 @@ cask 'canon-captureontouch-utility' do
                        'com.canonElectronics.Installer.OneDrivePlugin.pkg',
                        'com.canonElectronics.Installer.PrinterPlugin.pkg',
                        'com.canonElectronics.Installer.SugarSyncPlugin.pkg',
+                     ],
+            delete:  [
+                       '/Applications/CaptureOnTouch.app',
+                       '/Applications/CaptureOnTouch.app/Contents/SharedSupport/AutoUpdate.app',
+                       '/Applications/CaptureOnTouch.app/Contents/SharedSupport/Touch.app',
                      ]
 end
