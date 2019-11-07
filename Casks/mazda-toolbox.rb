@@ -2,6 +2,7 @@ cask 'mazda-toolbox' do
   version '.2002137182,2019_10_11__09_44_00'
   sha256 '3f681abb7dc274d99b8ad31b2ccc06dd13cc4caef112321ea1d3f5c4f5e0821b'
 
+  # azure.distrib.naviextras.com/content/!application was verified as official when first introduced to the cask
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.naviextras.com/to/MazdaToolboxOSX',
           configuration: version.after_comma
