@@ -15,7 +15,7 @@ cask 'canon-captureontouch-utility' do
                       :mojave,
                     ]
 
-  pkg 'CaptureOnTouch Installer.pkg'
+  pkg 'CaptureOnTouch_Installer.pkg'
 
   uninstall quit:    'jp.co.canon-elec.TouchV4',
             pkgutil: [
