@@ -1,9 +1,9 @@
 cask 'loupedeck' do
-  version '2.7.2'
-  sha256 '91e87c9271dbf4a54d6cd533105b09e9de24839de5bfed17a6f6baa48699907e'
+  version '3.0'
+  sha256 '459f06b84e7d49b9a8aff084208350fc8662f4ddc2452cb304224cfd0896d1a5'
 
   # loupedeck-software-release.s3.amazonaws.com was verified as official when first introduced to the cask
-  url "https://loupedeck-software-release.s3.amazonaws.com/Software_Release_Mac_#{version.dots_to_underscores}/Loupedeck_#{version.dots_to_underscores}.dmg"
+  url "https://loupedeck-software-release.s3.amazonaws.com/Software_Release_#{version}/Loupedeck_Mac_Release_#{version}/Loupedeck_MacOS_v#{version.dots_to_underscores}.dmg"
   name 'Loupdeck'
   homepage 'https://loupedeck.com/'
 
