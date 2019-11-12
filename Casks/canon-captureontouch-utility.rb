@@ -9,11 +9,7 @@ cask 'canon-captureontouch-utility' do
   name 'CaptureOnTouch'
   homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=download'
 
-  depends_on macos: [
-                      :sierra,
-                      :high_sierra,
-                      :mojave,
-                    ]
+  depends_on macos: '>= :sierra'
 
   pkg 'CaptureOnTouch_Installer.pkg'
 
