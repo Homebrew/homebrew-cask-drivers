@@ -20,6 +20,7 @@ cask 'loupedeck' do
                      ],
             pkgutil: [
                        'com.loupedeck.PluginPackageInstaller',
+                       'com.loupedeck.ImageLibraryInstaller',
                        'com.loupedeck.LoupedeckPackageInstaller',
                      ],
             delete:  [
