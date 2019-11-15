@@ -3,7 +3,7 @@ cask 'canon-ufrii-lt-printer-driver' do
   sha256 '1d6c19b2234d4c42c731c4356fe89cc269929d5c0e9f97b06fdcc1454c5ba4c8'
 
   # gdlp01.c-wss.com/gds was verified as official when first introduced to the cask
-  url "http://gdlp01.c-wss.com/gds/1/0100010451/03/mac-UFRIILT-CARPS2LBP-v#{version.no_dots}-00.dmg"
+  url "https://gdlp01.c-wss.com/gds/1/0100010451/03/mac-UFRIILT-CARPS2LBP-v#{version.no_dots}-00.dmg"
   appcast 'https://my.canon/en/support/0101045101/3'
   name 'Canon UFRII LT Printer Driver'
   homepage 'https://my.canon/en/support/0101045101/3'
