@@ -16,8 +16,7 @@ cask 'corsair-icue' do
                          'com.corsair.cue.3.launchHelper',
                        ],
             quit:      [
-                         'com.corsair.cue.3',
-                         'com.corsair.cue.3.*',
+                         'com.corsair.cue.*',
                          'org.qt-project.*',
                        ],
             script:    [
@@ -27,7 +26,7 @@ cask 'corsair-icue' do
                        ],
             pkgutil:   [
                          'com.corsair.CorsairAudio',
-                         'com.corsair.cue.3',
+                         'com.corsair.cue.*',
                        ],
             delete:    [
                          '/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin',
