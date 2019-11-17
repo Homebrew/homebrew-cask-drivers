@@ -18,7 +18,7 @@ cask 'corsair-icue' do
                        ],
             script:    [
                          executable: '/usr/bin/osascript',
-                         args:       ["#{appdir}/Corsair/iCUE.app/Contents/Helpers/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
+                         args:       ["#{appdir}/Corsair/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
                          sudo:       true,
                        ],
             pkgutil:   [
