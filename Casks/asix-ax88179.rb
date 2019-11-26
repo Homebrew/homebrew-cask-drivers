@@ -1,24 +1,24 @@
 cask 'asix-ax88179' do
-  if MacOS.version >= :catalina
-    version '2.15.0'
-    sha256 '17ae7031bd8e9ffb5cfea9ee17dcd4e32b38297a6241a5c9c2ac0589fe5dfcca'
-  else
+  if MacOS.version <= :mojave
     version '2.14.0'
     sha256 '4330ccf68f8879e7a2f6ada12a5bcdb192900e69e11b0d1e0558c3fbd331d674'
+  else
+    version '2.15.0'
+    sha256 '17ae7031bd8e9ffb5cfea9ee17dcd4e32b38297a6241a5c9c2ac0589fe5dfcca'
   end
 
-  if MacOS.version >= :catalina
-    url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_macOS_10.15_above_Driver_Installer_v#{version}.zip"
-  else
+  if MacOS.version <= :mojave
     url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_macintosh_Driver_Installer_v#{version}.zip"
+  else
+    url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_macOS_10.15_above_Driver_Installer_v#{version}.zip"
   end
   name 'AX88179'
   homepage 'https://www.asix.com.tw/download.php?sub=driverdetail&PItemID=131'
 
-  if MacOS.version >= :catalina
-    container nested: "AX88179_178A_macOS_10.15_above_Driver_Installer_v#{version}/AX88179_178A.dmg"
-  else
+  if MacOS.version <= :mojave
     container nested: "AX88179_178A_macintosh_Driver_Installer_v#{version}/AX88179_178A.dmg"
+  else
+    container nested: "AX88179_178A_macOS_10.15_above_Driver_Installer_v#{version}/AX88179_178A.dmg"
   end
 
   pkg "AX88179_178A_v#{version}.pkg"
