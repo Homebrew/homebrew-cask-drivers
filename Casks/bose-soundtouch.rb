@@ -1,6 +1,6 @@
 cask 'bose-soundtouch' do
-  version '23.0.0-2805-d6e7bf6,st2_2019_a9bb72b0'
-  sha256 '22e0c0d80199e8b83d21174337fc9cfc1890ed9433287d3d4f44a8d293d5ea0b'
+  version '23.0.0-2847-a445a28,st3_2019_7abcac73'
+  sha256 'e5ad429a013da731054d49499d45590573d5a65c246471861607403ae65a9ac4'
 
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
   appcast "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/index.xml"
