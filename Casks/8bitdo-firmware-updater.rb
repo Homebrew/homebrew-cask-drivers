@@ -1,6 +1,6 @@
 cask '8bitdo-firmware-updater' do
-  version '1.1.2'
-  sha256 '7ca78d472b70d8404e366d63d5a54e5ac7a63f6e20e0f9ad808761706267a9ee'
+  version '1.1.3'
+  sha256 '9f3e00c3e28767dfdae0426833dbbe80cb4acae9644c54d72ef25c72610d4bba'
 
   url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/8BitDoFirmwareUpdaterV#{version}.zip"
   appcast 'http://tools.8bitdo.com/8BitdoFirmwareUpdater/appcast.xml'
