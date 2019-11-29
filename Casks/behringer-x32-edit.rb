@@ -3,11 +3,11 @@ cask 'behringer-x32-edit' do
   version '4.0.3'
   sha256 '9f1fbd3442ab772a5e1203c98348c9cf593f145d65dc889e8ce0bc0909459bf7'
 
-  # downloads.music-group.com was verified as official when first introduced to the cask
-  url "https://downloads.music-group.com/software/behringer/X32/X32-Edit_MAC_#{version.major_minor}.zip"
+  # downloads.musictribe.com was verified as official when first introduced to the cask
+  url "https://downloads.musictribe.com/software/behringer/X32/X32-Edit_MAC_#{version.major_minor}.zip"
   appcast 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads'
   name 'Behringer X32-Edit'
-  homepage 'https://www.musictribe.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF'
+  homepage 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads#googtrans(en|en)/'
 
   app 'X32-Edit.app'
 
