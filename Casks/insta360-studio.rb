@@ -1,6 +1,6 @@
 cask 'insta360-studio' do
-  version '3.4.1,20190906'
-  sha256 'e8cc6910cba0dfa1b54e090ae69dec605eb89f3adafb56705d5f48454081d249'
+  version '3.4.2,20191126_181121'
+  sha256 '13a11a6c5447268efeb293bca53e4aed54bb122213f3e6d1fffbac4271fa2217'
 
   url "https://static.insta360.com/software/Studio/Mac/Insta360%20Studio%202019_#{version.after_comma}_signed.pkg"
   name 'Insta360 Studio'
