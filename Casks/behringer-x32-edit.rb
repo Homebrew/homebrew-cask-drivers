@@ -8,7 +8,7 @@ cask 'behringer-x32-edit' do
   appcast 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads',
           configuration: version.major_minor
   name 'Behringer X32-Edit'
-  homepage 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads#googtrans(en|en)/'
+  homepage 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads#googtrans(en|en)'
 
   app 'X32-Edit.app'
 
@@ -21,6 +21,6 @@ cask 'behringer-x32-edit' do
              ]
 
   caveats do
-    license 'https://www.musictribe.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/downloads?active=Downloads'
+    license 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads#googtrans(en|en)'
   end
 end
