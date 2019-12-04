@@ -2,7 +2,7 @@ cask 'konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver' do
   version '11.1.1'
   sha256 '1cfc8442928a08235d1a2a457192a4fb174490a656d1acea0c483b443fddb596'
 
-  url "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=3381071352104e842f8efcdc14230488&tx_kmanacondaimport_downloadproxy[documentId]=1616&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
+  url 'https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=3381071352104e842f8efcdc14230488&tx_kmanacondaimport_downloadproxy[documentId]=1616&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685'
   name 'KONICA MINOLTA bizhub C759/C658/C368/C287/C3851 Series Printer'
   homepage 'https://www.konicaminolta.eu/en/business-solutions/support/download-center.html'
 
