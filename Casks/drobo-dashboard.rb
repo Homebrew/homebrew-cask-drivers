@@ -1,6 +1,6 @@
 cask 'drobo-dashboard' do
-  version '3.4.2,109477'
-  sha256 '97024146ac4e25c8236762089c1a860d63b3152704a7f8e00893321dea207b34'
+  version '3.5.0,113780'
+  sha256 '2ba60ae2b1f9c382977fdc26e0424241637c519e9aa2f2aeaab2183be82099c0'
 
   url "https://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.before_comma}.dmg"
   appcast 'https://www.drobo.com/docs/start-drobo/'
