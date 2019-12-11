@@ -1,6 +1,6 @@
 cask 'sonos' do
-  version '10.5.1'
-  sha256 'cd9f115685611550ab23c19fe5a3d08b9b3c38db3e2ac23d7eb188e570ec2e36'
+  version '1.0.6'
+  sha256 '30269870a7fded8897ab324a1d93a01252e7a045ec5ca6bf937952821fc401a1'
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.no_dots}.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.sonos.com/en/redir/controller_software_mac',
