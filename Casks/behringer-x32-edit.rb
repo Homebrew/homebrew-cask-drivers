@@ -4,7 +4,7 @@ cask 'behringer-x32-edit' do
   sha256 '439f1d3d789958f4e44b53116d247363adf56aa62941dfadc0b0a6b4e458203d'
 
   # downloads.musictribe.com was verified as official when first introduced to the cask
-  url "https://downloads.musictribe.com/software/behringer/X32/X32-Edit_MAC_#{version.major_minor}.zip"
+  url "https://downloads.musictribe.com/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
   appcast 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads',
           configuration: version.major_minor
   name 'Behringer X32-Edit'
