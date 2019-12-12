@@ -19,8 +19,4 @@ cask 'behringer-x32-edit' do
                '~/Library/Application Support/CrashReporter/X32-Edit_*.plist',
                '~/Library/Saved Application State/com.music-group.X32-Edit.savedState',
              ]
-
-  caveats do
-    license 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads'
-  end
 end
