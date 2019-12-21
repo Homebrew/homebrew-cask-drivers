@@ -1,6 +1,6 @@
 cask 'segger-systemview' do
-  version '2.52d'
-  sha256 '652dcde70b4d6699d4a82aff9bcc1960e7053b18346299a150b835127549da02'
+  version '3.10'
+  sha256 '3e868cfc3fc5668c623c11d21492c8b9e18fd254c9fadd95e24f472bbc2b1ecc'
 
   url "https://www.segger.com/downloads/jlink/SystemView_MacOSX_V#{version.no_dots}.pkg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_filename.cgi?url=https://www.segger.com/downloads/jlink/systemview_mac_pkg',
