@@ -1,7 +1,7 @@
 cask 'behringer-x32-edit' do
   # note: "32" is not a version number, but an intrinsic part of the product name
   version '4.1'
-  sha256 '439f1d3d789958f4e44b53116d247363adf56aa62941dfadc0b0a6b4e458203d'
+  sha256 'a4eb8aa7c45a1266f928d3b2ab44ef274e1750e91754fe6eada122ccd0f5f093'
 
   # downloads.musictribe.com was verified as official when first introduced to the cask
   url "https://downloads.musictribe.com/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
