@@ -8,8 +8,7 @@ cask 'segger-systemview' do
   name 'SystemView'
   homepage 'https://www.segger.com/products/development-tools/systemview'
 
-  #pkg "SystemView_V#{version.no_dots}_MacOSX.pkg"
-  pkg 'fa08606d64c4aa29a4935e6c30074c969eee108ca517625e52bad554de19adb7--SystemView_V310_MacOSX.pkg'
+  pkg "SystemView_V#{version.no_dots}_MacOSX.pkg"
 
   uninstall pkgutil: 'com.segger.pkg.SystemView'
 end
