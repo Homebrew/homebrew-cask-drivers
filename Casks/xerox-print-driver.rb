@@ -21,9 +21,9 @@ cask 'xerox-print-driver' do
   homepage 'https://www.support.xerox.com/support/colorqube-8570/downloads/'
 
   if MacOS.version <= :sierra
-    pkg "Xerox Print Driver #{version.major_minor_patch}.pkg"
+    pkg "Xerox Print Driver #{version.sub(/_.*/, '')}.pkg"
   else
-    pkg "Xerox Drivers #{version.major_minor_patch}.pkg"
+    pkg "Xerox Drivers #{version.sub(/_.*/, '')}.pkg"
   end
 
   uninstall launchctl: [
