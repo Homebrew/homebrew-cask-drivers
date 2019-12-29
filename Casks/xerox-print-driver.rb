@@ -39,5 +39,6 @@ cask 'xerox-print-driver' do
             delete:    '/Library/Caches/Xerox',
             rmdir:     '/Library/Application Support/Xerox'
 
-  zap trash: '~/Library/Application Support/PowerENGAGE/XEROX'
+  zap pkgutil: 'com.xerox.drivers.pkg',
+      trash:   '~/Library/Application Support/PowerENGAGE/XEROX'
 end
