@@ -1,10 +1,10 @@
 cask 'geniatech-eyetv' do
-  version '3.6.9_7528_20190730'
-  sha256 '37db9f7f455f05074bdd20c36b01d73aed55cc48c2f871a17f91cf2580eb8b77'
+  version '4.0.0 (8518)'
+  sha256 '1178245beb0b234794320c55c6ed3405b6b875a86a46ea85cce62a801930399c'
 
-  # file.geniatech.com/eyetv3 was verified as official when first introduced to the cask
-  url "https://file.geniatech.com/eyetv3/EyeTV#{version}.dmg"
-  appcast "http://updates.geniatech.eu/autoupdate/eyetv#{version.major}.rss?o=010014003"
+  # file.geniatech.com/eyetv was verified as official when first introduced to the cask
+  url "http://file.geniatech.com/eyetv#{version.major}/Geniatech_eyetv_#{version.major}.dmg"
+  appcast "http://updates.geniatech.eu/autoupdate/eyetv#{version.major}.rss"
   name 'EyeTV'
   homepage "https://www.geniatech.eu/product/eyetv-#{version.major}/"
 
