@@ -3,6 +3,7 @@ cask 'logitech-control-center' do
   sha256 '18de9f8ae8461df57f6cc9e9f1f443674891ca94d71cb7d7dc0f4c94c32fb2c9'
 
   url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
+  appcast 'https://support.logi.com/api/v2/help_center/en-us/articles.json'
   name 'Logitech Control Center'
   homepage 'https://support.logitech.com/en_us/product/3129'
 
