@@ -2,7 +2,7 @@ cask 'apple-hewlett-packard-printer-drivers' do
   version '5.1'
   sha256 '788e26e8afbfcf03d36f45e8563b1cd24183d6a8772b995914072189a714bd22'
 
-  url "https://support.apple.com/downloads/DL1888/en_US/HewlettPackardPrinterDrivers#{version}.dmg"
+  url 'https://updates.cdn-apple.com/2019/cert/041-88763-20191011-6e70f498-9d39-420c-b11b-b252b17233e2/HewlettPackardPrinterDrivers.dmg'
   appcast 'https://support.apple.com/downloads/hewlett%2520packard'
   name 'HP Printer Drivers'
   homepage 'https://support.apple.com/kb/DL1888'
