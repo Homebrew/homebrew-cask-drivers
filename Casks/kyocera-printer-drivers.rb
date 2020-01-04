@@ -1,11 +1,12 @@
-cask 'kyocera' do
+cask 'kyocera-printer-drivers' do
   version '2019.11.21'
   sha256 'a0a9ebbeb577a32c389f20bcd11af2b8094d04fa8acbe8cc73de444b102d0a4e'
 
   url "https://www.kyoceradocumentsolutions.eu/content/download-center/eu/drivers/all/MacPhase50_#{version.dots_to_underscores}_zip.download.zip"
-  name 'Kyocera Mac Driver 5.0'
-  homepage 'https://dlc.kyoceradocumentsolutions.eu/'
-
+  name 'Kyocera Mac Driver'
+  homepage 'https://dlc.kyoceradocumentsolutions.eu/index/service/dlc.false._.TASKALFA5053CI._.EN.html#MAC'
+  appcast 'https://dlc.kyoceradocumentsolutions.eu/index/service/dlc.false._.TASKALFA5053CI._.EN.html#MAC'
+  
   depends_on macos: '>= :mavericks'
   container nested: "Mac50_#{version}-KDC/Kyocera OS X 10.9+ Web build #{version}.dmg"
 
