@@ -6,7 +6,7 @@ cask 'kyocera-printer-drivers' do
   appcast 'https://dlc.kyoceradocumentsolutions.eu/index/service/dlc.false._.TASKALFA5053CI._.EN.html#MAC'
   name 'Kyocera Mac Driver'
   homepage 'https://dlc.kyoceradocumentsolutions.eu/index/service/dlc.false._.TASKALFA5053CI._.EN.html#MAC'
-  
+
   depends_on macos: '>= :mavericks'
   container nested: "Mac50_#{version}-KDC/Kyocera OS X 10.9+ Web build #{version}.dmg"
 
