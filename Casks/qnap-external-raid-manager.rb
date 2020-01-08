@@ -1,6 +1,6 @@
 cask 'qnap-external-raid-manager' do
-  version '1.2.3.1024'
-  sha256 '0fa2212540cf0911098cce6c14ed17b93e7a251dce58abd19ec65c9aa6fd115d'
+  version '1.2.4.1202'
+  sha256 'f44cb8d265e06ac30fd6b5bf42ccedbb3f6596736e092ffdf94e7ce79f19c6fa'
 
   url "https://download.qnap.com/Storage/Utility/QNAPExternalRAIDManagerMac-#{version}.dmg"
   name 'QNAP External Raid Manager'
