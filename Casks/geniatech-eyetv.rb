@@ -1,6 +1,6 @@
 cask 'geniatech-eyetv' do
-  version '4.0.0 (8518)'
-  sha256 '1178245beb0b234794320c55c6ed3405b6b875a86a46ea85cce62a801930399c'
+  version '4.0.0 (8519)'
+  sha256 '3b6a195672e711f007f5c649b1092849f2e0187899f496d1359380e681ab1810'
 
   # file.geniatech.com/eyetv was verified as official when first introduced to the cask
   url "http://file.geniatech.com/eyetv#{version.major}/Geniatech_eyetv_#{version.major}.dmg"
