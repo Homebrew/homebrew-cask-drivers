@@ -9,4 +9,5 @@ cask 'zsa-wally' do
   homepage 'https://ergodox-ez.com/pages/wally'
 
   app 'Wally.app'
+  binary 'wally-cli'
 end
