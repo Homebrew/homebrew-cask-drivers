@@ -1,6 +1,6 @@
 cask 'ftdi-vcp-driver' do
   version '2.4.2'
-  sha256 'b57377e10de1c8ae9ddaffa147e4cc529c3571b512bba4798b2b6054d4fabd92'
+  sha256 'ed252533790851e5a12266f750909c02596bfb358b5ec1562f6040562c920de0'
 
   url "https://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v#{version.dots_to_underscores}.dmg"
   name 'FTDI VCP Driver'
