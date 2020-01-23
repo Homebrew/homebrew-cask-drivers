@@ -1,5 +1,5 @@
 cask 'geniatech-eyetv' do
-  version '4.0.0 (8519)'
+  version '4.0.0 (8520)'
   sha256 '3b6a195672e711f007f5c649b1092849f2e0187899f496d1359380e681ab1810'
 
   # file.geniatech.com/eyetv was verified as official when first introduced to the cask
