@@ -14,7 +14,7 @@ cask 'jabra-direct' do
                           'com.jabra.Avaya3Driver',
                           'com.jabra.AvayaDriver',
                           'com.jabra.BriaDriver',
-                          'com.jabra.directonline.*',
+                          'com.jabra.directonline',
                           'com.jabra.softphoneService',
                           'nl.superalloy.oss.terminal-notifier',
                         ],
