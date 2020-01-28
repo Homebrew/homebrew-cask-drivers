@@ -1,6 +1,6 @@
 cask 'elgato-stream-deck' do
-  version '4.5.0.12226'
-  sha256 'fc8e2fe82c3d1544d784fdc542472c135bb8384d1c66127a84871de62774a42c'
+  version '4.5.1.12246'
+  sha256 '698fc1e5dd44d4d50d382718bbc6e015336ae9c62c1d061cd313266f1d8f4d93'
 
   url "https://edge.elgato.com/egc/macos/sd/Stream_Deck_#{version}.pkg"
   appcast 'https://help.elgato.com/hc/en-us/articles/360028242631-Elgato-Stream-Deck-Software-Release-Notes',
