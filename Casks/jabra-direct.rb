@@ -1,6 +1,6 @@
 cask 'jabra-direct' do
-  version '4.0.6206'
-  sha256 'c89807ede6d1bfd314a377898ea5c2e0ab9991e5b39f6da260c1e4441ea3d659'
+  version '4.0.6464'
+  sha256 'b394f49913268cb950d4e0387f1091ae31d4aba24ebbb70e780f96bf1205919e'
 
   # jabraxpressonlineprdstor.blob.core.windows.net/jdo was verified as official when first introduced to the cask
   url 'https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg'
@@ -14,7 +14,7 @@ cask 'jabra-direct' do
                           'com.jabra.Avaya3Driver',
                           'com.jabra.AvayaDriver',
                           'com.jabra.BriaDriver',
-                          'com.jabra.directonline.*',
+                          'com.jabra.directonline',
                           'com.jabra.softphoneService',
                           'nl.superalloy.oss.terminal-notifier',
                         ],
