@@ -1,12 +1,12 @@
 cask 'canon-eos-utility' do
-  version '3.11.1.0'
-  sha256 '8e64f35c9d0f29e0785d992b63d596a3b9b50d8c0e906ac06e657230329a6d55'
+  version '3.12.1.0'
+  sha256 '198a3b419ec23a2bae423401962e9bc3ac567d185d00fd640837454494057286'
 
   # gdlp01.c-wss.com/gds was verified as official when first introduced to the cask
-  url "https://gdlp01.c-wss.com/gds/8/0200006008/01/EU-Installset-M#{version}.dmg.zip"
-  appcast 'https://my.canon/en/support/0200600802/1'
+  url "https://gdlp01.c-wss.com/gds/9/0200006049/01/EU-Installset-M#{version}.dmg.zip"
+  appcast 'https://my.canon/en/support/0200604902/1'
   name 'Canon EOS Utility'
-  homepage 'https://my.canon/en/support/0200600802/1'
+  homepage 'https://my.canon/en/support/0200604902/1'
 
   installer manual: "eum#{version.major_minor_patch}-installer.app"
 
@@ -35,8 +35,8 @@ cask 'canon-eos-utility' do
                '~/Library/Caches/com.canon.EOS-Lens-Registration-Tool',
                '~/Library/Caches/com.canon.UpdateChecker',
                '~/Library/Preferences/jp.co.canon.ic.camerasurveyprogram.plist',
-               '~/Library/Preferences/com.canon.EOS Utility 2.plist',
                '~/Library/Preferences/com.canon.EOS-Utility.plist',
+               '~/Library/Preferences/com.canon.EOS Utility 2.plist',
                '~/Library/Preferences/com.canon.EOS-Utility-3.plist',
              ]
 end
