@@ -8,7 +8,6 @@ cask 'bose-soundtouch' do
   homepage 'https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html'
 
   auto_updates true
-  depends_on macos: '>= :mavericks'
 
   installer script: {
                       executable: 'SoundTouch-osx-installer.app/Contents/MacOS/installbuilder.sh',
