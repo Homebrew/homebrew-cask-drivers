@@ -14,13 +14,10 @@ cask 'corsair-icue' do
   uninstall launchctl: [
                          'com.corsair.AudioConfigService.System',
                          'com.corsair.cue.3.launchHelper',
-                         'CorsairAudioConfigService (com.corsair.AudioConfigService.System)',
-                         'iCUELaunchAgent (com.corsair.cue.3.launchHelper)',
                        ],
             quit:      [
                          'com.corsair.cue.*',
                          'org.qt-project.*',
-                         'com.corsair.cue.3',
                        ],
             script:    [
                          executable: '/usr/bin/osascript',
@@ -30,8 +27,6 @@ cask 'corsair-icue' do
             pkgutil:   [
                          'com.corsair.CorsairAudio',
                          'com.corsair.cue.*',
-                         'com.corsair.CorsairAudio',
-                         'com.corsair.cue.3',
                        ],
             delete:    [
                          '/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin',
