@@ -8,6 +8,8 @@ cask 'concept2-utility' do
   end
 
   url "https://software.concept2.com/utility/Concept2Utility#{version.no_dots}.dmg"
+  appcast 'https://www.concept2.com/service/software/concept2-utility',
+          configuration: version.no_dots
   name 'Concept2 Utility'
   homepage 'https://www.concept2.com/service/software/concept2-utility'
 
