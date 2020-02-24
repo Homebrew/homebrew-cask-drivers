@@ -4,7 +4,7 @@ cask 'apple-brother-printer-drivers' do
 
   # updates.cdn-apple.com was verified as official when first introduced to the cask
   url 'https://updates.cdn-apple.com/2019/cert/041-88742-20191011-c679d07b-a355-4dfa-bae5-70d692b3d0b2/BrotherPrinterDrivers.dmg'
-  appcast 'https://support.apple.com/downloads/brother'
+  appcast 'https://support.apple.com/kb/DL1927'
   name 'Brother Printer Drivers'
   homepage 'https://support.apple.com/kb/DL1927'
 
