@@ -2,7 +2,7 @@ cask 'apple-brother-printer-drivers' do
   version '4.1.1'
   sha256 '74dd579e43fb5b410d447e399bf33654adaefc01c968f8b61605ff48a41d9c2c'
 
-  # updates.cdn-apple.com/2019/cert/041-88742-20191011-c679d07b-a355-4dfa-bae5-70d692b3d0b2 was verified as official when first introduced to the cask
+  # updates.cdn-apple.com was verified as official when first introduced to the cask
   url 'https://updates.cdn-apple.com/2019/cert/041-88742-20191011-c679d07b-a355-4dfa-bae5-70d692b3d0b2/BrotherPrinterDrivers.dmg'
   appcast 'https://support.apple.com/downloads/brother'
   name 'Brother Printer Drivers'
