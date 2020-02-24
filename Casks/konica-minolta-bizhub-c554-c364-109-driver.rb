@@ -6,7 +6,7 @@ cask 'konica-minolta-bizhub-c554-c364-109-driver' do
   name 'Konica Minolta Bizhub C554/C364 Postscript Printer Driver'
   homepage 'https://www.biz.konicaminolta.com/download/driver.html'
 
-  pkg 'C554_C364_Series_v5.9.1_A4/bizhub_C554_C364_109.pkg'
+  pkg "C554_C364_Series_v#{version}_A4/bizhub_C554_C364_109.pkg"
 
   uninstall pkgutil: 'jp.konicaminolta.print.package.C554'
 end
