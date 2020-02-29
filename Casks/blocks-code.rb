@@ -1,6 +1,6 @@
 cask 'blocks-code' do
-  version '0.2.1'
-  sha256 'af9c68850f9a5f27e9eeed21e4372c2b8948213104ed9f96de07dab6315d90aa'
+  version '0.2.3'
+  sha256 '9d8d03f8f004bf5c5474e67065128d3c15806ed9594202596dbe1c094276943b'
 
   # assets.roli.com/blocks was verified as official when first introduced to the cask, ROLI is the company owning JUCE.
   url "https://assets.roli.com/blocks/BLOCKS+Code/#{version}/BLOCKSCodeInstallerOSX_v#{version}.mpkg"
