@@ -24,6 +24,12 @@ cask 'lg-onscreen-control' do
                           'com.LGSI.OSCMultiMonitor',
                         ],
             pkgutil:    [
+                          'com.Fonts.pkg',
+                          'com.OSCApp.pkg',
+                          'com.OSCMultiMonitor.pkg',
+                          'com.OSC_Directory.pkg',
+                          'com.OSC_Library.pkg',
+                          'com.uninstall.pkg',
                           'com.lge.onscreenControl.*',
                           'com.lge.OnscreenControl.*',
                         ]
