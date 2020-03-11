@@ -10,7 +10,7 @@ cask 'logitech-unifying' do
   url "https://www.logitech.com/pub/controldevices/unifying/unifying#{version}_mac.zip"
   appcast 'https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da'
   name 'Logitech Unifying Software'
-  homepage 'https://www.logitech.com/en-us/promotions/6072'
+  homepage 'https://support.logi.com/hc/en-001/articles/360025297913-Unifying-Software'
 
   depends_on macos: [
                       :yosemite,
@@ -18,6 +18,7 @@ cask 'logitech-unifying' do
                       :sierra,
                       :high_sierra,
                       :catalina,
+                      :mojave,
                     ]
 
   pkg 'Unifying Installer.app/Contents/Resources/Logitech Unifying Signed.mpkg'
