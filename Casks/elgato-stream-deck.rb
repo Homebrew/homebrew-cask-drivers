@@ -1,6 +1,6 @@
 cask 'elgato-stream-deck' do
-  version '4.6.0.12885'
-  sha256 '93b28798b3dca5a703e76f14e41dc937a2cabf9d38e2f1627f0961d99e132a7f'
+  version '4.6.1.12887'
+  sha256 '1d18512de61ec60557b39142f87225f946dbd4e95060a23f1e67687b9ab72a10'
 
   url "https://edge.elgato.com/egc/macos/sd/Stream_Deck_#{version}.pkg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://gc-updates.elgato.com/mac/sd-update/final/download-website.php'
