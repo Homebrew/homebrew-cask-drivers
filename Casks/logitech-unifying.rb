@@ -1,5 +1,5 @@
 cask 'logitech-unifying' do
-  if MacOS.version <= :yosemite
+  if MacOS.version <= :mojave
     version '1.2.359'
     sha256 'e6fd9c1b536033f3346b32c391bd58587ea9f549cab7839cf8a1dbc62a739825'
   else
@@ -7,7 +7,7 @@ cask 'logitech-unifying' do
     sha256 '82fe3df612e775ec8789fa821f4f62d4b3a55278276d03474580fee668ee50b7'
   end
 
-  url "https://www.logitech.com/pub/controldevices/unifying/unifying#{version}_mac.zip"
+  url "https://download01.logi.com/web/ftp/pub/controldevices/unifying/unifying#{version}_mac.zip"
   appcast 'https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da'
   name 'Logitech Unifying Software'
   homepage 'https://support.logi.com/hc/en-001/articles/360025297913-Unifying-Software'
@@ -17,8 +17,8 @@ cask 'logitech-unifying' do
                       :el_capitan,
                       :sierra,
                       :high_sierra,
-                      :catalina,
                       :mojave,
+                      :catalina,
                     ]
 
   pkg 'Unifying Installer.app/Contents/Resources/Logitech Unifying Signed.mpkg'
