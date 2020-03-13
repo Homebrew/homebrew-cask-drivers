@@ -4,7 +4,7 @@ cask 'fujitsu-scansnap-manager' do
 
   url "https://www.fujitsu.com/downloads/IMAGE/driver/ss/mgr/m-s1300i/MacS1300iManagerV#{version.no_dots}WW1.dmg"
   name 'ScanSnap Manager for Mac'
-  homepage 'https://www.fujitsu.com/global/support/products/computing/peripheral/scanners/scansnap/software/s1300im-setup.html'
+  homepage 'http://scansnap.fujitsu.com/'
 
   pkg 'ScanSnap Manager.pkg'
 
