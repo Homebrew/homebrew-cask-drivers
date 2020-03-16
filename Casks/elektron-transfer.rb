@@ -6,5 +6,7 @@ cask 'elektron-transfer' do
   name 'Elektron Transfer'
   homepage 'https://www.elektron.se/support/?connection=transfer#resources'
 
+  depends_on macos: '>= :el_capitan'
+
   app 'Transfer.app'
 end
