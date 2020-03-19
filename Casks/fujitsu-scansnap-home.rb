@@ -8,7 +8,7 @@ cask 'fujitsu-scansnap-home' do
   homepage 'https://www.fujitsu.com/global/products/computing/peripheral/scanners/scansnap/software/sshome/index.html'
 
   depends_on macos: '>= :sierra'
-  container nested: "Download/MacSSHomeInstaller_#{version.dots_to_underscores}.dmg"
+  container nested: "Download/SSHDownloadInstaller_#{version.dots_to_underscores}.dmg"
 
   pkg 'ScanSnap Home.pkg'
 
