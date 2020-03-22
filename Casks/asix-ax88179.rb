@@ -7,8 +7,8 @@ cask 'asix-ax88179' do
 
     container nested: "AX88179_178A_macintosh_Driver_Installer_v#{version}/AX88179_178A.dmg"
   else
-    version '2.15.0'
-    sha256 '17ae7031bd8e9ffb5cfea9ee17dcd4e32b38297a6241a5c9c2ac0589fe5dfcca'
+    version '2.16.0'
+    sha256 'afe9d8563a5d8eeacb81857e2afc26162f63727750b97cdd434322e664f09db0'
 
     url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_macOS_10.15_above_Driver_Installer_v#{version}.zip"
 
