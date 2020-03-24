@@ -8,7 +8,7 @@ cask 'fujitsu-scansnap-home' do
   homepage 'https://www.fujitsu.com/global/products/computing/peripheral/scanners/scansnap/software/sshome/index.html'
 
   depends_on macos: '>= :sierra'
-  
+
   installer manual: 'ScanSnap Home Setup.app'
 
   uninstall launchctl: [
