@@ -9,7 +9,7 @@ cask 'fujitsu-scansnap-home' do
 
   depends_on macos: '>= :sierra'
 
-  installer manual: 'ScanSnap Home Setup.app'
+  installer manual: 'SSHDownloadInstaller.app'
 
   uninstall launchctl: [
                          'com.fujitsu.pfu.SshRegister',
