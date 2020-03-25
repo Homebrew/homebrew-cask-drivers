@@ -1,12 +1,12 @@
 cask 'insta360-studio' do
-  version '3.4.2,20191126_181121'
-  sha256 '13a11a6c5447268efeb293bca53e4aed54bb122213f3e6d1fffbac4271fa2217'
+  version '3.4.5,2020_20200325_114234'
+  sha256 '3347e13516ce67b60c72654697b5e3ae70c045decf977e449d528e03beda131e'
 
-  url "https://static.insta360.com/software/Studio/Mac/Insta360%20Studio%202019_#{version.after_comma}_signed.pkg"
+  url "https://static.insta360.com/assets/storage/20200325/0ec5f9094db37c0cc39b81a7efae552f/Insta360_Studio_#{version.after_comma}_sig....pkg"
   name 'Insta360 Studio'
   homepage 'https://www.insta360.com/'
 
-  pkg "Insta360 Studio 2019_#{version.after_comma}_signed.pkg"
+  pkg "Insta360_Studio_#{version.after_comma}_sig....pkg"
 
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
