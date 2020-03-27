@@ -1,14 +1,14 @@
 cask 'canon-eos-utility' do
-  version '3.10.30.0'
-  sha256 '684316e1e4333a9ed7311b0cf0d9f6344054db0039cea2e5c181637bfa99d095'
+  version '3.12.1.0'
+  sha256 '198a3b419ec23a2bae423401962e9bc3ac567d185d00fd640837454494057286'
 
-  # gdlp01.c-wss.com/gds/7/0200005937/01 was verified as official when first introduced to the cask
-  url "http://gdlp01.c-wss.com/gds/7/0200005937/01/EU-Installset-M#{version}.dmg.zip"
-  appcast 'https://asia.canon/en/support/0200593702/1'
+  # gdlp01.c-wss.com/gds was verified as official when first introduced to the cask
+  url "https://gdlp01.c-wss.com/gds/9/0200006049/01/EU-Installset-M#{version}.dmg.zip"
+  appcast 'https://my.canon/en/support/0200604902/1'
   name 'Canon EOS Utility'
-  homepage 'https://asia.canon/en/support/0200593702/1'
+  homepage 'https://my.canon/en/support/0200604902/1'
 
-  installer manual: "eum#{version}-installer.app"
+  installer manual: "eum#{version.major_minor_patch}-installer.app"
 
   uninstall delete: [
                       '/Applications/Canon Utilities/CameraSurveyProgram',
@@ -35,8 +35,8 @@ cask 'canon-eos-utility' do
                '~/Library/Caches/com.canon.EOS-Lens-Registration-Tool',
                '~/Library/Caches/com.canon.UpdateChecker',
                '~/Library/Preferences/jp.co.canon.ic.camerasurveyprogram.plist',
-               '~/Library/Preferences/com.canon.EOS Utility 2.plist',
                '~/Library/Preferences/com.canon.EOS-Utility.plist',
+               '~/Library/Preferences/com.canon.EOS Utility 2.plist',
                '~/Library/Preferences/com.canon.EOS-Utility-3.plist',
              ]
 end

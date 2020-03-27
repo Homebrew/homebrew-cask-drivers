@@ -1,21 +1,17 @@
 cask 'canon-captureontouch-utility' do
-  version '4.4.19.0222'
-  sha256 'ba196b001ff61899e3ae01ccc5e1a2878d9cf8444d5088f3ac6bc3d75b517c91'
+  version '4.5.19.1002'
+  sha256 '351e6af9528bf426ca78dc347396520af8980e4d6ee597aa4aa7ef6394a4276d'
 
-  # gdlp01.c-wss.com/gds/0/0200005510/03 was verified as official when first introduced to the cask
-  url "http://gdlp01.c-wss.com/gds/0/0200005510/03/CaptureOnTouchV.#{version}forMac.dmg"
+  # files.canon-europe.com/files/soft01-48579/Driver/ was verified as official when first introduced to the cask
+  url 'https://files.canon-europe.com/files/soft01-48579/Driver/CaptureOnTouch_Installer.zip'
   appcast 'https://www.canon.se/supportproduct/gettabcontent/?type=download&language=&productTcmUri=tcm:87-1204588&productNameSearch=imageFORMULA%20P-215II&supportProductInformation=imageFORMULA%20P-215II%5Enull%5Enull%5Enull%5Enull&referrer=https%3A%252F%252Fwww.canon.se%252Fsupport%252Fconsumer_products%252Fproducts%252Fscanners%252Fothers%252Fimageformula_p-215ii.html&languageSelectedIndex=-1',
           configuration: version.major_minor_patch
-  name 'Canon CaptureOnTouch Utility'
+  name 'CaptureOnTouch'
   homepage 'https://www.canon.se/support/consumer_products/products/scanners/others/imageformula_p-215ii.html?type=download'
 
-  depends_on macos: [
-                      :sierra,
-                      :high_sierra,
-                      :mojave,
-                    ]
+  depends_on macos: '>= :sierra'
 
-  pkg 'CaptureOnTouch Installer.pkg'
+  pkg 'CaptureOnTouch_Installer.pkg'
 
   uninstall quit:    'jp.co.canon-elec.TouchV4',
             pkgutil: [
@@ -27,5 +23,10 @@ cask 'canon-captureontouch-utility' do
                        'com.canonElectronics.Installer.OneDrivePlugin.pkg',
                        'com.canonElectronics.Installer.PrinterPlugin.pkg',
                        'com.canonElectronics.Installer.SugarSyncPlugin.pkg',
+                     ],
+            delete:  [
+                       '/Applications/CaptureOnTouch.app',
+                       '/Applications/CaptureOnTouch.app/Contents/SharedSupport/AutoUpdate.app',
+                       '/Applications/CaptureOnTouch.app/Contents/SharedSupport/Touch.app',
                      ]
 end

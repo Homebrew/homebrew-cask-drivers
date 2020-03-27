@@ -1,8 +1,8 @@
 cask 'dymo-label' do
-  version '8.7.3'
-  sha256 '4a66168edfe253dae1e129fee48853d9e0e910416c61d746f1c0d42dddb838f0'
+  version '8.7.4'
+  sha256 '5d09fe70d39d9211c1c3e9f97379e182255ebf68b36e1c401f18b9671d6994e9'
 
-  url "http://download.dymo.com/dymo/Software/Mac/DLS#{version.major}Setup.#{version}.dmg"
+  url "https://download.dymo.com/dymo/Software/Mac/DLS#{version.major}Setup.#{version}.dmg"
   appcast 'https://www.dymo.com/en-US/online-support'
   name 'Dymo Label'
   homepage 'https://www.dymo.com/en-US/online-support'

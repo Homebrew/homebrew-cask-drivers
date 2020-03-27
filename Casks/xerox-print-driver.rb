@@ -7,16 +7,24 @@ cask 'xerox-print-driver' do
     version '4.17.1_1980'
     sha256 '36b1ddf1f598ceaf6f91d38b0d228be3f8f6188c251761424cbea7a869488883'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macosx1011/pt_BR/XeroxPrintDriver_#{version}.dmg"
-  else
-    version '5.1.0_2110'
-    sha256 'c82c03269eb6dc0f6fe0404128cd8786bf97212c825b30a83ae0d70cc1b469c7'
+  elsif MacOS.version <= :sierra
+    version '5.2.0_2115'
+    sha256 '9989b6c127fca8c97b24bd86fd4d20035cd094c69e3fd41f6a243361f86483ec'
     url "http://download.support.xerox.com/pub/drivers/CQ8570/drivers/macos1012/pt_BR/XeroxPrintDriver_#{version}.dmg"
+  else
+    version '5.4.2_2138'
+    sha256 '8b69dd93c07f8fe61a4e15bff49d3f1e5a41a669e84cd6b6f199187fa50b9eac'
+    url "http://download.support.xerox.com/pub/drivers/BALTORO_HF/drivers/macOS10_13/pt_BR/XeroxDrivers_#{version}.dmg"
   end
 
   name 'Xerox Print Driver'
   homepage 'https://www.support.xerox.com/support/colorqube-8570/downloads/'
 
-  pkg "Xerox Print Driver #{version.major_minor_patch}.pkg"
+  if MacOS.version <= :sierra
+    pkg "Xerox Print Driver #{version.sub(%r{_.*}, '')}.pkg"
+  else
+    pkg "Xerox Drivers #{version.sub(%r{_.*}, '')}.pkg"
+  end
 
   uninstall launchctl: [
                          'com.aviatainc.powerengage.XRTK',
@@ -31,5 +39,6 @@ cask 'xerox-print-driver' do
             delete:    '/Library/Caches/Xerox',
             rmdir:     '/Library/Application Support/Xerox'
 
-  zap trash: '~/Library/Application Support/PowerENGAGE/XEROX'
+  zap pkgutil: 'com.xerox.drivers.pkg',
+      trash:   '~/Library/Application Support/PowerENGAGE/XEROX'
 end

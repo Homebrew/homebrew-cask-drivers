@@ -1,12 +1,13 @@
 cask 'mazda-toolbox' do
-  version '4.4.2002117045,2019_03_13__12_10_00'
-  sha256 '0574a88f196c31e80c05d79189fa6a5f0468a419cc7ad59c44a1d94b547d4664'
+  version '.2002137187,2019_11_05__11_39_00'
+  sha256 '264b6b02f8fb92502256b0a9e943c67e29f4945e6f9bcebfaa7ea9f11fb3be38'
 
+  # azure.distrib.naviextras.com/content/!application was verified as official when first introduced to the cask
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
-  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://mazda.naviextras.com/shop/portal/download?type=x-toolbox-agent/osx32',
+  appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.naviextras.com/to/MazdaToolboxOSX',
           configuration: version.after_comma
   name 'Mazda Toolbox'
-  homepage 'https://mazda-na.naviextras.com/shop/portal/downloads'
+  homepage 'https://infotainment.mazdahandsfree.com/navigation-updatemymaps'
 
   depends_on macos: '>= :yosemite'
 

@@ -1,13 +1,13 @@
 cask 'lg-onscreen-control' do
-  version '3.52,hystR1EjmNPc1hNRcfKWg'
-  sha256 'a9ef5461ddaca25606024020e246372b1e52ba4f0e7a9c62f72874bfc07b6d91'
+  version '3.76,QMvateEiepmqkHo3sfooXg'
+  sha256 'b194059a03aea4bd3bacb55c319f237a2ddb0f5ab266df1775ada6f74743d065'
 
   # lge.com was verified as official when first introduced to the cask
   url "http://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}"
   name 'LG OnScreen Control'
   homepage 'https://www.lg.com/us/support/monitors'
 
-  pkg "OSC_V#{version.before_comma}.pkg"
+  pkg "OSC_V#{version.before_comma}_signed_MonitorLab.pkg"
 
   postflight do
     system_command '/bin/chmod',
@@ -24,6 +24,12 @@ cask 'lg-onscreen-control' do
                           'com.LGSI.OSCMultiMonitor',
                         ],
             pkgutil:    [
+                          'com.Fonts.pkg',
+                          'com.OSCApp.pkg',
+                          'com.OSCMultiMonitor.pkg',
+                          'com.OSC_Directory.pkg',
+                          'com.OSC_Library.pkg',
+                          'com.uninstall.pkg',
                           'com.lge.onscreenControl.*',
                           'com.lge.OnscreenControl.*',
                         ]

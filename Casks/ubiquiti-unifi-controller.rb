@@ -1,6 +1,6 @@
 cask 'ubiquiti-unifi-controller' do
-  version '5.11.50'
-  sha256 '4a231813694c2ae05c1d8f9c44b6a1887835176fb75d9d16c56695c8bf8eb63a'
+  version '5.12.66'
+  sha256 '981d8c057277d9c71cb2278e52234a7b04bff0bf343b5f2f3a17040e8088c773'
 
   # dl.ubnt.com was verified as official when first introduced to the cask
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
@@ -35,6 +35,7 @@ cask 'ubiquiti-unifi-controller' do
              ]
 
   caveats do
+    depends_on_java '8'
     license 'https://www.ui.com/eula/'
   end
 end

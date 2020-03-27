@@ -1,13 +1,13 @@
 cask 'behringer-x32-edit' do
   # note: "32" is not a version number, but an intrinsic part of the product name
-  version '3.2'
-  sha256 '2dee264d0df054e4f9b689af99046b7b28f5b8519cf1fba8df103ca30edcdc0a'
+  version '4.1'
+  sha256 'a4eb8aa7c45a1266f928d3b2ab44ef274e1750e91754fe6eada122ccd0f5f093'
 
-  # downloads.music-group.com was verified as official when first introduced to the cask
-  url "https://downloads.music-group.com/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
+  # downloads.musictribe.com was verified as official when first introduced to the cask
+  url "https://downloads.musictribe.com/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
   appcast 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/Downloads'
   name 'Behringer X32-Edit'
-  homepage 'https://www.musictribe.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF'
+  homepage 'https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/'
 
   app 'X32-Edit.app'
 
@@ -18,8 +18,4 @@ cask 'behringer-x32-edit' do
                '~/Library/Application Support/CrashReporter/X32-Edit_*.plist',
                '~/Library/Saved Application State/com.music-group.X32-Edit.savedState',
              ]
-
-  caveats do
-    license 'https://www.musictribe.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/downloads?active=Downloads'
-  end
 end

@@ -1,9 +1,9 @@
 cask 'loupedeck' do
-  version '2.7.2'
-  sha256 '91e87c9271dbf4a54d6cd533105b09e9de24839de5bfed17a6f6baa48699907e'
+  version '3.1'
+  sha256 'c4a3c7fe81df3482ad1c3eb6dca5b14b965a7c7c051974df9bbf8268209f015d'
 
   # loupedeck-software-release.s3.amazonaws.com was verified as official when first introduced to the cask
-  url "https://loupedeck-software-release.s3.amazonaws.com/Software_Release_Mac_#{version.dots_to_underscores}/Loupedeck_#{version.dots_to_underscores}.dmg"
+  url "https://loupedeck-software-release.s3.amazonaws.com/Software+Release+#{version}/MacOS+#{version}/Loupedeck_Software_#{version.dots_to_underscores}.dmg"
   name 'Loupdeck'
   homepage 'https://loupedeck.com/'
 
@@ -20,6 +20,7 @@ cask 'loupedeck' do
                      ],
             pkgutil: [
                        'com.loupedeck.PluginPackageInstaller',
+                       'com.loupedeck.ImageLibraryInstaller',
                        'com.loupedeck.LoupedeckPackageInstaller',
                      ],
             delete:  [
