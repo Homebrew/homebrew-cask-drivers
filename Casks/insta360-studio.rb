@@ -6,7 +6,7 @@ cask 'insta360-studio' do
   name 'Insta360 Studio'
   homepage 'https://www.insta360.com/'
 
-  pkg "Insta360_Studio_#{version.after_comma}_sig....pkg"
+  pkg "Insta360_Studio_#{version.after_comma}_signed.pkg"
 
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
