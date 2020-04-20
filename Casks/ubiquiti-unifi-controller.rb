@@ -2,7 +2,7 @@ cask 'ubiquiti-unifi-controller' do
   version '5.12.66'
   sha256 '981d8c057277d9c71cb2278e52234a7b04bff0bf343b5f2f3a17040e8088c773'
 
-  # dl.ubnt.com was verified as official when first introduced to the cask
+  # dl.ubnt.com/ was verified as official when first introduced to the cask
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg"
   appcast 'https://www.ui.com/download/unifi',
           configuration: :no_check
