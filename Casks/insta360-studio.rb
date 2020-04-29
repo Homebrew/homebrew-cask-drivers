@@ -6,7 +6,7 @@ cask 'insta360-studio' do
   name 'Insta360 Studio'
   homepage 'https://www.insta360.com/'
 
-  container :zip
+  container type: :zip
 
   pkg "Insta360 Studio #{version.after_comma}_signed.pkg"
 
