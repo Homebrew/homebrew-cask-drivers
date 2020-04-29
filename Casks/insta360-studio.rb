@@ -6,7 +6,7 @@ cask 'insta360-studio' do
   name 'Insta360 Studio'
   homepage 'https://www.insta360.com/'
 
-  container nested: "Insta360_Studio_#{version.after_comma}_signed.pkg.zip"
+  container nested: "Insta360_Studio_#{version.after_comma}_signed.pkg.zip/Insta360 Studio #{version.after_comma}_signed.pkg"
 
   pkg "Insta360 Studio #{version.after_comma}_signed.pkg"
 
