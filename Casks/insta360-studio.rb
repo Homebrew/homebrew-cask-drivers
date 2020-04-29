@@ -8,6 +8,8 @@ cask 'insta360-studio' do
 
   container nested: "Insta360_Studio_#{version.after_comma}_signed.pkg.zip"
 
+  pkg "Insta360 Studio #{version.after_comma}_signed.pkg"
+
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
                        'com.insta360.PremierePlugin',
