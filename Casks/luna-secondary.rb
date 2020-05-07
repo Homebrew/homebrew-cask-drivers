@@ -1,6 +1,6 @@
 cask 'luna-secondary' do
-  version '4.0.3'
-  sha256 '126cd64265c58c08a2097bd5ccd58376e84f943986023ad21fa17bf7a105fdce'
+  version '4.1.0'
+  sha256 '31085fde0f563952db9dc665fcb095e6a05b4d5b8dbd2117c8b400e8063ec1f4'
 
   # s3.amazonaws.com/s3.lunadisplay.com/ was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaSecondary-#{version}.dmg"
