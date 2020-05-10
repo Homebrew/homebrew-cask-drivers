@@ -7,7 +7,7 @@ cask 'lg-onscreen-control' do
   name 'LG OnScreen Control'
   homepage 'https://www.lg.com/us/support/monitors'
 
-  pkg "OSC_V#{version.before_comma}_signed_MonitorLab.pkg"
+  pkg "OSC_V#{version.before_comma}_signed.pkg"
 
   postflight do
     system_command '/bin/chmod',
