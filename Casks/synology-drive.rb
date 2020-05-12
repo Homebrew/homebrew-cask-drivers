@@ -1,6 +1,6 @@
 cask 'synology-drive' do
-  version '2.0.1,11061'
-  sha256 '99d1dd5d6fd36c18e75fce0b038d3d2c3c5ad2132f95ca835450d052ab841634'
+  version '2.0.2,11078'
+  sha256 '196865f411631103958d71e3dc0c640909e53ef5e3cb44013a22d66ae4f1ec85'
 
   url "https://global.download.synology.com/download/Tools/SynologyDriveClient/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-drive-client-#{version.after_comma}.dmg"
   appcast 'https://archive.synology.com/download/Tools/SynologyDriveClient/'
@@ -13,6 +13,7 @@ cask 'synology-drive' do
 
   uninstall quit:      [
                          'io.com.synology.CloudStationUI',
+                         'com.synology.CloudStation',
                          'com.synology.CloudStationUI',
                        ],
             pkgutil:   'com.synology.CloudStation',
