@@ -1,6 +1,6 @@
 cask 'synology-cloud-station-backup' do
-  version '4.3.2,4450'
-  sha256 '8adb2a853853d6106784570734c9739d684600890cd6b797d88dc2785e0b8b86'
+  version '4.3.3,4469'
+  sha256 '1759be61a09cacd976969f71b0c0f12f34684976de6ad98323c512aec8f3399d'
 
   url "https://global.download.synology.com/download/Tools/CloudStationBackup/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-cloud-station-backup-#{version.after_comma}.dmg"
   appcast 'https://archive.synology.com/download/Tools/CloudStationBackup/'
