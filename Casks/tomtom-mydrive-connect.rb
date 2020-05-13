@@ -7,7 +7,7 @@ cask 'tomtom-mydrive-connect' do
   name 'TomTom MyDrive Connect'
   homepage 'https://www.tomtom.com/mydrive-connect/'
 
-  pkg 'MyDriveConnect.mpkg'
+  pkg "MyDriveConnect_mac_#{version.dots_to_underscores}.mpkg"
 
   uninstall quit:       'com.tomtom.mytomtomsa',
             login_item: 'TomTomMyDriveConnectHelper',
