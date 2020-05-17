@@ -2,9 +2,9 @@ cask 'plantronics-hub' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.plantronics.com/content/dam/plantronics/software/PlantronicsHubInstaller.dmg'
+  url 'https://www.poly.com/content/dam/www/software/PlantronicsHubInstaller.dmg'
   name 'Plantronics Hub'
-  homepage 'https://www.plantronics.com/us/en/support/downloads-apps/hub-desktop'
+  homepage 'https://www.poly.com/us/en/support/downloads-apps'
 
   depends_on macos: '>= :yosemite'
 
