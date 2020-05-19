@@ -3,8 +3,8 @@ cask 'logitech-options' do
     version '7.14.77'
     sha256 'e4df55642e04139fc93d955e949bf736196a404ed067d87f8de7eb9ac9117ece'
   else
-    version '8.10.64'
-    sha256 'f13a44149b3da9922412237b79fbc2323c63bb263f484f31a1e5d1fe9d2c3534'
+    version '8.20.233'
+    sha256 '52427d5fa9f0e0508c3414906212774b7ae142450d6dcf90fe1a4d6b51449c67'
   end
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
