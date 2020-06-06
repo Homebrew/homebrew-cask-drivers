@@ -15,16 +15,16 @@ cask 'samsung-portable-ssd-t5' do
                             executable: '/Applications/SamsungPortableSSD.app/Contents/Resources/CleanupPSSD_Mac.sh',
                             sudo:       false,
                           },
+            script:       {
+                            executable: '/Applications/SamsungPortableSSD.app/Contents/Resources/CleanupPSSDAdmin_Mac.sh',
+                            sudo:       true,
+                          },
             quit:         [
                             'com.samsung.portablessd.software',
                             'Samsung.T3-Log-In-Activator-for-Mac-app',
                             '/Applications/SamsungPortableSSD.app',
                           ],
             launchctl:    'com.samsung.portablessd.mon',
-            script:       {
-                            executable: '/Applications/SamsungPortableSSD.app/Contents/Resources/CleanupPSSDAdmin_Mac.sh',
-                            sudo:       true,
-                          },
             kext:         'com.samsung.portablessd.driver',
             pkgutil:      [
                             'com.samsung.portablessd.driverpkg',
