@@ -32,9 +32,6 @@ cask 'samsung-portable-ssd-t5' do
                          # /Library/Extensions/SamsungPortableSSDDriverX.kext
                          # /Library/Extensions/SamsungPortableSSDDriver.kext
                          '/Library/Extensions/SamsungPortableSSDDriver*.kext',
-                         # /Library/StagedExtensions/Library/Extensions/SamsungPortableSSDDriverX.kext
-                         # /Library/StagedExtensions/Library/Extensions/SamsungPortableSSDDriver.kext
-                         '/Library/StagedExtensions/Library/Extensions/SamsungPortableSSDDriver*.kext',
                          # /private/var/db/receipts/com.samsung.portablessd.softwarepkg.plist
                          # /private/var/db/receipts/com.samsung.portablessd.softwarepkg.bom
                          # /private/var/db/receipts/com.samsung.portablessd.driverpkg.plist
