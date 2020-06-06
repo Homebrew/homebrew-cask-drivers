@@ -16,7 +16,10 @@ cask 'samsung-portable-ssd-t5' do
                          'Samsung.T3-Log-In-Activator-for-Mac-app',
                          '/Applications/SamsungPortableSSD.app',
                        ],
-            launchctl: 'com.samsung.portablessd.mon',
+            launchctl: [
+                         'com.samsung.portablessd.mon',
+                         'com.srib.pssddaemo',
+                       ],
             kext:      'com.samsung.portablessd.driver',
             pkgutil:   [
                          'com.samsung.portablessd.driverpkg',
