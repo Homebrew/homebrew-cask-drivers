@@ -1,5 +1,5 @@
 cask 'focusrite-control' do
-  version '3.5.0.1754'
+  version '3.6.0.1822'
   sha256 'de9863b01059fee00a7168acf568adbd10bc80f9bbe4911b0249739f87930068'
 
   url "https://customer.focusrite.com/sites/customer/files/downloads/Focusrite%20Control%20-%20#{version}.dmg"
