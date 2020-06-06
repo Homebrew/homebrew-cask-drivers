@@ -18,7 +18,7 @@ cask 'samsung-portable-ssd-t5' do
                        ],
             launchctl: [
                          'com.samsung.portablessd.mon',
-                         'com.srib.pssddaemo',
+                         'com.srib.pssddaemon',
                        ],
             kext:      'com.samsung.portablessd.driver',
             pkgutil:   [
