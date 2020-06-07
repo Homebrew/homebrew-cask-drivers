@@ -30,15 +30,7 @@ cask 'samsung-portable-ssd-t5' do
                          'com.samsung.portablessd.samsungPortableSsdSoftware.preflight',
                        ],
             delete:    [
-                         # /Library/Extensions/SamsungPortableSSDDriverX.kext
-                         # /Library/Extensions/SamsungPortableSSDDriver.kext
                          '/Library/Extensions/SamsungPortableSSDDriver*.kext',
-                         # /private/var/db/receipts/com.samsung.portablessd.softwarepkg.plist
-                         # /private/var/db/receipts/com.samsung.portablessd.softwarepkg.bom
-                         # /private/var/db/receipts/com.samsung.portablessd.driverpkg.plist
-                         # /private/var/db/receipts/com.samsung.portablessd.driverXpkg.plist
-                         # /private/var/db/receipts/com.samsung.portablessd.driverpkg.bom
-                         # /private/var/db/receipts/com.samsung.portablessd.driverXpkg.bom
                          '/private/var/db/receipts/com.samsung.portablessd.*.*',
                        ]
 
