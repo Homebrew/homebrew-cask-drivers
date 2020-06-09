@@ -12,5 +12,5 @@ cask 'sonos' do
 
   app 'Sonos.app'
 
-  zap trash: '~/Library/Application Support/Sonos'
+  zap trash: '~/Library/Application Support/SonosV2'
 end
