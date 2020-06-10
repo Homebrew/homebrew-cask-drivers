@@ -7,8 +7,6 @@ cask 'sound-blaster-play3' do
   name 'Sound Blaster Play! 3 Control Panel'
   homepage 'https://us.creative.com/p/sound-cards/sound-blaster-play-3'
 
-  depends_on macos: '>= :mavericks'
-
   pkg 'Install.pkg'
 
   uninstall pkgutil: [

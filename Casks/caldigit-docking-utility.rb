@@ -6,8 +6,6 @@ cask 'caldigit-docking-utility' do
   name 'CalDigit Thunderbolt Docking Station Utility'
   homepage 'https://www.caldigit.com/'
 
-  depends_on macos: '>= :mavericks'
-
   pkg "CalDigit Docking Station Utility v#{version}.pkg"
 
   uninstall signal:  ['TERM', 'CalDigit.CalDigit-Docking-Station-Utility'],
