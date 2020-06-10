@@ -9,8 +9,6 @@ cask 'razer-synapse' do
   name 'Razer Synapse'
   homepage 'https://www.razer.com/synapse-2'
 
-  depends_on macos: '>= :mavericks'
-
   pkg 'Razer Synapse.pkg'
 
   uninstall delete:    '/Applications/Razer Synapse.app',

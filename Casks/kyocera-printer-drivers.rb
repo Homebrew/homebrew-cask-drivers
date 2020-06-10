@@ -8,7 +8,6 @@ cask 'kyocera-printer-drivers' do
   name 'Kyocera Mac Driver'
   homepage 'https://dlc.kyoceradocumentsolutions.eu/index/service/dlc.false._.TASKALFA5053CI._.EN.html#MAC'
 
-  depends_on macos: '>= :mavericks'
   container nested: "Mac#{version.before_comma.no_dots}_#{version.after_comma}-KDC/Kyocera OS X 10.9+ Web build #{version.after_comma}.dmg"
 
   pkg "Kyocera OS X 10.9+ Web build #{version.after_comma}.pkg"

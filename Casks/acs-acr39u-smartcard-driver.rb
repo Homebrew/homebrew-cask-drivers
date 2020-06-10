@@ -7,7 +7,6 @@ cask 'acs-acr39u-smartcard-driver' do
   name 'ACS Unified Installer'
   homepage 'https://www.acs.com.hk/en/driver/302/acr39u-smart-card-reader/'
 
-  depends_on macos: '>= :mavericks'
   container nested: "ACS-Unified-INST-MacOSX-#{version.no_dots}-P/acsccid_installer-#{version}.dmg"
 
   pkg 'acsccid_installer.pkg'
