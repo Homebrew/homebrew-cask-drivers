@@ -4,7 +4,7 @@ cask 'focusrite-clarett-thunderbolt' do
 
   url "https://customer.focusrite.com/sites/customer/files/downloads/ClarettThunderboltDriver-#{version.major_minor_patch}.dmg"
   appcast 'https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545&download_type=software',
-          configuration: version.major_minor_patch
+          must_contain: version.major_minor_patch
   name 'Focusrite Clarett Thunderbolt'
   homepage 'https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545'
 
