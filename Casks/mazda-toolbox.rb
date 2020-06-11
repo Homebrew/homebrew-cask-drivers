@@ -5,7 +5,7 @@ cask 'mazda-toolbox' do
   # azure.distrib.naviextras.com/content/!application/ was verified as official when first introduced to the cask
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.naviextras.com/to/MazdaToolboxOSX',
-          configuration: version.after_comma
+          must_contain: version.after_comma
   name 'Mazda Toolbox'
   homepage 'https://infotainment.mazdahandsfree.com/navigation-updatemymaps'
 
