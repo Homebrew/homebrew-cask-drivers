@@ -4,7 +4,7 @@ cask 'smartscope' do
 
   url 'https://www.lab-nation.com/package/smartscope/macos/latest/get'
   appcast 'https://www.lab-nation.com/package/smartscope/macos/latest/',
-          configuration: version.minor
+          must_contain: version.minor
   name 'SmartScope'
   homepage 'https://www.lab-nation.com/'
 
