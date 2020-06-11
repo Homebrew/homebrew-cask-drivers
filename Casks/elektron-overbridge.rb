@@ -8,7 +8,7 @@ cask 'elektron-overbridge' do
   name 'Overbridge'
   homepage 'https://www.elektron.se/overbridge/'
 
-  pkg "Elektron Overbridge Installer #{version}.pkg"
+  pkg "Elektron Overbridge Installer #{version.before_comma}.pkg"
 
   uninstall pkgutil:   'se.elektron.overbridge.*',
             launchctl: 'se.elektron.overbridge.engine',
