@@ -4,7 +4,7 @@ cask 'sonos' do
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.no_dots}.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.sonos.com/en/redir/controller_software_mac2',
-          configuration: version.no_dots
+          must_contain: version.no_dots
   name 'Sonos'
   homepage 'https://www.sonos.com/'
 
