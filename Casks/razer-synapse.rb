@@ -5,7 +5,7 @@ cask 'razer-synapse' do
   # dl.razerzone.com/ was verified as official when first introduced to the cask
   url "https://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version.major_minor}.dmg"
   appcast 'https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=http://rzr.to/synapse-mac-download',
-          configuration: version.major_minor
+          must_contain: version.major_minor
   name 'Razer Synapse'
   homepage 'https://www.razer.com/synapse-2'
 
