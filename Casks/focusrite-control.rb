@@ -4,7 +4,7 @@ cask 'focusrite-control' do
 
   url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   appcast 'https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=1360&download_type=software',
-          configuration: version.major_minor_patch
+          must_contain: version.major_minor_patch
   name 'Focusrite Control'
   homepage 'https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=1360&download_type=software'
 
