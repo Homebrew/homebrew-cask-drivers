@@ -8,7 +8,7 @@ cask 'insta360-studio' do
 
   container type: :zip
 
-  pkg "Insta360 Studio #{version.after_comma}_signed.pkg"
+  pkg "Insta360 Studio #{version.after_comma.before_colon}_signed.pkg"
 
   uninstall quit:    'com.insta360.studio',
             pkgutil: [
