@@ -3,7 +3,7 @@ cask 'tomtom-mydrive-connect' do
   sha256 '687a809be03ff108b5f503dc88a2875b285cb6346a86d4cdcd8c08f6328ab308'
 
   url "https://cdn.sa.services.tomtom.com/static/sa/versions/MyDriveConnect_mac_#{version.dots_to_underscores}.zip"
-  appcast 'https://us.support.tomtom.com/app/release_notes/type/mydrive'
+  appcast 'https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect'
   name 'TomTom MyDrive Connect'
   homepage 'https://www.tomtom.com/mydrive-connect/'
 
