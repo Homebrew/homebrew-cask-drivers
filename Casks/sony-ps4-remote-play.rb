@@ -17,5 +17,6 @@ cask 'sony-ps4-remote-play' do
                '~/Library/Caches/com.playstation.RemotePlay',
                '~/Library/Cookies/com.playstation.RemotePlay.binarycookies',
                '~/Library/Preferences/com.playstation.RemotePlay.plist',
+               '~/Library/WebKit/com.playstation.RemotePlay',
              ]
 end
