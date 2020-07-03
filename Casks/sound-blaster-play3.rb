@@ -25,7 +25,7 @@ cask 'sound-blaster-play3' do
                        'com.creative.AudioDriver',
                        'com.creative.Uninstaller',
                      ]
-  uninstall launchctl: ['com.creative.trustudiopc']
+  uninstall launchctl: 'com.creative.trustudiopc'
 
   caveats do
     reboot
