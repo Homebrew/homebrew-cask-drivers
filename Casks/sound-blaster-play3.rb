@@ -16,16 +16,17 @@ cask 'sound-blaster-play3' do
 
   pkg 'Install.pkg'
 
-  uninstall pkgutil: [
-                       'com.creative.Sound Blaster Play! 3.AudioControlPanel.pkg',
-                       'com.creative.Creative USB Audio Driver.TruStdPlugin109.pkg',
-                       'com.creative.Creative Uninstaller.pkg',
-                       'com.creative.Creative Product Registration.pkg',
-                       'com.Creative.Sound-Blaster-Play--3-Control-Panel',
-                       'com.creative.AudioDriver',
-                       'com.creative.Uninstaller',
-                     ]
-  uninstall launchctl: 'com.creative.trustudiopc'
+  uninstall launchctl: 'com.creative.trustudiopc',
+
+            pkgutil:   [
+                         'com.creative.Sound Blaster Play! 3.AudioControlPanel.pkg',
+                         'com.creative.Creative USB Audio Driver.TruStdPlugin109.pkg',
+                         'com.creative.Creative Uninstaller.pkg',
+                         'com.creative.Creative Product Registration.pkg',
+                         'com.Creative.Sound-Blaster-Play--3-Control-Panel',
+                         'com.creative.AudioDriver',
+                         'com.creative.Uninstaller',
+                       ]
 
   caveats do
     reboot
