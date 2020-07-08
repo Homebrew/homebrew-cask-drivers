@@ -5,8 +5,8 @@ cask 'garmin-basecamp' do
     url "https://download.garmin.com/software/BaseCampforMacLegacyVersion_#{version.no_dots}.dmg"
     appcast 'https://www8.garmin.com/support/download_details.jsp?id=4939'
   else
-    version '4.8.8'
-    sha256 '6a312820a7e6402dbc581972071468c60836d1b8cfade753a74ad7d0ee5c6884'
+    version '4.8.9'
+    sha256 '7ddc9963cf1a53f2f4ee986a51fd79fa774148740ed80da37978190df185e0ad'
     url "https://download.garmin.com/software/BaseCampforMac_#{version.no_dots}.dmg"
     appcast 'https://www8.garmin.com/support/download_details.jsp?id=4449'
   end
