@@ -1,5 +1,5 @@
 cask 'flashforge-flashprint' do
-  version '4.2.0'
+  version '4.3.1'
   sha256 '8abb4c69f32b669994b7695f981c27aad8f3da5cbf0d02272016f9483c793d33'
 
   url 'https://en.fss.flashforge.com/10000/software/bb8cad0ffed6160ae46a0dcbf032145c.zip'
