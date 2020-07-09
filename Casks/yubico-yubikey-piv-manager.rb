@@ -10,7 +10,7 @@ cask 'yubico-yubikey-piv-manager' do
   pkg "yubikey-piv-manager-#{version}-mac.pkg"
 
   uninstall signal:  ['TERM', 'YubiKey PIV Manager'],
-            pkgutil: 'com.yubico.pkg.YubiKeyPIVManager'
+            pkgutil: ['com.yubico.pkg.YubiKeyPIVManager', 'YubiKey PIV Manager']
 
   zap trash: '~/Library/Saved Application State/YubiKey PIV Manager.savedState'
 end
