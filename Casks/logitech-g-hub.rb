@@ -23,7 +23,6 @@ cask 'logitech-g-hub' do
                       args:       ['--uninstall'],
                       sudo:       true,
                     },
-
             trash:  '/Users/Shared/LGHUB'
 
   zap trash: [
