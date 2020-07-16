@@ -1,5 +1,5 @@
 cask 'lg-onscreen-control' do
-  version '3.90,oUPWP5KHNfrF9pvvVc36lQ'
+  version '3.90,D69pl26Ru9P0ZBgWlPnug'
   sha256 '99ac797ddd5c082902412cf428a3284c5fc56293d16e134f59f22018c7d223c1'
 
   # lge.com/ was verified as official when first introduced to the cask
