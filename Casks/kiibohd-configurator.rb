@@ -1,6 +1,6 @@
 cask 'kiibohd-configurator' do
-  version '1.0.2'
-  sha256 'b3eba8a4e3c44b68f5a8ab9cf14ea4531f4cda7d06b6ec84ba934950e0e7579a'
+  version '1.1.0'
+  sha256 '996abcfd4f05420199e0302be50d9e878bd28bb50f541b5f6886a1654862e20f'
 
   # github.com/kiibohd/configurator/ was verified as official when first introduced to the cask
   url "https://github.com/kiibohd/configurator/releases/download/v#{version}/kiibohd-configurator-#{version}-mac.dmg"
