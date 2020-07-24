@@ -1,6 +1,6 @@
 cask 'kyocera-printer-drivers' do
-  version '5.0a,2019.11.27'
-  sha256 '022c1e9a710d157b4e68e4c0d5b519ca31280eb47c43296cdae6e92da864b41d'
+  version '5.1,2020.07.01'
+  sha256 '21bc52ac4a1d2d074a1c56bb17d76092dd0e2405648ffa960577e603eed7cd0c'
 
   # kyostatics.net/dlc/eu/driver/all/ was verified as official when first introduced to the cask
   url "https://cdn.kyostatics.net/dlc/eu/driver/all/kyocera_os_x_10_6.-downloadcenteritem-Single-File.downloadcenteritem.tmp/MacPhase#{version.before_comma.no_dots}_#{version.after_comma.dots_to_underscores}.zip"
