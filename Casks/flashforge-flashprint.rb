@@ -4,7 +4,7 @@ cask "flashforge-flashprint" do
 
   url "https://en.fss.flashforge.com/10000/software/#{version.after_comma}.zip"
   name "FlashPrint"
-  homepage "https://www.flashforge.com/software/detail/Flashprint?id=40"
+  homepage "https://www.flashforge.com/product-detail/40"
 
   auto_updates true
 
