@@ -1,6 +1,6 @@
 cask "zsa-wally" do
-  version "1.1.3"
-  sha256 "9dc788e16b0dd3336748867c1b5b1c06f2c55010d5b6a037cd5cbf22c67b61ef"
+  version "2.0.0"
+  sha256 "b07a27738d9a462a32167c4d237fb3eb62a9221cc72686243eb13727cecbd1e2"
 
   # github.com/zsa/wally/ was verified as official when first introduced to the cask
   url "https://github.com/zsa/wally/releases/download/#{version}-osx/wally-osx-#{version}.dmg"
@@ -9,5 +9,4 @@ cask "zsa-wally" do
   homepage "https://ergodox-ez.com/pages/wally"
 
   app "Wally.app"
-  binary "wally-cli"
 end
