@@ -24,7 +24,7 @@ cask "lg-onscreen-control" do
               "com.LGSI.OSCMultiMonitor",
             ],
             pkgutil:    [
-              "com.Fonts.pkg",
+              "com.OSC.Fonts.pkg",
               "com.OSCApp.pkg",
               "com.OSCMultiMonitor.pkg",
               "com.OSC_Directory.pkg",
