@@ -1,6 +1,6 @@
 cask "blackvue-viewer" do
-  version "3.01"
-  sha256 "5b021d113c5666c0536853f697a6267210b2b2c0309f88edc3bbd548ce08be8e"
+  version "3.02"
+  sha256 "65f7fcc5a3ade2ba33cfdb97369a3bcfd8232135d99581507053c0ac67a7b48e"
 
   url "https://www.blackvue.com/download/blackvue-mac-viewer-cloud/?wpdmdl=74331"
   appcast "https://www.blackvue.com/download/blackvue-mac-viewer-cloud/"
