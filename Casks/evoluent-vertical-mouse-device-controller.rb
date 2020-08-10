@@ -7,8 +7,6 @@ cask "evoluent-vertical-mouse-device-controller" do
   name "Evoluent Vertical Mouse Device Controller"
   homepage "https://evoluent.com/"
 
-  # This cask is broken as of MacOS Catalina because it attempts to write
-  # to the root directory (/)
   depends_on macos: "<= :mojave"
 
   pkg "Evoluent VerticalMouse Device Controller - #{version}.pkg"
