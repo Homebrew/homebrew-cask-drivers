@@ -3,9 +3,9 @@ cask "3dconnexion" do
   sha256 "6c52a57a538ef10fda6611b186b13897aade6ff827ce3cb53ea16b6109942aec"
 
   url "https://download.3dconnexion.com/drivers/mac/#{version.before_comma}_#{version.after_colon}/3DxWareMac_v#{version.before_comma}_#{version.after_comma.before_colon}.dmg"
-  appcast "https://www.3dconnexion.com/service/drivers.html"
+  appcast "https://3dconnexion.com/us/drivers/"
   name "3Dconnexion"
-  homepage "https://www.3dconnexion.com/"
+  homepage "https://3dconnexion.com/"
 
   depends_on macos: ">= :yosemite"
 
