@@ -7,6 +7,8 @@ cask "evoluent-vertical-mouse-device-controller" do
   name "Evoluent Vertical Mouse Device Controller"
   homepage "https://evoluent.com/"
 
+  depends_on macos: "<= :mojave"
+
   pkg "Evoluent VerticalMouse Device Controller - #{version}.pkg"
 
   uninstall launchctl: "com.evoluent.agent",
