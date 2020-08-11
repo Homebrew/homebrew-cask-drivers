@@ -1,5 +1,5 @@
 cask "canon-captureontouch-utility" do
-  version "4.5.19.1002"
+  version "4.11.1719"
   sha256 "351e6af9528bf426ca78dc347396520af8980e4d6ee597aa4aa7ef6394a4276d"
 
   # files.canon-europe.com/files/soft01-48579/Driver/ was verified as official when first introduced to the cask
