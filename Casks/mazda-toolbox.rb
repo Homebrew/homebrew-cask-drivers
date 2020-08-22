@@ -1,5 +1,5 @@
 cask "mazda-toolbox" do
-  version ".2002149986,2020_08_20__12_30_00"
+  version "2002149986,2020_08_20__12_30_00"
   sha256 "0667c08422148770650c8b7951f304073c0ba72f7a554b27d716d3b284eea489"
 
   # azure.distrib.naviextras.com/content/!application/ was verified as official when first introduced to the cask
