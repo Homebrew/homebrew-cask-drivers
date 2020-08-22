@@ -1,6 +1,6 @@
 cask "mazda-toolbox" do
-  version ".2002148687,2020_07_15__16_22_00"
-  sha256 "0795f9a961e3dde825e0fe6254e90586e815f715b5a44c08c537a291bb869541"
+  version "2002149986,2020_08_20__12_30_00"
+  sha256 "0667c08422148770650c8b7951f304073c0ba72f7a554b27d716d3b284eea489"
 
   # azure.distrib.naviextras.com/content/!application/ was verified as official when first introduced to the cask
   url "https://azure.distrib.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/OSX/#{version.after_comma}/Mazda-Toolbox.dmg"
