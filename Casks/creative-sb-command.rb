@@ -4,6 +4,7 @@ cask "creative-sb-command" do
 
   url "https://download.creative.com/manualdn/Applications/100300/SEwNEWcs2X/SBCMD_MAC_L#{version.dots_to_underscores}.dmg"
   name "Creative Sound Blaster Command"
+  desc "Configure and personalize audio settings of Creative Sound Blaster peripherals"
   homepage "https://support.creative.com/"
 
   depends_on macos: ">= :sierra"
