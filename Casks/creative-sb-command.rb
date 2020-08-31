@@ -11,12 +11,12 @@ cask "creative-sb-command" do
 
   pkg "INSTALL.pkg"
 
-  uninstall script: {
-    executable:   "/Applications/Creative/Uninstaller.app/Contents/MacOS/Uninstaller",
-    must_succeed: true,
-    print_stderr: false,
-  },
-            rmdir:  "/Applications/Creative"
+  uninstall pkgutil: [
+    "com.creative.AudioDriver",
+    "com.creative.Uninstaller",
+    "com.creative.SBCommand",
+  ],
+            rmdir: "/Applications/Creative"
 
   zap trash: [
     "~/Library/Application Support/Creative.SB-Command",
