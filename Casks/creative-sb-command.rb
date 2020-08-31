@@ -16,7 +16,7 @@ cask "creative-sb-command" do
     "com.creative.Uninstaller",
     "com.creative.SBCommand",
   ],
-            rmdir: "/Applications/Creative"
+            rmdir:   "/Applications/Creative"
 
   zap trash: [
     "~/Library/Application Support/Creative.SB-Command",
