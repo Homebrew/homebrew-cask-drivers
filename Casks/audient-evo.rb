@@ -11,7 +11,5 @@ cask "audient-evo" do
 
   app "EVO.app"
 
-  zap trash: [
-    "~/Library/Application Support/Audient",
-  ]
+  zap trash: "~/Library/Application Support/Audient"
 end
