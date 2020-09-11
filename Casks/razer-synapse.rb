@@ -10,13 +10,7 @@ cask "razer-synapse" do
   desc "Configuration software for Razer peripherals"
   homepage "https://www.razer.com/synapse-2"
 
-  depends_on macos: [
-    :yosemite,
-    :el_capitan,
-    :sierra,
-    :high_sierra,
-    :mojave,
-  ]
+  depends_on macos: "<= :mojave"
 
   pkg "Razer Synapse.pkg"
 
