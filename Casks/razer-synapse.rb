@@ -7,7 +7,10 @@ cask "razer-synapse" do
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=http://rzr.to/synapse-mac-download",
           must_contain: version.major_minor
   name "Razer Synapse"
+  desc "Configuration software for Razer peripherals"
   homepage "https://www.razer.com/synapse-2"
+
+  depends_on macos: "<= :mojave"
 
   pkg "Razer Synapse.pkg"
 
