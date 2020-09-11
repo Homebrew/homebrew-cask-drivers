@@ -19,11 +19,11 @@ cask "corsair-icue" do
               "com.corsair.cue.*",
               "org.qt-project.*",
             ],
-            script:    [
-              { executable: "/usr/bin/osascript",
+            script:    {
+                executable: "/usr/bin/osascript",
                 args:       ["#{appdir}/Corsair/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
-                sudo:       true },
-            ],
+                sudo:       true
+            },
             pkgutil:   [
               "com.corsair.CorsairAudio",
               "com.corsair.cue.*",
