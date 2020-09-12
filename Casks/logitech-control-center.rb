@@ -1,6 +1,6 @@
 cask "logitech-control-center" do
-  version "3.9.11"
-  sha256 "18de9f8ae8461df57f6cc9e9f1f443674891ca94d71cb7d7dc0f4c94c32fb2c9"
+  version "3.9.12"
+  sha256 "e5ed90b74ae1abe5b37d59fec06a02eefffcbc4d8921234ebe5c47a280bd1b26"
 
   url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
   appcast "https://support.logi.com/api/v2/help_center/en-us/articles.json"
