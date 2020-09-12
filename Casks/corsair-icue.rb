@@ -29,10 +29,10 @@ cask "corsair-icue" do
               "com.corsair.cue.*",
             ],
             delete:    [
-              "/Applications/Corsair",
               "/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin",
               "/Library/LaunchAgents/iCUELaunchAgent.plist",
-            ]
+            ],
+            rmdir:     "/Applications/Corsair"
 
   zap trash: [
     "~/.config/com.corsair",
