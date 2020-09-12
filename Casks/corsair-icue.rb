@@ -16,22 +16,22 @@ cask "corsair-icue" do
     "com.corsair.cue.3.launchHelper",
   ],
             quit:      [
-              "com.corsair.cue.*",
-              "org.qt-project.*",
-            ],
+    "com.corsair.cue.*",
+    "org.qt-project.*",
+  ],
             script:    {
-                executable: "/usr/bin/osascript",
-                args:       ["#{appdir}/Corsair/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
-                sudo:       true
-            },
+    executable: "/usr/bin/osascript",
+    args:       ["#{appdir}/Corsair/iCUEUninstaller.app/Contents/Scripts/uninstall.scpt"],
+    sudo:       true
+  },
             pkgutil:   [
-              "com.corsair.CorsairAudio",
-              "com.corsair.cue.*",
-            ],
+    "com.corsair.CorsairAudio",
+    "com.corsair.cue.*",
+  ],
             delete:    [
-              "/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin",
-              "/Library/LaunchAgents/iCUELaunchAgent.plist",
-            ],
+    "/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin",
+    "/Library/LaunchAgents/iCUELaunchAgent.plist",
+  ],
             delete:    "/Applications/Corsair"
 
   zap trash: [
