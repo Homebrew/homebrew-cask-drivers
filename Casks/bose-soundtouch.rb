@@ -1,10 +1,11 @@
 cask "bose-soundtouch" do
-  version "25.0.4-3095-b09ae53,st2_2020_b103e58e"
-  sha256 "f7af2464d5ae9312df7573bee666fbc0807f790d6ba7476ba045ab824eaec785"
+  version "26.0.0-3251-ff6a93d,st2_2020_b103e58e"
+  sha256 "be74aeaa1e73bd6b07d92ceb5fcff5b58c4023eb7ccdb034fea842080554aa4e"
 
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
   appcast "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/index.xml"
   name "Bose Soundtouch Controller App"
+  desc "Control Bose SoundTouch systems from your computer"
   homepage "https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html"
 
   auto_updates true
