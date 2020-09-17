@@ -1,6 +1,6 @@
 cask "qmk-toolbox" do
-  version "0.0.19"
-  sha256 "dfcb04fd89f01514d5e9309d7619a8c91aee5a0b708bf870448711f9d689f175"
+  version "0.0.20"
+  sha256 "b44aa0bef6dac63ed2dd8695644772e00013a84739c7b82da79692ebd22cc2bc"
 
   # github.com/qmk/qmk_toolbox/ was verified as official when first introduced to the cask
   url "https://github.com/qmk/qmk_toolbox/releases/download/#{version}/QMK.Toolbox.app.zip"
