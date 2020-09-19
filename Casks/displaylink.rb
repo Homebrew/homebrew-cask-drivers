@@ -17,7 +17,7 @@ cask "displaylink" do
       },
       using: :post
   name "DisplayLink USB Graphics Software"
-  desc "Drivers for a DisplayLink dock, adapter or monitor"
+  desc "Drivers for DisplayLink docks, adapters and monitors"
   homepage "https://www.displaylink.com/"
 
   pkg "DisplayLink Software Installer.pkg"
