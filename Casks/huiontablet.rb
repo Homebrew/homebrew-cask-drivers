@@ -11,7 +11,5 @@ cask "huiontablet" do
 
   app "HuionTablet.app"
 
-  zap trash: [
-    "~/Library/Saved Application State/com.huion.HuionTablet.savedState",
-  ]
+  zap trash: "~/Library/Saved Application State/com.huion.HuionTablet.savedState"
 end
