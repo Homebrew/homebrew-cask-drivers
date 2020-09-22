@@ -10,4 +10,8 @@ cask "huiontablet" do
   container nested: "HuionTablet_MacDriver_v#{version.major_minor_patch}.dmg"
 
   app "HuionTablet.app"
+
+  zap trash: [
+    "~/Library/Saved Application State/com.huion.HuionTablet.savedState",
+  ]
 end
