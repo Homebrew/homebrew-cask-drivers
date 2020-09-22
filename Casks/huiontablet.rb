@@ -1,4 +1,4 @@
-cask "huion-tablet" do
+cask "huiontablet" do
   version "14.4.5.200730"
   sha256 "0fb410e205849dc277cef76c63eacc8cacb33faf3fec96a66247ce7a913a504a"
 
