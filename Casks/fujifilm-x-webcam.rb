@@ -5,7 +5,7 @@ cask "fujifilm-x-webcam" do
   url "https://dl.fujifilm-x.com/support/software/x-webcam-mac#{version.before_comma.no_dots}-#{version.after_comma}/XWebcamIns#{version.before_comma.no_dots}.pkg"
   appcast "https://fujifilm-x.com/global/support/download/software/x-webcam/"
   name "FUJIFILM X Webcam"
-  desc "Solution that can turn X Series and GFX System digital cameras into webcams"
+  desc "Solution that turns X Series and GFX System digital cameras into webcams"
   homepage "https://fujifilm-x.com/support/download/software/x-webcam/"
 
   depends_on macos: ">= :sierra"
