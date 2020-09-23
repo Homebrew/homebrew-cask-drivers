@@ -8,7 +8,7 @@ cask "steelseries-engine" do
   name "SteelSeries Engine #{version.major}"
   homepage "https://steelseries.com/engine"
 
-  auto_updates
+  auto_updates true
   depends_on macos: ">= :yosemite"
 
   pkg "SteelSeriesEngine#{version}.pkg"
