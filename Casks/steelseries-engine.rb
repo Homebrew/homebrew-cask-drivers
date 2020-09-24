@@ -6,6 +6,7 @@ cask "steelseries-engine" do
   url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg"
   appcast "https://steelseries.com/engine"
   name "SteelSeries Engine #{version.major}"
+  desc "Settings for SteelSeries peripherals and accessories"
   homepage "https://steelseries.com/engine"
 
   auto_updates true
