@@ -7,7 +7,7 @@ cask "huiontablet" do
   desc "Driver for Huion Tablets"
   homepage "https://huion.com/"
 
-  container nested: "HuionTablet_MacDriver_v#{version.major_minor_patch}.dmg"
+  container nested: "HuionTablet_MacDriver_v#{version}.dmg"
 
   app "HuionTablet.app"
 
