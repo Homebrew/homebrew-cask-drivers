@@ -5,9 +5,11 @@ cask "blue-sherpa" do
   url "https://software.bluemic.com/blue/BlueSherpa-#{version}.pkg"
   appcast "https://www.bluemic.com/en-us/products/sherpa/"
   name "Blue Sherpa"
+  desc "Companion app for Blue USB microphones"
   homepage "https://www.bluemic.com/en-us/products/sherpa/"
 
-  pkg "BlueSherpa-#{version}.pkg"
+  # pkg cannot be installed automatically
+  installer manual: "BlueSherpa-#{version}.pkg"
 
   uninstall pkgutil: "com.bluemicrophones.Blue"
 end
