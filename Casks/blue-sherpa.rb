@@ -11,5 +11,6 @@ cask "blue-sherpa" do
   # pkg cannot be installed automatically
   installer manual: "BlueSherpa-#{version}.pkg"
 
-  uninstall pkgutil: "com.bluemicrophones.Blue"
+  uninstall pkgutil: "com.bluemicrophones.Blue",
+            delete:  "/Applications/Blue.app"
 end
