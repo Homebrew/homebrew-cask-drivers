@@ -9,7 +9,6 @@ cask "nvidia-cuda-toolkit" do
     url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac.dmg"
   end
 
-  appcast "https://developer.nvidia.com/cuda-toolkit-archive"
   name "Nvidia CUDA Toolkit"
   desc "High Performance GPU-Accelerated Parralel Computing API"
   homepage "https://developer.nvidia.com/cuda-toolkit"
