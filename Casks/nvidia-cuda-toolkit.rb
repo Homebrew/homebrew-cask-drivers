@@ -1,4 +1,4 @@
-cask "nvidia-cuda" do
+cask "nvidia-cuda-toolkit" do
   if MacOS.version <= :sierra
     version "9.0.176"
     sha256 "8fad950098337d2611d64617ca9f62c319d97c5e882b8368ed196e994bdaf225"
