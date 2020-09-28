@@ -10,8 +10,9 @@ cask "nvidia-cuda-toolkit" do
   end
 
   appcast "https://developer.nvidia.com/cuda-toolkit-archive"
-  name "Nvidia CUDA"
-  homepage "https://developer.nvidia.com/cuda-zone"
+  name "Nvidia CUDA Toolkit"
+  desc "High Performance GPU-Accelerated Parralel Computing API"
+  homepage "https://developer.nvidia.com/cuda-toolkit"
 
   # Unusual case: The software will stop working, or is dangerous to run, on the next macOS release.
   depends_on macos: [
