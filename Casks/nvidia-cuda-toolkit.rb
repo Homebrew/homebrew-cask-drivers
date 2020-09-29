@@ -4,8 +4,8 @@ cask "nvidia-cuda-toolkit" do
     sha256 "8fad950098337d2611d64617ca9f62c319d97c5e882b8368ed196e994bdaf225"
     url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac-dmg"
   else
-    version "10.2.89"
-    sha256 "51193fff427aad0a3a15223b1a202a6c6f0964fcc6fb0e6c77ca7cd5b6944d20"
+    version "10.1.105"
+    sha256 "1d3355fa48b5763737f1c97a6436c774eda24ae91435e8ecc22428d23a01374a"
     url "https://developer.nvidia.com/compute/cuda/#{version.major_minor}/Prod/local_installers/cuda_#{version}_mac.dmg"
   end
 
