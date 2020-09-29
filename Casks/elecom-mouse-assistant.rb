@@ -4,11 +4,10 @@ cask "elecom-mouse-assistant" do
 
   # dl.elecom.co.jp was verified as official when first introduced to the cask
   url "https://dl.elecom.co.jp/support/download/peripheral/mouse/assistant/mac/ELECOM_Mouse_Installer_#{version}.zip"
-  appcast "https://www.elecom.co.jp.e.gj.hp.transer.com/global/download-list/utility/mouse_assistant/mac/"
+  appcast "https://www.elecom.co.jp/global/download-list/utility/mouse_assistant/mac/"
   name "ELECOM Mouse Assistant"
-  homepage "https://www.elecom.co.jp.e.gj.hp.transer.com/global/download-list/utility/mouse_assistant/"
-
-  container nested: "ELECOM_Mouse_Installer_#{version}.dmg"
+  desc "Software to more effectively use an ELECOM mouse"
+  homepage "https://www.elecom.co.jp/global/download-list/utility/mouse_assistant/"
 
   pkg "ELECOM_Mouse_Installer_#{version}.pkg"
 
