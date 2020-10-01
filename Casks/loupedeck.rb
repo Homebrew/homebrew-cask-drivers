@@ -5,6 +5,7 @@ cask "loupedeck" do
   # loupedeck-software-release.s3.amazonaws.com/ was verified as official when first introduced to the cask
   url "https://loupedeck-software-release.s3.amazonaws.com/Loupedeck+Software+v#{version}/Mac/Loupedeck_Software_v#{version}_MacOS.dmg"
   name "Loupdeck"
+  desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
 
   depends_on macos: ">= :sierra"
