@@ -5,9 +5,8 @@ cask "wacom-tablet" do
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   appcast "https://www.wacom.com/en-de/support/product-support/drivers"
   name "Wacom Intuos 4/5/Pro Tablet"
+  desc "Resources for Wacom pen tablets"
   homepage "https://www.wacom.com/en-us/support/product-support/drivers"
-
-  conflicts_with cask: "wacom-intuos-3-tablet"
 
   pkg "Install Wacom Tablet.pkg"
 
