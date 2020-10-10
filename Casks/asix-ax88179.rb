@@ -4,7 +4,7 @@ cask "asix-ax88179" do
 
   url "https://www.asix.com.tw/en/support/download/file/119"
   name "AX88179"
-  desc "USB 3.0 to 10/100/1000M Gigabit Ethernet Controller for ASIX Electronics devices. Compatible with UGreen USB 3.0 to Ethernet adapter."
+  desc "USB 3.0 to Gigabit Ethernet Controller for ASIX Electronics devices"
   homepage "https://www.asix.com.tw/en/support/download"
 
   container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version}/AX88179_178A_v#{version}.dmg"
@@ -17,17 +17,19 @@ cask "asix-ax88179" do
 
   postflight do
     system_command "/sbin/kextload",
-                    args: ["-b", "com.asix.driver.ax88179-178a"],
-                    sudo: true
+                   args: [
+                     "-b", "com.asix.driver.ax88179-178a"
+                   ],
+                   sudo: true
   end
 
   uninstall_preflight do
     system_command "/usr/sbin/installer",
-                    args: [
-                      "-pkg", "#{staged_path}/AX88179_178A_Uninstall_v1.8.0.pkg",
-                      "-target", "/"
-                    ],
-                    sudo: true
+                   args: [
+                     "-pkg", "#{staged_path}/AX88179_178A_Uninstall_v1.8.0.pkg",
+                     "-target", "/"
+                   ],
+                   sudo: true
   end
 
   uninstall kext:    "com.asix.driver.ax88179-178a",
