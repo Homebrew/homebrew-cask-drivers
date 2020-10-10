@@ -1,10 +1,11 @@
 cask "hdhomerun" do
-  version "20201008"
-  sha256 "cfd7952d1cc91a65fb70fe8c09665ae8f6aaa94e2a6454f900210d23739ed9e9"
+  version "20201009"
+  sha256 "90bb2d5d9515426715d5bf751705932ed56eba4c07165718551670b103b275f3"
 
   url "https://download.silicondust.com/hdhomerun/hdhomerun_mac_#{version}.dmg"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://download.silicondust.com/hdhomerun/hdhomerun_mac.dmg"
   name "HDHomeRun"
+  desc "Watch, schedule and record terrestrial HDTV"
   homepage "https://www.silicondust.com/support/downloads/"
 
   pkg "HDHomeRun Installer.pkg"
