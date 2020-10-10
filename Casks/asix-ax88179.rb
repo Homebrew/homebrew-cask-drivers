@@ -31,7 +31,10 @@ cask "asix-ax88179" do
   end
 
   uninstall kext:    "com.asix.driver.ax88179-178a",
-            pkgutil: "com.asix.pkg.ax88179-178a*"
+            pkgutil: [
+              "com.asix.pkg.ax88179-178a*",
+              "com.asix.ax88179.uninstall",
+            ]
 
   caveats do
     reboot
