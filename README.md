@@ -12,7 +12,7 @@ $ brew tap homebrew/cask-drivers
 You can now install the casks in this repo.
 
 ```sh
-$ brew cask install xbox360-controller-driver-unofficial
+$ brew install xbox360-controller-driver-unofficial
 ```
 
 ## On macOS version compatibility
