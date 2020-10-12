@@ -11,6 +11,7 @@ cask "concept2-utility" do
   appcast "https://www.concept2.com/service/software/concept2-utility",
           must_contain: version.no_dots
   name "Concept2 Utility"
+  desc "The Concept2 Utility is free software available from Concept2 that allows you to update the firmware in your Performance Monitor, upload your workouts to your Concept2 Online Logbook, and manage the data on your LogCard or USB flash drive."
   homepage "https://www.concept2.com/service/software/concept2-utility"
 
   depends_on macos: ">= :yosemite"
