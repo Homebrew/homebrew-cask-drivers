@@ -11,7 +11,7 @@ cask "concept2-utility" do
   appcast "https://www.concept2.com/service/software/concept2-utility",
           must_contain: version.no_dots
   name "Concept2 Utility"
-  desc "Is a free tool to manage your Performance Monitor"
+  desc "Manage your Performance Monitor"
   homepage "https://www.concept2.com/service/software/concept2-utility"
 
   depends_on macos: ">= :yosemite"
