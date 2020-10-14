@@ -15,8 +15,8 @@ cask "eizo-colornavigator" do
             quit:    "com.eizo.ColorNavigator#{version.major}"
 
   zap delete: [
-    "/Library/Application Support/EIZO/ColorNavigator 7",
-    "~/Library/Application Support/EIZO/ColorNavigator 7",
+    "/Library/Application Support/EIZO/ColorNavigator #{version.major}",
+    "~/Library/Application Support/EIZO/ColorNavigator #{version.major}",
   ],
       rmdir:  [
         "/Library/Application Support/EIZO",
