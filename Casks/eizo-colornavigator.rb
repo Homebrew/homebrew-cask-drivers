@@ -12,9 +12,14 @@ cask "eizo-colornavigator" do
   uninstall pkgutil: [
     "com.eizo.pkg.ColorNavigator#{version.major.no_dots}",
   ],
-            quit:    "com.eizo.ColorNavigator#{version.major}",
-            delete:  [
-              "/Library/Application Support/EIZO/",
-              "~/Library/Application Support/EIZO/",
-            ]
+            quit:    "com.eizo.ColorNavigator#{version.major}"
+
+  zap delete: [
+    "/Library/Application Support/EIZO/ColorNavigator 7",
+    "~/Library/Application Support/EIZO/ColorNavigator 7",
+  ],
+      rmdir: [
+        "/Library/Application Support/EIZO",
+         "~/Library/Application Support/EIZO",
+           ]
 end
