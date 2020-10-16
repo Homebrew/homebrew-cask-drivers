@@ -5,6 +5,7 @@ cask "dymo-label" do
   url "https://download.dymo.com/dymo/Software/Mac/DLS#{version.major}Setup.#{version}.dmg"
   appcast "https://www.dymo.com/en-US/online-support"
   name "Dymo Label"
+  desc "Software for DYMO LabelWriters"
   homepage "https://www.dymo.com/en-US/online-support"
 
   pkg "DYMO Label v.#{version.major}.pkg"
