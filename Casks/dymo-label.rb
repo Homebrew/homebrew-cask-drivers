@@ -3,7 +3,6 @@ cask "dymo-label" do
   sha256 "1e605b05350c865f2d9ce163409cd298ef1aba935708265c4b473e64d58ac9c5"
 
   url "https://download.dymo.com/dymo/Software/Mac/DLS#{version.major}Setup.#{version}.dmg"
-  appcast "https://www.dymo.com/en-US/online-support"
   name "Dymo Label"
   desc "Software for DYMO LabelWriters"
   homepage "https://www.dymo.com/en-US/online-support"
