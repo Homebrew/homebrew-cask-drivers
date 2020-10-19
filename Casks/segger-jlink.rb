@@ -1,6 +1,6 @@
 cask "segger-jlink" do
   version "6.86e"
-  sha256 "07ddbd95eb63a789bfe356d268ace09f791c4f98aba4e92828a985d8640be219"
+  sha256 "ffc56502aa609017ecff021e51246097446a1d545701a72b8e8f63da8f440601"
 
   url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}.pkg",
       using: :post,
@@ -10,6 +10,7 @@ cask "segger-jlink" do
         "submit"                   => "Download software",
       }
   name "Segger J-Link Command Line Tools"
+  desc "Software and Documentation pack for Segger J-Link debug probes"
   homepage "https://www.segger.com/downloads/jlink"
 
   pkg "JLink_MacOSX_V#{version.no_dots}.pkg"
