@@ -6,7 +6,7 @@ cask "luna-secondary" do
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaSecondary-#{version}.dmg"
   appcast "https://s3.lunadisplay.com/downloads/luna-secondary-sparkle.xml"
   name "Luna Secondary"
-  desc "Turn any Mac or iPad into a second display"
+  desc "Turn a computer or tablet into a second display"
   homepage "https://lunadisplay.com/"
 
   app "Luna Secondary.app"
