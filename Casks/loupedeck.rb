@@ -10,7 +10,7 @@ cask "loupedeck" do
 
   depends_on macos: ">= :sierra"
 
-  pkg "LoupedeckInstaller_#{version}.pkg"
+  pkg "LoupedeckInstaller.pkg"
 
   uninstall signal:  [
     ["TERM", "com.loupedeck.Loupedeck2"],
