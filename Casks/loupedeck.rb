@@ -1,16 +1,16 @@
 cask "loupedeck" do
-  version "4.0.1.4477"
-  sha256 "55c429fcafc6aba063a73fc11949774c2057e6f1620736c6bfac400754e0bb48"
+  version "4.1"
+  sha256 "75122fb6258bbcd49284a7e71bae24efa035854cfcc4a91f033a5be78f65591c"
 
   # loupedeck-software-release.s3.amazonaws.com/ was verified as official when first introduced to the cask
-  url "https://loupedeck-software-release.s3.amazonaws.com/Loupedeck+Software+#{version.major_minor_patch}/MacOS/LoupedeckSoftware_v#{version.major_minor_patch}.dmg"
+  url "https://loupedeck-software-release.s3.amazonaws.com/Loupedeck+Software+v#{version}/Loupedeck_Installer_MacOS_#{version}.dmg"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
 
   depends_on macos: ">= :sierra"
 
-  pkg "LoupedeckInstaller_#{version}.pkg"
+  pkg "LoupedeckInstaller.pkg"
 
   uninstall signal:  [
     ["TERM", "com.loupedeck.Loupedeck2"],
