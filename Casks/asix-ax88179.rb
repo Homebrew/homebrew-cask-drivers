@@ -2,7 +2,7 @@ cask "asix-ax88179" do
   version "2.18.0,1.8.0"
   sha256 "a646f75aed3d45435409505b9c3ae90364862d4572ca74e26c282bb1510c7105"
 
-  url "https://www.asix.com.tw/FrootAttach/driver/AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}.zip"
+  url "https://www.asix.com.tw/en/support/download/file/119"
   name "AX88179"
   desc "USB 3.0 to gigabit ethernet drivers for ASIX Electronics devices"
   homepage "https://www.asix.com.tw/download.php?sub=driverdetail&PItemID=131"
