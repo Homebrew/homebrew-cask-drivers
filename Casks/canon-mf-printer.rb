@@ -5,7 +5,8 @@ cask "canon-mf-printer" do
   # gdlp01.c-wss.com/gds/ was verified as official when first introduced to the cask
   url "https://gdlp01.c-wss.com/gds/3/0100010873/01/mac-mf-v#{version.delete(".")}-00.dmg"
   name "Canon MF Printer Driver & Utilities"
-  homepage "https://www.usa.canon.com/internet/portal/us/home/support/details/printers/color-laser/color-imageclass-mf634cdw/color-imageclass-mf634cdw"
+  desc "Printer Driver & Utilities for Canon MF Printer"
+  homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
   depends_on macos: ">= :yosemite"
 

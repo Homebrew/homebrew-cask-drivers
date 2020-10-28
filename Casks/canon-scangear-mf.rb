@@ -5,8 +5,8 @@ cask "canon-scangear-mf" do
   # gdlp01.c-wss.com/gds/ was verified as official when first introduced to the cask
   url "https://gdlp01.c-wss.com/gds/8/0100010618/04/mac-scan-v#{version.delete(".")}-00.dmg"
   name "Canon Scanner Driver & Utilities"
-  desc "The MF Scan Utility and MF Toolbox necessary for adding scanners are also installed. To find out which application the printer model you are using supports, refer to the Readme file."
-  homepage "https://www.usa.canon.com/internet/portal/us/home/support/details/printers/color-laser/color-imageclass-mf634cdw/color-imageclass-mf634cdw"
+  desc "Scanner Driver & Utilities for Canon MF Printer"
+  homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
   depends_on macos: ">= :yosemite"
 

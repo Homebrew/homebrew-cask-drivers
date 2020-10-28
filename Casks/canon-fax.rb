@@ -5,7 +5,8 @@ cask "canon-fax" do
   # gdlp01.c-wss.com/gds/ was verified as official when first introduced to the cask
   url "https://gdlp01.c-wss.com/gds/3/0100010683/04/mac-fax-v#{version.delete(".")}-01.dmg"
   name "Canon Fax Driver & Utilities"
-  homepage "https://www.usa.canon.com/internet/portal/us/home/support/details/printers/color-laser/color-imageclass-mf634cdw/color-imageclass-mf634cdw"
+  desc "Fax Driver & Utilities for Canon MF Printer"
+  homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
   depends_on macos: ">= :yosemite"
 
