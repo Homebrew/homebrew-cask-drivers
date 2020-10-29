@@ -15,16 +15,9 @@ You can now install the casks in this repo.
 $ brew install xbox360-controller-driver-unofficial
 ```
 
-## Naming Driver Casks
+## Submitting a Cask to this repository
 
-All Cask names and tokens should be of the form `<vendor>-<token>`.
-
-### Driver Token Examples
-
-Cask Token          | `<vendor>-<token>`    | Filename
---------------------|-----------------------|------------------------
-`logic`             | `saleae-logic`        | `saleae-logic.rb`
-`razer-synapse`     | `razer-synapse`       | `razer-synapse.rb`
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## On macOS version compatibility
 
