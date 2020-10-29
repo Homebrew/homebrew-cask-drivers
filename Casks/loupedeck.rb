@@ -1,9 +1,9 @@
 cask "loupedeck" do
-  version "4.1"
+  version "4.1.1.4633"
   sha256 "75122fb6258bbcd49284a7e71bae24efa035854cfcc4a91f033a5be78f65591c"
 
   # loupedeck-software-release.s3.amazonaws.com/ was verified as official when first introduced to the cask
-  url "https://loupedeck-software-release.s3.amazonaws.com/Loupedeck+Software+v#{version}/Loupedeck_Installer_MacOS_#{version}.dmg"
+  url "https://loupedeck-software-release.s3.amazonaws.com/Loupedeck+Software+v#{version.major_minor}/Loupedeck_Installer_MacOS_#{version.major_minor}.dmg"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
