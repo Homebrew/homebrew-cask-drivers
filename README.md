@@ -15,6 +15,17 @@ You can now install the casks in this repo.
 $ brew install xbox360-controller-driver-unofficial
 ```
 
+## Naming Driver Casks
+
+All Cask names and tokens should be of the form `<vendor>-<token>`.
+
+### Driver Token Examples
+
+Cask Token          | `<vendor>-<token>`    | Filename
+--------------------|-----------------------|------------------------
+`logic`             | `saleae-logic`        | `saleae-logic.rb`
+`razer-synapse`     | `razer-synapse`       | `razer-synapse.rb`
+
 ## On macOS version compatibility
 
 Drivers have strict requirements regarding which versions of an operating system they can run on. If you wish to expand the OS support for a driver cask, *you need to provide a link to the upstream page that verifies said support*. This is to say that “I’ve tried it on my machine and it worked” is not sufficient reasoning. For all we know, the software may break on the next point release, or it may just be your specific configuration that allows it to run even though your OS version is not officially supported.
