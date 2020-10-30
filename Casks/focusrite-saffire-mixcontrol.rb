@@ -4,6 +4,7 @@ cask "focusrite-saffire-mixcontrol" do
 
   url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/Saffire%20MixControl-#{version}_0.dmg"
   name "Focusrite Saffire MixControl"
+  desc "Software for Focusrite products"
   homepage "https://focusrite.com/"
 
   pkg "Saffire MixControl.pkg"
