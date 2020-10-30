@@ -4,6 +4,7 @@ cask "insta360-studio" do
 
   url "https://res.insta360.com/static/assets/storage/#{version.after_colon.major}/#{version.after_colon.minor}/Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
   name "Insta360 Studio"
+  desc "Video and photo editor"
   homepage "https://www.insta360.com/"
 
   container type: :zip
