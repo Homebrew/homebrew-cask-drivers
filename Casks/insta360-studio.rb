@@ -7,7 +7,7 @@ cask "insta360-studio" do
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
 
-  pkg "Insta360 Studio #{version.after_comma.before_colon}_signed.pkg"
+  pkg "Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
 
   uninstall quit:    "com.insta360.studio",
             pkgutil: [
