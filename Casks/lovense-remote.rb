@@ -1,6 +1,6 @@
 cask "lovense-remote" do
-  version "1.4.2"
-  sha256 "2a29af61d04276ded535642329d41f0b7cef97e7c3edb3041f7f5509a7fc313b"
+  version "1.4.3"
+  sha256 "b87e24855e28080709fb640ca8c1313b0a077c17c3310b7b8a649cd9bfa67813"
 
   url "https://lovense.com/files/apps/remote/remote.dmg"
   appcast "https://lovense.com/sextoys/download"
