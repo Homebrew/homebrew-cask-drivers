@@ -23,9 +23,9 @@ cask "logitech-options" do
               "com.logitech.manager.daemon",
               "com.logitech.manager.uninstaller",
             ],
-            script:    [
-              { executable: "/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller" },
-            ],
+            script:    {
+              executable: "/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller",
+            },
             pkgutil:   [
               "com.logitech.manager.pkg",
               "com.Logitech.signedKext.pkg",
