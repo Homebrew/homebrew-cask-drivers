@@ -9,10 +9,11 @@ cask "logitech-options" do
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
   name "Logitech Options"
+  desc "Software for Logitech devices"
   homepage "https://support.logitech.com/software/options"
 
   auto_updates true
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :mojave"
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
@@ -22,9 +23,9 @@ cask "logitech-options" do
               "com.logitech.manager.daemon",
               "com.logitech.manager.uninstaller",
             ],
-            script:    [
-              { executable: "/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller" },
-            ],
+            script:    {
+              executable: "/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller",
+            },
             pkgutil:   [
               "com.logitech.manager.pkg",
               "com.Logitech.signedKext.pkg",
