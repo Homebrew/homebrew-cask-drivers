@@ -9,6 +9,7 @@ cask "logitech-options" do
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
   name "Logitech Options"
+  desc "Software for Logitech devices"
   homepage "https://support.logitech.com/software/options"
 
   auto_updates true
