@@ -5,6 +5,7 @@ cask "corsair-icue" do
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   appcast "https://www.corsair.com/us/en/downloads/search?searchCategory=Cor_Products_iCue_Compatibility"
   name "Corsair iCUE"
+  desc "Software for Corsair components and devices"
   homepage "https://www.corsair.com/us/en/icue"
 
   depends_on macos: ">= :high_sierra"
