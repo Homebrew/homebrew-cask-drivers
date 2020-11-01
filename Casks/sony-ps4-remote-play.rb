@@ -14,6 +14,7 @@ cask "sony-ps4-remote-play" do
 
   zap trash: [
     "~/Library/Application Support/Sony Corporation/PS4 Remote Play",
+    "~/Library/Application Support/Sony Corporation/PS Remote Play",
     "~/Library/Caches/com.playstation.RemotePlay",
     "~/Library/Cookies/com.playstation.RemotePlay.binarycookies",
     "~/Library/Preferences/com.playstation.RemotePlay.plist",
