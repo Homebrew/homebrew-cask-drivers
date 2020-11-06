@@ -1,4 +1,7 @@
 cask "logitech-options" do
+  if MacOS.version <= :sierra
+    version "7.14.77"
+    sha256 "e4df55642e04139fc93d955e949bf736196a404ed067d87f8de7eb9ac9117ece"
   if MacOS.version <= :high_sierra
     version "8.30.293"
     sha256 "db5f2cd94960223bdf74f0db6fc009f82f80928fe2ce849202754bbdb720eb87"
@@ -13,7 +16,7 @@ cask "logitech-options" do
   homepage "https://support.logitech.com/software/options"
 
   auto_updates true
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :sierra"
 
   pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
