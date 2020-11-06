@@ -1,21 +1,21 @@
-cask 'prolific-pl2303' do
-  version '1.6.1_20171018,1.6.1_20160309'
-  sha256 'c140b2f4d6f222b30986a618f670ad3257c2f6f01c0076f3f713fa786561c3ad'
+cask "prolific-pl2303" do
+  version "2.0.0_20191204,2.0.0_20191112"
+  sha256 "e9fdc23d34df7da62e27819906de7d5cf6f0b78d81b3ffe91f9e8c7baf650897"
 
-  url "http://www.prolific.com.tw/UserFiles/files/PL2303_MacOSX_#{version.before_comma.dots_to_underscores}.zip"
-  name 'Prolific USB to Serial Cable driver'
-  homepage 'http://www.prolific.com.tw/US/'
+  url "http://www.prolific.com.tw/UserFiles/files/PL2303HXD_G_Driver_v#{version.before_comma.dots_to_underscores}.zip"
+  name "Prolific USB to Serial Cable driver"
+  homepage "http://www.prolific.com.tw/US/"
 
-  pkg "PL2303_MacOSX_#{version.after_comma}.pkg"
+  pkg "PL2303HXD_G_Driver_v#{version.after_comma}.pkg"
 
-  uninstall kext:    'com.prolific.driver.PL2303',
+  uninstall kext:    "com.prolific.driver.PL2303",
             pkgutil: [
-                       'com.Susteen.driver.PL2303',
-                       'com.prolific.driver.PL2303',
-                     ],
+              "com.Susteen.driver.PL2303",
+              "com.prolific.driver.PL2303",
+            ],
             delete:  [
-                       '/Library/Extensions/ProlificUsbSerial.kext',
-                       '/var/db/receipts/*PL2303*.*',
-                       '/var/db/receipts/*ProlificUSbSerial*.*',
-                     ]
+              "/Library/Extensions/ProlificUsbSerial.kext",
+              "/var/db/receipts/*PL2303*.*",
+              "/var/db/receipts/*ProlificUSbSerial*.*",
+            ]
 end

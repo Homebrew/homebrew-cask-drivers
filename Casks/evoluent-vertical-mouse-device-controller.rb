@@ -1,14 +1,16 @@
-cask 'evoluent-vertical-mouse-device-controller' do
-  version '1.4.1'
-  sha256 '8316bb923d6553b0d383d4aee8a64b53196a9914ee17318e0fc769806ace03d5'
+cask "evoluent-vertical-mouse-device-controller" do
+  version "1.4.1"
+  sha256 "8316bb923d6553b0d383d4aee8a64b53196a9914ee17318e0fc769806ace03d5"
 
   url "https://evoluent.com/download/Evoluent%20VerticalMouse%20Device%20Controller%20-%20#{version}.pkg"
-  appcast 'https://evoluent.com/support/download/'
-  name 'Evoluent Vertical Mouse Device Controller'
-  homepage 'https://evoluent.com/'
+  appcast "https://evoluent.com/support/download/"
+  name "Evoluent Vertical Mouse Device Controller"
+  homepage "https://evoluent.com/"
+
+  depends_on macos: "<= :mojave"
 
   pkg "Evoluent VerticalMouse Device Controller - #{version}.pkg"
 
-  uninstall launchctl: 'com.evoluent.agent',
-            pkgutil:   'com.evoluent.pkg.Installer'
+  uninstall launchctl: "com.evoluent.agent",
+            pkgutil:   "com.evoluent.pkg.Installer"
 end

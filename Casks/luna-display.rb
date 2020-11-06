@@ -1,22 +1,22 @@
-cask 'luna-display' do
-  version '4.0.3'
-  sha256 '7a7525fc8287c3a6f676ca1d01643492002dee7243e151c04f7b7d9c5884dbcf'
+cask "luna-display" do
+  version "4.3.0"
+  sha256 "5c483aa7b9104f527de425b38ec2c3a786ff8f21cdbbd917c4f0f47f135e61c1"
 
-  # s3.amazonaws.com/s3.lunadisplay was verified as official when first introduced to the cask
+  # s3.amazonaws.com/s3.lunadisplay.com/ was verified as official when first introduced to the cask
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.dmg"
-  appcast 'https://s3.lunadisplay.com/downloads/sparkle.xml'
-  name 'Luna Display'
-  homepage 'https://lunadisplay.com/'
+  appcast "https://s3.lunadisplay.com/downloads/sparkle.xml"
+  name "Luna Display"
+  homepage "https://lunadisplay.com/"
 
-  depends_on macos: '>= :el_capitan'
+  depends_on macos: ">= :el_capitan"
 
-  app 'Luna Display.app'
+  app "Luna Display.app"
 
-  uninstall quit: 'com.astro-hq.LunaDisplayMac'
+  uninstall quit: "com.astro-hq.LunaDisplayMac"
 
   zap trash: [
-               '~/Library/Caches/com.astro-hq.LunaDisplayMac',
-               '~/Library/Preferences/com.astro-hq.LunaDisplayMac.plist',
-               '~/Library/Saved Application State/com.astro-hq.LunaDisplayMac.savedState',
-             ]
+    "~/Library/Caches/com.astro-hq.LunaDisplayMac",
+    "~/Library/Preferences/com.astro-hq.LunaDisplayMac.plist",
+    "~/Library/Saved Application State/com.astro-hq.LunaDisplayMac.savedState",
+  ]
 end

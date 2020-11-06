@@ -1,19 +1,19 @@
-cask 'ftdi-vcp-driver' do
-  version '2.4.2'
-  sha256 'ed252533790851e5a12266f750909c02596bfb358b5ec1562f6040562c920de0'
+cask "ftdi-vcp-driver" do
+  version "2.4.4"
+  sha256 "f3343fc223f667e1dab0ecf9fd8fade525c261f120a1cd6b29f8806fa6bc4d8b"
 
   url "https://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v#{version.dots_to_underscores}.dmg"
-  name 'FTDI VCP Driver'
-  homepage 'https://www.ftdichip.com/Drivers/VCP.htm'
+  name "FTDI VCP Driver"
+  homepage "https://www.ftdichip.com/Drivers/VCP.htm"
 
-  pkg 'FTDIUSBSerial.pkg'
+  pkg "FTDIUSBSerial.pkg"
 
   uninstall pkgutil: [
-                       'com.FTDI.ftdiusbserialdriverinstaller.*',
-                       'com.FTDI.driver.FTDIUSBSerialDriver',
-                     ],
-            kext:    'com.FTDI.driver.FTDIUSBSerialDriver',
-            delete:  '/Library/Extensions/FTDIUSBSerialDriver.kext'
+    "com.FTDI.ftdiusbserialdriverinstaller.*",
+    "com.FTDI.driver.FTDIUSBSerialDriver",
+  ],
+            kext:    "com.FTDI.driver.FTDIUSBSerialDriver",
+            delete:  "/Library/Extensions/FTDIUSBSerialDriver.kext"
 
   caveats do
     reboot
