@@ -1,6 +1,6 @@
 cask "asix-ax88179" do
-  version "2.18.0,1.8.0"
-  sha256 "a646f75aed3d45435409505b9c3ae90364862d4572ca74e26c282bb1510c7105"
+  version "2.19.0_beta2,1.8.0"
+  sha256 "23dca0c54f2779c135dc250a937314ad0b26252c2dbfdd2eaa36bf284ba09a72"
 
   url "https://www.asix.com.tw/en/support/download/file/119"
   name "AX88179"
