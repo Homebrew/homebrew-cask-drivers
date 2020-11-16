@@ -5,6 +5,7 @@ cask "synology-drive" do
   url "https://global.download.synology.com/download/Tools/SynologyDriveClient/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-drive-client-#{version.after_comma}.dmg"
   appcast "https://www.synology.com/en-us/releaseNote/SynologyDriveClient"
   name "Synology Drive"
+  desc "Sync and backup service to Synology NAS drives"
   homepage "https://www.synology.com/"
 
   auto_updates true
