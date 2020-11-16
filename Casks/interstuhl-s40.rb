@@ -1,5 +1,5 @@
 cask "interstuhl-s40" do
-  # note: "4.0" is not a version number, but an intrinsic part of the product name
+  # NOTE: "4.0" is not a version number, but an intrinsic part of the product name
   version "1.0.4-g6230a286"
   sha256 "d45ee5ee247f3678955416f3943d05e6c1719e6c09f1af35dede71bf5cd0d65a"
 
