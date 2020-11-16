@@ -3,7 +3,7 @@ cask "synology-surveillance-station-client" do
   sha256 "cda1fb645c34d84b56c821caa70c69de159218a9c3bd12c60934cf8adbf976f1"
 
   url "https://global.download.synology.com/download/Tools/SurveillanceStationClient/#{version}/Mac/Synology%20Surveillance%20Station%20Client-#{version}.dmg"
-  appcast "https://archive.synology.com/download/Tools/SurveillanceStationClient/"
+  appcast "https://www.synology.com/en-us/releaseNote/SurveillanceStationClient"
   name "Synology Surveillance Station Client"
   homepage "https://www.synology.com/surveillance/"
 
