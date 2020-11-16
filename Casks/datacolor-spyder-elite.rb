@@ -11,12 +11,13 @@ cask "datacolor-spyder-elite" do
 
   pkg "Spyder5Elite #{version}.pkg"
 
-  uninstall signal: [
+  uninstall signal:  [
     ["TERM", "com.datacolor.spyder#{version.major}elite"],
     ["TERM", "com.datacolor.spyder#{version.major}utility"],
   ],
-            delete: "/Applications/Datacolor/Spyder#{version.major}Elite",
-            rmdir:  "/Applications/Datacolor"
+            delete:  "/Applications/Datacolor/Spyder#{version.major}Elite",
+            pkgutil: "com.datacolor.pkg.spyder5elite",
+            rmdir:   "/Applications/Datacolor"
 
   zap trash: [
     "~/Library/Application Support/MindVision/Spyder5Elite_Installer.xtm",
