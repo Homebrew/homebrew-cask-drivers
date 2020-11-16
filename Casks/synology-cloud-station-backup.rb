@@ -4,8 +4,8 @@ cask "synology-cloud-station-backup" do
 
   url "https://global.download.synology.com/download/Tools/CloudStationBackup/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-cloud-station-backup-#{version.after_comma}.dmg"
   appcast "https://www.synology.com/en-us/dsm/packages/CloudStation"
-  desc "Back up files to a centralized Synology NAS"
   name "Synology Cloud Station Backup"
+  desc "Back up files to a centralized Synology NAS"
   homepage "https://www.synology.com/"
 
   auto_updates true
