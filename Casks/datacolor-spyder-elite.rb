@@ -1,15 +1,15 @@
 cask "datacolor-spyder-elite" do
-  version "5.3"
-  sha256 "aac0c688f34380737af11da28b9c48164b15800606353cf80090ecd54d2d0ba3"
+  version "5.7"
+  sha256 "4474f20807ab97c3337a4d03526b7a348c387509fb8ff6cec97276269ecfc495"
 
   # d3d9ci7ypuovlo.cloudfront.net/spyder was verified as official when first introduced to the cask
-  url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}_OSX_Installer.zip"
+  url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder5Elite_#{version}.pkg.zip"
   name "Spyder Elite"
   homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
 
   auto_updates true
 
-  installer manual: "Spyder#{version.major}Elite_#{version}_OSX_Installer.app"
+  pkg "Spyder5Elite #{version}.pkg"
 
   uninstall signal: [
     ["TERM", "com.datacolor.spyder#{version.major}elite"],
