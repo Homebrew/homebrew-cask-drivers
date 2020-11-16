@@ -1,5 +1,5 @@
 cask "behringer-x32-edit" do
-  # note: "32" is not a version number, but an intrinsic part of the product name
+  # NOTE: "32" is not a version number, but an intrinsic part of the product name
   version "4.1"
   sha256 "a4eb8aa7c45a1266f928d3b2ab44ef274e1750e91754fe6eada122ccd0f5f093"
 

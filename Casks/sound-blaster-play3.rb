@@ -1,5 +1,5 @@
 cask "sound-blaster-play3" do
-  # note: "3" is not a version number, but an intrinsic part of the product name
+  # NOTE: "3" is not a version number, but an intrinsic part of the product name
   if MacOS.version <= :mojave
     version "2.00.03"
     sha256 "0550328b70fc214fcffc418fba3e5140c853e827bc92227a73864d62ba5e8415"
