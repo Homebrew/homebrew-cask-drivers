@@ -5,6 +5,7 @@ cask "synologyassistant" do
   url "https://global.download.synology.com/download/Tools/Assistant/#{version}/Mac/synology-assistant-#{version}.dmg"
   appcast "https://www.synology.com/en-us/releaseNote/Assistant"
   name "Synology Assistant"
+  desc "Tool to manage Synology NAS's across a LAN"
   homepage "https://www.synology.com/"
 
   app "SynologyAssistant.app"
