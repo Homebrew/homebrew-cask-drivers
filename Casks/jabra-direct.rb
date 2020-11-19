@@ -6,6 +6,7 @@ cask "jabra-direct" do
   url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg"
   appcast "https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json"
   name "Jabra Direct"
+  desc "Optimise and personalise your Jabra headset"
   homepage "https://www.jabra.com/software-and-services/jabra-direct"
 
   pkg "JabraDirectSetup.pkg"
@@ -18,9 +19,9 @@ cask "jabra-direct" do
     "com.jabra.softphoneService",
     "nl.superalloy.oss.terminal-notifier",
   ],
+            delete:     "/Applications/Jabra Direct.app",
             login_item: "Jabra Direct",
-            pkgutil:    "com.jabra.directonline",
-            delete:     "/Applications/Jabra Direct.app"
+            pkgutil:    "com.jabra.directonline"
 
   zap trash: [
     "~/Library/Application Support/Jabra",
