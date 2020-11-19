@@ -21,7 +21,10 @@ cask "jabra-direct" do
   ],
             delete:     "/Applications/Jabra Direct.app",
             login_item: "Jabra Direct",
-            pkgutil:    "com.jabra.directonline"
+            pkgutil:    [
+              "com.jabra.directonline",
+              "com.jabra.kext",
+            ]
 
   zap trash: [
     "~/Library/Application Support/Jabra",
