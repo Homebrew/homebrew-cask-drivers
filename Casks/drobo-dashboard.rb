@@ -1,10 +1,11 @@
 cask "drobo-dashboard" do
-  version "3.5.1,115249"
-  sha256 "86b87e27bb1926b3b456986ee11d8ee0d8b39a6f82fd8c01dd4e5224fbfd6998"
+  version "3.5.2,115659"
+  sha256 "6094b749c2389d9edd49f423b7f77ae9e36e6d35c1db28b7f3424814ac96afce"
 
   url "https://files.drobo.com/webrelease/dashboard/Drobo-Dashboard-#{version.before_comma}.dmg"
   appcast "https://www.drobo.com/docs/start-drobo/"
   name "Drobo Dashboard"
+  desc "Management software and drivers for Data Robotics storage devices"
   homepage "https://www.drobo.com/"
 
   depends_on macos: ">= :sierra"
