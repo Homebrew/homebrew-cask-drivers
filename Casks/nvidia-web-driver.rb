@@ -9,8 +9,8 @@ cask "nvidia-web-driver" do
     version "378.05.05.25f13"
     sha256 "f5849297ee8a4a754f26d998db83878d4c02324db00ec28ab38da1d847d7e5c1"
   else
-    version "387.10.10.10.40.138"
-    sha256 "e53c9f96961a20fc65c2496067e1521c69c1963dbc6fde92745ff4645d9971cf"
+    version "387.10.10.10.40.140"
+    sha256 "a877c0ef81fbbb4d42bee6c1de063fff47d610a5397ffc6ce7617f28269bfe73"
   end
 
   basename = "/Library/PreferencePanes/NVIDIA Driver Manager.prefPane/Contents/MacOS/NVIDIA Web Driver Uninstaller.app/Contents/Resources"
