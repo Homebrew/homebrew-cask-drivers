@@ -6,6 +6,7 @@ cask "sonos-s1" do
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.sonos.com/en/redir/controller_software_mac",
           must_contain: version.no_dots
   name "Sonos S1 Controller"
+  desc "Sonos controller for older devices"
   homepage "https://www.sonos.com/"
 
   auto_updates true
