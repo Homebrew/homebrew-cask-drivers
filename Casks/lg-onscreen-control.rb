@@ -1,6 +1,6 @@
 cask "lg-onscreen-control" do
-  version "4.34,2cAoDFIS3ovZOeQF8J7pmw"
-  sha256 "7105755b634126a07a9522586e06c8ed3d856c6807ceb2ce32416a7eae23f8a6"
+  version "4.40,hpiniL76TYo4uwCYNIHwQ"
+  sha256 "a3d11ec3b823564fd59f3e91469c31cd1985a3b0bda07e790a7524b5fb88b673"
 
   # lge.com/ was verified as official when first introduced to the cask
   url "http://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}"
