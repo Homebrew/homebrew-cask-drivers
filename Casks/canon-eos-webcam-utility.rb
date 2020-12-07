@@ -9,8 +9,8 @@ cask "canon-eos-webcam-utility" do
 
   pkg "EOSWebcamUtility-MAC#{version}.pkg"
 
-  uninstall launchctl: "com.canon.usa.EOSWebcamUtility"
-            pkgutil:   "com.canon.ciis.pkg.EOSWebcamUtility"
+  uninstall launchctl: "com.canon.usa.EOSWebcamUtility",
+            pkgutil:   "com.canon.ciis.pkg.EOSWebcamUtility",
             delete:    [
               "/Applications/EOS Webcam Utility",
               "/Library/CoreMediaIO/Plug-Ins/DAL/EOSWebcamUtility.plugin",
