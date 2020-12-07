@@ -9,8 +9,13 @@ cask "canon-eos-webcam-utility" do
 
   pkg "EOSWebcamUtility-MAC#{version}.pkg"
 
-  uninstall script: {
-    executable: "/Applications/EOS Webcam Utility/EOS Webcam Utility Uninstaller.app/Contents/MacOS/EOS Webcam Utility Uninstaller",
-    sudo:       true,
-  }
+  uninstall launchctl: "com.canon.usa.EOSWebcamUtility"
+            pkgutil:   "com.canon.ciis.pkg.EOSWebcamUtility"
+            delete:    [
+              "/Applications/EOS Webcam Utility",
+              "/Library/CoreMediaIO/Plug-Ins/DAL/EOSWebcamUtility.plugin",
+              "/Library/LaunchAgents/com.canon.usa.EOSWebcamUtility.plist",
+              "/Library/CoreMediaIO/Plug-Ins/DAL/EOSWebcamUtility.plugin",
+            ],
+            rmdir:     "/Library/Frameworks/EDSDK.framework"
 end
