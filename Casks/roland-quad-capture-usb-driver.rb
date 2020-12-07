@@ -12,9 +12,9 @@ cask "roland-quad-capture-usb-driver" do
     sha256 "d3524d7844d24805c3a1c25c09dce62ab87d4c8dd6941a0b1d3653c696563117"
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma.before_colon}d#{version.before_comma.no_dots}.tgz"
   else
-    version "1.5.5,15"
-    sha256 "fce600fdbd50b50d69a676700ef42ee038db50d201874dadf3c0e1ac291df23f"
-    url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
+    version "1.5.6,11"
+    sha256 "0d77926e818e1da93ea2f980ef29d840015f085ec134a68a2501b1ccfd5ddfde"
+    url "https://static.roland.com/assets/media/tgz/quad_mac#{version.after_comma}drv#{version.before_comma.no_dots}.tgz"
   end
 
   appcast "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers"
