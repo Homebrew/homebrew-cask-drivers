@@ -11,5 +11,6 @@ cask "canon-eos-webcam-utility" do
 
   uninstall script: {
     executable: "/Applications/EOS Webcam Utility/EOS Webcam Utility Uninstaller.app/Contents/MacOS/EOS Webcam Utility Uninstaller",
+    sudo:       true,
   }
 end
