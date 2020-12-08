@@ -2,7 +2,6 @@ cask "canon-eos-utility" do
   version "3.13.10.2"
   sha256 "540e46f730126eac45ce090f48dd42862571030aed6e4ef747773a19a6d4988a"
 
-  # gdlp01.c-wss.com/gds/ was verified as official when first introduced to the cask
   url "https://gdlp01.c-wss.com/gds/4/0200006274/01/EU-Installset-M#{version}.dmg.zip",
       verified: "gdlp01.c-wss.com"
   appcast "https://my.canon/en/support/0200616502/1"
