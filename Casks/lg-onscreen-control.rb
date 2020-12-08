@@ -2,8 +2,8 @@ cask "lg-onscreen-control" do
   version "4.40,hpiniL76TYo4uwCYNIHwQ"
   sha256 "a3d11ec3b823564fd59f3e91469c31cd1985a3b0bda07e790a7524b5fb88b673"
 
-  # lge.com/ was verified as official when first introduced to the cask
-  url "http://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}"
+  url "http://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}",
+      verified: "lge.com/"
   name "LG OnScreen Control"
   homepage "https://www.lg.com/us/support/monitors"
 
