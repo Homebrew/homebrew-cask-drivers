@@ -2,8 +2,8 @@ cask "samsung-portable-ssd-t5" do
   version "1.6.7"
   sha256 "c53ea42eac82fa6c8040daa35e717712d3ac09912bb777467607fef49fff1b88"
 
-  # s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_PSSD_200513 was verified as official when first introduced to the cask.
-  url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_PSSD_200513/SW/09ECE3AA2FB6B74675B9E5CD0C5F99B41D766B27C8E0055C39A2A1EAC1BAC402/SamsungPortableSSD_Setup_Mac.zip"
+  url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_PSSD_200513/SW/09ECE3AA2FB6B74675B9E5CD0C5F99B41D766B27C8E0055C39A2A1EAC1BAC402/SamsungPortableSSD_Setup_Mac.zip",
+      verified: "s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_PSSD_200513"
   name "Samsung Portable SSD Software for T5"
   homepage "https://www.samsung.com/semiconductor/minisite/ssd/download/portable/"
 
