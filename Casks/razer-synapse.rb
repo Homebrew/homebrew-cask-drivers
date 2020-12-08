@@ -2,8 +2,8 @@ cask "razer-synapse" do
   version "1.87.1"
   sha256 "a00fbbf1b4bb71717c1b552caf4465e16c715bc18a7e7160b4d046ba0ab5e0f4"
 
-  # dl.razerzone.com/ was verified as official when first introduced to the cask
-  url "https://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version.major_minor}.dmg"
+  url "https://dl.razerzone.com/drivers/Synapse2/mac/Razer_Synapse_Mac_Driver_v#{version.major_minor}.dmg",
+      verified: "dl.razerzone.com/"
   appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://rzr.to/synapse-mac-download",
           must_contain: version.major_minor
   name "Razer Synapse"
