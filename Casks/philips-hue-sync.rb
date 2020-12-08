@@ -2,8 +2,8 @@ cask "philips-hue-sync" do
   version :latest
   sha256 :no_check
 
-  # flex1548-esd.flexnetoperations.com/flexnet/operations/ was verified as official when first introduced to the cask
-  url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac"
+  url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac",
+      verified: "flex1548-esd.flexnetoperations.com/flexnet/operations/"
   name "Philips Hue Sync"
   homepage "https://www2.meethue.com/en-us/entertainment/hue-sync"
 
