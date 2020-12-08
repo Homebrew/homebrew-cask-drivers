@@ -2,8 +2,8 @@ cask "canon-captureontouch-utility" do
   version "4.5.19.1002"
   sha256 "351e6af9528bf426ca78dc347396520af8980e4d6ee597aa4aa7ef6394a4276d"
 
-  # files.canon-europe.com/files/soft01-48579/Driver/ was verified as official when first introduced to the cask
-  url "https://files.canon-europe.com/files/soft01-48579/Driver/CaptureOnTouch_Installer.zip"
+  url "https://files.canon-europe.com/files/soft01-48579/Driver/CaptureOnTouch_Installer.zip",
+    verified: "files.canon-europe.com/files/soft01-48579/Driver/"
   appcast "https://www.canon.se/supportproduct/gettabcontent/?type=download&language=&productTcmUri=tcm:87-1204588&productNameSearch=imageFORMULA%20P-215II&supportProductInformation=imageFORMULA%20P-215II%5Enull%5Enull%5Enull%5Enull&referrer=https%3A%252F%252Fwww.canon.se%252Fsupport%252Fconsumer_products%252Fproducts%252Fscanners%252Fothers%252Fimageformula_p-215ii.html&languageSelectedIndex=-1",
           must_contain: version.major_minor_patch
   name "CaptureOnTouch"

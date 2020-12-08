@@ -3,8 +3,8 @@ cask "behringer-x32-edit" do
   version "4.2"
   sha256 "69297f08ff205016f4490f891a6f50b623d2a50752019459d7d91a4f809c1520"
 
-  # mediadl.musictribe.com/download/software/behringer/ was verified as official when first introduced to the cask
-  url "https://mediadl.musictribe.com/download/software/behringer/X32/X32-Edit_MAC_#{version}.zip"
+  url "https://mediadl.musictribe.com/download/software/behringer/X32/X32-Edit_MAC_#{version}.zip",
+    verified: "mediadl.musictribe.com/download/software/behringer/"
   name "Behringer X32-Edit"
   desc "Edit Behringer Digital Mixers via LAN/Wi-Fi"
   homepage "https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/"
