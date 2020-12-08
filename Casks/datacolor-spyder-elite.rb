@@ -2,8 +2,8 @@ cask "datacolor-spyder-elite" do
   version "5.7"
   sha256 "4474f20807ab97c3337a4d03526b7a348c387509fb8ff6cec97276269ecfc495"
 
-  # d3d9ci7ypuovlo.cloudfront.net/ was verified as official when first introduced to the cask
-  url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}.pkg.zip"
+  url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}.pkg.zip",
+      verified: "d3d9ci7ypuovlo.cloudfront.net/"
   name "Spyder Elite"
   desc "Monitor calibration tool"
   homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"

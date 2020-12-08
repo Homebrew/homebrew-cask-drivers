@@ -2,8 +2,8 @@ cask "jabra-direct" do
   version "4.14.15119"
   sha256 "f592ec4f7a963d67f5641e0ef778f0a69132c209af3212dbdb518e85f55c4183"
 
-  # jabraxpressonlineprdstor.blob.core.windows.net/jdo/ was verified as official when first introduced to the cask
-  url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg"
+  url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
+      verified: "jabraxpressonlineprdstor.blob.core.windows.net/jdo/"
   appcast "https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json"
   name "Jabra Direct"
   desc "Optimise and personalise your Jabra headset"
