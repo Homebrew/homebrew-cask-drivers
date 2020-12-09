@@ -2,8 +2,8 @@ cask "canon-ijscanner16f" do
   version "4.3.4a,21_3"
   sha256 "3433cd6dbdc3e4bb84c4c6bacadc6bb2c8630fc83e3fc49ce1dbd84c91b5765c"
 
-  # gdlp01.c-wss.com/gds/ was verified as official when first introduced to the cask
-  url "https://gdlp01.c-wss.com/gds/5/0100007645/04/misd-mac-ijscanner16f-#{version.before_comma.dots_to_underscores.delete_suffix("a")}-ea#{version.after_comma}.dmg"
+  url "https://gdlp01.c-wss.com/gds/5/0100007645/04/misd-mac-ijscanner16f-#{version.before_comma.dots_to_underscores.delete_suffix("a")}-ea#{version.after_comma}.dmg",
+      verified: "gdlp01.c-wss.com/gds/"
   name "Canon Scanner ICA Driver for Canon E410, E470, G4000, MG3000, TS5000, TS6000, TS8000, TS9000 series"
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/details/printers/inkjet-multifunction/mg-series-inkjet/mg3020-bk?tab=drivers_downloads&subtab=downloads-drivers"
 
