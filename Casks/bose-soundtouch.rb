@@ -16,13 +16,14 @@ cask "bose-soundtouch" do
     sudo:       true,
   }
 
-  uninstall script: {
+  uninstall script:    {
     executable: "/Applications/SoundTouch/uninstall.app/Contents/MacOS/installbuilder.sh",
     args:       ["--mode", "unattended"],
     sudo:       true,
   },
-            signal: ["TERM", "com.Bose.SoundTouch"],
-            quit:   "io.qt.SoundTouchHelper"
+            signal:    ["TERM", "com.Bose.SoundTouch"],
+            quit:      "io.qt.SoundTouchHelper",
+            launchctl: "com.Bose.SoundTouch"
 
   zap trash: [
     "~/Library/Application Support/SoundTouch",
