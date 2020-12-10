@@ -1,6 +1,6 @@
 cask "wch-ch34x-usb-serial-driver" do
   version "1.5"
-  sha256 "e2a1dcf60c5ce54abcc8cb7ccc202f258902b7ed73488a43916afb7c01a2a25a"
+  sha256 :no_check
 
   url "http://www.wch.cn/downloads/file/178.html"
   name "WCH USB serial driver for CH340/CH341"

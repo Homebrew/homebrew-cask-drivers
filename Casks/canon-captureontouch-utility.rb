@@ -1,6 +1,6 @@
 cask "canon-captureontouch-utility" do
   version "4.5.19.1002"
-  sha256 "351e6af9528bf426ca78dc347396520af8980e4d6ee597aa4aa7ef6394a4276d"
+  sha256 :no_check
 
   url "https://files.canon-europe.com/files/soft01-48579/Driver/CaptureOnTouch_Installer.zip",
       verified: "files.canon-europe.com/files/soft01-48579/Driver/"

@@ -1,6 +1,6 @@
 cask "elgato-thunderbolt-dock" do
   version "1.2.10,131"
-  sha256 "e76aff1d404451fa87d42c566475e83a09a15318cf33ad9219ed3792d5a7a098"
+  sha256 :no_check
 
   url "https://update.elgato.com/mac/thunderbolt-dock-update/download.php"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://update.elgato.com/mac/thunderbolt-dock-update/download.php"
