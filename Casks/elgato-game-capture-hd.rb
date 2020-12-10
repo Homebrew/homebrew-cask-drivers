@@ -6,8 +6,8 @@ cask "elgato-game-capture-hd" do
     version "2.9.2,1327"
     sha256 "9bcf01399719755034c964549a6a3af38932e7eaf03febc8b3742306505ca8a9"
   else
-    version "2.11.11,3840"
-    sha256 "e844ffc5fbf29c0f7425c568800af7228eb4f939bfa151015fb52d5dd01552f0"
+    version "2.11.12,3868"
+    sha256 "a442281c2c2d0ec070463e1cf94d535946cbf813c7273e336e529e5897c764bb"
   end
 
   url "https://gc-updates.elgato.com/mac/download.php?build=#{version.after_comma}"
