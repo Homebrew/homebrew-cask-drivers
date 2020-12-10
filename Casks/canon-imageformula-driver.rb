@@ -1,6 +1,6 @@
 cask "canon-imageformula-driver" do
   version "1.7.19.0917"
-  sha256 "9d02496b46d5e2d706734b892041a0d6f1bebc186d533cb00674767d727b3788"
+  sha256 :no_check
 
   url "https://files.canon-europe.com/files/soft01-48579/Driver/P215II_Installer.zip",
       verified: "files.canon-europe.com/files/soft01-48579/Driver/"
