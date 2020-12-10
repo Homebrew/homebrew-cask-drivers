@@ -12,7 +12,8 @@ cask "elektron-overbridge" do
 
   pkg "Elektron Overbridge Installer #{version.before_comma}.pkg"
 
-  uninstall pkgutil:   "se.elektron.overbridge.*",
+  uninstall quit:      "se.elektron.OverbridgeEngine",
+            pkgutil:   "se.elektron.overbridge.*",
             launchctl: "se.elektron.overbridge.engine",
             delete:    "/Applications/Elektron"
 end
