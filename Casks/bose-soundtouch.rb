@@ -21,10 +21,8 @@ cask "bose-soundtouch" do
     args:       ["--mode", "unattended"],
     sudo:       true,
   },
-            quit:   [
-              "com.Bose.SoundTouch",
-              "io.qt.SoundTouchHelper",
-            ]
+            signal: ["TERM", "com.Bose.SoundTouch"],
+            quit:   "io.qt.SoundTouchHelper",
 
   zap trash: [
     "~/Library/Application Support/SoundTouch",
