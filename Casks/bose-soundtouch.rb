@@ -1,5 +1,5 @@
 cask "bose-soundtouch" do
-  version "26.0.0-3251-ff6a93d,st2_2020_b103e58e"
+  version "26.0.0-3251-ff6a93d,st3_2020_a3b99494"
   sha256 "be74aeaa1e73bd6b07d92ceb5fcff5b58c4023eb7ccdb034fea842080554aa4e"
 
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
@@ -16,15 +16,14 @@ cask "bose-soundtouch" do
     sudo:       true,
   }
 
-  uninstall script: {
+  uninstall script:    {
     executable: "/Applications/SoundTouch/uninstall.app/Contents/MacOS/installbuilder.sh",
     args:       ["--mode", "unattended"],
     sudo:       true,
   },
-            quit:   [
-              "com.Bose.SoundTouch",
-              "io.qt.SoundTouchHelper",
-            ]
+            signal:    ["TERM", "com.Bose.SoundTouch"],
+            quit:      "io.qt.SoundTouchHelper",
+            launchctl: "com.Bose.SoundTouch"
 
   zap trash: [
     "~/Library/Application Support/SoundTouch",
