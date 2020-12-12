@@ -1,6 +1,6 @@
 cask "tomtom-mydrive-connect" do
-  version "4.2.10.4155"
-  sha256 "ce316e72f8ed91eda067159720ade917606b6c725574ecf82faa03a94e6baa03"
+  version "4.2.11.4204"
+  sha256 "72bac2932f89d347ef07b39718c722e6653739fe3d9beb7577dd70219de81357"
 
   url "https://cdn.sa.services.tomtom.com/static/sa/versions/MyDriveConnect_mac_#{version.dots_to_underscores}.zip"
   appcast "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
