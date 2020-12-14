@@ -2,10 +2,10 @@ cask "tiptoi-manager" do
   version :latest
   sha256 :no_check
 
-  url "https://tiptoidata.s3-de.object.vdc.interoute.com/installer_flat/tiptoi_Manager_Installer.pkg",
-      verified: "tiptoidata.s3-de.object.vdc.interoute.com/"
+  url "https://www.ravensburger.de/db/installer_flat/tiptoi_Manager_Installer.pkg"
   name "tiptoi® Manager"
-  homepage "https://www.ravensburger.org/nl/ontdek/tiptoi/index.html"
+  desc "Manage the data on children's Ravensburger tip toi audio pen"
+  homepage "https://www.ravensburger.de/entdecken/ravensburger-marken/tiptoi/tiptoi-manager/index.html"
 
   pkg "tiptoi_Manager_Installer.pkg"
 
