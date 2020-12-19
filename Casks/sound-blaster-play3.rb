@@ -15,7 +15,7 @@ cask "sound-blaster-play3" do
   end
 
   name "Sound Blaster PLAY! 3"
-  desc "#{name} Driver and Control Panel"
+  desc "Driver and control panel for th Sound Blaster PLAY! 3 USB DAC and Amp"
   homepage "https://us.creative.com/p/sound-cards/sound-blaster-play-3"
 
   uninstall launchctl: "com.creative.trustudiopc",
