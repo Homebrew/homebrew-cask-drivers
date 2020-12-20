@@ -10,5 +10,6 @@ cask "fujitsu-scansnap-manager" do
 
   pkg "ScanSnap Manager.pkg"
 
-  uninstall pkgutil: "jp.co.pfu.ScanSnapV#{version.no_dots}WW"
+  uninstall quit:    "jp.co.pfu.ScanSnap*",
+            pkgutil: "jp.co.pfu.ScanSnap*"
 end
