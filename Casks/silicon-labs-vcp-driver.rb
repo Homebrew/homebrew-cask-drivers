@@ -1,5 +1,5 @@
 cask "silicon-labs-vcp-driver" do
-  version "5.3.5"
+  version "6.0"
   sha256 :no_check
 
   url "https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip"
@@ -8,7 +8,7 @@ cask "silicon-labs-vcp-driver" do
   name "CP210x USB to UART Bridge VCP Driver"
   homepage "https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers"
 
-  container nested: "Mac_OSX_VCP_Driver/SiLabsUSBDriverDisk.dmg"
+  container nested: "macOS_VCP_Driver/SiLabsUSBDriverDisk.dmg"
 
   installer manual: "Install CP210x VCP Driver.app"
 
