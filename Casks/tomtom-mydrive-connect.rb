@@ -9,7 +9,10 @@ cask "tomtom-mydrive-connect" do
 
   pkg "MyDriveConnect_mac_#{version.dots_to_underscores}.mpkg"
 
-  uninstall quit:       "com.tomtom.mytomtomsa",
+  uninstall quit:       [
+    "com.tomtom.mytomtomsa",
+    "application.com.apple.systemevents.1152921500312199658",
+  ],
             login_item: "TomTomMyDriveConnectHelper",
             pkgutil:    [
               "com.tomtom.mytomtomsa.temp.pkg",
