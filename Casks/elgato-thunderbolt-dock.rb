@@ -5,16 +5,11 @@ cask "elgato-thunderbolt-dock" do
   url "https://update.elgato.com/mac/thunderbolt-dock-update/download.php"
   appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://update.elgato.com/mac/thunderbolt-dock-update/download.php"
   name "Elgato Thunderbolt Dock"
+  desc "Menu bar utility for Elgato Thunderbolt docks"
   homepage "https://www.elgato.com/en/dock/thunderbolt-3"
 
   depends_on macos: ">= :el_capitan"
   container type: :pkg
-
-  pkg "Elgato_Thunderbolt_Dock_Software_#{version.before_comma}_#{version.after_comma}.pkg"
-
-  preflight do
-    system_command "/bin/mv", args: ["--", staged_path.join("download.php"), staged_path.join("Elgato_Thunderbolt_Dock_Software_#{version.before_comma}_#{version.after_comma}.pkg")]
-  end
 
   uninstall pkgutil:    [
     "com.elgato.Elgato-Thunderbolt-Dock-Utility",
