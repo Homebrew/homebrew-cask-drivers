@@ -14,8 +14,6 @@ cask "philips-hue-sync" do
     regex(/HueSyncInstaller_(\d+(?:\.\d+)*)\.pkg/i)
   end
 
-  container type: :naked
-
   pkg "HueSyncInstaller_#{version}.pkg"
 
   uninstall quit:    [
