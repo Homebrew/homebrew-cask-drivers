@@ -9,4 +9,10 @@ cask "gk6-plus" do
   homepage "http://www.jikedingzhi.com/downloadlist?driverID=90"
 
   app "GK6+.app"
+
+  zap trash: [
+  "~/Library/Application Support/GK6+",
+  "~/Library/Saved Application State/com.jikedingzhi.GK6xPlus.savedState",
+  "~/Library/Preferences/com.jikedingzhi.GK6xPlus.plist"
+  ]
 end
