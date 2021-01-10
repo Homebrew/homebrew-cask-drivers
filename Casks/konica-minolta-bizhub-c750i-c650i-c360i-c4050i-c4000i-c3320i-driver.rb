@@ -26,5 +26,5 @@ cask "konica-minolta-bizhub-c750i-c650i-c360i-c4050i-c4000i-c3320i-driver" do
 
   pkg "A4/C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i.pkg"
 
-  uninstall pkgutil: "jp.konicaminolta.print.package.C650i"
+  uninstall pkgutil: "jp.konicaminolta.print.package.C750i"
 end
