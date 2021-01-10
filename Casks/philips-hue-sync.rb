@@ -13,8 +13,12 @@ cask "philips-hue-sync" do
     strategy :header_match
     regex(/HueSyncInstaller_(\d+(?:\.\d+)*)\.pkg/i)
   end
+  
+  preflight do
+    staged_path.glob("HueSyncInstaller_*.pkg").first.rename(staged_path/"HueSyncInstaller.pkg")
+  end
 
-  pkg "HueSyncInstaller_#{version}.pkg"
+  pkg "HueSyncInstaller.pkg"
 
   uninstall quit:    [
     "com.lighting.huesync",
