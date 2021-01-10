@@ -9,7 +9,7 @@ cask "philips-hue-sync" do
   homepage "https://www2.meethue.com/en-us/entertainment/hue-sync"
 
   livecheck do
-    url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac"
+    url :url
     strategy :header_match
     regex(/HueSyncInstaller_(\d+(?:\.\d+)*)\.pkg/i)
   end
