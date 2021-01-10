@@ -9,4 +9,3 @@ cask "hhkb-pro-driver" do
 
   app "HHKB Pro Driver.app"
 end
-
