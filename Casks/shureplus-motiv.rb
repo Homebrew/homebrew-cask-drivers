@@ -12,9 +12,9 @@ cask "shureplus-motiv" do
 
   zap trash: [
     "~/Library/Application Support/shure.motiv",
-    "~/Library/Saved Application State/com.shure.motiv.desktop.savedState",
-    "~/Library/Preferences/com.shure.motiv.desktop.plist",
     "~/Library/Logs/ShurePlus MOTIV",
     "~/Library/Logs/shure.motiv",
+    "~/Library/Preferences/com.shure.motiv.desktop.plist",
+    "~/Library/Saved Application State/com.shure.motiv.desktop.savedState",
   ]
 end
