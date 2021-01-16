@@ -1,6 +1,6 @@
 cask "obinskit" do
-  version "1.1.4"
-  sha256 "7d5cb712e2fb259520de220833f8250d32fd90418f7aa193ec3ac7028e4c31bd"
+  version "1.1.5"
+  sha256 "5204f9d567fbddc2778c5e7af65f0fedc1661734bca111689d8af130e134ba81"
 
   url "http://releases.obins.net/occ/darwin/x64/ObinsKit_#{version}_x64.dmg"
   appcast "http://releases.obins.net/occ/darwin/x64/latest-mac.yml"
