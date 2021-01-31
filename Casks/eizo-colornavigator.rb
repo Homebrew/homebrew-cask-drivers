@@ -1,6 +1,6 @@
 cask "eizo-colornavigator" do
-  version "7.12"
-  sha256 "8d49fe582889b44c4f7194935e96517341ac1180a07c8f3c6a33a3f7978cac38"
+  version "7.13"
+  sha256 "45d9966ac09e8b4b428fcb870ce7a991e1f4f6a38898407922bb31b3aa1f53a1"
 
   url "https://www.eizoglobal.com/support/db/files/software/software/graphics/colornavigator#{version.major}/ColorNavigator#{version.no_dots}.pkg"
   name "Eizo ColorNavigator"
