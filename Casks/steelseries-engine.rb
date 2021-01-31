@@ -1,9 +1,9 @@
 cask "steelseries-engine" do
-  version "3.18.10"
-  sha256 "ed47d4e6d6f3c10e067eea2b5354d08ac66ccd952821381127b859c88d5b9bce"
+  version "3.19.1"
+  sha256 "1b151ac405c0b89918027e5c9a531ca8adcbf4811a72ff6e3821b6de1e2e82e9"
 
-  # steelseriescdn.com/ was verified as official when first introduced to the cask
-  url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg"
+  url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg",
+      verified: "steelseriescdn.com/"
   appcast "https://steelseries.com/engine"
   name "SteelSeries Engine #{version.major}"
   desc "Settings for SteelSeries peripherals and accessories"

@@ -1,12 +1,15 @@
 cask "fujitsu-scansnap-manager" do
-  version "6.3L50"
-  sha256 "ea694ec0746cc0269790ec8cbe76f96e514fccc48f83501613f853c6352ecfee"
+  version "7.0L30"
+  sha256 "4458776ac2d117992fb4010e7d75363261cda5bc9cdf6a4abdc3126f3b0318d1"
 
-  url "https://www.fujitsu.com/downloads/IMAGE/driver/ss/mgr/m-s1300i/MacS1300iManagerV#{version.no_dots}WW1.dmg"
+  url "https://origin.pfultd.com/downloads/IMAGE/driver/ss/inst/ix1500/m-software/MacManagerV#{version.no_dots}WW.dmg",
+      verified: "origin.pfultd.com/"
   name "ScanSnap Manager for Mac"
+  desc "Scan software for Fujitsu document scanners"
   homepage "https://scansnap.fujitsu.com/"
 
   pkg "ScanSnap Manager.pkg"
 
-  uninstall pkgutil: "jp.co.pfu.ScanSnapV#{version.no_dots}WW"
+  uninstall quit:    "jp.co.pfu.ScanSnap.V10L10",
+            pkgutil: "jp.co.pfu.ScanSnap*"
 end

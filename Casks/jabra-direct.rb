@@ -1,11 +1,12 @@
 cask "jabra-direct" do
-  version "4.0.6820"
-  sha256 "97e4a91c6bd40ae94d825868d7d27fcfdbd72cc0bd5d90b4db26709a08ed1845"
+  version "5.1.19836"
+  sha256 :no_check
 
-  # jabraxpressonlineprdstor.blob.core.windows.net/jdo/ was verified as official when first introduced to the cask
-  url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg"
+  url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
+      verified: "jabraxpressonlineprdstor.blob.core.windows.net/jdo/"
   appcast "https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json"
   name "Jabra Direct"
+  desc "Optimise and personalise your Jabra headset"
   homepage "https://www.jabra.com/software-and-services/jabra-direct"
 
   pkg "JabraDirectSetup.pkg"
@@ -18,9 +19,12 @@ cask "jabra-direct" do
     "com.jabra.softphoneService",
     "nl.superalloy.oss.terminal-notifier",
   ],
+            delete:     "/Applications/Jabra Direct.app",
             login_item: "Jabra Direct",
-            pkgutil:    "com.jabra.directonline",
-            delete:     "/Applications/Jabra Direct.app"
+            pkgutil:    [
+              "com.jabra.directonline",
+              "com.jabra.kext",
+            ]
 
   zap trash: [
     "~/Library/Application Support/Jabra",

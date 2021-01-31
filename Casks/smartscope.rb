@@ -1,6 +1,6 @@
 cask "smartscope" do
   version "0.15.2.0"
-  sha256 "4eafdfd65eefdf22a07e6f9b50803ec035e266db234846052a5ab4c3767f3828"
+  sha256 :no_check
 
   url "https://www.lab-nation.com/package/smartscope/macos/latest/get"
   appcast "https://www.lab-nation.com/package/smartscope/macos/latest/",

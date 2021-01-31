@@ -1,6 +1,6 @@
 cask "wd-firmware-updater" do
   version "4.0.0.13"
-  sha256 "8fd449b79366bc6670b550cd4fd2ca5cc896b90ba29e54a8ce0f86d96ee6fbf2"
+  sha256 :no_check
 
   url "https://download.wdc.com/fwupdater/Mac/WDFirmwareUpdater.zip"
   appcast "https://support.wdc.com/downloads.aspx?lang=en"

@@ -1,20 +1,23 @@
 cask "philips-hue-sync" do
-  version :latest
+  version "1.5.3.3"
   sha256 :no_check
 
-  # flex1548-esd.flexnetoperations.com/flexnet/operations/ was verified as official when first introduced to the cask
-  url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac"
+  url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac",
+      verified: "flex1548-esd.flexnetoperations.com/flexnet/operations/"
   name "Philips Hue Sync"
+  desc "Control your smart light system"
   homepage "https://www2.meethue.com/en-us/entertainment/hue-sync"
 
-  container type: :naked
+  livecheck do
+    url :url
+    strategy :header_match
+    regex(/HueSyncInstaller_(\d+(?:\.\d+)*)\.pkg/i)
+  end
 
-  pkg "philips-hue-sync.pkg"
+  pkg "HueSyncInstaller.pkg"
 
-  # This is a horrible hack to force the file extension.
-  # The backend code should be fixed so that this is not needed.
   preflight do
-    system_command "/bin/mv", args: ["--", staged_path.join("WebContent"), staged_path.join("philips-hue-sync.pkg")]
+    staged_path.glob("HueSyncInstaller_*.pkg").first.rename(staged_path/"HueSyncInstaller.pkg")
   end
 
   uninstall quit:    [
