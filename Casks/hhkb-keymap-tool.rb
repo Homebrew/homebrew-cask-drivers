@@ -17,4 +17,9 @@ cask "hhkb-keymap-tool" do
               "/Applications/hhkb-keymap-tool.app",
               "/Applications/HHKB/",
             ]
+
+  zap trash: [
+    "~/Library/Application Support/hhkb-keymap-tool",
+    "~/Library/Preferences/jp.co.pfu.hhkb-keymap-tool.plist",
+  ]
 end
