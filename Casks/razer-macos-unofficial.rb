@@ -8,10 +8,11 @@ cask "razer-macos-unofficial" do
   desc "Open source color effects manager for Razer devices"
   homepage "https://github.com/1kc/razer-macos"
 
-  app "Razer macOS.app"i
+  app "Razer macOS.app"
+
   zap trash: [
-               '~/Library/Preferences/com.electron.razer-macos.helper.Renderer.plist',
-               '~/Library/Preferences/com.electron.razer-macos.plist',
-               '~/Library/Saved Application State/com.electron.razer-macos.savedState'
-             ]
+    "~/Library/Preferences/com.electron.razer-macos.helper.Renderer.plist",
+    "~/Library/Preferences/com.electron.razer-macos.plist",
+    "~/Library/Saved Application State/com.electron.razer-macos.savedState",
+  ]
 end
