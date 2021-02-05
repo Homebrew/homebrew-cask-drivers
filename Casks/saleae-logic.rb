@@ -10,8 +10,6 @@ cask "saleae-logic" do
 
   app "Logic2.app"
 
-  #uninstall quit: "com.saleae.Logic"
-
   zap trash: [
     "~/Library/Saved Application State/com.saleae.saleae.savedState",
     "~/Library/Preferences/com.saleae.saleae.plist",
