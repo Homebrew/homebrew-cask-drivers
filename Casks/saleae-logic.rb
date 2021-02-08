@@ -5,7 +5,7 @@ cask "saleae-logic" do
   url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
   appcast "https://ideas.saleae.com/f/changelog/"
   name "Saleae Logic2"
-  desc "Signal analysis software for Saleae's  devices"
+  desc "Signal analysis for Saleae's devices"
   homepage "https://www.saleae.com/"
 
   app "Logic#{version.major}.app"
