@@ -1,18 +1,18 @@
 cask "saleae-logic" do
-  version "1.2.18"
-  sha256 "5f495e667366dd030c367c6a8ddaeb20c38d199fb34642f03d936fa6cb179a0c"
+  version "2.3.18"
+  sha256 "d30691a301b2574ca01fdea72da6051200135c4e499cedbac40207fda5e50755"
 
-  url "https://downloads.saleae.com/logic/#{version}/Logic-#{version}-Darwin.dmg"
-  appcast "https://www.saleae.com/downloads/"
-  name "Saleae Logic"
+  url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
+  appcast "https://ideas.saleae.com/f/changelog/"
+  name "Saleae Logic2"
+  desc "Signal analysis for Saleae's devices"
   homepage "https://www.saleae.com/"
 
-  app "Logic.app"
-
-  uninstall quit: "com.saleae.Logic"
+  app "Logic#{version.major}.app"
 
   zap trash: [
-    "~/Library/Preferences/Saleae",
-    "~/Library/Saved Application State/com.saleae.Logic.savedState",
+    "~/Library/Saved Application State/com.saleae.saleae.savedState",
+    "~/Library/Preferences/com.saleae.saleae.plist",
+    "~/Library/Application Support/Logic",
   ]
 end
