@@ -1,5 +1,5 @@
 cask "segger-jlink" do
-  version "6.94a"
+  version "6.95c"
 
   if Hardware::CPU.intel?
     sha256 "7a3ad75e8594293573eda14704161e871ee25d22261ce8baf4fbb4fbca2cf4ec"
