@@ -7,6 +7,11 @@ cask "8bitdo-firmware-updater" do
   name "8BitDo Firmware Updater"
   homepage "https://support.8bitdo.com/firmware-updater.html"
 
+  livecheck do
+    url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/appcast.xml"
+    strategy :sparkle
+  end
+
   depends_on macos: ">= :yosemite"
 
   app "8BitDo Firmware Updater.app"
