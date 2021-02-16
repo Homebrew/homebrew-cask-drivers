@@ -19,11 +19,6 @@ cask "sound-blaster-play3" do
   homepage "https://us.creative.com/p/sound-cards/sound-blaster-play-3"
 
   uninstall launchctl: "com.creative.trustudiopc",
-            kext:      [
-              "com.highpoint-tech.kext.HighPointIOP",
-              "com.highpoint-tech.kext.HighPointRR",
-              "com.softraid.driver.SoftRAID",
-            ],
             pkgutil:   [
               "com.creative.Sound Blaster Play! 3.AudioControlPanel.pkg",
               "com.creative.Creative USB Audio Driver.TruStdPlugin109.pkg",
