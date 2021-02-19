@@ -1,5 +1,5 @@
 cask "jabra-direct" do
-  version "5.1.19836"
+  version "5.2.20825"
   sha256 :no_check
 
   url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
