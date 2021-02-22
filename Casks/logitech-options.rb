@@ -37,6 +37,7 @@ cask "logitech-options" do
 
   zap trash: [
     "~/Library/Application Support/Logitech/Logitech Options",
+    "~/Library/Application Support/Logitech/Options",
     "~/Library/Caches/com.logitech.Logi-Options",
     "~/Library/Preferences/com.logitech.Logi-Options.plist",
     "~/Library/Preferences/com.logitech.manager.daemon.plist",
