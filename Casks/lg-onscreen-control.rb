@@ -9,7 +9,7 @@ cask "lg-onscreen-control" do
 
   depends_on macos: ">= :mojave"
 
-  pkg "OSC_V#{version.before_comma}_signed.pkg"
+  container nested: "Mac_OSC_#{version.before_comma}.zip/OSC_V#{version.before_comma}_signed.pkg"
 
   postflight do
     system_command "/bin/chmod",
