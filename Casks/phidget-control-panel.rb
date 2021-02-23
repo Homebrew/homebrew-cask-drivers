@@ -19,9 +19,7 @@ cask "phidget-control-panel" do
     "com.phidgets.phidgetframework#{version}",
     "com.phidgets.signeddriver",
   ],
-            kext:    [
-              "com.phidgets.driver.Phidget",
-            ]
+            kext:    "com.phidgets.driver.Phidget"
 
   # A reboot _seems_ to be needed for the driver to be fully functional
   # (device detected, but sensors unreadable otherwise)
