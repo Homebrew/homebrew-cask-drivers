@@ -8,7 +8,6 @@ cask "lg-onscreen-control" do
   homepage "https://www.lg.com/us/support/monitors"
 
   depends_on macos: ">= :mojave"
-
   container nested: "Mac_OSC_#{version.before_comma}.zip/OSC_V#{version.before_comma}_signed.pkg"
 
   postflight do
