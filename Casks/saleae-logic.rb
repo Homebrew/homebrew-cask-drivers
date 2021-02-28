@@ -14,5 +14,6 @@ cask "saleae-logic" do
     "~/Library/Saved Application State/com.saleae.saleae.savedState",
     "~/Library/Preferences/com.saleae.saleae.plist",
     "~/Library/Application Support/Logic",
+    "~/Library/Logs/Logic2",
   ]
 end
