@@ -11,9 +11,9 @@ cask "saleae-logic" do
   app "Logic#{version.major}.app"
 
   zap trash: [
-    "~/Library/Saved Application State/com.saleae.saleae.savedState",
-    "~/Library/Preferences/com.saleae.saleae.plist",
     "~/Library/Application Support/Logic",
     "~/Library/Logs/Logic#{version.major}",
+    "~/Library/Preferences/com.saleae.saleae.plist",
+    "~/Library/Saved Application State/com.saleae.saleae.savedState",
   ]
 end
