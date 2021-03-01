@@ -11,6 +11,6 @@ cask "cycliq-cycliqplus" do
 
   zap trash: [
     "~/Library/Caches/com.cycliq.mac",
-    "~/Library//WebKit/com.cycliq.mac",
+    "~/Library/WebKit/com.cycliq.mac",
   ]
 end
