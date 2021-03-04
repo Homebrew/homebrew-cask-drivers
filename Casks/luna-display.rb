@@ -16,13 +16,13 @@ cask "luna-display" do
   uninstall quit: "com.astro-hq.LunaDisplayMac"
 
   zap trash: [
-    "~/Library/Caches/com.astro-hq.LunaDisplayMac",
-    "~/Library/Preferences/com.astro-hq.LunaDisplayMac.plist",
-    "~/Library/Preferences/com.astro-hq.AstroLauncher.shared.plist",
-    "~/Library/Application Support/com.astro-hq.LunaDisplayMac",
     "~/Library/Application Support/com.astro-hq.LunaDeviceSetupService",
+    "~/Library/Application Support/com.astro-hq.LunaDisplayMac",
     "~/Library/Application Support/LunaDisplay",
-    "~/Library/Saved Application State/com.astro-hq.LunaDisplayMac.savedState",
+    "~/Library/Caches/com.astro-hq.LunaDisplayMac",
     "~/Library/Logs/Astropad",
+    "~/Library/Preferences/com.astro-hq.AstroLauncher.shared.plist",
+    "~/Library/Preferences/com.astro-hq.LunaDisplayMac.plist",
+    "~/Library/Saved Application State/com.astro-hq.LunaDisplayMac.savedState",
   ]
 end
