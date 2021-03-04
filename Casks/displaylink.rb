@@ -26,7 +26,7 @@ cask "displaylink" do
   if MacOS.version <= :mojave
     pkg "DisplayLink Software Installer.pkg"
   else
-    pkg "DisplayLinkManagerApp.pkg"
+    pkg "DisplayLink Manager Graphics Connectivity #{version.before_comma}.pkg"
   end
 
   uninstall pkgutil:   "com.displaylink.*",
