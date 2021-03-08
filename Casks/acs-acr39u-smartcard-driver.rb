@@ -1,8 +1,8 @@
 cask "acs-acr39u-smartcard-driver" do
   version "1.1.8.2"
-  sha256 "f1234d75178d892a133a410355a5a990cf75d2f33eba25d575943d4df632f3a4"
+  sha256 "adf059f1963b6d2419ac0904b87ca9d92d72b81a6911439eff577c6ba42ad4ca"
 
-  url "https://www.acs.com.hk/download-driver-unified/11878/ACS-Unified-INST-MacOSX-#{version.no_dots}-P.zip"
+  url "https://www.acs.com.hk/download-driver-unified/12835/ACS-Unified-INST-MacOSX-#{version.no_dots}-P.zip"
   appcast "https://www.acs.com.hk/en/driver/302/acr39u-smart-card-reader/"
   name "ACS Unified Installer"
   homepage "https://www.acs.com.hk/en/driver/302/acr39u-smart-card-reader/"
