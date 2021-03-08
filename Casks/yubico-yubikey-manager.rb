@@ -3,7 +3,7 @@ cask "yubico-yubikey-manager" do
   sha256 "84ac768511a488278f766fbd216b8aabfda19cc5c458486b98e292199233ad00"
 
   url "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-#{version}-mac.pkg"
-  appcast "https://github.com/Yubico/yubikey-manager-qt/releases.atom"
+  appcast "https://developers.yubico.com/yubikey-manager-qt/Releases/"
   name "Yubikey Manager"
   homepage "https://developers.yubico.com/yubikey-manager-qt/"
 
