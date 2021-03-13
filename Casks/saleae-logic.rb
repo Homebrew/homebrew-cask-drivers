@@ -1,6 +1,6 @@
 cask "saleae-logic" do
-  version "2.3.19"
-  sha256 "4521d2d7fe05f1ee3dc8d169b039db1abf5cc62a12b314ad73509ee24db71db5"
+  version "2.3.20"
+  sha256 "18f24a0fe748d9922a08f50d50a868a380b91ce9f4af511c9c73bb50b8cf4845"
 
   url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
   appcast "https://ideas.saleae.com/f/changelog/"
