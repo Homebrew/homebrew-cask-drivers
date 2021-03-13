@@ -1,6 +1,6 @@
 cask "focusrite-control" do
-  version "3.6.0.1822"
-  sha256 "17b41f26fcf6d2fa173fee49be58307139d16f8f5399c33d679da907b3b924a6"
+  version "3.7.2.1923"
+  sha256 "0fed5039967b432bdfec2751c3bb92cf018a3271c1c99d0a0e555a154b1bec21"
 
   url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   appcast "https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=1360&download_type=software",
