@@ -1,6 +1,6 @@
 cask "fujitsu-scansnap-home" do
-  version "1.9.1"
-  sha256 "f564193b63a452422b6c6f52c52dd2d106e9ac35e13cb3254a829d69a216dc2e"
+  version "2.0.30"
+  sha256 "2e546eb922e4fc547395f66a02ba35f0ce8133ea858f29a0fa63b6f559025abe"
 
   url "https://origin.pfultd.com/downloads/ss/sshinst/m-#{version.no_dots}/MacSSHOfflineInstaller_#{version.dots_to_underscores}.dmg",
       verified: "origin.pfultd.com/"
