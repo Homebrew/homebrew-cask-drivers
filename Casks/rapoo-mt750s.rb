@@ -10,6 +10,10 @@ cask "rapoo-mt750s" do
 
   pkg "RapooOptions_MT750S_#{version}.pkg"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   uninstall pkgutil: [
     "com.mygreatcompany.pkg.MT750S",
     "com.mygreatcompany.pkg.MT750SUninstall",
