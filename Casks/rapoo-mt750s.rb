@@ -8,17 +8,19 @@ cask "rapoo-mt750s" do
   desc "Multi-mode Wireless Laser Mouse Drivers"
   homepage "https://www.rapoo-eu.com/support/mice-support/mt750s-support/"
 
-  pkg "RapooOptions_MT750S_#{version}.pkg"
-
   livecheck do
     skip "No version information available"
   end
 
-  uninstall pkgutil: [
+  pkg "RapooOptions_MT750S_#{version}.pkg"
+
+  uninstall pkgutil:   [
+    "com.mygreatcompany.pkg.plist",
     "com.mygreatcompany.pkg.MT750S",
     "com.mygreatcompany.pkg.MT750SUninstall",
     "com.mygreatcompany.pkg.MT750SMgr",
     "com.mygreatcompany.pkg.RapooOptionsDeamon",
   ],
-            quit:    "com.mygreatcompany.pkg.RapooOptionsDeamon"
+            quit:      "com.mygreatcompany.pkg.RapooOptionsDeamon",
+            launchctl: "com.rapoo.driver"
 end
