@@ -9,7 +9,9 @@ cask "rapoo-mt750s" do
   homepage "https://www.rapoo-eu.com/support/mice-support/mt750s-support/"
 
   livecheck do
-    skip "No version information available"
+    url :homepage
+    strategy :page_match
+    regex(/RapooOptions_MT750S_(\d+)\.pkg/i)
   end
 
   pkg "RapooOptions_MT750S_#{version}.pkg"
