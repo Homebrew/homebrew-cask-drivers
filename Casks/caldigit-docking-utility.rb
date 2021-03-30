@@ -6,6 +6,10 @@ cask "caldigit-docking-utility" do
   name "CalDigit Thunderbolt Docking Station Utility"
   homepage "https://www.caldigit.com/"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   pkg "CalDigit Docking Station Utility v#{version}.pkg"
 
   uninstall signal:  ["TERM", "CalDigit.CalDigit-Docking-Station-Utility"],
