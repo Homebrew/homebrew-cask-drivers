@@ -33,6 +33,7 @@ cask "xerox-print-driver" do
   ],
             quit:      "com.aviatainc.powerengage.EngageLauncher",
             pkgutil:   [
+              "com.xerox.drivers.pkg",
               "com.xerox.installer.addprintqueue",
               "com.xerox.installer.finishup",
               "com.xerox.print.xeroxPrinter.pkg",
