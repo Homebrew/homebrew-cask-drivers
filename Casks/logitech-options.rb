@@ -15,10 +15,18 @@ cask "logitech-options" do
   desc "Software for Logitech devices"
   homepage "https://support.logitech.com/software/options"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   auto_updates true
   depends_on macos: ">= :sierra"
 
-  pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+  if MacOS.version <= :high_sierra
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+  else
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
+  end
 
   uninstall launchctl: "com.logitech.manager.daemon",
             quit:      [
