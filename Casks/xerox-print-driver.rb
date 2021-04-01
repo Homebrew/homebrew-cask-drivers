@@ -21,6 +21,10 @@ cask "xerox-print-driver" do
   desc "Drivers for Xerox printers"
   homepage "https://www.support.xerox.com/support/colorqube-8570/downloads/"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   if MacOS.version <= :sierra
     pkg "Xerox Print Driver #{version.sub(/_.*/, "")}.pkg"
   else
