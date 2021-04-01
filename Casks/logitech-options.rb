@@ -6,8 +6,8 @@ cask "logitech-options" do
     version "8.30.293"
     sha256 "db5f2cd94960223bdf74f0db6fc009f82f80928fe2ce849202754bbdb720eb87"
   else
-    version "8.36.76"
-    sha256 "e19be5051c782245c7e6bde87586a0819aea14d24c7ff3981f48b7ca45fa6c90"
+    version "8.50.210"
+    sha256 "6f1d511c460255cd1f04d2514e0bb2ad945c7a13752b38d5b9bd0f69f701050d"
   end
 
   url "https://www.logitech.com/pub/techsupport/options/Options_#{version}.zip"
@@ -15,10 +15,18 @@ cask "logitech-options" do
   desc "Software for Logitech devices"
   homepage "https://support.logitech.com/software/options"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   auto_updates true
   depends_on macos: ">= :sierra"
 
-  pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+  if MacOS.version <= :high_sierra
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+  else
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
+  end
 
   uninstall launchctl: "com.logitech.manager.daemon",
             quit:      [
