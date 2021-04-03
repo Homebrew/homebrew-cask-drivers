@@ -1,5 +1,5 @@
 cask "philips-hue-sync" do
-  version "1.5.3.3"
+  version "1.6.0.9"
   sha256 :no_check
 
   url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac",
