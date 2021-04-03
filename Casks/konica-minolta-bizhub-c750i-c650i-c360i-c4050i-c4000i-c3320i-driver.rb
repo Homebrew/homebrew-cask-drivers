@@ -1,6 +1,6 @@
 cask "konica-minolta-bizhub-c750i-c650i-c360i-c4050i-c4000i-c3320i-driver" do
   version "2.2.3A,d87425ee468e6d834887936aca5b096c:127009"
-  sha256 "636d2bc1443c25fa5b081b1624a9c27163172c88e4fd03fade980e9ae7f2b5d5"
+  sha256 "f200cbfa7322c45b864144388bf86d29f94fbf7f6e4c110ff61bedd3b62043f4"
 
   url "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=#{version.after_comma.before_colon}&tx_kmanacondaimport_downloadproxy[documentId]=#{version.after_colon}&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
   name "Konica Minolta Bizhub C750i/C650i/C360i/C4050i/C4000i/C3320i Printer Driver"
