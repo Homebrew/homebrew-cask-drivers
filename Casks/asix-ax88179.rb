@@ -19,7 +19,7 @@ cask "asix-ax88179" do
     end
   end
 
-  container nested: "AX88179_178A_macOS_10.9_to_11_Driver_Installer_v#{version.before_comma}_beta2/AX88179_178A_v#{version.before_comma}.dmg"
+  container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}_beta2/AX88179_178A_v#{version.before_comma}.dmg"
 
   installer manual: "AX88179_178A_v#{version.before_comma}.app"
 
