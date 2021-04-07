@@ -1,10 +1,9 @@
 cask "konica-minolta-bizhub-c750i-driver" do  
   if MacOS.version <= :catalina
-    version "2.2.3A,d87425ee468e6d834887936aca5b096c:127009"
-    sha256 "f200cbfa7322c45b864144388bf86d29f94fbf7f6e4c110ff61bedd3b62043f4"
-
     version "2.2.3,7e6620c13efd50326af685f926806e0f:125070"
     sha256 "dca184d4122ef1a3af821f64731110d632be813fd2df1e875dd170dad89188b0"
+
+    pkg "A4/C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i.pkg"
   else
     version "2.2.3A,d87425ee468e6d834887936aca5b096c:127009"
     sha256 "f200cbfa7322c45b864144388bf86d29f94fbf7f6e4c110ff61bedd3b62043f4"
