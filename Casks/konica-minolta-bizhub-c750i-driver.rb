@@ -1,4 +1,4 @@
-cask "konica-minolta-bizhub-c750i-driver" do  
+cask "konica-minolta-bizhub-c750i-driver" do
   if MacOS.version <= :catalina
     version "2.2.3,7e6620c13efd50326af685f926806e0f:125070"
     sha256 "dca184d4122ef1a3af821f64731110d632be813fd2df1e875dd170dad89188b0"
