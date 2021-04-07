@@ -5,6 +5,8 @@ cask "konica-minolta-bizhub-c750i-driver" do
   else
     version "2.2.3A,d87425ee468e6d834887936aca5b096c:127009"
     sha256 "f200cbfa7322c45b864144388bf86d29f94fbf7f6e4c110ff61bedd3b62043f4"
+
+    pkg "C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i_11.pkg"
   end
 
   url "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=#{version.after_comma.before_colon}&tx_kmanacondaimport_downloadproxy[documentId]=#{version.after_colon}&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
@@ -29,8 +31,6 @@ cask "konica-minolta-bizhub-c750i-driver" do
   end
 
   depends_on macos: ">= :yosemite"
-
-  pkg "C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i_11.pkg"
 
   uninstall pkgutil: "jp.konicaminolta.print.package.C750i"
 end
