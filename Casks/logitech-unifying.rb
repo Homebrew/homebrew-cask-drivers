@@ -8,10 +8,15 @@ cask "logitech-unifying" do
   end
 
   url "https://download01.logi.com/web/ftp/pub/controldevices/unifying/unifying#{version}_mac.zip"
-  appcast "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da"
   name "Logitech Unifying Software"
   desc "Utility for pairing devices with Unifying receivers"
   homepage "https://support.logi.com/hc/en-001/articles/360025297913-Unifying-Software"
+
+  livecheck do
+    url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da"
+    strategy :page_match
+    regex(/unifying(\d+(?:\.\d+)*)_mac\.zip/i)
+  end
 
   depends_on macos: ">= :yosemite"
 
