@@ -7,6 +7,10 @@ cask "insta360-studio" do
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   pkg "Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
 
   uninstall quit:    "com.insta360.studio",
