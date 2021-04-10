@@ -1,11 +1,15 @@
 cask "insta360-studio" do
-  version "3.5.5,2020_20201111_173104:20201111.037377491bc0bc838b327e5f7287bdec"
-  sha256 "383f83dd82af47263827b3327e0bc31b956af1ddfd5e443e160ec05a30438584"
+  version "3.6.2,2021_20210310_020734:20210310.ccdb347864e767b6d9ebb50fd2c4e059"
+  sha256 "1b173dbc63ae40840a8d6403f525103c8808d214e8ca387d4a8d7d769547f01a"
 
   url "https://res.insta360.com/static/assets/storage/#{version.after_colon.major}/#{version.after_colon.minor}/Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
   name "Insta360 Studio"
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
+
+  livecheck do
+    skip "No version information available"
+  end
 
   pkg "Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
 
