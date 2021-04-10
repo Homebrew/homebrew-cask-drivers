@@ -31,6 +31,12 @@ cask "segger-jlink" do
   desc "Software and Documentation pack for Segger J-Link debug probes"
   homepage "https://www.segger.com/downloads/jlink"
 
+  livecheck do
+    url "https://www.segger.com/downloads/jlink/ReleaseNotes_JLink.html"
+    strategy :page_match
+    regex(/Version\s*V?(\d+(?:\.\d+)*)/i)
+  end
+
   uninstall quit:    [
     "com.segger.JFlashLite.*",
     "com.segger.JLinkGDBServer.*",
