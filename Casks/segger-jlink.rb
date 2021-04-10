@@ -34,7 +34,7 @@ cask "segger-jlink" do
   livecheck do
     url "https://www.segger.com/downloads/jlink/ReleaseNotes_JLink.html"
     strategy :page_match
-    regex(/Version\s*V?(\d+(?:\.\d+)*)/i)
+    regex(/Version\s*V(\d+(?:\.\d+)*)/i)
   end
 
   uninstall quit:    [
