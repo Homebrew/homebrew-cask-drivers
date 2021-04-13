@@ -13,7 +13,7 @@ cask "insta360-studio" do
       apps = JSON.parse(page)["data"]["apps"].find { |app| app["id"] == 38 }
       macos = apps["items"].find { |item| item["platform"] == "mac" }
       v1 = macos["version"]
-      pattern = %r{.+/(\d+)/([[:xdigit:]]+)/Insta360[._-]Studio[._-](\d+[._-]\d+[._-]\d+)[._-]signed\.pkg}i
+      pattern = %r{/(\d+)/([[:xdigit:]]+)/Insta360[._-]Studio[._-](\d+(?:[._-]\d+)*)[._-]signed\.pkg}i
       match = macos["channels"][0]["download_url"].match(pattern)
       "#{v1},#{match[3]}:#{match[1]}.#{match[2]}"
     end
