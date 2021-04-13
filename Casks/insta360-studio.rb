@@ -10,8 +10,9 @@ cask "insta360-studio" do
   livecheck do
     url "https://openapi.insta360.com/website/appDownload/getGroupApp?group=insta360-go2&X-Language=en-us"
     strategy :page_match do |page|
-      apps = JSON.parse(page)["data"]["apps"].find { |app| app["id"] == 38 }
-      macos = apps["items"].find { |item| item["platform"] == "mac" }
+      apps = JSON.parse(page)["data"]["apps"].find { |app| app["id"] == 38 }["items"]
+      apps.sort_by! { |k| k["version"] }.reverse!
+      macos = apps.find { |item| item["platform"] == "mac" }
       v1 = macos["version"]
       pattern = %r{/(\d+)/([[:xdigit:]]+)/Insta360[._-]Studio[._-](\d+(?:[._-]\d+)*)[._-]signed\.pkg}i
       match = macos["channels"][0]["download_url"].match(pattern)
