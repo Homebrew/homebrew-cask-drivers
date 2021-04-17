@@ -7,6 +7,11 @@ cask "cycliqplus-firmware-updater" do
   desc "Firmware updater for Cycliq Fly bike cameras"
   homepage "https://cycliq.com/"
 
+  livecheck do
+    url "https://cycliq.com/software/firmware-autoupdater/macos/"
+    strategy :header_match
+  end
+
   app "CycliqPlus Firmware Updater.app"
 
   zap trash: [
