@@ -1,12 +1,21 @@
 cask "apple-hewlett-packard-printer-drivers" do
-  version "5.1,2019,041-88763-20191011-6e70f498-9d39-420c-b11b-b252b17233e2"
-  sha256 "e81f73e8d14e417c99904e7756a13376a19750aa65d81b7167a6ab66f96af687"
+  version "5.1,2020,001-41745-20201210-DBC9B46B-88B2-4032-87D9-449AF1D20804"
+  sha256 "9ee54766e32cdd3ce6a0ff019aad02400eac66fc669c991f47a6c37379cf8fac"
 
-  url "https://updates.cdn-apple.com/#{version.after_comma.before_comma}/cert/#{version.after_comma.after_comma}/HewlettPackardPrinterDrivers.dmg",
+  url "https://updates.cdn-apple.com/#{version.after_comma.before_comma}/macos/#{version.after_comma.after_comma}/HewlettPackardPrinterDrivers.dmg",
       verified: "updates.cdn-apple.com/"
-  appcast "https://support.apple.com/kb/DL1888"
   name "HP Printer Drivers"
+  desc "HP printing and scanning software"
   homepage "https://support.apple.com/kb/DL1888"
+
+  livecheck do
+    url :homepage
+    strategy :page_match do |page|
+      version = page.match(/"strTitle":.*?v(\d+(?:\.\d+)*)\s*for\s*macOS/i)
+      metaurl = page.match(%r{"metaUrl":.*?/(\d+)/macos/([\dA-F]+(?:-[\dA-F]+)*)/HewlettPackardPrinterDrivers\.dmg}i)
+      "#{version[1]},#{metaurl[1]},#{metaurl[2]}"
+    end
+  end
 
   pkg "HewlettPackardPrinterDrivers.pkg"
 
