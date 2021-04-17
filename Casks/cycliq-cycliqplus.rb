@@ -7,6 +7,11 @@ cask "cycliq-cycliqplus" do
   desc "Footage and bike camera settings editor"
   homepage "https://cycliq.com/"
 
+  livecheck do
+    url "https://cycliq.com/software/cycliqplus/macos/"
+    strategy :header_match
+  end
+
   app "CycliqPlus.app"
 
   zap trash: [
