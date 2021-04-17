@@ -4,10 +4,14 @@ cask "luna-secondary" do
 
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaSecondary-#{version}.dmg",
       verified: "s3.amazonaws.com/s3.lunadisplay.com/"
-  appcast "https://s3.lunadisplay.com/downloads/luna-secondary-sparkle.xml"
   name "Luna Secondary"
   desc "Turn a computer or tablet into a second display"
   homepage "https://lunadisplay.com/"
+
+  livecheck do
+    url "https://downloads.astropad.com/luna/latest-secondary"
+    strategy :header_match
+  end
 
   app "Luna Secondary.app"
 
