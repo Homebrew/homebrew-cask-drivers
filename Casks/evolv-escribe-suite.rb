@@ -1,11 +1,17 @@
 cask "evolv-escribe-suite" do
-  version "2_SP19"
-  sha256 "e2544857312c5ddbffce0c66c88e86aa424f5c779123064e0283ac634c101ed4"
+  version "2_SP24"
+  sha256 "4fb85616db9d6f605fac2bc583d8ab016eb79815385a585bec252185860d1ed4"
 
   url "https://downloads.evolvapor.com/SetupEScribe#{version}_INT.pkg"
-  appcast "https://www.evolvapor.com/escribe"
   name "EScribe Suite"
+  desc "Configure, monitor, and modify the operation of your DNA device"
   homepage "https://www.evolvapor.com/"
+
+  livecheck do
+    url "https://www.evolvapor.com/escribe"
+    strategy :page_match
+    regex(%r{href=.*?/SetupEScribe(\d+_SP\d+(?:_\d+)?)_INT\.pkg}i)
+  end
 
   pkg "SetupEScribe#{version}_INT.pkg"
 
