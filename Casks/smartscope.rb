@@ -2,7 +2,7 @@ cask "smartscope" do
   version "0.15.2.0"
   sha256 "4eafdfd65eefdf22a07e6f9b50803ec035e266db234846052a5ab4c3767f3828"
 
-  url "https://www.lab-nation.com/package/SmartScope/#{version.tr(".", "/")}/MacOS/get"
+  url "https://www.lab-nation.com/package/SmartScope/#{version.major}/#{version.minor}/#{version.patch}/#{version.sub(/^.*\./, "")}/MacOS/get"
   name "SmartScope"
   desc "App to connect to SmartScope oscilloscope"
   homepage "https://www.lab-nation.com/"
