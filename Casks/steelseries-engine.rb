@@ -4,13 +4,17 @@ cask "steelseries-engine" do
 
   url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg",
       verified: "steelseriescdn.com/"
-  appcast "https://steelseries.com/engine"
   name "SteelSeries Engine #{version.major}"
   desc "Settings for SteelSeries peripherals and accessories"
   homepage "https://steelseries.com/engine"
 
+  livecheck do
+    url "https://steelseries.com/engine/latest/darwin"
+    strategy :header_match
+  end
+
   auto_updates true
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :sierra"
 
   pkg "SteelSeriesEngine#{version}.pkg"
 
