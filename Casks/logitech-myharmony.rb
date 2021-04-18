@@ -5,11 +5,22 @@ cask "logitech-myharmony" do
   url "https://app.myharmony.com/prod/mac/#{version.major_minor}/MyHarmony-App.dmg"
   appcast "https://app.myharmony.com/prod/mac/harmonycast.xml"
   name "MyHarmony"
+  desc "Configuration software for Logitech Harmony universal remote control"
   homepage "https://setup.myharmony.com/"
+
+  depends_on macos: "<= :mojave"
 
   pkg "MyHarmonySetup.pkg"
 
   uninstall quit:    "org.logitech.MyHarmony",
             pkgutil: "MyHarmony.pkg",
             rmdir:   "/Applications/MyHarmony.app"
+
+  caveats do
+    discontinued
+    <<~EOS
+      MyHarmony is a 32-bit app and will not run on macOS 10.15 & above.
+      It has been deprecated in favor of Harmony Desktop app and mobile app.
+    EOS
+  end
 end
