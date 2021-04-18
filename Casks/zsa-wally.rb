@@ -4,9 +4,14 @@ cask "zsa-wally" do
 
   url "https://github.com/zsa/wally/releases/download/#{version}-osx/wally-osx-#{version}.dmg",
       verified: "github.com/zsa/wally/"
-  appcast "https://github.com/zsa/wally/releases.atom"
   name "Wally"
+  desc "Flash tool for ZSA keyboards"
   homepage "https://ergodox-ez.com/pages/wally"
+
+  livecheck do
+    url "https://configure.ergodox-ez.com/wally/osx"
+    strategy :header_match
+  end
 
   app "Wally.app"
 end
