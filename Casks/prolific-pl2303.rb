@@ -4,7 +4,7 @@ cask "prolific-pl2303" do
 
   url "http://www.prolific.com.tw/UserFiles/files/PL2303HXD_G_Mac%20Driver_v#{version.dots_to_underscores}.zip"
   name "Prolific USB to Serial Cable driver"
-  desc "PL2303 USB to Serial Driver"
+  desc "PL2303 USB-to-serial driver"
   homepage "http://www.prolific.com.tw/US/"
 
   livecheck do
