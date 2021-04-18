@@ -14,7 +14,7 @@ cask "lmsclients-squeezeplay" do
   end
 
   name "Logitech LMS SqueezePlay Client"
-  desc "Logitech Media Server SqueezePlay Client"
+  desc "Media server client"
   homepage "https://forums.slimdevices.com/showthread.php?96328-ANNOUNCE-SqueezePlay-for-Mac-OSX"
 
   livecheck do
