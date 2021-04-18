@@ -5,7 +5,7 @@ cask "uhk-agent" do
   url "https://github.com/UltimateHackingKeyboard/agent/releases/download/v#{version}/UHK.Agent-#{version}-mac.dmg"
   name "Ultimate Hacking Keyboard Agent"
   name "UHK Agent"
-  desc "Configuration application of the Ultimate Hacking Keyboard"
+  desc "Configuration application for the Ultimate Hacking Keyboard"
   homepage "https://github.com/UltimateHackingKeyboard/agent"
 
   app "UHK Agent.app"
