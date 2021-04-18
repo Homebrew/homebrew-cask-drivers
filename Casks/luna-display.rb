@@ -4,10 +4,14 @@ cask "luna-display" do
 
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.dmg",
       verified: "s3.amazonaws.com/s3.lunadisplay.com/downloads/"
-  appcast "https://s3.lunadisplay.com/downloads/sparkle.xml"
   name "Luna Display"
   desc "Use your iPad as a wireless second display"
   homepage "https://lunadisplay.com/"
+
+  livecheck do
+    url "https://downloads.astropad.com/luna/latest"
+    strategy :header_match
+  end
 
   depends_on macos: ">= :el_capitan"
 
