@@ -3,9 +3,15 @@ cask "bragi-updater" do
   sha256 "ab3e12163bf4d73c641c1b249bc7a290d8eeb2034465d243b1e194f4e2f76f94"
 
   url "https://update.bragi.com/bin/Bragi%20Updater-#{version}.dmg"
-  appcast "https://update.bragi.com/scripts/scripts.36513c90.js"
   name "Bragi Updater"
+  desc "Check for new skills for your Dash and switch its language"
   homepage "https://update.bragi.com/"
+
+  livecheck do
+    url "https://update.bragi.com/scripts/scripts.36513c90.js"
+    strategy :page_match
+    regex(%r{href="/bin/Bragi\s*Updater-(\d+(?:\.\d+)*)\.dmg"}i)
+  end
 
   app "Bragi Updater.app"
 
