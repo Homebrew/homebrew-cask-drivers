@@ -1,22 +1,30 @@
 cask "phidget-control-panel" do
-  version "22"
-  sha256 "9cf21d515e96413c05ac9b630a2e2cec42c30fbf798c3b54a040f4542a6a4d3b"
+  version "22,1.6.20210312"
+  sha256 "cf77fde4e0b0bd1c502b07d1ed06c6af4c9c061112b4ac4dc9cee70c971a6f87"
 
-  url "https://www.phidgets.com/downloads/phidget#{version}/libraries/macos/Phidget#{version}.dmg"
+  url "https://www.phidgets.com/downloads/phidget#{version.before_comma}/libraries/macos/Phidget#{version.before_comma}/Phidget#{version.before_comma}_#{version.after_comma}.dmg"
   name "Phidget Control Panel"
   desc "Libraries and control software for the Phidgets sensing kits"
   homepage "https://www.phidgets.com/"
+
+  livecheck do
+    url "https://www.phidgets.com/downloads/phidget#{version.before_comma}/libraries/macos/Phidget#{version.before_comma}.dmg"
+    strategy :header_match do |headers|
+      match = headers["location"].match(%r{/Phidget(\d+)_(\d+(?:\.\d+)*)\.dmg}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
 
   depends_on macos: ">= :el_capitan"
 
   pkg "Phidgets.pkg"
 
   uninstall pkgutil: [
-    "com.phidgets.phidget#{version}java",
-    "com.phidgets.phidget#{version}extra",
-    "com.phidgets.phidget#{version}networkserver",
-    "com.phidgets.controlpanel#{version}",
-    "com.phidgets.phidgetframework#{version}",
+    "com.phidgets.phidget#{version.before_comma}java",
+    "com.phidgets.phidget#{version.before_comma}extra",
+    "com.phidgets.phidget#{version.before_comma}networkserver",
+    "com.phidgets.controlpanel#{version.before_comma}",
+    "com.phidgets.phidgetframework#{version.before_comma}",
     "com.phidgets.signeddriver",
   ],
             kext:    "com.phidgets.driver.Phidget"
