@@ -8,6 +8,12 @@ cask "hhkb-keymap-tool" do
   desc "Keymap tool for Happy Hacking Keyboard Professional (Hybrid models only)"
   homepage "https://happyhackingkb.com/download/"
 
+  livecheck do
+    url :homepage
+    strategy :page_match
+    regex(/macOS\s*:\s*Version\s*(\d+(?:\.\d+)*)/i)
+  end
+
   depends_on macos: ">= :sierra"
 
   pkg "HHKBkeymapTool_#{version.no_dots}ma.pkg"
