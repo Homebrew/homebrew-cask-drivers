@@ -5,6 +5,7 @@ cask "shearwater" do
   url "https://www.shearwater.com/wp-content/downloads/ShearwaterDesktopInstaller_#{version}.dmg"
   appcast "https://www.shearwater.com/downloads/shearwater-desktop-download/"
   name "Shearwater Desktop"
+  desc "Link your desktop computer to your Shearwater dive computer"
   homepage "https://www.shearwater.com/"
 
   depends_on cask: "adobe-air"
@@ -18,4 +19,11 @@ cask "shearwater" do
     "~/Library/Preferences/com.shearwaterresearch.divebook",
     "~/Library/Saved Application State/com.shearwaterresearch.divebook.savedState",
   ]
+
+  caveats do
+    discontinued
+    <<~EOS
+      This software has been deprecated in favor of Shearwater Cloud Desktop.
+    EOS
+  end
 end
