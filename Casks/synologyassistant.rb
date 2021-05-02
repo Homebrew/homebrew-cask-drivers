@@ -1,12 +1,16 @@
 cask "synologyassistant" do
-  version "6.2-24922"
-  sha256 "b586a41cf390586bdc29ab4d6ee7abbca2e435c74426b194997f35553f1ef7ae"
+  version "7.0-50029"
+  sha256 "1c7c913b056b855ed07bce5e6dafc23b1ea154b1a7fc06ec800affc1cc235ff5"
 
-  url "https://global.download.synology.com/download/Tools/Assistant/#{version}/Mac/synology-assistant-#{version}.dmg"
-  appcast "https://www.synology.com/en-us/releaseNote/Assistant"
+  url "https://global.download.synology.com/download/Utility/Assistant/#{version}/Mac/synology-assistant-#{version}.dmg"
   name "Synology Assistant"
   desc "Tool to manage Synology NAS's across a LAN"
   homepage "https://www.synology.com/"
+
+  livecheck do
+    url "https://www.synology.com/en-us/releaseNote/Assistant"
+    regex(/Version: (\d+.\d+-\d+)/i)
+  end
 
   app "SynologyAssistant.app"
 

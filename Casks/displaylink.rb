@@ -5,9 +5,12 @@ cask "displaylink" do
   elsif MacOS.version <= :high_sierra
     version "4.3.1,1251"
     sha256 "d5cd6787d6c4ca6a2425984bcbab607e618e9803335455e24196e14e35657b97"
-  else
+  elsif MacOS.version <= :mojave
     version "5.2.5,1636"
     sha256 "aa061f65ffb613c5138b88051f56da12825cfe217fa6ae589f7d5125981f76b7"
+  else
+    version "1.3,1697"
+    sha256 "24c2fbb08ca119225d92a8a88accb7199ce3c50c1d78aa253effe2432ff28507"
   end
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
@@ -20,7 +23,16 @@ cask "displaylink" do
   desc "Drivers for DisplayLink docks, adapters and monitors"
   homepage "https://www.displaylink.com/"
 
-  pkg "DisplayLink Software Installer.pkg"
+  if MacOS.version <= :mojave
+    pkg "DisplayLink Software Installer.pkg"
+  else
+    container type: :pkg
+    preflight do
+      # Renames the downloaded file to the correct name
+      system("mv \"#{caskroom_path}/#{version}/file?id=#{version.after_comma}\" \"#{caskroom_path}/#{version}/DisplayLink Manager Graphics Connectivity #{version.before_comma}.pkg\"")
+    end
+    pkg "DisplayLink Manager Graphics Connectivity #{version.before_comma}.pkg"
+  end
 
   uninstall pkgutil:   "com.displaylink.*",
             # 'kextunload -b com.displaylink.driver.DisplayLinkDriver' causes kernel panic

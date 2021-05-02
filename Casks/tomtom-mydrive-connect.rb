@@ -3,9 +3,15 @@ cask "tomtom-mydrive-connect" do
   sha256 "72bac2932f89d347ef07b39718c722e6653739fe3d9beb7577dd70219de81357"
 
   url "https://cdn.sa.services.tomtom.com/static/sa/versions/MyDriveConnect_mac_#{version.dots_to_underscores}.zip"
-  appcast "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
   name "TomTom MyDrive Connect"
+  desc "Update your TomTom navigation device"
   homepage "https://www.tomtom.com/mydrive-connect/"
+
+  livecheck do
+    url "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
+    strategy :page_match
+    regex(/Version:\s*(\d+(?:\.\d+)*)\s*OS:\s*mac/i)
+  end
 
   pkg "MyDriveConnect_mac_#{version.dots_to_underscores}.mpkg"
 

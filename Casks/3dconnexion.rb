@@ -3,9 +3,17 @@ cask "3dconnexion" do
   sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
 
   url "https://download.3dconnexion.com/drivers/mac/#{version.before_comma}_#{version.after_colon}/3DxWareMac_v#{version.before_comma}_#{version.after_comma.before_colon}.dmg"
-  appcast "https://3dconnexion.com/us/drivers/"
   name "3Dconnexion"
+  desc "3DxWare Driver"
   homepage "https://3dconnexion.com/"
+
+  livecheck do
+    url "https://3dconnexion.com/us/drivers/"
+    strategy :page_match do |page|
+      match = page.match(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
+      "#{match[2]},#{match[3]}:#{match[1]}"
+    end
+  end
 
   depends_on macos: ">= :yosemite"
 

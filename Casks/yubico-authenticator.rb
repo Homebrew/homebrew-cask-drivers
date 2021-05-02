@@ -3,9 +3,15 @@ cask "yubico-authenticator" do
   sha256 "c23eebe33db4aab2ae34b3110a4df102c06ef8c7931a8f506c6d9ea5ffb95c52"
 
   url "https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-#{version}-mac.pkg"
-  appcast "https://developers.yubico.com/yubioath-desktop/Release_Notes.html"
   name "Yubico Authenticator"
+  desc "Application for generating TOTP and HOTP codes"
   homepage "https://developers.yubico.com/yubioath-desktop/"
+
+  livecheck do
+    url "https://developers.yubico.com/yubioath-desktop/Releases/"
+    strategy :page_match
+    regex(/href=.*?yubioath-desktop-(\d+(\.\d+)*[a-z]?)-mac\.pkg/i)
+  end
 
   depends_on macos: ">= :sierra"
 

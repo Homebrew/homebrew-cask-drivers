@@ -1,8 +1,8 @@
 cask "huiontablet" do
-  version "14.5.0.201120"
-  sha256 "921b74ad4da70239d4d04d34dc34cf7aded77e0f8f62b22aa32e957dc582c5f9"
+  version "14.6.0.210128"
+  sha256 "6f99a9640e8853d9d46f91ec134cc2aee65fc4d4fff340b3310793f606dfef56"
 
-  url "https://driver.huion.com/driver/Mac/HuionTablet_MacDriver_v#{version}.zip"
+  url "https://driverdl.huion.com/driver/Mac/HuionTablet_MacDriver_v#{version}.zip"
   name "Huion Tablet"
   desc "Driver for Huion Tablets"
   homepage "https://huion.com/"

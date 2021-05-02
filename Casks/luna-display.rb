@@ -1,12 +1,17 @@
 cask "luna-display" do
-  version "4.3.0"
-  sha256 "5c483aa7b9104f527de425b38ec2c3a786ff8f21cdbbd917c4f0f47f135e61c1"
+  version "4.4.0"
+  sha256 "ff3b201e1a0c4be8c67c59a82df666ba99ef0f8b85bb4e70ee1e64d2693f2c25"
 
   url "https://s3.amazonaws.com/s3.lunadisplay.com/downloads/LunaDisplay-#{version}.dmg",
-      verified: "s3.amazonaws.com/s3.lunadisplay.com/"
-  appcast "https://s3.lunadisplay.com/downloads/sparkle.xml"
+      verified: "s3.amazonaws.com/s3.lunadisplay.com/downloads/"
   name "Luna Display"
+  desc "Use your iPad as a wireless second display"
   homepage "https://lunadisplay.com/"
+
+  livecheck do
+    url "https://downloads.astropad.com/luna/latest"
+    strategy :header_match
+  end
 
   depends_on macos: ">= :el_capitan"
 
@@ -15,7 +20,12 @@ cask "luna-display" do
   uninstall quit: "com.astro-hq.LunaDisplayMac"
 
   zap trash: [
+    "~/Library/Application Support/com.astro-hq.LunaDeviceSetupService",
+    "~/Library/Application Support/com.astro-hq.LunaDisplayMac",
+    "~/Library/Application Support/LunaDisplay",
     "~/Library/Caches/com.astro-hq.LunaDisplayMac",
+    "~/Library/Logs/Astropad",
+    "~/Library/Preferences/com.astro-hq.AstroLauncher.shared.plist",
     "~/Library/Preferences/com.astro-hq.LunaDisplayMac.plist",
     "~/Library/Saved Application State/com.astro-hq.LunaDisplayMac.savedState",
   ]

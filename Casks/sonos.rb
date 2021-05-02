@@ -1,12 +1,16 @@
 cask "sonos" do
-  version "12.2.2"
-  sha256 "c4eeba983d7f0fa6637b14a40abe40908b7db9e3bb4ef9d7cdb99cd1f4ec769d"
+  version "13.0,62.1.86220"
+  sha256 "f4a0112cbd5b8340ca25e6349daa8000690dd80f182702bdc399787e0e861101"
 
-  url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.no_dots}.dmg"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.sonos.com/en/redir/controller_software_mac2",
-          must_contain: version.no_dots
+  url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.before_comma.no_dots}.dmg"
   name "Sonos"
+  desc "Control your Sonos system"
   homepage "https://www.sonos.com/"
+
+  livecheck do
+    url "https://www.sonos.com/en/redir/controller_software_mac2"
+    strategy :extract_plist
+  end
 
   auto_updates true
 

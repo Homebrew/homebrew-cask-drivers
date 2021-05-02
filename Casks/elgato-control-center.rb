@@ -1,11 +1,16 @@
 cask "elgato-control-center" do
-  version "1.1.3,10337"
-  sha256 "cb8978a4951ab137eb7a7e7e055700c343379b4efa8d0ae3fc714fe6fc8303cb"
+  version "1.1.4,10368"
+  sha256 "bc65b948bc417b9c2be3e993c1042da0ab8745fa9748e0a50179bfd544b46c93"
 
   url "https://edge.elgato.com/egc/macos/eccm/#{version.before_comma}/Control_Center_#{version.before_comma}.#{version.after_comma}.zip"
-  appcast "https://gc-updates.elgato.com/mac/control-center-update/feed.xml"
   name "Elgato Control Center"
+  desc "Control your Elgato Key Lights"
   homepage "https://www.elgato.com/en/gaming/key-light"
+
+  livecheck do
+    url "https://gc-updates.elgato.com/mac/control-center-update/feed.xml"
+    strategy :sparkle
+  end
 
   depends_on macos: ">= :mojave"
 

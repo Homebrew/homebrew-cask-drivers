@@ -1,11 +1,15 @@
 cask "8bitdo-firmware-updater" do
-  version "1.1.6"
-  sha256 "546d33a095f8d5b15798cb86c855fcc5dd37949be589c436c6c0547e7ad40b95"
+  version "2.2.1"
+  sha256 "d90f6b98b4e2127aa892076203789d07f105a8aa9c6d0234911bd55306196579"
 
   url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/8BitDoFirmwareUpdaterV#{version}.zip"
-  appcast "http://tools.8bitdo.com/8BitdoFirmwareUpdater/appcast.xml"
   name "8BitDo Firmware Updater"
   homepage "https://support.8bitdo.com/firmware-updater.html"
+
+  livecheck do
+    url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/appcast.xml"
+    strategy :sparkle
+  end
 
   depends_on macos: ">= :yosemite"
 

@@ -1,9 +1,8 @@
 cask "philips-hue-sync" do
-  version "1.5.1.0"
+  version "1.6.1.12"
   sha256 :no_check
 
-  url "https://flex1548-esd.flexnetoperations.com/flexnet/operations/WebContent?fileID=HueSyncMac",
-      verified: "flex1548-esd.flexnetoperations.com/flexnet/operations/"
+  url "https://firmware.meethue.com/v1/download?deviceTypeId=HueSyncMac"
   name "Philips Hue Sync"
   desc "Control your smart light system"
   homepage "https://www2.meethue.com/en-us/entertainment/hue-sync"

@@ -1,12 +1,20 @@
 cask "elektron-overbridge" do
-  version "2.0.44.3,07287f11-0b57-54d7-a34a-5e2dc608f04e"
-  sha256 "334d2510b3c03da36312d8ed4eeff74bc22b472bab702b5c68bba706aa8fb8c5"
+  version "2.0.47.1,b53f09be-6301-5e3b-b963-e94f3a517dc1"
+  sha256 "d8779e7b3f07019d335e8488156a3558f5c8d3b88a4c9ff5592a480afa5dbf40"
 
-  url "https://se-elektron-devops.s3.amazonaws.com/release/#{version.after_comma}/Elektron_Overbridge_#{version.before_comma}.dmg",
-      verified: "se-elektron-devops.s3.amazonaws.com/"
-  appcast "https://www.elektron.se/support/?connection=overbridge#resources"
+  url "https://s3-eu-west-1.amazonaws.com/se-elektron-devops/release/#{version.after_comma}/Elektron_Overbridge_#{version.before_comma}.dmg",
+      verified: "s3-eu-west-1.amazonaws.com/"
   name "Overbridge"
+  desc "Integrate Elektron hardware into music software"
   homepage "https://www.elektron.se/overbridge/"
+
+  livecheck do
+    url "https://www.elektron.se/support/?connection=overbridge"
+    strategy :page_match do |page|
+      match = page.match(%r{href=.*?/([\da-f]+(?:-[\da-f]+)*)/Elektron_Overbridge_(\d+(?:\.\d+)*)\.dmg}i)
+      "#{match[2]},#{match[1]}"
+    end
+  end
 
   depends_on macos: ">= :sierra"
 
