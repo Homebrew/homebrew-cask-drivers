@@ -5,6 +5,7 @@ cask "acs-acr39u-smartcard-driver" do
   url "https://www.acs.com.hk/download-driver-unified/12835/ACS-Unified-INST-MacOSX-#{version.no_dots}-P.zip"
   appcast "https://www.acs.com.hk/en/driver/302/acr39u-smart-card-reader/"
   name "ACS Unified Installer"
+  desc "PC/SC driver for ACR39U smart card reader"
   homepage "https://www.acs.com.hk/en/driver/302/acr39u-smart-card-reader/"
 
   container nested: "ACS-Unified-INST-MacOSX-#{version.no_dots}-P/acsccid_installer-#{version}.dmg"
