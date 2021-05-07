@@ -38,7 +38,10 @@ cask "bose-soundtouch" do
   },
             signal:    ["TERM", "com.Bose.SoundTouch"],
             quit:      "io.qt.SoundTouchHelper",
-            launchctl: "com.Bose.SoundTouch"
+            launchctl: [
+              "com.Bose.SoundTouch",
+              "application.com.Bose.SoundTouch",
+            ]
 
   zap trash: [
     "~/Library/Application Support/SoundTouch",
