@@ -7,6 +7,11 @@ cask "1kc-razer" do
   desc "Open source color effects manager for Razer devices"
   homepage "https://github.com/1kc/razer-macos"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "Razer macOS.app"
 
   zap trash: [
