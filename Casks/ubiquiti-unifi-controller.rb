@@ -4,10 +4,14 @@ cask "ubiquiti-unifi-controller" do
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg",
       verified: "dl.ubnt.com/"
-  appcast "https://www.ui.com/download/unifi",
-          must_contain: :no_check
   name "Ubiquiti UniFi Network Controller"
+  desc "Set up, configure, manage and analyze your UniFi network"
   homepage "https://unifi-sdn.ui.com/"
+
+  livecheck do
+    url "https://fw-update.ubnt.com/api/firmware-latest?filter=eq~~product~~unifi-controller&filter=eq~~channel~~release&filter=eq~~platform~~macos"
+    regex(/"version"\s*:\s*"v?(\d+(?:\.\d+)+)/i)
+  end
 
   conflicts_with cask: "ubiquiti-unifi-controller-lts"
 
