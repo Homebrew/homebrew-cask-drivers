@@ -4,9 +4,14 @@ cask "blocks-code" do
 
   url "https://assets.roli.com/blocks/BLOCKS+Code/#{version}/BLOCKSCodeInstallerOSX_v#{version}.mpkg",
       verified: "assets.roli.com/blocks/"
-  appcast "https://juce.com/blocks/code"
   name "BLOCKS Code"
+  desc "Develop applications for ROLI BLOCKS using the LittleFoot language"
   homepage "https://juce.com/blocks/code"
+
+  livecheck do
+    url "https://juce.com/blocks/code"
+    regex(%r{/BLOCKSCodeInstallerOSX[._-]?v?(\d+(?:\.\d+)+)\.mpkg}i)
+  end
 
   pkg "BLOCKSCodeInstallerOSX_v#{version}.mpkg"
 
