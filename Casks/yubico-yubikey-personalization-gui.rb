@@ -7,6 +7,11 @@ cask "yubico-yubikey-personalization-gui" do
   desc "YubiKey tool"
   homepage "https://www.yubico.com/products/services-software/personalization-tools/use/"
 
+  livecheck do
+    url "https://github.com/Yubico/yubikey-personalization-gui.git"
+    strategy :git
+  end
+
   pkg "yubikey-personalization-gui-#{version}.pkg"
 
   uninstall quit:    "com.yubico.YKPersonalization",
