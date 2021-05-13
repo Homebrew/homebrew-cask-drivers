@@ -1,6 +1,6 @@
 cask "corsair-icue" do
-  version "3.36.125"
-  sha256 "f3ecba129c9067c8e794f9ea5fa7d5585a331979de6f695194a1e88872f6a782"
+  version "3.38.61"
+  sha256 "a51f0e7a97e19235dddc71f9253942ed2cb0269b138a859dba8abf7dd6d0c17e"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   appcast "https://www.corsair.com/us/en/downloads/search?searchCategory=Cor_Products_iCue_Compatibility"
