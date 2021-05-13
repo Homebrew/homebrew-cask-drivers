@@ -16,7 +16,8 @@ cask "logitech-options" do
   homepage "https://support.logitech.com/software/options"
 
   livecheck do
-    skip "No version information available"
+    url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec86eb2b-8e0b-11e9-a62b-a944e73f7596"
+    regex(%r{/Options[._-]?(\d+(?:\.\d+)+)\.zip}i)
   end
 
   auto_updates true
