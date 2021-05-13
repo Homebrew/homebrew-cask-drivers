@@ -4,9 +4,15 @@ cask "logitech-camera-settings" do
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/cameras/Webcams/LogiCameraSettings_#{version}.pkg"
   name "Logitech Camera Settings"
-  homepage "https://support.logi.com/hc/en-us/articles/360024692954--Downloads-HD-Webcam-C270"
+  desc "Provides access to camera controls"
+  homepage "https://support.logi.com/hc/en-us/articles/360049055854"
 
-  depends_on macos: ">= :mojave"
+  livecheck do
+    url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=9bf6fc93-8e0b-11e9-a62b-cb4c7fb3c2e2"
+    regex(%r{/LogiCameraSettings[._-]?(\d+(?:\.\d+)+)\.pkg}i)
+  end
+
+  depends_on macos: ">= :high_sierra"
 
   pkg "LogiCameraSettings_#{version}.pkg"
 
