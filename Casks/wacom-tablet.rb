@@ -3,10 +3,16 @@ cask "wacom-tablet" do
   sha256 "8d5fde477cd33636d9334d577f3f25647183a51b6ee1de3f7ccb27cda053e9cc"
 
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
-  appcast "https://www.wacom.com/en-de/support/product-support/drivers"
   name "Wacom Tablet"
   desc "Resources for Wacom tablets"
   homepage "https://www.wacom.com/en-us/support/product-support/drivers"
+
+  livecheck do
+    url :homepage
+    regex(%r{/WacomTablet[._-]?(\d+(?:\.\d+)+(?:[_-]\d+)?)\.dmg}i)
+  end
+
+  depends_on macos: ">= :high_sierra"
 
   pkg "Install Wacom Tablet.pkg"
 
