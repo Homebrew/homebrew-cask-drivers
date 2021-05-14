@@ -1,12 +1,17 @@
 cask "corsair-icue" do
-  version "3.38.61"
-  sha256 "a51f0e7a97e19235dddc71f9253942ed2cb0269b138a859dba8abf7dd6d0c17e"
+  version "4.9.350"
+  sha256 "ae563c5175b2c97f8bd867c413386cb81cecb094ce4eb38b74f60f9e4f257392"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
-  appcast "https://www.corsair.com/us/en/downloads/search?searchCategory=Cor_Products_iCue_Compatibility"
   name "Corsair iCUE"
   desc "Software for Corsair components and devices"
   homepage "https://www.corsair.com/us/en/icue"
+
+  livecheck do
+    url "https://www.corsair.com/us/en/downloads/search?search=macos"
+    strategy :page_match
+    regex(/CORSAIR\s*iCUE\s*macOS\s*(\d+(?:\.\d+)*)/i)
+  end
 
   depends_on macos: ">= :high_sierra"
 
