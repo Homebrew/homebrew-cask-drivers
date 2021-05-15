@@ -8,9 +8,7 @@ cask "corsair-icue" do
   homepage "https://www.corsair.com/us/en/icue"
 
   livecheck do
-    url "https://www.corsair.com/us/en/downloads/search?search=macos"
-    strategy :page_match
-    regex(/CORSAIR\s*iCUE\s*macOS\s*(\d+(?:\.\d+)*)/i)
+    skip "Download page uses Imperva/Incapsula"
   end
 
   depends_on macos: ">= :high_sierra"
