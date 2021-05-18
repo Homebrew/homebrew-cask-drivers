@@ -10,8 +10,7 @@ cask "jabra-direct" do
 
   livecheck do
     url "https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json"
-    strategy :page_match
-    regex(/"MacVersion":\s*"(\d+(?:\.\d+)*)"/i)
+    regex(/"MacVersion"\s*:\s*"(\d+(?:\.\d+)+)"/i)
   end
 
   pkg "JabraDirectSetup.pkg"
