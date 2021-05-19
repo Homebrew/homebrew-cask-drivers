@@ -1,5 +1,9 @@
 cask "asix-ax88179" do
-  version "2.19.0,1109"
+  if MacOS.version <= :catalina
+    version "2.19.0,1109"
+  else
+    version "1.2.0,1126"
+  end
   sha256 :no_check
 
   url "https://www.asix.com.tw/en/support/download/file/#{version.after_comma}"
@@ -19,12 +23,20 @@ cask "asix-ax88179" do
     end
   end
 
-  container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
-
-  installer manual: "AX88179_178A_v#{version.before_comma}.app"
+  if MacOS.version <= :catalina
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
+    installer manual: "AX88179_178A_v#{version.before_comma}.app"
+  else
+    container nested: "ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
+    installer manual: "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
+  end
 
   uninstall_preflight do
-    staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+    if MacOS.version <= :catalina
+      staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+    else
+      staged_path.glob("ASIX_USB_Device_Uninstaller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+    end
 
     system_command "/usr/sbin/installer",
                    args: [
