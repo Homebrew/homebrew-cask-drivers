@@ -1,9 +1,11 @@
 cask "asix-ax88179" do
   if MacOS.version <= :catalina
     version "2.19.0,1109"
+    sha256 "2d7dfb318eabe205c4d638d60dfd2e2f0c35473a3538814124631f9714152d32"
+
     container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
     installer manual: "AX88179_178A_v#{version.before_comma}.app"
-    sha256 "2d7dfb318eabe205c4d638d60dfd2e2f0c35473a3538814124631f9714152d32"
+
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
       strategy :page_match do |page|
@@ -17,9 +19,11 @@ cask "asix-ax88179" do
     end
   else
     version "1.2.0,1126"
+    sha256 "be21c2ad48572af587502d1286929ed0f7a5b7195d8e249bfbac0b4a8a867244"
+
     container nested: "ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
     installer manual: "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
-    sha256 "be21c2ad48572af587502d1286929ed0f7a5b7195d8e249bfbac0b4a8a867244"
+
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
       strategy :page_match do |page|
