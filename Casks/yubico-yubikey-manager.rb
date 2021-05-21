@@ -9,8 +9,7 @@ cask "yubico-yubikey-manager" do
 
   livecheck do
     url "https://developers.yubico.com/yubikey-manager-qt/Releases/"
-    strategy :page_match
-    regex(/href=.*?yubikey-manager-qt-(\d+(?:\.\d+)*[a-z]?)-mac\.pkg/i)
+    regex(/href=.*?yubikey[._-]manager[._-]qt[._-]v?(\d+(?:\.\d+)+[a-z]?)[._-]mac\.pkg/i)
   end
 
   depends_on macos: ">= :sierra"
