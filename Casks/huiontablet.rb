@@ -1,13 +1,17 @@
 cask "huiontablet" do
-  version "14.6.0.210128"
-  sha256 "6f99a9640e8853d9d46f91ec134cc2aee65fc4d4fff340b3310793f606dfef56"
+  version "15.4.1.143"
+  sha256 "bc5acb56578b0e7b9a87e90e37f44004b3b2a4b21b11b042015161222504cdeb"
 
-  url "https://driverdl.huion.com/driver/Mac/HuionTablet_MacDriver_v#{version}.zip"
+  url "https://driverdl.huion.com/driver/Mac/HuionTablet_MacDriver_v#{version}.dmg"
   name "Huion Tablet"
   desc "Driver for Huion Tablets"
   homepage "https://huion.com/"
 
-  container nested: "HuionTablet_MacDriver_v#{version}.dmg"
+  livecheck do
+    url "https://huion.com/download/"
+    strategy :page_match
+    regex(/HuionTablet_MacDriver_v?(\d+(?:\.\d+)*)\.dmg/i)
+  end
 
   app "HuionTablet.app"
 
