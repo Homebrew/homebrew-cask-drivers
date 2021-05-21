@@ -7,6 +7,12 @@ cask "huiontablet" do
   desc "Driver for Huion Tablets"
   homepage "https://huion.com/"
 
+  livecheck do
+    url "https://huion.com/download/"
+    strategy :page_match
+    regex(/HuionTablet_MacDriver_v?(\d+(?:\.\d+)*)\.dmg/i)
+  end
+
   app "HuionTablet.app"
 
   zap trash: "~/Library/Saved Application State/com.huion.HuionTablet.savedState"
