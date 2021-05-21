@@ -22,7 +22,6 @@ cask "asix-ax88179" do
     sha256 "be21c2ad48572af587502d1286929ed0f7a5b7195d8e249bfbac0b4a8a867244"
 
     container nested: "ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
-
     pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
 
     livecheck do
