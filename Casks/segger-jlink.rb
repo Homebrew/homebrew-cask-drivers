@@ -1,8 +1,8 @@
 cask "segger-jlink" do
-  version "7.20a"
+  version "7.20b"
 
   if Hardware::CPU.intel?
-    sha256 "bf99c4f5e09fc6c71b3afcb1d27c27a08dec26a5020e9807649f0ddd32edcc4d"
+    sha256 "afe43372a52d2b32a54b157eb37a1b1df0b5f2bcd70de6c29214de5f106c71d1"
 
     url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_x86_64.pkg",
         using: :post,
@@ -14,7 +14,7 @@ cask "segger-jlink" do
 
     pkg "JLink_MacOSX_V#{version.no_dots}_x86_64.pkg"
   else
-    sha256 "c4b91866f06dce320541218c2c805e64ded876e172ff0f7ad610257678c62ddd"
+    sha256 "1eda5cf14af68ee09ef25b35b0bcabeea91c0be2013e7f502ed46240d05e2af6"
 
     url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_arm64.pkg",
         using: :post,
