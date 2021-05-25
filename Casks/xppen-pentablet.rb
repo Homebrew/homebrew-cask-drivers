@@ -12,4 +12,11 @@ cask "xppen-pentablet" do
   container nested: "XP-PENMac_#{version}/XP-PENMac_#{version}.dmg"
 
   app "XP-PenPenTabletPro/PenTablet.app"
+
+  zap trash: [
+    "~/Library/Preferences/com.ugee.uninstallpen.plist",
+    "~/Library/Saved Application State/com.ugee.PenTablet2.0.savedState",
+    "/Library/Application Support/PenDriver",
+    "~/.PenTablet",
+  ]
 end
