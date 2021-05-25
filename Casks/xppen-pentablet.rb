@@ -10,6 +10,7 @@ cask "xppen-pentablet" do
   livecheck do
     url :url
     strategy :header_match
+    regex(/XP-PENMac_(\d+(?:.\d+)*)\.zip/i)
   end
 
   container nested: "XP-PENMac_#{version}/XP-PENMac_#{version}.dmg"
