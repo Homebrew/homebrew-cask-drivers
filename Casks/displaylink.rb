@@ -9,7 +9,7 @@ cask "displaylink" do
     version "5.2.5,1636"
     sha256 "aa061f65ffb613c5138b88051f56da12825cfe217fa6ae589f7d5125981f76b7"
   else
-    version "1.3.1"
+    version "1.3.1,1713"
     sha256 "88c7ffa126c4c2270792d3548df0f49211de97b3bb40d5da544aaca3b9f6ba0e"
   end
 
