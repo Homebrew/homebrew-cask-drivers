@@ -4,6 +4,7 @@ cask "elgato-wave-link" do
 
   url "https://edge.elgato.com/egc/macos/wavelink/1.2/WaveLink_#{version}.pkg"
   name "Elgato Wave Link"
+  desc "Intuitive software custom-built for content creation"
   homepage "https://www.elgato.com/en/wave-1"
 
   depends_on macos: ">= :sierra"
@@ -16,6 +17,6 @@ cask "elgato-wave-link" do
 
   zap trash: [
     "~/Library/Logs/WaveLink",
-    "~/Library/Preferences/com.elgato.WaveLink.plist"
+    "~/Library/Preferences/com.elgato.WaveLink.plist",
   ]
 end
