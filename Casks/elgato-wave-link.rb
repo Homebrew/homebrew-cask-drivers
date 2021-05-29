@@ -21,7 +21,7 @@ cask "elgato-wave-link" do
 
   depends_on macos: ">= :sierra"
 
-  pkg "WaveLink_#{version}.pkg"
+  pkg "WaveLink_#{version.before_comma}.pkg"
 
   uninstall launchctl: "com.elgato.WaveLink",
             quit:      "com.elgato.WaveLink",
