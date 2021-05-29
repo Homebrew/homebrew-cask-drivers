@@ -1,8 +1,8 @@
 cask "elgato-wave-link" do
-  version "1.2.0.2595"
+  version "1.2.0.2595,1.2"
   sha256 "f973725644a57b3b5b3d7bc51a770f9bb7401957b7167f099a1884efdb66d432"
 
-  url "https://edge.elgato.com/egc/macos/wavelink/1.2/WaveLink_#{version}.pkg"
+  url "https://edge.elgato.com/egc/macos/wavelink/#{version.after_comma}/WaveLink_#{version}.pkg"
   name "Elgato Wave Link"
   desc "Intuitive software custom-built for content creation"
   homepage "https://www.elgato.com/en/wave-1"
@@ -12,13 +12,13 @@ cask "elgato-wave-link" do
     strategy :page_match do |page|
       page.split(/class=['"]?toggle-content['"]?/).map do |toggle_content|
         match = toggle_content.match(
-          %r{href=.*?/WaveLink_(\d+(?:\.\d+)*)\.pkg}mi,
+          %r{href=.*?/(\d+(?:\.\d+)*)/WaveLink_(\d+(?:\.\d+)*)\.pkg}mi,
         )
-        (match[1]).to_s if match
+        "#{match[2]},#{match[1]}" if match
       end.compact
     end
   end
-  
+
   depends_on macos: ">= :sierra"
 
   pkg "WaveLink_#{version}.pkg"
