@@ -7,6 +7,18 @@ cask "elgato-wave-link" do
   desc "Intuitive software custom-built for content creation"
   homepage "https://www.elgato.com/en/wave-1"
 
+  livecheck do
+    url "https://help.elgato.com/hc/en-us/articles/360043289491-Elgato-Wave-Link-Release-Notes"
+    strategy :page_match do |page|
+      page.split(/class=['"]?toggle-content['"]?/).map do |toggle_content|
+        match = toggle_content.match(
+          %r{href=.*?/WaveLink_(\d+(?:\.\d+)*)\.pkg}mi,
+        )
+        (match[1]).to_s if match
+      end.compact
+    end
+  end
+  
   depends_on macos: ">= :sierra"
 
   pkg "WaveLink_#{version}.pkg"
