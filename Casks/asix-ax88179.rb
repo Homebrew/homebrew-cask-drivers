@@ -19,7 +19,7 @@ cask "asix-ax88179" do
   else
     version "1.2.0,1132"
 
-    container nested: "ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
+    container nested: "ASIX_USB_Device_Installer_macOS_11.3_above_Driver_v#{version.before_comma}_20210521/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
     pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
 
     livecheck do
