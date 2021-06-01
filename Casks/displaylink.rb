@@ -23,6 +23,10 @@ cask "displaylink" do
   desc "Drivers for DisplayLink docks, adapters and monitors"
   homepage "https://www.displaylink.com/"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   if MacOS.version <= :mojave
     pkg "DisplayLink Software Installer.pkg"
   else
