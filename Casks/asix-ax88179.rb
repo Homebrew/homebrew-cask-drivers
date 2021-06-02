@@ -45,7 +45,8 @@ cask "asix-ax88179" do
     if MacOS.version <= :catalina
       staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     else
-      staged_path.glob("ASIX_USB_Device_Uninstaller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+      # Extra wildcard due to misspelled "Uninistaller". Can remove once fixed.
+      staged_path.glob("ASIX_USB_Device_Unin*staller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     end
 
     system_command "/usr/sbin/installer",
@@ -56,10 +57,7 @@ cask "asix-ax88179" do
                    sudo: true
   end
 
-  uninstall pkgutil: [
-    "com.asix.ax88179.uninstall",
-    "com.asix.pkg.ASIXUSBDeviceAppInstaller",
-  ]
+  uninstall pkgutil: "com.asix.ax88179.uninstall"
 
   caveats do
     reboot
