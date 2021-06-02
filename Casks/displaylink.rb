@@ -10,7 +10,7 @@ cask "displaylink" do
     sha256 "aa061f65ffb613c5138b88051f56da12825cfe217fa6ae589f7d5125981f76b7"
   else
     version "1.4,1715"
-    sha256 "9e603d893f1598913bf665fd962f30c7bf3d5f23008caf0be47816bcd2752e8d"
+    sha256 "7839fe5200ecb8f83c714a3195d54dffd2eb2969ee443f2cbc386ff28aeb93fc"
   end
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
