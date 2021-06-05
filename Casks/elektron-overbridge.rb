@@ -2,8 +2,8 @@ cask "elektron-overbridge" do
   version "2.0.47.1,b53f09be-6301-5e3b-b963-e94f3a517dc1"
   sha256 "d8779e7b3f07019d335e8488156a3558f5c8d3b88a4c9ff5592a480afa5dbf40"
 
-  url "https://s3-eu-west-1.amazonaws.com/se-elektron-devops/release/#{version.after_comma}/Elektron_Overbridge_#{version.before_comma}.dmg",
-      verified: "s3-eu-west-1.amazonaws.com/"
+  url "https://se-elektron-devops.s3.amazonaws.com/release/#{version.after_comma}/Elektron_Overbridge_#{version.before_comma}.dmg",
+      verified: "se-elektron-devops.s3.amazonaws.com/release/"
   name "Overbridge"
   desc "Integrate Elektron hardware into music software"
   homepage "https://www.elektron.se/overbridge/"
@@ -11,8 +11,9 @@ cask "elektron-overbridge" do
   livecheck do
     url "https://www.elektron.se/support/?connection=overbridge"
     strategy :page_match do |page|
-      match = page.match(%r{href=.*?/([\da-f]+(?:-[\da-f]+)*)/Elektron_Overbridge_(\d+(?:\.\d+)*)\.dmg}i)
-      "#{match[2]},#{match[1]}"
+      page.scan(%r{href=.*?/(\h+(?:-\h+)*)/Elektron[._-]?Overbridge[._-]?v?(\d+(?:\.\d+)+)\.dmg}i).map do |match|
+        "#{match[1]},#{match[0]}"
+      end
     end
   end
 
