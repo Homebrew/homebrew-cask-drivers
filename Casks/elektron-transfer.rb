@@ -10,7 +10,7 @@ cask "elektron-transfer" do
 
   livecheck do
     url "https://www.elektron.se/support/?connection=transfer"
-    regex(%r{href=.*?/Elektron[._-]?Transfer[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
+    regex(%r{href=.*?/Elektron[._-]?Transfer[._-]?v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 
   depends_on macos: ">= :el_capitan"
