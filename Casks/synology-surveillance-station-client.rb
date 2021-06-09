@@ -1,12 +1,16 @@
 cask "synology-surveillance-station-client" do
-  version "1.2.9-1082"
-  sha256 "cda1fb645c34d84b56c821caa70c69de159218a9c3bd12c60934cf8adbf976f1"
+  version "1.2.10-2171"
+  sha256 "1f389c88594c6791c7e8ea15cfcc7b2def45f0ba7692302fdf2b5b0feca5683a"
 
-  url "https://global.download.synology.com/download/Tools/SurveillanceStationClient/#{version}/Mac/Synology%20Surveillance%20Station%20Client-#{version}.dmg"
-  appcast "https://www.synology.com/en-us/releaseNote/SurveillanceStationClient"
+  url "https://global.download.synology.com/download/Utility/SurveillanceStationClient/#{version}/Mac/Synology%20Surveillance%20Station%20Client-#{version}.dmg"
   name "Synology Surveillance Station Client"
   desc "Desktop utility to access Surveillance Station on Synology products"
   homepage "https://www.synology.com/surveillance/"
+
+  livecheck do
+    url "https://www.synology.com/en-us/releaseNote/SurveillanceStationClient"
+    regex(/>\s*Version:\s*(\d+(?:\.\d+)*-\d+)\s*</i)
+  end
 
   pkg "Install Synology Surveillance Station Client.pkg"
 
