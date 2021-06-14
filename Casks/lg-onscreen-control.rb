@@ -5,7 +5,12 @@ cask "lg-onscreen-control" do
   url "https://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}",
       verified: "lge.com/"
   name "LG OnScreen Control"
+  desc "Displays all connected LG monitor information"
   homepage "https://www.lg.com/us/support/monitors"
+
+  livecheck do
+    skip "No version information available"
+  end
 
   depends_on macos: ">= :mojave"
 
