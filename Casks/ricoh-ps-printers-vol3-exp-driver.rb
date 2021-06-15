@@ -6,6 +6,11 @@ cask "ricoh-ps-printers-vol3-exp-driver" do
   name "Ricoh PS printers Vol 3 EXP driver"
   homepage "https://support.ricoh.com/bb/html/dr_ut_e/apc/model/mpc2011/mpc2011.htm"
 
+  livecheck do
+    url "https://support.ricoh.com/bb/html/dr_ut_e/apc/model/mpc2011/mpc2011en.htm"
+    regex(/href=.*Ricoh_PS_Printers_Vol3_EXP_LIO_(\d+(?:\.\d+)+)\.dmg/i)
+  end
+
   pkg "Ricoh_PS_Printers_Vol3_EXP_LIO_Driver.pkg"
 
   uninstall pkgutil: [
