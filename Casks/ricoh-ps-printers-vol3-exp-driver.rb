@@ -1,8 +1,8 @@
 cask "ricoh-ps-printers-vol3-exp-driver" do
-  version "3.4.0.0"
-  sha256 "283e4e27e6544ea6c21d1c9c8523636114c72bb70460ef652cf0765cd0c3756d"
+  version "3.9.0.0"
+  sha256 "2a092e94f8abb664fb9fd1512135a53d0ff44ba9d0bcea89a364aebffda936a2"
 
-  url "https://support.ricoh.com/bb/pub_e/dr_ut_e/0001310/0001310159/V#{version.delete(".")}/Ricoh_PS_Printers_Vol3_EXP_LIO_#{version}.dmg"
+  url "https://support.ricoh.com/bb/pub_e/dr_ut_e/0001316/0001316460/V#{version.delete(".")}/Ricoh_PS_Printers_Vol3_EXP_LIO_#{version}.dmg"
   name "Ricoh PS printers Vol 3 EXP driver"
   homepage "https://support.ricoh.com/bb/html/dr_ut_e/apc/model/mpc2011/mpc2011.htm"
 
