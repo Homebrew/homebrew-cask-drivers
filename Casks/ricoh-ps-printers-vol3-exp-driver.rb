@@ -21,6 +21,10 @@ cask "ricoh-ps-printers-vol3-exp-driver" do
     "ricoh.commandfilter.pkg",
     "ricoh.copycontrol.pkg",
     "ricoh.cupsfilter.pkg",
+    "ricoh.gencupsfilter.pkg",
+    "ricoh.genjoblog.pkg",
+    "ricoh.genuserAuthentication.pkg",
     "ricoh.joblog.pkg",
+    "ricoh.userAuthentication.pkg",
   ]
 end
