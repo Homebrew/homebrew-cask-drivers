@@ -16,10 +16,11 @@ cask "kensingtonworks" do
               "com.kensington.tbwDKDriver",
               "com.kensington.tbwdkmanager",
             ],
-            script:    {
-              executable: "/Applications/Utilities/KensingtonWorks Uninstaller.app/Contents/MacOS/KensingtonWorks Uninstaller",
-            },
+            kext:      [
+              "/Library/Extensions/trackballworks2.kext",
+            ],
             pkgutil:   [
+              "com.kensington.trackballworks2",
               "com.kensington.trackballworks2.installer",
             ],
             delete:    [
