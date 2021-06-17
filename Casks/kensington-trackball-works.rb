@@ -1,8 +1,8 @@
 cask "kensington-trackball-works" do
-  version "1.5.0"
-  sha256 "d9245b9bfec91d61cfedb1961a33297e0d1f68267983f56ef965e9c4a609c692"
+  version "2.2.10"
+  sha256 "b3b8190703272e9cb4c1d27b165a63227a4f16a33ff5b130ab15f51a6eb95d66"
 
-  url "https://www.kensington.com/siteassets/software-support/trackballworks-#{version}.dmg"
+  url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
   name "Kensington TrackballWorks"
   homepage "https://www.kensington.com/"
 
