@@ -1,13 +1,13 @@
 cask "lmsclients-squeezeplay" do
-  version "8.0.1r1368"
+  version "8.0.1r1382"
 
   if Hardware::CPU.intel?
-    sha256 "1f7794f7e119851a2176bacd0b3ae4da5e3aaf843f38f0a3df84f1da238c4887"
+    sha256 "bcc278b08d367d47bfceba1b1adad40564bc0062c31014bd29ed9e3e60cbafe1"
 
     url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-x86_64-#{version}.dmg",
         verified: "downloads.sourceforge.net/lmsclients/"
   else
-    sha256 "d58901a39278856e9fa1261043919d086c49ec822e2301317b5bcb4220f25a55"
+    sha256 "a06f0f2a55bb82f7dbf7dd8408f39292eaed20c61d8ccde5ee42b0e24e14ac11"
 
     url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-M1-#{version}.dmg",
         verified: "downloads.sourceforge.net/lmsclients/"
