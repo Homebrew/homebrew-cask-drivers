@@ -4,8 +4,13 @@ cask "kensingtonworks" do
 
   url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
   name "KensingtonWorks"
-  desc "Software to personalise Kensingtons trackballs, mice, and presenters"
+  desc "Software to personalize Kensingtons trackballs, mice, and presenters"
   homepage "https://www.kensington.com/software/kensingtonworks/"
+
+  livecheck do
+    url :homepage
+    regex(/href=.*?kensingtonworks[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+  end
 
   pkg "kensingtonworks_#{version}.pkg"
 
@@ -16,18 +21,17 @@ cask "kensingtonworks" do
               "com.kensington.tbwDKDriver",
               "com.kensington.tbwdkmanager",
             ],
-            kext:      [
-              "/Library/Extensions/trackballworks2.kext",
-            ],
+            kext:      "/Library/Extensions/trackballworks2.kext",
             pkgutil:   [
               "com.kensington.trackballworks2",
               "com.kensington.trackballworks2.installer",
-            ],
-            delete:    [
-              "/Library/Application Support/Kensington",
-              "~/Library/Application Support/KensingtonWorks",
-              "~/Library/Logs/KensingtonWorks",
             ]
+
+  zap trash: [
+    "/Library/Application Support/Kensington",
+    "~/Library/Application Support/KensingtonWorks",
+    "~/Library/Logs/KensingtonWorks",
+  ]
 
   caveats do
     reboot
