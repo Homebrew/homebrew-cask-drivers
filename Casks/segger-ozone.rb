@@ -1,6 +1,6 @@
 cask "segger-ozone" do
-  version "3.22e"
-  sha256 "86e5e0c8561dc68f867f013beacb27b76da3a68178a25d5d609179b0b4502e98"
+  version "3.24"
+  sha256 "be8bbd1f30b22c5cc9c987ee9573c987cd215cfd6ab502885d4d5f8b7143e69d"
 
   url "https://www.segger.com/downloads/jlink/Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
   name "Ozone"
@@ -9,8 +9,7 @@ cask "segger-ozone" do
 
   livecheck do
     url "https://www.segger.com/downloads/jlink/ReleaseNotes_Ozone.html"
-    strategy :page_match
-    regex(/<h2>Version\s*(\d+(?:\.\d+)*[a-z]?)/i)
+    regex(/<h2>\s*Version\s*(\d+(?:\.\d+)+[a-z]?)/i)
   end
 
   pkg "Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
