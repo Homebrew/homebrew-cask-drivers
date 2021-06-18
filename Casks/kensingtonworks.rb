@@ -4,7 +4,7 @@ cask "kensingtonworks" do
 
   url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
   name "KensingtonWorks"
-  desc "Software to personalize Kensingtons trackballs, mice, and presenters"
+  desc "Software to personalize Kensington trackballs, mice, and presenters"
   homepage "https://www.kensington.com/software/kensingtonworks/"
 
   livecheck do
