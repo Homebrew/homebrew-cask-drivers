@@ -1,8 +1,8 @@
 cask "segger-ozone" do
   version "3.24"
-  sha256 "be8bbd1f30b22c5cc9c987ee9573c987cd215cfd6ab502885d4d5f8b7143e69d"
+  sha256 :no_check
 
-  url "https://www.segger.com/downloads/jlink/Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
+  url "https://www.segger.com/downloads/jlink/Ozone_macOS_Universal.pkg"
   name "Ozone"
   desc "J-Link Debugger and Performance Analyzer"
   homepage "https://www.segger.com/products/development-tools/ozone-j-link-debugger"
@@ -12,7 +12,7 @@ cask "segger-ozone" do
     regex(/<h2>\s*Version\s*(\d+(?:\.\d+)+[a-z]?)/i)
   end
 
-  pkg "Ozone_MacOSX_V#{version.no_dots}_Universal.pkg"
+  pkg "Ozone_macOS_Universal.pkg"
 
   uninstall quit:    "com.yourcompany.Ozone",
             pkgutil: "com.segger.pkg.Ozone"
