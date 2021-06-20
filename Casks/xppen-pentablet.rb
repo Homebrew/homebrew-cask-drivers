@@ -1,5 +1,5 @@
 cask "xppen-pentablet" do
-  version "3.1.1_210507"
+  version "3.1.2_210610"
   sha256 :no_check
 
   url "https://www.xp-pen.com/download/file/id/1968"
@@ -10,7 +10,7 @@ cask "xppen-pentablet" do
   livecheck do
     url :url
     strategy :header_match
-    regex(/XP-PENMac_(\d+(?:.\d+)*)\.zip/i)
+    regex(/XP[._-]PENMac[._-]v?(\d+(?:\.\d+)+[._-]\d+)\.zip/i)
   end
 
   container nested: "XP-PENMac_#{version}/XP-PENMac_#{version}.dmg"
@@ -18,9 +18,9 @@ cask "xppen-pentablet" do
   app "XP-PenPenTabletPro/PenTablet.app"
 
   zap trash: [
+    "/Library/Application Support/PenDriver",
     "~/Library/Preferences/com.ugee.uninstallpen.plist",
     "~/Library/Saved Application State/com.ugee.PenTablet2.0.savedState",
-    "/Library/Application Support/PenDriver",
     "~/.PenTablet",
   ]
 end
