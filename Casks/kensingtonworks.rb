@@ -12,6 +12,9 @@ cask "kensingtonworks" do
     regex(/href=.*?kensingtonworks[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
   end
 
+  conflicts_with cask: "homebrew/cask-drivers/kensington-trackball-works"
+  depends_on macos: ">= :sierra"
+
   pkg "kensingtonworks_#{version}.pkg"
 
   uninstall launchctl: "com.kensington.trackballworks",
