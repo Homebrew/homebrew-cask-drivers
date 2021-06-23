@@ -4,7 +4,17 @@ cask "kensington-trackball-works" do
 
   url "https://www.kensington.com/siteassets/software-support/trackballworks-#{version}.dmg"
   name "Kensington TrackballWorks"
-  homepage "https://www.kensington.com/"
+  desc "Software to program Kensington Trackballs"
+  homepage "https://www.kensington.com/software/trackballworks-customization-software/"
+
+  conflicts_with cask: "homebrew/cask-drivers/kensingtonworks"
+  depends_on macos: [
+    :el_capitan,
+    :sierra,
+    :high_sierra,
+    :mojave,
+    :catalina,
+  ]
 
   pkg "Kensington TrackballWorks.pkg"
 
@@ -15,4 +25,8 @@ cask "kensington-trackball-works" do
             quit:      "com.kensington.trackballworks.helper",
             kext:      "com.kensington.trackballworks.driver",
             pkgutil:   "com.kensington.trackballworks.driver.installer"
+
+  caveats do
+    discontinued
+  end
 end
