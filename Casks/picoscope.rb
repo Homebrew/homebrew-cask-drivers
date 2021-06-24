@@ -12,7 +12,7 @@ cask "picoscope" do
     strategy :page_match
     regex(%r{href=.*?/PicoScope-(\d+(?:\.\d+)*)\.pkg}i)
   end
-  
+
   pkg "PicoScope-#{version}.pkg"
 
   uninstall pkgutil: "com.picotech.picoscope6"
