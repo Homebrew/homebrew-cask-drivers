@@ -10,10 +10,10 @@ cask "picoscope" do
   livecheck do
     url "https://www.picotech.com/downloads/_lightbox/"
     strategy :page_match
-    regex(%r{href=.*?/PicoScope-(\d+(?:\.\d+)*)\.pkg}i)
+    regex(%r{href=.*?/PicoScope-(\d+(?:.\d+)*)\.pkg}i)
   end
 
   pkg "PicoScope-#{version}.pkg"
 
-  uninstall pkgutil: "com.picotech.picoscope6"
+  uninstall pkgutil: "com.picotech.picoscope#{version.major}"
 end
