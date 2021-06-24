@@ -1,13 +1,18 @@
 cask "behringer-x32-edit" do
   # NOTE: "32" is not a version number, but an intrinsic part of the product name
-  version "4.2"
-  sha256 "69297f08ff205016f4490f891a6f50b623d2a50752019459d7d91a4f809c1520"
+  version "4.3"
+  sha256 "ed200bdd08a7fbbf8146f18f4bc95011a814d7a283f04a36040b11e4445da13b"
 
   url "https://mediadl.musictribe.com/download/software/behringer/X32/X32-Edit_MAC_#{version}.zip",
       verified: "mediadl.musictribe.com/download/software/behringer/"
   name "Behringer X32-Edit"
   desc "Edit Behringer Digital Mixers via LAN/Wi-Fi"
   homepage "https://www.behringer.com/Categories/Behringer/Mixers/Digital/X32/p/P0ASF/"
+
+  livecheck do
+    url "https://www.behringer.com/.rest/musictribe/v1/products/media-library?brandName=behringer&modelCode=P0ASF"
+    regex(%r{/X32[._-]?Edit[._-]?MAC[._-]?(\d+(?:\.\d+)+)\.zip}i)
+  end
 
   app "X32-Edit_#{version}/X32-Edit.app"
 

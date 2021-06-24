@@ -1,5 +1,5 @@
 cask "jabra-direct" do
-  version "5.2.20825"
+  version "5.5.37716"
   sha256 :no_check
 
   url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
@@ -10,8 +10,7 @@ cask "jabra-direct" do
 
   livecheck do
     url "https://jabraexpressonlinejdo.jabra.com/jdo/jdo.json"
-    strategy :page_match
-    regex(/"MacVersion":\s*"(\d+(?:\.\d+)*)"/i)
+    regex(/"MacVersion"\s*:\s*"(\d+(?:\.\d+)+)"/i)
   end
 
   pkg "JabraDirectSetup.pkg"

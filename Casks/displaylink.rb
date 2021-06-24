@@ -9,8 +9,8 @@ cask "displaylink" do
     version "5.2.5,1636"
     sha256 "aa061f65ffb613c5138b88051f56da12825cfe217fa6ae589f7d5125981f76b7"
   else
-    version "1.3,1697"
-    sha256 "24c2fbb08ca119225d92a8a88accb7199ce3c50c1d78aa253effe2432ff28507"
+    version "1.4,1715"
+    sha256 "7839fe5200ecb8f83c714a3195d54dffd2eb2969ee443f2cbc386ff28aeb93fc"
   end
 
   url "https://www.displaylink.com/downloads/file?id=#{version.after_comma}",
@@ -22,6 +22,10 @@ cask "displaylink" do
   name "DisplayLink USB Graphics Software"
   desc "Drivers for DisplayLink docks, adapters and monitors"
   homepage "https://www.displaylink.com/"
+
+  livecheck do
+    skip "No version information available"
+  end
 
   if MacOS.version <= :mojave
     pkg "DisplayLink Software Installer.pkg"

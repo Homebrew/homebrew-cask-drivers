@@ -1,12 +1,15 @@
 cask "corsair-icue" do
-  version "3.36.125"
-  sha256 "f3ecba129c9067c8e794f9ea5fa7d5585a331979de6f695194a1e88872f6a782"
+  version "4.12.214"
+  sha256 "b8260c797f86bcc0d35a15c1d94e53ae5e8e6bc5d01b6ea0f483afa14edb19bc"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
-  appcast "https://www.corsair.com/us/en/downloads/search?searchCategory=Cor_Products_iCue_Compatibility"
   name "Corsair iCUE"
   desc "Software for Corsair components and devices"
   homepage "https://www.corsair.com/us/en/icue"
+
+  livecheck do
+    skip "Download page uses Imperva/Incapsula"
+  end
 
   depends_on macos: ">= :high_sierra"
 

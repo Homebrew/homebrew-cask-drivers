@@ -4,8 +4,8 @@ cask "kiibohd-configurator" do
 
   url "https://github.com/kiibohd/configurator/releases/download/v#{version}/kiibohd-configurator-#{version}-mac.dmg",
       verified: "github.com/kiibohd/configurator/"
-  appcast "https://github.com/kiibohd/configurator/releases.atom"
   name "Kiibohd Configurator"
+  desc "Modular community keyboard firmware"
   homepage "http://kiibohd.com/"
 
   depends_on formula: "dfu-util"

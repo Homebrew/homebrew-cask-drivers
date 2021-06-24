@@ -4,8 +4,8 @@ cask "qmk-toolbox" do
 
   url "https://github.com/qmk/qmk_toolbox/releases/download/#{version}/QMK.Toolbox.app.zip",
       verified: "github.com/qmk/qmk_toolbox/"
-  appcast "https://github.com/qmk/qmk_toolbox/releases.atom"
   name "QMK Toolbox"
+  desc "Toolbox companion for QMK Firmware"
   homepage "https://qmk.fm/"
 
   app "QMK Toolbox.app"

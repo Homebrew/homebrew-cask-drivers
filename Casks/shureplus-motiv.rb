@@ -1,12 +1,17 @@
 cask "shureplus-motiv" do
-  version "1.0.9.26"
-  sha256 "39ed1e4208c9784b84f449eaebb35996a47f9df5c570ce00fcbb23de5f9c10a7"
+  version "1.1.0.105"
+  sha256 "a9c81b7123f1613f5ef5a76d49444ad1154d2a0cb77ce41a9d386999466a784d"
 
-  url "https://d24z4d3zypmncx.cloudfront.net/Software/shureplus-motiv/ShurePlusMOTIV_Mac_#{version}.dmg",
-      verified: "https://d24z4d3zypmncx.cloudfront.net/Software/shureplus-motiv/"
+  url "https://d24z4d3zypmncx.cloudfront.net/Software/ckgifea480ba50b703lmhw1ks/ShurePlusMOTIV-mac-#{version}.zip",
+      verified: "d24z4d3zypmncx.cloudfront.net/Software/ckgifea480ba50b703lmhw1ks/"
   name "ShurePlus MOTIV"
   desc "Additional features and controls for Shure MV7 and MV88+ microphones"
   homepage "https://www.shure.com/en-US/products/software/shure_plus_motiv_desktop"
+
+  livecheck do
+    url "https://www.shure.com/en-US/support/downloads/software-firmware-archive/shure_plus_motiv_desktop"
+    regex(%r{href=.*?/ShurePlusMOTIV[._-]mac[._-]v?(\d+(?:\.\d+)+)\.(?:zip|dmg)}i)
+  end
 
   app "ShurePlus MOTIV.app"
 

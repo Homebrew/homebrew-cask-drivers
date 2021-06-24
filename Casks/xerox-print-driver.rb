@@ -19,10 +19,11 @@ cask "xerox-print-driver" do
 
   name "Xerox Print Driver"
   desc "Drivers for Xerox printers"
-  homepage "https://www.support.xerox.com/support/colorqube-8570/downloads/"
+  homepage "https://www.support.xerox.com/en-us/product/colorqube-8570/downloads"
 
   livecheck do
-    skip "No version information available"
+    url :homepage
+    regex(/XeroxDrivers[._-](\d+(?:\.\d+)*_\d+)\.dmg/i)
   end
 
   if MacOS.version <= :sierra

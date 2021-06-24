@@ -1,6 +1,6 @@
 cask "synology-drive" do
-  version "2.0.4,11112"
-  sha256 "19b8f03ece1dc8443da1e6df469d2ddf8916c4d2d15d7c9a04c0e84deb93c33b"
+  version "3.0.1,12664"
+  sha256 "c3df3c20b506e84656ede14a150164fcacd15570fab43c87933223ce1a2ed86e"
 
   url "https://global.download.synology.com/download/Utility/SynologyDriveClient/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-drive-client-#{version.after_comma}.dmg"
   name "Synology Drive"
@@ -10,8 +10,9 @@ cask "synology-drive" do
   livecheck do
     url "https://www.synology.com/en-us/releaseNote/SynologyDriveClient"
     strategy :page_match do |page|
-      match = page.match(/Version:\s*(\d+(?:\.\d+)*)-(\d+)/i)
-      "#{match[1]},#{match[2]}"
+      page.scan(/>\s*Version:\s*(\d+(?:\.\d+)*)-(\d+)\s*</i).map do |match|
+        "#{match[0]},#{match[1]}"
+      end
     end
   end
 
@@ -25,5 +26,6 @@ cask "synology-drive" do
     "com.synology.CloudStationUI",
   ],
             pkgutil:   "com.synology.CloudStation",
-            launchctl: "com.synology.Synology Cloud Station"
+            launchctl: "com.synology.Synology Cloud Station",
+            delete:    "/Applications/Synology Drive Client.app"
 end

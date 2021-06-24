@@ -3,8 +3,8 @@ cask "xbox360-controller-driver-unofficial" do
   sha256 "540c995554462af788f89e9bfa82e2fa3e6d1ff523dc2cbb7aa52415ecd3134f"
 
   url "https://github.com/360Controller/360Controller/releases/download/v#{version}/360ControllerInstall_#{version}.dmg"
-  appcast "https://github.com/360Controller/360Controller/releases.atom"
   name "TattieBogle Xbox 360 Controller Driver (with improvements)"
+  desc "Drivers for the Microsoft Xbox series of controllers"
   homepage "https://github.com/360Controller/360Controller"
 
   depends_on macos: ">= :el_capitan"

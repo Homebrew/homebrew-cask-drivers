@@ -1,6 +1,6 @@
 cask "steelseries-engine" do
-  version "3.20.0"
-  sha256 "e9530cd08459dcc011de36f0a86cf545335e8e4aed625b5b0c39b833adb1a295"
+  version "3.22.0"
+  sha256 "14267eeee45fbd95b9ee5ca49c3b2d33957ce5f088a455a74ccb48213310ce8f"
 
   url "https://downloads.steelseriescdn.com/drivers/engine/SteelSeriesEngine#{version}.pkg",
       verified: "steelseriescdn.com/"
