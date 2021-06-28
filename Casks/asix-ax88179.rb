@@ -1,9 +1,26 @@
 cask "asix-ax88179" do
-  if MacOS.version <= :catalina
+  if MacOS.version <= :mojave
     version "2.19.0,1109"
 
     container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
-    installer manual: "AX88179_178A_v#{version.before_comma}.app"
+    pkg ".AX88179_178A_10.9_10.14.pkg"
+
+    livecheck do
+      url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
+      strategy :page_match do |page|
+        page.split(/class=['"]?list__item['"]?/).map do |list_item|
+          match = list_item.match(
+            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)*)<}mi,
+          )
+          "#{match[2]},#{match[1]}" if match
+        end.compact
+      end
+    end
+  elsif MacOS.version <= :catalina
+    version "2.19.0,1109"
+
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
+    pkg ".AX88179_178A_10.15.pkg"
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
@@ -17,9 +34,9 @@ cask "asix-ax88179" do
       end
     end
   else
-    version "1.2.0,1126"
+    version "1.2.0,1132"
 
-    container nested: "ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
+    container nested: "ASIX_USB_Device_Installer_macOS_11.3_above_Driver_v#{version.before_comma}__20210521/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
     pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
 
     livecheck do
