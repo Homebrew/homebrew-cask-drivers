@@ -73,7 +73,11 @@ cask "asix-ax88179" do
                    sudo: true
   end
 
-  uninstall pkgutil: "com.asix.ax88179.uninstall"
+  uninstall pkgutil: [
+    "com.asix.ax88179.uninstall",
+    "com.asix.pkg.ASIXUSBDeviceAppInstaller",
+    "com.mygreatcompany.pkg.AX88179A772DDEXTAPPUninistaller",
+  ]
 
   caveats do
     reboot
