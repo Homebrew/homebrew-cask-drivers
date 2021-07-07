@@ -21,11 +21,13 @@ cask "sandisk-security" do
     sudo:       true,
   }
 
-  uninstall script: {
+  uninstall early_script: {
     executable: "exec/SanDisk Security Installer.app/Contents/MacOS/SanDisk Security Installer",
     args:       ["-uninstall", "-silent"],
     sudo:       true,
-  }, launchctl: "com.wdc.SanDiskPrivilegedHelper"
+  },
+            launchctl:    "com.wdc.SanDiskPrivilegedHelper",
+            login_item:   "SanDiskSecurityHelper"
 
   zap trash: [
     "~/Library/Caches/com.wdc.branded.sandisksecurity",
