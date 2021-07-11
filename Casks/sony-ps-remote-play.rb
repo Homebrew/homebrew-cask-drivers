@@ -7,7 +7,7 @@ cask "sony-ps-remote-play" do
   desc "Application to control your PlayStation 4 or PlayStation 5"
   homepage "https://remoteplay.dl.playstation.net/remoteplay/"
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :high_sierra"
 
   pkg "RemotePlayInstaller.pkg"
 
