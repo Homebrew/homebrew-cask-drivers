@@ -1,10 +1,10 @@
-cask "sony-ps4-remote-play" do
+cask "sony-ps-remote-play" do
   version :latest
   sha256 :no_check
 
   url "https://remoteplay.dl.playstation.net/remoteplay/module/mac/RemotePlayInstaller.pkg"
-  name "PS4 Remote Play"
-  desc "Application to control your PlayStation 4"
+  name "PS Remote Play"
+  desc "Application to control your PlayStation 4 or PlayStation 5"
   homepage "https://remoteplay.dl.playstation.net/remoteplay/"
 
   depends_on macos: ">= :yosemite"
