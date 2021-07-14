@@ -1,5 +1,5 @@
 cask "safenet-authentication-client" do
-  version "10.2.109.0"
+  version "10.2.111.0"
   sha256 "d0c316379c03e17a35a53e81df641b85b38b5cf7b7a8f6b5f11789a0819f943a"
 
   url "https://www.globalsign.com/en/safenet-drivers/USB/#{version.major_minor}/Safenet_#{version.major_minor}_Post_GA_R3.zip"
@@ -7,7 +7,11 @@ cask "safenet-authentication-client" do
   desc "Client for smart card readers and security tokens"
   homepage "https://support.globalsign.com/ssl/ssl-certificates-installation/safenet-drivers"
 
-  depends_on macos: ">= :catalina"
+  livecheck do
+    skip "No version information available"
+  end
+
+  depends_on macos: :catalina
   container nested: "Safenet #{version.major_minor} Post GA R3/Safenet #{version.major_minor} Post GA R3/SafeNetAuthenticationClient.#{version}.dmg"
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
