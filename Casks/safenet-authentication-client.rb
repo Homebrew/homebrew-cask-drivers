@@ -11,7 +11,7 @@ cask "safenet-authentication-client" do
     skip "No version information available"
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
   container nested: "Safenet #{version.major_minor} Post GA R3/Safenet #{version.major_minor} Post GA R3/SafeNetAuthenticationClient.#{version}.dmg"
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
