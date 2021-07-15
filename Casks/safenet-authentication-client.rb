@@ -1,11 +1,11 @@
 cask "safenet-authentication-client" do
   if MacOS.version <= :catalina
-    version "10.2.111.0"
+    version "10.2.109.0"
     sha256 "d0c316379c03e17a35a53e81df641b85b38b5cf7b7a8f6b5f11789a0819f943a"
     url "https://www.globalsign.com/en/safenet-drivers/USB/#{version.major_minor}/Safenet_#{version.major_minor}_Post_GA_R3.zip"
     container nested: "Safenet #{version.major_minor} Post GA R3/Safenet #{version.major_minor} Post GA R3/SafeNetAuthenticationClient.#{version}.dmg"
   else
-    version "10.2.109.0"
+    version "10.2.111.0"
     sha256 "af622151e7188d25f326420d3d210dc676002c765a670bd756fd40bd050fd0a5"
     url "https://www.globalsign.com/en/safenet-drivers/USB/#{version.major_minor}/Safenet_#{version.major_minor}_Post_GA_(R4).zip"
     container nested: "Safenet #{version.major_minor} Post GA (R4) 2/SafeNet Authentication Client #{version.major_minor}.pkg"
