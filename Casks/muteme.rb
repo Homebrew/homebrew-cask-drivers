@@ -21,7 +21,6 @@ cask "muteme" do
     "~/Library/Preferences/ByHost/com.electron.muteme-client.ShipIt.*.plist",
     "~//Library/Preferences/com.electron.muteme-client.plist",
     "~/Library/Caches/com.electron.muteme-client.ShipIt",
-    "~/Library/Caches/com.electron.muteme-client"
+    "~/Library/Caches/com.electron.muteme-client",
   ]
-
 end
