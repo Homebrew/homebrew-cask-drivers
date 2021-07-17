@@ -14,4 +14,9 @@ cask "muteme" do
   end
 
   app "MuteMe-Client.app"
+
+  zap trash: [
+    "~/Library/Application Support/mutesync/",
+  ]
+
 end
