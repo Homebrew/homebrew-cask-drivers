@@ -8,7 +8,7 @@ cask "netgear-switch-discovery-tool" do
   desc "Software for discovering NETGEAR network switches"
   homepage "https://www.netgear.com/support/download/"
 
-  container nested: "NETGEAR_Switch_Discovery_Tool_macOS-V#{version}/NETGEAR Switch Discovery Tool-#{version}.dmg"
+  container nested: "NETGEAR Switch Discovery Tool-#{version}.dmg"
 
   app "NETGEAR Switch Discovery Tool.app"
 end
