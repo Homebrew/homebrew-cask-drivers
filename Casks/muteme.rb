@@ -1,15 +1,15 @@
 cask "muteme" do
-  version "0.5.0"
-  sha256 "ffc7c22283fdd9cb5522c5b7f923e6642fae1bc494156fce191c0ab5c83e56a6"
+  version "0.5.1"
+  sha256 "c6b3c62da90275900666446f736ec7289ef03a65d164f2e0d4350b587fb99d98"
 
-  url "https://muteme.io/download/flavor/default/0.5.0/osx_64/MuteMe-Client-#{version}.dmg",
+  url "https://muteme.io/download/flavor/default/#{version}/osx_64/MuteMe-Client-#{version}.dmg",
       verified: "https://muteme.io/"
   name "muteme"
   desc "Companion app for the MuteMe physical mute button"
   homepage "https://muteme.com/"
 
   livecheck do
-    url "https://muteme.io/download/latest/osx"
+    url "https://downloads.muteme.com/download/latest/osx_64"
     strategy :header_match
   end
 
