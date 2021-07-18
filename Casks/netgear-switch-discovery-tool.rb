@@ -1,13 +1,18 @@
 cask "netgear-switch-discovery-tool" do
-  version "1.2.102"
-  sha256 "5d58479d3b32798fedefce7a4b6da220ced1bd20ed5d71ce1d3c04e097721da2"
+  version "1.2.103"
+  sha256 "950165708c05875c661f9f0114e344fc937666f33b2c021d5fbaa1631c55eebe"
 
-  url "https://www.downloads.netgear.com/files/GDC/NSDT/NetgearSDT-V#{version}-Mac.zip"
-  appcast "https://www.netgear.com/support/product/netgear-switch-discovery-tool.aspx#download"
+  url "https://www.downloads.netgear.com/files/GDC/NSDT/NETGEAR_Switch_Discovery_Tool_macOS-V#{version}.zip"
   name "NETGEAR Switch Discovery Tool"
+  desc "Software for discovering NETGEAR network switches"
   homepage "https://www.netgear.com/support/download/"
 
-  container nested: "NetgearSDT-V#{version}-Mac/NetgearSDT-V#{version}.dmg"
+  livecheck do
+    url "https://www.netgear.com/support/product/netgear-switch-discovery-tool.aspx#download"
+    regex(/href=.*?NETGEAR[._-]Switch[._-]Discovery[._-]Tool[._-]macOS[._-]v?(\d+(?:\.\d+)+)\.zip/i)
+  end
+
+  container nested: "NETGEAR Switch Discovery Tool-#{version}.dmg"
 
   app "NETGEAR Switch Discovery Tool.app"
 end
