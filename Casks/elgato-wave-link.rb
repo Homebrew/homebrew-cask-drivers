@@ -1,8 +1,8 @@
 cask "elgato-wave-link" do
-  version "1.2.3.2622"
-  sha256 "6d24cf9fda7e22931d6918a5d18097a2d60f2f99aee4c6d15fd3483bc9d6f841"
+  version "1.3.0.2687"
+  sha256 "410b1fe0fbeffa950d0d1550adb3b66747cf8ab7bd23defe79981b74509ff36a"
 
-  url "https://edge.elgato.com/egc/macos/wavelink/#{version.major_minor_patch.chomp(".0")}/WaveLink_#{version}.pkg"
+  url "https://edge.elgato.com/egc/macos/wavelink/#{version.major_minor_patch}/WaveLink_#{version}.pkg"
   name "Elgato Wave Link"
   desc "Software custom-built for content creation"
   homepage "https://www.elgato.com/en/wave-1"
