@@ -16,11 +16,11 @@ cask "muteme" do
   app "MuteMe-Client.app"
 
   zap trash: [
-    "~/Library/Application Support/MuteMe-Client/",
-    "~/Library/Saved Application State/com.electron.muteme-client.savedState",
-    "~/Library/Preferences/ByHost/com.electron.muteme-client.ShipIt.*.plist",
-    "~//Library/Preferences/com.electron.muteme-client.plist",
-    "~/Library/Caches/com.electron.muteme-client.ShipIt",
+    "~/Library/Application Support/MuteMe-Client",
     "~/Library/Caches/com.electron.muteme-client",
+    "~/Library/Caches/com.electron.muteme-client.ShipIt",
+    "~/Library/Preferences/ByHost/com.electron.muteme-client.ShipIt.*.plist",
+    "~/Library/Preferences/com.electron.muteme-client.plist",
+    "~/Library/Saved Application State/com.electron.muteme-client.savedState",
   ]
 end
