@@ -5,7 +5,13 @@ cask "fujitsu-scansnap-home" do
   url "https://origin.pfultd.com/downloads/ss/sshinst/m-#{version.no_dots}/MacSSHOfflineInstaller_#{version.dots_to_underscores}.dmg",
       verified: "origin.pfultd.com/"
   name "ScanSnap Home"
-  homepage "https://www.fujitsu.com/global/products/computing/peripheral/scanners/scansnap/software/sshome/index.html"
+  desc "Fujitsu ScanSnap Scanner software"
+  homepage "https://www.fujitsu.com/global/products/computing/peripheral/scanners/soho/sshome/"
+
+  livecheck do
+    url "https://www.pfu.fujitsu.com/imaging/ss_hist/en/mac/index.html"
+    regex(/ScanSnap Home for Mac (\d+(?:\.\d+)+) Released/i)
+  end
 
   depends_on macos: ">= :sierra"
   container nested: "Download/MacSSHomeInstaller_#{version.dots_to_underscores}.dmg"
