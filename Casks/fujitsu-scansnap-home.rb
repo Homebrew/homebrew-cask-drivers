@@ -1,11 +1,17 @@
 cask "fujitsu-scansnap-home" do
-  version "2.0.30"
-  sha256 "2e546eb922e4fc547395f66a02ba35f0ce8133ea858f29a0fa63b6f559025abe"
+  version "2.1.0"
+  sha256 "3b293ca40d38910393153f26705499c2b966dbaaeed252d15625b582311fb332"
 
   url "https://origin.pfultd.com/downloads/ss/sshinst/m-#{version.no_dots}/MacSSHOfflineInstaller_#{version.dots_to_underscores}.dmg",
       verified: "origin.pfultd.com/"
   name "ScanSnap Home"
-  homepage "https://www.fujitsu.com/global/products/computing/peripheral/scanners/scansnap/software/sshome/index.html"
+  desc "Fujitsu ScanSnap Scanner software"
+  homepage "https://www.fujitsu.com/global/products/computing/peripheral/scanners/soho/sshome/"
+
+  livecheck do
+    url "https://www.pfu.fujitsu.com/imaging/ss_hist/en/mac/index.html"
+    regex(/ScanSnap Home for Mac (\d+(?:\.\d+)+) Released/i)
+  end
 
   depends_on macos: ">= :sierra"
   container nested: "Download/MacSSHomeInstaller_#{version.dots_to_underscores}.dmg"
