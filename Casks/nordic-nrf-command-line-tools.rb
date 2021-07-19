@@ -1,6 +1,6 @@
 cask "nordic-nrf-command-line-tools" do
-  version "10.12.1"
-  sha256 "16b4f40beee75ec8d7a6b45b5c1b831a7602dc397791a7439282290d37b2a357"
+  version "10.13.0"
+  sha256 "29b8824be08acbd7215bcb5de77f156660a35c982e3e2a669e1abf3924d4d158"
 
   url "https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-command-line-tools/sw/Versions-#{version.major}-x-x/#{version.dots_to_hyphens}/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.tar"
   name "nRF Command Line Tools"
