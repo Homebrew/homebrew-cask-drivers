@@ -16,8 +16,24 @@ cask "nordic-nrf-command-line-tools" do
   end
 
   depends_on cask: "segger-jlink"
-  container nested: "nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.tar/nRF-Command-Line-Tools_#{version.dots_to_underscores}.tar"
 
   binary "nrfjprog/nrfjprog"
   binary "mergehex/mergehex"
+
+  preflight do
+    system_command "/usr/bin/tar", args: [
+      "--extract",
+      "--file",
+      "#{staged_path}/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.tar",
+      "--directory",
+      staged_path,
+    ]
+    system_command "/usr/bin/tar", args: [
+      "--extract",
+      "--file",
+      "#{staged_path}/nRF-Command-Line-Tools_#{version.dots_to_underscores}.tar",
+      "--directory",
+      staged_path,
+    ]
+  end
 end
