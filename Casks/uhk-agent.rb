@@ -8,6 +8,12 @@ cask "uhk-agent" do
   desc "Configuration application for the Ultimate Hacking Keyboard"
   homepage "https://github.com/UltimateHackingKeyboard/agent"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+    regex(/href=.*?UHK[._-]Agent[._-]v?(\d+(?:\.\d+)+)[._-]mac\.dmg/i)
+  end
+
   app "UHK Agent.app"
 
   uninstall quit: "com.ultimategadgetlabs.agent"
