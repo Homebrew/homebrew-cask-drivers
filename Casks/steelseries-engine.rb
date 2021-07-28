@@ -9,11 +9,11 @@ cask "steelseries-engine" do
   homepage "https://steelseries.com/engine"
 
   livecheck do
-    url "https://steelseries.com/engine/latest/darwin"
-    strategy :header_match
+    skip "discontinued"
   end
 
   auto_updates true
+  conflicts_with cask: "steelseries-gg"
   depends_on macos: ">= :sierra"
 
   pkg "SteelSeriesEngine#{version}.pkg"
@@ -41,4 +41,8 @@ cask "steelseries-engine" do
     "~/Library/Preferences/com.steelseries.ssenext.client.plist",
     "~/Library/Saved Application State/com.steelseries.ssenext.client.savedState",
   ]
+
+  caveats do
+    discontinued
+  end
 end
