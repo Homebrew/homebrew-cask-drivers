@@ -1,6 +1,6 @@
 cask "bose-soundtouch" do
-  version "26.0.0-3251-ff6a93d,st3_2020_a3b99494"
-  sha256 "be74aeaa1e73bd6b07d92ceb5fcff5b58c4023eb7ccdb034fea842080554aa4e"
+  version "27.0.0-3377-1037583,mr4_c4ab85bd"
+  sha256 "b84ee3bbe3350b14873daa003703b745ab24fc0af97615c74a20c6b3e5d87a57"
 
   url "https://downloads.bose.com/ced/soundtouch/#{version.after_comma}/SoundTouch-app-installer-#{version.before_comma}.dmg"
   name "Bose Soundtouch Controller App"
