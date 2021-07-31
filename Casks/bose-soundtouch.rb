@@ -7,16 +7,11 @@ cask "bose-soundtouch" do
   desc "Control Bose SoundTouch systems from your computer"
   homepage "https://downloads.bose.com/ced/soundtouch/soundtouch_controller_app/index.html"
 
-  # The first-party download page uses JavaScript to render the content. The
-  # URL below redirects to the XML file containing release information that's
-  # used as the data source for the download page.
   livecheck do
-    url "https://worldwide.bose.com/updates/soundtouch"
-    regex(%r{
-      <RELEASE [^>]*?URLPATH=["']/ced/soundtouch/([^/]+)/?["'][^>]*?>\s*
-      <IMAGE [^>]*?FILENAME=["']SoundTouch-app-installer-(\d+(?:\.\d+)+(?:-[a-z\d]+)+)\.dmg["']
-    }ix)
+    url :homepage
+    regex(%r{href=.*/ced/soundtouch/([^/]+)/SoundTouch-app-installer-(\d+(?:\.\d+)+(?:-[a-z\d]+)+)\.dmg})
     strategy :page_match do |page, regex|
+      puts page
       page.scan(regex).map do |match|
         "#{match[1]},#{match[0]}"
       end
