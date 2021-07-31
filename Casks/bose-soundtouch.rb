@@ -9,7 +9,7 @@ cask "bose-soundtouch" do
 
   livecheck do
     url :homepage
-    regex(%r{href=.*/ced/soundtouch/([^/]+)/SoundTouch-app-installer-(\d+(?:\.\d+)+(?:-[a-z\d]+)+)\.dmg})
+    regex(%r{href=.*?/ced/soundtouch/([^/]+)/SoundTouch-app-installer[._-](\d+(?:\.\d+)+(?:-[a-z\d]+)+)\.dmg}i)
     strategy :page_match do |page, regex|
       puts page
       page.scan(regex).map do |match|
