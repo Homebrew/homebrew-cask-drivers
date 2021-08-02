@@ -8,6 +8,10 @@ cask "canon-pixma72xx-printer" do
   desc "Printer driver & utilities for Canon Pixma iP 72XX printers"
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   depends_on macos: ">= :yosemite"
 
   pkg "PrinterDriver_iP7200 series_#{format("%<major>02d%<minor>02d%<patch>02d", major: version.major, minor: version.minor, patch: version.patch.to_i)}.pkg"
