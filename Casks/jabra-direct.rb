@@ -27,6 +27,7 @@ cask "jabra-direct" do
             login_item: "Jabra Direct",
             pkgutil:    [
               "com.jabra.directonline",
+              "com.jabra.JabraFirmwareUpdate",
               "com.jabra.kext",
             ]
 
