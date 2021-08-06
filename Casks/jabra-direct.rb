@@ -1,5 +1,5 @@
 cask "jabra-direct" do
-  version "5.5.39795"
+  version "5.6.43171"
   sha256 :no_check
 
   url "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
@@ -27,6 +27,7 @@ cask "jabra-direct" do
             login_item: "Jabra Direct",
             pkgutil:    [
               "com.jabra.directonline",
+              "com.jabra.JabraFirmwareUpdate",
               "com.jabra.kext",
             ]
 
