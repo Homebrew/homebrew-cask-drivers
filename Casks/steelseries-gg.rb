@@ -1,6 +1,6 @@
 cask "steelseries-gg" do
-  version "5.1.0"
-  sha256 "05ad12d6888017b10dd96d58ae2ad721abd06cb26e23d8c4316e9d35dc0539b3"
+  version "6.0.0"
+  sha256 "5ecf7d097f531f6061ebb2a62ac5bddeae3e9bff744a350d763b4ceff656585f"
 
   url "https://steelseries.com/gg/downloads/gg/#{version}/darwin"
   name "SteelSeries GG #{version.major}"
