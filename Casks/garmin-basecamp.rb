@@ -9,8 +9,8 @@ cask "garmin-basecamp" do
       skip
     end
   else
-    version "4.8.11"
-    sha256 "f6c15afd513eefa17bd96c7ba062ccf0af441c92b014ab350e029cd57b2280e2"
+    version "4.8.12"
+    sha256 "aecd4b28975169118056f5901f3db4a3a58d50c204184b7dc64919f23a19247c"
 
     url "https://download.garmin.com/software/BaseCampforMac_#{version.no_dots}.dmg"
 
