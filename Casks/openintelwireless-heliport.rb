@@ -1,6 +1,6 @@
 cask "openintelwireless-heliport" do
-  version "1.4.0"
-  sha256 "d397f3508fa760c7628092b6587ea8dddca14b26895381e7898c4af9608f4a1c"
+  version "1.4.1"
+  sha256 "007e371247e3f494974d1f9618f43eb707830e01c417fb75142aca99b7c6cb53"
 
   url "https://github.com/OpenIntelWireless/HeliPort/releases/download/v#{version}/HeliPort.dmg",
       verified: "github.com/OpenIntelWireless/HeliPort"
