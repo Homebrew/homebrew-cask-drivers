@@ -10,7 +10,7 @@ cask "huiontablet" do
   livecheck do
     url "https://huion.com/download/"
     strategy :page_match
-    regex(/HuionTablet_MacDriver_v?(\d+(?:\.\d+)*)\.dmg/i)
+    regex(%r{Mac/HuionTablet_MacDriver_v?(\d+(?:\.\d+)*)\.dmg}i)
   end
 
   app "HuionTablet.app"
