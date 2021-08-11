@@ -4,8 +4,14 @@ cask "pallotron-yubiswitch" do
 
   url "https://github.com/pallotron/yubiswitch/releases/download/v#{version}/yubiswitch_#{version}.dmg"
   appcast "https://github.com/pallotron/yubiswitch/releases.atom"
-  name "yubiswitch"
+  name "Yubiswitch"
+  desc "Status bar application to enable/disable Yubikey Nano"
   homepage "https://github.com/pallotron/yubiswitch"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   app "yubiswitch.app"
 end
