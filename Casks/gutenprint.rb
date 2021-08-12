@@ -5,7 +5,7 @@ cask "gutenprint" do
   url "https://downloads.sourceforge.net/gimp-print/gutenprint-#{version.major_minor}/#{version}/gutenprint-#{version}.dmg"
   appcast "https://sourceforge.net/projects/gimp-print/rss"
   name "Gutenprint"
-  desc "Drivers for Canon, Epson, Lexmark, Sony, Olympus, and PCL printers for use with CUPS and GIMP"
+  desc "Drivers for various printers for use with CUPS and GIMP"
   homepage "http://gimp-print.sourceforge.net/"
 
   livecheck do
