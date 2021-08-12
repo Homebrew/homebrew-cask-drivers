@@ -7,6 +7,11 @@ cask "gutenprint" do
   name "Gutenprint"
   homepage "http://gimp-print.sourceforge.net/"
 
+  livecheck do
+    url "http://gimp-print.sourceforge.net/MacOSX.php"
+    regex(/gutenprint-(\d+(?:\.\d+)*)\.dmg/i)
+  end
+
   pkg "gutenprint-#{version}.pkg"
 
   uninstall script:  [
