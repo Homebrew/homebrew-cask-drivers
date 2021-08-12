@@ -4,12 +4,12 @@ cask "nitrokey" do
 
   url "https://github.com/Nitrokey/nitrokey-app/releases/download/v#{version}/Nitrokey-App.dmg",
       verified: "github.com/Nitrokey/nitrokey-app/"
-  appcast "https://github.com/Nitrokey/nitrokey-app/releases.atom"
   name "Nitrokey App"
+  desc "Application to manage Nitro Key devices"
   homepage "https://www.nitrokey.com/download/macos"
 
   livecheck do
-    url "https://github.com/joncampbell123/dosbox-x/releases/latest"
+    url "https://github.com/Nitrokey/nitrokey-app/releases"
     regex(%r{v?(\d+(?:\.\d+)*)/Nitrokey-App\.dmg}i)
   end
 
