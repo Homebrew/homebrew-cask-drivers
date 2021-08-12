@@ -15,8 +15,6 @@ cask "focusrite-control" do
 
   pkg "Focusrite Control.pkg"
 
-  uninstall pkgutil:   [
-    "com.focusrite.FocusriteControl",
-  ],
+  uninstall pkgutil:   "com.focusrite.FocusriteControl",
             launchctl: "com.focusrite.ControlServer"
 end
