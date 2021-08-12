@@ -8,6 +8,11 @@ cask "nitrokey" do
   name "Nitrokey App"
   homepage "https://www.nitrokey.com/download/macos"
 
+  livecheck do
+    url "https://github.com/joncampbell123/dosbox-x/releases/latest"
+    regex(%r{v?(\d+(?:\.\d+)*)/Nitrokey-App\.dmg}i)
+  end
+
   app "Nitrokey App v#{version}.app"
 
   uninstall quit: "com.nitrokey.nitrokey-app"
