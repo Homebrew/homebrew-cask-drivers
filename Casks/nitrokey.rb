@@ -4,9 +4,15 @@ cask "nitrokey" do
 
   url "https://github.com/Nitrokey/nitrokey-app/releases/download/v#{version}/Nitrokey-App.dmg",
       verified: "github.com/Nitrokey/nitrokey-app/"
-  appcast "https://github.com/Nitrokey/nitrokey-app/releases.atom"
   name "Nitrokey App"
+  desc "Application to manage Nitro Key devices"
   homepage "https://www.nitrokey.com/download/macos"
+
+  livecheck do
+    url "https://github.com/Nitrokey/nitrokey-app/releases"
+    strategy :page_match
+    regex(%r{href=.*?(\d+(?:\.\d+)*)/Nitrokey-App\.dmg}i)
+  end
 
   app "Nitrokey App v#{version}.app"
 
