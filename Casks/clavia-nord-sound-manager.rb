@@ -1,6 +1,6 @@
 cask "clavia-nord-sound-manager" do
-  version "7.56"
-  sha256 "281b2cb6270da39d34797a5c7f2028446977d72cdc16cd8db016b329fddda7d9"
+  version "7.60"
+  sha256 "ec5b07748e8b2028089635d09e345b888e080b6ae339f8b90e976a163f401e80"
 
   url "https://www.nordkeyboards.com/sites/default/files/files/downloads/software/nord-sound-manager/Nord%20Sound%20Manager%20v#{version}.dmg"
   name "Clavia Nord Sound Manager"
