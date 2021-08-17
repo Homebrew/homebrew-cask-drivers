@@ -1,11 +1,12 @@
-cask "focusrite-clarett-thunderbolt" do
-  version "4.6.2.768"
-  sha256 "2a56dff7bc57a430084575fde1f28a4981b16525950a6b30130eca154f9dcfe7"
+cask "focusrite-thunderbolt" do
+  version "4.9.3.2"
+  sha256 "350bc7d3ae6a8bfa934ec664772203ea85f970b0ea88c784847cc93d9ad75c44"
 
-  url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/ClarettThunderboltDriver-#{version.major_minor_patch}.dmg"
+  url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/FocusriteThunderboltMac_#{version.major_minor_patch}-release_0.dmg"
   appcast "https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545&download_type=software",
           must_contain: version.major_minor_patch
-  name "Focusrite Clarett Thunderbolt"
+  name "Focusrite Thunderbolt"
+  desc "Thunderbolt driver for Focusrite devices"
   homepage "https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545"
 
   pkg "FocusritePCIe-#{version}.pkg"
