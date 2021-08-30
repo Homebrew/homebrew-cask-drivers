@@ -1,6 +1,6 @@
 cask "fractal-bot" do
-  version "3.00.08"
-  sha256 "ee70ce6afd76264e6802d564196cd7c519ff470574d9d33da3aa4ac1a9ffb33e"
+  version "3.00.09"
+  sha256 "799102313510d6d4ab74a6c7865412158bf17bde6334c13b833fb0a77a8f7fcd"
 
   url "https://www.fractalaudio.com/downloads/fractal-bot/Fractal-Bot-OSX-v#{version.tr(".", "p")}.dmg"
   name "Fractal Bot"
