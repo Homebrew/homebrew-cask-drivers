@@ -1,6 +1,6 @@
 cask "nordic-nrf-connect" do
-  version "3.7.0"
-  sha256 "69d45ace1be1cbd59b24ef69cbc3b590d851ac73dc761cba22efef51abc20eca"
+  version "3.7.1"
+  sha256 "84a655513ea8db5f76157b27b0c7a2ead99b76fc970ccc7f756f561fff84d8ec"
 
   url "https://github.com/NordicSemiconductor/pc-nrfconnect-core/releases/download/v#{version}/nrfconnect-#{version}.dmg",
       verified: "github.com/NordicSemiconductor/pc-nrfconnect-core/"
