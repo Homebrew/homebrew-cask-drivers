@@ -29,7 +29,10 @@ cask "logitech-options" do
     pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
   end
 
-  uninstall launchctl: "com.logitech.manager.daemon",
+  uninstall launchctl: [
+    "com.logi.bolt.app",
+    "com.logitech.manager.daemon",
+  ],
             quit:      [
               "com.logitech.Logi-Options",
               "com.logitech.manager.daemon",
@@ -39,6 +42,7 @@ cask "logitech-options" do
               executable: "/Applications/Utilities/LogiMgr Uninstaller.app/Contents/Resources/Uninstaller",
             },
             pkgutil:   [
+              "com.logi.bolt.pkg",
               "com.logitech.manager.pkg",
               "com.Logitech.signedKext.pkg",
             ],
