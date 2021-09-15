@@ -12,6 +12,8 @@ cask "logitech-g-hub" do
     regex(/Software\sVersion:.+?(\d+(?:\.\d+)+)\\u/i)
   end
 
+  auto_updates true
+
   installer script: {
     executable: "lghub_installer.app/Contents/MacOS/lghub_installer",
     args:       ["--silent"],
