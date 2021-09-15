@@ -19,12 +19,12 @@ cask "logitech-g-hub" do
   }
 
   postflight do
-    set_ownership   ["#{appdir}/Logitech G HUB.app", "/Users/Shared/LGHUB"]
-    set_permissions "#{appdir}/Logitech G HUB.app", "0755"
+    set_ownership   ["#{appdir}/lghub.app", "/Users/Shared/LGHUB"]
+    set_permissions "#{appdir}/lghub.app", "0755"
   end
 
   uninstall script: {
-    executable: "/Applications/Logitech G HUB.app/Contents/Frameworks/lghub_updater.app/Contents/MacOS/lghub_updater",
+    executable: "/Applications/lghub.app/Contents/Frameworks/lghub_updater.app/Contents/MacOS/lghub_updater",
     args:       ["--uninstall"],
     sudo:       true,
   },
