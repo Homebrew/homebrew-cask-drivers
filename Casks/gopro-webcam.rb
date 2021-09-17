@@ -18,9 +18,9 @@ cask "gopro-webcam" do
   uninstall pkgutil: [
     "GoPro.GoPro-Webcam",
     "com.gopro.cmio.DAL.GoProWebCam",
-  ],
-  quit:      "GoPro.GoPro-Webcam",
-  launchctl: "com.gopro.GoProWebcamDaemon"
+    ],
+            quit:      "GoPro.GoPro-Webcam",
+            launchctl: "com.gopro.GoProWebcamDaemon"
 
   zap trash: [
     "~/Library/Caches/GoPro.GoPro-Webcam",
