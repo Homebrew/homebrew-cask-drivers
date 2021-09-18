@@ -1,6 +1,6 @@
 cask "kensingtonworks" do
-  version "2.2.10"
-  sha256 "b3b8190703272e9cb4c1d27b165a63227a4f16a33ff5b130ab15f51a6eb95d66"
+  version "2.2.13_1631176069"
+  sha256 "17ff68fe0e2e9c00d1bbc3b8f1369c587ba2093d81948048a64d91d3413d3bd9"
 
   url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
   name "KensingtonWorks"
@@ -9,7 +9,7 @@ cask "kensingtonworks" do
 
   livecheck do
     url :homepage
-    regex(/href=.*?kensingtonworks[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    regex(/href=.*?kensingtonworks[._-]v?(\d+(?:\.\d+)+(?:[._-]\d+)?)\.pkg/i)
   end
 
   conflicts_with cask: "homebrew/cask-drivers/kensington-trackball-works"
