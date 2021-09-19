@@ -1,10 +1,10 @@
 cask "canon-eos-utility" do
-  version "3.13.10.2"
-  sha256 "540e46f730126eac45ce090f48dd42862571030aed6e4ef747773a19a6d4988a"
+  version "3.13.30.6"
+  sha256 "451aa1f8c6503b24225f05c2c3076ba63b954119910e119f553d078ef248a36d"
 
-  url "https://gdlp01.c-wss.com/gds/4/0200006274/01/EU-Installset-M#{version}.dmg.zip",
+  url "https://gdlp01.c-wss.com/gds/8/0200006408/01/EU-Installset-M#{version}.dmg.zip",
       verified: "gdlp01.c-wss.com/"
-  appcast "https://my.canon/en/support/0200616502/1"
+  appcast "https://my.canon/en/support/0200640802"
   name "Canon EOS Utility"
   desc "Communication with Canon EOS cameras"
   homepage "https://my.canon/en/support/0200616502/1"
