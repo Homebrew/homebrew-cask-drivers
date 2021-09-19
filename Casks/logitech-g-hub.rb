@@ -1,10 +1,11 @@
 cask "logitech-g-hub" do
-  version "2021.8.792"
+  version "2021.9.7463"
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip",
       verified: "download01.logi.com/"
   name "Logitech G HUB"
+  desc "Support for Logitech G gear"
   homepage "https://www.logitechg.com/en-us/innovation/g-hub.html"
 
   livecheck do
