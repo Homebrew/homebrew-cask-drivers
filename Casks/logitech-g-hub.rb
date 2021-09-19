@@ -1,11 +1,19 @@
 cask "logitech-g-hub" do
-  version :latest
+  version "2021.9.7463"
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip",
       verified: "download01.logi.com/"
   name "Logitech G HUB"
+  desc "Support for Logitech G gear"
   homepage "https://www.logitechg.com/en-us/innovation/g-hub.html"
+
+  livecheck do
+    url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=eee3033c-8e0b-11e9-8db1-d7e925481d4d"
+    regex(/Software\sVersion:.+?(\d+(?:\.\d+)+)\\u/i)
+  end
+
+  auto_updates true
 
   installer script: {
     executable: "lghub_installer.app/Contents/MacOS/lghub_installer",
@@ -23,6 +31,7 @@ cask "logitech-g-hub" do
     args:       ["--uninstall"],
     sudo:       true,
   },
+            delete: "/Applications/lghub.app",
             trash:  "/Users/Shared/LGHUB"
 
   zap trash: [
