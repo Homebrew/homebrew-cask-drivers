@@ -4,7 +4,7 @@ cask "canon-eos-utility" do
 
   url "https://gdlp01.c-wss.com/gds/8/0200006408/01/EU-Installset-M#{version}.dmg.zip",
       verified: "gdlp01.c-wss.com/"
-  appcast "https://my.canon/en/support/0200616502/1"
+  appcast "https://my.canon/en/support/0200640802"
   name "Canon EOS Utility"
   desc "Communication with Canon EOS cameras"
   homepage "https://my.canon/en/support/0200616502/1"
