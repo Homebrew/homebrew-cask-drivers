@@ -13,6 +13,8 @@ cask "jabra-direct" do
     regex(/"MacVersion"\s*:\s*"(\d+(?:\.\d+)+)"/i)
   end
 
+  auto_updates true
+
   pkg "JabraDirectSetup.pkg"
 
   uninstall quit:       [
