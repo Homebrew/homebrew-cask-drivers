@@ -5,6 +5,9 @@ cask "logitech-options" do
   elsif MacOS.version <= :high_sierra
     version "8.30.293"
     sha256 "db5f2cd94960223bdf74f0db6fc009f82f80928fe2ce849202754bbdb720eb87"
+  elsif MacOS.version <= :mojave
+    version "8.54.147"
+    sha256 "7b7a8d7a498d868c90b4ffe7dfc50a7a39c25e1f61350702e87d4c771b3d6459"
   else
     version "9.20.265"
     sha256 "948f49141756cab91bcac6530a858b54794e7c5a8744e16a4514edb5c11dfce8"
