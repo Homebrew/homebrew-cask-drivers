@@ -7,7 +7,8 @@ cask "logitech-options" do
         verified: "download01.logi.com/web/ftp/pub/techsupport/options/"
 
     livecheck do
-      skip "No version information available"
+      url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,webos=mac-macos-x-10.14"
+      regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
     end
   else
     version "9.40.75"
