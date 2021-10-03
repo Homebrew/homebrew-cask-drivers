@@ -1,6 +1,6 @@
 cask "audient-evo" do
-  version "4.2.1"
-  sha256 "ef6e955ed582437a5d4b08fe6e103dd0c3162c9802571c9f16b0fa764d766793"
+  version "4.2.3"
+  sha256 "5a5645eec7ca5b44dde2c1cbb0b3fbb2d8b0b9ab17362f63bd19b11336cb54da"
 
   url "https://d9w4fhj63j193.cloudfront.net/EVO/EVO%20Drivers/EVO%20v#{version}.dmg",
       verified: "d9w4fhj63j193.cloudfront.net/EVO/EVO%20Drivers/"
