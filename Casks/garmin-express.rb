@@ -14,7 +14,8 @@ cask "garmin-express" do
 
   pkg "Install Garmin Express.pkg"
 
-  uninstall pkgutil: "com.garmin.renu.client"
+  uninstall quit:    "com.garmin.renu.client",
+            pkgutil: "com.garmin.renu.client"
 
   zap trash: [
     "~/Library/Application Support/Garmin/Express",
