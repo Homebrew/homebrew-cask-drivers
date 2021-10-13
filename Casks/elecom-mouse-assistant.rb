@@ -9,8 +9,7 @@ cask "elecom-mouse-assistant" do
 
   livecheck do
     url "https://www.elecom.co.jp/global/download-list/utility/mouse_assistant/mac/"
-    strategy :page_match
-    regex(/ELECOM_Mouse_Installer_(\d+(?:\.\d+)*)\.zip/i)
+    regex(/ELECOM_Mouse_Installer_(\d+(?:\.\d+)+)\.zip/i)
   end
 
   depends_on macos: ">= :el_capitan"
