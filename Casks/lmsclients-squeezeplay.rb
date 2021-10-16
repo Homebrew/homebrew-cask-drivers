@@ -1,7 +1,7 @@
 cask "lmsclients-squeezeplay" do
   arch = Hardware::CPU.intel? ? "x86_64" : "M1"
 
- version "8.0.1r1382"
+  version "8.0.1r1382"
 
   url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-#{arch}-#{version}.dmg",
       verified: "downloads.sourceforge.net/lmsclients/"
