@@ -1,6 +1,6 @@
 cask "muteme" do
-  version "0.7.0"
-  sha256 "18092e2118721ff610d0defb5572b848b400e37bc29c26358ff40494995251ce"
+  version "0.8.1"
+  sha256 "f7a20627a3e649b2d624821c1db100636f8f7047a84011e418fa8bc14d95a5c3"
 
   url "https://muteme.io/download/flavor/default/#{version}/osx_64/MuteMe-Client-#{version}.dmg",
       verified: "https://muteme.io/"
