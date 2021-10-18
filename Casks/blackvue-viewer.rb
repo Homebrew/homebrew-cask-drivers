@@ -1,5 +1,5 @@
 cask "blackvue-viewer" do
-  version "3.06"
+  version "3.07"
   sha256 :no_check
 
   url "https://www.blackvue.com/download/blackvue-mac-viewer-cloud/?wpdmdl=74331"
