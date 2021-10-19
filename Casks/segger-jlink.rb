@@ -1,12 +1,12 @@
 cask "segger-jlink" do
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
 
-  version "7.56a"
+  version "7.56b"
 
   if Hardware::CPU.intel?
-    sha256 "d5b44598290d46349a05755b2252f73f65f148144b724dcf86a43d8ee65eb348"
+    sha256 "a0e6582fe9b47bef882518f71983a6e9811872fa427f36d6de53297c872356ff"
   else
-    sha256 "d9a343a24f0701fd026b6e8b174174eeecfb85b369efe4b6add2ac04308d589e"
+    sha256 "0e2fc4037e4c4a7172ff3f3e486ffa0a575298c59f90884fac29aa9bf3573ed0"
   end
 
   url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_#{arch}.pkg",
