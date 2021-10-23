@@ -8,6 +8,10 @@ cask "datacolor-spyder-pro" do
   desc "Monitor calibration tool"
   homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}pro"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   auto_updates true
 
   pkg "Spyder#{version.major}Pro #{version}.pkg"
