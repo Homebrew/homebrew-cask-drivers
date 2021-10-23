@@ -6,10 +6,11 @@ cask "datacolor-spyder-pro" do
       verified: "d3d9ci7ypuovlo.cloudfront.net/"
   name "Spyder Pro"
   desc "Monitor calibration tool"
-  homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}pro"
+  homepage "https://www.datacolor.com/photography-design/s#{version.major}-welcome/"
 
   livecheck do
-    skip "No version information available"
+    url "http://goto.datacolor.com/download/mac/s#{version.major}p100b"
+    strategy :header_match
   end
 
   auto_updates true
