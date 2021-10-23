@@ -1,12 +1,17 @@
 cask "datacolor-spyder-elite" do
-  version "5.7"
-  sha256 "4474f20807ab97c3337a4d03526b7a348c387509fb8ff6cec97276269ecfc495"
+  version "5.8"
+  sha256 "adfd31230abceb04a133d444e9184ea4d9936999d9e23ea54a7ee18b2f3de673"
 
   url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Elite_#{version}.pkg.zip",
       verified: "d3d9ci7ypuovlo.cloudfront.net/"
   name "Spyder Elite"
   desc "Monitor calibration tool"
-  homepage "https://www.datacolor.com/photography-design/product-overview/spyder#{version.major}-family/#spyder#{version.major}elite"
+  homepage "https://www.datacolor.com/photography-design/s#{version.major}-welcome/"
+
+  livecheck do
+    url "http://goto.datacolor.com/download/mac/s#{version.major}el100b"
+    strategy :header_match
+  end
 
   auto_updates true
 
