@@ -9,7 +9,7 @@ cask "synologyassistant" do
 
   livecheck do
     url "https://www.synology.com/en-us/releaseNote/Assistant"
-    regex(/Version: (\d+.\d+-\d+)/i)
+    regex(/Version: (\d+\.\d+(\.\d+)?-\d+)/i)
   end
 
   app "SynologyAssistant.app"
