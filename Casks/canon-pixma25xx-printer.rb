@@ -9,7 +9,14 @@ cask "canon-pixma25xx-printer" do
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
   livecheck do
-    skip "No version information available"
+    url "https://www.usa.canon.com/internet/PA_NWSupport/driversDownloads?model=33076&os=MACOS_10_15&type=DS&lang=English"
+    regex(/mcpd-mac-mg2500-(\d+(?:[._]\d+)+)-ea(\d+(?:[._]\d+)+)\.dmg/i)
+    strategy :page_match do |page, regex|
+      match = page.match(regex)
+      next if match.blank?
+
+      "#{match[1].tr('_','.')},#{match[2].tr('_','.')}"
+    end
   end
 
   depends_on macos: ">= :yosemite"
