@@ -15,7 +15,7 @@ cask "canon-pixma25xx-printer" do
       match = page.match(regex)
       next if match.blank?
 
-      "#{match[1].tr('_','.')},#{match[2].tr('_','.')}"
+      "#{match[1].tr("_", ".")},#{match[2].tr("_", ".")}"
     end
   end
 
