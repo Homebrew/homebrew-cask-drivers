@@ -5,7 +5,12 @@ cask "elgato-camera-hub" do
   url "https://edge.elgato.com/egc/macos/echm/#{version.major_minor}/Camera_Hub_#{version}.pkg"
   name "elgato-camera-hub"
   desc "Elgato FACECAM configuration tool"
-  homepage "https://www.elgato.com/de/facecam"
+  homepage "https://www.elgato.com/en/facecam"
+
+  livecheck do
+    url "https://www.elgato.com/sites/default/files/downloads.json"
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Camera[._-]Hub[._-]v?(\d+(?:\.\d+)+)\.pkg"}i)
+  end
 
   pkg "Camera_Hub_#{version}.pkg"
 
