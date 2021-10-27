@@ -5,7 +5,13 @@ cask "samsung-portable-ssd-t5" do
   url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/SW/E25128DB3EDE0CA39ADLA9CC47CKHA7A7O48XC88S7JGAHJ2KIA553/SamsungPortableSSD_Setup_Mac.zip",
       verified: "s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/"
   name "Samsung Portable SSD Software for T5"
+  desc "Software for Samsung external storage drives"
   homepage "https://www.samsung.com/semiconductor/minisite/ssd/download/portable/"
+
+  livecheck do
+    url :homepage
+    regex(/T5.*mac.*\n.*Version\s*(\d+(?:\.\d+)*)/i)
+  end
 
   pkg "SamsungPortableSSD_Setup_Mac.pkg"
 
@@ -30,12 +36,11 @@ cask "samsung-portable-ssd-t5" do
               "com.samsung.portablessd.samsungPortableSsdSoftware.preflight",
             ],
             delete:    [
+              "/Applications/SamsungPortableSSD.app",
               "/Library/Extensions/SamsungPortableSSDDriver*.kext",
-              "/private/var/db/receipts/com.samsung.portablessd.*.*",
             ]
 
   zap trash: [
-    "~/Desktop/SamsungPortableSSD.app",
     "~/Library/Application Support/PortableSSD",
     "~/Library/LaunchAgents/com.samsung.portablessd.mon.plist",
     "~/Library/LaunchAgents/com.srib.pssddaemon.plist",
