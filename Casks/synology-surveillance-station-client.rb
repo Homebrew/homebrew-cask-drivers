@@ -1,6 +1,6 @@
 cask "synology-surveillance-station-client" do
-  version "1.2.10-2174"
-  sha256 "b396cf0650cfb807560a254da34f33f3b3e4500c4c24c2fa0e4a89d0c5e7e515"
+  version "1.2.11-2181"
+  sha256 "4eaaffa8dba25e01266b11bdfbb447189103cadfa81007bee191be09e6c9b2d4"
 
   url "https://global.download.synology.com/download/Utility/SurveillanceStationClient/#{version}/Mac/Synology%20Surveillance%20Station%20Client-#{version}.dmg"
   name "Synology Surveillance Station Client"
