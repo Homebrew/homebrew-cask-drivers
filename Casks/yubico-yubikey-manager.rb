@@ -1,6 +1,6 @@
 cask "yubico-yubikey-manager" do
-  version "1.2.3"
-  sha256 "637145d14c98ee427b77bb32c7d05c6804d1775a03e84b982aa9775a8473b527"
+  version "1.2.4"
+  sha256 "aae5c51a51fb7bc65fc8347037e2c5cb0e8395502ee1e67f137f65887c81ace6"
 
   url "https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-#{version}-mac.pkg"
   name "Yubikey Manager"
