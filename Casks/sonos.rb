@@ -1,6 +1,6 @@
 cask "sonos" do
-  version "13.3,65.1.21150"
-  sha256 "1a03da1e60de06e6a7af3bb52687a22379a44b3d1c1b96766a46abab9b9fc466"
+  version "13.3.2,65.1.22050"
+  sha256 "2a0f2aebe3e10c52c3905d0f6eb7a060903f486ec418bc2ba895d7feef7e46e0"
 
   url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.before_comma.no_dots}.dmg"
   name "Sonos"
