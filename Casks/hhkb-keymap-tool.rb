@@ -11,7 +11,7 @@ cask "hhkb-keymap-tool" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/macOS\s*:\s*Version\s*(\d+(?:\.\d+)*)/i)
+    regex(/macOS\s*:\s*Version\s*(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: ">= :sierra"

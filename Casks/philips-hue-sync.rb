@@ -10,7 +10,7 @@ cask "philips-hue-sync" do
   livecheck do
     url :url
     strategy :header_match
-    regex(/HueSyncInstaller_(\d+(?:\.\d+)*)\.pkg/i)
+    regex(/HueSyncInstaller_(\d+(?:\.\d+)+)\.pkg/i)
   end
 
   pkg "HueSyncInstaller.pkg"

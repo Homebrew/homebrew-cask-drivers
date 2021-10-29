@@ -11,7 +11,7 @@ cask "nitrokey" do
   livecheck do
     url "https://github.com/Nitrokey/nitrokey-app/releases"
     strategy :page_match
-    regex(%r{href=.*?(\d+(?:\.\d+)*)/Nitrokey-App\.dmg}i)
+    regex(%r{href=.*?(\d+(?:\.\d+)+)/Nitrokey-App\.dmg}i)
   end
 
   app "Nitrokey App v#{version}.app"

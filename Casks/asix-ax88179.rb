@@ -10,7 +10,7 @@ cask "asix-ax88179" do
       strategy :page_match do |page|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
           match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)*)<}mi,
+            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
           )
           "#{match[2]},#{match[1]}" if match
         end.compact
@@ -27,7 +27,7 @@ cask "asix-ax88179" do
       strategy :page_match do |page|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
           match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)*)<}mi,
+            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
           )
           "#{match[2]},#{match[1]}" if match
         end.compact
@@ -44,7 +44,7 @@ cask "asix-ax88179" do
       strategy :page_match do |page|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
           match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*11.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)*)<}mi,
+            %r{data-href=.*?/download/file/(\d+).*?macOS\s*11.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
           )
           "#{match[2]},#{match[1]}" if match
         end.compact

@@ -10,7 +10,7 @@ cask "gopro-webcam" do
   livecheck do
     url "https://community.gopro.com/t5/en/How-To-Use-Your-GoPro-As-A-Webcam/ta-p/665493#releasenotes"
     strategy :page_match
-    regex(%r{Mac\s*Webcam\s*</B><BR\s/>Version\s*(\d+(?:\.\d+)*)}i)
+    regex(%r{Mac\s*Webcam\s*</B><BR\s/>Version\s*(\d+(?:\.\d+)+)}i)
   end
 
   pkg "GoPro.Webcam.pkg"

@@ -10,7 +10,7 @@ cask "blackvue-viewer" do
   livecheck do
     url :url
     strategy :header_match
-    regex(/blackvue-cloud-viewer-(\d+(?:\.\d+)*)-mac\.zip/i)
+    regex(/blackvue-cloud-viewer-(\d+(?:\.\d+)+)-mac\.zip/i)
   end
 
   depends_on macos: ">= :yosemite"

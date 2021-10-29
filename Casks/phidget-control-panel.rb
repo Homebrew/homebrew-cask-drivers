@@ -10,7 +10,7 @@ cask "phidget-control-panel" do
   livecheck do
     url "https://www.phidgets.com/downloads/phidget#{version.before_comma}/libraries/macos/Phidget#{version.before_comma}.dmg"
     strategy :header_match do |headers|
-      match = headers["location"].match(%r{/Phidget(\d+)_(\d+(?:\.\d+)*)\.dmg}i)
+      match = headers["location"].match(%r{/Phidget(\d+)_(\d+(?:\.\d+)+)\.dmg}i)
       "#{match[1]},#{match[2]}"
     end
   end

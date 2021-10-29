@@ -10,7 +10,7 @@ cask "synology-drive" do
   livecheck do
     url "https://www.synology.com/en-us/releaseNote/SynologyDriveClient"
     strategy :page_match do |page|
-      page.scan(/>\s*Version:\s*(\d+(?:\.\d+)*)-(\d+)\s*</i).map do |match|
+      page.scan(/>\s*Version:\s*(\d+(?:\.\d+)+)-(\d+)\s*</i).map do |match|
         "#{match[0]},#{match[1]}"
       end
     end

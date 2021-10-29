@@ -10,7 +10,7 @@ cask "samsung-portable-ssd-t5" do
 
   livecheck do
     url :homepage
-    regex(/T5.*mac.*\n.*Version\s*(\d+(?:\.\d+)*)/i)
+    regex(/T5.*mac.*\n.*Version\s*(\d+(?:\.\d+)+)/i)
   end
 
   pkg "SamsungPortableSSD_Setup_Mac.pkg"

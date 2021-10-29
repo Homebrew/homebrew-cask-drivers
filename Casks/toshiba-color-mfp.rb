@@ -10,7 +10,7 @@ cask "toshiba-color-mfp" do
   livecheck do
     url "http://business.toshiba.com/support/downloads/GetDownloads.jsp?model=5015"
     strategy :page_match do |page|
-      version = page.match(/"MacDC",.*?"id":"(\d+)",.*?"versionName":"(\d+(?:\.\d+)*)",/)
+      version = page.match(/"MacDC",.*?"id":"(\d+)",.*?"versionName":"(\d+(?:\.\d+)+)",/)
       "#{version[2]},#{version[1]}"
     end
   end
