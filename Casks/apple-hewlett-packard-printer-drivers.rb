@@ -11,7 +11,7 @@ cask "apple-hewlett-packard-printer-drivers" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      version = page.match(/"strTitle":.*?v(\d+(?:\.\d+)*)\s*for\s*macOS/i)
+      version = page.match(/"strTitle":.*?v(\d+(?:\.\d+)+)\s*for\s*macOS/i)
       metaurl = page.match(%r{"metaUrl":.*?/(\d+)/macos/([\dA-F]+(?:-[\dA-F]+)*)/HewlettPackardPrinterDrivers\.dmg}i)
       "#{version[1]},#{metaurl[1]},#{metaurl[2]}"
     end

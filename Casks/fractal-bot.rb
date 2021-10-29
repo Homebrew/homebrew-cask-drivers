@@ -10,7 +10,7 @@ cask "fractal-bot" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(/Version\s*(\d+(?:\.\d+)*).*?\.dmg/i)
+    regex(/Version\s*(\d+(?:\.\d+)+).*?\.dmg/i)
   end
 
   app "Fractal-Bot.app"
