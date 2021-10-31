@@ -1,5 +1,5 @@
 cask "3dconnexion" do
-  if MacOS.version <= :yosemite && MacOS.version <= :el_capitan && MacOS.version <= :sierra && MacOS.version <= :high_sierra && MacOS.version <= :mojave && MacOS.version <= :catalina
+  if MacOS.version <= :catalina
     version "10-6-7,r3287:36E24890-6B5F-443a-8A9F-1851F9ADB985"
     sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
 
