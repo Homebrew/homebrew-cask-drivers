@@ -22,7 +22,7 @@ cask "insta360-studio" do
     end
   end
 
-  pkg "Insta360_Studio_#{version.after_comma.before_colon}_signed.pkg"
+  pkg "Insta360_Studio_#{version.after_comma.after_colon}_signed.pkg"
 
   uninstall quit:    "com.insta360.studio",
             pkgutil: [
