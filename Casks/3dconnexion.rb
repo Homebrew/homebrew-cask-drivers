@@ -1,8 +1,16 @@
 cask "3dconnexion" do
-  version "10-6-7,r3287:36E24890-6B5F-443a-8A9F-1851F9ADB985"
-  sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
+  if MacOS.version <= :yosemite && MacOS.version <= :el_capitan && MacOS.version <= :sierra && MacOS.version <= :high_sierra && MacOS.version <= :mojave && MacOS.version <= :catalina
+    version "10-6-7,r3287:36E24890-6B5F-443a-8A9F-1851F9ADB985"
+    sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
 
-  url "https://download.3dconnexion.com/drivers/mac/#{version.before_comma}_#{version.after_colon}/3DxWareMac_v#{version.before_comma}_#{version.after_comma.before_colon}.dmg"
+    url "https://download.3dconnexion.com/drivers/mac/#{version.before_comma}_#{version.after_colon}/3DxWareMac_v#{version.before_comma}_#{version.after_comma.before_colon}.dmg"
+  else
+    version "10-7-0_r3386"
+    sha256 "bebd9c01c96bfb9411fd5b4ccd2bbba3b798cba001b0e200547d0e9c3dcbf893"
+
+    url "https://download.3dconnexion.com/drivers/technical_support/3DxWareMac_v#{version}.dmg"
+  end
+
   name "3Dconnexion"
   desc "3DxWare Driver"
   homepage "https://3dconnexion.com/"
