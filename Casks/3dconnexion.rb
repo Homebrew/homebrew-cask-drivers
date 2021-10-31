@@ -22,7 +22,7 @@ cask "3dconnexion" do
 
     livecheck do
       url "https://3dconnexion.com/us/support/faq/beta-driver-for-macos-11-big-sur/"
-      regex(/href=.*?3DxWareMac_(\d+(?:[.r-]\d+)*)\.dmg/i)
+      regex(/href=.*?3DxWareMac_v(\d+(?:-\d+)*_r\d+)\.dmg/i)
     end
   end
 
