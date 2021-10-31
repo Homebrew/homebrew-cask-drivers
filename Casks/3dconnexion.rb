@@ -11,6 +11,8 @@ cask "3dconnexion" do
     url "https://3dconnexion.com/us/drivers/"
     strategy :page_match do |page|
       match = page.match(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
+      next if match.blank?
+
       "#{match[2]},#{match[3]}:#{match[1]}"
     end
   end

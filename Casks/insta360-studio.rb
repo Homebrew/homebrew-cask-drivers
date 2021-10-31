@@ -16,6 +16,8 @@ cask "insta360-studio" do
       v = macos["version"]
       regex = %r{/(\d+)/([[:xdigit:]]+)/Insta360[._-]Studio[._-](\d+(?:[._-]\d+)*)[._-]signed\.pkg}i
       match = macos["channels"][0]["download_url"].match(regex)
+      next if match.blank? || v.blank?
+
       "#{v},#{match[3]}:#{match[1]}.#{match[2]}"
     end
   end
