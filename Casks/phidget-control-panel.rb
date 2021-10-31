@@ -11,6 +11,8 @@ cask "phidget-control-panel" do
     url "https://www.phidgets.com/downloads/phidget#{version.before_comma}/libraries/macos/Phidget#{version.before_comma}.dmg"
     strategy :header_match do |headers|
       match = headers["location"].match(%r{/Phidget(\d+)_(\d+(?:\.\d+)+)\.dmg}i)
+      next if match.blank?
+
       "#{match[1]},#{match[2]}"
     end
   end
