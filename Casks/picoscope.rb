@@ -1,8 +1,8 @@
 cask "picoscope" do
-  version "6.14.48-4r5944"
-  sha256 "176c8017125b0f6252d2b3483e15c3f159f5d9a9706e8c460bb60565a0e81ef9"
+  version "6.14.54-4r6108"
+  sha256 "6f356903bed33033f1660736d5ffff13609a59a28d16140798996726999c0e60"
 
-  url "https://www.picotech.com/download/software/beta/PicoScope-#{version}.pkg"
+  url "https://www.picotech.com/download/software/sr/PicoScope-#{version}.pkg"
   name "PicoScope"
   desc "Test and measurement oscilloscope software for PicoScope oscilloscops"
   homepage "https://www.picotech.com/"
