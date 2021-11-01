@@ -1,6 +1,6 @@
 cask "fujitsu-scansnap-home" do
-  version "2.1.0"
-  sha256 "3b293ca40d38910393153f26705499c2b966dbaaeed252d15625b582311fb332"
+  version "2.3.0"
+  sha256 "64e27b60245da21a20aa92bf62a1291048947502851bf4839635f6fcd8e80b90"
 
   url "https://origin.pfultd.com/downloads/ss/sshinst/m-#{version.no_dots}/MacSSHOfflineInstaller_#{version.dots_to_underscores}.dmg",
       verified: "origin.pfultd.com/"
@@ -8,9 +8,11 @@ cask "fujitsu-scansnap-home" do
   desc "Fujitsu ScanSnap Scanner software"
   homepage "https://www.fujitsu.com/global/products/computing/peripheral/scanners/soho/sshome/"
 
+  # Some of the release titles contain a typo where a space is omitted, so this
+  # regex is a bit extreme about whitespace to ensure we match all the versions.
   livecheck do
     url "https://www.pfu.fujitsu.com/imaging/ss_hist/en/mac/index.html"
-    regex(/ScanSnap Home for Mac (\d+(?:\.\d+)+) Released/i)
+    regex(/ScanSnap\s*Home\s*for\s*Mac\s*v?(\d+(?:\.\d+)+)\s*Released/i)
   end
 
   depends_on macos: ">= :sierra"
