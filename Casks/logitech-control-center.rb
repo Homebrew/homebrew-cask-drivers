@@ -2,7 +2,7 @@ cask "logitech-control-center" do
   version "3.9.14"
   sha256 "41839c121b0df080329de1879ce52a1130cd8fe265b602ca877fe383d8cfd0fe"
 
-  url "https://www.logitech.com/pub/techsupport/mouse/mac/lcc#{version}.zip"
+  url "https://download01.logi.com/web/ftp/pub/techsupport/mouse/mac/lcc#{version}.zip"
   name "Logitech Control Center"
   desc "Customize your mouse and keyboard"
   homepage "https://support.logitech.com/en_us/product/3129"
