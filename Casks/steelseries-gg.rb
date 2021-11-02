@@ -2,13 +2,13 @@ cask "steelseries-gg" do
   version "11.1.0"
   sha256 "38e9fbe1e984083ca48194868e031bab7ce1a3a7e5959c51ab27ded3b5c1dbbe"
 
-  url "https://steelseries.com/gg/downloads/gg/#{version}/darwin"
+  url "https://engine.steelseriescdn.com/SteelSeriesGG#{version}.pkg"
   name "SteelSeries GG #{version.major}"
   desc "Settings for SteelSeries peripherals and accessories"
   homepage "https://steelseries.com/gg"
 
   livecheck do
-    url "https://steelseries.com/engine/latest/darwin"
+    url "https://steelseries.com/gg/downloads/gg/latest/darwin"
     strategy :header_match
   end
 
