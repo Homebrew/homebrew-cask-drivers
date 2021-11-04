@@ -12,6 +12,8 @@ cask "garmin-express" do
     strategy :extract_plist
   end
 
+  auto_updates true
+
   pkg "Install Garmin Express.pkg"
 
   uninstall quit:    "com.garmin.renu.client",
