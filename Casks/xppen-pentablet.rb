@@ -1,5 +1,5 @@
 cask "xppen-pentablet" do
-  version "3.2.2"
+  version "3.2.2_211029"
   sha256 :no_check
 
   url "https://www.xp-pen.com/download/file/id/1968"
