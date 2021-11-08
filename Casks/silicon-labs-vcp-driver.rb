@@ -13,11 +13,11 @@ cask "silicon-labs-vcp-driver" do
   app "Install CP210x VCP Driver.app/Contents/Resources/CP210xVCPDriver.app"
 
   postflight do
-    system_command! "/Applications/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["install"], sudo: true
+    system_command "#{appdir}/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["install"], sudo: true
   end
 
   uninstall_preflight do
-    system_command "/Applications/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["uninstall"], sudo: true
+    system_command "#{appdir}/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["uninstall"], sudo: true
   end
 
   caveats do
