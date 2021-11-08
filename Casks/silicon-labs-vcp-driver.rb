@@ -10,10 +10,17 @@ cask "silicon-labs-vcp-driver" do
 
   container nested: "macOS_VCP_Driver/SiLabsUSBDriverDisk.dmg"
 
-  installer manual: "Install CP210x VCP Driver.app"
+  app "Install CP210x VCP Driver.app/Contents/Resources/CP210xVCPDriver.app"
 
-  uninstall script: {
-    executable: "uninstaller.sh",
-    sudo:       true,
-  }
+  postflight do
+    system_command! "/Applications/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["install"], sudo: true
+  end
+
+  uninstall_preflight do
+    system_command "/Applications/CP210xVCPDriver.app/Contents/MacOS/CP210xVCPDriver", args: ["uninstall"], sudo: true
+  end
+
+  caveats do
+    kext
+  end
 end
