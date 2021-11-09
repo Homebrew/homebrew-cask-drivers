@@ -8,5 +8,5 @@ cask "nordic-nrf-connect" do
   desc "Development software for Bluetooth Low Energy and cIoT"
   homepage "https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/"
 
-  app "nRF Connect.app"
+  app "nRF Connect for Desktop.app"
 end
