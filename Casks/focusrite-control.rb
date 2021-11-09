@@ -1,6 +1,6 @@
 cask "focusrite-control" do
-  version "3.7.4.1943"
-  sha256 "969d9e78f42f9f810e40be4e2b07450e5cf6cd4267d72c5ae525899742c8baab"
+  version "3.8.3.1967"
+  sha256 "80b0078b337e88582ac3edbed888c19420364014862ea38d31602824b18e6c8a"
 
   url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   name "Focusrite Control"
@@ -8,7 +8,7 @@ cask "focusrite-control" do
   homepage "https://focusrite.com/en/focusrite-control"
 
   livecheck do
-    url "https://customer.focusrite.com/en/support/downloads?brand=Focusrite&product_by_type=1360&download_type=software"
+    url "https://customer.focusrite.com/en/support/downloads?brand=Focusrite&product_by_type=1501&download_type=software"
     strategy :page_match
     regex(%r{href=.*?/Focusrite%20Control%20-%20(\d+(?:\.\d+)+)\.dmg}i)
   end
