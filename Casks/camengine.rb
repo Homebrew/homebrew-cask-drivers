@@ -12,4 +12,9 @@ cask "camengine" do
   uninstall launchctl: "com.avermedia.camengineV4",
             pkgutil:   "com.avermedia.UninstallForCamV4",
             trash:     "/Applications/CamEngine4"
+
+  zap trash: [
+    "~/Library/Preferences/com.avermedia.CamEngineV4.plist",
+    "~/Library/Saved Application State/com.avermedia.CamEngineV4.savedState",
+  ]
 end
