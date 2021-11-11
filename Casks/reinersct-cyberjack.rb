@@ -2,8 +2,8 @@ cask "reinersct-cyberjack" do
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
 
   if Hardware::CPU.intel?
-    version "3.99.5final.SP13"
-    sha256 "25bcd5d5ff197163bba94e72cddb4b74ad8a04df8e88df01404378f80c46f9b4"
+    version "3.99.5final.SP15"
+    sha256 "721c0cf3f82d863acd5c070b58961dcd890a035dd339563a5959b5f124d75820"
   else
     version "3.99.5final.SP14"
     sha256 "16c3628c7bd74617308caafc063517cfa8739d99ce0ea2159be125e1399e344c"
