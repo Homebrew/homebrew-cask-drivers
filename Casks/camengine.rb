@@ -7,7 +7,14 @@ cask "camengine" do
   desc "App to unleash the potential of the Live Streamer CAM"
   homepage "https://www.avermedia.com/us/product-detail/PW513"
 
-  pkg "Step2.CamEngineV4_v#{version.before_comma}_#{version.after_comma}.pkg"
+  pkg "Step2.CamEngineV4_v#{version.before_comma}_#{version.after_comma}.pkg",
+      choices: [
+        {
+          "choiceIdentifier" => "PKG_REF_0",
+          "choiceAttribute"  => "selected",
+          "attributeSetting" => 0,
+        },
+      ]
 
   uninstall launchctl: "com.avermedia.camengineV4",
             pkgutil:   "com.avermedia.UninstallForCamV4",
