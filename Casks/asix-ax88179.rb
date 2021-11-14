@@ -33,7 +33,7 @@ cask "asix-ax88179" do
         end.compact
       end
     end
-  else
+  elsif MacOS.version <= :big_sur
     version "1.3.0,1163"
 
     container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
@@ -45,6 +45,23 @@ cask "asix-ax88179" do
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
           match = list_item.match(
             %r{data-href=.*?/download/file/(\d+).*?macOS\s*11.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
+          )
+          "#{match[2]},#{match[1]}" if match
+        end.compact
+      end
+    end
+  else
+    version "2.0.0,1179"
+
+    container nested: "ASIX_USB_Device_Installer_macOS_12_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
+    pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
+
+    livecheck do
+      url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
+      strategy :page_match do |page|
+        page.split(/class=['"]?list__item['"]?/).map do |list_item|
+          match = list_item.match(
+            %r{data-href=.*?/download/file/(\d+).*?macOS\s*12.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
           )
           "#{match[2]},#{match[1]}" if match
         end.compact
