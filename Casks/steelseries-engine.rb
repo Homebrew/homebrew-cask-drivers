@@ -8,10 +8,6 @@ cask "steelseries-engine" do
   desc "Settings for SteelSeries peripherals and accessories"
   homepage "https://steelseries.com/engine"
 
-  livecheck do
-    skip "discontinued"
-  end
-
   auto_updates true
   conflicts_with cask: "steelseries-gg"
   depends_on macos: ">= :sierra"
