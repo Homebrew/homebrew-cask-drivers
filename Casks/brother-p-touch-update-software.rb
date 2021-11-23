@@ -17,6 +17,7 @@ cask "brother-p-touch-update-software" do
 
   url "https://download.brother.com/welcome/dlfp#{version.csv[2]}/pum#{version.csv[0].no_dots}x#{version.csv[1]}all.dmg"
   name "Brother P-touch Update Software"
+  desc "Software for Brother P-touch label printers"
   homepage "https://support.brother.com/"
 
   livecheck do
@@ -46,7 +47,7 @@ cask "brother-p-touch-update-software" do
   pkg "BrotherPtUpdateSoftware.pkg"
 
   uninstall pkgutil: [
-    "com.brother.brotherptdriver.BrotherPtUpdateSoftware",
     "com.Brother.Brotherdriver.BrotherPtUpdateSoftware",
+    "com.brother.brotherptdriver.BrotherPtUpdateSoftware",
   ]
 end
