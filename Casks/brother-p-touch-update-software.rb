@@ -1,11 +1,19 @@
 cask "brother-p-touch-update-software" do
   os = {
-    big_sur:  "10064",
-    monterey: "10071",
+    high_sierra: "10046",
+    mojave:      "10051",
+    catalina:    "10057",
+    big_sur:     "10064",
+    monterey:    "10071",
   }
 
-  version "1.5.6,110,100885"
-  sha256 "179cd72961d1f2b8fba1146a4b636ca1529e8fc8adecac0165111ac36bd85a7a"
+  if MacOS.version <= :catalina
+    version "1.5.5,15,100785"
+    sha256 "c6e1afdb1daf04c143532f9dab019a764a2f6e07567c1b42d61d34232b990c32"
+  else
+    version "1.5.6,110,100885"
+    sha256 "179cd72961d1f2b8fba1146a4b636ca1529e8fc8adecac0165111ac36bd85a7a"
+  end
 
   url "https://download.brother.com/welcome/dlfp#{version.csv[2]}/pum#{version.csv[0].no_dots}x#{version.csv[1]}all.dmg"
   name "Brother P-touch Update Software"
