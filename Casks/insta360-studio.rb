@@ -27,15 +27,15 @@ cask "insta360-studio" do
   uninstall quit:    "com.insta360.studio",
             delete:  "#{appdir}/Insta360 Studio #{version.csv[2].split("_")[0]}.app",
             pkgutil: [
+              "com.insta360.insta360Studio",
               "com.insta360.PremierePlugin",
               "com.insta360.ThumbnailPlugin",
-              "com.insta360.insta360Studio",
             ]
 
   zap trash: [
     "~/Library/Application Support/Insta360",
-    "~/Library/Caches/Insta360",
     "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.insta360.studio",
+    "~/Library/Caches/Insta360",
     "~/Library/Saved Application State/com.insta360.studio.savedState",
   ]
 end
