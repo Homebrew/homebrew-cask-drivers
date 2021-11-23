@@ -25,6 +25,7 @@ cask "insta360-studio" do
   pkg "Insta360_Studio_#{version.csv[2]}_signed.pkg"
 
   uninstall quit:    "com.insta360.studio",
+            delete:  "#{appdir}/Insta360 Studio #{version.csv[2].split("_")[0]}.app",
             pkgutil: [
               "com.insta360.PremierePlugin",
               "com.insta360.ThumbnailPlugin",
