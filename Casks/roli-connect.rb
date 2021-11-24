@@ -12,6 +12,8 @@ cask "roli-connect" do
     strategy :header_match
   end
 
+  depends_on macos: ">= :high_sierra"
+
   app "ROLI Connect.app"
 
   uninstall quit: "com.roli.hub"
@@ -19,8 +21,8 @@ cask "roli-connect" do
   zap trash: [
     "~/Library/Application Support/ROLI Connect",
     "~/Library/Logs/ROLI Connect",
-    "~/Library/Preferences/com.roli.hub.plist",
     "~/Library/Preferences/com.roli.hub.helper.plist",
+    "~/Library/Preferences/com.roli.hub.plist",
     "~/Library/Saved Application State/com.roli.hub.savedState",
   ]
 end
