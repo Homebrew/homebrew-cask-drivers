@@ -2,11 +2,15 @@ cask "roli-connect" do
   version "1.0.18"
   sha256 :no_check
 
-  url "https://api.roli.com/api/v1/product/com.roli.hub/latest/osx"
-  appcast "https://roli.com/start"
+  url "https://api.roli.com/api/v1/product/com.roli.hub/latest/osx?flavor=general-edition"
   name "ROLI Connect"
-  desc "A tools manager for ROLI products"
-  homepage "https://roli.com"
+  desc "Tools manager for ROLI products"
+  homepage "https://roli.com/"
+
+  livecheck do
+    url :url
+    strategy :header_match
+  end
 
   app "ROLI Connect.app"
 
