@@ -1,10 +1,10 @@
 cask "segger-jlink" do
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
 
-  version "7.58b"
+  version "7.58c"
 
   if Hardware::CPU.intel?
-    sha256 "392a42fea443a0ae87959c4765d907c84b0c3f55d6a0a3ebe1ee4805b8d984a1"
+    sha256 "4c0046c73b9d877f874d15b0f9afa9f927fbdf76bb91e1690d73b0e46e033948"
   else
     sha256 "13b092c517ef3dea484093fb7c0d9cb6cb85506911d9b7ec6021684c335fcd58"
   end
