@@ -10,7 +10,7 @@ cask "genki-wave-for-work" do
 
   livecheck do
     url "https://bitbucket.org/genki_instruments/software_releases/downloads/appcast_wfw.xml"
-    regex(/sparkle:shortVersionString="(\d+(?:\.\d+)*)" sparkle:os="macos"/i)
+    regex(/sparkle:shortVersionString="(\d+(?:\.\d+)+)"\s+sparkle:os="macos"/i)
   end
 
   pkg "Install_Wave_for_Work.pkg"
