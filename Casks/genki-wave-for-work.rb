@@ -10,7 +10,6 @@ cask "genki-wave-for-work" do
 
   livecheck do
     url "https://bitbucket.org/genki_instruments/software_releases/downloads/appcast_wfw.xml"
-    strategy :page_match
     regex(/sparkle:shortVersionString="(\d+(?:\.\d+)*)" sparkle:os="macos"/i)
   end
 
