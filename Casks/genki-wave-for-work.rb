@@ -15,13 +15,8 @@ cask "genki-wave-for-work" do
 
   pkg "Install_Wave_for_Work.pkg"
 
-  uninstall pkgutil: [
-    "com.genkiinstruments.waveforwork",
-  ]
-
-  uninstall launchctl: [
-    "com.genkiinstruments.Wave.Work",
-  ]
+  uninstall pkgutil:   "com.genkiinstruments.waveforwork",
+            launchctl: "com.genkiinstruments.Wave.Work"
 
   zap trash: [
     "~/Library/Preferences/com.genkiinstruments.waveforwork.plist",
