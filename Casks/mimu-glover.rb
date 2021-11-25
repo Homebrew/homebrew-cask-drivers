@@ -9,7 +9,7 @@ cask "mimu-glover" do
 
   livecheck do
     url "https://mimugloves.com/glover/"
-    regex(%r{Glover-MacOS-(\d+(?:\.\d+)+)\.zip}i)
+    regex(/Glover-MacOS-(\d+(?:\.\d+)+)\.zip/i)
   end
 
   app "Glover.app"
