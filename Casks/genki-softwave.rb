@@ -10,14 +10,12 @@ cask "genki-softwave" do
 
   livecheck do
     url "https://bitbucket.org/genki_instruments/software_releases/downloads/appcast.xml"
-    regex(/shortVersionString="(\d+(?:\.\d+)*)"\s+sparkle:os="macos"/i)
+    regex(/shortVersionString="(\d+(?:\.\d+)+)"\s+sparkle:os="macos"/i)
   end
 
   pkg "Softwave.pkg"
 
-  uninstall pkgutil: [
-    "com.genkiinstruments.softwave",
-  ]
+  uninstall pkgutil: "com.genkiinstruments.softwave"
 
   zap trash: [
     "~/Library/Preferences/com.genkiinstruments.softwave.plist",
