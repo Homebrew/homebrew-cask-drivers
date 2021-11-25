@@ -17,6 +17,9 @@ cask "genki-wave-for-work" do
 
   uninstall pkgutil: [
     "com.genkiinstruments.waveforwork",
+  ]
+
+  uninstall launchctl: [
     "com.genkiinstruments.Wave.Work",
   ]
 
