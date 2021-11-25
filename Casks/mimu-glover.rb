@@ -4,13 +4,12 @@ cask "mimu-glover" do
 
   url "https://static.mimugloves.com/Glover/Glover-MacOS-#{version}.zip"
   name "Glover"
-  desc "MiMU Gloves Software (as well for Leap motion, micro:bit, iPhone, OSC device)"
+  desc "MiMU Gloves software"
   homepage "https://mimugloves.com/glover/"
 
   livecheck do
     url "https://mimugloves.com/glover/"
-    strategy :page_match
-    regex(%r{https://static\.mimugloves\.com/Glover/Glover-MacOS-(\d+(?:\.\d+)*)\.zip}i)
+    regex(%r{Glover-MacOS-(\d+(?:\.\d+)+)\.zip}i)
   end
 
   app "Glover.app"
