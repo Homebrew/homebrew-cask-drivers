@@ -1,5 +1,5 @@
 cask "genki-softwave" do
-  version "0.12.1"
+  version "0.12.2"
   sha256 :no_check
 
   url "https://bitbucket.org/genki_instruments/software_releases/downloads/Softwave_mac.zip",
