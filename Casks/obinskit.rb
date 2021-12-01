@@ -1,6 +1,6 @@
 cask "obinskit" do
-  version "1.2.9"
-  sha256 "b1f1016f710d0555dd5fee44408454243abe38542cc2533da67e3a0a9ee3d86c"
+  version "1.2.10"
+  sha256 "4b62b19ba5e10b2d31a3240d72dbd141e9fd6911d354b958af95027b4148b10d"
 
   url "https://releases.obins.net/occ/darwin/x64/ObinsKit_#{version}_x64.dmg"
   name "ObinsKit"
