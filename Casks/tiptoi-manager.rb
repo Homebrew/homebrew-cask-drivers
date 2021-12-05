@@ -2,7 +2,7 @@ cask "tiptoi-manager" do
   version :latest
   sha256 :no_check
 
-  url "https://www.ravensburger.de/db/installer_flat/tiptoi_Manager_Installer.pkg"
+  url "https://www.ravensburger.de/db/Installer/tiptoi_Manager_Installer.pkg"
   name "tiptoi Manager"
   desc "Manage the data on children's Ravensburger tip toi audio pen"
   homepage "https://www.ravensburger.de/entdecken/ravensburger-marken/tiptoi/tiptoi-manager/index.html"
