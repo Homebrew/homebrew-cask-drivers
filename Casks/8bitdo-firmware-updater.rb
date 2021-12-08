@@ -4,6 +4,7 @@ cask "8bitdo-firmware-updater" do
 
   url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/8BitDoFirmwareUpdaterV#{version}.zip"
   name "8BitDo Firmware Updater"
+  desc "Firmware updater for 8BitDo devices"
   homepage "https://support.8bitdo.com/firmware-updater.html"
 
   livecheck do
