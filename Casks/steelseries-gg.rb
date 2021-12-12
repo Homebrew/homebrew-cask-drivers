@@ -22,9 +22,9 @@ cask "steelseries-gg" do
 
   uninstall launchctl: "com.steelseries.SSENext",
             quit:      [
-              "com.steelseries.SteelSeries-GG",
               "com.steelseries.gg.client.*",
               "com.steelseries.gg.uninstaller",
+              "com.steelseries.SteelSeries-GG",
             ],
             kext:      "com.steelseries.ssenext.driver",
             script:    [
@@ -37,8 +37,8 @@ cask "steelseries-gg" do
   zap trash: [
     "~/Library/Application Support/steelseries-gg-client",
     "~/Library/Caches/com.steelseries.SteelSeries-GG",
-    "~/Library/Preferences/com.steelseries.SteelSeries-GG.plist",
     "~/Library/Preferences/com.steelseries.gg.client.plist",
+    "~/Library/Preferences/com.steelseries.SteelSeries-GG.plist",
     "~/Library/Saved Application State/com.steelseries.gg.client.savedState",
     "~/Library/Saved Application State/com.steelseries.gg.uninstaller.savedState",
   ]
