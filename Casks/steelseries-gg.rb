@@ -1,6 +1,6 @@
 cask "steelseries-gg" do
-  version "11.2.0"
-  sha256 "3966dde5a96d17ade91d4dcc9b5c5676903578dae628b9b4db6dae531b127acc"
+  version "12.0.0"
+  sha256 "86f35db51c783072413b10adcaef001725d5a0e0f00082340cf15d3f0816cc5f"
 
   url "https://engine.steelseriescdn.com/SteelSeriesGG#{version}.pkg",
       verified: "engine.steelseriescdn.com/"
@@ -22,9 +22,9 @@ cask "steelseries-gg" do
 
   uninstall launchctl: "com.steelseries.SSENext",
             quit:      [
-              "com.steelseries.SteelSeries-GG",
               "com.steelseries.gg.client.*",
               "com.steelseries.gg.uninstaller",
+              "com.steelseries.SteelSeries-GG",
             ],
             kext:      "com.steelseries.ssenext.driver",
             script:    [
@@ -37,8 +37,8 @@ cask "steelseries-gg" do
   zap trash: [
     "~/Library/Application Support/steelseries-gg-client",
     "~/Library/Caches/com.steelseries.SteelSeries-GG",
-    "~/Library/Preferences/com.steelseries.SteelSeries-GG.plist",
     "~/Library/Preferences/com.steelseries.gg.client.plist",
+    "~/Library/Preferences/com.steelseries.SteelSeries-GG.plist",
     "~/Library/Saved Application State/com.steelseries.gg.client.savedState",
     "~/Library/Saved Application State/com.steelseries.gg.uninstaller.savedState",
   ]
