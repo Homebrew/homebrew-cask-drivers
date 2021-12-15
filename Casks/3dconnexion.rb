@@ -15,8 +15,8 @@ cask "3dconnexion" do
       end
     end
   else
-    version "10-7-0_r3386"
-    sha256 "bebd9c01c96bfb9411fd5b4ccd2bbba3b798cba001b0e200547d0e9c3dcbf893"
+    version "10-7-0_r3408"
+    sha256 "87a62fb616e2154a725423d83abf8c7e70df3edc190f8fc854c5d7b1d026b24a"
 
     url "https://download.3dconnexion.com/drivers/technical_support/3DxWareMac_v#{version}.dmg"
 
