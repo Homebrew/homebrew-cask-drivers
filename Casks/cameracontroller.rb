@@ -5,12 +5,7 @@ cask "cameracontroller" do
   url "https://github.com/Itaybre/CameraController/releases/download/#{version}/CameraController.zip"
   name "CameraController"
   desc "Control USB Cameras from an app"
-  homepage "https://github.com/Itaybre/CameraController"
-
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
+  homepage "https://github.com/Itaybre/CameraController/"
 
   depends_on macos: ">= :catalina"
 
