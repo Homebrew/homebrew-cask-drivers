@@ -5,8 +5,8 @@ cask "konica-minolta-bizhub-c750i-driver" do
 
     pkg "A4/C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i.pkg"
   else
-    version "2.2.3A,d87425ee468e6d834887936aca5b096c,127009"
-    sha256 "f200cbfa7322c45b864144388bf86d29f94fbf7f6e4c110ff61bedd3b62043f4"
+    version "3.1.3A,55acec5c11f08a2d7a9a06fad48c8949,130158"
+    sha256 "9855a756bf1a1b36a70447232cb98585015dc85a4dfb6ca6e3bd2b10a535610c"
 
     pkg "C750i_C650i_C360i_C287i_C286i_C4050i_C4000i_C3320i_11.pkg"
   end
