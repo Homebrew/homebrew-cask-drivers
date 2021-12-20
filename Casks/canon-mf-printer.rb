@@ -8,6 +8,10 @@ cask "canon-mf-printer" do
   desc "Printer driver & utilities for Canon imageCLASS MF printers"
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
+  livecheck do
+    skip "No version information available"
+  end
+
   depends_on macos: ">= :yosemite"
 
   pkg "MF_Printer_Installer.pkg"
