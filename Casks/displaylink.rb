@@ -14,7 +14,7 @@ cask "displaylink" do
   elsif MacOS.version <= :catalina
     version "1.5,2021-09"
     sha256 "d703cc8e9093e4d163c5e612326c0907a02c6d4eec6aaca8d0727503859ef95d"
-    url "https://www.synaptics.com/sites/default/files/exe_files/#{version.after_comma}/DisplayLink%20Manager%20Graphics%20Connectivity#{version.before_comma}-EXE.pkg"
+    url "https://www.synaptics.com/sites/default/files/exe_files/#{version.csv.second}/DisplayLink%20Manager%20Graphics%20Connectivity#{version.csv.first}-EXE.pkg"
   else
     version "1.6,2021-12"
     sha256 "ea1a5f68fbc51d2604f55be03c787c0e1f341b6d50bca71d6da8066008e319f9"
