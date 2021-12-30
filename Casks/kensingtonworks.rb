@@ -1,6 +1,6 @@
 cask "kensingtonworks" do
-  version "2.3.2_1637980533"
-  sha256 "09a5060be5177b4e48749deca236b2b255793abbb8b34838acf67f9db89a7ab4"
+  version "3.0.3_1640160151"
+  sha256 "4e8c0256d1efb0246256e2fca08f0d80daa93b9622339d4701eef68938fc1eff"
 
   url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
   name "KensingtonWorks"
