@@ -10,7 +10,7 @@ cask "shureplus-motiv" do
   livecheck do
     url "https://www.shure.com/en-US/support/downloads/software-firmware-archive/shure_plus_motiv_desktop"
     strategy :page_match
-    regex(/<span\ class="firmware__version">\n\t+(\d+(?:\.\d+)+\n)/x)
+    regex(/<span\sclass="firmware__version">\n?\t+?(\d+(?:\.\d+)+)/i)
   end
 
   app "ShurePlus MOTIV.app"
