@@ -1,25 +1,24 @@
 cask "shureplus-motiv" do
-  version "1.1.0.105"
-  sha256 "a9c81b7123f1613f5ef5a76d49444ad1154d2a0cb77ce41a9d386999466a784d"
+  version "1.2.1"
+  sha256 "2df7508affd12e4ee7686c849ef00aa5588bb751237c4e3a922786c047db84f0"
 
-  url "https://d24z4d3zypmncx.cloudfront.net/Software/ckgifea480ba50b703lmhw1ks/ShurePlusMOTIV-mac-#{version}.zip",
-      verified: "d24z4d3zypmncx.cloudfront.net/Software/ckgifea480ba50b703lmhw1ks/"
+  url "https://content-files.shure.com/Software/shure_plus_motiv_desktop/#{version.dots_to_hyphens}/MOTIV_mac_#{version}.dmg"
   name "ShurePlus MOTIV"
   desc "Additional features and controls for Shure MV7 and MV88+ microphones"
   homepage "https://www.shure.com/en-US/products/software/shure_plus_motiv_desktop"
 
   livecheck do
     url "https://www.shure.com/en-US/support/downloads/software-firmware-archive/shure_plus_motiv_desktop"
-    regex(%r{href=.*?/ShurePlusMOTIV[._-]mac[._-]v?(\d+(?:\.\d+)+)\.(?:zip|dmg)}i)
+    regex(/<span\sclass="firmware__version">\n?\t+?(\d+(?:\.\d+)+)/i)
   end
 
   app "ShurePlus MOTIV.app"
 
+  uninstall quit: "com.shure.motiv.desktop"
+
   zap trash: [
-    "~/Library/Application Support/shure.motiv",
+    "~/Library/Application Support/ShurePlus MOTIV",
     "~/Library/Logs/ShurePlus MOTIV",
-    "~/Library/Logs/shure.motiv",
-    "~/Library/Preferences/com.shure.motiv.desktop.plist",
     "~/Library/Saved Application State/com.shure.motiv.desktop.savedState",
   ]
 end
