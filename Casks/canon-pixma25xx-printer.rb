@@ -2,7 +2,7 @@ cask "canon-pixma25xx-printer" do
   version "16.40.1.0,21.3"
   sha256 "d91cf94015a8df158d1689bda0deb38103381abafeb7b09ccd4e0e9b9f4c9d53"
 
-  url "https://gdlp01.c-wss.com/gds/9/0100005379/11/mcpd-mac-mg2500-#{version.before_comma.dots_to_underscores}-ea#{version.after_comma.dots_to_underscores}.dmg",
+  url "https://gdlp01.c-wss.com/gds/9/0100005379/11/mcpd-mac-mg2500-#{version.csv.first.dots_to_underscores}-ea#{version.csv.second.dots_to_underscores}.dmg",
       verified: "gdlp01.c-wss.com/gds/"
   name "Canon Pixma MG25XX series Printer Driver"
   desc "Printer driver for Canon Pixma MG25XX series printers"

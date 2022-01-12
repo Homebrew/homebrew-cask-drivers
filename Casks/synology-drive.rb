@@ -2,7 +2,7 @@ cask "synology-drive" do
   version "3.0.2,12682"
   sha256 "5560022a580002efb131e15418d3d1eab484fd30ed065e53a9fdedf8fb439bd6"
 
-  url "https://global.download.synology.com/download/Utility/SynologyDriveClient/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-drive-client-#{version.after_comma}.dmg"
+  url "https://global.download.synology.com/download/Utility/SynologyDriveClient/#{version.csv.first}-#{version.csv.second}/Mac/Installer/synology-drive-client-#{version.csv.second}.dmg"
   name "Synology Drive"
   desc "Sync and backup service to Synology NAS drives"
   homepage "https://www.synology.com/"

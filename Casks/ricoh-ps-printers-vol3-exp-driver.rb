@@ -2,7 +2,7 @@ cask "ricoh-ps-printers-vol3-exp-driver" do
   version "3.9.0.0,0001316460"
   sha256 "2a092e94f8abb664fb9fd1512135a53d0ff44ba9d0bcea89a364aebffda936a2"
 
-  url "https://support.ricoh.com/bb/pub_e/dr_ut_e/#{version.after_comma[0..6]}/#{version.after_comma}/V#{version.before_comma.no_dots}/Ricoh_PS_Printers_Vol3_EXP_LIO_#{version.before_comma}.dmg"
+  url "https://support.ricoh.com/bb/pub_e/dr_ut_e/#{version.csv.second[0..6]}/#{version.csv.second}/V#{version.csv.first.no_dots}/Ricoh_PS_Printers_Vol3_EXP_LIO_#{version.csv.first}.dmg"
   name "Ricoh PS printers Vol 3 EXP driver"
   desc "Allow PS driver to control the print device and enable full functionality"
   homepage "https://support.ricoh.com/bb/html/dr_ut_e/apc/model/mpc2011/mpc2011.htm"
