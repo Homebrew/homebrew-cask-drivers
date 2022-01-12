@@ -2,7 +2,7 @@ cask "lg-onscreen-control" do
   version "5.23,zQPytl4jWbTy4D47mQFA"
   sha256 "0aac65e8d50b942dda874bf14f24c1a85e72f46deb3fe67253ec9a6f635abe0e"
 
-  url "https://gscs-b2c.lge.com/downloadFile?fileId=#{version.after_comma}",
+  url "https://gscs-b2c.lge.com/downloadFile?fileId=#{version.csv.second}",
       verified: "lge.com/"
   name "LG OnScreen Control"
   desc "Displays all connected LG monitor information"

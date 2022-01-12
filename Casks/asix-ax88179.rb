@@ -70,7 +70,7 @@ cask "asix-ax88179" do
   end
   sha256 :no_check
 
-  url "https://www.asix.com.tw/en/support/download/file/#{version.after_comma}"
+  url "https://www.asix.com.tw/en/support/download/file/#{version.csv.second}"
   name "AX88179"
   desc "USB 3.0 to gigabit ethernet drivers for ASIX Electronics devices"
   homepage "https://www.asix.com.tw/en/support/download"

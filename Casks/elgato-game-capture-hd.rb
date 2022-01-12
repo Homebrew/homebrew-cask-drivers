@@ -10,7 +10,7 @@ cask "elgato-game-capture-hd" do
     sha256 "a442281c2c2d0ec070463e1cf94d535946cbf813c7273e336e529e5897c764bb"
   end
 
-  url "https://gc-updates.elgato.com/mac/download.php?build=#{version.after_comma}"
+  url "https://gc-updates.elgato.com/mac/download.php?build=#{version.csv.second}"
   appcast "https://help.elgato.com/hc/en-us/articles/360027963512-Elgato-Game-Capture-HD-Software-Release-Notes-macOS"
   name "Game Capture HD"
   homepage "https://www.elgato.com/en/gaming/downloads/"

@@ -2,7 +2,7 @@ cask "luna-display" do
   version "5.1.0,4191"
   sha256 "d6b058cfd4912d61cacca5db8a38fcd7a6d4dd1e9a6ad161a89b87adcd6f65de"
 
-  url "https://downloads.astropad.com/luna/mac/LunaDisplay-#{version.before_comma}.#{version.after_comma}.dmg"
+  url "https://downloads.astropad.com/luna/mac/LunaDisplay-#{version.csv.first}.#{version.csv.second}.dmg"
   name "Luna Display"
   desc "Use your iPad as a wireless second display"
   homepage "https://astropad.com/product/lunadisplay/"

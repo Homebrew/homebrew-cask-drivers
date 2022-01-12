@@ -2,7 +2,7 @@ cask "synology-cloud-station-backup" do
   version "4.3.3,4469"
   sha256 "1759be61a09cacd976969f71b0c0f12f34684976de6ad98323c512aec8f3399d"
 
-  url "https://global.download.synology.com/download/Tools/CloudStationBackup/#{version.before_comma}-#{version.after_comma}/Mac/Installer/synology-cloud-station-backup-#{version.after_comma}.dmg"
+  url "https://global.download.synology.com/download/Tools/CloudStationBackup/#{version.csv.first}-#{version.csv.second}/Mac/Installer/synology-cloud-station-backup-#{version.csv.second}.dmg"
   name "Synology Cloud Station Backup"
   desc "Back up files to a centralized Synology NAS"
   homepage "https://www.synology.com/"

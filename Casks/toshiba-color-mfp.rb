@@ -2,7 +2,7 @@ cask "toshiba-color-mfp" do
   version "7.113.0.4,18996"
   sha256 "c23ae72688a548b539b5db46acbed52deebe0a616441e3b6ad8ea19acdc0bf8d"
 
-  url "https://business.toshiba.com/downloads/KB/f1Ulds/#{version.after_comma}/TOSHIBA_ColorMFP.dmg.gz"
+  url "https://business.toshiba.com/downloads/KB/f1Ulds/#{version.csv.second}/TOSHIBA_ColorMFP.dmg.gz"
   name "Toshiba ColorMFP Drivers"
   desc "Drivers for Toshiba ColorMFP devices"
   homepage "https://business.toshiba.com/support"
