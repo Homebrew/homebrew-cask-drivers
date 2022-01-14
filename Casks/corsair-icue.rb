@@ -1,6 +1,6 @@
 cask "corsair-icue" do
-  version "4.12.214"
-  sha256 "b8260c797f86bcc0d35a15c1d94e53ae5e8e6bc5d01b6ea0f483afa14edb19bc"
+  version "4.19.191"
+  sha256 "e5ef42495e9e4c8374892d9aeb96e978def7d7b7bfeaaf062f0fa2859b98e934"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   name "Corsair iCUE"
@@ -20,6 +20,7 @@ cask "corsair-icue" do
     "com.corsair.cue.#{version.major}.launchHelper",
   ],
             quit:      [
+              "com.corsair.cue",
               "com.corsair.cue.*",
               "org.qt-project.*",
             ],
