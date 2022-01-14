@@ -13,12 +13,7 @@ cask "obsbot-me-tool" do
     regex(/Obsbot[._-]metool[._-]pc[._-]OA[._-]E[._-]MacOS[._-](\d+(?:\.\d+)+)[._-]release\.dmg/i)
   end
 
-  depends_on macos: [
-    :high_sierra,
-    :mojave,
-    :catalina,
-    :big_sur,
-  ]
+  depends_on macos: "<= :big_sur"
 
   app "OBSBOT Me Tool.app"
 end
