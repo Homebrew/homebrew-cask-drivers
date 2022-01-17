@@ -4,7 +4,7 @@ cask "toneprint" do
 
   url "https://mediadl.musictribe.com/download/software/tcelectronic/TonePrintEditor/TonePrint_#{version}_MacOS.zip",
       verified: "mediadl.musictribe.com"
-  name "TonePrint App"
+  name "TonePrint"
   desc "TonePrints let you completely alter the character of your  pedal in seconds"
   homepage "https://www.tcelectronic.com/tonePrints.html"
 
