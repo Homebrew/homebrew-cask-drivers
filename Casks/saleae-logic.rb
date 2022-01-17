@@ -1,6 +1,6 @@
 cask "saleae-logic" do
-  version "2.3.43"
-  sha256 "d7b33ff97e3b3dbbb6ed063665c2dd843c2da10361a4ce519e42457569965671"
+  version "2.3.44"
+  sha256 "b95a84071e743402b1dc21520b3f5380df4f9fdaa946254abe3b92d3622d5af0"
 
   url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
   name "Saleae Logic2"
@@ -8,7 +8,7 @@ cask "saleae-logic" do
   homepage "https://www.saleae.com/"
 
   livecheck do
-    url "https://logic2api.saleae.com/download?os=osx"
+    url "https://logic#{version.major}api.saleae.com/download?os=osx"
     strategy :header_match
   end
 
