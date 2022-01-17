@@ -8,7 +8,7 @@ cask "saleae-logic" do
   homepage "https://www.saleae.com/"
 
   livecheck do
-    url "https://logic2api.saleae.com/download?os=osx"
+    url "https://logic#{version.major}api.saleae.com/download?os=osx"
     strategy :header_match
   end
 
