@@ -9,7 +9,8 @@ cask "toneprint" do
   homepage "https://www.tcelectronic.com/tonePrints.html"
 
   livecheck do
-    skip "No version information available"
+    url "https://www.tcelectronic.com/.rest/musictribe/v1/downloadcenter/solr-dldatatable?brandName=tcelectronic&modelCode=P0CLC&iDisplayStart=0&iDisplayLength=15"
+    regex(/TonePrint[._-]v?(\d+(?:\.\d+)+)_MacOS\.zip/i)
   end
 
   app "Toneprint.app"
