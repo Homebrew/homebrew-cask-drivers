@@ -12,7 +12,6 @@ cask "saleae-logic" do
     strategy :header_match
   end
 
-  auto_updates true
   depends_on macos: ">= :mojave"
 
   app "Logic#{version.major}.app"
