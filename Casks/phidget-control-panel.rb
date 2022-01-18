@@ -1,6 +1,6 @@
 cask "phidget-control-panel" do
-  version "22,1.8.20211202"
-  sha256 "ab9d5b078ecd13e137589ca543e938fdc786f229cbd0209c3c196175a7288d73"
+  version "22,1.9.20220112"
+  sha256 "570f3d7b262c07ef89961ff588a8db2537e9ba3f146ad24d3722671a5c02e4ae"
 
   url "https://www.phidgets.com/downloads/phidget#{version.csv.first}/libraries/macos/Phidget#{version.csv.first}/Phidget#{version.csv.first}_#{version.csv.second}.dmg"
   name "Phidget Control Panel"
