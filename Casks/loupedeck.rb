@@ -33,7 +33,7 @@ cask "loupedeck" do
               "com.loupedeck.PluginPackageInstaller",
             ],
             delete:  "/Applications/Loupedeck.app"
-  
+
   zap trash: [
     "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Karo Holmberg",
     "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Loke Roos",
