@@ -32,13 +32,15 @@ cask "loupedeck" do
               "com.loupedeck.MediaInstaller",
               "com.loupedeck.PluginPackageInstaller",
             ],
-            delete:  [
-              "~/Library/Application Support/Capture One/KeyboardShortcuts/Loupedeck_beta.plist",
-              "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Loke Roos",
-              "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Karo Holmberg",
-              "~/Library/Application Support/Adobe/Lightroom/Export Presets/Loupedeck Exports",
-              "~/Library/Application Support/Adobe/Lightroom/Modules/loupedeck2.lrplugin",
-              "~/Library/Application Support/LoupedeckConfig",
-              "~/Library/Logs/LoupedeckConfig",
-            ]
+            delete:  "/Applications/Loupedeck.app"
+  
+  zap trash: [
+    "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Karo Holmberg",
+    "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Loke Roos",
+    "~/Library/Application Support/Adobe/Lightroom/Export Presets/Loupedeck Exports",
+    "~/Library/Application Support/Adobe/Lightroom/Modules/loupedeck2.lrplugin",
+    "~/Library/Application Support/Capture One/KeyboardShortcuts/Loupedeck_beta.plist",
+    "~/Library/Application Support/LoupedeckConfig",
+    "~/Library/Logs/LoupedeckConfig",
+  ]
 end
