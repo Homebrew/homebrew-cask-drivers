@@ -8,6 +8,11 @@ cask "loupedeck" do
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
 
+  livecheck do
+    url "https://support.loupedeck.com/loupedeck-software-download"
+    regex(/Mac\sOS\s(\d+(?:\.\d+)+)/i)
+  end
+
   depends_on macos: ">= :sierra"
 
   pkg "LoupedeckInstaller.pkg"
@@ -20,9 +25,12 @@ cask "loupedeck" do
     ["KILL", "com.loupedeck.Loupedeck2"],
   ],
             pkgutil: [
-              "com.loupedeck.PluginPackageInstaller",
               "com.loupedeck.ImageLibraryInstaller",
+              "com.loupedeck.LibraryInstaller",
+              "com.loupedeck.LoupedeckLibraryPackageManagerMacPackageInstaller",
               "com.loupedeck.LoupedeckPackageInstaller",
+              "com.loupedeck.MediaInstaller",
+              "com.loupedeck.PluginPackageInstaller",
             ],
             delete:  [
               "~/Library/Application Support/Capture One/KeyboardShortcuts/Loupedeck_beta.plist",
