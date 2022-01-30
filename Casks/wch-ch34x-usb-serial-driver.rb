@@ -7,6 +7,11 @@ cask "wch-ch34x-usb-serial-driver" do
   desc "USB serial driver"
   homepage "http://www.wch.cn/download/CH34XSER_MAC_ZIP.html"
 
+  livecheck do
+    url :homepage
+    regex(%r{CH9143</td>\n.*<td>(\d+(?:\.\d+)+)</td>}i)
+  end
+
   pkg "CH34XSER_MAC/CH34xVCPDriver.pkg"
 
   uninstall quit:    "cn.wch.CH34xVCPDriver",
