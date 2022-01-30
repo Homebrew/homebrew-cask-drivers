@@ -9,7 +9,7 @@ cask "wch-ch34x-usb-serial-driver" do
 
   livecheck do
     url :homepage
-    regex(%r{CH9143</td>\n.*<td>(\d+(?:\.\d+)+)</td>}i)
+    regex(%r{<td>(\d+(?:\.\d+)+)</td>}i)
   end
 
   pkg "CH34XSER_MAC/CH34xVCPDriver.pkg"
