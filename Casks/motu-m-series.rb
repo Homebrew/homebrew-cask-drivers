@@ -9,12 +9,14 @@ cask "motu-m-series" do
 
   livecheck do
     url :homepage
-    strategy :page_match
-    regex(/(?<=Mac v)(?:\d+)/i)
+    regex(/Mac\sv?(\d+)/i)
   end
 
   pkg "MOTU M Series Installer (#{version}).pkg"
 
-  uninstall pkgutil:   ["com.motu.pkg.mseries", "com.motu.pkg.mseries.bigsur"],
+  uninstall pkgutil:   [
+    "com.motu.pkg.mseries",
+    "com.motu.pkg.mseries.bigsur",
+  ],
             launchctl: "com.motu.coreuac.reenumerator"
 end
