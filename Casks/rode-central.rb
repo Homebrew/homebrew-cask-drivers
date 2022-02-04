@@ -12,6 +12,8 @@ cask "rode-central" do
     strategy :extract_plist
   end
 
+  depends_on macos: ">= :high_sierra"
+
   pkg "RODE Central macOS v#{version}/RODE Central Installer.pkg"
 
   uninstall pkgutil: "com.rodecentral.installer"
