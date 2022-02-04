@@ -1,8 +1,8 @@
 cask "camengine" do
-  version "4.0.63.2,21102201,0.0.8000.46"
-  sha256 "e2c184fcb617c664c6407525c026bc30d73b8b6cccc6d9519568a848c3adafa6"
+  version "4.0.64.2,21111101,0.0.8000.46"
+  sha256 "ee2676e34160ceae5ff7ce935a0ad36ffb7a3eba69e30a6492778a1c244dadb8"
 
-  url "https://storage.avermedia.com/web_release_www/software/AVerMedia_PW513_Firmware_#{version.csv.third}_&_CamEngine_Mac_v#{version.csv.first}.zip"
+  url "https://storage.avermedia.com/web_release_www/software/AVerMedia_PW513_Firmware_#{version.csv.third}_CamEngine_Mac_v#{version.csv.first}.zip"
   name "Camengine"
   desc "App for the Live Streamer CAM"
   homepage "https://www.avermedia.com/us/product-detail/PW513"
