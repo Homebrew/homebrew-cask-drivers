@@ -29,7 +29,8 @@ cask "wacom-tablet" do
               "com.wacom.DataStoreMgr",
               "com.wacom.displayhelper",
               "com.wacom.IOManager",
-              "com.wacom.UpgradeHelper",
+              "com.wacom.UpdateHelper",
+              "com.wacom.UpgradeHelper.51080.D904A98B-E591-48B6-9B2F-E3F814EBE5D8",
               "com.wacom.wacomtablet",
             ],
             kext:      [
