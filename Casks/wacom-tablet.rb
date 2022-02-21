@@ -30,7 +30,6 @@ cask "wacom-tablet" do
               "com.wacom.displayhelper",
               "com.wacom.IOManager",
               "com.wacom.UpdateHelper",
-              "com.wacom.UpgradeHelper.*",
               "com.wacom.wacomtablet",
             ],
             kext:      [
