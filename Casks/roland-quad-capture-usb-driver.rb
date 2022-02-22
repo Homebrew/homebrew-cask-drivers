@@ -72,7 +72,7 @@ cask "roland-quad-capture-usb-driver" do
   ]
 
   caveats do
-    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers/#{version.csv.third}"
+    license "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers"
     reboot
   end
 end
