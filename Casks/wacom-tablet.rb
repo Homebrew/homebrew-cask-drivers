@@ -31,7 +31,7 @@ cask "wacom-tablet" do
               "com.wacom.IOManager",
               "com.wacom.UpdateHelper",
               "com.wacom.wacomtablet",
-              "com.wacom.UpgradeHelper.*"
+              "com.wacom.UpgradeHelper.*",
             ],
             kext:      [
               "com.wacom.kext.ftdi",
