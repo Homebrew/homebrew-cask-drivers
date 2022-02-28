@@ -1,6 +1,6 @@
 cask "wacom-tablet" do
-  version "6.3.45-2"
-  sha256 "8b2901d4b2161111c7316d928efb205b81843d0c542dd8f432e3c62df1e1b07e"
+  version "6.3.45-3"
+  sha256 "d003250d3522b096675d19f31c5901b1ebaa8b62eccbb29ed9a984ee7f3f89fe"
 
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   name "Wacom Tablet"
@@ -21,6 +21,8 @@ cask "wacom-tablet" do
               "com.wacom.DisplayMgr",
               "com.wacom.RemoveWacomTablet",
               "com.wacom.TabletDriver",
+              "com.wacom.UpdateHelper",
+              "com.wacom.UpgradeHelper",
               "com.wacom.Wacom-Desktop-Center",
               "com.wacom.wacomtablet",
               "com.wacom.WacomTouchDriver",
@@ -40,28 +42,28 @@ cask "wacom-tablet" do
 
   zap trash: [
     "~/Library/Application Scripts/com.wacom.DataStoreMgr",
-    "~/Library/Application Scripts/com.wacom.Wacom-Desktop-Center",
-    "~/Library/Application Scripts/com.wacom.wacomtablet",
-    "~/Library/Application Scripts/com.wacom.Wacom-Display-Settings",
-    "~/Library/Application Scripts/com.wacom.TabletDriver",
     "~/Library/Application Scripts/com.wacom.IOManager",
-    "~/Library/Application Scripts/com.wacom.WacomTouchDriver",
     "~/Library/Application Scripts/com.wacom.RemoveWacomTablet",
+    "~/Library/Application Scripts/com.wacom.TabletDriver",
+    "~/Library/Application Scripts/com.wacom.Wacom-Desktop-Center",
+    "~/Library/Application Scripts/com.wacom.Wacom-Display-Settings",
+    "~/Library/Application Scripts/com.wacom.wacomtablet",
+    "~/Library/Application Scripts/com.wacom.WacomTouchDriver",
     "~/Library/Caches/com.wacom.Wacom-Desktop-Center",
     "~/Library/Containers/com.wacom.DataStoreMgr",
-    "~/Library/Containers/com.wacom.wacomtablet",
-    "~/Library/Containers/com.wacom.Wacom-Display-Settings",
-    "~/Library/Containers/com.wacom.TabletDriver",
     "~/Library/Containers/com.wacom.IOManager",
-    "~/Library/Containers/com.wacom.WacomTouchDriver",
     "~/Library/Containers/com.wacom.RemoveWacomTablet",
+    "~/Library/Containers/com.wacom.TabletDriver",
     "~/Library/Containers/com.wacom.Wacom-Desktop-Center",
+    "~/Library/Containers/com.wacom.Wacom-Display-Settings",
+    "~/Library/Containers/com.wacom.wacomtablet",
+    "~/Library/Containers/com.wacom.WacomTouchDriver",
     "~/Library/Group Containers/*.com.wacom.WacomTabletDriver",
     "~/Library/Group Containers/group.com.wacom.TabletDriver",
+    "~/Library/Preferences/com.wacom.RemoveWacomTablet.plist",
+    "~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist",
     "~/Library/Preferences/com.wacom.wacomtablet.plist",
     "~/Library/Preferences/com.wacom.wacomtablet.prefs",
     "~/Library/Preferences/com.wacom.wacomtouch.prefs",
-    "~/Library/Preferences/com.wacom.RemoveWacomTablet.plist",
-    "~/Library/Preferences/com.wacom.Wacom-Desktop-Center.plist",
   ]
 end
