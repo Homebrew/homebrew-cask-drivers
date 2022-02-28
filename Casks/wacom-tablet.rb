@@ -22,6 +22,7 @@ cask "wacom-tablet" do
               "com.wacom.RemoveWacomTablet",
               "com.wacom.TabletDriver",
               "com.wacom.UpdateHelper",
+              "com.wacom.UpgradeHelper",
               "com.wacom.Wacom-Desktop-Center",
               "com.wacom.wacomtablet",
               "com.wacom.WacomTouchDriver",
