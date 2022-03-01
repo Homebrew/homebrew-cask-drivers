@@ -10,8 +10,8 @@ cask "muteme" do
   end
 
   url "https://muteme.io/download/flavor/default/#{version}/#{arch}/MuteMe-Client-#{version}.dmg",
-      verified: "https://muteme.io/"
-  name "muteme"
+      verified: "muteme.io/download/flavor/default/"
+  name "MuteMe"
   desc "Companion app for the MuteMe physical mute button"
   homepage "https://muteme.com/"
 
