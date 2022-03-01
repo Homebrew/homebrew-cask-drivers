@@ -1,5 +1,5 @@
 cask "muteme" do
-  arch = Hardware::CPU.intel? ? "osx_64" : "osx_arm4"
+  arch = Hardware::CPU.intel? ? "osx_64" : "osx_arm64"
 
   version "0.9.2"
 
