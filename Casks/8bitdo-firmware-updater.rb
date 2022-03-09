@@ -1,6 +1,6 @@
 cask "8bitdo-firmware-updater" do
-  version "2.2.6"
-  sha256 "c8683b27ca8066b5ff815f29d869d170f09e963831f61507c01c3d421f68043c"
+  version "2.2.7"
+  sha256 "8ba5d9433cd654cc031c8056cfaadbb102e7050ef1e72d135adb7809831503f9"
 
   url "http://tools.8bitdo.com/8BitdoFirmwareUpdater/8BitDoFirmwareUpdaterV#{version}.zip"
   name "8BitDo Firmware Updater"
