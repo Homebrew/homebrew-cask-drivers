@@ -18,6 +18,11 @@ cask "sound-blaster-play3" do
   desc "Driver and control panel for the Sound Blaster PLAY! 3 USB DAC and Amp"
   homepage "https://us.creative.com/p/sound-cards/sound-blaster-play-3"
 
+  livecheck do
+    # excract from https://support.creative.com/Products/ProductDetails.aspx?catID=561&catName=Sound%20Cards&subCatID=1124&prodID=23033&prodName=Sound%20Blaster%20PLAY!%203
+    skip "No version information available"
+  end
+
   uninstall launchctl: "com.creative.trustudiopc",
             pkgutil:   [
               "com.creative.Sound Blaster Play! 3.AudioControlPanel.pkg",
@@ -30,6 +35,6 @@ cask "sound-blaster-play3" do
             ]
 
   caveats do
-    reboot
+    kext
   end
 end
