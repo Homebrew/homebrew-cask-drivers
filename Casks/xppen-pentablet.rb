@@ -1,5 +1,5 @@
 cask "xppen-pentablet" do
-  version "3.3.0_220110"
+  version "3.2.3_211203"
   sha256 :no_check
 
   url "https://www.xp-pen.com/download/file/id/1968"
@@ -15,7 +15,7 @@ cask "xppen-pentablet" do
 
   container nested: "XP-PENMac_#{version}/XP-PENMac_#{version}.dmg"
 
-  app "XP-PenPenTabletPro/PenTablet.app"
+  suite "XP-PenPenTabletPro"
 
   zap trash: [
     "/Library/Application Support/PenDriver",
