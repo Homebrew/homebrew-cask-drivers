@@ -13,6 +13,7 @@ cask "obsbot-tinycam" do
     regex(/Obsbot[._-]tiny[._-]pc[._-]OA[._-]E[._-]MacOS[._-](\d+(?:\.\d+)+)[._-]release\.dmg/i)
   end
 
+  auto_updates true
   depends_on macos: ">= :high_sierra"
 
   app "OBSBOT TinyCam.app"
