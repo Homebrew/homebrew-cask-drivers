@@ -21,9 +21,9 @@ cask "sound-blaster-play3" do
   livecheck do
     url "https://support.creative.com/Products/ProductDetails.aspx?catID=1&subCatID=1258&prodID=23033"
     ext = '\.zip' if MacOS.version <= :mojave
-    regex(/SBP3[._-]MAC[._-]L13[._-]?(\d+(?:_\d+)+)\.dmg#{ext}\s/i)
+    regex(/SBP3[._-]MAC[._-]L13[._-]?v?(\d+(?:[._]\d+)+)\.dmg#{ext}\s/i)
     strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match[0].tr("_", ".").to_s }
+      page.scan(regex).map { |match| match[0].tr("_", ".") }
     end
   end
 
