@@ -5,7 +5,7 @@ cask "obs-ios-camera-source" do
   url "https://github.com/wtsnz/obs-ios-camera-source/releases/download/v#{version}/obs-ios-camera-source-v#{version}-macos.pkg",
       verified: "github.com/wtsnz/obs-ios-camera-source/"
   name "OBS iOS Camera Source"
-  desc "iOS Camera Plugin for OBS Studio"
+  desc "iOS camera plugin for OBS Studio"
   homepage "https://obs.camera/docs/getting-started/ios-camera-plugin-usb/"
 
   depends_on cask: "obs"
