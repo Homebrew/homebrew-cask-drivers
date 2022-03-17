@@ -19,8 +19,12 @@ cask "sound-blaster-play3" do
   homepage "https://us.creative.com/p/sound-cards/sound-blaster-play-3"
 
   livecheck do
-    # excract from https://support.creative.com/Products/ProductDetails.aspx?catID=561&catName=Sound%20Cards&subCatID=1124&prodID=23033&prodName=Sound%20Blaster%20PLAY!%203
-    skip "No version information available"
+    url "https://support.creative.com/Products/ProductDetails.aspx?catID=1&subCatID=1258&prodID=23033"
+    ext = '\.zip' if MacOS.version <= :mojave
+    regex(/SBP3[._-]MAC[._-]L13[._-]?(\d+(?:_\d+)+)\.dmg#{ext}\s/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("_", ".").to_s }
+    end
   end
 
   uninstall launchctl: "com.creative.trustudiopc",
