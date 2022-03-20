@@ -1,6 +1,6 @@
 cask "1kc-razer" do
-  version "0.4.8"
-  sha256 "636b898215f61f1716d3360bb4cb40f038fe843346e53e9d24753e55c1e24bf1"
+  version "0.4.9"
+  sha256 "83f26f8dbc54990fc27e0835888e0b9b438be2578c6e686c2a34eec1be74528d"
 
   url "https://github.com/1kc/razer-macos/releases/download/v#{version}/Razer.macOS-#{version}-universal.dmg"
   name "Razer macOS"
