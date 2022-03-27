@@ -1,6 +1,6 @@
 cask "qflipper" do
-  version "0.9.1"
-  sha256 "1aa05cbf4547e347a201ada644c46fe37f94696897172bf615bfefefe90c546a"
+  version "1.0.0"
+  sha256 "14ddb0e8a58a44ff7935ba2c34b1c9f04d7c2fca694df838ab4155e0fb564228"
 
   url "https://update.flipperzero.one/builds/qFlipper/#{version}/qFlipper-#{version}.dmg"
   name "qFlipper"
@@ -13,6 +13,7 @@ cask "qflipper" do
   end
 
   app "qFlipper.app"
+  binary "#{appdir}/qFlipper.app/Contents/MacOS/qFlipper-cli"
 
   zap trash: [
     "~/Library/Preferences/com.flipperdevices.qFlipper.plist",
