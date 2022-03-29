@@ -1,5 +1,5 @@
 cask "logi-options-plus" do
-  version "0.91.3227"
+  version :latest
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip",
@@ -8,7 +8,6 @@ cask "logi-options-plus" do
   desc "Software for Logitech devices"
   homepage "https://www.logitech.com/en-us/software/logi-options-plus.html"
 
-  auto_updates true
   depends_on macos: ">= :catalina"
 
   installer manual: "logioptionsplus_installer.app"
