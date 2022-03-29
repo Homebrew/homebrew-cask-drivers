@@ -11,7 +11,7 @@ cask "logi-options-plus" do
   auto_updates true
   depends_on macos: ">= :catalina"
 
-  installer script: "logioptionsplus_installer.app/Contents/MacOS/logioptionsplus_installer"
+  installer manual: "logioptionsplus_installer.app"
 
   uninstall launchctl: [
 			   "com.logi.cp-dev-mgr",
