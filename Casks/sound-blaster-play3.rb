@@ -18,6 +18,15 @@ cask "sound-blaster-play3" do
   desc "Driver and control panel for the Sound Blaster PLAY! 3 USB DAC and Amp"
   homepage "https://us.creative.com/p/sound-cards/sound-blaster-play-3"
 
+  livecheck do
+    url "https://support.creative.com/Products/ProductDetails.aspx?catID=1&subCatID=1258&prodID=23033"
+    ext = '\.zip' if MacOS.version <= :mojave
+    regex(/SBP3[._-]MAC[._-]L13[._-]?v?(\d+(?:[._]\d+)+)\.dmg#{ext}\s/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("_", ".") }
+    end
+  end
+
   uninstall launchctl: "com.creative.trustudiopc",
             pkgutil:   [
               "com.creative.Sound Blaster Play! 3.AudioControlPanel.pkg",
@@ -30,6 +39,6 @@ cask "sound-blaster-play3" do
             ]
 
   caveats do
-    reboot
+    kext
   end
 end
