@@ -24,12 +24,8 @@ cask "logi-options-plus" do
               "com.logi.optionsplus.updater",
               "com.logi.optionsplus.agent",
             ],
-            pkgutil:   [
-              "com.Logitech.Updater.pkg",
-            ],
             delete:    [
               "/Applications/logioptionsplus.app",
-              "/Library/Application Support/Logitech.localized",
               "/Library/LaunchDaemons/com.logi.optionsplus.updater.plist",
               "/Library/LaunchAgents/com.logi.optionsplus.plist",
             ]
@@ -38,7 +34,6 @@ cask "logi-options-plus" do
     "~/Library/Application Support/LogiOptionsPlus",
     "~/Library/Preferences/com.logi.optionsplus.plist",
     "~/Library/Preferences/com.logi.cp-dev-mgr.plist",
-    "~/Library/Preferences/com.Logitech.Updater.plist",
     "~/Library/Application Support/logioptionsplus",
     "~/Library/Saved Application State/com.logi.optionsplus.savedState",
     "/Users/Shared/LogiOptionsPlus",
