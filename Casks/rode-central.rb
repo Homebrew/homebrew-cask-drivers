@@ -14,7 +14,7 @@ cask "rode-central" do
 
   depends_on macos: ">= :high_sierra"
 
-  pkg "RODE Central macOS v#{version}/RODE Central Installer.pkg"
+  pkg "RODE Central v#{version}_macOS/RODE Central Installer.pkg"
 
   uninstall pkgutil: "com.rodecentral.installer"
 end
