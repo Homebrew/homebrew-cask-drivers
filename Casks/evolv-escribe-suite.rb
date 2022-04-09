@@ -9,7 +9,6 @@ cask "evolv-escribe-suite" do
 
   livecheck do
     url "https://www.evolvapor.com/escribe"
-    strategy :page_match
     regex(%r{href=.*?/SetupEScribe(\d+_SP\d+(?:_\d+)?)_INT\.pkg}i)
   end
 

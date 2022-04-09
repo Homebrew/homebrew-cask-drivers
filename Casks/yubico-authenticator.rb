@@ -9,7 +9,6 @@ cask "yubico-authenticator" do
 
   livecheck do
     url "https://developers.yubico.com/yubioath-desktop/Releases/"
-    strategy :page_match
     regex(/href=.*?yubioath-desktop-(\d+(\.\d+)*[a-z]?)-mac\.pkg/i)
   end
 

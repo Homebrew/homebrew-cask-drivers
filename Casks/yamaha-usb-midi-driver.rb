@@ -9,7 +9,6 @@ cask "yamaha-usb-midi-driver" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/USB-MIDI\sDriver\sV?(\d+(?:\.\d+)+)\sfor\sMac/i)
   end
 

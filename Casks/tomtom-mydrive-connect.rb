@@ -9,7 +9,6 @@ cask "tomtom-mydrive-connect" do
 
   livecheck do
     url "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
-    strategy :page_match
     regex(/Version:\s*(\d+(?:\.\d+)+)\s*OS:\s*mac/i)
   end
 

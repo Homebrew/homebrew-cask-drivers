@@ -9,7 +9,6 @@ cask "segger-ozone" do
 
   livecheck do
     url "https://www.segger.com/downloads/jlink/ReleaseNotes_Ozone.html"
-    strategy :page_match
     regex(/<h2>Version\s*(\d+(?:\.\d+)*[a-z]?)/i)
   end
 

@@ -9,7 +9,6 @@ cask "blue-sherpa" do
 
   livecheck do
     url "https://software.bluemic.com/blue/"
-    strategy :page_match
     regex(/href=.*?BlueSherpa-(\d+)\.pkg/i)
   end
 

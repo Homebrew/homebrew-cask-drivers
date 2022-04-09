@@ -9,7 +9,6 @@ cask "bragi-updater" do
 
   livecheck do
     url "https://update.bragi.com/scripts/scripts.36513c90.js"
-    strategy :page_match
     regex(%r{href="/bin/Bragi\s*Updater-(\d+(?:\.\d+)+)\.dmg"}i)
   end
 
