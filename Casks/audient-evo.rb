@@ -10,7 +10,6 @@ cask "audient-evo" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(%r{href=.*?/EVO%20v(\d+(?:\.\d+)*(?:rc\d+)?)\.dmg}i)
   end
 

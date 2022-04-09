@@ -9,7 +9,6 @@ cask "clavia-nord-sound-manager" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(%r{href=.*?/Nord%20Sound%20Manager%20v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 

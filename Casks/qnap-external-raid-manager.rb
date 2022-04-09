@@ -9,7 +9,6 @@ cask "qnap-external-raid-manager" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(%r{href=.*?/QNAPExternalRAIDManagerMac-(\d+(?:\.\d+)+)\.dmg}i)
   end
 

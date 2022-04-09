@@ -16,7 +16,6 @@ cask "sony-rcs300" do
 
   livecheck do
     url "https://www.sony.co.jp/Products/felica/consumer/support/download/usbdriver.html"
-    strategy :page_match
     regex(%r{href=.*?/usbdriver#{arch}[._-]s300[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 

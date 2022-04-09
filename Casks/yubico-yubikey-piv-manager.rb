@@ -9,7 +9,6 @@ cask "yubico-yubikey-piv-manager" do
 
   livecheck do
     url "https://developers.yubico.com/yubikey-piv-manager/Releases/"
-    strategy :page_match
     regex(/href=.*?yubikey-piv-manager-(\d+(?:\.\d+)*[a-z]?)-mac\.pkg/i)
   end
 

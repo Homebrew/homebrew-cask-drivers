@@ -9,7 +9,6 @@ cask "hhkb-pro-driver" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(%r{href=.*?/HHKBProDriver(\d+(?:\.\d+)+)\.dmg}i)
   end
 

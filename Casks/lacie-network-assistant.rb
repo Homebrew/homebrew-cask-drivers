@@ -9,7 +9,6 @@ cask "lacie-network-assistant" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(%r{href=.*?/LaCie Network Assistant-(\d+(?:\.\d+)+)\.dmg}i)
   end
 

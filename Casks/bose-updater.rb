@@ -9,7 +9,6 @@ cask "bose-updater" do
 
   livecheck do
     url "https://btu.bose.com/data/MUV.xml"
-    strategy :page_match
     regex(/ROOT\sMUV="(\d+(?:.\d+)*)"/i)
   end
 

@@ -10,7 +10,6 @@ cask "rapoo-mt750s" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/RapooOptions_MT750S_(\d+)\.pkg/i)
   end
 

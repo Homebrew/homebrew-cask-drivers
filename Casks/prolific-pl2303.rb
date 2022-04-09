@@ -9,7 +9,6 @@ cask "prolific-pl2303" do
 
   livecheck do
     url "http://www.prolific.com.tw/US/ShowProduct.aspx?p_id=229&pcid=41"
-    strategy :page_match
     regex(/PL2303HXD_G_Mac\s*Driver_v?(\d+(?:\.\d+)*_\d+)\.zip/i)
   end
 

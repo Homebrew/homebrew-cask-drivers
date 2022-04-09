@@ -14,7 +14,6 @@ cask "concept2-utility" do
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/Concept2\s+Utility\s+(\d+(?:\.\d+)+)/i)
   end
 
