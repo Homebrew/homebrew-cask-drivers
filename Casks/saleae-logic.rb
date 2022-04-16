@@ -1,6 +1,6 @@
 cask "saleae-logic" do
-  version "2.3.47"
-  sha256 "5d3a5b08f6bf7d9543785c23f021a6e919d5cb2823663d908085520cac1be513"
+  version "2.3.49"
+  sha256 "32db434e13ce64c373198a606d52fccb93ec9089e6e9eb54a6160d0fd6c5139b"
 
   url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
   name "Saleae Logic2"
