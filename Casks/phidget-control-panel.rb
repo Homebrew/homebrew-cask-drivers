@@ -9,8 +9,9 @@ cask "phidget-control-panel" do
 
   livecheck do
     url "https://www.phidgets.com/downloads/phidget#{version.csv.first}/libraries/macos/Phidget#{version.csv.first}.dmg"
-    strategy :header_match do |headers|
-      match = headers["location"].match(%r{/Phidget(\d+)_(\d+(?:\.\d+)+)\.dmg}i)
+    regex(%r{/Phidget(\d+)_(\d+(?:\.\d+)+)\.dmg}i)
+    strategy :header_match do |headers, regex|
+      match = headers["location"].match(regex)
       next if match.blank?
 
       "#{match[1]},#{match[2]}"

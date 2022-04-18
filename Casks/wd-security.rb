@@ -9,9 +9,9 @@ cask "wd-security" do
 
   livecheck do
     url :homepage
-    strategy :page_match do |page|
-      v = page[%r{href=.*?/WD_Security_Standalone_Installer_Mac_(\d+(?:_\d+)*)\.zip}i, 1]
-      v.tr("_", ".")
+    regex(%r{href=.*?/WD_Security_Standalone_Installer_Mac_(\d+(?:_\d+)*)\.zip}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("_", ".") }
     end
   end
 

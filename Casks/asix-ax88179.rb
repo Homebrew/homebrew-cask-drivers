@@ -7,13 +7,11 @@ cask "asix-ax88179" do
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
-      strategy :page_match do |page|
+      regex(%r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi)
+      strategy :page_match do |page, regex|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
-          match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
-          )
-          "#{match[2]},#{match[1]}" if match
-        end.compact
+          list_item.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+        end.flatten
       end
     end
   elsif MacOS.version <= :catalina
@@ -24,13 +22,11 @@ cask "asix-ax88179" do
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
-      strategy :page_match do |page|
+      regex(%r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi)
+      strategy :page_match do |page, regex|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
-          match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*10.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
-          )
-          "#{match[2]},#{match[1]}" if match
-        end.compact
+          list_item.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+        end.flatten
       end
     end
   elsif MacOS.version <= :big_sur
@@ -41,13 +37,11 @@ cask "asix-ax88179" do
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
-      strategy :page_match do |page|
+      regex(%r{data-href=.*?/download/file/(\d+).*?macOS\s*11.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi)
+      strategy :page_match do |page, regex|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
-          match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*11.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
-          )
-          "#{match[2]},#{match[1]}" if match
-        end.compact
+          list_item.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+        end.flatten
       end
     end
   else
@@ -58,13 +52,11 @@ cask "asix-ax88179" do
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
-      strategy :page_match do |page|
+      regex(%r{data-href=.*?/download/file/(\d+).*?macOS\s*12.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi)
+      strategy :page_match do |page, regex|
         page.split(/class=['"]?list__item['"]?/).map do |list_item|
-          match = list_item.match(
-            %r{data-href=.*?/download/file/(\d+).*?macOS\s*12.*?Vision\s*?(?:<br>)?\s*?(\d+(?:\.\d+)+)<}mi,
-          )
-          "#{match[2]},#{match[1]}" if match
-        end.compact
+          list_item.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+        end.flatten
       end
     end
   end

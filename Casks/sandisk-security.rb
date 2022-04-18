@@ -9,9 +9,9 @@ cask "sandisk-security" do
 
   livecheck do
     url :homepage
-    strategy :page_match do |page|
-      page.scan(/href=.*?sandisk[._-]security[-_.]mac[-_.]v?(\d+(?:[-.]\d+)+)\.dmg/i)
-          .map { |match| match[0].tr("-", ".") }
+    regex(/href=.*?sandisk[._-]security[-_.]mac[-_.]v?(\d+(?:[-.]\d+)+)\.dmg/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("-", ".") }
     end
   end
 
