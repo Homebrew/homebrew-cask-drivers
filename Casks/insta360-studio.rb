@@ -1,28 +1,31 @@
 cask "insta360-studio" do
-  version "4.1.0,9c3c4473273192e24b4143306d29d3ea,2021_20211105_112742"
-  sha256 "c037f5aa18c8f5ce606963be0bba6b737b20a6c9056839e8ca8dd830a8737e4e"
+  version "4.2.2,09a7fc2fbf78f4d242bcbea46b85f05d,2022_20220413_194301"
+  sha256 "f581ab8e5f63856c4f5e7e99a50d43df013ea6da485aa6e3944bbdeb098df70c"
 
-  url "https://res.insta360.com/static/#{version.csv[1]}/Insta360_Studio_#{version.csv[2]}_signed.pkg"
+  url "https://file.insta360.com/static/infr_base/#{version.csv[1]}/Insta360%20Studio%20#{version.csv[2]}_signed.pkg"
   name "Insta360 Studio"
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
 
   livecheck do
     url "https://openapi.insta360.com/app/appDownload/getGroupApp?group=insta360-go2&X-Language=en-us"
-    strategy :page_match do |page|
-      apps = JSON.parse(page)["data"]["apps"].find { |app| app["id"] == 38 }["items"]
-                 .sort_by { |k| k["version"] }.reverse
-      macos = apps.find { |item| item["platform"] == "mac" }
-      v = macos["version"]
-      regex = %r{/([[:xdigit:]]+)/Insta360[._-]Studio[._-](\d+(?:[._-]\d+)*)[._-]signed\.pkg}i
-      match = macos["channels"][0]["download_url"].match(regex)
-      next if match.blank? || v.blank?
+    regex(%r{/([[:xdigit:]]+)/Insta360(?:[._-]|%20)Studio(?:[._-]|%20)(\d+(?:[._-]\d+)*)[._-]signed\.pkg}i)
+    strategy :page_match do |page, regex|
+      newest_release = JSON.parse(page)["data"]["apps"]
+                           .find { |app| app["id"] == 38 }["items"]
+                           .select { |item| item["platform"] == "mac" }
+                           .max_by { |item| Version.new(item["version"]) }
+      next if newest_release.blank?
 
-      "#{v},#{match[1]},#{match[2]}"
+      version = newest_release["version"]
+      match = newest_release["channels"][0]["download_url"].match(regex)
+      next if version.blank? || match.blank?
+
+      "#{version},#{match[1]},#{match[2]}"
     end
   end
 
-  pkg "Insta360_Studio_#{version.csv[2]}_signed.pkg"
+  pkg "Insta360 Studio #{version.csv[2]}_signed.pkg"
 
   uninstall quit:    "com.insta360.studio",
             delete:  "#{appdir}/Insta360 Studio #{version.csv[2].split("_")[0]}.app",
