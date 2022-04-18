@@ -1,6 +1,6 @@
 cask "shureplus-motiv" do
-  version "1.3.0"
-  sha256 "40488996154af968883ebee9ce365f7b79253281f6ca84015d7457c500f5b4a9"
+  version "1.3.1"
+  sha256 "6ddd8c8fe08ce8136d2c6f3565f6991f34c7b68fe34823db8db7a84907f88d99"
 
   url "https://content-files.shure.com/Software/shure_plus_motiv_desktop/#{version.dots_to_hyphens}/motiv-mac-#{version}.dmg"
   name "ShurePlus MOTIV"
