@@ -9,9 +9,9 @@ cask "smartscope" do
 
   livecheck do
     url "https://www.lab-nation.com/package/smartscope/macos/latest"
-    strategy :page_match do |page|
-      match = page[%r{/SmartScope/(\d+(?:/\d+)*)/MacOS/get}i, 1]
-      match.tr("/", ".")
+    regex(%r{/SmartScope/(\d+(?:/\d+)*)/MacOS/get}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("/", ".") }
     end
   end
 

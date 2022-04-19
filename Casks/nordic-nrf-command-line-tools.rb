@@ -9,9 +9,9 @@ cask "nordic-nrf-command-line-tools" do
 
   livecheck do
     url "https://www.nordicsemi.com/Products/Development-tools/nRF-Command-Line-Tools/Download"
-    strategy :page_match do |page|
-      page.scan(/nRF[._-]Command[._-]Line[._-]Tools[._-]v?(\d+(?:[_.]\d+)+)[._-]OSX\.zip/i)
-          .map { |match| match[0].tr("_", ".") }
+    regex(/nRF[._-]Command[._-]Line[._-]Tools[._-]v?(\d+(?:[._]\d+)+)[._-]OSX\.zip/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match[0].tr("_", ".") }
     end
   end
 

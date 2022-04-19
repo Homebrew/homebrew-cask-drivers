@@ -9,11 +9,9 @@ cask "synology-cloud-station-backup" do
 
   livecheck do
     url "https://www.synology.com/en-us/releaseNote/CloudStationBackup"
-    strategy :page_match do |page|
-      match = page.match(/Version:\s*(\d+(?:\.\d+)+)-(\d+)/i)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    regex(/Version:\s*(\d+(?:\.\d+)+)-(\d+)/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
   end
 

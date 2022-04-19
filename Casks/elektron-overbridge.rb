@@ -10,10 +10,9 @@ cask "elektron-overbridge" do
 
   livecheck do
     url "https://www.elektron.se/support/?connection=overbridge"
-    strategy :page_match do |page|
-      page.scan(%r{href=.*?/(\h+(?:-\h+)*)/Elektron[._-]?Overbridge[._-]?v?(\d+(?:\.\d+)+)\.dmg}i).map do |match|
-        "#{match[1]},#{match[0]}"
-      end
+    regex(%r{href=.*?/(\h+(?:-\h+)*)/Elektron[._-]?Overbridge[._-]?v?(\d+(?:\.\d+)+)\.dmg}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 

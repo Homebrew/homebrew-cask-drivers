@@ -9,10 +9,9 @@ cask "ricoh-ps-printers-vol3-exp-driver" do
 
   livecheck do
     url "https://support.ricoh.com/bb/html/dr_ut_e/apc/model/mpc2011/mpc2011en.htm"
-    strategy :page_match do |page|
-      page.scan(%r{href=.*?/(\d+)/V\d+/Ricoh_PS_Printers_Vol3_EXP_LIO[._-]v?(\d+(?:\.\d+)+)\.dmg}i).map do |match|
-        "#{match[1]},#{match[0]}"
-      end
+    regex(%r{href=.*?/(\d+)/V\d+/Ricoh_PS_Printers_Vol3_EXP_LIO[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
     end
   end
 

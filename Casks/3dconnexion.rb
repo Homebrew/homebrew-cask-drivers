@@ -7,11 +7,9 @@ cask "3dconnexion" do
 
     livecheck do
       url "https://3dconnexion.com/us/drivers/"
-      strategy :page_match do |page|
-        match = page.match(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
-        next if match.blank?
-
-        "#{match[2]},#{match[3]},#{match[1]}"
+      regex(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
+      strategy :page_match do |page, regex|
+        page.scan(regex).map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
       end
     end
   else
