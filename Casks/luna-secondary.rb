@@ -1,6 +1,6 @@
 cask "luna-secondary" do
-  version "5.1.5,4226"
-  sha256 "d1a01e5aa86eed419a25e42daee1cce447e331acf560b79e8648de8ec9f7c138"
+  version "5.1.6,4235"
+  sha256 "43d936719fab4f7d5b01081d92e88afc6538148769b2e5117864224a5d8d457f"
 
   url "https://downloads.astropad.com/luna-secondary/mac/LunaSecondary-#{version.csv.first}.#{version.csv.second}.dmg"
   name "Luna Secondary"
