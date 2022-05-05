@@ -1,6 +1,6 @@
 cask "droidcam-obs" do
-  version "1.2.3"
-  sha256 "585191c3b4df09b5d8f3ef331ea5d9fc99b30fc8dd652f1cb4ce4d6b6588b006"
+  version "1.5.0"
+  sha256 "ae1ccf28b998f3cc8a7cbe63d43973cd3bc90a7abb590c6ee23cca278190090b"
 
   url "https://files.dev47apps.net/obs/DroidCamOBS_Universal_#{version}.pkg",
       verified: "files.dev47apps.net/obs/"
@@ -9,8 +9,8 @@ cask "droidcam-obs" do
   homepage "https://www.dev47apps.com/obs/"
 
   livecheck do
-    url :homepage
-    regex(/DroidCamOBS[._-]Universal[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    url "https://www.dev47apps.com/go/DroidCamOBS.Setup.pkg"
+    strategy :header_match
   end
 
   depends_on cask: "obs"
