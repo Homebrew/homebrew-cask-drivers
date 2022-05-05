@@ -9,8 +9,8 @@ cask "droidcam-obs" do
   homepage "https://www.dev47apps.com/obs/"
 
   livecheck do
-    url :homepage
-    regex(/DroidCamOBS[._-]Universal[._-]v?(\d+(?:\.\d+)+)\.pkg/i)
+    url "https://www.dev47apps.com/go/DroidCamOBS.Setup.pkg"
+    strategy :header_match
   end
 
   depends_on cask: "obs"
