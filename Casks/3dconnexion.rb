@@ -7,7 +7,7 @@ cask "3dconnexion" do
     sha256 "a53258a8b89d511182dd5427140ba7d1c539a152d87b255f1553704bab7413ad"
   end
 
-  url "https://download.3dconnexion.com/drivers/mac/#{version.csv.first}_#{version.csv.second}/3DxWareMac_v#{version.csv.first}_#{version.csv.second}.dmg"
+  url "https://download.3dconnexion.com/drivers/mac/#{version.csv.first}_#{version.csv.third}/3DxWareMac_v#{version.csv.first}_#{version.csv.second}.dmg"
   name "3Dconnexion"
   desc "3DxWare Driver"
   homepage "https://3dconnexion.com/"
