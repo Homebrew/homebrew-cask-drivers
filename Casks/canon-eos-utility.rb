@@ -1,13 +1,37 @@
 cask "canon-eos-utility" do
-  version "3.13.30.6"
-  sha256 "451aa1f8c6503b24225f05c2c3076ba63b954119910e119f553d078ef248a36d"
+  version "3.15.0.11,0200006555,5"
+  sha256 "19c26bde59ad80adf1c7b5dd85fea96df39ce728dd33a0cef008bd4e3b985341"
 
-  url "https://gdlp01.c-wss.com/gds/8/0200006408/01/EU-Installset-M#{version}.dmg.zip",
+  url "https://gdlp01.c-wss.com/gds/#{version.csv.third}/#{version.csv.second}/01/EU-Installset-M#{version.csv.first}.dmg.zip",
       verified: "gdlp01.c-wss.com/"
-  appcast "https://my.canon/en/support/0200640802"
   name "Canon EOS Utility"
   desc "Communication with Canon EOS cameras"
-  homepage "https://my.canon/en/support/0200616502/1"
+  homepage "https://my.canon/en/support/0200653802/1"
+
+  # Upstream provides an in-app update mechanism. To use this for livecheck we must access
+  # the appcast feed that provides download links, and then use the links provided with
+  # the HeaderMatch strategy to find the latest full version.
+  livecheck do
+    url "https://gdlp01.c-wss.com/rmds/ic/autoupdate/common/tls_eu_updater_url.xml"
+    regex(%r{http.*?/(\d+)/(\d+)/\d+/EU[._-]Installset[._-]v?M?(\d+(?:\.\d+)+)\.dmg\.zip}i)
+    strategy :page_match do |page, regex|
+      match = page.match(/<Component\sID="[^"]+mac_11[^"]+".*\n?.*(https.*)\n/i)
+      next if match.blank?
+
+      url = match[1].strip
+      next if url.blank?
+
+      headers = Homebrew::Livecheck::Strategy.page_headers(url)
+      next if headers.blank?
+
+      match = headers[0]["location"].match(regex)
+      next if match.blank?
+
+      "#{match[3]},#{match[2]},#{match[1]}"
+    end
+  end
+
+  auto_updates true
 
   installer manual: "eum#{version.major_minor_patch}-installer.app"
 
