@@ -1,5 +1,5 @@
 cask "flashforge-flashprint" do
-  version "1c68fcfadc5c29627057053d5a5af558"
+  version "5.3.3,2eb66b9f48316f0b089e6b712ece5e82"
   sha256 "38b11cd90400119bcd145ca5a9981dfea7ab8caabbb0fbd746783ab1821d8740"
 
   url "https://en.fss.flashforge.com/10000/software/#{version.csv.second}.zip"
@@ -9,8 +9,7 @@ cask "flashforge-flashprint" do
 
   auto_updates true
 
-  pkg "FlashPrint.pkg"
-
+  pkg "FlashPrint #{version.major}"
   uninstall pkgutil: "com.sz3dp.pkg.FlashPrint"
 
   zap trash: "~/Library/Preferences/FlashForge.FlashPrint.plist"
