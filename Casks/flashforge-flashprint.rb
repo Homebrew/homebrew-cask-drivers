@@ -4,11 +4,12 @@ cask "flashforge-flashprint" do
 
   url "https://en.fss.flashforge.com/10000/software/#{version.csv.second}.zip"
   name "FlashPrint"
+  desc "Printing software for flashforge 3d-printers"
   homepage "https://www.flashforge.com/product-detail/40"
 
   auto_updates true
 
-  pkg "FlashPrint.pkg"
+  pkg "FlashPrint.pkg #{version.major}"
 
   uninstall pkgutil: "com.sz3dp.pkg.FlashPrint"
 
