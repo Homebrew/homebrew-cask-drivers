@@ -1,16 +1,21 @@
 cask "flashforge-flashprint" do
-  version "4.5.1,1039f4a96ea3c14f9b7c4ef2856653ee"
-  sha256 "2442e58761417cdbf57d4a6f93c1184c7c1f24fde437aa14776008b14098690d"
+  version "5.3.3"
+  sha256 "38b11cd90400119bcd145ca5a9981dfea7ab8caabbb0fbd746783ab1821d8740"
 
-  url "https://en.fss.flashforge.com/10000/software/#{version.csv.second}.zip"
+  url "http://www.ishare3d.com/3dapp/public/FlashPrint-5/FlashPrint/FlashPrint_#{version}_mac.zip",
+      verified: "ishare3d.com/3dapp/public/FlashPrint-5/FlashPrint/"
   name "FlashPrint"
+  desc "Printing software for flashforge 3d-printers"
   homepage "https://www.flashforge.com/product-detail/40"
 
-  auto_updates true
+  livecheck do
+    url "https://www.flashforge.com/download-center/63"
+    regex(/FlashPrint_v?(\d+(?:\.\d+)+)/i)
+  end
 
-  pkg "FlashPrint.pkg"
+  pkg "FlashPrint #{version.major}.pkg"
 
-  uninstall pkgutil: "com.sz3dp.pkg.FlashPrint"
+  uninstall pkgutil: "com.sz3dp.pkg.FlashPrint#{version.major}"
 
   zap trash: "~/Library/Preferences/FlashForge.FlashPrint.plist"
 end
