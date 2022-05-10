@@ -9,7 +9,7 @@ cask "flashforge-flashprint" do
 
   auto_updates true
 
-  pkg "FlashPrint.pkg #{version.major}"
+  pkg "FlashPrint #{version.major}.pkg"
 
   uninstall pkgutil: "com.sz3dp.pkg.FlashPrint"
 
