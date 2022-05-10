@@ -34,6 +34,7 @@ cask "safenet-authentication-client" do
             signal:    ["QUIT", "com.SafeNet.SACMonitor"],
             quit:	     [
               "com.gemalto.Gemalto-Smart-Card-Token.PKCS11-Token",
+              "com.SafeNet.SACMonitor",
             ],
             pkgutil:   [
               "com.safenet.safenetAuthenticationClient.eTokenConf.pkg",
