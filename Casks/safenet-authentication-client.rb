@@ -6,7 +6,7 @@ cask "safenet-authentication-client" do
     container nested: "Safenet #{version.major_minor} Post GA R3/Safenet #{version.major_minor} Post GA R3/SafeNetAuthenticationClient.#{version}.dmg"
   else
     version "10.2.111.0"
-    sha256 "af622151e7188d25f326420d3d210dc676002c765a670bd756fd40bd050fd0a5"
+    sha256 "a4055ed4d6584e400d86c57b744b42aa7f908b3939d7223487bfe20b2a519a86"
     url "https://www.globalsign.com/en/safenet-drivers/USB/#{version.major_minor}/Safenet_#{version.major_minor}_Post_GA_(R4).zip"
     container nested: "Safenet #{version.major_minor} Post GA (R4) 2/SafeNet Authentication Client #{version.major_minor}.pkg"
   end
@@ -22,9 +22,16 @@ cask "safenet-authentication-client" do
   depends_on macos: [
     :catalina,
     :big_sur,
+    :monterey,
   ]
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
+
+  # required due to the processes not having a bundle_id
+  uninstall_postflight do
+    system "killall", "SACMonitor"
+    system "killall", "SACTools"
+  end
 
   uninstall	launchctl: [
     "com.SafeNet.SACMonitor",
