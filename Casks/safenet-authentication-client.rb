@@ -19,7 +19,10 @@ cask "safenet-authentication-client" do
     skip "No version information available"
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: [
+     :catalina,
+     :big_sur,
+   ]
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
 
