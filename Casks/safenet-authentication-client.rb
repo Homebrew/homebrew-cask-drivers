@@ -27,6 +27,11 @@ cask "safenet-authentication-client" do
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
 
+  uninstall_postflight do
+    system "killall", "SACMonitor"
+    system "killall", "SACTools"
+  end
+
   uninstall	launchctl: [
     "com.SafeNet.SACMonitor",
     "com.SafeNet.SACSrv",
@@ -34,7 +39,6 @@ cask "safenet-authentication-client" do
             signal:    ["QUIT", "com.SafeNet.SACMonitor"],
             quit:	     [
               "com.gemalto.Gemalto-Smart-Card-Token.PKCS11-Token",
-              "SACMonitor",
             ],
             pkgutil:   [
               "com.safenet.safenetAuthenticationClient.eTokenConf.pkg",
