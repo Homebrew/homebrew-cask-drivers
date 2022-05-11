@@ -1,39 +1,34 @@
 cask "3dconnexion" do
-  if MacOS.version <= :catalina
+  if MacOS.version <= :mojave
     version "10-6-7,r3287,36E24890-6B5F-443a-8A9F-1851F9ADB985"
     sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
-
-    url "https://download.3dconnexion.com/drivers/mac/#{version.csv[0]}_#{version.csv[2]}/3DxWareMac_v#{version.csv[0]}_#{version.csv[1]}.dmg"
-
-    livecheck do
-      url "https://3dconnexion.com/us/drivers/"
-      regex(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
-      strategy :page_match do |page, regex|
-        page.scan(regex).map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
-      end
-    end
   else
-    version "10-7-0_r3411"
-    sha256 "2ea64ab96f9d9d91c76f2b774e5e109bace2f85dea98991411ea544c2e1fda74"
-
-    url "https://download.3dconnexion.com/drivers/technical_support/3DxWareMac_v#{version}.dmg"
-
-    livecheck do
-      url "https://3dconnexion.com/us/support/faq/beta-driver-for-macos-11-big-sur/"
-      regex(/href=.*?3DxWareMac_v(\d+(?:-\d+)*_r\d+)\.dmg/i)
-    end
+    version "10-7-2,r3454,A2E276BD-4DEB-4343-BA4C-591FE7958ED9"
+    sha256 "a53258a8b89d511182dd5427140ba7d1c539a152d87b255f1553704bab7413ad"
   end
 
+  url "https://download.3dconnexion.com/drivers/mac/#{version.csv.first}_#{version.csv.third}/3DxWareMac_v#{version.csv.first}_#{version.csv.second}.dmg"
   name "3Dconnexion"
   desc "3DxWare Driver"
   homepage "https://3dconnexion.com/"
+
+  livecheck do
+    url "https://3dconnexion.com/us/drivers/"
+    regex(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
+    end
+  end
 
   depends_on macos: ">= :yosemite"
 
   pkg "Install 3Dconnexion software.pkg"
 
   uninstall pkgutil:   "com.3dconnexion.*",
-            launchctl: "com.3dconnexion.nlserverIPalias",
+            launchctl: [
+              "com.3dconnexion.helper",
+              "com.3dconnexion.nlserverIPalias",
+            ],
             quit:      [
               "com.3Dconnexion.3DxUpdater",
               "com.3dconnexion.*",
@@ -44,14 +39,14 @@ cask "3dconnexion" do
             ],
             delete:    [
               "/Applications/3Dconnexion",
+              "/Library/Application Support/3Dconnexion",
               "/Library/Extensions/3Dconnexion.kext",
               "/Library/Frameworks/3DconnexionClient.framework",
+              "/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist",
+              "/Library/PreferencePanes/3Dconnexion.prefPane",
             ]
 
   zap trash: [
-    "/Library/Application Support/3Dconnexion",
-    "/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist",
-    "/Library/PreferencePanes/3Dconnexion.prefPane",
     "~/Library/Logs/3Dconnexion",
     "~/Library/Preferences/3Dconnexion",
     "~/Library/Preferences/com.3dconnexion.*.plist",
