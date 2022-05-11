@@ -20,9 +20,9 @@ cask "safenet-authentication-client" do
   end
 
   depends_on macos: [
-     :catalina,
-     :big_sur,
-   ]
+    :catalina,
+    :big_sur,
+  ]
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
 
