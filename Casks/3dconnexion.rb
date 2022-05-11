@@ -1,5 +1,5 @@
 cask "3dconnexion" do
-  if MacOS.version < :catalina
+  if MacOS.version <= :mojave
     version "10-6-7,r3287,36E24890-6B5F-443a-8A9F-1851F9ADB985"
     sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
   else
@@ -39,14 +39,14 @@ cask "3dconnexion" do
             ],
             delete:    [
               "/Applications/3Dconnexion",
+              "/Library/Application Support/3Dconnexion",
               "/Library/Extensions/3Dconnexion.kext",
               "/Library/Frameworks/3DconnexionClient.framework",
+              "/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist",
+              "/Library/PreferencePanes/3Dconnexion.prefPane",
             ]
 
   zap trash: [
-    "/Library/Application Support/3Dconnexion",
-    "/Library/LaunchDaemons/com.3dconnexion.nlserverIPalias.plist",
-    "/Library/PreferencePanes/3Dconnexion.prefPane",
     "~/Library/Logs/3Dconnexion",
     "~/Library/Preferences/3Dconnexion",
     "~/Library/Preferences/com.3dconnexion.*.plist",
