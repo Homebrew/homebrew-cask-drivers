@@ -27,6 +27,7 @@ cask "safenet-authentication-client" do
 
   pkg "SafeNet Authentication Client #{version.major_minor}.pkg"
 
+  # required due to the processes not having a bundle_id
   uninstall_postflight do
     system "killall", "SACMonitor"
     system "killall", "SACTools"
