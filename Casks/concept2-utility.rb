@@ -3,8 +3,8 @@ cask "concept2-utility" do
     version "7.09.02"
     sha256 "e4ebee8cde57c7ef63c3903285c3fc0ee8f87221e7c5529b9dcf97b3f9ebb57e"
   else
-    version "7.10.01"
-    sha256 "652727e61e0db60b94d74fbb14753872f54c896c71e5d15febdd34764378dee0"
+    version "7.10.11"
+    sha256 "0d8705caed67c4859f43eb176265d6c954ee1867b54dbb5097203c77d486fc80"
   end
 
   url "https://software.concept2.com/utility/Concept2Utility#{version.no_dots}.dmg"
