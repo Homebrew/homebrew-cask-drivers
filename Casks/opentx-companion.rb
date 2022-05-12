@@ -1,6 +1,6 @@
 cask "opentx-companion" do
-  version "2.3.14"
-  sha256 "34e6c54dc8d91bb2d5a4c6da1f732372f173f02cd63401b8a601e88850c4a27d"
+  version "2.3.15"
+  sha256 "50f2b7a0bf77330604ee985fa22eac91f1eb8d1fe7229169594ab2eb8e2b5da2"
 
   url "https://downloads.open-tx.org/#{version.major_minor}/release/companion/macosx/opentx-companion-#{version}.dmg"
   name "OpenTX Companion"
