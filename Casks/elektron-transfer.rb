@@ -1,6 +1,6 @@
 cask "elektron-transfer" do
-  version "1.4.0.1,133f6ec3-a98c-5781-9910-39a0fce402e7"
-  sha256 "2eb728e31f045e9f4c3c2fa3480b699379dedfae3c402d18b2b7dab2ef87a6b8"
+  version "1.5.0.14,9a7c14b2-bf1d-54b9-ba81-7a24074cc3ff"
+  sha256 "56377a86a995ee17cee7b58147a7d1a843287377f965786d8588e338bc36e540"
 
   url "https://se-elektron-devops.s3.amazonaws.com/release/#{version.csv.second}/Elektron_Transfer_#{version.csv.first}.dmg",
       verified: "se-elektron-devops.s3.amazonaws.com/release/"
