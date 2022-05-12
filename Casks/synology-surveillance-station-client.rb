@@ -19,6 +19,7 @@ cask "synology-surveillance-station-client" do
             quit:      "com.synology.svsclient-SurveillanceStationClient",
             pkgutil:   [
               "com.synology.svsclient-Live-View",
+              "com.synology.svsclient-Monitor-Center",
               "com.synology.svsclient-Recording",
               "com.synology.svsclient-Timeline",
               "com.synology.svsclient-SurveillanceStationClient",
