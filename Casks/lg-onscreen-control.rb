@@ -1,5 +1,5 @@
 cask "lg-onscreen-control" do
-  version "5.41,NZaPtr88w4AvKxVIbuQ"
+  version "5.41,AXjfaLqroARlKngdkgctA"
   sha256 "7b75c55ea73bc2014ee9768391a5ce4c0d1e214fd767a55d1810c08434a4f642"
 
   url "https://gscs-b2c.lge.com/downloadFile?fileId=#{version.csv.second}",
