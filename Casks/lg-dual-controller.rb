@@ -16,12 +16,8 @@ cask "lg-dual-controller" do
 
   pkg "DC_V#{version.csv.first}_signed.pkg"
 
-  uninstall login_item: [
-    "Dual Controller",
-  ],
-            quit:       [
-              "com.LGSI.-.Dual-Controller",
-            ],
+  uninstall login_item: "Dual Controller",
+            quit:       "com.LGSI.-.Dual-Controller",
             pkgutil:    [
               "com.LGSI.-.Dual-Controller",
               "com.DC.Fonts.pkg",
@@ -31,7 +27,5 @@ cask "lg-dual-controller" do
               "com.uninstall.pkg",
             ]
 
-  zap trash: [
-    "~/Library/Preferences/com.LGSI.-.Dual-Controller",
-  ]
+  zap trash: "~/Library/Preferences/com.LGSI.-.Dual-Controller"
 end
