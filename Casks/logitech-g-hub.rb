@@ -1,5 +1,5 @@
 cask "logitech-g-hub" do
-  version "2022.5.262536"
+  version "2022.5.263319"
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip",
