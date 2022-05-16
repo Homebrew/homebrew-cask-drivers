@@ -1,6 +1,6 @@
 cask "logitech-firmwareupdatetool" do
-  version "2.6.201219"
-  sha256 "2b5f68e4e0a361a993de50bfde0b996ec1ec5ef97f0e89da930af2ec56b0430d"
+  version "3.0.258181"
+  sha256 "236d1b2e93075a03b395b38ae17e316d52ca89d0ebce4d744fcf951819e21ad0"
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/keyboards/FirmwareUpdateTool_#{version}.zip"
   name "Logitech Firmware Update Tool"
