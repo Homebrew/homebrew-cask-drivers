@@ -1,6 +1,6 @@
 cask "focusrite-control" do
-  version "3.8.3.1967"
-  sha256 "80b0078b337e88582ac3edbed888c19420364014862ea38d31602824b18e6c8a"
+  version "3.10.0.1981"
+  sha256 "1250152259ba9836656c75b5d7ea296a092c57cef51d3f6ebddb2a89e30cc8a4"
 
   url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/Focusrite%20Control%20-%20#{version}.dmg"
   name "Focusrite Control"
@@ -8,7 +8,7 @@ cask "focusrite-control" do
   homepage "https://focusrite.com/en/focusrite-control"
 
   livecheck do
-    url "https://customer.focusrite.com/en/support/downloads?brand=Focusrite&product_by_type=1501&download_type=software"
+    url "https://downloads.focusrite.com/focusrite/scarlett-3rd-gen/scarlett-solo-3rd-gen"
     regex(%r{href=.*?/Focusrite%20Control%20-%20(\d+(?:\.\d+)+)\.dmg}i)
   end
 
