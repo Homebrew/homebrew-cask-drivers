@@ -5,7 +5,14 @@ cask "eizo-colornavigator" do
   url "https://www.eizoglobal.com/support/db/files/software/software/graphics/colornavigator#{version.major}/ColorNavigator#{version.no_dots}.pkg"
   name "Eizo ColorNavigator"
   desc "Calibrate Eizo Coloredge screens"
-  homepage "https://www.eizoglobal.com/products/coloredge/cn7/"
+  homepage "https://www.eizoglobal.com/products/coloredge/cn#{version.major}/"
+
+  livecheck do
+    url "https://www.eizoglobal.com/support/db/products/download/900"
+    regex(Ver[._-]v?(\d+(?:\.\d+)+)//i)
+  end
+
+  depends_on macos: ">= :mojave"
 
   pkg "ColorNavigator#{version.no_dots}.pkg"
 
