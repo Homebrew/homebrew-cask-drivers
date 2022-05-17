@@ -8,7 +8,7 @@ cask "focusrite-control" do
   homepage "https://focusrite.com/en/focusrite-control"
 
   livecheck do
-    url "https://customer.focusrite.com/en/support/downloads?brand=Focusrite&product_by_type=1501&download_type=software"
+    url "https://downloads.focusrite.com/focusrite/scarlett-3rd-gen/scarlett-solo-3rd-gen"
     regex(%r{href=.*?/Focusrite%20Control%20-%20(\d+(?:\.\d+)+)\.dmg}i)
   end
 
