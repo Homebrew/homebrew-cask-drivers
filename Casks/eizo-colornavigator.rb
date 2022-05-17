@@ -9,7 +9,7 @@ cask "eizo-colornavigator" do
 
   livecheck do
     url "https://www.eizoglobal.com/support/db/products/download/900"
-    regex(Ver[._-]v?(\d+(?:\.\d+)+)//i)
+    regex(/Ver[._-]v?(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: ">= :mojave"
