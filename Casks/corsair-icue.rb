@@ -8,9 +8,11 @@ cask "corsair-icue" do
   homepage "https://www.corsair.com/us/en/icue"
 
   livecheck do
-    skip "Download page uses Imperva/Incapsula"
+    url "https://www3.corsair.com/software/CUE_V#{version.major}/updates_mac.txt"
+    regex(/(\d+(?:\.\d+)+)/i)
   end
 
+  auto_updates true
   depends_on macos: ">= :high_sierra"
 
   pkg "iCUE.pkg"
