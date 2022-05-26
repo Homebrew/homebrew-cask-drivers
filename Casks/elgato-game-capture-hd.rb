@@ -12,9 +12,10 @@ cask "elgato-game-capture-hd" do
   else
     version "2.11.14"
     sha256 "e00efce3433cad902400c610f4816fbecce414868a53aec70ef2d8ded9c1ba74"
+
+    url "https://edge.elgato.com/egc/macos/egcm/#{version}/final/Game_Capture_HD_#{version}.zip"
   end
 
-  url "https://edge.elgato.com/egc/macos/egcm/#{version}/final/Game_Capture_HD_#{version}.zip"
   name "Game Capture HD"
   desc "Elgato video capture/streaming app"
   homepage "https://www.elgato.com/en/gaming/downloads/"
