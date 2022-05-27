@@ -5,7 +5,7 @@ cask "corsair-icue" do
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   name "Corsair iCUE"
   desc "Software for Corsair components and devices"
-  homepage "https://www.corsair.com/us/en/icue"
+  homepage "https://www.corsair.com/us/en/icue-mac"
 
   livecheck do
     url "https://www3.corsair.com/software/CUE_V#{version.major}/updates_mac.txt"
