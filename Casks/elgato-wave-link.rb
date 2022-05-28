@@ -1,6 +1,6 @@
 cask "elgato-wave-link" do
-  version "1.4.1.2927"
-  sha256 "cd074ff4477944f39b0102a00534f8ddfecdb2f42afdc957171a9f301368c630"
+  version "1.5.0.3042_2"
+  sha256 "56157301e1b419b03328fc32d8817eaf7bb10c35373db5d73c2f52fdb13dfba7"
 
   url "https://edge.elgato.com/egc/macos/wavelink/#{version.major_minor_patch}/WaveLink_#{version}.pkg"
   name "Elgato Wave Link"
@@ -9,7 +9,7 @@ cask "elgato-wave-link" do
 
   livecheck do
     url "https://www.elgato.com/sites/default/files/downloads.json"
-    regex(%r{"downloadURL"\s*:\s*"[^"]*?/WaveLink[._-]v?(\d+(?:\.\d+)+)\.pkg"}i)
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/WaveLink[._-]v?(\d+(?:[._]\d+)+)\.pkg"}i)
   end
 
   depends_on macos: ">= :catalina"
