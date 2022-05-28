@@ -9,7 +9,7 @@ cask "elgato-wave-link" do
 
   livecheck do
     url "https://www.elgato.com/sites/default/files/downloads.json"
-    regex(%r{"downloadURL"\s*:\s*"[^"]*?/WaveLink[._-]v?(\d+(?:\.\d+)+)\.pkg"}i)
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/WaveLink[._-]v?(\d+(?:[._]\d+)+)\.pkg"}i)
   end
 
   depends_on macos: ">= :catalina"
