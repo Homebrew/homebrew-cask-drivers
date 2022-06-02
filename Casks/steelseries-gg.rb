@@ -26,7 +26,11 @@ cask "steelseries-gg" do
               "com.steelseries.gg.uninstaller",
               "com.steelseries.SteelSeries-GG",
             ],
-            kext:      "com.steelseries.ssenext.driver",
+            kext:      [
+              "com.steelseries.ssenext.driver",
+              "com.highpoint-tech.kext.HighPointIOP",
+              "com.highpoint-tech.kext.HighPointRR",
+            ],
             script:    [
               { executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
                 sudo:       true },
