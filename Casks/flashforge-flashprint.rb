@@ -1,6 +1,6 @@
 cask "flashforge-flashprint" do
-  version "5.3.3"
-  sha256 "38b11cd90400119bcd145ca5a9981dfea7ab8caabbb0fbd746783ab1821d8740"
+  version "5.3.4"
+  sha256 "7b804131706d77bdd7327ee934fe3f515c79691a469ed27798af9a1102df440a"
 
   url "http://www.ishare3d.com/3dapp/public/FlashPrint-5/FlashPrint/FlashPrint_#{version}_mac.zip",
       verified: "ishare3d.com/3dapp/public/FlashPrint-5/FlashPrint/"
