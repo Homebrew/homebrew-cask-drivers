@@ -14,7 +14,8 @@ cask "dymo-label" do
     "com.dymo.dcd.webservice",
     "com.dymo.pnpd",
   ],
-            pkgutil:   "com.dymo.dymo-connect"
+            pkgutil:   "com.dymo.dymo-connect",
+            quit:      "com.dymo.DYMO-WebApi-Mac-Host"
 
   zap trash: "~/Library/Preferences/com.dymo.DYMO-WebApi-Mac-Host.plist"
 end
