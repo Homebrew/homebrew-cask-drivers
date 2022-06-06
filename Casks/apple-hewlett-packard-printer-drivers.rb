@@ -1,8 +1,8 @@
 cask "apple-hewlett-packard-printer-drivers" do
-  version "5.1,2020,001-41745-20201210-DBC9B46B-88B2-4032-87D9-449AF1D20804"
-  sha256 "9ee54766e32cdd3ce6a0ff019aad02400eac66fc669c991f47a6c37379cf8fac"
+  version "5.1.1,2021,071-46903-20211101-0BD2764A-901C-41BA-9573-C17B8FDC4D90"
+  sha256 "523836b630431bc39b0170a17099099d6f821ef62ff29e6ec64ebb69b9954133"
 
-  url "https://updates.cdn-apple.com/#{version.csv[1]}/macos/#{version.csv[2]}/HewlettPackardPrinterDrivers.dmg",
+  url "https://updates.cdn-apple.com/#{version.csv.second}/macos/#{version.csv.third}/HewlettPackardPrinterDrivers.dmg",
       verified: "updates.cdn-apple.com/"
   name "HP Printer Drivers"
   desc "HP printing and scanning software"
@@ -11,7 +11,7 @@ cask "apple-hewlett-packard-printer-drivers" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      version = page.match(/"strTitle":.*?v(\d+(?:\.\d+)+)\s*for\s*macOS/i)
+      version = page.match(/"strTitle":.*?v?(\d+(?:\.\d+)+)\s*Printer\s*Software\s*Update/i)
       metaurl = page.match(%r{"metaUrl":.*?/(\d+)/macos/([\dA-F]+(?:-[\dA-F]+)*)/HewlettPackardPrinterDrivers\.dmg}i)
       next if version.blank? || metaurl.blank?
 
