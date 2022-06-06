@@ -8,8 +8,6 @@ cask "canon-fax" do
   desc "Fax driver & utilities for Canon imageCLASS MF printers"
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
-  depends_on macos: ">= :yosemite"
-
   pkg "Canon_FAX_Installer.pkg"
 
   uninstall pkgutil: "jp.co.canon.CUPSFAX.*"
