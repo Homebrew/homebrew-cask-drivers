@@ -20,12 +20,7 @@ cask "nvidia-web-driver" do
   name "NVIDIA Web Driver"
   homepage "https://www.nvidia.com/Download/index.aspx"
 
-  depends_on macos: [
-    :yosemite,
-    :el_capitan,
-    :sierra,
-    :high_sierra,
-  ]
+  depends_on macos: "<= :high_sierra"
 
   pkg "WebDriver-#{version}.pkg"
 
