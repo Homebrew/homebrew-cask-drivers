@@ -8,6 +8,11 @@ cask "dymo-label" do
   desc "Software for DYMO LabelWriters"
   homepage "https://www.dymo.com/en-US/online-support"
 
+  livecheck do
+    url "https://www.dymo.com/support?cfid=online-support"
+    regex(/href=.*?DCDMac[._-]?v?(\d+(?:\.\d+)+)\.pkg/i)
+  end
+
   pkg "DCDMac#{version}.pkg"
 
   uninstall launchctl: [
