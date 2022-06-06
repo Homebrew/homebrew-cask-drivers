@@ -6,7 +6,7 @@ cask "plantronics-hub" do
   name "Plantronics Hub"
   homepage "https://www.poly.com/us/en/support/downloads-apps"
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :mojave"
 
   pkg "Plantronics Software.pkg"
 
