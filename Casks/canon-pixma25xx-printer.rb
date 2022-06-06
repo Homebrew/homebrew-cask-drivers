@@ -19,8 +19,6 @@ cask "canon-pixma25xx-printer" do
     end
   end
 
-  depends_on macos: ">= :yosemite"
-
   pkg "PrinterDriver_MG2500 series_#{format("%<major>02d%<minor>02d%<patch>02d", major: version.major, minor: version.minor, patch: version.patch.to_i)}.pkg"
 
   uninstall pkgutil: "jp.co.canon.pkg.MG2500-#{format("%<major>02d%<minor>02d%<patch>02d", major: version.major, minor: version.minor, patch: version.patch.to_i)}"
