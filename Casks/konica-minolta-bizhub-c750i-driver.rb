@@ -32,7 +32,7 @@ cask "konica-minolta-bizhub-c750i-driver" do
     end
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :sierra"
 
   uninstall pkgutil: "jp.konicaminolta.print.package.C750i"
 end
