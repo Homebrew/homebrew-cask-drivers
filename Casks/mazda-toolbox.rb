@@ -9,8 +9,6 @@ cask "mazda-toolbox" do
   name "Mazda Toolbox"
   homepage "https://infotainment.mazdahandsfree.com/navigation-updatemymaps"
 
-  depends_on macos: ">= :yosemite"
-
   app "Mazda Toolbox.app"
 
   uninstall signal: [
