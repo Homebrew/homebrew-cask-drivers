@@ -35,8 +35,6 @@ cask "roland-quad-capture-usb-driver" do
   name "Roland Quad-Capture USB Driver"
   homepage "https://www.roland.com/us/products/quad-capture/"
 
-  depends_on macos: ">= :yosemite"
-
   uninstall pkgutil:   "jp.co.roland.QuadCapture.*",
             launchctl: [
               "jp.co.roland.RDUSB0000Setupd",
