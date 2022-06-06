@@ -8,8 +8,6 @@ cask "canon-scangear-mf" do
   desc "Scanner driver & utilities for Canon imageCLASS MF printers"
   homepage "https://www.usa.canon.com/internet/portal/us/home/support/drivers-downloads"
 
-  depends_on macos: ">= :yosemite"
-
   pkg "Canon_ScanGear_MF.pkg"
 
   uninstall launchctl: [
