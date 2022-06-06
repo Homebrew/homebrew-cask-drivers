@@ -9,7 +9,7 @@ cask "dymo-label" do
   homepage "https://www.dymo.com/support?cfid=online-support"
 
   livecheck do
-    skip "curl is blocked by Cloudflare, so we can't check automatically"
+    skip "No version information available"
   end
 
   pkg "DCDMac#{version}.pkg"
