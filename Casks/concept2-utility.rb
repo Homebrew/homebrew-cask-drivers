@@ -17,8 +17,6 @@ cask "concept2-utility" do
     regex(/Concept2\s+Utility\s+(\d+(?:\.\d+)+)/i)
   end
 
-  depends_on macos: ">= :yosemite"
-
   pkg "Concept2 Utility #{version}.pkg"
 
   uninstall pkgutil: "com.concept2.pkg.Concept2Utility"
