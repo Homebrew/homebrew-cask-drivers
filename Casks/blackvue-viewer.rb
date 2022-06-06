@@ -13,7 +13,7 @@ cask "blackvue-viewer" do
     regex(/blackvue-cloud-viewer-(\d+(?:\.\d+)+)-mac\.zip/i)
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :sierra"
 
   app "BlackVue Viewer.app"
 end
