@@ -1,5 +1,5 @@
 cask "logitech-unifying" do
-  if MacOS.version <= :mojave
+  if MacOS.version <= :yosemite
     version "1.2.359"
     sha256 "e6fd9c1b536033f3346b32c391bd58587ea9f549cab7839cf8a1dbc62a739825"
   else
@@ -16,8 +16,6 @@ cask "logitech-unifying" do
     url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,websoftware=ec9eb8f1-8e0b-11e9-a62b-5b664cf4d3da"
     regex(/unifying(\d+(?:\.\d+)+)_mac\.zip/i)
   end
-
-  depends_on macos: ">= :yosemite"
 
   pkg "Unifying Installer.app/Contents/Resources/Logitech Unifying Signed.mpkg"
 
