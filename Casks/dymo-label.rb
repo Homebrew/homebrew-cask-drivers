@@ -9,8 +9,7 @@ cask "dymo-label" do
   homepage "https://www.dymo.com/support?cfid=online-support"
 
   livecheck do
-    url "https://www.dymo.com/support?cfid=online-support"
-    regex(/href=.*?DCDMac[._-]?v?(\d+(?:\.\d+)+)\.pkg/i)
+    skip "curl is blocked by Cloudflare, so we can't check automatically"
   end
 
   pkg "DCDMac#{version}.pkg"
