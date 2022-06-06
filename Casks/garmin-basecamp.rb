@@ -24,8 +24,6 @@ cask "garmin-basecamp" do
   desc "3D mapping application"
   homepage "https://www.garmin.com/en-US/shop/downloads/basecamp"
 
-  depends_on macos: ">= :yosemite"
-
   pkg "Install BaseCamp.pkg"
 
   uninstall quit:    [
