@@ -20,7 +20,7 @@ cask "3dconnexion" do
     end
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   pkg "Install 3Dconnexion software.pkg"
 
