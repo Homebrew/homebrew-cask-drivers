@@ -12,7 +12,7 @@ cask "canon-mf-printer" do
     skip "No version information available"
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   pkg "MF_Printer_Installer.pkg"
 
