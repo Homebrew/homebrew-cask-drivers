@@ -12,8 +12,6 @@ cask "8bitdo-firmware-updater" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :yosemite"
-
   app "8BitDo Firmware Updater.app"
 
   uninstall quit: "com.Dev.Sihoo.-BitDoFirmwareUpdater"
