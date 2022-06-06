@@ -6,7 +6,7 @@ cask "dymo-label" do
       verified: "s3.amazonaws.com/download.dymo.com/dymo/Software/Mac/"
   name "Dymo Label"
   desc "Software for DYMO LabelWriters"
-  homepage "https://www.dymo.com/en-US/online-support"
+  homepage "https://www.dymo.com/support?cfid=online-support"
 
   livecheck do
     url "https://www.dymo.com/support?cfid=online-support"
