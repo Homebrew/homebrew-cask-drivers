@@ -1,15 +1,8 @@
 cask "segger-jlink" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
+  version "7.66c"
+  sha256 "ff730a4e4c1a7fc1215f558b4fe3ee506eb4e5894f8b866bc128ef276084e31a"
 
-  version "7.66b"
-
-  if Hardware::CPU.intel?
-    sha256 "af34612ce9980aa455d87b41c3a09840743603de47a7c8c643a1d617369b9040"
-  else
-    sha256 "1f30ba15a3e5bfbb0a51c53c7b39000122032eedeb7e42e55e2decc2e85329c8"
-  end
-
-  url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_#{arch}.pkg",
+  url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_universal.pkg",
       using: :post,
       data:  {
         "accept_license_agreement" => "accepted",
@@ -25,7 +18,7 @@ cask "segger-jlink" do
     regex(/Version\s*V(\d+(?:\.\d+[a-z]?)*)/i)
   end
 
-  pkg "JLink_MacOSX_V#{version.no_dots}_#{arch}.pkg"
+  pkg "JLink_MacOSX_V#{version.no_dots}_universal.pkg"
 
   uninstall quit:    [
     "com.segger.JFlashLite.*",
