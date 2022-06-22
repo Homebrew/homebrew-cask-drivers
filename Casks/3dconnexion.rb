@@ -3,8 +3,8 @@ cask "3dconnexion" do
     version "10-6-7,r3287,36E24890-6B5F-443a-8A9F-1851F9ADB985"
     sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
   else
-    version "10-7-2,r3454,A2E276BD-4DEB-4343-BA4C-591FE7958ED9"
-    sha256 "a53258a8b89d511182dd5427140ba7d1c539a152d87b255f1553704bab7413ad"
+    version "10-7-3,r3469,8A66FAD4-E908-45ef-A371-01ADBC779067"
+    sha256 "f4e3235643434ede5155d395b1d49a32917a7ce8353a6b54774a3b0c7672a849"
   end
 
   url "https://download.3dconnexion.com/drivers/mac/#{version.csv.first}_#{version.csv.third}/3DxWareMac_v#{version.csv.first}_#{version.csv.second}.dmg"
