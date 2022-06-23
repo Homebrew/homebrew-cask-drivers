@@ -1,8 +1,8 @@
 cask "sonos" do
-  version "14.8,68.3.29090"
-  sha256 "5df83c0bfa136b6eede6a30c27d1d7fb9b0cf7d63e7d6a823d155679cd60e27c"
+  version "14.10,68.3.30100"
+  sha256 "364e86b6a8a97f43718f7ba205539c748d6759ebae1c573cdaefcb2cd6d27965"
 
-  url "https://update.sonos.com/software/mac/mdcr/SonosDesktopController#{version.csv.first.no_dots}.dmg"
+  url "https://update-software.sonos.com/software/dpnugadm/Sonos_#{version.csv.second.sub(/(\d+)\.(\d+)\.(\d+)/, '\1.\2-\3')}.dmg"
   name "Sonos"
   desc "Control your Sonos system"
   homepage "https://www.sonos.com/"
