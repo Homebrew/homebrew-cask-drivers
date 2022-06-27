@@ -27,9 +27,11 @@ cask "loupedeck" do
               "com.loupedeck.ImageLibraryInstaller",
               "com.loupedeck.LibraryInstaller",
               "com.loupedeck.LoupedeckLibraryPackageManagerMacPackageInstaller",
+              "com.loupedeck.LoupedeckServiceToolPackageInstaller",
               "com.loupedeck.LoupedeckPackageInstaller",
               "com.loupedeck.MediaInstaller",
               "com.loupedeck.PluginPackageInstaller",
+
             ],
             delete:  "/Applications/Loupedeck.app"
 
