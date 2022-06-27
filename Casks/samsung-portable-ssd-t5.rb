@@ -1,9 +1,8 @@
 cask "samsung-portable-ssd-t5" do
   version "1.6.10"
-  sha256 :no_check
+  sha256 "ad7c20b57880120ba445192fdf7383658443a0398fa1dcdf42892ab711465f2c"
 
-  url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/SW/E25128DB3EDE0CA39ADLA9CC47CKHA7A7O48XC88S7JGAHJ2KIA553/SamsungPortableSSD_Setup_Mac.zip",
-      verified: "s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/"
+  url "https://semiconductor.samsung.com/resources/software-resources/SamsungPortableSSD_Setup_Mac_#{version.dots_to_underscores}.zip"
   name "Samsung Portable SSD Software for T5"
   desc "Software for Samsung external storage drives"
   homepage "https://www.samsung.com/semiconductor/minisite/ssd/download/portable/"
