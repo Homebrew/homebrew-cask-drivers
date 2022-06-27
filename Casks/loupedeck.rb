@@ -23,7 +23,7 @@ cask "loupedeck" do
     ["HUP", "com.loupedeck.Loupedeck2"],
     ["KILL", "com.loupedeck.Loupedeck2"],
   ],
-            laubchctl: "com.loupedeck.loupedeck2.launch",
+            launchctl: "com.loupedeck.loupedeck2.launch",
             pkgutil:   [
               "com.loupedeck.ImageLibraryInstaller",
               "com.loupedeck.LibraryInstaller",
