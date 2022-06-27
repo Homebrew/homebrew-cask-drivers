@@ -3,9 +3,13 @@ cask "elgato-video-capture" do
   sha256 "ef294607a2b620907cbafb61970953d1c4dbce2d7e93b51413618b196afe74ee"
 
   url "https://edge.elgato.com/video-capture/macos/#{version.major_minor_patch}/final/Video_Capture_#{version}.zip"
-  appcast "https://www.elgato.com/sites/default/files/downloads.json"
   name "Elgato Video Capture"
   homepage "https://www.elgato.com/en/video-capture/"
+
+  livecheck do
+    url "https://www.elgato.com/sites/default/files/downloads.json"
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Video[._-]Capture[._-]v?(\d+(?:[._]\d+)+)\.zip"}i)
+  end
 
   depends_on macos: ">= :el_capitan"
 
