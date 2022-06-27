@@ -1,5 +1,5 @@
 cask "samsung-portable-ssd-t5" do
-  version "1.6.9"
+  version "1.6.10"
   sha256 :no_check
 
   url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/SW/E25128DB3EDE0CA39ADLA9CC47CKHA7A7O48XC88S7JGAHJ2KIA553/SamsungPortableSSD_Setup_Mac.zip",
@@ -10,7 +10,10 @@ cask "samsung-portable-ssd-t5" do
 
   livecheck do
     url :homepage
-    regex(/T5.*mac.*\n.*Version\s*(\d+(?:\.\d+)+)/i)
+    regex(/href=.*?SamsungPortableSSD[._-]Setup[._-]Mac[._-]v?(\d+(?:[._]\d+)+)\.zip/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match.first.tr("_", ".") }
+    end
   end
 
   pkg "SamsungPortableSSD_Setup_Mac.pkg"
