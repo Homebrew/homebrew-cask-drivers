@@ -16,24 +16,24 @@ cask "loupedeck" do
 
   pkg "LoupedeckInstaller.pkg"
 
-  uninstall signal:  [
+  uninstall signal:    [
     ["TERM", "com.loupedeck.Loupedeck2"],
     ["QUIT", "com.loupedeck.Loupedeck2"],
     ["INT", "com.loupedeck.Loupedeck2"],
     ["HUP", "com.loupedeck.Loupedeck2"],
     ["KILL", "com.loupedeck.Loupedeck2"],
   ],
-            pkgutil: [
+            laubchctl: "com.loupedeck.loupedeck2.launch",
+            pkgutil:   [
               "com.loupedeck.ImageLibraryInstaller",
               "com.loupedeck.LibraryInstaller",
               "com.loupedeck.LoupedeckLibraryPackageManagerMacPackageInstaller",
-              "com.loupedeck.LoupedeckServiceToolPackageInstaller",
               "com.loupedeck.LoupedeckPackageInstaller",
+              "com.loupedeck.LoupedeckServiceToolPackageInstaller",
               "com.loupedeck.MediaInstaller",
               "com.loupedeck.PluginPackageInstaller",
-
             ],
-            delete:  "/Applications/Loupedeck.app"
+            delete:    "/Applications/Loupedeck.app"
 
   zap trash: [
     "~/Library/Application Support/Adobe/CameraRaw/Settings/Loupedeck - Karo Holmberg",
