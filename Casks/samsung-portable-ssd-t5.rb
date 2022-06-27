@@ -1,16 +1,18 @@
 cask "samsung-portable-ssd-t5" do
-  version "1.6.9"
-  sha256 :no_check
+  version "1.6.10"
+  sha256 "ad7c20b57880120ba445192fdf7383658443a0398fa1dcdf42892ab711465f2c"
 
-  url "https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/SW/E25128DB3EDE0CA39ADLA9CC47CKHA7A7O48XC88S7JGAHJ2KIA553/SamsungPortableSSD_Setup_Mac.zip",
-      verified: "s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_PORTABLE_SSD_T5_01060901/"
+  url "https://semiconductor.samsung.com/resources/software-resources/SamsungPortableSSD_Setup_Mac_#{version.dots_to_underscores}.zip"
   name "Samsung Portable SSD Software for T5"
   desc "Software for Samsung external storage drives"
   homepage "https://www.samsung.com/semiconductor/minisite/ssd/download/portable/"
 
   livecheck do
     url :homepage
-    regex(/T5.*mac.*\n.*Version\s*(\d+(?:\.\d+)+)/i)
+    regex(/href=.*?SamsungPortableSSD[._-]Setup[._-]Mac[._-]v?(\d+(?:[._]\d+)+)\.zip/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| match.first.tr("_", ".") }
+    end
   end
 
   pkg "SamsungPortableSSD_Setup_Mac.pkg"
@@ -34,6 +36,7 @@ cask "samsung-portable-ssd-t5" do
               "com.samsung.portablessd.samsungPortableSsdDriver.postflight",
               "com.samsung.portablessd.samsungPortableSsdDriver.preflight",
               "com.samsung.portablessd.samsungPortableSsdSoftware.preflight",
+              "com.samsung.portablessduniversal.softwarepkg",
             ],
             delete:    [
               "/Applications/SamsungPortableSSD.app",
