@@ -4,6 +4,7 @@ cask "elgato-video-capture" do
 
   url "https://edge.elgato.com/video-capture/macos/#{version.major_minor_patch}/final/Video_Capture_#{version}.zip"
   name "Elgato Video Capture"
+  desc "Capture video from analog sources"
   homepage "https://www.elgato.com/en/video-capture/"
 
   livecheck do
