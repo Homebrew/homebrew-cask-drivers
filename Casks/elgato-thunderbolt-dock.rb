@@ -3,10 +3,14 @@ cask "elgato-thunderbolt-dock" do
   sha256 "e76aff1d404451fa87d42c566475e83a09a15318cf33ad9219ed3792d5a7a098"
 
   url "https://edge.elgato.com/thunderbolt-dock/Elgato_Thunderbolt_Dock_Software_#{version}.pkg"
-  appcast "https://www.macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://update.elgato.com/mac/thunderbolt-dock-update/download.php"
   name "Elgato Thunderbolt Dock"
   desc "Menu bar utility for Elgato Thunderbolt docks"
   homepage "https://www.elgato.com/en/dock/thunderbolt-3"
+
+  livecheck do
+    url "https://www.elgato.com/sites/default/files/downloads.json"
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Elgato[._-]Thunderbolt[._-]Dock[._-]Software[._-]v?(\d+(?:[._]\d+)+)\.pkg"}i)
+  end
 
   depends_on macos: ">= :el_capitan"
 
