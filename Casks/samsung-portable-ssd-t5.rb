@@ -36,6 +36,7 @@ cask "samsung-portable-ssd-t5" do
               "com.samsung.portablessd.samsungPortableSsdDriver.postflight",
               "com.samsung.portablessd.samsungPortableSsdDriver.preflight",
               "com.samsung.portablessd.samsungPortableSsdSoftware.preflight",
+              "com.samsung.portablessduniversal.softwarepkg",
             ],
             delete:    [
               "/Applications/SamsungPortableSSD.app",
