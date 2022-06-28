@@ -1,12 +1,12 @@
 cask "muteme" do
   arch = Hardware::CPU.intel? ? "osx_64" : "osx_arm64"
 
-  version "0.10.3"
+  version "0.11.0"
 
   if Hardware::CPU.intel?
-    sha256 "2043a7e0f4c8b7edabca7d17b1bf3deeca8e1106c8e834de7166f64eb96384ef"
+    sha256 "27d345ffe57d5112f418f1f87f68227e5387680cad2ebc7c94acce25810dc25c"
   else
-    sha256 "dbe606b91204d3678e1ec9fc307cd0f30a76dececa2bb1090bac24bd14548f71"
+    sha256 "843db0fcbec7ddd37689bd1f0555ae67d9c58e14d8ea4757fe288b6175a16816"
   end
 
   url "https://muteme.io/download/flavor/default/#{version}/#{arch}/MuteMe-Client-#{version}.dmg",
