@@ -8,6 +8,11 @@ cask "obs-ios-camera-source" do
   desc "iOS camera plugin for OBS Studio"
   homepage "https://obs.camera/docs/getting-started/ios-camera-plugin-usb/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on cask: "obs"
   depends_on macos: ">= :high_sierra"
 
