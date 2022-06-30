@@ -16,12 +16,12 @@ cask "rapoo-mt750s" do
   pkg "RapooOptions_MT750S_#{version}.pkg"
 
   uninstall pkgutil:   [
-    "com.mygreatcompany.pkg.plist",
-    "com.mygreatcompany.pkg.MT750S",
-    "com.mygreatcompany.pkg.MT750SUninstall",
-    "com.mygreatcompany.pkg.MT750SMgr",
-    "com.mygreatcompany.pkg.RapooOptionsDeamon",
-  ],
+              "com.mygreatcompany.pkg.plist",
+              "com.mygreatcompany.pkg.MT750S",
+              "com.mygreatcompany.pkg.MT750SUninstall",
+              "com.mygreatcompany.pkg.MT750SMgr",
+              "com.mygreatcompany.pkg.RapooOptionsDeamon",
+            ],
             quit:      "com.mygreatcompany.pkg.RapooOptionsDeamon",
             launchctl: "com.rapoo.driver"
 end
