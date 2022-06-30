@@ -25,9 +25,9 @@ cask "nvidia-cuda-toolkit" do
   }
 
   uninstall script:    {
-    executable: "/Developer/NVIDIA/CUDA-#{version.major_minor}/bin/uninstall_cuda_#{version.major_minor}.pl",
-    sudo:       true,
-  },
+              executable: "/Developer/NVIDIA/CUDA-#{version.major_minor}/bin/uninstall_cuda_#{version.major_minor}.pl",
+              sudo:       true,
+            },
             launchctl: [
               "com.nvidia.CUDASoftwareUpdate",
               "com.nvidia.cuda.launcher",
