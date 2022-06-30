@@ -15,9 +15,9 @@ cask "evolv-escribe-suite" do
   pkg "SetupEScribe#{version}_INT.pkg"
 
   uninstall pkgutil: [
-    "org.ecigstats.Main",
-    "com.evolvapor.EScribe.Suite",
-  ],
+              "org.ecigstats.Main",
+              "com.evolvapor.EScribe.Suite",
+            ],
             script:  {
               executable: "/Applications/EScribe Suite.app/Contents/MacOS/ECigStats.app/Contents/MacOS/RunProgram",
               args:       ["--exit"],
