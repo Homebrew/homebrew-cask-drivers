@@ -10,10 +10,10 @@ cask "microsoft-intellipoint" do
   pkg "Microsoft Mouse Installer.app/Contents/Resources/Microsoft Mouse.pkg"
 
   uninstall kext:    [
-    "com.microsoft.driver.MicrosoftMouse",
-    "com.microsoft.driver.MicrosoftMouseBluetooth",
-    "com.microsoft.driver.MicrosoftMouseUSB",
-  ],
+              "com.microsoft.driver.MicrosoftMouse",
+              "com.microsoft.driver.MicrosoftMouseBluetooth",
+              "com.microsoft.driver.MicrosoftMouseUSB",
+            ],
             pkgutil: "com.microsoft.mouse.installer",
             delete:  "/Library/PreferencePanes/Microsoft Mouse.prefPane"
 end
