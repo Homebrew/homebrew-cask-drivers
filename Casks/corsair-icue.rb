@@ -18,9 +18,9 @@ cask "corsair-icue" do
   pkg "iCUE.pkg"
 
   uninstall launchctl: [
-    "com.corsair.AudioConfigService.System",
-    "com.corsair.cue.#{version.major}.launchHelper",
-  ],
+              "com.corsair.AudioConfigService.System",
+              "com.corsair.cue.#{version.major}.launchHelper",
+            ],
             quit:      [
               "com.corsair.cue",
               "com.corsair.cue.*",
