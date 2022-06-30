@@ -15,9 +15,9 @@ cask "logitech-unifying" do
   pkg "Unifying Installer.app/Contents/Resources/Logitech Unifying Signed.mpkg"
 
   uninstall pkgutil: [
-    "com.Logitech.Unifying Software.pkg",
-    "com.Logitech.Updater.pkg",
-  ],
+              "com.Logitech.Unifying Software.pkg",
+              "com.Logitech.Updater.pkg",
+            ],
             delete:  "/Applications/Utilities/Logitech Unifying Software.app",
             quit:    "com.logitech.unifying.assistant"
 
