@@ -11,8 +11,8 @@ cask "canon-scangear-mf" do
   pkg "Canon_ScanGear_MF.pkg"
 
   uninstall launchctl: [
-    "jp.co.canon.ScanGearMF.appl.Canon-MF-Scan-Agent",
-    "jp.co.canon.ScanGearMF.appl.Canon-MFSU-Agent",
-  ],
+              "jp.co.canon.ScanGearMF.appl.Canon-MF-Scan-Agent",
+              "jp.co.canon.ScanGearMF.appl.Canon-MFSU-Agent",
+            ],
             pkgutil:   "jp.co.canon.ScanGearMF.*"
 end
