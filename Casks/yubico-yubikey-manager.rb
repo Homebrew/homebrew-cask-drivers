@@ -20,9 +20,9 @@ cask "yubico-yubikey-manager" do
             pkgutil: "com.yubico.ykman"
 
   zap trash: [
-    "~/Library/Caches/Yubico/YubiKey Manager",
-    "~/Library/Preferences/com.org-yubico.YubiKey Manager.plist",
-    "~/Library/Saved Application State/com.yubico.ykman.savedState",
-  ],
+        "~/Library/Caches/Yubico/YubiKey Manager",
+        "~/Library/Preferences/com.org-yubico.YubiKey Manager.plist",
+        "~/Library/Saved Application State/com.yubico.ykman.savedState",
+      ],
       rmdir: "~/Library/Caches/Yubico"
 end
