@@ -9,9 +9,9 @@ cask "content-manager-assistant" do
   pkg "CMAInstaller.pkg"
 
   uninstall quit:    [
-    "jp.co.scei.ContentManagerAssistant",
-    "jp.co.scei.ContentManagerAssistant.Watcher",
-  ],
+              "jp.co.scei.ContentManagerAssistant",
+              "jp.co.scei.ContentManagerAssistant.Watcher",
+            ],
             pkgutil: "jp.co.scei.ContentManagerAssistant.installer"
 
   zap trash: [
