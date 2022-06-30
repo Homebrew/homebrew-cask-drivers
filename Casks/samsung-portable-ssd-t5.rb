@@ -18,10 +18,10 @@ cask "samsung-portable-ssd-t5" do
   pkg "SamsungPortableSSD_Setup_Mac.pkg"
 
   uninstall quit:      [
-    "com.samsung.portablessd.software",
-    "Samsung.T3-Log-In-Activator-for-Mac-app",
-    "/Applications/SamsungPortableSSD.app",
-  ],
+              "com.samsung.portablessd.software",
+              "Samsung.T3-Log-In-Activator-for-Mac-app",
+              "/Applications/SamsungPortableSSD.app",
+            ],
             launchctl: [
               "com.samsung.portablessd.mon",
               "com.srib.pssddaemon",
