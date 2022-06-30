@@ -59,9 +59,9 @@ cask "logitech-options" do
   end
 
   uninstall launchctl: [
-    "com.logi.bolt.app",
-    "com.logitech.manager.daemon",
-  ],
+              "com.logi.bolt.app",
+              "com.logitech.manager.daemon",
+            ],
             quit:      [
               "com.logitech.Logi-Options",
               "com.logitech.manager.daemon",
@@ -78,14 +78,14 @@ cask "logitech-options" do
             delete:    "/Library/Application Support/Logitech.localized"
 
   zap trash: [
-    "~/Library/Application Support/Logitech/Logitech Options",
-    "~/Library/Application Support/Logitech/Options",
-    "~/Library/Caches/com.logitech.Logi-Options",
-    "~/Library/Preferences/com.logitech.Logi-Options.plist",
-    "~/Library/Preferences/com.logitech.manager.daemon.plist",
-    "~/Library/Preferences/com.logitech.manager.setting.ffff.plist",
-    "~/Library/Saved Application State/com.logitech.manager.uninstaller.savedState",
-  ],
+        "~/Library/Application Support/Logitech/Logitech Options",
+        "~/Library/Application Support/Logitech/Options",
+        "~/Library/Caches/com.logitech.Logi-Options",
+        "~/Library/Preferences/com.logitech.Logi-Options.plist",
+        "~/Library/Preferences/com.logitech.manager.daemon.plist",
+        "~/Library/Preferences/com.logitech.manager.setting.ffff.plist",
+        "~/Library/Saved Application State/com.logitech.manager.uninstaller.savedState",
+      ],
       rmdir: "~/Library/Application Support/Logitech"
 
   caveats do
