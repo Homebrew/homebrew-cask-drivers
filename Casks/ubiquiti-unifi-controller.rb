@@ -22,9 +22,9 @@ cask "ubiquiti-unifi-controller" do
   end
 
   uninstall quit:    [
-    "com.oracle.java.*.jre",
-    "com.ubnt.UniFi-Discover",
-  ],
+              "com.oracle.java.*.jre",
+              "com.ubnt.UniFi-Discover",
+            ],
             signal:  ["TERM", "com.ubnt.UniFi"],
             pkgutil: "com.ubnt.UniFi",
             delete:  [
