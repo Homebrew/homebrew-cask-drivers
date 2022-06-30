@@ -15,9 +15,9 @@ cask "yamaha-usb-midi-driver" do
   pkg "um#{version.no_dots}mx/Yamaha USB-MIDI Driver V#{version}.pkg"
 
   uninstall script:  {
-    executable: "#{staged_path}/um#{version.no_dots}mx/Uninstall Yamaha USB-MIDI Driver.app/Contents/Resources/Scripts/delpkg.sh",
-    sudo:       true,
-  },
+              executable: "#{staged_path}/um#{version.no_dots}mx/Uninstall Yamaha USB-MIDI Driver.app/Contents/Resources/Scripts/delpkg.sh",
+              sudo:       true,
+            },
             pkgutil: [
               "jp.co.yamaha.USBMIDIDriver",
               "jp.co.yamaha.USBMIDIPatch",
