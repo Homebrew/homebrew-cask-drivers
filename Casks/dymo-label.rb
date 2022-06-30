@@ -15,9 +15,9 @@ cask "dymo-label" do
   pkg "DCDMac#{version}.pkg"
 
   uninstall launchctl: [
-    "com.dymo.dcd.webservice",
-    "com.dymo.pnpd",
-  ],
+              "com.dymo.dcd.webservice",
+              "com.dymo.pnpd",
+            ],
             pkgutil:   "com.dymo.dymo-connect",
             quit:      "com.dymo.DYMO-WebApi-Mac-Host"
 
