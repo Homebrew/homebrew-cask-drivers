@@ -20,9 +20,9 @@ cask "philips-hue-sync" do
   end
 
   uninstall quit:    [
-    "com.lighting.huesync",
-    "com.lighting.huesync.watchdog",
-  ],
+              "com.lighting.huesync",
+              "com.lighting.huesync.watchdog",
+            ],
             pkgutil: "com.lighting.huesync"
 
   zap trash: [
