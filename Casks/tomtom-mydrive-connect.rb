@@ -15,9 +15,9 @@ cask "tomtom-mydrive-connect" do
   pkg "MyDriveConnect_mac_#{version.dots_to_underscores}.mpkg"
 
   uninstall quit:       [
-    "com.tomtom.mytomtomsa",
-    "application.com.apple.systemevents.1152921500312199658",
-  ],
+              "com.tomtom.mytomtomsa",
+              "application.com.apple.systemevents.1152921500312199658",
+            ],
             login_item: "TomTomMyDriveConnectHelper",
             pkgutil:    [
               "com.tomtom.mytomtomsa.temp.pkg",
@@ -25,12 +25,12 @@ cask "tomtom-mydrive-connect" do
             ]
 
   zap trash: [
-    "~/Library/Application Support/CrashReporter/TomTom MyDrive Connect_*.plist",
-    "~/Library/Application Support/TomTom/HOME3",
-    "~/Library/Logs/DiagnosticReports/TomTom MyDrive Connect_*.crash",
-    "~/Library/Preferences/com.tomtom.mytomtomsa.plist",
-    "~/Library/Saved Application State/com.tomtom.mytomtomsa.savedState",
-  ],
+        "~/Library/Application Support/CrashReporter/TomTom MyDrive Connect_*.plist",
+        "~/Library/Application Support/TomTom/HOME3",
+        "~/Library/Logs/DiagnosticReports/TomTom MyDrive Connect_*.crash",
+        "~/Library/Preferences/com.tomtom.mytomtomsa.plist",
+        "~/Library/Saved Application State/com.tomtom.mytomtomsa.savedState",
+      ],
       rmdir: [
         "~/Library/Application Support/TomTom",
         "~/Library/Caches/TomTom",
