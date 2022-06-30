@@ -11,10 +11,10 @@ cask "plantronics-hub" do
   pkg "Plantronics Software.pkg"
 
   uninstall pkgutil:   [
-    "com.plantronics.plantronicsSoftware.PlantronicsHub.pkg",
-    "com.plantronics.plantronicsSoftware.preflight.pkg",
-    "Plantronics-Inc..Plantronics-Hub",
-  ],
+              "com.plantronics.plantronicsSoftware.PlantronicsHub.pkg",
+              "com.plantronics.plantronicsSoftware.preflight.pkg",
+              "Plantronics-Inc..Plantronics-Hub",
+            ],
             launchctl: "com.PlantronicsUpdateService",
             quit:      "Plantronics-Inc..Plantronics-Hub"
 
