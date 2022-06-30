@@ -9,10 +9,10 @@ cask "seagate-dashboard" do
   pkg "Dashboard.app/Contents/PlugIns/SeagateDashboard.pkg"
 
   uninstall kext:      [
-    "com.seagate.driver.PowSecDriverCore",
-    "com.seagate.driver.PowSecLeafDriver_10_5",
-    "com.seagate.driver.SeagateDriveIcons",
-  ],
+              "com.seagate.driver.PowSecDriverCore",
+              "com.seagate.driver.PowSecLeafDriver_10_5",
+              "com.seagate.driver.SeagateDriveIcons",
+            ],
             launchctl: [
               "com.seagate.dashboard",
               "com.seagate.TBDecorator.plist",
