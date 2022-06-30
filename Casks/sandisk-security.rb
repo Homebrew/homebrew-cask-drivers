@@ -22,10 +22,10 @@ cask "sandisk-security" do
   }
 
   uninstall early_script: {
-    executable: "exec/SanDisk Security Installer.app/Contents/MacOS/SanDisk Security Installer",
-    args:       ["-uninstall", "-silent"],
-    sudo:       true,
-  },
+              executable: "exec/SanDisk Security Installer.app/Contents/MacOS/SanDisk Security Installer",
+              args:       ["-uninstall", "-silent"],
+              sudo:       true,
+            },
             launchctl:    "com.wdc.SanDiskPrivilegedHelper",
             login_item:   "SanDiskSecurityHelper"
 
