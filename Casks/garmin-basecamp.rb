@@ -27,10 +27,10 @@ cask "garmin-basecamp" do
   pkg "Install BaseCamp.pkg"
 
   uninstall quit:    [
-    "com.garmin.BaseCamp",
-    "com.garmin.MapInstall",
-    "com.garmin.MapManager",
-  ],
+              "com.garmin.BaseCamp",
+              "com.garmin.MapInstall",
+              "com.garmin.MapManager",
+            ],
             pkgutil: [
               "com.Garmin.*.BaseCamp*",
               "com.Garmin.pkg.BasecampPostflight",
