@@ -19,19 +19,19 @@ cask "datacolor-spyder-pro" do
   pkg "Spyder#{version.major}Pro #{version}.pkg"
 
   uninstall signal:  [
-    ["TERM", "com.datacolor.spyder#{version.major}pro"],
-    ["TERM", "com.datacolor.spyder#{version.major}utility"],
-  ],
+              ["TERM", "com.datacolor.spyder#{version.major}pro"],
+              ["TERM", "com.datacolor.spyder#{version.major}utility"],
+            ],
             delete:  "/Applications/Datacolor/Spyder#{version.major}Pro",
             pkgutil: "com.datacolor.pkg.spyder#{version.major}pro",
             rmdir:   "/Applications/Datacolor"
 
   zap trash: [
-    "~/Library/Application Support/MindVision/Spyder#{version.major}Pro_Installer.xtm",
-    "~/Library/Caches/com.datacolor.spyder#{version.major}pro",
-    "~/Library/Preferences/Datacolor/Spyder#{version.major}Pro",
-    "~/Library/Preferences/Datacolor/SpyderUtility",
-    "~/Library/Saved Application State/com.datacolor.spyder#{version.major}pro.savedState",
-  ],
+        "~/Library/Application Support/MindVision/Spyder#{version.major}Pro_Installer.xtm",
+        "~/Library/Caches/com.datacolor.spyder#{version.major}pro",
+        "~/Library/Preferences/Datacolor/Spyder#{version.major}Pro",
+        "~/Library/Preferences/Datacolor/SpyderUtility",
+        "~/Library/Saved Application State/com.datacolor.spyder#{version.major}pro.savedState",
+      ],
       rmdir: "~/Library/Preferences/Datacolor"
 end
