@@ -20,9 +20,9 @@ cask "yubico-authenticator" do
             pkgutil: "com.yubico.yubioath"
 
   zap trash: [
-    "~/Library/Caches/Yubico/Yubico Authenticator",
-    "~/Library/Preferences/com.com-yubico.Yubico Authenticator.plist",
-    "~/Library/Saved Application State/com.yubico.yubioath.savedState",
-  ],
+        "~/Library/Caches/Yubico/Yubico Authenticator",
+        "~/Library/Preferences/com.com-yubico.Yubico Authenticator.plist",
+        "~/Library/Saved Application State/com.yubico.yubioath.savedState",
+      ],
       rmdir: "~/Library/Caches/Yubico"
 end
