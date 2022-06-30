@@ -27,10 +27,10 @@ cask "logitech-g-hub" do
   end
 
   uninstall script: {
-    executable: "/Applications/lghub.app/Contents/Frameworks/lghub_updater.app/Contents/MacOS/lghub_updater",
-    args:       ["--uninstall"],
-    sudo:       true,
-  },
+              executable: "/Applications/lghub.app/Contents/Frameworks/lghub_updater.app/Contents/MacOS/lghub_updater",
+              args:       ["--uninstall"],
+              sudo:       true,
+            },
             delete: "/Applications/lghub.app",
             trash:  "/Users/Shared/LGHUB"
 
