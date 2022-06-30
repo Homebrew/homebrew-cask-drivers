@@ -12,10 +12,10 @@ cask "creative-sb-command" do
   pkg "INSTALL.pkg"
 
   uninstall pkgutil: [
-    "com.creative.AudioDriver",
-    "com.creative.Uninstaller",
-    "com.creative.SBCommand",
-  ],
+              "com.creative.AudioDriver",
+              "com.creative.Uninstaller",
+              "com.creative.SBCommand",
+            ],
             rmdir:   "/Applications/Creative"
 
   zap trash: [
