@@ -13,11 +13,11 @@ cask "logi-options-plus" do
   installer manual: "logioptionsplus_installer.app"
 
   uninstall launchctl: [
-    "com.logi.cp-dev-mgr",
-    "com.logi.optionsplus",
-    "com.logi.optionsplus.updater",
-    "com.logi.optionsplus.agent",
-  ],
+              "com.logi.cp-dev-mgr",
+              "com.logi.optionsplus",
+              "com.logi.optionsplus.updater",
+              "com.logi.optionsplus.agent",
+            ],
             quit:      [
               "com.logi.cp-dev-mgr",
               "com.logi.optionsplus",
