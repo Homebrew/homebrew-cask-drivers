@@ -29,9 +29,9 @@ cask "xerox-print-driver" do
   end
 
   uninstall launchctl: [
-    "com.aviatainc.powerengage.XRTK",
-    "com.aviatainc.powerengage.helper.XRTK",
-  ],
+              "com.aviatainc.powerengage.XRTK",
+              "com.aviatainc.powerengage.helper.XRTK",
+            ],
             quit:      "com.aviatainc.powerengage.EngageLauncher",
             pkgutil:   [
               "com.xerox.drivers.pkg",
