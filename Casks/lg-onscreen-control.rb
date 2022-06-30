@@ -23,9 +23,9 @@ cask "lg-onscreen-control" do
   end
 
   uninstall login_item: [
-    "OnScreen Control",
-    "OSCMultiMonitor",
-  ],
+              "OnScreen Control",
+              "OSCMultiMonitor",
+            ],
             quit:       [
               "com.LGSI.OnScreen-Control",
               "com.LGSI.OSCMultiMonitor",
