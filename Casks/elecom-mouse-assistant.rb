@@ -17,10 +17,10 @@ cask "elecom-mouse-assistant" do
   pkg "ELECOM_Mouse_Installer_#{version}.pkg"
 
   uninstall pkgutil:   [
-    "jp.co.elecom.mousePane",
-    "jp.co.elecom.mouse.ELECOM-Uninstall",
-    "jp.co.elecom.ELECOM-Mouse-Util",
-  ],
+              "jp.co.elecom.mousePane",
+              "jp.co.elecom.mouse.ELECOM-Uninstall",
+              "jp.co.elecom.ELECOM-Mouse-Util",
+            ],
             launchctl: "jp.com.ELECOM.autorun"
 
   caveats do
