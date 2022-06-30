@@ -21,10 +21,10 @@ cask "suunto-moveslink2" do
   uninstall quit: "Suunto.Moveslink2"
 
   zap trash: [
-    "~/Library/Application Support/Suunto/Moveslink2",
-    "~/Library/Caches/Suunto.Moveslink2",
-    "~/Library/Caches/com.plausiblelabs.crashreporter.data/Suunto.Moveslink2",
-    "~/Library/Preferences/Suunto.Moveslink2.plist",
-  ],
+        "~/Library/Application Support/Suunto/Moveslink2",
+        "~/Library/Caches/Suunto.Moveslink2",
+        "~/Library/Caches/com.plausiblelabs.crashreporter.data/Suunto.Moveslink2",
+        "~/Library/Preferences/Suunto.Moveslink2.plist",
+      ],
       rmdir: "~/Library/Application Support/Suunto"
 end
