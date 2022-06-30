@@ -17,11 +17,11 @@ cask "elgato-thunderbolt-dock" do
   pkg "Elgato_Thunderbolt_Dock_Software_#{version}.pkg"
 
   uninstall pkgutil:    [
-    "com.elgato.Elgato-Thunderbolt-Dock-Utility",
-    "com.elgato.ElgatoThunderboltDockAudioRename",
-    "com.Elgato.Thunderbolt2DockChargingSupport",
-    "com.Elgato.ThunderboltDockChargingSupport",
-  ],
+              "com.elgato.Elgato-Thunderbolt-Dock-Utility",
+              "com.elgato.ElgatoThunderboltDockAudioRename",
+              "com.Elgato.Thunderbolt2DockChargingSupport",
+              "com.Elgato.ThunderboltDockChargingSupport",
+            ],
             quit:       "com.elgato.Elgato-Thunderbolt-Dock-Utility",
             login_item: "Elgato Thunderbolt Dock Utility",
             delete:     [
