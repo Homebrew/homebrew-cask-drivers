@@ -15,8 +15,8 @@ cask "motu-m-series" do
   pkg "MOTU M Series Installer (#{version}).pkg"
 
   uninstall pkgutil:   [
-    "com.motu.pkg.mseries",
-    "com.motu.pkg.mseries.bigsur",
-  ],
+              "com.motu.pkg.mseries",
+              "com.motu.pkg.mseries.bigsur",
+            ],
             launchctl: "com.motu.coreuac.reenumerator"
 end
