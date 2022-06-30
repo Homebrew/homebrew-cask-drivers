@@ -34,9 +34,9 @@ cask "safenet-authentication-client" do
   end
 
   uninstall	launchctl: [
-    "com.SafeNet.SACMonitor",
-    "com.SafeNet.SACSrv",
-  ],
+              "com.SafeNet.SACMonitor",
+              "com.SafeNet.SACSrv",
+            ],
             signal:    ["QUIT", "com.SafeNet.SACMonitor"],
             quit:	     [
               "com.gemalto.Gemalto-Smart-Card-Token.PKCS11-Token",
