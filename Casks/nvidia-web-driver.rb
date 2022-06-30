@@ -28,9 +28,9 @@ cask "nvidia-web-driver" do
   end
 
   uninstall launchctl: [
-    "com.nvidia.nvagent",
-    "com.nvidia.nvroothelper",
-  ],
+              "com.nvidia.nvagent",
+              "com.nvidia.nvroothelper",
+            ],
             quit:      [
               "com.nvidia.NVIDIAWebDriverUninstaller",
               "com.nvidia.nvagent",
