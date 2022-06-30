@@ -20,10 +20,10 @@ cask "synology-drive" do
   pkg "Install Synology Drive Client.pkg"
 
   uninstall quit:      [
-    "io.com.synology.CloudStationUI",
-    "com.synology.CloudStation",
-    "com.synology.CloudStationUI",
-  ],
+              "io.com.synology.CloudStationUI",
+              "com.synology.CloudStation",
+              "com.synology.CloudStationUI",
+            ],
             pkgutil:   "com.synology.CloudStation",
             launchctl: "com.synology.Synology Cloud Station",
             delete:    "/Applications/Synology Drive Client.app"
