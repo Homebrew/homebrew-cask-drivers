@@ -1,0 +1,18 @@
+name: bump-casks
+
+on:
+  schedule:
+    # Run every day at 3am
+    - cron:  '0 3 * * *'
+
+jobs:
+  update-tap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Homebrew formulae
+        uses: dawidd6/action-homebrew-bump-formula@master
+        with:
+          # Requires workflow token here
+          token: "${{ secrets.TOKEN }}"
+          tap: homebrew/cask-drivers
+          livecheck: true
