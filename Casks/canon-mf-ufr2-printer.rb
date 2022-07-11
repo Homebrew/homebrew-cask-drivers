@@ -16,5 +16,8 @@ cask "canon-mf-ufr2-printer" do
 
   pkg "UFRII_LT_LIPS_LX_Installer.pkg"
 
-  uninstall pkgutil: "jp.co.canon.CUPSMFPrinter.*"
+  uninstall pkgutil: [
+    "jp.co.canon.CUPSMFPrinter.*",
+    "jp.co.canon.CUPSPrinter.*",
+  ]
 end
