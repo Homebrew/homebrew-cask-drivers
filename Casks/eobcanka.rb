@@ -9,8 +9,7 @@ cask "eobcanka" do
 
   livecheck do
     url "https://info.identitaobcana.cz/eop/ZmenySWMacOS.aspx"
-    strategy :page_match
-    regex(%r{<h3>Verze (\d+\.\d+\.\d+)</h3>}i)
+    regex(%r{<h3>Verze\s(\d+(?:\.\d+)+)</h3>}i)
   end
 
   depends_on macos: ">= :mojave"
@@ -26,5 +25,10 @@ cask "eobcanka" do
               "cz.monetplus.eOP.EopCzeTokenApp",
               "com.monetplus.cardmanager",
               "cz.monetplus.eOb--anka-Identifikace",
+            ],
+            delete:  [
+              "/Applications/Identifikace_eOP.app",
+              "/Applications/Identifikace_eOP.app/Contents/MacOS/eObčanka-Identifikace.app",
+              "/Applications/eObčanka - Správce karty.app",
             ]
 end
