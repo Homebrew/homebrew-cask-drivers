@@ -1,6 +1,6 @@
 cask "eizo-colornavigator" do
-  version "7.1.7"
-  sha256 "656efade81522cb35a8effdaf6c93f2426db10dc4454b04eeee41c78f315a0ff"
+  version "7.1.8"
+  sha256 "22745cebb2efe5e3755970cd33b7f80e205367fc394b787723e878a16a7f0ce7"
 
   url "https://www.eizoglobal.com/support/db/files/software/software/graphics/colornavigator#{version.major}/ColorNavigator#{version.no_dots}.pkg"
   name "Eizo ColorNavigator"
@@ -8,7 +8,7 @@ cask "eizo-colornavigator" do
   homepage "https://www.eizoglobal.com/products/coloredge/cn#{version.major}/"
 
   livecheck do
-    url "https://www.eizoglobal.com/support/db/products/download/900"
+    url "https://www.eizoglobal.com/support/db/products/download/917"
     regex(/Ver[._-]v?(\d+(?:\.\d+)+)/i)
   end
 
