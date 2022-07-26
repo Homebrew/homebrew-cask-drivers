@@ -8,7 +8,7 @@ cask "eizo-colornavigator" do
   homepage "https://www.eizoglobal.com/products/coloredge/cn#{version.major}/"
 
   livecheck do
-    url "https://www.eizoglobal.com/support/db/products/download/900"
+    url "https://www.eizoglobal.com/support/db/products/download/917"
     regex(/Ver[._-]v?(\d+(?:\.\d+)+)/i)
   end
 
