@@ -1,4 +1,4 @@
-cask "ccprofiler" do
+cask "calibrite-ccprofiler" do
   version "1.1.1"
   sha256 "d841a8f473b041ddb95516f6fd1afbae754be866c3df0e9820ca81b21162eb41"
 
