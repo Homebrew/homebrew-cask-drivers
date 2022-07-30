@@ -18,7 +18,7 @@ cask "elgato-camera-hub" do
     end
   end
 
-  pkg "Camera_Hub_#{version.tr(",","#"}.pkg"
+  pkg "Camera_Hub_#{version.tr(",","#")}.pkg"
 
   uninstall launchctl: "com.elgato.CameraHub",
             quit:      "com.elgato.CameraHub",
