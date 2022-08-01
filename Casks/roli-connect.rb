@@ -1,5 +1,5 @@
 cask "roli-connect" do
-  version "1.1.1"
+  version "1.1.2"
   sha256 :no_check
 
   url "https://api.roli.com/api/v1/product/com.roli.hub/latest/osx?flavor=general-edition"
