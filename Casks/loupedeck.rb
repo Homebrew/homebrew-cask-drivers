@@ -1,8 +1,9 @@
 cask "loupedeck" do
-  version "5.1.0.12046"
-  sha256 "341cda78311bd58255e236819ebed1fc0d7b03f1a6ba1f31a58e6d6e068d704d"
+  version "5.2.1"
+  sha256 "24378c159688c1219365bb3599bb638bf60a0a59ee36224570f5011cfc2f385e"
 
-  url "https://support.loupedeck.com/hubfs/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor}/Loupedeck%20#{version}.dmg"
+  url "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor_patch}/Loupedeck%20#{version}.dmg",
+      verified: "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
