@@ -3,7 +3,7 @@ cask "loupedeck" do
   sha256 "24378c159688c1219365bb3599bb638bf60a0a59ee36224570f5011cfc2f385e"
 
   url "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor_patch}/Loupedeck%20#{version}.dmg",
-      verified: "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/"
+      verified: "5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
