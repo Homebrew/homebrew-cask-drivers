@@ -2,7 +2,7 @@ cask "loupedeck" do
   version "5.2.1"
   sha256 "24378c159688c1219365bb3599bb638bf60a0a59ee36224570f5011cfc2f385e"
 
-  url "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor_patch}/Loupedeck%20#{version}.dmg",
+  url "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor_patch}/LoupedeckInstaller_%20#{version}.dmg",
       verified: "5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
@@ -10,7 +10,7 @@ cask "loupedeck" do
 
   livecheck do
     url "https://loupedeck.com/get-started/"
-    regex(/href=.*?Loupedeck(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
+    regex(/href=.*?LoupedeckInstaller(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   depends_on macos: ">= :sierra"
