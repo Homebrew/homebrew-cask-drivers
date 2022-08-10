@@ -1,5 +1,5 @@
 cask "sony-rcs300" do
-  arch = Hardware::CPU.intel? ? "" : "1"
+  arch arm: "1"
 
   version "1.0.0"
 
