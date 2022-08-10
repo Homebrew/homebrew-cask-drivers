@@ -1,5 +1,5 @@
 cask "lmsclients-squeezeplay" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "M1"
+  arch arm: "M1", intel: "x86_64"
 
   version "8.0.1r1382"
 
