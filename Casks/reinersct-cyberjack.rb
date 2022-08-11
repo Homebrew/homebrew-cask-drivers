@@ -1,12 +1,12 @@
 cask "reinersct-cyberjack" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
+  arch arm: "arm64", intel: "x86_64"
+
+  version "3.99.5final.SP15"
 
   if Hardware::CPU.intel?
-    version "3.99.5final.SP15"
     sha256 "721c0cf3f82d863acd5c070b58961dcd890a035dd339563a5959b5f124d75820"
   else
-    version "3.99.5final.SP14"
-    sha256 "16c3628c7bd74617308caafc063517cfa8739d99ce0ea2159be125e1399e344c"
+    sha256 "bea7c3ae2e146b9216b805e611507bfa614c0c768c1206a53c07b6e7c33c7836"
   end
 
   url "https://support.reiner-sct.de/downloads/MAC/pcsc-cyberjack_#{version}-#{arch}-signed.pkg"
