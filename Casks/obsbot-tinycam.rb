@@ -6,7 +6,7 @@ cask "obsbot-tinycam" do
       verified: "obsbot-static-resource.oss-cn-hongkong.aliyuncs.com/download/obsbot-tiny-4k/software/"
   name "OBSBOT TinyCam"
   desc "Configuration and firmware update utility for OBSBOT Tiny and Tiny 4K webcams"
-  homepage "https://www.obsbot.com/download"
+  homepage "https://www.obsbot.com/download/obsbot-tiny-series"
 
   livecheck do
     url :homepage
