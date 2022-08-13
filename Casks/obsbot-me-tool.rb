@@ -6,7 +6,7 @@ cask "obsbot-me-tool" do
       verified: "obsbot-static-resource.oss-cn-hongkong.aliyuncs.com/download/obsbot-me/metool/"
   name "OBSBOT Me Tool"
   desc "Configuration and firmware update utility for OBSBOT Me"
-  homepage "https://www.obsbot.com/download?tab=obsbot-me"
+  homepage "https://www.obsbot.com/download/obsbot-me"
 
   livecheck do
     url :homepage
