@@ -3,9 +3,10 @@ cask "muteme" do
 
   version "0.11.3"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "c078c558debb048eab39f23f80bdc9e978b968b0d64b88a47bf1ca5f96955364"
-  else
+  end
+  on_arm do
     sha256 "ad648d8194d2f81a8e1d5fa4fbb122307f2103bfbb6671ff0c252336f896a7db"
   end
 
