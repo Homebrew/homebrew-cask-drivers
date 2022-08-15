@@ -3,9 +3,10 @@ cask "sony-rcs300" do
 
   version "1.0.0"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "55183d65fc180544ac58ab3a6851980f63d47afdfc2b447ab9416bee7f32f99b"
-  else
+  end
+  on_arm do
     sha256 "429f0481a2a04c2a31579ac9b26716c343633342b112130660e5e79a701c10b9"
   end
 
