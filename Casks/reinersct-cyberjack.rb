@@ -3,9 +3,10 @@ cask "reinersct-cyberjack" do
 
   version "3.99.5final.SP15"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "721c0cf3f82d863acd5c070b58961dcd890a035dd339563a5959b5f124d75820"
-  else
+  end
+  on_arm do
     sha256 "bea7c3ae2e146b9216b805e611507bfa614c0c768c1206a53c07b6e7c33c7836"
   end
 

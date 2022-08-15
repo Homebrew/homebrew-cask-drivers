@@ -3,9 +3,10 @@ cask "lmsclients-squeezeplay" do
 
   version "8.0.1r1382"
 
-  if Hardware::CPU.intel?
+  on_intel do
     sha256 "bcc278b08d367d47bfceba1b1adad40564bc0062c31014bd29ed9e3e60cbafe1"
-  else
+  end
+  on_arm do
     sha256 "a06f0f2a55bb82f7dbf7dd8408f39292eaed20c61d8ccde5ee42b0e24e14ac11"
   end
 
