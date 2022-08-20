@@ -1,15 +1,19 @@
 cask "mazda-toolbox" do
-  version "2022060400,2022_02_10_11_36"
+  version 2022.02.10.11.36"
   sha256 "f030d9e0242a2b4685a09eabcc22d6f2334bc8380b3e7730374b08f355b9c123"
 
-
-  url "https://download.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/#{version.csv.second}/Mazda-Toolbox.dmg",
+  url "https://download.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/#{version.dots_to_underscores}/Mazda-Toolbox.dmg",
       verified: "download.naviextras.com/content/!application/"
-  appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://www.naviextras.com/to/MazdaToolboxOSX",
-          must_contain: version.after_comma
   name "Mazda Toolbox"
   desc "Map Updater for Mazda"
   homepage "https://infotainment.mazdahandsfree.com/navigation-updatemymaps"
+
+  livecheck do
+    url "https://www.naviextras.com/to/MazdaToolboxOSX"
+    strategy :header_match do |headers|
+      headers["location"][%r{(\d+(?:_\d+)+)/Mazda[._-]Toolbox\.dmg}i, 1].tr("_", ".")
+    end
+  end
 
   app "Mazda Toolbox.app"
 
