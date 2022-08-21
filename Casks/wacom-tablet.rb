@@ -12,7 +12,7 @@ cask "wacom-tablet" do
     regex(%r{/WacomTablet[._-]?(\d+(?:\.\d+)+(?:[_-]\d+)?)\.dmg}i)
   end
 
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :mojave"
 
   pkg "Install Wacom Tablet.pkg"
 
