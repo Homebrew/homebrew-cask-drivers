@@ -2,13 +2,8 @@ cask "sony-rcs300" do
   arch arm: "1"
 
   version "1.0.0"
-
-  on_intel do
-    sha256 "55183d65fc180544ac58ab3a6851980f63d47afdfc2b447ab9416bee7f32f99b"
-  end
-  on_arm do
-    sha256 "429f0481a2a04c2a31579ac9b26716c343633342b112130660e5e79a701c10b9"
-  end
+  sha256 arm:   "429f0481a2a04c2a31579ac9b26716c343633342b112130660e5e79a701c10b9",
+         intel: "55183d65fc180544ac58ab3a6851980f63d47afdfc2b447ab9416bee7f32f99b"
 
   url "https://www.sony.co.jp/Products/felica/consumer/support/download/driver/usbdriver/usbdriver#{arch}-s300-v#{version}.dmg"
   name "SONY USB Driver for RC-S300"
