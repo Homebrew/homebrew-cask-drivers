@@ -30,9 +30,9 @@ cask "asix-ax88179" do
       end
     end
   elsif MacOS.version <= :big_sur
-    version "1.3.0,1163"
+    version "1.3.0,1301"
 
-    container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
+    container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.before_comma}_20220706/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
     pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
 
     livecheck do
@@ -87,6 +87,7 @@ cask "asix-ax88179" do
     "com.asix.pkg.ASIXUSBDeviceAppInstaller",
     "com.mygreatcompany.pkg.AX88179178A",
     "com.mygreatcompany.pkg.AX88179A772DDEXTAPPUninistaller",
+    "com.mygreatcompany.pkg.ASIXUSBDeviceAPPUninstall",
   ]
 
   caveats do
