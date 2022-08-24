@@ -15,10 +15,7 @@ cask "wd-drive-utilities" do
     end
   end
 
-  installer script: {
-    executable: "#{staged_path}/WD Drive Utilities Installer.app/Contents/MacOS/WD Drive Utilities Installer",
-    sudo:	      true,
-  }
+  installer manual: "WD Drive Utilities Installer.app"
 
   uninstall launchctl: "com.wdc.WDPrivilegedHelper",
             quit:      [
