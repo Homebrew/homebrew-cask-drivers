@@ -1,6 +1,6 @@
 cask "mimu-glover" do
-  version "1.1.1"
-  sha256 "9f318e06e9b134c6c587ad1e9b4f4cb6106ebe155d6162da5401df343b48fbd5"
+  version "1.1.2"
+  sha256 "d4692b1e9d530839ae7a58d67727157f5b4593644d565f74d5c58499c8c7d5ac"
 
   url "https://static.mimugloves.com/Glover/Glover-MacOS-#{version}.zip"
   name "Glover"
