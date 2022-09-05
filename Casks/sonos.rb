@@ -1,6 +1,6 @@
 cask "sonos" do
   version "14.14,69.1.32100"
-  sha256 "f8c7a048d7e6185accab9dedaf0fb69c64c25a77ae2a68e7ac1141b3767c3dd6"
+  sha256 "bd1cb1a3f3cd3324259754c583ff559ed4bf868db7a59ad66c39e870948b8f23"
 
   url "https://update-software.sonos.com/software/hqppgqce/Sonos_#{version.csv.second.sub(/(\d+)\.(\d+)\.(\d+)/, '\1.\2-\3')}.dmg"
   name "Sonos"
