@@ -1,5 +1,5 @@
 cask "sony-ps-remote-play" do
-  version "5.0.1"
+  version "5.5.0"
   sha256 :no_check
 
   url "https://remoteplay.dl.playstation.net/remoteplay/module/mac/RemotePlayInstaller.pkg"
