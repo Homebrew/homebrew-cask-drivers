@@ -16,6 +16,11 @@ cask "cardo-update" do
 
   pkg "cardo_updater_macOS_latest.pkg"
 
-  uninstall pkgutil: "com.cardo.fwupdater",
+  uninstall quit: "com.cardo.fwupdater",
+            pkgutil: "com.cardo.fwupdater",
             delete:  "/Applications/Cardo Update.app"
+
+  zap rmdir: [
+    "~/Library/Application Support/Cardo Update"
+  ]
 end
