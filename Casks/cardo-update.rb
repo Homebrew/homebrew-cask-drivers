@@ -20,7 +20,5 @@ cask "cardo-update" do
             pkgutil: "com.cardo.fwupdater",
             delete:  "/Applications/Cardo Update.app"
 
-  zap rmdir: [
-    "~/Library/Application Support/Cardo Update",
-  ]
+  zap delete: "~/Library/Application Support/Cardo Update"
 end
