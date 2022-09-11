@@ -1,10 +1,10 @@
 cask "kyocera-printer-drivers" do
   version "5.4,2022.07.11,2022.06.01"
-  sha256 "21bc52ac4a1d2d074a1c56bb17d76092dd0e2405648ffa960577e603eed7cd0c"
+  sha256 "ee4d077d28eca394bca5d8d05642a26b72850688f275ed6ca1ab8a13d3ebe8b2"
 
   url "https://dam.kyoceradocumentsolutions.com/content/dam/gdam_dc/dc_global/executables/web/Mac#{version.csv.first.no_dots}_#{version.csv.second}-KDC-en.zip"
   name "Kyocera Mac Driver"
-  desc "Kyocera printer drivers"
+  desc "Drivers for Kyocera printers"
   homepage "https://www.kyoceradocumentsolutions.com/download/"
 
   livecheck do
