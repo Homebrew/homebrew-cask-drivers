@@ -4,6 +4,7 @@ cask "kyocera-printer-drivers" do
 
   url "https://dam.kyoceradocumentsolutions.com/content/dam/gdam_dc/dc_global/executables/web/Mac#{version.csv.first.no_dots}_#{version.csv.second}-KDC-en.zip"
   name "Kyocera Mac Driver"
+  desc "Kyocera printer drivers"
   homepage "https://www.kyoceradocumentsolutions.com/download/"
 
   livecheck do
