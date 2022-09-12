@@ -1,6 +1,6 @@
 cask "fujitsu-scansnap-manager" do
-  version "7.0L30"
-  sha256 "4458776ac2d117992fb4010e7d75363261cda5bc9cdf6a4abdc3126f3b0318d1"
+  version "7.2L50"
+  sha256 "82142858b9734ed61b7f5d816737502c565e37e61fd5f11fef0145e84c122fd7"
 
   url "https://origin.pfultd.com/downloads/IMAGE/driver/ss/inst/ix1500/m-software/MacManagerV#{version.no_dots}WW.dmg",
       verified: "origin.pfultd.com/"
