@@ -8,6 +8,11 @@ cask "fujitsu-scansnap-manager" do
   desc "Scan software for Fujitsu document scanners"
   homepage "https://scansnap.fujitsu.com/"
 
+  livecheck do
+    url "https://scansnap.fujitsu.com/global/dl/mac-ssinst2-list.html"
+    regex(/ScanSnap\sManager\sV?(\d+(?:.\d+)+)/i)
+  end
+
   pkg "ScanSnap Manager.pkg"
 
   uninstall quit:    "jp.co.pfu.ScanSnap.V10L10",
