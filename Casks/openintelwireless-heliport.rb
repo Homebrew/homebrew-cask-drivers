@@ -20,4 +20,9 @@ cask "openintelwireless-heliport" do
     "org.sparkle-project.Sparkle",
     "org.sparkle-project.Sparkle.Autoupdate",
   ]
+
+  zap trash: [
+    "~/Library/HTTPStorages/com.OpenIntelWireless.HeliPort",
+    "~/Library/Preferences/com.OpenIntelWireless.HeliPort.plist",
+  ]
 end
