@@ -12,7 +12,7 @@ cask "droidcam-obs" do
 
   pkg "DroidCamOBS_#{version}_macos.pkg"
 
-  uninstall pkgutil: "com.dev47apps.obsdroidcam",
+  uninstall pkgutil: "com.dev47apps.droidcamobs",
             delete:  "/Library/Application Support/obs-studio/plugins/droidcam-obs",
             rmdir:   "/Library/Application Support/obs-studio/plugins"
 end
