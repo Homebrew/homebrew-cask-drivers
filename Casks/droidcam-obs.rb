@@ -1,23 +1,18 @@
 cask "droidcam-obs" do
-  version "1.5.0"
-  sha256 "ae1ccf28b998f3cc8a7cbe63d43973cd3bc90a7abb590c6ee23cca278190090b"
+  version "1.6.0"
+  sha256 "040e80cfe5469ae98f50206f58a218bc9efed36b11cafdc447659ed42e37988e"
 
-  url "https://files.dev47apps.net/obs/DroidCamOBS_Universal_#{version}.pkg",
-      verified: "files.dev47apps.net/obs/"
+  url "https://github.com/dev47apps/droidcam-obs-plugin/releases/download/#{version}/DroidCamOBS_#{version}_macos.pkg",
+      verified: "github.com/dev47apps/droidcam-obs-plugin/"
   name "DroidCam OBS"
   desc "Use your phone as a camera directly in OBS Studio"
   homepage "https://www.dev47apps.com/obs/"
 
-  livecheck do
-    url "https://www.dev47apps.com/go/DroidCamOBS.Setup.pkg"
-    strategy :header_match
-  end
-
   depends_on cask: "obs"
 
-  pkg "DroidCamOBS_Universal_#{version}.pkg"
+  pkg "DroidCamOBS_#{version}_macos.pkg"
 
-  uninstall pkgutil: "com.dev47apps.obsdroidcam",
+  uninstall pkgutil: "com.dev47apps.droidcamobs",
             delete:  "/Library/Application Support/obs-studio/plugins/droidcam-obs",
             rmdir:   "/Library/Application Support/obs-studio/plugins"
 end
