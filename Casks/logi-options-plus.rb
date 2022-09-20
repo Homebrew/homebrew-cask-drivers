@@ -10,7 +10,9 @@ cask "logi-options-plus" do
 
   livecheck do
     url :url
-    strategy :extract_plist
+    strategy :extract_plist do |versions|
+      versions.values.map(&:version).compact.first
+    end
   end
 
   depends_on macos: ">= :catalina"
