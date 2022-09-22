@@ -9,7 +9,7 @@ cask "lovense-remote" do
 
   livecheck do
     url "https://www.lovense.com/sextoys/download"
-    regex(/type=.*?Mac[-._\s]?v?[-._\s]?(\d+(?:\.\d+)+)[\s<"]/i)
+    regex(/Mac\sv?(\d+(?:\.\d+)+)/i)
   end
 
   app "Lovense_Remote.app"
