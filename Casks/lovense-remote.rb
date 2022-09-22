@@ -1,14 +1,14 @@
 cask "lovense-remote" do
-  version "1.6.5"
+  version "1.6.3"
   sha256 :no_check
 
-  url "https://lovense.com/files/apps/remote/remote.dmg"
+  url "https://www.lovense.com/files/apps/remote/remote.dmg"
   name "Lovense Remote"
   desc "Remote for Lovense products"
-  homepage "https://lovense.com/"
+  homepage "https://www.lovense.com/"
 
   livecheck do
-    url "https://lovense.com/sextoys/download"
+    url "https://www.lovense.com/sextoys/download"
     regex(/type=.*?Mac[-._\s]?v?[-._\s]?(\d+(?:\.\d+)+)[\s<"]/i)
   end
 
