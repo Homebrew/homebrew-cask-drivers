@@ -19,9 +19,9 @@ cask "obs-ios-camera-source" do
   pkg "obs-ios-camera-source-#{version}-macos-universal.pkg"
 
   uninstall pkgutil: [
-    "com.wtsnz.obs-ios-camera-source-plugin",
-    "io.loftlabs.obs-ios-camera-source",
-  ],
+              "com.wtsnz.obs-ios-camera-source-plugin",
+              "io.loftlabs.obs-ios-camera-source",
+            ],
             delete:  "/Library/Application Support/obs-studio/plugins/obs-ios-camera-source",
             rmdir:   "/Library/Application Support/obs-studio/plugins"
 end
