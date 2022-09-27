@@ -1,15 +1,15 @@
 cask "nordic-nrf-command-line-tools" do
-  version "10.13.0"
-  sha256 "29b8824be08acbd7215bcb5de77f156660a35c982e3e2a669e1abf3924d4d158"
+  version "10.17.3"
+  sha256 "ccef7d3127595b1df5f68a120e981a66fe0e2619c9cd915a0cdb756a8c5f4515"
 
-  url "https://www.nordicsemi.com/-/media/Software-and-other-downloads/Desktop-software/nRF-command-line-tools/sw/Versions-#{version.major}-x-x/#{version.dots_to_hyphens}/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.zip"
+  url "https://www.nordicsemi.com/-/media/Software-and-other-downloads/desktop-software/nrf-command-line-tools/sw/Versions-#{version.major}-x-x/#{version.dots_to_hyphens}/nrf-command-line-tools-#{version}-darwin.dmg"
   name "nRF Command Line Tools"
   desc "Command-line tools for Nordic nRF Semiconductors"
   homepage "https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Command-Line-Tools"
 
   livecheck do
     url "https://www.nordicsemi.com/Products/Development-tools/nRF-Command-Line-Tools/Download"
-    regex(/nRF[._-]Command[._-]Line[._-]Tools[._-]v?(\d+(?:[._]\d+)+)[._-]OSX\.zip/i)
+    regex(/nRF[._-]Command[._-]Line[._-]Tools[._-]v?(\d+(?:[._]\d+)+)[._-]Darwin\.dmg/i)
     strategy :page_match do |page, regex|
       page.scan(regex).map { |match| match[0].tr("_", ".") }
     end
@@ -17,23 +17,7 @@ cask "nordic-nrf-command-line-tools" do
 
   depends_on cask: "segger-jlink"
 
-  binary "nrfjprog/nrfjprog"
-  binary "mergehex/mergehex"
+  pkg ".nRF-Command-Line-Tools-#{version}-Darwin.pkg"
 
-  preflight do
-    system_command "/usr/bin/tar", args: [
-      "--extract",
-      "--file",
-      "#{staged_path}/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX/nRF-Command-Line-Tools_#{version.dots_to_underscores}_OSX.tar",
-      "--directory",
-      staged_path,
-    ]
-    system_command "/usr/bin/tar", args: [
-      "--extract",
-      "--file",
-      "#{staged_path}/nRF-Command-Line-Tools_#{version.dots_to_underscores}.tar",
-      "--directory",
-      staged_path,
-    ]
-  end
+  uninstall pkgutil: "com.Nordic Semiconductor.nRF-Command-Line-Tools.*"
 end
