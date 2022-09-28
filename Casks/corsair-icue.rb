@@ -38,6 +38,8 @@ cask "corsair-icue" do
             delete:    [
               "/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin",
               "/Library/LaunchAgents/iCUELaunchAgent.plist",
+              "/Applications/Corsair/iCUE.app",
+              "/Applications/Corsair/iCUEUninstaller.app",
             ],
             rmdir:     "/Applications/Corsair"
 
