@@ -1,6 +1,6 @@
 cask "corsair-icue" do
-  version "4.27.168"
-  sha256 "27af52563d72773acf5ce5bd054b8f853f5e85a67916601b4d41bcd65282a4c2"
+  version "4.28.177"
+  sha256 "08e5c19ae85dcd9e5b0415f796a9e42a5e0ec2d6cea0fb2ca446f085e66f1d63"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   name "Corsair iCUE"
