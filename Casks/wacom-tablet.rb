@@ -16,35 +16,7 @@ cask "wacom-tablet" do
 
   pkg "Install Wacom Tablet.pkg"
 
-  uninstall pkgutil:   "com.wacom.TabletInstaller",
-            quit:      [
-              "application.com.wacom.UpgradeHelper",
-              "application.com.wacom.WacomCenter",
-              "application.com.wacom.WacomExperienceProgram",
-              "com.wacom.DisplayMgr",
-              "com.wacom.RemoveWacomTablet",
-              "com.wacom.TabletDriver",
-              "com.wacom.UpdateHelper",
-              "com.wacom.UpgradeHelper",
-              "com.wacom.Wacom-Desktop-Center",
-              "com.wacom.wacomtablet",
-              "com.wacom.WacomTouchDriver",
-            ],
-            launchctl: [
-              "application.com.wacom.UpgradeHelper",
-              "application.com.wacom.WacomCenter",
-              "application.com.wacom.WacomExperienceProgram",
-              "com.wacom.DataStoreMgr",
-              "com.wacom.displayhelper",
-              "com.wacom.IOManager",
-              "com.wacom.UpdateHelper",
-              "com.wacom.wacomtablet",
-            ],
-            kext:      [
-              "com.wacom.kext.ftdi",
-              "com.wacom.kext.wacomtablet",
-            ],
-            delete:    "/Applications/Wacom Tablet.localized/"
+  uninstall pkgutil: "com.wacom.TabletInstaller"
 
   zap trash: [
     "~/Library/Application Scripts/com.wacom.DataStoreMgr",
