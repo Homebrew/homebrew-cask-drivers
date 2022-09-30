@@ -16,7 +16,8 @@ cask "wacom-tablet" do
 
   pkg "Install Wacom Tablet.pkg"
 
-  uninstall pkgutil: "com.wacom.TabletInstaller"
+  uninstall pkgutil: "com.wacom.TabletInstaller",
+            quit:    "com.wacom.WacomTouchDriver"
 
   zap trash: [
     "~/Library/Application Scripts/com.wacom.DataStoreMgr",
