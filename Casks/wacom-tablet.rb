@@ -18,6 +18,9 @@ cask "wacom-tablet" do
 
   uninstall pkgutil:   "com.wacom.TabletInstaller",
             quit:      [
+              "application.com.wacom.UpgradeHelper",
+              "application.com.wacom.WacomCenter",
+              "application.com.wacom.WacomExperienceProgram",
               "com.wacom.DisplayMgr",
               "com.wacom.RemoveWacomTablet",
               "com.wacom.TabletDriver",
@@ -28,6 +31,9 @@ cask "wacom-tablet" do
               "com.wacom.WacomTouchDriver",
             ],
             launchctl: [
+              "application.com.wacom.UpgradeHelper",
+              "application.com.wacom.WacomCenter",
+              "application.com.wacom.WacomExperienceProgram",
               "com.wacom.DataStoreMgr",
               "com.wacom.displayhelper",
               "com.wacom.IOManager",
