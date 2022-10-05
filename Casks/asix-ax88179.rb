@@ -1,8 +1,8 @@
 cask "asix-ax88179" do
   if MacOS.version <= :mojave
-    version "2.19.0,1109"
+    version "2.19.0,1242"
 
-    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}_20220517/AX88179_178A_v#{version.before_comma}.dmg"
     pkg ".AX88179_178A_10.9_10.14.pkg"
 
     livecheck do
@@ -15,9 +15,9 @@ cask "asix-ax88179" do
       end
     end
   elsif MacOS.version <= :catalina
-    version "2.19.0,1109"
+    version "2.19.0,1242"
 
-    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}/AX88179_178A_v#{version.before_comma}.dmg"
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}_20220517/AX88179_178A_v#{version.before_comma}.dmg"
     pkg ".AX88179_178A_10.15.pkg"
 
     livecheck do
