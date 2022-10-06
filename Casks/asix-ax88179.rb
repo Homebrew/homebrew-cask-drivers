@@ -71,7 +71,7 @@ cask "asix-ax88179" do
     if MacOS.version <= :catalina
       staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     else
-      staged_path.glob("ASIX_USB_Device_Uninstaller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+      staged_path.glob("ASIX_USB_Device_Un*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     end
 
     system_command "/usr/sbin/installer",
