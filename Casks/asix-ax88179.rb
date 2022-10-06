@@ -2,7 +2,7 @@ cask "asix-ax88179" do
   if MacOS.version <= :mojave
     version "2.19.0,1242"
 
-    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}_20220517/AX88179_178A_v#{version.before_comma}.dmg"
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.csv.first}_20220517/AX88179_178A_v#{version.csv.first}.dmg"
     pkg ".AX88179_178A_10.9_10.14.pkg"
 
     livecheck do
@@ -17,7 +17,7 @@ cask "asix-ax88179" do
   elsif MacOS.version <= :catalina
     version "2.19.0,1242"
 
-    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.before_comma}_20220517/AX88179_178A_v#{version.before_comma}.dmg"
+    container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.csv.first}_20220517/AX88179_178A_v#{version.csv.first}.dmg"
     pkg ".AX88179_178A_10.15.pkg"
 
     livecheck do
@@ -32,8 +32,8 @@ cask "asix-ax88179" do
   elsif MacOS.version <= :big_sur
     version "1.3.0,1301"
 
-    container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.before_comma}_20220706/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
-    pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
+    container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.csv.first}_20220706/ASIX_USB_Device_Installer_v#{version.csv.first}.dmg"
+    pkg "ASIX_USB_Device_Installer_v#{version.csv.first}.pkg"
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
@@ -47,8 +47,8 @@ cask "asix-ax88179" do
   else
     version "2.2.0,1311"
 
-    container nested: "ASIX_USB_Device_Installer_macOS_12_Driver_v#{version.before_comma}/ASIX_USB_Device_Installer_v#{version.before_comma}.dmg"
-    pkg "ASIX_USB_Device_Installer_v#{version.before_comma}.pkg"
+    container nested: "ASIX_USB_Device_Installer_macOS_12_Driver_v#{version.csv.first}/ASIX_USB_Device_Installer_v#{version.csv.first}.dmg"
+    pkg "ASIX_USB_Device_Installer_v#{version.csv.first}.pkg"
 
     livecheck do
       url "https://www.asix.com.tw/en/support/download/step2/11/2/3"
@@ -71,7 +71,7 @@ cask "asix-ax88179" do
     if MacOS.version <= :catalina
       staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     else
-      staged_path.glob("ASIX_USB_Device_Uninistaller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+      staged_path.glob("ASIX_USB_Device_Uninstaller_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
     end
 
     system_command "/usr/sbin/installer",
