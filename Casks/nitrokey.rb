@@ -8,10 +8,13 @@ cask "nitrokey" do
   desc "Application to manage Nitro Key devices"
   homepage "https://www.nitrokey.com/download/macos"
 
+  # GitHub releases aren't guaranteed to provide the dmg file we use, so it
+  # would be necessary to fetch the assets list for each stable release until
+  # we find one with a dmg file. This involves a comparatively large number of
+  # requests which will increase with each new release that doesn't include a
+  # dmg file, so this approach arguably isn't tenable for us.
   livecheck do
-    url "https://github.com/Nitrokey/nitrokey-app/releases"
-    strategy :page_match
-    regex(%r{href=.*?(\d+(?:\.\d+)+)/Nitrokey-App\.dmg}i)
+    skip "Requires checking assets for multiple releases"
   end
 
   app "Nitrokey App v#{version}.app"
