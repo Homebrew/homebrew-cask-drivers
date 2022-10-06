@@ -9,9 +9,8 @@ cask "uhk-agent" do
   homepage "https://github.com/UltimateHackingKeyboard/agent"
 
   livecheck do
-    url :url
-    strategy :github_latest
-    regex(/href=.*?UHK[._-]Agent[._-]v?(\d+(?:\.\d+)+)[._-]mac\.dmg/i)
+    url "https://github.com/UltimateHackingKeyboard/agent/releases/latest"
+    strategy :header_match
   end
 
   app "UHK Agent.app"
