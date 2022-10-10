@@ -22,5 +22,5 @@ cask "epson-print-layout" do
 
   pkg "Epson Print Layout.pkg"
 
-  uninstall pkgutil: "com.epson.pkg.EpsonPrintLayout"
+  uninstall pkgutil: "com.epson.printlayout.pkg"
 end
