@@ -18,7 +18,6 @@ cask "epson-photo-plus" do
   end
 
   auto_updates true
-
   depends_on macos: ">= :el_capitan"
 
   pkg "Epson Photo Plus.pkg"
