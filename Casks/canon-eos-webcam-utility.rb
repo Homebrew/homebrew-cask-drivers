@@ -5,17 +5,25 @@ cask "canon-eos-webcam-utility" do
   url "https://downloads.canon.com/webcam/EOSWebcamUtility-MAC#{version}.pkg.zip"
   name "Canon EOS Webcam Utility"
   desc "Use a Canon camera as a webcam"
-  homepage "https://www.usa.canon.com/internet/portal/us/home/support/self-help-center/eos-webcam-utility/"
+  homepage "https://www.usa.canon.com/cameras/eos-webcam-utility"
+
+  livecheck do
+    url :homepage
+    regex(/MAC\sOFFICIAL\sRELEASE\sVERSION\sv?(\d+(?:\.\d+)+)/i)
+  end
 
   pkg "EOSWebcamUtility-MAC#{version}.pkg"
 
-  uninstall launchctl: "com.canon.usa.EOSWebcamUtility",
+  uninstall launchctl: [
+              "com.canon.usa.EOSWebcamUtility",
+              "com.canon.usa.EWCService_x86_64_nonSIMD",
+            ],
             pkgutil:   "com.canon.ciis.pkg.EOSWebcamUtility",
             delete:    [
               "/Applications/EOS Webcam Utility",
               "/Library/CoreMediaIO/Plug-Ins/DAL/EOSWebcamUtility.plugin",
-              "/Library/LaunchAgents/com.canon.usa.EOSWebcamUtility.plist",
               "/Library/CoreMediaIO/Plug-Ins/DAL/EOSWebcamUtility.plugin",
+              "/Library/LaunchAgents/com.canon.usa.EOSWebcamUtility.plist",
             ],
             rmdir:     "/Library/Frameworks/EDSDK.framework"
 end
