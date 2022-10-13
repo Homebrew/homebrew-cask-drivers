@@ -1,5 +1,5 @@
 cask "sonos" do
-  version "14.16,69.1.33120"
+  version "14.16.1,69.1.33120"
   sha256 "2ceef9d0322cba7972cd84116093ee3a3f30960387d7757f98394b4d55c24463"
 
   url "https://update-software.sonos.com/software/gjocspcx/Sonos_#{version.csv.second.sub(/(\d+)\.(\d+)\.(\d+)/, '\1.\2-\3')}.dmg"
