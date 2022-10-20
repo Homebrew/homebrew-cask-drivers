@@ -1,9 +1,9 @@
 cask "lmsclients-squeezeplay" do
   arch arm: "M1", intel: "x86_64"
 
-  version "8.0.1r1382"
-  sha256 arm:   "a06f0f2a55bb82f7dbf7dd8408f39292eaed20c61d8ccde5ee42b0e24e14ac11",
-         intel: "bcc278b08d367d47bfceba1b1adad40564bc0062c31014bd29ed9e3e60cbafe1"
+  version "8.0.1r1402"
+  sha256 arm:   "7a7e4e7f2e6dca9c8fc9708521983dbd29e40ccc10aec4f95e3aab46a1c998ab",
+         intel: "43ca1028595bd1508d6d172c7ebed141941ad7012dbc3c79ee9709d8460e3174"
 
   url "https://downloads.sourceforge.net/lmsclients/SqueezePlay-#{arch}-#{version}.dmg",
       verified: "downloads.sourceforge.net/lmsclients/"
