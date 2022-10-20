@@ -1,6 +1,6 @@
 cask "nordic-nrf-command-line-tools" do
-  version "10.17.3"
-  sha256 "ccef7d3127595b1df5f68a120e981a66fe0e2619c9cd915a0cdb756a8c5f4515"
+  version "10.18.1"
+  sha256 "e060ddf2044677f08c4f825ee31dfc8525c26f557abcb700758e1193bc556c9f"
 
   url "https://www.nordicsemi.com/-/media/Software-and-other-downloads/desktop-software/nrf-command-line-tools/sw/Versions-#{version.major}-x-x/#{version.dots_to_hyphens}/nrf-command-line-tools-#{version}-darwin.dmg"
   name "nRF Command Line Tools"
