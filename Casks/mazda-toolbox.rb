@@ -1,6 +1,6 @@
 cask "mazda-toolbox" do
-  version "2022.02.10.11.36"
-  sha256 "f030d9e0242a2b4685a09eabcc22d6f2334bc8380b3e7730374b08f355b9c123"
+  version "2022.08.29.10.32"
+  sha256 "2febdeae82e1c060ade298862d84040a5446678be42c3d14b68108881457144e"
 
   url "https://download.naviextras.com/content/!application/TOOLBOX/Agents/Mazda/#{version.dots_to_underscores}/Mazda-Toolbox.dmg",
       verified: "download.naviextras.com/content/!application/"
