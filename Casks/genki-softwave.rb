@@ -18,7 +18,10 @@ cask "genki-softwave" do
   uninstall pkgutil: "com.genkiinstruments.softwave"
 
   zap trash: [
+    "~/Library/Application Support/CrashReporter/Softwave_*.plist",
+    "~/Library/Caches/com.genkiinstruments.softwave",
     "~/Library/Preferences/com.genkiinstruments.softwave.plist",
+    "~/Library/Saved Application State/com.genkiinstruments.softwave.savedState",
     "~/Library/Softwave",
   ]
 end
