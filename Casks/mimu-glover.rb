@@ -14,8 +14,15 @@ cask "mimu-glover" do
 
   app "Glover.app"
 
+  uninstall delete: "/Library/Logs/DiagnosticReports/Glover_*.wakeups_resource.diag"
+
   zap trash: [
     "~/Library/Application Support/Glover",
+    "~/Library/Application Support/CrashReporter/Glover_*.plist",
+    "~/Library/Caches/com.mimu.Glover",
+    "~/Library/Caches/com.mimugloves.Glover",
     "~/Library/Caches/Glover",
+    "~/Library/Preferences/com.mimugloves.Glover.plist",
+    "~/Library/Saved Application State/com.mimugloves.Glover.savedState",
   ]
 end
