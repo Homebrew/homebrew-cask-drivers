@@ -19,7 +19,9 @@ cask "genki-wave-for-work" do
             launchctl: "com.genkiinstruments.Wave.Work"
 
   zap trash: [
+    "~/Library/Caches/com.genkiinstruments.waveforwork",
     "~/Library/Preferences/com.genkiinstruments.waveforwork.plist",
+    "~/Library/Saved Application State/com.genkiinstruments.waveforwork.savedState",
     "~/Library/Wave for Work",
   ]
 end
