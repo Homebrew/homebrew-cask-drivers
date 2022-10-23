@@ -12,9 +12,7 @@ cask "elgato-camera-hub" do
     regex(%r{"downloadURL"\s*:\s*"[^"]*?/Camera[._-]Hub[._-]v?(\d+(?:\.\d+)+)(?:%23)?(\d+)?\.pkg"}i)
     strategy :page_match do |page, regex|
       match = page.scan(regex).flatten
-      match if match.second.blank?
-
-      "#{match.first},#{match.second}"
+      match.second.blank? ? match : "#{match.first},#{match.second}"
     end
   end
 
