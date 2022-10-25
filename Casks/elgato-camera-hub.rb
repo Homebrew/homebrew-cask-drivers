@@ -18,7 +18,7 @@ cask "elgato-camera-hub" do
 
   pkg "Camera_Hub_#{version.tr(",", "#")}.pkg"
 
-  uninstall signal:    ['TERM', 'com.elgato.CameraHub'],
+  uninstall signal:    ["TERM", "com.elgato.CameraHub"],
             launchctl: "com.elgato.CameraHub",
             pkgutil:   "com.elgato.CameraHub.Installer",
             delete:    "/Applications/Elgato Camera Hub.app"
