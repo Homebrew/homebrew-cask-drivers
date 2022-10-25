@@ -18,9 +18,10 @@ cask "elgato-camera-hub" do
 
   pkg "Camera_Hub_#{version.tr(",", "#")}.pkg"
 
-  uninstall launchctl: "com.elgato.CameraHub",
+  uninstall pkgutil:   "com.elgato.CameraHub.Installer",
             quit:      "com.elgato.CameraHub",
-            pkgutil:   "com.elgato.CameraHub.Installer"
+            launchctl: "com.elgato.CameraHub",
+            delete:    "/Applications/Elgato Camera Hub.app"
 
   zap trash: [
     "~/Library/Logs/CameraHub",
