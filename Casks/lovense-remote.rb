@@ -1,5 +1,5 @@
 cask "lovense-remote" do
-  version "1.6.6"
+  version "1.6.7"
   sha256 :no_check
 
   url "https://www.lovense.com/files/apps/remote/remote.dmg"
