@@ -18,6 +18,10 @@ cask "elgato-camera-hub" do
 
   pkg "Camera_Hub_#{version.tr(",", "#")}.pkg"
 
+  uninstall_postflight do
+    system "killall", "Camera Hub"
+  end
+
   uninstall pkgutil:   "com.elgato.CameraHub.Installer",
             quit:      "com.elgato.CameraHub",
             launchctl: "com.elgato.CameraHub",
