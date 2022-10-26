@@ -16,8 +16,8 @@ cask "displaylink" do
     sha256 "d703cc8e9093e4d163c5e612326c0907a02c6d4eec6aaca8d0727503859ef95d"
     url "https://www.synaptics.com/sites/default/files/exe_files/#{version.csv.second}/DisplayLink%20Manager%20Graphics%20Connectivity#{version.csv.first}-EXE.pkg"
   else
-    version "1.7.1,2022-07"
-    sha256 "32e2c0dce4888895e59e50181f0e15118d8f066abb4568e994878ce0294d422c"
+    version "1.8,2022-10"
+    sha256 "8cd7e7aeb393a707019a7222ce73f2abf2f662e8d1c00f5176b1f3b32ac7fb13"
     url "https://www.synaptics.com/sites/default/files/exe_files/#{version.csv.second}/DisplayLink%20Manager%20Graphics%20Connectivity#{version.csv.first}-EXE.pkg"
   end
 
