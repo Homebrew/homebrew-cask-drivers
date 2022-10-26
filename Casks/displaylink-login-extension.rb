@@ -1,6 +1,6 @@
 cask "displaylink-login-extension" do
   version "2021-02"
-  sha256 "2ca0b8d0c04b7131e8877f8e5b95b177b48d1ba57aff67ccb22e28720c79c08f"
+  sha256 "67f653f331e2e4d182325ded51a00701879d5f9af3da025684f2889777f6d597"
 
   url "https://synaptics.com/sites/default/files/exe_files/#{version}/macOS%20App%20LoginExtension-EXE.dmg",
       verified: "synaptics.com/"
