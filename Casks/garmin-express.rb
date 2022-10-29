@@ -1,5 +1,5 @@
 cask "garmin-express" do
-  version "7.14.0.0,7140000"
+  version "7.15.0.0,7150000"
   sha256 :no_check
 
   url "https://download.garmin.com/omt/express/GarminExpress.dmg"
@@ -16,7 +16,10 @@ cask "garmin-express" do
 
   pkg "Install Garmin Express.pkg"
 
-  uninstall quit:    "com.garmin.renu.client",
+  uninstall quit:    [
+              "com.garmin.renu.client",
+              "com.garmin.renu.service",
+            ],
             pkgutil: "com.garmin.renu.client"
 
   zap trash: [
