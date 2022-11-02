@@ -1,5 +1,5 @@
 cask "cardo-update" do
-  version "3.6.0.21600"
+  version "4.0.0.25587"
   sha256 :no_check
 
   url "https://update.cardosystems.com/cardo-app/cardo_updater_macOS_latest.pkg"
