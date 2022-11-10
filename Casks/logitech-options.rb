@@ -33,7 +33,7 @@ cask "logitech-options" do
       regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
     end
   else
-    version "9.70.29"
+    version "10.00.75"
     sha256 :no_check
 
     url "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip",
