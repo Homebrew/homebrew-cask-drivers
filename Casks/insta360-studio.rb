@@ -1,6 +1,6 @@
 cask "insta360-studio" do
-  version "4.5.2,f86cfeec67798439dc818d2893739b87,2022_20220928_175608"
-  sha256 "26b2d8e228c5e04079a9c35e082f0befbf03a3f9a5206142f67e6b7be1662773"
+  version "4.5.5,13e1ed2a699ebd12d79a239dbe54effc,2022_20221111_192829"
+  sha256 "85e32b0fa7d4bcb66852102214f6362b1a1dcbcf1c27d42cd72b37f2fc27d2af"
 
   url "https://file.insta360.com/static/infr_base/#{version.csv[1]}/Insta360%20Studio%20#{version.csv[2]}_signed.pkg"
   name "Insta360 Studio"
