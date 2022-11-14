@@ -7,14 +7,22 @@ cask "xerox-print-driver" do
     version "5.2.0_2115"
     sha256 "9989b6c127fca8c97b24bd86fd4d20035cd094c69e3fd41f6a243361f86483ec"
     url "https://download.support.xerox.com/pub/drivers/CQ8570/drivers/macos1012/pt_BR/XeroxPrintDriver_#{version}.dmg"
-  elsif MacOS.version <= :mojave
-    version "5.5.9_2180"
-    sha256 "24e700fedf39391d9df3310d34dcf98cfe4b6e46acfead09903c8befd10b1345"
+  elsif MacOS.version <= :high_sierra
+    version "5.6.0_2187"
+    sha256 "562143dcd8fda5df84d9cdc39e09f242898e40d63866c596632d7cd7f7c85844"
     url "https://download.support.xerox.com/pub/drivers/BALTORO_HF/drivers/macOS10_13/pt_BR/XeroxDrivers_#{version}.dmg"
+  elsif MacOS.version <= :mojave
+    version "5.8.0_2275"
+    sha256 "8934306cb5d2322e0cd6e058a4634edbd9c9392aa83364ed5859fb3941516b27"
+    url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOS10_13/pt_BR/XeroxDrivers_#{version}.dmg"
+  elsif MacOS.version <= :catalina
+    version "5.10.1_2333"
+    sha256 "c8d4ca41d939aee275831eeebcd0d84aa2f219e24d4100c63ef0b78110fe7680"
+    url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOS10_15/pt_BR/XeroxDrivers_#{version}.dmg"
   else
     version "5.11.1_2372"
     sha256 "fe58d84c3663e5e29fac9778e70319ed6eacd581a231c5213324d65d34f5bc59"
-    url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOS10_15/pt_BR/XeroxDrivers_#{version}.dmg"
+    url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOSx11/pt_BR/XeroxDrivers_#{version}.dmg"
   end
 
   name "Xerox Print Driver"
