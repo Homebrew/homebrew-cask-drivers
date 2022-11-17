@@ -1,5 +1,5 @@
 cask "wch-ch34x-usb-serial-driver" do
-  version "1.7"
+  version "1.8"
   sha256 :no_check
 
   url "http://www.wch.cn/downloads/file/369.html"
@@ -12,7 +12,7 @@ cask "wch-ch34x-usb-serial-driver" do
     regex(%r{<td>(\d+(?:\.\d+)+)</td>}i)
   end
 
-  pkg "CH34XSER_MAC/CH34xVCPDriver.pkg"
+  pkg "CH341SER_MAC/CH34xVCPDriver.pkg"
 
   uninstall quit:    "cn.wch.CH34xVCPDriver",
             pkgutil: "cn.wch.pkg.CH34xVCPDriver",
