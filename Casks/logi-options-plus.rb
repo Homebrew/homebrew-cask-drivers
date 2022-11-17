@@ -15,6 +15,7 @@ cask "logi-options-plus" do
     end
   end
 
+  auto_updates true
   depends_on macos: ">= :catalina"
 
   installer manual: "logioptionsplus_installer.app"
