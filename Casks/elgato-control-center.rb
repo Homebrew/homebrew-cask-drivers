@@ -1,21 +1,15 @@
 cask "elgato-control-center" do
-  version "1.3.1,10420"
+  version "1.3.1.10420"
   sha256 "6a4926c774192ccac43d06d4dbd35adf34a3d36ae661dea5400a44e756f5ece2"
 
-  url "https://edge.elgato.com/egc/macos/eccm/#{version.csv.first.major_minor}/Control_Center_#{version.csv.first}.#{version.csv.second}.zip"
+  url "https://edge.elgato.com/egc/macos/eccm/#{version.major_minor_patch}/Control_Center_#{version}.zip"
   name "Elgato Control Center"
   desc "Control your Elgato Key Lights"
   homepage "https://www.elgato.com/en/gaming/key-light"
 
   livecheck do
-    url "https://gc-updates.elgato.com/mac/control-center-update/feed.xml"
-    regex(/[_-]v?(\d+(?:\.\d{1,3})+)(?:\.(\d{4,}))?\D+?$/i)
-    strategy :sparkle do |item, regex|
-      match = item.url.match(regex)
-      next if match.blank?
-
-      match[2].present? ? "#{match[1]},#{match[2]}" : match[1]
-    end
+    url "https://www.elgato.com/sites/default/files/downloads.json"
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Control[._-]Center[._-]v?(\d+(?:[._]\d+)+)\.zip"}i)
   end
 
   depends_on macos: ">= :mojave"
