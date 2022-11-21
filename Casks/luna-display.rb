@@ -1,6 +1,6 @@
 cask "luna-display" do
-  version "5.2.0,4455"
-  sha256 "bdfb602302bc05aabd379b4d2e27ce908698f796272dff49a6703005bdda41a5"
+  version "5.2.1,4459"
+  sha256 "e8580cbc559150768cf40ad8d8931c5eba45148e3c21a117810de6982f86d1c1"
 
   url "https://downloads.astropad.com/luna/mac/LunaDisplay-#{version.csv.first}.#{version.csv.second}.dmg"
   name "Luna Display"
