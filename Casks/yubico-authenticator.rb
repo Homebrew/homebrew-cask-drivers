@@ -9,7 +9,7 @@ cask "yubico-authenticator" do
 
   livecheck do
     url "https://developers.yubico.com/yubioath-flutter/Releases/"
-    regex(/href=.*?yubioath-authenticator-(\d+(\.\d+)*[a-z]?)-mac\.dmg/i)
+    regex(/href=.*?yubico-authenticator-(\d+(\.\d+)*[a-z]?)-mac\.dmg/i)
   end
 
   depends_on macos: ">= :big_sur"
@@ -17,7 +17,7 @@ cask "yubico-authenticator" do
   app "Yubico Authenticator.app"
 
   zap trash: [
-      "~/Library/Containers/com.yubico.authenticator",
-      "~/Library/Application Scripts/com.yubico.authenticator",
+    "~/Library/Containers/com.yubico.authenticator",
+    "~/Library/Application Scripts/com.yubico.authenticator",
   ]
 end
