@@ -1,28 +1,23 @@
 cask "yubico-authenticator" do
-  version "5.1.0"
-  sha256 "f78f65781e2bcdb624607a48082a6de8fa2b5364710552ebcf2c02efc83758c5"
+  version "6.0.0"
+  sha256 "dab83aa0ada36272308d2c3e5441ab62ae4db3e74ef0b6b687c1405cdef62599"
 
-  url "https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-#{version}-mac.pkg"
+  url "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-#{version}-mac.dmg"
   name "Yubico Authenticator"
   desc "Application for generating TOTP and HOTP codes"
   homepage "https://developers.yubico.com/yubioath-desktop/"
 
   livecheck do
-    url "https://developers.yubico.com/yubioath-desktop/Releases/"
-    regex(/href=.*?yubioath-desktop-(\d+(\.\d+)*[a-z]?)-mac\.pkg/i)
+    url "https://developers.yubico.com/yubioath-flutter/Releases/"
+    regex(/href=.*?yubioath-authenticator-(\d+(\.\d+)*[a-z]?)-mac\.dmg/i)
   end
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :big_sur"
 
-  pkg "yubioath-desktop-#{version}-mac.pkg"
-
-  uninstall signal:  ["TERM", "com.yubico.yubioath"],
-            pkgutil: "com.yubico.yubioath"
+  app "Yubico Authenticator.app"
 
   zap trash: [
-        "~/Library/Caches/Yubico/Yubico Authenticator",
-        "~/Library/Preferences/com.com-yubico.Yubico Authenticator.plist",
-        "~/Library/Saved Application State/com.yubico.yubioath.savedState",
-      ],
-      rmdir: "~/Library/Caches/Yubico"
+      "~/Library/Containers/com.yubico.authenticator",
+      "~/Library/Application Scripts/com.yubico.authenticator",
+  ]
 end
