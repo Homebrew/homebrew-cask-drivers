@@ -1,6 +1,6 @@
 cask "wacom-tablet" do
-  version "6.4.0-8"
-  sha256 "374a146dabe6c8af9dea636bbc8b3a6429f87571e4bc11c9cf22a3eed095e382"
+  version "6.4.0-9"
+  sha256 "a193904ebf2d1b35a39794e23a622054b1d0957bf292c07e8ec356379e12bfe3"
 
   url "https://cdn.wacom.com/u/productsupport/drivers/mac/professional/WacomTablet_#{version}.dmg"
   name "Wacom Tablet"
@@ -21,10 +21,6 @@ cask "wacom-tablet" do
               "com.wacom.WacomTouchDriver",
             ],
             launchctl: [
-              "com.wacom.TabletDriver",
-              "com.wacom.UpgradeHelper",
-              "com.wacom.WacomCenter",
-              "com.wacom.WacomExperienceProgram",
               "com.wacom.DataStoreMgr",
               "com.wacom.IOManager",
               "com.wacom.UpdateHelper",
