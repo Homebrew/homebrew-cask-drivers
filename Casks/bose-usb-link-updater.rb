@@ -21,7 +21,5 @@ cask "bose-usb-link-updater" do
               "com.bose.pro.conf.usblinkupdater",
             ]
 
-  zap trash: [
-    "~/Library/Logs/Bose-USB-Link-Updater",
-  ]
+  zap trash: "~/Library/Logs/Bose-USB-Link-Updater"
 end
