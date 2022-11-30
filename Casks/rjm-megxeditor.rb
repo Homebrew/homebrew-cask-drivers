@@ -17,6 +17,6 @@ cask "rjm-megxeditor" do
   zap trash: [
     "~/Library/Caches/RJM Music Technology, Inc./MEGX Editor",
     "~/Library/Preferences/com.rjmmusic.www.MEGX Editor.plist",
-    "~/Library/Preferences/com.RJMMusicTechnology.MEGXEditor.plist"
+    "~/Library/Preferences/com.RJMMusicTechnology.MEGXEditor.plist",
   ]
 end
