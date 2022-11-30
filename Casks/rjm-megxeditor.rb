@@ -13,4 +13,6 @@ cask "rjm-megxeditor" do
   end
 
   app "MEGXEditor.app"
+
+  zap trash: "~/Library/Preferences/com.rjmmusic.www.MEGX Editor.plist"
 end
