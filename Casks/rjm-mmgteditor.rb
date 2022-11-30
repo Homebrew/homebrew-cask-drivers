@@ -16,6 +16,7 @@ cask "rjm-mmgteditor" do
 
   zap trash: [
     "~/Library/Preferences/com.rjmmusic.MMGTEditor.plist",
-    "~/Library/Saved Application State/com.RJMMusicTechnology.MMGTEditor.savedState",
+    "~/Library/Preferences/com.RJMMusicTechnology.MMGTEditor.plist",
+    "~/Library/Saved Application State/com.RJMMusicTechnology.MMGTEditor.savedState"
   ]
 end
