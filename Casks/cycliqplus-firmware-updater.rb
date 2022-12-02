@@ -1,6 +1,6 @@
 cask "cycliqplus-firmware-updater" do
-  version "1.08"
-  sha256 "596af6de43bc5cb8ce9b38f3ce1e45ef0fcbb4ff9e559ddbc0dc959fb7b13d12"
+  version "1.09"
+  sha256 "7de1e3f178d590727322b897c3b12643849aafbcf7c40246e861dd710efec816"
 
   url "https://cycliq.com/files/software/downloads/CycliqFirmwareUpdater-#{version}.dmg"
   name "CycliqPlus Firmware Updater"
