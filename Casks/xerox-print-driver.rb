@@ -20,8 +20,8 @@ cask "xerox-print-driver" do
     sha256 "c8d4ca41d939aee275831eeebcd0d84aa2f219e24d4100c63ef0b78110fe7680"
     url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOS10_15/pt_BR/XeroxDrivers_#{version}.dmg"
   else
-    version "5.11.1_2372"
-    sha256 "fe58d84c3663e5e29fac9778e70319ed6eacd581a231c5213324d65d34f5bc59"
+    version "5.11.2_2379"
+    sha256 "787f906a31b6d91150733a7b4ca104696cd5a7d3887e35db647f8762f626b8a5"
     url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOSx11/pt_BR/XeroxDrivers_#{version}.dmg"
   end
 
