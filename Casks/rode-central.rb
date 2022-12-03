@@ -1,8 +1,8 @@
 cask "rode-central" do
-  version "1.3.8"
+  version "2.0.14"
   sha256 :no_check
 
-  url "https://cdn1.rode.com/rodecentral_installation_file_mac.zip"
+  url "https://edge.rode.com/zip/page/1873/modules/4782/RODE-Central_MACOS%20(#{version}).zip"
   name "Rode Central"
   desc "Configure RØDE device settings, features, functions, and firmware"
   homepage "https://rode.com/software/rode-central"
@@ -14,7 +14,7 @@ cask "rode-central" do
 
   depends_on macos: ">= :high_sierra"
 
-  pkg "RODE Central v#{version}_macOS/RODE Central Installer.pkg"
+  pkg "RODE-Central_MACOS (#{version})/RODE Central Installer (#{version}).pkg"
 
   uninstall pkgutil: "com.rodecentral.installer"
 end
