@@ -9,7 +9,7 @@ cask "elgato-control-center" do
 
   livecheck do
     url "https://www.elgato.com/sites/default/files/downloads.json"
-    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Control[._-]Center[._-]v?(\d+(?:[._]\d+)+)\.zip"}i)
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/ControlCenterMac[._-]v?(\d+(?:[._]\d+)+)\.app\.zip"}i)
   end
 
   depends_on macos: ">= :mojave"
