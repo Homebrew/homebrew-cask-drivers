@@ -1,6 +1,6 @@
 cask "qflipper" do
-  version "1.2.1"
-  sha256 "98532e7801ee5a59b460c9565b2292d1982302a84f814a356e7dcc8c066b7717"
+  version "1.2.2"
+  sha256 "0273c91c7d1324d4fe112ec1c0aff34766afe5cca4c693ff2cd0ef8b77fb90e5"
 
   url "https://update.flipperzero.one/builds/qFlipper/#{version}/qFlipper-#{version}.dmg"
   name "qFlipper"
