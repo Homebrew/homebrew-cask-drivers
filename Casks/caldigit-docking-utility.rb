@@ -1,5 +1,5 @@
 cask "caldigit-docking-utility" do
-  version "1.9.25"
+  version "1.9.31"
   sha256 :no_check
 
   url "https://downloads.caldigit.com/CalDigit-Docking-Station-Utility.zip"
