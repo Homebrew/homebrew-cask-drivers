@@ -4,6 +4,7 @@ cask "caldigit-docking-utility" do
 
   url "https://downloads.caldigit.com/CalDigit-Docking-Station-Utility.zip"
   name "CalDigit Thunderbolt Docking Station Utility"
+  desc "Utility to disconnect all drives connected to a Caldigit dock"
   homepage "https://www.caldigit.com/"
 
   livecheck do
