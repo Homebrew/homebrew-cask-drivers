@@ -7,12 +7,9 @@ cask "tomtom-mydrive-connect" do
   desc "Update your TomTom navigation device"
   homepage "https://www.tomtom.com/mydrive-connect/"
 
-  # Technically, TomTom publishes release information as described below, however,
-  # the page has not been updated since 2021-10-13 for macOS
-  # livecheck do
-  #  url "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
-  #  regex(/Version:\s*(\d+(?:\.\d+)+)\s*OS:\s*mac/i)
-  # end
+  livecheck do
+    skip "No reliable way to get version info"
+  end
 
   pkg "MyDriveConnect.mpkg"
 
