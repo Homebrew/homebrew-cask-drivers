@@ -1,5 +1,5 @@
 cask "reolink-client" do
-  version "3.5.6.55"
+  version "8.8.2"
   sha256 :no_check
 
   url "https://cdn.reolink.com/files/client/Mac-ReolinkClient.zip"
