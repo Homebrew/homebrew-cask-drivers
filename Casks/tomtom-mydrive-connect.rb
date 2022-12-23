@@ -1,18 +1,20 @@
 cask "tomtom-mydrive-connect" do
-  version "4.2.12.4441"
-  sha256 "ab0989241a1c67012cc64edfc6658b10420f0e888eb3e9ff65b4b08b4435db14"
+  version "4.2.13.4586"
+  sha256 :no_check
 
-  url "https://cdn.sa.services.tomtom.com/static/sa/versions/MyDriveConnect_mac_#{version.dots_to_underscores}.zip"
+  url "https://cdn.sa.services.tomtom.com/static/sa/Mac/TomTomMyDriveConnect.dmg"
   name "TomTom MyDrive Connect"
   desc "Update your TomTom navigation device"
   homepage "https://www.tomtom.com/mydrive-connect/"
 
-  livecheck do
-    url "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
-    regex(/Version:\s*(\d+(?:\.\d+)+)\s*OS:\s*mac/i)
-  end
+  # Technically, TomTom publishes release information as described below, however,
+  # the page has not been updated since 2021-10-13 for macOS
+  # livecheck do
+  #  url "https://help.tomtom.com/hc/en-us/articles/360014400719-MyDrive-Connect"
+  #  regex(/Version:\s*(\d+(?:\.\d+)+)\s*OS:\s*mac/i)
+  # end
 
-  pkg "MyDriveConnect_mac_#{version.dots_to_underscores}.mpkg"
+  pkg "MyDriveConnect.mpkg"
 
   uninstall quit:       [
               "com.tomtom.mytomtomsa",
