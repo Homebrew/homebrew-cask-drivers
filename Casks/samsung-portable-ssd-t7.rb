@@ -1,6 +1,6 @@
 cask "samsung-portable-ssd-t7" do
   version "1.7.4,1.0"
-  sha256 "d68e4aa89bf735c74698bcc15f706abde51b3842f4b97840103a9c3e6b734b45"
+  sha256 "43d45b6a8cf04eb1d7c13a951023581a3654f7fca0952aedf82aced896977672"
 
   url "https://semiconductor.samsung.com/resources/software-resources/SamsungPortableSSD_Setup_Mac_#{version.csv.second}.zip"
   name "Samsung Portable SSD Software for T7"
