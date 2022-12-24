@@ -1,33 +1,37 @@
 cask "samsung-portable-ssd-t7" do
-  version "1.7.4"
-  sha256 :no_check
+  version "1.7.4,1.0"
+  sha256 "d68e4aa89bf735c74698bcc15f706abde51b3842f4b97840103a9c3e6b734b45"
 
-  url "https://semiconductor.samsung.com/resources/software-resources/SamsungPortableSSD_Setup_Mac_1.0.zip"
+  url "https://semiconductor.samsung.com/resources/software-resources/SamsungPortableSSD_Setup_Mac_#{version.csv.second}.zip"
   name "Samsung Portable SSD Software for T7"
   desc "Software for Samsung external storage drives (T7 series)"
   homepage "https://www.samsung.com/semiconductor/minisite/ssd/download/portable/"
 
+  livecheck do
+    url :homepage
+    regex(/SamsungPortableSSD[._-]Setup[._-]Mac[._-]v?(\d+(?:\.\d+)+)\.zip.*\n*\s*.*Version\s(\d+(?:\.\d+)+)/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+    end
+  end
+  
   auto_updates true
 
-  pkg "SamsungPortableSSD_Setup_Mac_1.0.pkg"
+  pkg "SamsungPortableSSD_Setup_Mac_#{version.csv.second}.pkg"
 
   uninstall quit:      [
               "com.samsung.portablessdplus.software",
-              "/Applications/SamsungPortableSSD_1.0.app",
+              "/Applications/SamsungPortableSSD_#{version.csv.second}.app",
             ],
-            launchctl: [
-              "com.samsung.portablessdplus.mon",
-            ],
-            kext:      [
-              "com.samsung.portablessd.driver",
-            ],
+            launchctl: "com.samsung.portablessdplus.mon",
+            kext:      "com.samsung.portablessd.driver",
             pkgutil:   [
               "com.samsung.portablessdplusuniversal.softwarepkg",
               "com.samsung.portablessd.driverpkg",
               "com.samsung.portablessdplus.softwarepkg",
             ],
             delete:    [
-              "/Applications/SamsungPortableSSD_1.0.app",
+              "/Applications/SamsungPortableSSD_#{version.csv.second}.app",
               "/Library/Extensions/SamsungPortableSSDDriver*.kext",
             ]
 
