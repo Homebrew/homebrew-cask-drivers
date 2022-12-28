@@ -15,8 +15,8 @@ cask "nvidia-web-driver" do
   basename = "/Library/PreferencePanes/NVIDIA Driver Manager.prefPane/Contents/MacOS/NVIDIA Web Driver Uninstaller.app/Contents/Resources"
 
   url "https://images.nvidia.com/mac/pkg/#{version.major}/WebDriver-#{version}.pkg"
-  name "NVIDIA Web Driver"
   appcast "https://gfe.nvidia.com/mac-update"
+  name "NVIDIA Web Driver"
   desc "Driver for NVIDIA Web"
   homepage "https://www.nvidia.com/Download/index.aspx"
 
