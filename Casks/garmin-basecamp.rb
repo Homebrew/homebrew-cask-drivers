@@ -1,14 +1,15 @@
 cask "garmin-basecamp" do
-  if MacOS.version <= :sierra
+  on_sierra :or_older do
     version "4.7.0"
     sha256 "43d2fcd3571fff70eeca2734c56e0aae0f982bc1a7019588bd55b883cc34b16c"
 
     url "https://download.garmin.com/software/BaseCampforMacLegacyVersion_#{version.no_dots}.dmg"
 
     livecheck do
-      skip
+      skip "Legacy version"
     end
-  else
+  end
+  on_high_sierra :or_newer do
     version "4.8.12"
     sha256 "aecd4b28975169118056f5901f3db4a3a58d50c204184b7dc64919f23a19247c"
 

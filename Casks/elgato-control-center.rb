@@ -1,15 +1,15 @@
 cask "elgato-control-center" do
-  version "1.3.1.10420"
-  sha256 "6a4926c774192ccac43d06d4dbd35adf34a3d36ae661dea5400a44e756f5ece2"
+  version "1.4.0.10462"
+  sha256 "19fb311146a92a19b1a754bb10f5062ee1fe1cd63d141e80a84a31726fc10773"
 
-  url "https://edge.elgato.com/egc/macos/eccm/#{version.major_minor}/Control_Center_#{version}.zip"
+  url "https://edge.elgato.com/egc/macos/eccm/#{version.major_minor}/ControlCenterMac-#{version}.app.zip"
   name "Elgato Control Center"
   desc "Control your Elgato Key Lights"
   homepage "https://www.elgato.com/en/gaming/key-light"
 
   livecheck do
     url "https://www.elgato.com/sites/default/files/downloads.json"
-    regex(%r{"downloadURL"\s*:\s*"[^"]*?/Control[._-]Center[._-]v?(\d+(?:[._]\d+)+)\.zip"}i)
+    regex(%r{"downloadURL"\s*:\s*"[^"]*?/ControlCenterMac[._-]v?(\d+(?:[._]\d+)+)\.app\.zip"}i)
   end
 
   depends_on macos: ">= :mojave"

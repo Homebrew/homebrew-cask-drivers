@@ -1,23 +1,33 @@
 cask "roland-quad-capture-usb-driver" do
-  if MacOS.version <= :sierra
+  on_sierra :or_older do
     version "1.5.3,12"
     sha256 "712b27a25275d748e35c174b242f21a2967f5caca013f6cb09330b9232288770"
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
 
     pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma}.pkg"
-  elsif MacOS.version <= :mojave
+  end
+  on_high_sierra do
     version "1.5.4,13"
     sha256 "d3524d7844d24805c3a1c25c09dce62ab87d4c8dd6941a0b1d3653c696563117"
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
 
     pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma}.pkg"
-  elsif MacOS.version <= :catalina
+  end
+  on_mojave do
+    version "1.5.4,13"
+    sha256 "d3524d7844d24805c3a1c25c09dce62ab87d4c8dd6941a0b1d3653c696563117"
+    url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
+
+    pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma}.pkg"
+  end
+  on_catalina do
     version "1.5.5,15"
     sha256 "fce600fdbd50b50d69a676700ef42ee038db50d201874dadf3c0e1ac291df23f"
     url "https://static.roland.com/assets/media/tgz/quad_m#{version.after_comma}d#{version.before_comma.no_dots}.tgz"
 
     pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver10#{version.after_comma}.pkg"
-  else
+  end
+  on_big_sur :or_newer do
     version "1.5.6,11"
     sha256 "0d77926e818e1da93ea2f980ef29d840015f085ec134a68a2501b1ccfd5ddfde"
     url "https://static.roland.com/assets/media/tgz/quad_mac#{version.after_comma}drv#{version.before_comma.no_dots}.tgz"
@@ -25,8 +35,8 @@ cask "roland-quad-capture-usb-driver" do
     pkg "QuadCaptureUSBDriver/QuadCapture_USBDriver#{version.after_comma}.pkg"
   end
 
-  appcast "https://www.roland.com/us/support/by_product/quad-capture/updates_drivers"
   name "Roland Quad-Capture USB Driver"
+  desc "Driver for Roland Quad-Capture"
   homepage "https://www.roland.com/us/products/quad-capture/"
 
   uninstall pkgutil:   "jp.co.roland.QuadCapture.*",
