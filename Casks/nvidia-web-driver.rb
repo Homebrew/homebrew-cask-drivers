@@ -16,6 +16,7 @@ cask "nvidia-web-driver" do
 
   url "https://images.nvidia.com/mac/pkg/#{version.major}/WebDriver-#{version}.pkg"
   name "NVIDIA Web Driver"
+  appcast "https://gfe.nvidia.com/mac-update"
   desc "Driver for NVIDIA Web"
   homepage "https://www.nvidia.com/Download/index.aspx"
 
