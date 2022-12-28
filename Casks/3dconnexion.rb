@@ -1,24 +1,29 @@
 cask "3dconnexion" do
-  if MacOS.version <= :mojave
+  on_mojave :or_older do
     version "10-6-7,r3287,36E24890-6B5F-443a-8A9F-1851F9ADB985"
     sha256 "4752bd4297733743fb512121116b536ffe260152f97134398d028b9936bc26f9"
-  else
+
+    livecheck do
+      skip "Legacy version"
+    end
+  end
+  on_catalina :or_newer do
     version "10-7-4,r3493,C5CD2A0D-58B6-4A8F-AFD1-54D5EB1BD29C"
     sha256 "dee979de1401b179916ff34ddab34bc07465eaee3f26ec4b73bd4188d08fbd45"
+
+    livecheck do
+      url "https://3dconnexion.com/us/drivers/"
+      regex(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
+      strategy :page_match do |page, regex|
+        page.scan(regex).map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
+      end
+    end
   end
 
   url "https://download.3dconnexion.com/drivers/mac/#{version.csv.first}_#{version.csv.third}/3DxWareMac_v#{version.csv.first}_#{version.csv.second}.dmg"
   name "3Dconnexion"
   desc "3DxWare Driver"
   homepage "https://3dconnexion.com/"
-
-  livecheck do
-    url "https://3dconnexion.com/us/drivers/"
-    regex(%r{href=.*?_([\dA-F]+(?:-[\dA-F]+)*)/3DxWareMac_v(\d+(?:-\d+)*)_(r\d+)\.dmg}i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| "#{match[1]},#{match[2]},#{match[0]}" }
-    end
-  end
 
   depends_on macos: ">= :el_capitan"
 
