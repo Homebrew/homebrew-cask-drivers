@@ -1,8 +1,9 @@
 cask "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver" do
-  if MacOS.version <= :catalina
+  on_catalina :or_older do
     version "11.6.0,08e8308b1e134d6bb6837e3b046b126b,122431"
     sha256 "8baec3e834f41d4156b3da9ff598171af4182290d7af1183f07df7476158a4b7"
-  else
+  end
+  on_big_sur :or_newer do
     version "11.8.0A,7228bd01e7674417c6a223ce7a186487,130160"
     sha256 "0c525868b8f07c257fae3c949fdcfad623edfe7b81d030a771601d2cb88c7796"
   end
@@ -30,9 +31,10 @@ cask "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver" do
 
   depends_on macos: ">= :sierra"
 
-  if MacOS.version <= :catalina
+  on_catalina :or_older do
     pkg "C759_C658_C368_C287_C3851_Series_v#{version}_Letter/C759_C658_C368_C287_C3851.pkg"
-  else
+  end
+  on_big_sur :or_newer do
     pkg "C759_C658_C368_C287_C3851_#{version.major}.pkg"
   end
 
