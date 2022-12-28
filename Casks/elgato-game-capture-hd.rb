@@ -22,6 +22,8 @@ cask "elgato-game-capture-hd" do
         item.url[regex, 1]
       end
     end
+
+    depends_on macos: ">= :sierra"
   end
 
   name "Game Capture HD"
