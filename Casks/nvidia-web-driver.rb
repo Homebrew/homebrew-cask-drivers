@@ -1,11 +1,13 @@
 cask "nvidia-web-driver" do
-  if MacOS.version <= :el_capitan
+  on_el_capitan :or_older do
     version "346.03.15f16"
     sha256 "f0c1a23a262ba6db35f1d7a0da39e7b7648805d63d65be20af33e582cc7050bc"
-  elsif MacOS.version <= :sierra
+  end
+  on_sierra do
     version "378.05.05.25f13"
     sha256 "f5849297ee8a4a754f26d998db83878d4c02324db00ec28ab38da1d847d7e5c1"
-  else
+  end
+  on_high_sierra :or_newer do
     version "387.10.10.10.40.140"
     sha256 "a877c0ef81fbbb4d42bee6c1de063fff47d610a5397ffc6ce7617f28269bfe73"
   end
