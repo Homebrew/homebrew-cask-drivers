@@ -22,9 +22,10 @@ cask "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver" do
 
   depends_on macos: ">= :sierra"
 
-  if MacOS.version <= :catalina
+  on_catalina :or_older do
     pkg "C759_C658_C368_C287_C3851_Series_v#{version}_Letter/C759_C658_C368_C287_C3851.pkg"
-  else
+  end
+  on_big_sur :or_newer do
     pkg "C759_C658_C368_C287_C3851_#{version.major}.pkg"
   end
 
