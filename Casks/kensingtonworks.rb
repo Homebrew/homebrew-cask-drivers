@@ -1,21 +1,24 @@
 cask "kensingtonworks" do
-  version "3.0.3_1640160151"
-  sha256 "4e8c0256d1efb0246256e2fca08f0d80daa93b9622339d4701eef68938fc1eff"
+  version "3.1.4_1667509507,october-2022"
+  sha256 "c25754c0a3a86b3bbefe94e7c77e7b5cb8ab88fc5986ae22d2b9327a7e47ed9e"
 
-  url "https://www.kensington.com/siteassets/software-support/kensingtonworks/new-kensingtonworks-download/kensingtonworks_#{version}.pkg"
+  url "https://www.kensington.com/siteassets/software-support/kensingtonworks/#{version.csv.second}/kensingtonworks_#{version.csv.first}.pkg"
   name "KensingtonWorks"
   desc "Software to personalize Kensington trackballs, mice, and presenters"
   homepage "https://www.kensington.com/software/kensingtonworks/"
 
   livecheck do
     url :homepage
-    regex(/href=.*?kensingtonworks[._-]v?(\d+(?:\.\d+)+(?:[._-]\d+)?)\.pkg/i)
+    regex(%r{href=.*?([^/]+)/kensingtonworks[._-]v?(\d+(?:\.\d+)+(?:[._-]\d+)?)\.pkg}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
+    end
   end
 
   conflicts_with cask: "homebrew/cask-drivers/kensington-trackball-works"
   depends_on macos: ">= :sierra"
 
-  pkg "kensingtonworks_#{version}.pkg"
+  pkg "kensingtonworks_#{version.csv.first}.pkg"
 
   uninstall launchctl: "com.kensington.trackballworks",
             quit:      [
