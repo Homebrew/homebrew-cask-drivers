@@ -1,8 +1,8 @@
 cask "insta360-studio" do
-  version "4.5.5,13e1ed2a699ebd12d79a239dbe54effc,2022_20221111_192829"
-  sha256 "85e32b0fa7d4bcb66852102214f6362b1a1dcbcf1c27d42cd72b37f2fc27d2af"
+  version "4.6.1,7dc71647894f98ee271a95188613a7c9,2022_20221221_155240"
+  sha256 "d29b00ef87bf0fb415503347b437e251bf7648797c154c5bd902b51aaa54e267"
 
-  url "https://file.insta360.com/static/infr_base/#{version.csv[1]}/Insta360%20Studio%20#{version.csv[2]}_signed.pkg"
+  url "https://file.insta360.com/static/#{version.csv[1]}/Insta360%20Studio%20#{version.csv[2]}_signed.pkg"
   name "Insta360 Studio"
   desc "Video and photo editor"
   homepage "https://www.insta360.com/"
