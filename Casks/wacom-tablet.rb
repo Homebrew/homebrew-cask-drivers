@@ -21,13 +21,12 @@ cask "wacom-tablet" do
               "com.wacom.WacomTouchDriver",
             ],
             launchctl: [
-              "%r{(?:application\.)?com\.wacom\.TabletDriver(?:(?:\.\d+){2}(?:[\w-]+))?)}",
-              "%r{(?:application\.)?com\.wacom\.UpgradeHelper(?:(?:\.\d+){2}(?:[\w-]+))?}",
-              "%r{(?:application\.)?com\.wacom\.WacomCenter(?:(?:\.\d+){2}(?:[\w-]+))?}",
-              "%r{(?:application\.)?com\.wacom\.WacomExperienceProgram(?:(?:\.\d+){2}(?:[\w-]+))?}",
               "com.wacom.DataStoreMgr",
               "com.wacom.IOManager",
+              "com.wacom.UpgradeHelper*",
               "com.wacom.UpdateHelper",
+              "com.wacom.WacomCenter*",
+              "com.wacom.WacomExperienceProgram*",
               "com.wacom.wacomtablet",
             ]
 end
