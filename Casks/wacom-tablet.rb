@@ -23,6 +23,7 @@ cask "wacom-tablet" do
             launchctl: [
               "com.wacom.DataStoreMgr",
               "com.wacom.IOManager",
+              "com.wacom.TabletDriver*",
               "com.wacom.UpgradeHelper*",
               "com.wacom.UpdateHelper",
               "com.wacom.WacomCenter*",
