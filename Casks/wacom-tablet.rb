@@ -9,7 +9,7 @@ cask "wacom-tablet" do
 
   livecheck do
     url :homepage
-    regex(%r{/WacomTablet[._-]?(\d+(?:\.\d+)+(?:[_-]\d+)?)\.dmg}i)
+    regex(%r{/WacomTablet[._-]?v?(\d+(?:\.\d+)+(?:[_-]\d+)?)\.dmg}i)
   end
 
   depends_on macos: ">= :catalina"
@@ -17,9 +17,7 @@ cask "wacom-tablet" do
   pkg "Install Wacom Tablet.pkg"
 
   uninstall pkgutil:   "com.wacom.TabletInstaller",
-            quit:      [
-              "com.wacom.WacomTouchDriver",
-            ],
+            quit:      "com.wacom.WacomTouchDriver",
             launchctl: [
               "com.wacom.DataStoreMgr",
               "com.wacom.IOManager",
