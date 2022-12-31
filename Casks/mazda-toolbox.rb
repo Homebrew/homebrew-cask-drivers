@@ -17,7 +17,7 @@ cask "mazda-toolbox" do
 
   app "Mazda Toolbox.app"
 
-  uninstall signal: [["KILL", "com.mazda.toolbox"]]
+  uninstall signal: ["KILL", "com.mazda.toolbox"]
 
   zap trash: [
     "~/Library/Application Support/Mazda Toolbox",
