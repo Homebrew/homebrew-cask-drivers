@@ -1,6 +1,6 @@
 cask "toshiba-color-mfp" do
-  version "7.114.5.0,19566"
-  sha256 "46f114079e5e2a1e693edd75d90f2253078c74f2878eefd89e37a7f1e5d8feef"
+  version "7.115.0.0,19993"
+  sha256 "126a0d1b4987aab22833f719c79acc09123c7ed5238bf79beb2aea691d139c5e"
 
   url "https://business.toshiba.com/downloads/KB/f1Ulds/#{version.csv.second}/TOSHIBA_ColorMFP.dmg.gz"
   name "Toshiba ColorMFP Drivers"
