@@ -10,7 +10,7 @@ cask "synology-photo-station-uploader" do
   livecheck do
     url "https://www.synology.com/en-us/releaseNote/PhotoStationUploader"
     strategy :patch_match do |page|
-      match = page.match(/<h3>Version:\s(\d+(?:\.\d+)+)\-(\d+)/i)
+      match = page.match(/<h3>Version:\s(\d+(?:\.\d+)+)-(\d+)/i)
 
       "#{match[1]},#{match[2]}"
     end
