@@ -18,7 +18,17 @@ cask "obsbot-tinycam" do
   app "OBSBOT TinyCam.app"
 
   zap trash: [
+    "~/Library/Application Support/OBSBOT_TinyCam",
     "~/Library/Preferences/remo-ai.OBSBOT-TinyCam.plist",
     "~/Library/Saved Application State/remo-ai.OBSBOT-TinyCam.savedState",
   ]
+
+  caveats do
+    discontinued
+
+    <<~EOS
+      #{token} has been deprecated in favor of OBSBOT WebCam.
+        brew install --cask obsbot-webcam
+    EOS
+  end
 end
