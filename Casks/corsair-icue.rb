@@ -1,6 +1,6 @@
 cask "corsair-icue" do
-  version "4.31.168"
-  sha256 "75e44f77b8964653d73f8db0d39f8b937a4e9d0eeb106065c418e62beba626aa"
+  version "4.32.129"
+  sha256 "5ea77f008e9d93b2b22cff4735cc5cc1bcf077e240aa94e78f7462a4b1e66f44"
 
   url "https://downloads.corsair.com/Files/CUE/iCUE-#{version}-release.dmg"
   name "Corsair iCUE"
@@ -23,7 +23,7 @@ cask "corsair-icue" do
             ],
             quit:      [
               "com.corsair.cue",
-              "com.corsair.cue.*",
+              "com.corsair.cue.3",
               "org.qt-project.*",
             ],
             script:    {
@@ -33,7 +33,7 @@ cask "corsair-icue" do
             },
             pkgutil:   [
               "com.corsair.CorsairAudio",
-              "com.corsair.cue.*",
+              "com.corsair.cue.3",
             ],
             delete:    [
               "/Library/Audio/Plug-Ins/HAL/CorsairAudio.plugin",
