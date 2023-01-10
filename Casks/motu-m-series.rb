@@ -1,6 +1,6 @@
 cask "motu-m-series" do
-  version "92136"
-  sha256 "89d377f65619e929b11c71a6483dd62429cfa831cec609ad32e1fa08de3297ce"
+  version "92621"
+  sha256 "45675d1b0813854dd443ee63f418303a7a6b065a2da328b8477251dd10fd64b8"
 
   url "https://cdn-data.motu.com/downloads/audio/mseries/driver/RC/MOTU%20M%20Series%20Installer%20(#{version}).pkg"
   name "MOTU M Series Installer"
