@@ -6,13 +6,13 @@ Casks of drivers
 After you install Homebrew, run the following command:
 
 ```sh
-$ brew tap homebrew/cask-drivers
+brew tap homebrew/cask-drivers
 ```
 
 You can now install the casks in this repo.
 
 ```sh
-$ brew install xbox360-controller-driver-unofficial
+brew install xbox360-controller-driver-unofficial
 ```
 
 ## Submitting a Cask to this repository
