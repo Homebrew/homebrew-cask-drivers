@@ -1,6 +1,6 @@
 cask "obs-ios-camera-source" do
-  version "2.9.3"
-  sha256 "18622d510da58bc903bf05a985c1cb0a6dc3f9591c698d89f37595b18ba79624"
+  version "2.9.4"
+  sha256 "8628ad602d1e3087468c7a0bc3d030fdc94c9f1b5e3107571d943123d24f9a1a"
 
   url "https://github.com/wtsnz/obs-ios-camera-source/releases/download/v#{version}/obs-ios-camera-source-#{version}-macos-universal.pkg",
       verified: "github.com/wtsnz/obs-ios-camera-source/"
