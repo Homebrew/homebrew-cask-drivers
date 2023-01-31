@@ -1,5 +1,5 @@
 cask "logitech-g-hub" do
-  version "2022.12.348746"
+  version "2023.1.364056"
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip",
@@ -27,7 +27,7 @@ cask "logitech-g-hub" do
   end
 
   uninstall script: {
-              executable: "/Applications/lghub.app/Contents/Frameworks/lghub_updater.app/Contents/MacOS/lghub_updater",
+              executable: "/Applications/lghub.app/Contents/MacOS/lghub_updater.app/Contents/MacOS/lghub_updater",
               args:       ["--uninstall"],
               sudo:       true,
             },
