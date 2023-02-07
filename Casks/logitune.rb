@@ -7,6 +7,11 @@ cask "logitune" do
   desc "Optimize your webcam, headset, and Logi Dock for video meetings"
   homepage "https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   auto_updates true
   depends_on macos: ">= :catalina"
 
