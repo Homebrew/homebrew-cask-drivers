@@ -1,10 +1,9 @@
-cask "logi-tune" do
+cask "logitune" do
   version "3.0.180"
-  sha256 "1df55f7240aff2ab107ee4b35291a12c01b4be2a46cd0f938c87254d7fce4a94"
+  sha256 :no_check
 
-  url "https://software.vc.logitech.com/downloads/tune/LogiTuneInstaller.dmg",
-      verified: "software.vc.logitech.com/downloads/tune/"
-  name "Logi Tune"
+  url "https://software.vc.logitech.com/downloads/tune/LogiTuneInstaller.dmg"
+  name "LogiTune"
   desc "Optimize your webcam, headset, and Logi Dock for video meetings"
   homepage "https://www.logitech.com/en-us/video-collaboration/software/logi-tune-software.html"
 
