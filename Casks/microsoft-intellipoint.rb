@@ -3,7 +3,6 @@ cask "microsoft-intellipoint" do
   sha256 :no_check
 
   url "https://download.microsoft.com/download/B/1/0/B109F931-70E2-425F-8681-EAAB75845AB8/Microsoft-Mouse_d305.dmg"
-  appcast "https://www.microsoft.com/accessories/en-gb/d/intellimouse"
   name "Microsoft IntelliPoint"
   homepage "https://www.microsoft.com/accessories/mice"
 
@@ -16,4 +15,8 @@ cask "microsoft-intellipoint" do
             ],
             pkgutil: "com.microsoft.mouse.installer",
             delete:  "/Library/PreferencePanes/Microsoft Mouse.prefPane"
+
+  caveats do
+    discontinued
+  end
 end
