@@ -7,8 +7,8 @@ cask "g-raid-with-thunderbolt-configurator" do
   homepage "https://support-en.g-technology.com/app/products/detailnew/p/91/~/g-raid-with-thunderbolt-3"
 
   livecheck do
-    url "https://support.g-technology.com/sites/default/files/downloads/grrtu/mac/appcast.xml"
-    strategy :sparkle
+    url "https://support-en.g-technology.com/app/answers/detail/a_id/34746"
+    regex(%r{/gtc-(\d+(?:\.\d+)*)\.zip})
   end
 
   app "G-RAID with Thunderbolt Configurator.app"
