@@ -4,7 +4,6 @@ cask "ubiquiti-unifi-controller-lts" do
 
   url "https://dl.ubnt.com/unifi/#{version}/UniFi.pkg",
       verified: "dl.ubnt.com/"
-  appcast "https://www.ui.com/download/unifi"
   name "Ubiquiti UniFi SDN Controller LTS"
   homepage "https://unifi-sdn.ui.com/"
 
@@ -35,5 +34,6 @@ cask "ubiquiti-unifi-controller-lts" do
 
   caveats do
     license "https://www.ui.com/eula/"
+    discontinued
   end
 end

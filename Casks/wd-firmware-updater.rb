@@ -3,7 +3,6 @@ cask "wd-firmware-updater" do
   sha256 :no_check
 
   url "https://download.wdc.com/fwupdater/Mac/WDFirmwareUpdater.zip"
-  appcast "https://support.wdc.com/downloads.aspx?lang=en"
   name "WD Firmware Updater"
   homepage "https://support.wdc.com/downloads.aspx?lang=en"
 
@@ -13,4 +12,8 @@ cask "wd-firmware-updater" do
     "~/Library/Application Support/WDufu",
     "~/Library/Caches/WD Firmware Updater",
   ]
+
+  caveats do
+    discontinued
+  end
 end
