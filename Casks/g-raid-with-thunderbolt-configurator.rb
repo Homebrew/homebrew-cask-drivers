@@ -4,11 +4,12 @@ cask "g-raid-with-thunderbolt-configurator" do
 
   url "http://download.g-technology.com/software/gtc-#{version}.zip"
   name "G-RAID with Thunderbolt Configurator"
+  desc "Configuration tool for G-RAID with Thunderbolt peripherals"
   homepage "https://support-en.g-technology.com/app/products/detailnew/p/91/~/g-raid-with-thunderbolt-3"
 
   livecheck do
     url "https://support-en.g-technology.com/app/answers/detail/a_id/34746"
-    regex(%r{/gtc-(\d+(?:\.\d+)*)\.zip})
+    regex(%r{/gtc[._-]v?(\d+(?:\.\d+)+)\.zip})
   end
 
   app "G-RAID with Thunderbolt Configurator.app"
