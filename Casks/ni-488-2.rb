@@ -8,7 +8,7 @@ cask "ni-488-2" do
 
   livecheck do
     url "https://www.ni.com/en-us/support/downloads/drivers/download.ni-488-2.html"
-    regex(/"marketingversion"\s*:\s*"(\d+(?:\.\d+)*)"/i)
+    regex(/"marketingversion"\s*:\s*"v?(\d+(?:\.\d+)*)"/i)
   end
 
   pkg "NI-488.2 #{version}.pkg"
