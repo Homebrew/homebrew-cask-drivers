@@ -9,7 +9,7 @@ cask "shearwater" do
 
   livecheck do
     url "https://www.shearwater.com/downloads/shearwater-desktop-download/"
-    regex(/ShearwaterDesktopInstaller_(\d+(?:\.\d+)*)\.dmg/i)
+    regex(/ShearwaterDesktopInstaller[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   depends_on cask: "adobe-air"
