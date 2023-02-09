@@ -16,7 +16,7 @@ cask "reolink-client" do
     end
   end
 
-  app "Reolink Client.app"
+  app "Reolink.app"
 
   uninstall quit:   "com.reolink.client",
             delete: "/Library/Logs/DiagnosticReports/Reolink Client_*.wakeups_resource.diag"
