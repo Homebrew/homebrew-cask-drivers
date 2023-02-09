@@ -8,7 +8,7 @@ cask "evoluent-vertical-mouse-device-controller" do
 
   livecheck do
     url "https://evoluent.com/support/download/"
-    regex(/Evoluent\s+VerticalMouse\s+Device\s+Controller\s+-\s+(\d+(?:\.\d+)*)\.pkg/)
+    regex(/Evoluent\s+VerticalMouse\s+Device\s+Controller\s+[._-]\s+v?(\d+(?:\.\d+)+)\.pkg/i)
   end
 
   depends_on macos: "<= :mojave"
