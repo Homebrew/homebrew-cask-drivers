@@ -9,9 +9,9 @@ cask "fujifilm-x-acquire" do
   livecheck do
     url :homepage
     strategy :page_match do |page|
-      version = page.match(/Mac\s+Version:\s+Ver\.(\d+(?:\.\d+)*)/i)[1]
+      version = page.match(/Mac\s+Version:\s+Ver\.(\d+(?:\.\d+)+)/i)[1]
       version = "#{version}.0".split(".")[0..2].join(".")
-      id = page.match(%r{/x-acqure-mac\d+-([^/]+)}i)[1]
+      id = page.match(%r{/x-acqui?re-mac\d+[._-]([^/]+)}i)[1]
       "#{version},#{id}"
     end
   end
