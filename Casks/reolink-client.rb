@@ -2,7 +2,8 @@ cask "reolink-client" do
   version "8.8.4,2023,02,011051551675248715,3375"
   sha256 :no_check
 
-  url "https://home-cdn.reolink.us/wp-content/uploads/#{version.csv[1]}/#{version.csv[2]}/#{version.csv[3]}.#{version.csv[4]}.dmg"
+  url "https://home-cdn.reolink.us/wp-content/uploads/#{version.csv[1]}/#{version.csv[2]}/#{version.csv[3]}.#{version.csv[4]}.dmg",
+      verified: "https://home-cdn.reolink.us/"
   name "Reolink Client"
   homepage "https://reolink.com/software-and-manual/"
 
