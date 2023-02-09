@@ -8,7 +8,7 @@ cask "garmin-virb-edit" do
 
   livecheck do
     url "https://www8.garmin.com/support/download_details.jsp?id=6593"
-    regex(/version\s+(\d+(?:\.\d+)*)/i)
+    regex(/version\s+v?(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: ">= :el_capitan"
