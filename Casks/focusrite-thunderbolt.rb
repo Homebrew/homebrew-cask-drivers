@@ -10,7 +10,7 @@ cask "focusrite-thunderbolt" do
   livecheck do
     url "https://downloads.focusrite.com/focusrite/clarett/clarett-octopre"
     strategy :page_match do |page|
-      match = page.match(%r{/FocusriteThunderboltMac_(\d+(?:\.\d+)*)-release_(\d+).dmg"}i)
+      match = page.match(%r{/FocusriteThunderboltMac[._-]v?(\d+(?:\.\d+)+)[._-]?release[._-]?(\d+)\.dmg"}i)
       "#{match[1]},#{match[2]}"
     end
   end
