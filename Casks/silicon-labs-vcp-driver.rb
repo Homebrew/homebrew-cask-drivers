@@ -9,7 +9,7 @@ cask "silicon-labs-vcp-driver" do
 
   livecheck do
     url "https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt"
-    regex(/Version\s+(\d+(?:\.\d+)*)/i)
+    regex(/Version\s+(\d+(?:\.\d+)+)/i)
   end
 
   container nested: "macOS_VCP_Driver/SiLabsUSBDriverDisk.dmg"
