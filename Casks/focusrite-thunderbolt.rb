@@ -1,15 +1,25 @@
 cask "focusrite-thunderbolt" do
-  version "4.9.3.2"
+  version "4.9.3,0"
   sha256 "350bc7d3ae6a8bfa934ec664772203ea85f970b0ea88c784847cc93d9ad75c44"
 
-  url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/FocusriteThunderboltMac_#{version.major_minor_patch}-release_0.dmg"
-  appcast "https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545&download_type=software",
-          must_contain: version.major_minor_patch
+  url "https://fael-downloads-prod.focusrite.com/customer/prod/s3fs-public/downloads/FocusriteThunderboltMac_#{version.csv.first}-release_#{version.csv.second}.dmg"
   name "Focusrite Thunderbolt"
   desc "Thunderbolt driver for Focusrite devices"
   homepage "https://customer.focusrite.com/support/downloads?brand=Focusrite&product_by_type=545"
 
-  pkg "FocusritePCIe-#{version}.pkg"
+  livecheck do
+    url "https://downloads.focusrite.com/focusrite/clarett/clarett-octopre"
+    strategy :page_match do |page|
+      match = page.match(%r{/FocusriteThunderboltMac[._-]v?(\d+(?:\.\d+)+)[._-]?release[._-]?(\d+)\.dmg"}i)
+      "#{match[1]},#{match[2]}"
+    end
+  end
+
+  pkg "FocusritePCIe.pkg"
+
+  preflight do
+    staged_path.glob("FocusritePCIe-*.pkg").first.rename(staged_path/"FocusritePCIe.pkg")
+  end
 
   uninstall pkgutil: [
     "com.focusrite.pkg.FocusritePCIe.audio_driver",
