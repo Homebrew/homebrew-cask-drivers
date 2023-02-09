@@ -10,7 +10,7 @@ cask "reolink-client" do
     url "https://reolink.com/wp-json/reo-v2/download/?lang=en&type=clients&viaReoAPI=true&lang=en"
     strategy :page_match do |page|
       download = JSON.parse(page)["data"]["downloads"].find { |d| d["type"] == "mac_client" }
-      match = download["url"].match(%r{/(\d+)/(\d+)/(\d+)\.(\d+)\.dmg})
+      match = download["url"].match(%r{/(\d+)/(\d+)/(\d+)\.(\d+)\.dmg}i)
       "#{download["version"]},#{match[1]},#{match[2]},#{match[3]},#{match[4]}"
     end
   end
