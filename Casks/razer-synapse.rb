@@ -11,7 +11,7 @@ cask "razer-synapse" do
   livecheck do
     url "https://rzr.to/synapse-mac-download"
     strategy :header_match
-    regex(/Razer_Synapse_Mac_Driver_v(\d+(?:\.\d+)+)\.dmg/i)
+    regex(/Razer[._-]Synapse[._-]Mac[._-]Driver[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   depends_on macos: "<= :mojave"
