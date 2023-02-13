@@ -1,8 +1,8 @@
 cask "motu-m-series" do
-  version "92621"
-  sha256 "45675d1b0813854dd443ee63f418303a7a6b065a2da328b8477251dd10fd64b8"
+  version "92737"
+  sha256 "5469d64fb416aefce5afd0e95bc972273a7b4b39ad778adcb4e721397158d4e2"
 
-  url "https://cdn-data.motu.com/downloads/audio/mseries/driver/RC/MOTU%20M%20Series%20Installer%20(#{version}).pkg"
+  url "https://cdn-data.motu.com/downloads/audio/mseries/driver/RC/MOTU%20MSeries%20Installer%20(#{version}).pkg"
   name "MOTU M Series Installer"
   desc "Install MOTU M2 and M4 system extension"
   homepage "https://motu.com/en-us/download/product/408/"
@@ -12,7 +12,7 @@ cask "motu-m-series" do
     regex(/Mac\sv?(\d+)/i)
   end
 
-  pkg "MOTU M Series Installer (#{version}).pkg"
+  pkg "MOTU MSeries Installer (#{version}).pkg"
 
   uninstall pkgutil:   [
               "com.motu.pkg.mseries",
