@@ -12,7 +12,7 @@ cask "motu-m-series" do
     regex(/Mac\sv?(\d+)/i)
   end
 
-  pkg "MOTU M Series Installer (#{version}).pkg"
+  pkg "MOTU MSeries Installer (#{version}).pkg"
 
   uninstall pkgutil:   [
               "com.motu.pkg.mseries",
