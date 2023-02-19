@@ -1,5 +1,5 @@
 cask "caldigit-thunderbolt-charging" do
-  version :latest
+  version "1.2"
   sha256 :no_check
 
   url "https://downloads.caldigit.com/CalDigit-Thunderbolt-Station-Mac-Drivers.zip"
