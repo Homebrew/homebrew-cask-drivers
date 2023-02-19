@@ -4,6 +4,7 @@ cask "linn-konfig" do
 
   url "https://cloud.linn.co.uk/applications/konfig/releases/Davaar/konfig_latest_osx.pkg"
   name "Linn Konfig"
+  desc "Control software for audio equipment"
   homepage "https://www.linn.co.uk/software"
 
   livecheck do
