@@ -1,5 +1,5 @@
 cask "steelseries-exactmouse-tool" do
-  version :latest
+  version "1.0"
   sha256 :no_check
 
   url "https://downloads.steelseriescdn.com/drivers/tools/steelseries-exactmouse-tool.dmg",
