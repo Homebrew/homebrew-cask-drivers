@@ -7,6 +7,11 @@ cask "caldigit-thunderbolt-charging" do
   desc "Improved Apple device support"
   homepage "https://www.caldigit.com/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   pkg "CalDigit-Thunderbolt-Station-Mac-Drivers.pkg"
 
   uninstall kext:    "com.CalDigit.ThunderboltStationChargingSupport",
