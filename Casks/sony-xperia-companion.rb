@@ -4,6 +4,7 @@ cask "sony-xperia-companion" do
 
   url "https://www-support-downloads.sonymobile.com/Software%20Downloads/Xperia%20Companion/XperiaCompanion.dmg"
   name "Xperia™ Companion"
+  desc "Companion software for Sony Xperia phones"
   homepage "https://support.sonymobile.com/xperia-companion/"
 
   livecheck do
