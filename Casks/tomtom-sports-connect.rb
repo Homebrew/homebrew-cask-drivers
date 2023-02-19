@@ -5,6 +5,7 @@ cask "tomtom-sports-connect" do
   url "https://sports.tomtom-static.com/downloads/desktop/mysportsconnect/latest/TomTomSportsConnectInstaller.pkg",
       verified: "sports.tomtom-static.com/"
   name "TomTom MySports Connect"
+  desc "Companion software for sport watches"
   homepage "https://www.tomtom.com/mysports/getstarted"
 
   livecheck do
