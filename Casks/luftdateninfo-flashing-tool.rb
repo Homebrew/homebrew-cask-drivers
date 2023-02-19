@@ -7,5 +7,10 @@ cask "luftdateninfo-flashing-tool" do
   desc "Flashing tool for air quality sensors"
   homepage "https://luftdaten.info/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   app "Luftdaten.info Flashing Tool.app"
 end
