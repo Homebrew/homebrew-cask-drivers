@@ -7,6 +7,11 @@ cask "tomtom-sports-connect" do
   name "TomTom MySports Connect"
   homepage "https://www.tomtom.com/mysports/getstarted"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   pkg "TomTomSportsConnectInstaller.pkg"
 
   uninstall quit:       "com.tomtom.mysportsconnect",
