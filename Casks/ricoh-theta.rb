@@ -7,5 +7,10 @@ cask "ricoh-theta" do
   name "RICOH THETA"
   homepage "https://theta360.com/en/support/download/pcmac/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   app "RICOH THETA.app"
 end
