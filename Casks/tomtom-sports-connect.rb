@@ -6,7 +6,7 @@ cask "tomtom-sports-connect" do
       verified: "sports.tomtom-static.com/"
   name "TomTom MySports Connect"
   desc "Companion software for sport watches"
-  homepage "https://www.tomtom.com/mysports/getstarted"
+  homepage "https://help.tomtom.com/hc/de-at/articles/360013957759"
 
   livecheck do
     url :url
