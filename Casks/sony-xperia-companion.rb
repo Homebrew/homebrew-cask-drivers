@@ -1,5 +1,5 @@
 cask "sony-xperia-companion" do
-  version :latest
+  version "2.18.7"
   sha256 :no_check
 
   url "https://www-support-downloads.sonymobile.com/Software%20Downloads/Xperia%20Companion/XperiaCompanion.dmg"
