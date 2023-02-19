@@ -5,6 +5,7 @@ cask "steelseries-exactmouse-tool" do
   url "https://downloads.steelseriescdn.com/drivers/tools/steelseries-exactmouse-tool.dmg",
       verified: "steelseriescdn.com/"
   name "SteelSeries ExactMouse Tool"
+  desc "Keyboard and mouse configuration tool"
   homepage "https://steelseries.com/downloads"
 
   livecheck do
