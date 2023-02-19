@@ -7,6 +7,11 @@ cask "steelseries-exactmouse-tool" do
   name "SteelSeries ExactMouse Tool"
   homepage "https://steelseries.com/downloads"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   app "SteelSeries ExactMouse Tool.app"
 
   uninstall quit: "com.SteelSeries.SteelSeries-ExactMouse-Tool"
