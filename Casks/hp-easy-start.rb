@@ -6,6 +6,11 @@ cask "hp-easy-start" do
   name "HP Easy Start"
   homepage "https://support.hp.com/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   app "HP Easy Start.app"
 
   zap trash: [
