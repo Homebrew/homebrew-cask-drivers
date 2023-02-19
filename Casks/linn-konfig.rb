@@ -6,6 +6,11 @@ cask "linn-konfig" do
   name "Linn Konfig"
   homepage "https://www.linn.co.uk/software"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   pkg "konfig_latest_osx.pkg"
 
   uninstall pkgutil: "uk.co.linn.Konfig"
