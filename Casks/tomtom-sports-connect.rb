@@ -1,5 +1,5 @@
 cask "tomtom-sports-connect" do
-  version :latest
+  version "3.3.9"
   sha256 :no_check
 
   url "https://sports.tomtom-static.com/downloads/desktop/mysportsconnect/latest/TomTomSportsConnectInstaller.pkg",
