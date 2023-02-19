@@ -1,5 +1,5 @@
 cask "linn-konfig" do
-  version :latest
+  version "4.37.167"
   sha256 :no_check
 
   url "https://cloud.linn.co.uk/applications/konfig/releases/Davaar/konfig_latest_osx.pkg"
