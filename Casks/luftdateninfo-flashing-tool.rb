@@ -1,5 +1,5 @@
 cask "luftdateninfo-flashing-tool" do
-  version :latest
+  version "0.0.0"
   sha256 :no_check
 
   url "https://luftdaten.info/flashtool/luftdaten-tool.dmg"
