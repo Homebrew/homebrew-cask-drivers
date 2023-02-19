@@ -2,7 +2,8 @@ cask "sony-xperia-companion" do
   version "2.18.7"
   sha256 :no_check
 
-  url "https://dl-desktop-xcapps.sonymobile.com/Software%20Downloads/Xperia%20Companion/XperiaCompanion.dmg"
+  url "https://dl-desktop-xcapps.sonymobile.com/Software%20Downloads/Xperia%20Companion/XperiaCompanion.dmg",
+      verified: "https://dl-desktop-xcapps.sonymobile.com/"
   name "Xperia™ Companion"
   desc "Companion software for Sony Xperia phones"
   homepage "https://www.sony.com/electronics/support/articles/00236877"
