@@ -1,11 +1,17 @@
 cask "tomtom-sports-connect" do
-  version :latest
+  version "3.3.9"
   sha256 :no_check
 
   url "https://sports.tomtom-static.com/downloads/desktop/mysportsconnect/latest/TomTomSportsConnectInstaller.pkg",
       verified: "sports.tomtom-static.com/"
   name "TomTom MySports Connect"
-  homepage "https://www.tomtom.com/mysports/getstarted"
+  desc "Companion software for sport watches"
+  homepage "https://help.tomtom.com/hc/de-at/articles/360013957759"
+
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
 
   pkg "TomTomSportsConnectInstaller.pkg"
 
