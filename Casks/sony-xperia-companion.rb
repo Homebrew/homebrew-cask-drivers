@@ -6,6 +6,11 @@ cask "sony-xperia-companion" do
   name "Xperia™ Companion"
   homepage "https://support.sonymobile.com/xperia-companion/"
 
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
+
   depends_on macos: ">= :el_capitan"
 
   app "Xperia Companion.app"
