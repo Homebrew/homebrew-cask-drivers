@@ -9,6 +9,7 @@ cask "bluos-controller" do
   homepage "https://www.bluesound.com/"
 
   livecheck do
+    url "https://www.bluesound.com/downloads"
     strategy :page_match do |page|
       match = page.match(%r{uploads/(\d+)/(\d+)/BluOS[._-]Controller[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
       next if match.blank?
