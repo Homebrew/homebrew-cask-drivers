@@ -1,11 +1,16 @@
 cask "epson-surecolor-p900" do
-  version :latest
+  version "12.15.0pi"
   sha256 :no_check
 
   url "https://ftp.epson.com/drivers/SCP900_Lite_64NR_NA.dmg"
   name "Epson SureColor P900 Driver & Utilities Package"
   desc "Printer Driver, Media Installer, & Software Updater"
   homepage "https://epson.com/"
+
+  livecheck do
+    url :url
+    strategy :extract_plist
+  end
 
   depends_on macos: ">= :el_capitan"
 
