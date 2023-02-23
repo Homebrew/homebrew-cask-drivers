@@ -1,6 +1,6 @@
 cask "segger-jlink" do
-  version "7.86"
-  sha256 "1174e313b51a3b8afd42187468b63aeb2c01140e5324829dd07814fb7ddd7733"
+  version "7.86a"
+  sha256 "8767384785e7db74d76c859d8227b4a60bc2e457ad517cf93e31d6867675df29"
 
   url "https://www.segger.com/downloads/jlink/JLink_MacOSX_V#{version.no_dots}_universal.pkg",
       using: :post,
