@@ -1,5 +1,5 @@
 cask "philips-hue-sync" do
-  version "1.9.0.33"
+  version "1.10.0.38"
   sha256 :no_check
 
   url "https://firmware.meethue.com/v1/download?deviceTypeId=HueSyncMac"
