@@ -1,6 +1,6 @@
 cask "fujifilm-x-raw-studio" do
-  version "1150,sm062q8t"
-  sha256 "70174cc963c0430bc633c48fb6030fd61900d4f74b52ace10eb19ec83d8375fa"
+  version "1180,ihw1222x"
+  sha256 "87cbdcbd9aa91396a23b5a2efbfab3244104a869e55aa82f5f17b746eecd1556"
 
   url "https://dl.fujifilm-x.com/support/software/x-raw-studio-mac#{version.csv.first}-#{version.csv.second}/XRawStudio#{version.csv.first}.dmg"
   name "FUJIFILM X RAW STUDIO"
