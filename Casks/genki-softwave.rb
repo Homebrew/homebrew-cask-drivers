@@ -3,7 +3,7 @@ cask "genki-softwave" do
   sha256 :no_check
 
   url "https://bitbucket.org/genki_instruments/software_releases/downloads/Softwave_mac.zip",
-      verified: "https://bitbucket.org/genki_instruments/software_releases/"
+      verified: "bitbucket.org/genki_instruments/software_releases/"
   name "Softwave"
   desc "Wave Ring Software"
   homepage "https://genkiinstruments.com/products/softwave"

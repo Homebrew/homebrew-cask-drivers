@@ -3,7 +3,7 @@ cask "obsbot-webcam" do
   sha256 "6e1dd286eb44e5a3be8fd3583a55b7f43d0fec6cdc754a45478911b9eae92106"
 
   url "https://obsbot-static-resource.oss-accelerate.aliyuncs.com/download/obsbot-webcam/Obsbot_WebCam_OA_E_MacOS_#{version}_release.dmg",
-      verified: "https://obsbot-static-resource.oss-accelerate.aliyuncs.com/download/obsbot-webcam/"
+      verified: "obsbot-static-resource.oss-accelerate.aliyuncs.com/download/obsbot-webcam/"
   name "OBSBOT WebCam"
   desc "Configuration and firmware update utility for OBSBOT Tiny and Meet series"
   homepage "https://www.obsbot.com/download"
