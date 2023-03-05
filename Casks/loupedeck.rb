@@ -8,8 +8,8 @@ cask "loupedeck" do
   homepage "https://loupedeck.com/"
 
   livecheck do
-    url "https://loupedeck.com/get-started/"
-    regex(/href=.*?LoupedeckInstaller(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://loupedeck.com/downloads/"
+    regex(/href=.*?Loupedeck(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   depends_on macos: ">= :sierra"
