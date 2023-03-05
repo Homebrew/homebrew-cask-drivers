@@ -31,6 +31,7 @@ cask "loupedeck" do
               "com.loupedeck.LoupedeckPackageInstaller",
               "com.loupedeck.LoupedeckServiceToolPackageInstaller",
               "com.loupedeck.MediaInstaller",
+              "com.loupedeck.OBSClientPluginPackageInstaller",
               "com.loupedeck.PluginPackageInstaller",
             ],
             delete:    "/Applications/Loupedeck.app"
