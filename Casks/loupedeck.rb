@@ -1,16 +1,15 @@
 cask "loupedeck" do
-  version "5.2.1"
-  sha256 "24378c159688c1219365bb3599bb638bf60a0a59ee36224570f5011cfc2f385e"
+  version "5.6.0.15959"
+  sha256 "39f4868f26c29d39049cc08692d8c8d1a64a4954ec4ba050e4d08bb2c084da05"
 
-  url "https://5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor_patch}/LoupedeckInstaller_%20#{version}.dmg",
-      verified: "5145542.fs1.hubspotusercontent-na1.net/hubfs/5145542/"
+  url "https://support.loupedeck.com/hubfs/Knowledge%20Base/LD%20Software%20Downloads/#{version.major_minor}/Loupedeck_#{version}.dmg"
   name "Loupdeck"
   desc "Software for Loupedeck consoles"
   homepage "https://loupedeck.com/"
 
   livecheck do
-    url "https://loupedeck.com/get-started/"
-    regex(/href=.*?LoupedeckInstaller(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://loupedeck.com/downloads/"
+    regex(/href=.*?Loupedeck(?:[._\s-]|%20)+v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   depends_on macos: ">= :sierra"
@@ -32,6 +31,7 @@ cask "loupedeck" do
               "com.loupedeck.LoupedeckPackageInstaller",
               "com.loupedeck.LoupedeckServiceToolPackageInstaller",
               "com.loupedeck.MediaInstaller",
+              "com.loupedeck.OBSClientPluginPackageInstaller",
               "com.loupedeck.PluginPackageInstaller",
             ],
             delete:    "/Applications/Loupedeck.app"
