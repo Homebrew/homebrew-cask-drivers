@@ -26,7 +26,6 @@ cask "konica-minolta-bizhub-c750i-driver" do
         item = items.max_by { |i| i["ReleaseDate_textS"] }
         files = item["DownloadFiles_textS"].split("\n").map { |file| file.split("|") }
         dmg = files.find { |f| f.first.end_with?(".dmg") }
-
         "#{item["Version_textS"]},#{Digest::MD5.hexdigest(dmg[2])},#{item["AnacondaId_textS"]}"
       end
     end
