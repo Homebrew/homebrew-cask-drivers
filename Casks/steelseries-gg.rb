@@ -21,7 +21,6 @@ cask "steelseries-gg" do
 
   uninstall launchctl: "com.steelseries.SSENext",
             quit:      [
-              "com.steelseries.gg.client",
               "com.steelseries.gg.client.*",
               "com.steelseries.gg.uninstaller",
               "com.steelseries.SteelSeries-GG",
@@ -35,18 +34,7 @@ cask "steelseries-gg" do
               { executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
                 sudo:       true },
             ],
-            pkgutil:   [
-              "com.steelseries.gg.engine"
-              "com.steelseries.gg.installer",
-              "com.steelseries.gg.prismSyncV2",
-              "com.steelseries.gg.uninstaller",
-              "com.steelseries.installer.driver",
-              "com.steelseries.gg.engine",
-              "com.steelseries.gg.installer",
-              "com.steelseries.gg.prismSyncV2",
-              "com.steelseries.gg.uninstaller",
-              "com.steelseries.installer.driver",
-            ],
+            pkgutil:   "com.steelseries.*",
             delete:    "/Library/Application Support/SteelSeries GG"
 
   zap trash: [
