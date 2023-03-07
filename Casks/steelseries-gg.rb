@@ -36,8 +36,16 @@ cask "steelseries-gg" do
                 sudo:       true },
             ],
             pkgutil:   [
-              "com.steelseries.*",
-              "com.steelseries.gg.*",
+              "com.steelseries.gg.engine"
+              "com.steelseries.gg.installer",
+              "com.steelseries.gg.prismSyncV2",
+              "com.steelseries.gg.uninstaller",
+              "com.steelseries.installer.driver",
+              "com.steelseries.gg.engine",
+              "com.steelseries.gg.installer",
+              "com.steelseries.gg.prismSyncV2",
+              "com.steelseries.gg.uninstaller",
+              "com.steelseries.installer.driver",
             ],
             delete:    "/Library/Application Support/SteelSeries GG"
 
