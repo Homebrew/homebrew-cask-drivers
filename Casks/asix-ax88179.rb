@@ -48,7 +48,7 @@ cask "asix-ax88179" do
     end
   end
   on_monterey :or_newer do
-    version "2.2.0,1356"
+    version "2.3.0,1372"
 
     container nested: "ASIX_USB_Device_Installer_macOS_12_above_Driver_v#{version.csv.first}_20221201/ASIX_USB_Device_Installer_v#{version.csv.first}.dmg"
     pkg "ASIX_USB_Device_Installer_v#{version.csv.first}.pkg"
