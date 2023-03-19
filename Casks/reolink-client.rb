@@ -5,6 +5,7 @@ cask "reolink-client" do
   url "https://home-cdn.reolink.us/wp-content/uploads/#{version.csv[1]}/#{version.csv[2]}/#{version.csv[3]}.#{version.csv[4]}.dmg",
       verified: "home-cdn.reolink.us/"
   name "Reolink Client"
+  desc "Security camera system surveillance software"
   homepage "https://reolink.com/software-and-manual/"
 
   livecheck do
