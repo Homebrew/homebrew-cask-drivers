@@ -9,7 +9,7 @@ cask "evolv-escribe-suite" do
 
   livecheck do
     url "https://www.evolvapor.com/escribe"
-    regex(%r{href=.*?/SetupEScribe(\d+_SP\d+(?:_\d+)?)_INT\.pkg}i)
+    regex(%r{href=.*?/SetupEScribe(\d+_SP\d+(?:_\d+)?)[._-]INT\.pkg}i)
   end
 
   pkg "SetupEScribe#{version}_INT.pkg"
