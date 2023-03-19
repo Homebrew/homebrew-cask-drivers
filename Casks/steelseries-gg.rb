@@ -1,6 +1,6 @@
 cask "steelseries-gg" do
-  version "33.0.0"
-  sha256 "f0d6692e25a74d81ee3cb9cfc817440ad2fee2490020bf277a8560b587b72394"
+  version "34.0.0"
+  sha256 "1bf5af5facf992c15cda3ab5bbf2ad81ee35e9bc364f4bc30bb14b445c5b28b6"
 
   url "https://engine.steelseriescdn.com/SteelSeriesGG#{version}.pkg",
       verified: "engine.steelseriescdn.com/"
@@ -30,10 +30,10 @@ cask "steelseries-gg" do
               "com.highpoint-tech.kext.HighPointIOP",
               "com.highpoint-tech.kext.HighPointRR",
             ],
-            script:    [
-              { executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
-                sudo:       true },
-            ],
+            script:    {
+              executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
+              sudo:       true,
+            },
             pkgutil:   "com.steelseries.*",
             delete:    "/Library/Application Support/SteelSeries GG"
 
