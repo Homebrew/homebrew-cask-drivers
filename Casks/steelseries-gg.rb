@@ -30,10 +30,10 @@ cask "steelseries-gg" do
               "com.highpoint-tech.kext.HighPointIOP",
               "com.highpoint-tech.kext.HighPointRR",
             ],
-            script:    [
-              { executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
-                sudo:       true },
-            ],
+            script:    {
+              executable: "/Applications/SteelSeries GG/SteelSeries GG Uninstaller.app/Contents/Resources/Uninstall.sh",
+              sudo:       true,
+            },
             pkgutil:   "com.steelseries.*",
             delete:    "/Library/Application Support/SteelSeries GG"
 
