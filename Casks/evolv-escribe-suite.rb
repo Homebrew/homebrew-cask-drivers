@@ -22,4 +22,6 @@ cask "evolv-escribe-suite" do
               executable: "/Applications/EScribe Suite.app/Contents/MacOS/ECigStats.app/Contents/MacOS/RunProgram",
               args:       ["--exit"],
             }
+
+  # No zap stanza required
 end
