@@ -1,8 +1,8 @@
 cask "elgato-video-capture" do
-  version "2.0.5.1830"
-  sha256 "ef294607a2b620907cbafb61970953d1c4dbce2d7e93b51413618b196afe74ee"
+  version "2.0.7.8720"
+  sha256 "dee13035de81f5ce841ae2c00d90f5b025f035950e3f6b5a9aad09199115ff80"
 
-  url "https://edge.elgato.com/video-capture/macos/#{version.major_minor_patch}/final/Video_Capture_#{version}.zip"
+  url "https://edge.elgato.com/video-capture/macos/#{version.major_minor_patch}/Video_Capture_#{version}.zip"
   name "Elgato Video Capture"
   desc "Capture video from analog sources"
   homepage "https://www.elgato.com/en/video-capture/"
