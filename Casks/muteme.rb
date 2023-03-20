@@ -8,7 +8,6 @@ cask "muteme" do
 
   url "https://muteme.io/download/flavor/default/#{version}/#{arch}/MuteMe-Client-#{version}.dmg",
       verified: "muteme.io/download/flavor/default/",
-      referer:  "https://muteme.io/releases/stable/default"
   name "MuteMe"
   desc "Companion app for the MuteMe physical mute button"
   homepage "https://muteme.com/"
