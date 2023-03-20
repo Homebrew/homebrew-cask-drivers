@@ -1,18 +1,20 @@
 cask "muteme" do
   arch arm: "osx_arm64", intel: "osx_64"
+  livecheck_folder = on_arch_conditional arm: "osx_arm64", intel: "osx"
 
-  version "0.13.1"
-  sha256 arm:   "3eecafea45dc2aa5c3dd1b5efe1a98583d66754accbfed132cabf19f16b1b817",
-         intel: "2c59685faeb89d3061d280a94f7effb5f77e9d08085aff9f2224444f59f0b566"
+  version "0.14.2"
+  sha256 arm:   "2f21e8c8bcc1d2a191baabe89de6fba03501037354f42b0c864915281beb7114",
+         intel: "9f3449d06748fc3bd63d636e6b7ea5b6e9a84aa8be0a4d3783337bc711943bcf"
 
   url "https://muteme.io/download/flavor/default/#{version}/#{arch}/MuteMe-Client-#{version}.dmg",
-      verified: "muteme.io/download/flavor/default/"
+      verified: "muteme.io/download/flavor/default/",
+      referer:  "https://muteme.io/releases/stable/default"
   name "MuteMe"
   desc "Companion app for the MuteMe physical mute button"
   homepage "https://muteme.com/"
 
   livecheck do
-    url "https://downloads.muteme.com/download/latest/#{arch}"
+    url "https://downloads.muteme.com/download/latest/#{livecheck_folder}"
     strategy :header_match
   end
 
