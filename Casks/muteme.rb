@@ -7,7 +7,7 @@ cask "muteme" do
          intel: "9f3449d06748fc3bd63d636e6b7ea5b6e9a84aa8be0a4d3783337bc711943bcf"
 
   url "https://muteme.io/download/flavor/default/#{version}/#{arch}/MuteMe-Client-#{version}.dmg",
-      verified: "muteme.io/download/flavor/default/",
+      verified: "muteme.io/download/flavor/default/"
   name "MuteMe"
   desc "Companion app for the MuteMe physical mute button"
   homepage "https://muteme.com/"
