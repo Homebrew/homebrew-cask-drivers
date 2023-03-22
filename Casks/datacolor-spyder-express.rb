@@ -1,6 +1,6 @@
 cask "datacolor-spyder-express" do
   version "5.8"
-  sha256 "802bd97db43c07f8ebf2eae011d2d3643cfce1b40fc4770bb45173a92bb6dfba"
+  sha256 "d06b8725a890d977f1928382147115d51950298f50b4093f73d123cb2a7dc083"
 
   url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Express_#{version}.pkg.zip",
       verified: "d3d9ci7ypuovlo.cloudfront.net/"
