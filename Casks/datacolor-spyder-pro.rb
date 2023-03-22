@@ -10,8 +10,8 @@ cask "datacolor-spyder-pro" do
 
   livecheck do
     url "http://goto.datacolor.com/download/mac/s#{version.major}p100b"
-    strategy :header_match
     regex(/Pro[._-](\d+(?:\.\d+)+)\.pkg\.zip/i)
+    strategy :header_match
   end
 
   auto_updates true

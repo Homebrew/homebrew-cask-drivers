@@ -9,7 +9,6 @@ cask "epson-photo-plus" do
 
   livecheck do
     url "https://epson.com/Support/Printers/Single-Function-Inkjet-Printers/SureColor-Series/Epson-SureColor-P900/s/SPT_C11CH37201"
-    strategy :page_match
     regex(/\s*Epson\sPhoto\+[\s(?:&nbsp;)]+v(\d+(?:\.\d+)+)/i)
   end
 

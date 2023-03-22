@@ -13,8 +13,8 @@ cask "lmsclients-squeezeplay" do
 
   livecheck do
     url "https://sourceforge.net/projects/lmsclients/rss?path=/squeezeplay/osx"
+    regex(/SqueezePlay[._-]#{arch}[._-]v?(\d+(?:\.\d+)*(?:r\d+)?)\.dmg/i)
     strategy :page_match
-    regex(/SqueezePlay-#{arch}-(\d+(?:\.\d+)*(?:r\d+)?)\.dmg/i)
   end
 
   app "SqueezePlay.app"

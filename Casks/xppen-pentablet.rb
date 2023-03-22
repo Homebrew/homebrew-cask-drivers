@@ -9,8 +9,8 @@ cask "xppen-pentablet" do
 
   livecheck do
     url :url
-    strategy :header_match
     regex(/XP[._-]PENMac[._-]v?(\d+(?:\.\d+)+[._-]\d+)\.zip/i)
+    strategy :header_match
   end
 
   container nested: "XP-PENMac_#{version}/XP-PENMac_#{version}.dmg"
@@ -19,8 +19,8 @@ cask "xppen-pentablet" do
 
   zap trash: [
     "/Library/Application Support/PenDriver",
+    "~/.PenTablet",
     "~/Library/Preferences/com.ugee.uninstallpen.plist",
     "~/Library/Saved Application State/com.ugee.PenTablet2.0.savedState",
-    "~/.PenTablet",
   ]
 end
