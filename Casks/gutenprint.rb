@@ -9,8 +9,8 @@ cask "gutenprint" do
 
   livecheck do
     url "http://gimp-print.sourceforge.net/MacOSX.php"
+    regex(/gutenprint[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
     strategy :page_match
-    regex(/gutenprint-(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   pkg "gutenprint-#{version}.pkg"

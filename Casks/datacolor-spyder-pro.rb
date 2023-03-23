@@ -1,6 +1,6 @@
 cask "datacolor-spyder-pro" do
   version "5.8"
-  sha256 "02412304fb99926c4b48572aecdd00b5de862023255e9d7d5fa924920f7d376b"
+  sha256 "4d08a06b547859c8727d0bfc7ce1bc550363c189373afc95185da7047ad9362e"
 
   url "https://d3d9ci7ypuovlo.cloudfront.net/spyder#{version.major}/Spyder#{version.major}Pro_#{version}.pkg.zip",
       verified: "d3d9ci7ypuovlo.cloudfront.net/"
@@ -10,8 +10,8 @@ cask "datacolor-spyder-pro" do
 
   livecheck do
     url "http://goto.datacolor.com/download/mac/s#{version.major}p100b"
-    strategy :header_match
     regex(/Pro[._-](\d+(?:\.\d+)+)\.pkg\.zip/i)
+    strategy :header_match
   end
 
   auto_updates true
