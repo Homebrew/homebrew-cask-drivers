@@ -17,6 +17,9 @@ cask "xerox-print-driver" do
       skip "Legacy version"
     end
   end
+  on_sierra :or_older do
+    pkg "Xerox Print Driver #{version.sub(/_.*/, "")}.pkg"
+  end
   on_high_sierra do
     version "5.6.0_2187"
     sha256 "562143dcd8fda5df84d9cdc39e09f242898e40d63866c596632d7cd7f7c85844"
@@ -25,6 +28,9 @@ cask "xerox-print-driver" do
     livecheck do
       skip "Legacy version"
     end
+  end
+  on_high_sierra :or_newer do
+    pkg "Xerox Drivers #{version.sub(/_.*/, "")}.pkg"
   end
   on_mojave do
     version "5.8.0_2275"
@@ -58,13 +64,6 @@ cask "xerox-print-driver" do
   name "Xerox Print Driver"
   desc "Drivers for Xerox printers"
   homepage "https://www.support.xerox.com/en-us/product/phaser-6510/downloads"
-
-  on_sierra :or_older do
-    pkg "Xerox Print Driver #{version.sub(/_.*/, "")}.pkg"
-  end
-  on_high_sierra :or_newer do
-    pkg "Xerox Drivers #{version.sub(/_.*/, "")}.pkg"
-  end
 
   uninstall launchctl: [
               "com.aviatainc.powerengage.helper.XRTK",
