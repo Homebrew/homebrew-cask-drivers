@@ -8,7 +8,7 @@ cask "bose-usb-link-updater" do
   homepage "https://pro.bose.com/"
 
   livecheck do
-    url "https://pro.bose.com/en_us/products/software/conferencing_software/bose-usb-link-updater.html"
+    url "https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/noise-cancelling-headphones-700-conferencing/manuals_downloads.html"
     regex(/href=.*?Bose[._-]USB[._-]Link[._-]Updater[._-]Mac[._-]v?(\d+(?:\.\d+)+)\.pkg\.zip/i)
   end
 
