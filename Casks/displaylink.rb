@@ -14,10 +14,16 @@ cask "displaylink" do
     sha256 "9f1854cd5720105d6d45c91172419c503358543e4a23d7113387aedf16a39cbb"
     url "https://www.synaptics.com/sites/default/files/exe_files/#{version.csv.second}/DisplayLink%20USB%20Graphics%20Software%20for%20macOS#{version.csv.first}-EXE.dmg"
   end
+  on_mojave :or_older do
+    pkg "DisplayLink Software Installer.pkg"
+  end
   on_catalina do
     version "1.5,2021-09"
     sha256 "d703cc8e9093e4d163c5e612326c0907a02c6d4eec6aaca8d0727503859ef95d"
     url "https://www.synaptics.com/sites/default/files/exe_files/#{version.csv.second}/DisplayLink%20Manager%20Graphics%20Connectivity#{version.csv.first}-EXE.pkg"
+  end
+  on_catalina :or_newer do
+    pkg "DisplayLink Manager Graphics Connectivity#{version.csv.first}-EXE.pkg"
   end
   on_big_sur :or_newer do
     version "1.8.1,2023-03"
@@ -31,13 +37,6 @@ cask "displaylink" do
 
   livecheck do
     skip "No version information available"
-  end
-
-  on_mojave :or_older do
-    pkg "DisplayLink Software Installer.pkg"
-  end
-  on_catalina :or_newer do
-    pkg "DisplayLink Manager Graphics Connectivity#{version.csv.first}-EXE.pkg"
   end
 
   uninstall pkgutil:   "com.displaylink.*",
