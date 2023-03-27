@@ -23,6 +23,9 @@ cask "logitech-options" do
       regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
     end
   end
+  on_high_sierra :or_older do
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+  end
   on_mojave do
     version "8.54.147"
     sha256 "7b7a8d7a498d868c90b4ffe7dfc50a7a39c25e1f61350702e87d4c771b3d6459"
@@ -34,6 +37,9 @@ cask "logitech-options" do
       url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,webos=mac-macos-x-10.14"
       regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
     end
+  end
+  on_mojave :or_newer do
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
   end
   on_catalina :or_newer do
     version "10.00.75"
@@ -54,13 +60,6 @@ cask "logitech-options" do
 
   auto_updates true
   depends_on macos: ">= :sierra"
-
-  on_high_sierra :or_older do
-    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
-  end
-  on_mojave :or_newer do
-    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
-  end
 
   uninstall launchctl: [
               "com.logi.bolt.app",
