@@ -1,4 +1,6 @@
 cask "asix-ax88179" do
+  sha256 :no_check
+
   on_mojave :or_older do
     version "2.19.0,1242"
 
@@ -31,6 +33,18 @@ cask "asix-ax88179" do
       end
     end
   end
+  on_catalina :or_older do
+    uninstall_preflight do
+      staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+
+      system_command "/usr/sbin/installer",
+                     args: [
+                       "-pkg", staged_path/"AX88179_178A_Uninstall.pkg",
+                       "-target", "/"
+                     ],
+                     sudo: true
+    end
+  end
   on_big_sur do
     version "1.3.0,1301"
 
@@ -45,6 +59,18 @@ cask "asix-ax88179" do
           list_item.scan(regex).map { |match| "#{match[1]},#{match[0]}" }
         end.flatten
       end
+    end
+  end
+  on_big_sur :or_newer do
+    uninstall_preflight do
+      staged_path.glob("ASIX_USB_Device_Un*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
+
+      system_command "/usr/sbin/installer",
+                     args: [
+                       "-pkg", staged_path/"AX88179_178A_Uninstall.pkg",
+                       "-target", "/"
+                     ],
+                     sudo: true
     end
   end
   on_monterey :or_newer do
@@ -64,37 +90,10 @@ cask "asix-ax88179" do
     end
   end
 
-  sha256 :no_check
-
   url "https://www.asix.com.tw/en/support/download/file/#{version.csv.second}"
   name "AX88179"
   desc "USB 3.0 to gigabit ethernet drivers for ASIX Electronics devices"
   homepage "https://www.asix.com.tw/en/support/download"
-
-  on_catalina :or_older do
-    uninstall_preflight do
-      staged_path.glob("AX88179_178A_Uninstall_v*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
-
-      system_command "/usr/sbin/installer",
-                     args: [
-                       "-pkg", staged_path/"AX88179_178A_Uninstall.pkg",
-                       "-target", "/"
-                     ],
-                     sudo: true
-    end
-  end
-  on_big_sur :or_newer do
-    uninstall_preflight do
-      staged_path.glob("ASIX_USB_Device_Un*.pkg").first.rename(staged_path/"AX88179_178A_Uninstall.pkg")
-
-      system_command "/usr/sbin/installer",
-                     args: [
-                       "-pkg", staged_path/"AX88179_178A_Uninstall.pkg",
-                       "-target", "/"
-                     ],
-                     sudo: true
-    end
-  end
 
   uninstall pkgutil: [
     "com.asix.ax88179.uninstall",
