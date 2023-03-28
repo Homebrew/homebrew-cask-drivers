@@ -6,6 +6,8 @@ cask "logitech-options" do
     url "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_#{version}.zip",
         verified: "download01.logi.com/web/ftp/pub/techsupport/options/"
 
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
+
     livecheck do
       url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,webos=mac-macos-x-10.12"
       regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
@@ -17,6 +19,8 @@ cask "logitech-options" do
 
     url "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_#{version}.zip",
         verified: "download01.logi.com/web/ftp/pub/techsupport/options/"
+
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
 
     livecheck do
       url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,webos=mac-macos-x-10.13"
@@ -30,6 +34,8 @@ cask "logitech-options" do
     url "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_#{version}.zip",
         verified: "download01.logi.com/web/ftp/pub/techsupport/options/"
 
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
+
     livecheck do
       url "https://support.logi.com/api/v2/help_center/en-us/articles.json?label_names=webcontent=productdownload,webos=mac-macos-x-10.14"
       regex(%r{/Options[._-]?v?(\d+(?:\.\d+)+)\.zip}i)
@@ -41,6 +47,8 @@ cask "logitech-options" do
 
     url "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip",
         verified: "download01.logi.com/web/ftp/pub/techsupport/options/"
+
+    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
 
     livecheck do
       url "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip"
@@ -54,13 +62,6 @@ cask "logitech-options" do
 
   auto_updates true
   depends_on macos: ">= :sierra"
-
-  on_high_sierra :or_older do
-    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.mpkg"
-  end
-  on_mojave :or_newer do
-    pkg "LogiMgr Installer #{version}.app/Contents/Resources/LogiMgr.pkg"
-  end
 
   uninstall launchctl: [
               "com.logi.bolt.app",
