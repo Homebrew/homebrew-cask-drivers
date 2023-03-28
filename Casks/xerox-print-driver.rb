@@ -60,8 +60,8 @@ cask "xerox-print-driver" do
     pkg "Xerox Drivers #{version.sub(/_.*/, "")}.pkg"
   end
   on_big_sur :or_newer do
-    version "5.11.2_2379"
-    sha256 "787f906a31b6d91150733a7b4ca104696cd5a7d3887e35db647f8762f626b8a5"
+    version "5.12.1_2403"
+    sha256 "696ee196543de04c636e80e62c652851dbffe7b2d0d8b35484d92a26ba00d02d"
 
     url "https://download.support.xerox.com/pub/drivers/ALB80XX/drivers/macOSx11/pt_BR/XeroxDrivers_#{version}.dmg"
 
