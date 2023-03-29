@@ -6,31 +6,34 @@ cask "opal" do
       verified: "opalcamera.sfo3.digitaloceanspaces.com/"
   name "Opal"
   desc "Professional webcam software for the Opal C1"
-  homepage "https://faqs.opal.camera/opal-build-#{version.no_dots}"
+  homepage "https://opalcamera.com/download"
 
   livecheck do
-    url "https://opalcamera.com/download"
-    strategy :page_match
-    regex(/Opal Build (\d+(?:\.\d+)*)/)
+    url :url
+    regex(/Opal\sBuild\s(\d+(?:\.\d+)+)/)
   end
+
+  depends_on macos: ">= :monterey"
 
   pkg "Opal #{version}.pkg"
 
   uninstall pkgutil:   "com.opalcamera.OpalCamera",
             launchctl: [
+              "com.opalcamera.cameraExtensionShim",
               "com.opalcamera.OpalCamera.installUpdate.daemon",
               "com.opalcamera.OpalCamera.startOnUsbPlugged.agent",
               "com.opalcamera.OpalCamera.uninstall.daemon",
               "com.opalcamera.OpalCameraStartAtLogin",
-              "com.opalcamera.cameraExtensionShim",
               "com.opalcamera.vcam.assistant",
             ],
-            quit:      "com.opalcamera.OpalCamera"
+            quit:      "com.opalcamera.OpalCamera",
+            delete:    [
+              "/Library/LaunchDaemons/com.opalcamera.cameraExtensionShim.plist",
+              "/Library/LaunchDaemons/com.opalcamera.OpalCamera.installUpdate.daemon.plist",
+              "/Library/LaunchDaemons/com.opalcamera.OpalCamera.uninstall.daemon.plist",
+            ]
 
   zap trash: [
-    "/Library/LaunchDaemons/com.opalcamera.OpalCamera.installUpdate.daemon.plist",
-    "/Library/LaunchDaemons/com.opalcamera.OpalCamera.uninstall.daemon.plist",
-    "/Library/LaunchDaemons/com.opalcamera.cameraExtensionShim.plist",
     "~/Library/Application Scripts/com.opalcamera.OpalCameraStartAtLogin",
     "~/Library/Application Support/com.opalcamera.OpalCamera",
     "~/Library/Caches/com.opalcamera.OpalCamera",
