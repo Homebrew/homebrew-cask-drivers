@@ -6,10 +6,10 @@ cask "opal" do
       verified: "opalcamera.sfo3.digitaloceanspaces.com/"
   name "Opal"
   desc "Professional webcam software for the Opal C1"
-  homepage "https://opalcamera.com/download"
+  homepage "https://faqs.opal.camera/download"
 
   livecheck do
-    url :url
+    url "https://opalcamera.com/download"
     regex(/Opal\sBuild\s(\d+(?:\.\d+)+)/)
   end
 
