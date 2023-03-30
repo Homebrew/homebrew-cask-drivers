@@ -3,7 +3,7 @@ cask "hhkb-keymap-tool" do
   sha256 "ad9bad341ebf6a189b907b0dd5ee68627d508664335ea75e0109964a25d268f9"
 
   url "https://origin.pfultd.com/downloads/hhkb/mac/HHKBkeymapTool_#{version.no_dots}ma.dmg",
-      verified: "origin.pfultd.com"
+      verified: "origin.pfultd.com/downloads/hhkb/mac/"
   name "HHKB Keymap Tool"
   desc "Keymap tool for Happy Hacking Keyboard Professional (Hybrid models only)"
   homepage "https://happyhackingkb.com/download/"
