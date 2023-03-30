@@ -30,7 +30,7 @@ cask "brother-p-touch-update-software" do
   homepage "https://support.brother.com/"
 
   livecheck do
-    url "https://support.brother.com/g/b/downloadlist.aspx?c=nz&lang=en&prod=d800weas&os=#{version.csv[3]}"
+    url "https://support.brother.com/g/b/downloadlist.aspx?c=nz&lang=en&prod=d800weas&os=#{version.csv.fourth}"
     strategy :page_match do |page|
       download_match = page.match(/href=["']?([^"' >]*?)["']?>P-touch Update Software \(Mac\)</i)
       next if download_match.blank?
@@ -47,7 +47,7 @@ cask "brother-p-touch-update-software" do
       next if dlfp_match.blank?
       next if dlfp_match[2] != version_match[1].tr(".", "")
 
-      "#{version_match[1]},#{dlfp_match[3]},#{dlfp_match[1]},#{version.csv[3]}"
+      "#{version_match[1]},#{dlfp_match[3]},#{dlfp_match[1]},#{version.csv.fourth}"
     end
   end
 
