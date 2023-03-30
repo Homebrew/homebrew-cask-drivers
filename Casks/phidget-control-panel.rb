@@ -23,10 +23,10 @@ cask "phidget-control-panel" do
   pkg "Phidgets.pkg"
 
   uninstall pkgutil: [
-              "com.phidgets.phidget#{version.csv.first}java",
-              "com.phidgets.phidget#{version.csv.first}extra",
-              "com.phidgets.phidget#{version.csv.first}networkserver",
               "com.phidgets.controlpanel#{version.csv.first}",
+              "com.phidgets.phidget#{version.csv.first}extra",
+              "com.phidgets.phidget#{version.csv.first}java",
+              "com.phidgets.phidget#{version.csv.first}networkserver",
               "com.phidgets.phidgetframework#{version.csv.first}",
               "com.phidgets.signeddriver",
             ],
