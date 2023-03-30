@@ -1,9 +1,9 @@
 cask "nordic-nrf-connect" do
-  version "4.0.0"
-  sha256 "c56a3d390b1f9d1a9258b45576a9ab69f0ab2a8ecc1b866bc808e0b7afa654dc"
+  version "4.0.1"
+  sha256 "c13d14dd99547f10d8a64e385c214b387948df559c3172338b28ad9d2e8edf8a"
 
   url "https://github.com/NordicSemiconductor/pc-nrfconnect-launcher/releases/download/v#{version}/nrfconnect-#{version}.dmg",
-      verified: "github.com/NordicSemiconductor/pc-nrfconnect-launcher"
+      verified: "github.com/NordicSemiconductor/pc-nrfconnect-launcher/"
   name "nRF Connect"
   desc "Development software for Bluetooth Low Energy and cIoT"
   homepage "https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Connect-for-desktop/"
