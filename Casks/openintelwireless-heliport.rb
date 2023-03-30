@@ -3,7 +3,7 @@ cask "openintelwireless-heliport" do
   sha256 "007e371247e3f494974d1f9618f43eb707830e01c417fb75142aca99b7c6cb53"
 
   url "https://github.com/OpenIntelWireless/HeliPort/releases/download/v#{version}/HeliPort.dmg",
-      verified: "github.com/OpenIntelWireless/HeliPort"
+      verified: "github.com/OpenIntelWireless/HeliPort/"
   name "OpenIntelWireless HeliPort"
   desc "Client for Intel Wi-Fi Adapter Kernel Extension"
   homepage "https://openintelwireless.github.io/"
