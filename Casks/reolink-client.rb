@@ -2,7 +2,7 @@ cask "reolink-client" do
   version "8.8.5,2023,03,170224401679019880,5577"
   sha256 :no_check
 
-  url "https://home-cdn.reolink.us/wp-content/uploads/#{version.csv[1]}/#{version.csv[2]}/#{version.csv[3]}.#{version.csv[4]}.dmg",
+  url "https://home-cdn.reolink.us/wp-content/uploads/#{version.csv.second}/#{version.csv.third}/#{version.csv.fourth}.#{version.csv.fifth}.dmg",
       verified: "home-cdn.reolink.us/"
   name "Reolink Client"
   desc "Security camera system surveillance software"
