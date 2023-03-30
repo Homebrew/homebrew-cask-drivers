@@ -3,7 +3,7 @@ cask "calibrite-ccprofiler" do
   sha256 "409f7ff15f70fc3db8ae898c40d76bf5d84aa7141ff6c15a991818106133dc79"
 
   url "https://downloads.xrite.com/Downloads/Software/ccProfiler/v#{version}/mac/ccProfiler.zip",
-      verified: "xrite.com"
+      verified: "downloads.xrite.com/Downloads/Software/ccProfiler/"
   name "ccProfiler"
   desc "Monitor calibration for Calibrite ColorChecker Display Pro & Plus"
   homepage "https://calibrite.com/"
@@ -18,8 +18,8 @@ cask "calibrite-ccprofiler" do
   pkg "ccProfiler.pkg"
 
   uninstall pkgutil: [
-    "com.xrite.xritedeviceservices.installer.pkg",
     "com.calibrite.ccprofiler.pkg",
+    "com.xrite.xritedeviceservices.installer.pkg",
   ]
 
   caveats do
