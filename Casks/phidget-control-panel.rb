@@ -8,10 +8,24 @@ cask "phidget-control-panel" do
   homepage "https://www.phidgets.com/"
 
   livecheck do
-    url "https://www.phidgets.com/downloads/phidget#{version.csv.first}/libraries/macos/Phidget#{version.csv.first}.dmg"
+    url "https://www.phidgets.com/docs/Phidgets_Drivers"
     regex(%r{/Phidget(\d+)_(\d+(?:\.\d+)+)\.dmg}i)
-    strategy :header_match do |headers, regex|
-      match = headers["location"].match(regex)
+    strategy :page_match do |page, regex|
+      # Identify the latest main version from the Phidgets Drivers page
+      main_version = page.scan(%r{/Phidget(\d+)\.dmg}i)
+                         .flatten
+                         .uniq
+                         .map { |v| Version.new(v) }
+                         .max
+      next if main_version.blank?
+
+      # Collect the response headers from the generic URL to the latest dmg file
+      headers = Homebrew::Livecheck::Strategy.page_headers(
+        "https://www.phidgets.com/downloads/phidget#{main_version}/libraries/macos/Phidget#{main_version}.dmg",
+      ).reduce(&:merge)
+
+      # Match the version from the filename in the `location` header
+      match = headers["location"]&.match(regex)
       next if match.blank?
 
       "#{match[1]},#{match[2]}"
