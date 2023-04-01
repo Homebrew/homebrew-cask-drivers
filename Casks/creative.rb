@@ -1,12 +1,15 @@
 cask "creative" do
-  version "1.5.3,103"
+  arch arm: "0dGyI1IHqu", intel: "0dGyI1IHqu"
+
+  version "1.5.3,103,100396"
   sha256 "6f81b1d8b0cbcfc7cf57573f459bf29b680d1bb52ef413a8cf2b74364bbb0aed"
 
-  url "https://files.creative.com/manualdn/Applications/100396/0dGyI1IHqu/Creative%20#{version.csv.first}%20build%20#{version.csv.second}.zip"
+  url "https://files.creative.com/manualdn/Applications/#{version.csv.third}/#{arch}/Creative%20#{version.csv.first}%20build%20#{version.csv.second}.zip"
   name "Creative"
   desc "Control panel for the Creative hardware"
   homepage "https://support.creative.com/"
 
+  # TODO: extract version.csv.third from data-driver-id
   livecheck do
     url "https://support.creative.com/Products/ProductDetails.aspx?catID=1&subCatID=1258&prodID=23677"
     regex(/Creative\s(\d+(?:[._]\d)+)\sbuild\s(\d+(?:\d)+)+\.zip/i)
