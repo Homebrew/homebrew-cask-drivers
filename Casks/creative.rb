@@ -1,8 +1,8 @@
 cask "creative" do
-  version "1.5.1,94"
-  sha256 "efd98409681a7d860774c7b9a1c44508d13aa1af305d9f057367580c4e1957e9"
+  version "1.5.3,103"
+  sha256 "6f81b1d8b0cbcfc7cf57573f459bf29b680d1bb52ef413a8cf2b74364bbb0aed"
 
-  url "https://files.creative.com/manualdn/Applications/100394/FELGxPhWie/Creative%20#{version.csv.first}%20build%20#{version.csv.second}.zip"
+  url "https://files.creative.com/manualdn/Applications/100396/0dGyI1IHqu/Creative%20#{version.csv.first}%20build%20#{version.csv.second}.zip"
   name "Creative"
   desc "Control panel for the Creative hardware"
   homepage "https://support.creative.com/"
