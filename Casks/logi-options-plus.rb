@@ -9,10 +9,9 @@ cask "logi-options-plus" do
   homepage "https://www.logitech.com/en-us/software/logi-options-plus.html"
 
   livecheck do
-    # Logi Options+ Release Notes
     url "https://support.logi.com/hc/en-gb/articles/1500005516462"
     strategy :page_match
-    regex(%r{<strong>Version (\d+(?:\.\d+)+)</strong>}i)
+    regex(/version\D*?(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true
