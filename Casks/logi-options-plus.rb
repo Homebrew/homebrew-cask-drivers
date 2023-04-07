@@ -1,5 +1,5 @@
 cask "logi-options-plus" do
-  version "1.36.0.387585"
+  version "1.36"
   sha256 :no_check
 
   url "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip",
@@ -9,10 +9,10 @@ cask "logi-options-plus" do
   homepage "https://www.logitech.com/en-us/software/logi-options-plus.html"
 
   livecheck do
-    url :url
-    strategy :extract_plist do |versions|
-      versions.values.map(&:version).compact.first
-    end
+    # Logi Options+ Release Notes
+    url "https://support.logi.com/hc/en-gb/articles/1500005516462"
+    strategy :page_match
+    regex(%r{\<strong\>Version (\d+(?:\.\d+)+)\</strong\>}i)
   end
 
   auto_updates true
