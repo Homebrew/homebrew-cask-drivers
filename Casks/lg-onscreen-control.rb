@@ -1,6 +1,6 @@
 cask "lg-onscreen-control" do
-  version "5.77,EnFwN1QXofikcxbjmkodXw"
-  sha256 "3ca394ca928f6811b52a21a2953c0531f46a1decc188cb41be859b589c3fdee3"
+  version "5.98,UHgt90CKZsyWb6QbRnjUDQ"
+  sha256 "91b28b4259f4f79428dfa997b7b5f8c31bd30ebf458e2299a9c72b25c6e186a7"
 
   url "https://gscs-b2c.lge.com/downloadFile?fileId=#{version.csv.second}",
       verified: "lge.com/"
