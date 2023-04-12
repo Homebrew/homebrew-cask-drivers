@@ -5,6 +5,7 @@ cask "asix-ax88179" do
     version "2.19.0,1242"
 
     container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.csv.first}_20220517/AX88179_178A_v#{version.csv.first}.dmg"
+
     pkg ".AX88179_178A_10.9_10.14.pkg"
 
     livecheck do
@@ -21,6 +22,7 @@ cask "asix-ax88179" do
     version "2.19.0,1242"
 
     container nested: "AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v#{version.csv.first}_20220517/AX88179_178A_v#{version.csv.first}.dmg"
+
     pkg ".AX88179_178A_10.15.pkg"
 
     livecheck do
@@ -49,6 +51,7 @@ cask "asix-ax88179" do
     version "1.3.0,1301"
 
     container nested: "ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v#{version.csv.first}_20220706/ASIX_USB_Device_Installer_v#{version.csv.first}.dmg"
+
     pkg "ASIX_USB_Device_Installer_v#{version.csv.first}.pkg"
 
     livecheck do
@@ -77,6 +80,7 @@ cask "asix-ax88179" do
     version "2.3.0,1372"
 
     container nested: "ASIX_USB_Device_Installer_macOS_12_above_Driver_v#{version.csv.first}/ASIX_USB_Device_Installer_v#{version.csv.first}.dmg"
+
     pkg "ASIX_USB_Device_Installer_v#{version.csv.first}.pkg"
 
     livecheck do
