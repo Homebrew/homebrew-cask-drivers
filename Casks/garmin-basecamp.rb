@@ -10,8 +10,8 @@ cask "garmin-basecamp" do
     end
   end
   on_high_sierra :or_newer do
-    version "4.8.12"
-    sha256 "aecd4b28975169118056f5901f3db4a3a58d50c204184b7dc64919f23a19247c"
+    version "4.8.13"
+    sha256 "e4cdb4f6ef89a709d197e0273a06f995bb4b3542538f0f3e4743bfc85ce74e0b"
 
     url "https://download.garmin.com/software/BaseCampforMac_#{version.no_dots}.dmg"
 
