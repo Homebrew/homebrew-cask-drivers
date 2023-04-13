@@ -1,4 +1,13 @@
 {
   "segger-jlink": "homebrew/cask",
-  "konica-minolta-bizhub-c750i-driver": "homebrew/cask"
+  "konica-minolta-bizhub-c750i-driver": "homebrew/cask",
+  "canon-eos-utility": "homebrew/cask",
+  "corsair-icue": "homebrew/cask",
+  "displaylink": "homebrew/cask",
+  "elgato-stream-deck": "homebrew/cask",
+  "elgato-video-capture": "homebrew/cask",
+  "elgato-wave-link": "homebrew/cask",
+  "logitech-g-hub": "homebrew/cask",
+  "sony-ps-remote-play": "homebrew/cask",
+  "toshiba-color-mfp": "homebrew/cask"
 }
