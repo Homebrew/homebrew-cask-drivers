@@ -1,13 +1,18 @@
 {
-  "segger-jlink": "homebrew/cask",
-  "konica-minolta-bizhub-c750i-driver": "homebrew/cask",
+  "bluos-controller": "homebrew/cask",
   "canon-eos-utility": "homebrew/cask",
   "corsair-icue": "homebrew/cask",
   "displaylink": "homebrew/cask",
   "elgato-stream-deck": "homebrew/cask",
   "elgato-video-capture": "homebrew/cask",
   "elgato-wave-link": "homebrew/cask",
+  "konica-minolta-bizhub-c750i-driver": "homebrew/cask",
+  "logitech-camera-settings": "homebrew/cask",
   "logitech-g-hub": "homebrew/cask",
+  "logitech-options": "homebrew/cask",
+  "segger-jlink": "homebrew/cask",
   "sony-ps-remote-play": "homebrew/cask",
-  "toshiba-color-mfp": "homebrew/cask"
+  "toshiba-color-mfp": "homebrew/cask",
+  "ubiquiti-unifi-controller": "homebrew/cask",
+  "yubico-yubikey-manager": "homebrew/cask"
 }
