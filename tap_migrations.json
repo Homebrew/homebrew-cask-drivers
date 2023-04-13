@@ -4,6 +4,8 @@
   "canon-eos-utility": "homebrew/cask",
   "corsair-icue": "homebrew/cask",
   "displaylink": "homebrew/cask",
+  "elgato-camera-hub": "homebrew/cask",
+  "elgato-control-center": "homebrew/cask",
   "elgato-stream-deck": "homebrew/cask",
   "elgato-video-capture": "homebrew/cask",
   "elgato-wave-link": "homebrew/cask",
