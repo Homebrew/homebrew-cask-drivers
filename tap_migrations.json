@@ -25,6 +25,7 @@
   "sonos": "homebrew/cask",
   "sony-ps-remote-play": "homebrew/cask",
   "steelseries-engine": "homebrew/cask",
+  "steelseries-gg": "homebrew/cask",
   "synology-drive": "homebrew/cask",
   "toshiba-color-mfp": "homebrew/cask",
   "ubiquiti-unifi-controller": "homebrew/cask",
