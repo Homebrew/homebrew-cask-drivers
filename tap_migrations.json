@@ -13,6 +13,7 @@
   "elgato-video-capture": "homebrew/cask",
   "elgato-wave-link": "homebrew/cask",
   "focusrite-saffire-mixcontrol": "homebrew/cask",
+  "ftdi-vcp-driver": "homebrew/cask",
   "fujitsu-scansnap-home": "homebrew/cask",
   "garmin-express": "homebrew/cask",
   "gutenprint": "homebrew/cask",
@@ -21,9 +22,11 @@
   "logitech-camera-settings": "homebrew/cask",
   "logitech-g-hub": "homebrew/cask",
   "logitech-options": "homebrew/cask",
+  "prolific-pl2303": "homebrew/cask",
   "qmk-toolbox": "homebrew/cask",
   "ricoh-theta": "homebrew/cask",
   "segger-jlink": "homebrew/cask",
+  "silicon-labs-vcp-driver": "homebrew/cask",
   "sonos": "homebrew/cask",
   "sony-ps-remote-play": "homebrew/cask",
   "steelseries-engine": "homebrew/cask",
@@ -31,6 +34,7 @@
   "synology-drive": "homebrew/cask",
   "toshiba-color-mfp": "homebrew/cask",
   "ubiquiti-unifi-controller": "homebrew/cask",
+  "wch-ch34x-usb-serial-driver": "homebrew/cask",
   "yubico-authenticator": "homebrew/cask",
   "yubico-yubikey-manager": "homebrew/cask"
 }
