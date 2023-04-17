@@ -1,6 +1,6 @@
 cask "calibrite-ccprofiler" do
-  version "1.1.3"
-  sha256 "409f7ff15f70fc3db8ae898c40d76bf5d84aa7141ff6c15a991818106133dc79"
+  version "1.1.4"
+  sha256 "81860f4b9c2885a2494a4cb2a8f5563d6925635fd1bc365356f6d180c84fb3e4"
 
   url "https://downloads.xrite.com/Downloads/Software/ccProfiler/v#{version}/mac/ccProfiler.zip",
       verified: "downloads.xrite.com/Downloads/Software/ccProfiler/"
