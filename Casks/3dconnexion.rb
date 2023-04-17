@@ -43,7 +43,7 @@ cask "3dconnexion" do
                 sudo:       true },
             ],
             delete:    [
-              "/Applications/3Dconnexion",
+              "/Applications/3Dconnexion/*",
               "/Library/Application Support/3Dconnexion",
               "/Library/Extensions/3Dconnexion.kext",
               "/Library/Frameworks/3DconnexionClient.framework",
