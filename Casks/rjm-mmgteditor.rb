@@ -1,6 +1,6 @@
 cask "rjm-mmgteditor" do
-  version "5.0.0"
-  sha256 "c55b8141e66294dd15a220adb1b72078ff989d49f057bcbd61194ccef7490278"
+  version "5.0.1"
+  sha256 "f21c3590caa9d804b36c5123a75c8864ba466e8ed7f08971853d40db536ef882"
 
   url "https://www.rjmmusic.com/downloads/MMGT/MMGTEditor-#{version}.dmg"
   name "RJM Music Mastermind GT Editor"
