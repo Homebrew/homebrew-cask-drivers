@@ -9,6 +9,7 @@ cask "roli-connect" do
 
   livecheck do
     url :url
+    regex(%r{/v?(\d+(?:\.\d+)+)/}i)
     strategy :header_match
   end
 
