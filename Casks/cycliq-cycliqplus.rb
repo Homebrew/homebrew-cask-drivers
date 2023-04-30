@@ -1,6 +1,6 @@
 cask "cycliq-cycliqplus" do
-  version "2.78"
-  sha256 "b5c08af21c59f875e53dd8c095b0f038b5330e48a75eb9be203b82155b12f866"
+  version "2.80"
+  sha256 "e4eebad6408ce0191af23b8c5796f0f4ab2a3a676ac4ebeaad06d140e2326a30"
 
   url "https://cycliq.com/files/software/downloads/CycliqPlus-#{version}.dmg"
   name "CycliqPlus"
