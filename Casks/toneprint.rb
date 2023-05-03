@@ -1,8 +1,8 @@
 cask "toneprint" do
-  version "4.5.5"
-  sha256 "c85bb2875578eab40b9e091ebe07e2a85e2055af047ccf883e2aae2e0df7f6d5"
+  version "4.5.10"
+  sha256 "308ad27aa7d2de670a84c28e4f997503c2eed2f2715fc5a3c85b30f11eccd30e"
 
-  url "https://mediadl.musictribe.com/download/software/tcelectronic/TonePrintEditor/TonePrint_#{version}_MacOS.zip",
+  url "https://mediadl.musictribe.com/download/software/tcelectronic/TonePrintEditor/TonePrint_#{version}.dmg",
       verified: "mediadl.musictribe.com/download/software/tcelectronic/TonePrintEditor/"
   name "TonePrint"
   desc "Alter the character of your TonePrint pedal"
@@ -10,7 +10,7 @@ cask "toneprint" do
 
   livecheck do
     url "https://www.tcelectronic.com/.rest/musictribe/v1/downloadcenter/solr-dldatatable?brandName=tcelectronic&modelCode=P0CLC&iDisplayStart=0&iDisplayLength=15"
-    regex(/TonePrint[._-]v?(\d+(?:\.\d+)+)[._-]MacOS\.zip/i)
+    regex(/TonePrint[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   app "Toneprint.app"
