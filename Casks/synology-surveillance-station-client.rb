@@ -24,4 +24,11 @@ cask "synology-surveillance-station-client" do
               "com.synology.svsclient-Timeline",
               "com.synology.svsclient-SurveillanceStationClient",
             ]
+
+  zap trash: [
+    "~/Library/Application Support/SynologySurveillanceStationClient",
+    "~/Library/Preferences/com.synology.Surveillance Station Client.plist",
+    "~/Library/Preferences/com.synology.svsclient-SurveillanceStationClient.plist",
+    "~/Library/Saved Application State/com.synology.svsclient-SurveillanceStationClient.savedState",
+  ]
 end
