@@ -1,6 +1,7 @@
 {
   "1kc-razer": "homebrew/cask",
   "bluos-controller": "homebrew/cask",
+  "caldigit-docking-utility": "homebrew/cask",
   "caldigit-thunderbolt-charging": "homebrew/cask",
   "cameracontroller": "homebrew/cask",
   "canon-eos-utility": "homebrew/cask",
