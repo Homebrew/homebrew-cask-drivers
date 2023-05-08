@@ -1,4 +1,5 @@
 {
+  "1kc-razer": "homebrew/cask",
   "bluos-controller": "homebrew/cask",
   "cameracontroller": "homebrew/cask",
   "canon-eos-utility": "homebrew/cask",
