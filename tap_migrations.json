@@ -1,5 +1,6 @@
 {
   "bluos-controller": "homebrew/cask",
+  "caldigit-thunderbolt-charging": "homebrew/cask",
   "cameracontroller": "homebrew/cask",
   "canon-eos-utility": "homebrew/cask",
   "corsair-icue": "homebrew/cask",
