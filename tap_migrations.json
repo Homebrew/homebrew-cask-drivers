@@ -25,6 +25,7 @@
   "logitune": "homebrew/cask",
   "obsbot-webcam": "homebrew/cask",
   "opal": "homebrew/cask",
+  "pololu-avr-programmer-v2": "homebrew/cask",
   "prolific-pl2303": "homebrew/cask",
   "qmk-toolbox": "homebrew/cask",
   "ricoh-theta": "homebrew/cask",
