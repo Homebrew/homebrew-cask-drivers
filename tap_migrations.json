@@ -32,6 +32,7 @@
   "logitune": "homebrew/cask",
   "obsbot-webcam": "homebrew/cask",
   "opal": "homebrew/cask",
+  "pallotron-yubiswitch": "homebrew/cask",
   "pololu-avr-programmer-v2": "homebrew/cask",
   "prolific-pl2303": "homebrew/cask",
   "qmk-toolbox": "homebrew/cask",
