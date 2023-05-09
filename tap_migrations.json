@@ -1,5 +1,6 @@
 {
   "1kc-razer": "homebrew/cask",
+  "asix-ax88179":"homebrew/cask",
   "bluos-controller": "homebrew/cask",
   "caldigit-docking-utility": "homebrew/cask",
   "caldigit-thunderbolt-charging": "homebrew/cask",
