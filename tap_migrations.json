@@ -39,6 +39,7 @@
   "saleae-logic": "homebrew/cask",
   "samsung-portable-ssd-t7": "homebrew/cask",
   "segger-jlink": "homebrew/cask",
+  "shureplus-motiv": "homebrew/cask",
   "silicon-labs-vcp-driver": "homebrew/cask",
   "sonos": "homebrew/cask",
   "sony-ps-remote-play": "homebrew/cask",
