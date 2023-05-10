@@ -52,5 +52,6 @@
   "ubiquiti-unifi-controller": "homebrew/cask",
   "wch-ch34x-usb-serial-driver": "homebrew/cask",
   "yubico-authenticator": "homebrew/cask",
-  "yubico-yubikey-manager": "homebrew/cask"
+  "yubico-yubikey-manager": "homebrew/cask",
+  "zsa-wally": "homebrew/cask"
 }
