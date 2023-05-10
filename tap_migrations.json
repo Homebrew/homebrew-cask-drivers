@@ -48,6 +48,7 @@
   "steelseries-engine": "homebrew/cask",
   "steelseries-gg": "homebrew/cask",
   "synology-drive": "homebrew/cask",
+  "tiptoi-manager": "homebrew/cask",
   "toshiba-color-mfp": "homebrew/cask",
   "ubiquiti-unifi-controller": "homebrew/cask",
   "wch-ch34x-usb-serial-driver": "homebrew/cask",
