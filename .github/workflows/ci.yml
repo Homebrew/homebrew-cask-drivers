@@ -16,30 +16,8 @@ permissions:
   contents: read
 
 jobs:
-  generate-matrix:
-    outputs:
-      matrix: ${{ steps.generate-matrix.outputs.matrix }}
-    runs-on: macos-latest
-    steps:
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-        with:
-          test-bot: false
-
-      - name: Check out Pull Request
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-
-      - name: Generate CI matrix
-        id: generate-matrix
-        run: |
-          brew tap homebrew/cask
-          brew ruby -- "$(brew --repository homebrew/cask)/cmd/lib/generate-matrix.rb" "${{ github.event.pull_request.url }}"
-
   conclusion:
     name: conclusion
     runs-on: ubuntu-latest
-    if: always()
+    steps:
+      - run: 'true'
