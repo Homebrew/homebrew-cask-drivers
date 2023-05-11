@@ -25,6 +25,7 @@
   "garmin-express": "homebrew/cask",
   "gutenprint": "homebrew/cask",
   "hdhomerun": "homebrew/cask",
+  "hexcore-link": "homebrew/cask",
   "insta360-studio": "homebrew/cask",
   "konica-minolta-bizhub-c750i-driver": "homebrew/cask",
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": "homebrew/cask",
