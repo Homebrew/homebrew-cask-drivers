@@ -19,6 +19,7 @@
   "elgato-stream-deck": "homebrew/cask",
   "elgato-video-capture": "homebrew/cask",
   "elgato-wave-link": "homebrew/cask",
+  "focusrite-control": "homebrew/cask"
   "focusrite-saffire-mixcontrol": "homebrew/cask",
   "ftdi-vcp-driver": "homebrew/cask",
   "fujitsu-scansnap-home": "homebrew/cask",
@@ -57,5 +58,4 @@
   "yubico-authenticator": "homebrew/cask",
   "yubico-yubikey-manager": "homebrew/cask",
   "zsa-wally": "homebrew/cask",
-  "focusrite-control": "homebrew/cask"
 }
