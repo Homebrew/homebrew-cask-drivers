@@ -32,6 +32,7 @@
   "huiontablet": "homebrew/cask",
   "insta360-studio": "homebrew/cask",
   "jabra-direct": "homebrew/cask",
+  "kiibohd-configurator": "homebrew/cask",
   "konica-minolta-bizhub-c750i-driver": "homebrew/cask",
   "konica-minolta-bizhub-c759-c658-c368-c287-c3851-driver": "homebrew/cask",
   "lg-onscreen-control": "homebrew/cask",
