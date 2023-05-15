@@ -69,6 +69,7 @@
   "tiptoi-manager": "homebrew/cask",
   "toshiba-color-mfp": "homebrew/cask",
   "ubiquiti-unifi-controller": "homebrew/cask",
+  "uhk-agent": "homebrew/cask",
   "wacom-tablet": "homebrew/cask",
   "wch-ch34x-usb-serial-driver": "homebrew/cask",
   "yubico-authenticator": "homebrew/cask",
