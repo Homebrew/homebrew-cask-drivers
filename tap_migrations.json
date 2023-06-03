@@ -42,6 +42,7 @@
   "logitech-g-hub": "homebrew/cask",
   "logitech-options": "homebrew/cask",
   "logitune": "homebrew/cask",
+  "loupedeck": "homebrew/cask",
   "nordic-nrf-command-line-tools": "homebrew/cask",
   "obsbot-webcam": "homebrew/cask",
   "opal": "homebrew/cask",
