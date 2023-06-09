@@ -1,6 +1,7 @@
 {
   "1kc-razer": "homebrew/cask",
-  "asix-ax88179":"homebrew/cask",
+  "apple-hewlett-packard-printer-drivers": "homebrew/cask",
+  "asix-ax88179": "homebrew/cask",
   "bluos-controller": "homebrew/cask",
   "bose-updater": "homebrew/cask",
   "caldigit-docking-utility": "homebrew/cask",
