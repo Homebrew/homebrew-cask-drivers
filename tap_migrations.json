@@ -50,6 +50,7 @@
   "opal": "homebrew/cask",
   "pallotron-yubiswitch": "homebrew/cask",
   "philips-hue-sync": "homebrew/cask",
+  "playdate-mirror": "homebrew/cask",
   "pololu-avr-programmer-v2": "homebrew/cask",
   "prolific-pl2303": "homebrew/cask",
   "qflipper": "homebrew/cask",
